@@ -18,10 +18,11 @@
 - 数据源：`stat.ML`、`cs.LG`、`physics.data-an`、`hep-ex` RSS；
 - 初筛：`deepseek-v4-flash`，关闭思考；
 - 深度分析：`deepseek-v4-pro`，开启思考；
-- 每日最多初筛 60 篇、深度分析 5 篇；
+- 每日候选配额：方法雷达 40 篇、HEP 直接应用 10 篇、探索位 10 篇；
+- 每日最多深度分析 5 篇；如果模型主动推荐不足，会从非无关候选中补足到 3 篇；
 - 状态：`data/state.json`；
 - 首次运行：从 arXiv API 回填最近 120 篇，再按规则筛选；
-- 输出：`public/atom.xml`、`public/rss.xml`、`public/index.html`；
+- 输出：综合 Atom/RSS、方法雷达 RSS、HEP 直接应用 RSS 和静态网页；
 - 调度：北京时间约 08:17；
 - 托管：GitHub Pages。
 
@@ -130,6 +131,8 @@ Settings → Pages → Build and deployment → Source
 https://<用户名>.github.io/hepml-digest/
 https://<用户名>.github.io/hepml-digest/atom.xml
 https://<用户名>.github.io/hepml-digest/rss.xml
+https://<用户名>.github.io/hepml-digest/methods.xml
+https://<用户名>.github.io/hepml-digest/hep-applications.xml
 ```
 
 ## 5. 配置
@@ -144,11 +147,15 @@ https://<用户名>.github.io/hepml-digest/rss.xml
 | `ARXIV_CATEGORIES` | 四个默认分类 | 逗号分隔 |
 | `MAX_CANDIDATES` | `60` | 每次最多初筛数 |
 | `BOOTSTRAP_RESULTS` | `120` | 状态为空时回填的最近论文数 |
-| `DISCOVERY_SLOTS` | `5` | 无关键词候选探索位 |
+| `METHOD_CANDIDATE_SLOTS` | `40` | 通用统计/机器学习方法候选配额 |
+| `HEP_APPLICATION_SLOTS` | `10` | HEP 直接应用候选配额 |
+| `DISCOVERY_SLOTS` | `10` | 不依赖关键词排名的探索位 |
 | `MAX_DEEP_REVIEWS` | `5` | 每次最多深度分析数 |
+| `MIN_DEEP_REVIEWS` | `3` | 每日深评目标；只从非 irrelevant 候选补足 |
 | `PUBLISH_THRESHOLD` | `0.55` | RSS 发布阈值 |
-| `REVIEW_THRESHOLD` | `0.72` | 深度分析阈值 |
+| `REVIEW_THRESHOLD` | `0.45` | 模型主动推荐进入深评的最低相关性 |
 | `FEED_MAX_ITEMS` | `300` | Feed 最大条目数 |
+| `FEEDBACK_REPOSITORY` | 空 | GitHub `owner/repo`，启用预填 Issue 反馈入口 |
 | `SITE_URL` | 本地地址 | 发布站点根 URL |
 | `STATE_FILE` | `data/state.json` | 状态文件 |
 | `OUTPUT_DIR` | `public` | 静态输出目录 |
@@ -163,6 +170,18 @@ https://<用户名>.github.io/hepml-digest/rss.xml
 - [prompts/review.txt](prompts/review.txt)：HEP 应用、风险和验证方案。
 
 建议先累计两周人工反馈，再修改阈值或扩展分类。不要仅根据一次日报主观更换模型。
+
+每个网页和 Feed 条目都可以提供“提交反馈”链接。GitHub Actions 会自动把
+`FEEDBACK_REPOSITORY` 设置为当前仓库；反馈 Issue 包含保留、映射合理性、
+过度推测、栏目调整和全文精读等勾选项，可逐步积累人工评估集。
+
+### 两类内容的边界
+
+- **方法雷达**：来自 `stat.ML`、`cs.LG`、`physics.data-an` 等分类，重点是把通用方法映射到可检验的 HEP 场景；
+- **HEP 直接应用**：包含 `hep-ex`、`physics.ins-det` 或 `nucl-ex` 分类，论文已经直接面向实验或探测器问题。
+
+综合 Feed 保留两类内容，也可以只订阅 `methods.xml` 或
+`hep-applications.xml`。
 
 ## 7. 当前范围
 

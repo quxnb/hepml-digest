@@ -43,7 +43,11 @@ def run_pipeline(
         paper for paper in papers if paper.version_key not in state.records
     ]
     candidates = select_candidates(
-        unseen, settings.max_candidates, settings.discovery_slots
+        unseen,
+        settings.max_candidates,
+        settings.discovery_slots,
+        settings.method_candidate_slots,
+        settings.hep_application_slots,
     )
     LOGGER.info(
         "Fetched %d unique papers; %d unseen; screening %d",
@@ -54,6 +58,7 @@ def run_pipeline(
 
     screened = 0
     failed_screening = 0
+    new_records: list[Record] = []
     now = datetime.now(timezone.utc)
     for paper in candidates:
         try:
@@ -68,14 +73,46 @@ def run_pipeline(
             and screening.relevance >= settings.review_threshold
             else "not_selected"
         )
-        state.records[paper.version_key] = Record(
+        record = Record(
             paper=paper,
             screening=screening,
             review_status=review_status,
             processed_at=now,
             screening_model=settings.screening_model,
         )
+        state.records[paper.version_key] = record
+        new_records.append(record)
         screened += 1
+
+    # The model's needs_deep_review flag remains the main signal. If it yields
+    # too few papers, promote the strongest non-irrelevant papers from today's
+    # method radar first, so that promising transfer ideas are actually tested.
+    review_target = min(
+        max(settings.min_deep_reviews, 0),
+        max(settings.max_deep_reviews, 0),
+    )
+    already_selected = sum(
+        record.review_status == "pending" for record in new_records
+    )
+    promotion_candidates = sorted(
+        (
+            record
+            for record in new_records
+            if record.review_status == "not_selected"
+            and record.screening.evidence_level != "irrelevant"
+        ),
+        key=lambda record: (
+            record.paper.digest_track == "method_radar",
+            record.screening.relevance,
+            record.processed_at,
+        ),
+        reverse=True,
+    )
+    promoted_reviews = 0
+    promotion_limit = max(0, review_target - already_selected)
+    for record in promotion_candidates[:promotion_limit]:
+        record.review_status = "pending"
+        promoted_reviews += 1
 
     pending = sorted(
         (
@@ -109,6 +146,7 @@ def run_pipeline(
         settings.feed_title,
         settings.publish_threshold,
         settings.feed_max_items,
+        settings.feedback_repository,
     )
     save_state(settings.state_file, state)
     return {
@@ -117,6 +155,7 @@ def run_pipeline(
         "unseen": len(unseen),
         "screened": screened,
         "reviewed": reviewed,
+        "promoted_reviews": promoted_reviews,
         "published": published,
         "failed_screening": failed_screening,
         "failed_reviews": failed_reviews,

@@ -1,3 +1,4 @@
+from datetime import datetime, timezone
 from pathlib import Path
 
 from hepml_digest.fetch import (
@@ -5,7 +6,9 @@ from hepml_digest.fetch import (
     merge_duplicates,
     parse_arxiv_identifier,
     parse_feed_bytes,
+    select_candidates,
 )
+from hepml_digest.models import Paper
 
 
 def test_parse_modern_and_legacy_ids():
@@ -44,3 +47,36 @@ def test_merge_cross_list_categories():
     merged = merge_duplicates([first, second])
     assert len(merged) == 1
     assert merged[0].categories == ["cs.LG", "stat.ML"]
+
+
+def test_candidate_selection_reserves_both_tracks_and_discovery():
+    now = datetime.now(timezone.utc)
+
+    def paper(index: int, category: str) -> Paper:
+        arxiv_id = f"2607.{index:05d}"
+        return Paper(
+            arxiv_id=arxiv_id,
+            title=f"Paper {index}",
+            abstract="transformer method",
+            link=f"https://arxiv.org/abs/{arxiv_id}",
+            published=now,
+            updated=now,
+            categories=[category],
+        )
+
+    papers = [paper(index, "cs.LG") for index in range(50)]
+    papers.extend(paper(100 + index, "hep-ex") for index in range(20))
+    selected = select_candidates(
+        papers,
+        limit=60,
+        discovery_slots=10,
+        method_slots=40,
+        hep_application_slots=10,
+    )
+
+    assert len(selected) == 60
+    assert all(item.digest_track == "method_radar" for item in selected[:40])
+    assert all(
+        item.digest_track == "hep_application" for item in selected[40:50]
+    )
+    assert len({item.version_key for item in selected}) == 60

@@ -40,7 +40,13 @@ jobs:
           SITE_URL: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}
           MAX_CANDIDATES: "60"
           BOOTSTRAP_RESULTS: "120"
+          METHOD_CANDIDATE_SLOTS: "40"
+          HEP_APPLICATION_SLOTS: "10"
+          DISCOVERY_SLOTS: "10"
           MAX_DEEP_REVIEWS: "5"
+          MIN_DEEP_REVIEWS: "3"
+          REVIEW_THRESHOLD: "0.45"
+          FEEDBACK_REPOSITORY: ${{ github.repository }}
         run: python -m hepml_digest
 
       - name: Persist state and reports

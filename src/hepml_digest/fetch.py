@@ -203,8 +203,15 @@ def keyword_score(paper: Paper) -> int:
 
 
 def select_candidates(
-    papers: Iterable[Paper], limit: int, discovery_slots: int
+    papers: Iterable[Paper],
+    limit: int,
+    discovery_slots: int,
+    method_slots: int | None = None,
+    hep_application_slots: int | None = None,
 ) -> list[Paper]:
+    if limit <= 0:
+        return []
+
     ranked = sorted(
         papers,
         key=lambda paper: (keyword_score(paper), paper.updated),
@@ -214,12 +221,46 @@ def select_candidates(
         return ranked
 
     discovery_slots = max(0, min(discovery_slots, limit))
-    primary = ranked[: limit - discovery_slots]
-    remaining = ranked[limit - discovery_slots :]
+    if method_slots is None or hep_application_slots is None:
+        primary = ranked[: limit - discovery_slots]
+    else:
+        primary_limit = limit - discovery_slots
+        method_slots = max(0, min(method_slots, primary_limit))
+        hep_application_slots = max(
+            0, min(hep_application_slots, primary_limit - method_slots)
+        )
+        methods = [
+            paper for paper in ranked if paper.digest_track == "method_radar"
+        ]
+        applications = [
+            paper
+            for paper in ranked
+            if paper.digest_track == "hep_application"
+        ]
+        primary = [
+            *methods[:method_slots],
+            *applications[:hep_application_slots],
+        ]
+
+    selected_keys = {paper.version_key for paper in primary}
+    remaining = [
+        paper for paper in ranked if paper.version_key not in selected_keys
+    ]
     discovery = sorted(
         remaining,
         key=lambda paper: hashlib.sha256(
             paper.version_key.encode("utf-8")
         ).hexdigest(),
     )[:discovery_slots]
-    return [*primary, *discovery]
+    selected = [*primary, *discovery]
+
+    # If one track has fewer papers than its quota, fill the unused capacity
+    # from the globally ranked remainder instead of screening fewer papers.
+    selected_keys = {paper.version_key for paper in selected}
+    for paper in ranked:
+        if len(selected) >= limit:
+            break
+        if paper.version_key not in selected_keys:
+            selected.append(paper)
+            selected_keys.add(paper.version_key)
+    return selected

@@ -7,6 +7,17 @@ from pydantic import BaseModel, Field, field_validator
 
 
 Evidence = Literal["direct", "transferable", "speculative", "irrelevant"]
+DigestTrack = Literal["method_radar", "hep_application"]
+
+HEP_APPLICATION_CATEGORIES = frozenset(
+    {"hep-ex", "physics.ins-det", "nucl-ex"}
+)
+
+
+def digest_track_for_categories(categories: list[str]) -> DigestTrack:
+    if HEP_APPLICATION_CATEGORIES.intersection(categories):
+        return "hep_application"
+    return "method_radar"
 
 
 class Paper(BaseModel):
@@ -30,6 +41,10 @@ class Paper(BaseModel):
     @property
     def version_key(self) -> str:
         return f"{self.arxiv_id}:v{self.version}"
+
+    @property
+    def digest_track(self) -> DigestTrack:
+        return digest_track_for_categories(self.categories)
 
 
 class Screening(BaseModel):

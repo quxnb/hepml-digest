@@ -33,13 +33,17 @@ class Settings:
     prompt_dir: Path = Path("prompts")
     max_candidates: int = 60
     bootstrap_results: int = 120
-    discovery_slots: int = 5
+    method_candidate_slots: int = 40
+    hep_application_slots: int = 10
+    discovery_slots: int = 10
     max_deep_reviews: int = 5
+    min_deep_reviews: int = 3
     publish_threshold: float = 0.55
-    review_threshold: float = 0.72
+    review_threshold: float = 0.45
     feed_max_items: int = 300
     state_retention_days: int = 365
     request_timeout_seconds: float = 90.0
+    feedback_repository: str = ""
     user_agent: str = (
         "hepml-digest/0.1 (+personal research digest; "
         "contact configured by repository owner)"
@@ -68,14 +72,20 @@ class Settings:
             prompt_dir=Path(os.getenv("PROMPT_DIR", "prompts")),
             max_candidates=_int_env("MAX_CANDIDATES", 60),
             bootstrap_results=_int_env("BOOTSTRAP_RESULTS", 120),
-            discovery_slots=_int_env("DISCOVERY_SLOTS", 5),
+            method_candidate_slots=_int_env("METHOD_CANDIDATE_SLOTS", 40),
+            hep_application_slots=_int_env("HEP_APPLICATION_SLOTS", 10),
+            discovery_slots=_int_env("DISCOVERY_SLOTS", 10),
             max_deep_reviews=_int_env("MAX_DEEP_REVIEWS", 5),
+            min_deep_reviews=_int_env("MIN_DEEP_REVIEWS", 3),
             publish_threshold=_float_env("PUBLISH_THRESHOLD", 0.55),
-            review_threshold=_float_env("REVIEW_THRESHOLD", 0.72),
+            review_threshold=_float_env("REVIEW_THRESHOLD", 0.45),
             feed_max_items=_int_env("FEED_MAX_ITEMS", 300),
             state_retention_days=_int_env("STATE_RETENTION_DAYS", 365),
             request_timeout_seconds=_float_env(
                 "REQUEST_TIMEOUT_SECONDS", 90.0
+            ),
+            feedback_repository=os.getenv("FEEDBACK_REPOSITORY", "").strip(
+                "/"
             ),
             user_agent=os.getenv(
                 "ARXIV_USER_AGENT",
