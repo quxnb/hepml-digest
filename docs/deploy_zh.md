@@ -601,7 +601,7 @@ jobs:
     steps:
       - name: Deploy Pages
         id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v5
 ```
 
 这里选择 UTC 00:17，即北京时间 08:17。避开整点可以减少 GitHub Actions 高峰期排队。GitHub 官方说明定时任务默认以 UTC 运行，并可能因高负载延迟；定时工作流只运行默认分支上的版本。参考 [GitHub Actions 定时触发](https://docs.github.com/en/actions/reference/workflows-and-actions/events-that-trigger-workflows)。

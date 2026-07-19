@@ -190,7 +190,8 @@ https://github.com/<用户名>/<仓库名>/settings/pages
 ### 日志提示 Node.js 20 deprecated
 
 项目工作流使用 Node 24 版本的官方 actions：`checkout@v6`、
-`setup-python@v6`、`configure-pages@v6` 和 `upload-pages-artifact@v5`。
+`setup-python@v6`、`configure-pages@v6`、`upload-pages-artifact@v5`
+和 `deploy-pages@v5`。
 如果仍看到该警告，检查远程仓库是否已经包含最新的工作流提交。
 
 ### RSS 可以打开，但没有任何论文条目
