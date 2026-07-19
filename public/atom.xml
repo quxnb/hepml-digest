@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh-CN">
   <id>https://quxnb.github.io/hepml-digest</id>
   <title>Daily HEP-ML Digest</title>
-  <updated>2026-07-19T06:25:52.729715+00:00</updated>
+  <updated>2026-07-19T06:39:17.746477+00:00</updated>
   <author>
     <name>HEP-ML Digest Bot</name>
   </author>
@@ -10,4 +10,19 @@
   <link href="https://quxnb.github.io/hepml-digest/atom.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
   <subtitle>统计与机器学习方法对高能实验物理的每日启发</subtitle>
+  <entry>
+    <id>arxiv:2607.15023:hepml-v1</id>
+    <title>Comparative study and optimization of SDHCAL hadronic energy reconstruction methods</title>
+    <updated>2026-07-19T06:37:52.095802+00:00</updated>
+    <author>
+      <name>Tanguy Pasquier, Gérald Grenier, Imad Laktineh</name>
+    </author>
+    <content type="html">&lt;p&gt;&lt;strong&gt;方法：&lt;/strong&gt;线性、二次、分段和多项式回归&lt;/p&gt;&lt;p&gt;&lt;strong&gt;相关性：&lt;/strong&gt;0.70；&lt;strong&gt;证据等级：&lt;/strong&gt;direct&lt;/p&gt;&lt;p&gt;&lt;strong&gt;初筛理由：&lt;/strong&gt;直接应用于SDHCAL量能器，优化强子能量重建方法&lt;/p&gt;&lt;p&gt;&lt;em&gt;本条目仅完成摘要级筛选。&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;a href="https://arxiv.org/abs/2607.15023"&gt;arXiv 页面&lt;/a&gt; · hep-ex, physics.ins-det&lt;/p&gt;</content>
+    <link href="https://arxiv.org/abs/2607.15023"/>
+    <summary>直接应用于SDHCAL量能器，优化强子能量重建方法</summary>
+    <category term="hep-ex"/>
+    <category term="physics.ins-det"/>
+    <category term="量能器能量重建"/>
+    <published>2026-07-16T14:10:39+00:00</published>
+  </entry>
 </feed>
