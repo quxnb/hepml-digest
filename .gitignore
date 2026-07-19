@@ -1,0 +1,12 @@
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.coverage
+.env
+build/
+*.log
+
+# Generated site files are intentionally versioned by the daily workflow.
+!public/
