@@ -20,6 +20,7 @@
 - 深度分析：`deepseek-v4-pro`，开启思考；
 - 每日最多初筛 60 篇、深度分析 5 篇；
 - 状态：`data/state.json`；
+- 首次运行：从 arXiv API 回填最近 120 篇，再按规则筛选；
 - 输出：`public/atom.xml`、`public/rss.xml`、`public/index.html`；
 - 调度：北京时间约 08:17；
 - 托管：GitHub Pages。
@@ -112,6 +113,9 @@ Settings → Secrets and variables → Actions → New repository secret
 
 ### 启用 Pages
 
+这一步必须在第一次运行工作流前手动完成。仓库刚创建时，Pages API 尚不存在，
+`configure-pages` 会返回 `Get Pages site failed: Not Found`。
+
 进入：
 
 ```text
@@ -139,6 +143,7 @@ https://<用户名>.github.io/hepml-digest/rss.xml
 | `REVIEW_MODEL` | `deepseek-v4-pro` | 深度分析模型 |
 | `ARXIV_CATEGORIES` | 四个默认分类 | 逗号分隔 |
 | `MAX_CANDIDATES` | `60` | 每次最多初筛数 |
+| `BOOTSTRAP_RESULTS` | `120` | 状态为空时回填的最近论文数 |
 | `DISCOVERY_SLOTS` | `5` | 无关键词候选探索位 |
 | `MAX_DEEP_REVIEWS` | `5` | 每次最多深度分析数 |
 | `PUBLISH_THRESHOLD` | `0.55` | RSS 发布阈值 |
@@ -172,6 +177,27 @@ https://<用户名>.github.io/hepml-digest/rss.xml
 ### 工作流成功，但 GitHub Pages 没有地址
 
 确认 Pages 的 Source 已设置为 `GitHub Actions`，并检查 deploy job 是否获得 `pages: write` 和 `id-token: write`。
+
+如果日志包含 `Get Pages site failed: Not Found`，说明 Pages 尚未首次启用。进入：
+
+```text
+https://github.com/<用户名>/<仓库名>/settings/pages
+```
+
+将 `Build and deployment → Source` 设置为 `GitHub Actions`，保存后重新运行失败的工作流。
+不建议给工作流配置高权限 PAT 来自动完成这项只需执行一次的设置。
+
+### 日志提示 Node.js 20 deprecated
+
+项目工作流使用 Node 24 版本的官方 actions：`checkout@v6`、
+`setup-python@v6`、`configure-pages@v6` 和 `upload-pages-artifact@v5`。
+如果仍看到该警告，检查远程仓库是否已经包含最新的工作流提交。
+
+### RSS 可以打开，但没有任何论文条目
+
+arXiv 在周末可能返回空的分类 RSS。项目在状态库为空时会通过 arXiv API
+一次性回填最近 120 篇论文；后续无新论文时会继续保留历史条目。
+如果首次运行使用的是旧版本工作流，更新代码后重新手动运行一次即可。
 
 ### 定时任务没有准点运行
 

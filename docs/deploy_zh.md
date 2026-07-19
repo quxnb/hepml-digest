@@ -131,6 +131,7 @@ header-includes:
 
 ```text
 MAX_CANDIDATES=60
+BOOTSTRAP_RESULTS=120
 MAX_DEEP_REVIEWS=5
 MAX_FULLTEXT_CHARS=40000
 MAX_RETRIES=3
@@ -559,11 +560,11 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 30
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
         with:
           fetch-depth: 0
 
-      - uses: actions/setup-python@v5
+      - uses: actions/setup-python@v6
         with:
           python-version: "3.12"
           cache: pip
@@ -585,9 +586,9 @@ jobs:
           git diff --cached --quiet || git commit -m "daily digest"
           git push
 
-      - uses: actions/configure-pages@v5
+      - uses: actions/configure-pages@v6
 
-      - uses: actions/upload-pages-artifact@v4
+      - uses: actions/upload-pages-artifact@v5
         with:
           path: public
 

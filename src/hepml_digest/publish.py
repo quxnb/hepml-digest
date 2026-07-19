@@ -5,6 +5,7 @@ import os
 import tempfile
 from datetime import datetime, timezone
 from pathlib import Path
+from xml.etree import ElementTree
 
 from feedgen.feed import FeedGenerator
 
@@ -82,7 +83,7 @@ def _eligible_records(
 
 
 def _build_feed(
-    records: list[Record], site_url: str, feed_title: str
+    records: list[Record], site_url: str, feed_title: str, self_url: str
 ) -> FeedGenerator:
     now = datetime.now(timezone.utc)
     feed = FeedGenerator()
@@ -91,7 +92,7 @@ def _build_feed(
     feed.subtitle("统计与机器学习方法对高能实验物理的每日启发")
     feed.author({"name": "HEP-ML Digest Bot"})
     feed.link(href=site_url, rel="alternate")
-    feed.link(href=f"{site_url}/atom.xml", rel="self")
+    feed.link(href=self_url, rel="self")
     feed.language("zh-CN")
     feed.updated(now)
 
@@ -175,9 +176,20 @@ def publish(
 ) -> int:
     output_dir.mkdir(parents=True, exist_ok=True)
     records = _eligible_records(state, publish_threshold, max_items)
-    feed = _build_feed(records, site_url, feed_title)
-    atom_payload = feed.atom_str(pretty=True)
-    rss_payload = feed.rss_str(pretty=True)
+    atom_feed = _build_feed(
+        records, site_url, feed_title, f"{site_url}/atom.xml"
+    )
+    rss_feed = _build_feed(
+        records, site_url, feed_title, f"{site_url}/rss.xml"
+    )
+    atom_payload = atom_feed.atom_str(pretty=True)
+    rss_root = ElementTree.fromstring(rss_feed.rss_str(pretty=True))
+    channel_link = rss_root.find("./channel/link")
+    if channel_link is not None:
+        channel_link.text = site_url
+    rss_payload = ElementTree.tostring(
+        rss_root, encoding="utf-8", xml_declaration=True
+    )
     index_payload = _build_index(
         records, site_url, feed_title
     ).encode("utf-8")

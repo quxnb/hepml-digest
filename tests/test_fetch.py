@@ -28,6 +28,14 @@ def test_parse_feed_and_clean_html():
     assert keyword_score(paper) >= 8
 
 
+def test_parse_arxiv_api_atom_without_synthetic_category():
+    payload = Path("tests/fixtures/arxiv_atom.xml").read_bytes()
+    papers = parse_feed_bytes(payload)
+    assert len(papers) == 1
+    assert papers[0].arxiv_id == "2607.04567"
+    assert papers[0].categories == ["stat.ML"]
+
+
 def test_merge_cross_list_categories():
     payload = Path("tests/fixtures/arxiv_rss.xml").read_bytes()
     first = parse_feed_bytes(payload, "stat.ML")[0]

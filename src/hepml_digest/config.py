@@ -32,6 +32,7 @@ class Settings:
     output_dir: Path = Path("public")
     prompt_dir: Path = Path("prompts")
     max_candidates: int = 60
+    bootstrap_results: int = 120
     discovery_slots: int = 5
     max_deep_reviews: int = 5
     publish_threshold: float = 0.55
@@ -66,6 +67,7 @@ class Settings:
             output_dir=Path(os.getenv("OUTPUT_DIR", "public")),
             prompt_dir=Path(os.getenv("PROMPT_DIR", "prompts")),
             max_candidates=_int_env("MAX_CANDIDATES", 60),
+            bootstrap_results=_int_env("BOOTSTRAP_RESULTS", 120),
             discovery_slots=_int_env("DISCOVERY_SLOTS", 5),
             max_deep_reviews=_int_env("MAX_DEEP_REVIEWS", 5),
             publish_threshold=_float_env("PUBLISH_THRESHOLD", 0.55),

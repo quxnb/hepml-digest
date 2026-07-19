@@ -6,6 +6,7 @@ import html
 import logging
 import re
 import urllib.request
+from urllib.parse import urlencode
 from datetime import datetime, timezone
 from email.utils import parsedate_to_datetime
 from typing import Iterable
@@ -73,10 +74,15 @@ def _entry_link(entry: dict) -> str:
     raise ValueError("RSS entry has no arXiv link")
 
 
-def parse_feed_bytes(payload: bytes, source_category: str) -> list[Paper]:
+def parse_feed_bytes(
+    payload: bytes, source_category: str | None = None
+) -> list[Paper]:
     parsed = feedparser.parse(payload)
     if parsed.bozo and not parsed.entries:
-        raise ValueError(f"Invalid feed for {source_category}: {parsed.bozo_exception}")
+        raise ValueError(
+            f"Invalid feed for {source_category or 'arXiv API'}: "
+            f"{parsed.bozo_exception}"
+        )
 
     papers: list[Paper] = []
     for entry in parsed.entries:
@@ -93,7 +99,14 @@ def parse_feed_bytes(payload: bytes, source_category: str) -> list[Paper]:
                 for item in entry.get("tags", [])
                 if item.get("term", "").strip()
             ]
-            categories = sorted(set([source_category, *tags]))
+            categories = sorted(
+                set(
+                    [
+                        *([] if source_category is None else [source_category]),
+                        *tags,
+                    ]
+                )
+            )
             published = _entry_datetime(entry, "published")
             updated = _entry_datetime(entry, "updated")
             papers.append(
@@ -133,6 +146,39 @@ def fetch_feeds(
         with urllib.request.urlopen(request, timeout=timeout) as response:
             papers.extend(parse_feed_bytes(response.read(), category))
     return merge_duplicates(papers)
+
+
+def fetch_recent(
+    categories: Iterable[str],
+    max_results: int,
+    user_agent: str,
+    timeout: float = 30.0,
+) -> list[Paper]:
+    """Fetch recent papers once to seed a new, otherwise-empty digest."""
+    categories = tuple(categories)
+    if not categories or max_results <= 0:
+        return []
+    query = " OR ".join(f"cat:{category}" for category in categories)
+    parameters = urlencode(
+        {
+            "search_query": query,
+            "start": 0,
+            "max_results": min(max_results, 200),
+            "sortBy": "submittedDate",
+            "sortOrder": "descending",
+        }
+    )
+    url = f"https://export.arxiv.org/api/query?{parameters}"
+    request = urllib.request.Request(
+        url,
+        headers={
+            "User-Agent": user_agent,
+            "Accept": "application/atom+xml, application/xml",
+        },
+    )
+    LOGGER.info("Bootstrapping from arXiv API with %d results", max_results)
+    with urllib.request.urlopen(request, timeout=timeout) as response:
+        return merge_duplicates(parse_feed_bytes(response.read()))
 
 
 def merge_duplicates(papers: Iterable[Paper]) -> list[Paper]:

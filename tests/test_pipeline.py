@@ -1,4 +1,5 @@
 from pathlib import Path
+from xml.etree import ElementTree
 
 from hepml_digest.cli import _demo_papers
 from hepml_digest.config import Settings
@@ -26,3 +27,11 @@ def test_demo_pipeline_is_idempotent(tmp_path: Path):
     assert (settings.output_dir / "rss.xml").exists()
     assert (settings.output_dir / "index.html").exists()
     assert len(load_state(settings.state_file).records) == 2
+
+    rss_root = ElementTree.parse(settings.output_dir / "rss.xml").getroot()
+    assert rss_root.findtext("./channel/link") == settings.site_url
+    atom_link = rss_root.find(
+        "./channel/{http://www.w3.org/2005/Atom}link"
+    )
+    assert atom_link is not None
+    assert atom_link.attrib["href"] == f"{settings.site_url}/rss.xml"

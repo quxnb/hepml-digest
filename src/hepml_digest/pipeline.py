@@ -4,7 +4,7 @@ import logging
 from datetime import datetime, timezone
 
 from .config import Settings
-from .fetch import fetch_feeds, select_candidates
+from .fetch import fetch_feeds, fetch_recent, merge_duplicates, select_candidates
 from .llm import Analyzer
 from .models import Paper, Record
 from .publish import publish
@@ -21,6 +21,7 @@ def run_pipeline(
 ) -> dict[str, int]:
     state = load_state(settings.state_file)
     prune_state(state, settings.state_retention_days)
+    bootstrap_fetched = 0
 
     if papers is None:
         papers = fetch_feeds(
@@ -28,6 +29,15 @@ def run_pipeline(
             settings.user_agent,
             timeout=min(settings.request_timeout_seconds, 60.0),
         )
+        if not state.records and settings.bootstrap_results > 0:
+            bootstrap_papers = fetch_recent(
+                settings.categories,
+                settings.bootstrap_results,
+                settings.user_agent,
+                timeout=min(settings.request_timeout_seconds, 60.0),
+            )
+            bootstrap_fetched = len(bootstrap_papers)
+            papers = merge_duplicates([*papers, *bootstrap_papers])
 
     unseen = [
         paper for paper in papers if paper.version_key not in state.records
@@ -103,6 +113,7 @@ def run_pipeline(
     save_state(settings.state_file, state)
     return {
         "fetched": len(papers),
+        "bootstrap_fetched": bootstrap_fetched,
         "unseen": len(unseen),
         "screened": screened,
         "reviewed": reviewed,
