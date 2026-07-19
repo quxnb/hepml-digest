@@ -165,7 +165,7 @@ https://<用户名>.github.io/hepml-digest/rss.xml
 
 详细设计、国内模型比较和 PDF 正文扩展方案见：
 
-- [国内模型 HEP-ML 日报低成本部署指南](docs/国内模型_HEP-ML_日报低成本部署指南.pdf)
+- [国内模型 HEP-ML 日报低成本部署指南](docs/deploy_zh.md)
 
 ## 8. 常见问题
 
