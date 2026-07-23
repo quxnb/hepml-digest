@@ -8,7 +8,104 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Sun, 19 Jul 2026 06:56:37 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 23 Jul 2026 04:10:59 +0000</lastBuildDate>
+    <item>
+      <title>Classical Hardware Acceleration of Quantum Autoencoders for Real-Time Anomaly Detection in Collider Experiments</title>
+      <link>https://arxiv.org/abs/2607.20302</link>
+      <description>直接应用于高能物理对撞机实验的实时异常检测触发系统，并完成FPGA实现。</description>
+      <ns1:encoded>&lt;p&gt;&lt;strong&gt;栏目：&lt;/strong&gt;HEP 直接应用&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法：&lt;/strong&gt;量子自编码器，FPGA加速&lt;/p&gt;&lt;p&gt;&lt;strong&gt;相关性：&lt;/strong&gt;0.90；&lt;strong&gt;证据等级：&lt;/strong&gt;direct&lt;/p&gt;&lt;p&gt;&lt;strong&gt;初筛理由：&lt;/strong&gt;直接应用于高能物理对撞机实验的实时异常检测触发系统，并完成FPGA实现。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法总结：&lt;/strong&gt;提出在FPGA上经典加速量子自编码器，用于对撞机实验实时异常检测触发。模型性能与先进经典方法相当，FPGA实现满足未来对撞机触发系统的资源与时序约束，为经典数据采集管线引入更高能力模型并促进量子就绪。&lt;/p&gt;&lt;h4&gt;论文明确支持的结论&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;变分量子自编码器在实时异常检测触发中达到与经典方法相当的性能&lt;/li&gt;&lt;li&gt;FPGA合成后满足未来对撞机触发应用的资源使用和时序约束&lt;/li&gt;&lt;li&gt;首次在HEP触发器中实现QML模型的FPGA部署&lt;/li&gt;&lt;/ul&gt;&lt;h4&gt;对高能实验物理的潜在帮助&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;迁移至LHC或未来对撞机触发系统，实现低延迟在线异常检测&lt;/li&gt;&lt;li&gt;替代或辅助现有经典触发算法，提升对罕见信号的灵敏度&lt;/li&gt;&lt;li&gt;作为量子就绪基础设施，未来可无缝切换至真实量子处理器&lt;/li&gt;&lt;/ul&gt;&lt;h4&gt;迁移风险&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;从模拟到数据的偏移：模型在模拟样本上训练，真实数据分布差异可能导致性能下降&lt;/li&gt;&lt;li&gt;校准依赖性：探测器校准变化可能影响输入特征分布，模型需持续更新&lt;/li&gt;&lt;li&gt;资源限制：FPGA上量子电路仿真规模受限，可能无法承载更复杂的模型&lt;/li&gt;&lt;li&gt;推理延迟抖动：实时触发的严格延迟约束（微秒级）要求保证最坏情况时间&lt;/li&gt;&lt;li&gt;系统性误差：量子自编码器重建误差与物理本底特征的定义需与实验系统误差解耦&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;strong&gt;最小验证方案：&lt;/strong&gt;在真实触发数据流中部署FPGA固件，并行运行经典触发与QML模型，比较触发效率、延迟分布和资源占用；利用已知物理信号注入测试异常检测灵敏度；长期监测校准变化对模型稳定性的影响。&lt;/p&gt;&lt;p&gt;&lt;a href="https://arxiv.org/abs/2607.20302"&gt;arXiv 页面&lt;/a&gt; · &lt;a href="https://github.com/quxnb/hepml-digest/issues/new?title=%5B%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%5D+2607.20302+Classical+Hardware+Acceleration+of+Quantum+Autoencoders+for+Real-Time+Anomaly+De&amp;amp;body=%23%23+%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%0A%0A-+arXiv%EF%BC%9A%5B2607.20302%5D%28https%3A%2F%2Farxiv.org%2Fabs%2F2607.20302%29%0A-+%E6%A0%8F%E7%9B%AE%EF%BC%9AHEP+%E7%9B%B4%E6%8E%A5%E5%BA%94%E7%94%A8%0A-+%E5%BD%93%E5%89%8D%E7%9B%B8%E5%85%B3%E6%80%A7%EF%BC%9A0.90%0A-+%E5%BD%93%E5%89%8D%E8%AF%81%E6%8D%AE%E7%AD%89%E7%BA%A7%EF%BC%9Adirect%0A%0A%23%23+%E5%88%A4%E6%96%AD%0A%0A-+%5B+%5D+%E6%8E%A8%E8%8D%90%E4%BF%9D%E7%95%99%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E5%90%88%E7%90%86%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E8%BF%87%E5%BA%A6%E6%8E%A8%E6%B5%8B%0A-+%5B+%5D+%E5%BA%94%E7%A7%BB%E8%87%B3%E5%8F%A6%E4%B8%80%E4%B8%AA%E6%A0%8F%E7%9B%AE%0A-+%5B+%5D+%E5%BB%BA%E8%AE%AE%E7%B2%BE%E8%AF%BB%E5%85%A8%E6%96%87%0A%0A%23%23+%E8%A1%A5%E5%85%85%E8%AF%B4%E6%98%8E%0A%0A"&gt;提交反馈&lt;/a&gt; · cs.LG, hep-ph, physics.ins-det&lt;/p&gt;</ns1:encoded>
+      <guid isPermaLink="false">arxiv:2607.20302:hepml-v1</guid>
+      <category>cs.LG</category>
+      <category>hep-ph</category>
+      <category>physics.ins-det</category>
+      <category>track:hep_application</category>
+      <category>实时数据处理</category>
+      <category>异常检测</category>
+      <category>触发系统</category>
+      <pubDate>Thu, 23 Jul 2026 04:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>High-accuracy ultrasonic positioning of calibration sources in the Jiangmen Underground Neutrino Observatory</title>
+      <link>https://arxiv.org/abs/2607.20354</link>
+      <description>直接针对HEP探测器校准中的源定位问题，方法可迁移于类似液体闪烁体或大型探测器</description>
+      <ns1:encoded>&lt;p&gt;&lt;strong&gt;栏目：&lt;/strong&gt;HEP 直接应用&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法：&lt;/strong&gt;超声定位，结合声速建模、波形到达时间重建与接收器几何原位校准&lt;/p&gt;&lt;p&gt;&lt;strong&gt;相关性：&lt;/strong&gt;0.70；&lt;strong&gt;证据等级：&lt;/strong&gt;direct&lt;/p&gt;&lt;p&gt;&lt;strong&gt;初筛理由：&lt;/strong&gt;直接针对HEP探测器校准中的源定位问题，方法可迁移于类似液体闪烁体或大型探测器&lt;/p&gt;&lt;p&gt;&lt;em&gt;本条目仅完成摘要级筛选。&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;a href="https://arxiv.org/abs/2607.20354"&gt;arXiv 页面&lt;/a&gt; · &lt;a href="https://github.com/quxnb/hepml-digest/issues/new?title=%5B%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%5D+2607.20354+High-accuracy+ultrasonic+positioning+of+calibration+sources+in+the+Jiangmen+Unde&amp;amp;body=%23%23+%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%0A%0A-+arXiv%EF%BC%9A%5B2607.20354%5D%28https%3A%2F%2Farxiv.org%2Fabs%2F2607.20354%29%0A-+%E6%A0%8F%E7%9B%AE%EF%BC%9AHEP+%E7%9B%B4%E6%8E%A5%E5%BA%94%E7%94%A8%0A-+%E5%BD%93%E5%89%8D%E7%9B%B8%E5%85%B3%E6%80%A7%EF%BC%9A0.70%0A-+%E5%BD%93%E5%89%8D%E8%AF%81%E6%8D%AE%E7%AD%89%E7%BA%A7%EF%BC%9Adirect%0A%0A%23%23+%E5%88%A4%E6%96%AD%0A%0A-+%5B+%5D+%E6%8E%A8%E8%8D%90%E4%BF%9D%E7%95%99%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E5%90%88%E7%90%86%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E8%BF%87%E5%BA%A6%E6%8E%A8%E6%B5%8B%0A-+%5B+%5D+%E5%BA%94%E7%A7%BB%E8%87%B3%E5%8F%A6%E4%B8%80%E4%B8%AA%E6%A0%8F%E7%9B%AE%0A-+%5B+%5D+%E5%BB%BA%E8%AE%AE%E7%B2%BE%E8%AF%BB%E5%85%A8%E6%96%87%0A%0A%23%23+%E8%A1%A5%E5%85%85%E8%AF%B4%E6%98%8E%0A%0A"&gt;提交反馈&lt;/a&gt; · hep-ex, physics.ins-det&lt;/p&gt;</ns1:encoded>
+      <guid isPermaLink="false">arxiv:2607.20354:hepml-v1</guid>
+      <category>hep-ex</category>
+      <category>physics.ins-det</category>
+      <category>track:hep_application</category>
+      <category>探测器校准位置重建</category>
+      <pubDate>Thu, 23 Jul 2026 04:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Real-time graph neural networks on FPGAs for the Belle II electromagnetic calorimeter</title>
+      <link>https://arxiv.org/abs/2602.15118</link>
+      <description>直接在Belle II实验的电磁量能器触发中实现并验证了GNN，显著改进位置分辨率和聚类效率。</description>
+      <ns1:encoded>&lt;p&gt;&lt;strong&gt;栏目：&lt;/strong&gt;HEP 直接应用&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法：&lt;/strong&gt;Graph Neural Network (GNN) on FPGA for real-time trigger&lt;/p&gt;&lt;p&gt;&lt;strong&gt;相关性：&lt;/strong&gt;1.00；&lt;strong&gt;证据等级：&lt;/strong&gt;direct&lt;/p&gt;&lt;p&gt;&lt;strong&gt;初筛理由：&lt;/strong&gt;直接在Belle II实验的电磁量能器触发中实现并验证了GNN，显著改进位置分辨率和聚类效率。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法总结：&lt;/strong&gt;在Belle II电磁量能器触发中实现基于FPGA的实时图神经网络，以触发单元为节点进行聚类、特征提取和信号分类，端到端延迟3.168微秒，支持MHz触发率。在模拟和碰撞数据上评估，高能簇位置分辨率最高提升18%，低能孤立簇纯度提升20%，重叠簇效率提升20%，同时保持能量分辨率与基线相当。系统已集成并满负荷运行，但延迟超过当前触发决策预算，是触发中GNN实时重建的第一步。&lt;/p&gt;&lt;h4&gt;论文明确支持的结论&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;能量分辨率与基线触发相当&lt;/li&gt;&lt;li&gt;中心区高能簇位置分辨率最高提升18%&lt;/li&gt;&lt;li&gt;低能孤立簇簇纯度提升20%&lt;/li&gt;&lt;li&gt;重叠簇簇效率提升20%&lt;/li&gt;&lt;li&gt;信号分类器可在固定信号保留率下抑制本底&lt;/li&gt;&lt;li&gt;端到端延迟3.168微秒，支持MHz触发率，100%上线运行&lt;/li&gt;&lt;li&gt;首次在对撞机触发中实现基于FPGA的GNN实时重建&lt;/li&gt;&lt;/ul&gt;&lt;h4&gt;对高能实验物理的潜在帮助&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;可迁移至其他对撞机实验的触发系统，如LHC上的ATLAS/CMS量能器触发&lt;/li&gt;&lt;li&gt;用于其他Belle II子探测器（如KLμ探测器）的实时模式识别&lt;/li&gt;&lt;li&gt;拓展到在线粒子流重建或喷注聚类&lt;/li&gt;&lt;li&gt;结合跟踪探测器实现实时联合重建&lt;/li&gt;&lt;/ul&gt;&lt;h4&gt;迁移风险&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;当前实现延迟超过Belle II标准触发决策预算，可能不满足更严苛的延迟要求&lt;/li&gt;&lt;li&gt;模型在不同运行条件或探测器条件下的泛化能力未验证，存在模拟到数据的偏移风险&lt;/li&gt;&lt;li&gt;FPGA资源限制可能影响图规模或模型复杂度的扩展&lt;/li&gt;&lt;li&gt;训练样本依赖特定模拟，可能引入系统误差，需评估 nuisance 参数影响&lt;/li&gt;&lt;li&gt;实时校准和探测器几何差异可能影响性能&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;strong&gt;最小验证方案：&lt;/strong&gt;在新实验场景下，使用该实验的模拟数据训练GNN，编译到同类FPGA，测试延迟和资源占用；在少量真实碰撞数据上比较位置分辨率、簇纯度和效率，并与传统算法对比；通过改变束流条件或噪声水平评估稳健性。&lt;/p&gt;&lt;p&gt;&lt;a href="https://arxiv.org/abs/2602.15118"&gt;arXiv 页面&lt;/a&gt; · &lt;a href="https://github.com/quxnb/hepml-digest/issues/new?title=%5B%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%5D+2602.15118+Real-time+graph+neural+networks+on+FPGAs+for+the+Belle+II+electromagnetic+calori&amp;amp;body=%23%23+%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%0A%0A-+arXiv%EF%BC%9A%5B2602.15118%5D%28https%3A%2F%2Farxiv.org%2Fabs%2F2602.15118%29%0A-+%E6%A0%8F%E7%9B%AE%EF%BC%9AHEP+%E7%9B%B4%E6%8E%A5%E5%BA%94%E7%94%A8%0A-+%E5%BD%93%E5%89%8D%E7%9B%B8%E5%85%B3%E6%80%A7%EF%BC%9A1.00%0A-+%E5%BD%93%E5%89%8D%E8%AF%81%E6%8D%AE%E7%AD%89%E7%BA%A7%EF%BC%9Adirect%0A%0A%23%23+%E5%88%A4%E6%96%AD%0A%0A-+%5B+%5D+%E6%8E%A8%E8%8D%90%E4%BF%9D%E7%95%99%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E5%90%88%E7%90%86%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E8%BF%87%E5%BA%A6%E6%8E%A8%E6%B5%8B%0A-+%5B+%5D+%E5%BA%94%E7%A7%BB%E8%87%B3%E5%8F%A6%E4%B8%80%E4%B8%AA%E6%A0%8F%E7%9B%AE%0A-+%5B+%5D+%E5%BB%BA%E8%AE%AE%E7%B2%BE%E8%AF%BB%E5%85%A8%E6%96%87%0A%0A%23%23+%E8%A1%A5%E5%85%85%E8%AF%B4%E6%98%8E%0A%0A"&gt;提交反馈&lt;/a&gt; · hep-ex, physics.ins-det&lt;/p&gt;</ns1:encoded>
+      <guid isPermaLink="false">arxiv:2602.15118:hepml-v1</guid>
+      <category>calorimeter clustering</category>
+      <category>energy reconstruction</category>
+      <category>hep-ex</category>
+      <category>particle identification</category>
+      <category>physics.ins-det</category>
+      <category>track:hep_application</category>
+      <category>trigger</category>
+      <pubDate>Thu, 23 Jul 2026 04:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Machine Can Automatically Discover Parametric Functions to Model HEP Data</title>
+      <link>https://arxiv.org/abs/2607.19750</link>
+      <description>直接在CMS和ATLAS二射流谱上验证，发现已知函数，自动拟合流程明确适用于HEP分析。</description>
+      <ns1:encoded>&lt;p&gt;&lt;strong&gt;栏目：&lt;/strong&gt;HEP 直接应用&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法：&lt;/strong&gt;符号回归（symbolic regression）结合不确定性建模&lt;/p&gt;&lt;p&gt;&lt;strong&gt;相关性：&lt;/strong&gt;0.95；&lt;strong&gt;证据等级：&lt;/strong&gt;direct&lt;/p&gt;&lt;p&gt;&lt;strong&gt;初筛理由：&lt;/strong&gt;直接在CMS和ATLAS二射流谱上验证，发现已知函数，自动拟合流程明确适用于HEP分析。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法总结：&lt;/strong&gt;本文提出基于符号回归的自动化参数函数发现方法，用于建模高能物理分箱数据。传统手动猜测函数形式的过程被数据驱动的搜索替代，无需先验知识。SymbolFit包结合不确定性建模，在CMS和ATLAS Run 2双喷注谱上验证：560次独立运行生成超过1000个χ²/NDF≈1的函数，其中111次重新发现了已发表分析中使用的函数。&lt;/p&gt;&lt;h4&gt;论文明确支持的结论&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;符号回归可以自动发现适合HEP分箱数据的参数化函数&lt;/li&gt;&lt;li&gt;SymbolFit在CMS和ATLAS双喷注谱上生成超过1000个函数，χ²/NDF≈1&lt;/li&gt;&lt;li&gt;111个运行重新发现了已发表的dijet和UA2函数&lt;/li&gt;&lt;/ul&gt;&lt;h4&gt;对高能实验物理的潜在帮助&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;将符号回归应用于其他HEP分布（如不变质量、横动量）的自动背景建模，减少人工干预&lt;/li&gt;&lt;li&gt;用于自动发现新物理信号的参数化模型，加速搜索分析&lt;/li&gt;&lt;li&gt;集成到分析框架中，实现背景估计流程的自动化&lt;/li&gt;&lt;/ul&gt;&lt;h4&gt;迁移风险&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;符号回归可能产生过度拟合的函数，在数据分布外缺乏稳健性&lt;/li&gt;&lt;li&gt;函数可能违反物理约束（如单调性、正值性），且未内禀探测器几何或对称性&lt;/li&gt;&lt;li&gt;不确定建模可能未完全涵盖系统误差及模拟与数据之间的差异&lt;/li&gt;&lt;li&gt;搜索过程计算成本较高，可能影响迭代分析效率&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;strong&gt;最小验证方案：&lt;/strong&gt;使用已知物理过程生成伪实验数据，验证自动发现函数的拟合优度和偏差分布，并与手动函数比较；在独立数据样本上测试外推能力；对主要系统不确定性源进行扰动，检验函数的稳定性。&lt;/p&gt;&lt;p&gt;&lt;a href="https://arxiv.org/abs/2607.19750"&gt;arXiv 页面&lt;/a&gt; · &lt;a href="https://github.com/quxnb/hepml-digest/issues/new?title=%5B%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%5D+2607.19750+Machine+Can+Automatically+Discover+Parametric+Functions+to+Model+HEP+Data&amp;amp;body=%23%23+%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%0A%0A-+arXiv%EF%BC%9A%5B2607.19750%5D%28https%3A%2F%2Farxiv.org%2Fabs%2F2607.19750%29%0A-+%E6%A0%8F%E7%9B%AE%EF%BC%9AHEP+%E7%9B%B4%E6%8E%A5%E5%BA%94%E7%94%A8%0A-+%E5%BD%93%E5%89%8D%E7%9B%B8%E5%85%B3%E6%80%A7%EF%BC%9A0.95%0A-+%E5%BD%93%E5%89%8D%E8%AF%81%E6%8D%AE%E7%AD%89%E7%BA%A7%EF%BC%9Adirect%0A%0A%23%23+%E5%88%A4%E6%96%AD%0A%0A-+%5B+%5D+%E6%8E%A8%E8%8D%90%E4%BF%9D%E7%95%99%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E5%90%88%E7%90%86%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E8%BF%87%E5%BA%A6%E6%8E%A8%E6%B5%8B%0A-+%5B+%5D+%E5%BA%94%E7%A7%BB%E8%87%B3%E5%8F%A6%E4%B8%80%E4%B8%AA%E6%A0%8F%E7%9B%AE%0A-+%5B+%5D+%E5%BB%BA%E8%AE%AE%E7%B2%BE%E8%AF%BB%E5%85%A8%E6%96%87%0A%0A%23%23+%E8%A1%A5%E5%85%85%E8%AF%B4%E6%98%8E%0A%0A"&gt;提交反馈&lt;/a&gt; · cs.LG, hep-ex&lt;/p&gt;</ns1:encoded>
+      <guid isPermaLink="false">arxiv:2607.19750:hepml-v1</guid>
+      <category>Binned数据分析（binned data analysis）</category>
+      <category>cs.LG</category>
+      <category>hep-ex</category>
+      <category>track:hep_application</category>
+      <category>二射流共振搜索（dijet resonance search）</category>
+      <category>函数拟合（function fitting）</category>
+      <pubDate>Thu, 23 Jul 2026 04:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Enhancing next token prediction based pre-training for jet foundation models</title>
+      <link>https://arxiv.org/abs/2512.04149</link>
+      <description>直接针对高能物理喷注数据，提出改进的预训练方法，并在下游分类任务验证有效。</description>
+      <ns1:encoded>&lt;p&gt;&lt;strong&gt;栏目：&lt;/strong&gt;HEP 直接应用&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法：&lt;/strong&gt;混合掩码建模与自回归预测的预训练策略&lt;/p&gt;&lt;p&gt;&lt;strong&gt;相关性：&lt;/strong&gt;1.00；&lt;strong&gt;证据等级：&lt;/strong&gt;direct&lt;/p&gt;&lt;p&gt;&lt;strong&gt;初筛理由：&lt;/strong&gt;直接针对高能物理喷注数据，提出改进的预训练方法，并在下游分类任务验证有效。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法总结：&lt;/strong&gt;针对喷注基础模型，在前期OmniJet-α工作的基础上，提出增强型下一令牌预测预训练方法。采用混合架构，模型输入使用连续粒子特征向量，仅预测目标使用令牌ID，从而充分利用连续信息。同时探索掩蔽粒子建模与生成式学习的联合预训练策略。实验表明，这些改进显著提升下游分类任务性能，同时保持生成能力不损失。&lt;/p&gt;&lt;h4&gt;论文明确支持的结论&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;采用混合架构（连续特征输入，令牌ID预测目标）进行预训练，可以在不损失生成性能的前提下提升下游分类性能&lt;/li&gt;&lt;li&gt;联合掩蔽粒子建模与生成式学习的预训练策略进一步提升了分类任务表现&lt;/li&gt;&lt;/ul&gt;&lt;h4&gt;对高能实验物理的潜在帮助&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;改进的喷注表征可用于对撞机实验中更精确的喷注分类与异常探测&lt;/li&gt;&lt;li&gt;生成能力可迁移至不同模拟样本甚至真实数据，辅助无监督域适应&lt;/li&gt;&lt;li&gt;预训练模型可作为快速模拟和新物理搜索中喷注特征提取的通用基础模块&lt;/li&gt;&lt;/ul&gt;&lt;h4&gt;迁移风险&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;下一令牌预测施加了粒子排序假设，可能破坏喷注的置换不变性，强制排序可能导致物理偏倚&lt;/li&gt;&lt;li&gt;连续特征依赖模拟中的理想化信息（如精确的四动量），真实探测器重建会引入系统不确定性和分辨率效应&lt;/li&gt;&lt;li&gt;混合输入中的连续特征可能对刻度、探测器几何和堆积效应敏感，导致模拟至数据迁移的分布偏移&lt;/li&gt;&lt;li&gt;自回归生成推理延迟较高，可能限制在高吞吐在线环境中的应用&lt;/li&gt;&lt;li&gt;预训练数据可能包含负权重模拟样本，需验证训练稳定性&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;strong&gt;最小验证方案：&lt;/strong&gt;在公开喷注标准数据集（如Top Tagging参考集）上复现论文提出的预训练策略，与OmniJet-α基线比较分类性能与生成保真度；测试对粒子排序扰动的敏感性；在模拟与真实数据（如CMS开放数据）间评估分布偏移，并考察关键系统误差（如JES/JER）对性能的影响。&lt;/p&gt;&lt;p&gt;&lt;a href="https://arxiv.org/abs/2512.04149"&gt;arXiv 页面&lt;/a&gt; · &lt;a href="https://github.com/quxnb/hepml-digest/issues/new?title=%5B%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%5D+2512.04149+Enhancing+next+token+prediction+based+pre-training+for+jet+foundation+models&amp;amp;body=%23%23+%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%0A%0A-+arXiv%EF%BC%9A%5B2512.04149%5D%28https%3A%2F%2Farxiv.org%2Fabs%2F2512.04149%29%0A-+%E6%A0%8F%E7%9B%AE%EF%BC%9AHEP+%E7%9B%B4%E6%8E%A5%E5%BA%94%E7%94%A8%0A-+%E5%BD%93%E5%89%8D%E7%9B%B8%E5%85%B3%E6%80%A7%EF%BC%9A1.00%0A-+%E5%BD%93%E5%89%8D%E8%AF%81%E6%8D%AE%E7%AD%89%E7%BA%A7%EF%BC%9Adirect%0A%0A%23%23+%E5%88%A4%E6%96%AD%0A%0A-+%5B+%5D+%E6%8E%A8%E8%8D%90%E4%BF%9D%E7%95%99%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E5%90%88%E7%90%86%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E8%BF%87%E5%BA%A6%E6%8E%A8%E6%B5%8B%0A-+%5B+%5D+%E5%BA%94%E7%A7%BB%E8%87%B3%E5%8F%A6%E4%B8%80%E4%B8%AA%E6%A0%8F%E7%9B%AE%0A-+%5B+%5D+%E5%BB%BA%E8%AE%AE%E7%B2%BE%E8%AF%BB%E5%85%A8%E6%96%87%0A%0A%23%23+%E8%A1%A5%E5%85%85%E8%AF%B4%E6%98%8E%0A%0A"&gt;提交反馈&lt;/a&gt; · cs.LG, hep-ex, hep-ph, physics.data-an&lt;/p&gt;</ns1:encoded>
+      <guid isPermaLink="false">arxiv:2512.04149:hepml-v1</guid>
+      <category>cs.LG</category>
+      <category>hep-ex</category>
+      <category>hep-ph</category>
+      <category>physics.data-an</category>
+      <category>track:hep_application</category>
+      <category>喷注标记/分类</category>
+      <category>喷注生成</category>
+      <category>粒子鉴别</category>
+      <pubDate>Thu, 23 Jul 2026 04:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>First Measurement of the Relative Phase between Proton Psionic Form Factors</title>
+      <link>https://arxiv.org/abs/2607.19948</link>
+      <description>是一种测量质子时间型形状因子相对相位的创新技术，但方法为实验设计，而非通用ML方法</description>
+      <ns1:encoded>&lt;p&gt;&lt;strong&gt;栏目：&lt;/strong&gt;HEP 直接应用&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法：&lt;/strong&gt;利用次级散射测量极化的实验方法&lt;/p&gt;&lt;p&gt;&lt;strong&gt;相关性：&lt;/strong&gt;0.70；&lt;strong&gt;证据等级：&lt;/strong&gt;direct&lt;/p&gt;&lt;p&gt;&lt;strong&gt;初筛理由：&lt;/strong&gt;是一种测量质子时间型形状因子相对相位的创新技术，但方法为实验设计，而非通用ML方法&lt;/p&gt;&lt;p&gt;&lt;em&gt;本条目仅完成摘要级筛选。&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;a href="https://arxiv.org/abs/2607.19948"&gt;arXiv 页面&lt;/a&gt; · &lt;a href="https://github.com/quxnb/hepml-digest/issues/new?title=%5B%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%5D+2607.19948+First+Measurement+of+the+Relative+Phase+between+Proton+Psionic+Form+Factors&amp;amp;body=%23%23+%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%0A%0A-+arXiv%EF%BC%9A%5B2607.19948%5D%28https%3A%2F%2Farxiv.org%2Fabs%2F2607.19948%29%0A-+%E6%A0%8F%E7%9B%AE%EF%BC%9AHEP+%E7%9B%B4%E6%8E%A5%E5%BA%94%E7%94%A8%0A-+%E5%BD%93%E5%89%8D%E7%9B%B8%E5%85%B3%E6%80%A7%EF%BC%9A0.70%0A-+%E5%BD%93%E5%89%8D%E8%AF%81%E6%8D%AE%E7%AD%89%E7%BA%A7%EF%BC%9Adirect%0A%0A%23%23+%E5%88%A4%E6%96%AD%0A%0A-+%5B+%5D+%E6%8E%A8%E8%8D%90%E4%BF%9D%E7%95%99%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E5%90%88%E7%90%86%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E8%BF%87%E5%BA%A6%E6%8E%A8%E6%B5%8B%0A-+%5B+%5D+%E5%BA%94%E7%A7%BB%E8%87%B3%E5%8F%A6%E4%B8%80%E4%B8%AA%E6%A0%8F%E7%9B%AE%0A-+%5B+%5D+%E5%BB%BA%E8%AE%AE%E7%B2%BE%E8%AF%BB%E5%85%A8%E6%96%87%0A%0A%23%23+%E8%A1%A5%E5%85%85%E8%AF%B4%E6%98%8E%0A%0A"&gt;提交反馈&lt;/a&gt; · hep-ex&lt;/p&gt;</ns1:encoded>
+      <guid isPermaLink="false">arxiv:2607.19948:hepml-v1</guid>
+      <category>hep-ex</category>
+      <category>track:hep_application</category>
+      <category>极化测量</category>
+      <category>重子结构测量</category>
+      <pubDate>Thu, 23 Jul 2026 04:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Evidence for longitudinally polarised $Z$ bosons in electroweak $W^{\pm}Z$ production in association with two jets from $pp$ collisions at $\sqrt{s} = $ 13 TeV and 13.6 TeV with the ATLAS detector</title>
+      <link>https://arxiv.org/abs/2607.20246</link>
+      <description>直接使用ATLAS数据测量极化与截面，方法本身为hep实验分析而非新统计方法，可作为结果参考但非方法论创新。</description>
+      <ns1:encoded>&lt;p&gt;&lt;strong&gt;栏目：&lt;/strong&gt;HEP 直接应用&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法：&lt;/strong&gt;极化分析，观测显著性计算，截面测量&lt;/p&gt;&lt;p&gt;&lt;strong&gt;相关性：&lt;/strong&gt;1.00；&lt;strong&gt;证据等级：&lt;/strong&gt;direct&lt;/p&gt;&lt;p&gt;&lt;strong&gt;初筛理由：&lt;/strong&gt;直接使用ATLAS数据测量极化与截面，方法本身为hep实验分析而非新统计方法，可作为结果参考但非方法论创新。&lt;/p&gt;&lt;p&gt;&lt;em&gt;本条目仅完成摘要级筛选。&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;a href="https://arxiv.org/abs/2607.20246"&gt;arXiv 页面&lt;/a&gt; · &lt;a href="https://github.com/quxnb/hepml-digest/issues/new?title=%5B%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%5D+2607.20246+Evidence+for+longitudinally+polarised+%24Z%24+bosons+in+electroweak+%24W%5E%7B%5Cpm%7DZ%24+produ&amp;amp;body=%23%23+%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%0A%0A-+arXiv%EF%BC%9A%5B2607.20246%5D%28https%3A%2F%2Farxiv.org%2Fabs%2F2607.20246%29%0A-+%E6%A0%8F%E7%9B%AE%EF%BC%9AHEP+%E7%9B%B4%E6%8E%A5%E5%BA%94%E7%94%A8%0A-+%E5%BD%93%E5%89%8D%E7%9B%B8%E5%85%B3%E6%80%A7%EF%BC%9A1.00%0A-+%E5%BD%93%E5%89%8D%E8%AF%81%E6%8D%AE%E7%AD%89%E7%BA%A7%EF%BC%9Adirect%0A%0A%23%23+%E5%88%A4%E6%96%AD%0A%0A-+%5B+%5D+%E6%8E%A8%E8%8D%90%E4%BF%9D%E7%95%99%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E5%90%88%E7%90%86%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E8%BF%87%E5%BA%A6%E6%8E%A8%E6%B5%8B%0A-+%5B+%5D+%E5%BA%94%E7%A7%BB%E8%87%B3%E5%8F%A6%E4%B8%80%E4%B8%AA%E6%A0%8F%E7%9B%AE%0A-+%5B+%5D+%E5%BB%BA%E8%AE%AE%E7%B2%BE%E8%AF%BB%E5%85%A8%E6%96%87%0A%0A%23%23+%E8%A1%A5%E5%85%85%E8%AF%B4%E6%98%8E%0A%0A"&gt;提交反馈&lt;/a&gt; · hep-ex&lt;/p&gt;</ns1:encoded>
+      <guid isPermaLink="false">arxiv:2607.20246:hepml-v1</guid>
+      <category>hep-ex</category>
+      <category>track:hep_application</category>
+      <category>截面测量</category>
+      <category>电弱WZjj产生中的矢量玻色子极化测量</category>
+      <category>系统误差处理</category>
+      <pubDate>Thu, 23 Jul 2026 04:00:00 +0000</pubDate>
+    </item>
     <item>
       <title>Comparative study and optimization of SDHCAL hadronic energy reconstruction methods</title>
       <link>https://arxiv.org/abs/2607.15023</link>
