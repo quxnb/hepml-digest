@@ -8,7 +8,93 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Fri, 24 Jul 2026 03:46:04 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 25 Jul 2026 03:39:16 +0000</lastBuildDate>
+    <item>
+      <title>SESaMo: Symmetry-Enforcing Stochastic Modulation for Normalizing Flows</title>
+      <link>https://arxiv.org/abs/2505.19619</link>
+      <description>方法针对规范流引入对称性归纳偏差，在phi^4理论和Hubbard模型验证，直接可用于HEP的场论模拟及系统误差处理</description>
+      <ns1:encoded>&lt;p&gt;&lt;strong&gt;栏目：&lt;/strong&gt;方法雷达&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法：&lt;/strong&gt;Symmetry-Enforcing Stochastic Modulation (SESaMo) for normalizing flows&lt;/p&gt;&lt;p&gt;&lt;strong&gt;相关性：&lt;/strong&gt;0.80；&lt;strong&gt;证据等级：&lt;/strong&gt;direct&lt;/p&gt;&lt;p&gt;&lt;strong&gt;初筛理由：&lt;/strong&gt;方法针对规范流引入对称性归纳偏差，在phi^4理论和Hubbard模型验证，直接可用于HEP的场论模拟及系统误差处理&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法总结：&lt;/strong&gt;本文提出对称性强制随机调制方法SESaMo，通过随机调制将对称性等归纳偏置引入标准化流，增强模型灵活性，可同时学习精确与破缺对称性。方法在8高斯混合、φ^4场论及Hubbard模型上进行了基准测试，为格点场论中的玻尔兹曼分布采样提供新途径。&lt;/p&gt;&lt;h4&gt;论文明确支持的结论&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;SESaMo通过随机调制技术将对称性等归纳偏置纳入标准化流&lt;/li&gt;&lt;li&gt;该方法增强了生成模型的灵活性，能有效学习多种精确和破缺对称性&lt;/li&gt;&lt;li&gt;SESaMo在8高斯混合、φ^4理论和Hubbard模型上进行了数值实验验证&lt;/li&gt;&lt;/ul&gt;&lt;h4&gt;对高能实验物理的潜在帮助&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;用于格点QCD或φ^4理论等场论中高效生成玻尔兹曼分布样本，加速相图扫描&lt;/li&gt;&lt;li&gt;通过强制已知对称性减少训练所需配置数量，缓解临界慢化&lt;/li&gt;&lt;li&gt;作为神经重采样工具，结合MCMC处理系统误差（如有限体积效应、离散化误差）&lt;/li&gt;&lt;li&gt;可能用于构建具有规范对称性的生成模型，改进拓扑荷采样效率&lt;/li&gt;&lt;/ul&gt;&lt;h4&gt;迁移风险&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;随机调制可能引入额外方差，在高维情况下影响采样质量&lt;/li&gt;&lt;li&gt;方法对连续对称性（如洛伦兹对称性）的适用性未经检验&lt;/li&gt;&lt;li&gt;从标量场论迁移至带费米子或动态规范场的理论时，需处理符号/复数作用量问题&lt;/li&gt;&lt;li&gt;探测器效应、负权事件等实验系统误差会破坏对称性，方法依赖对称性先验可能失效&lt;/li&gt;&lt;li&gt;标准化流的雅可比计算及推理延迟可能限制高维实时应用&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;strong&gt;最小验证方案：&lt;/strong&gt;在2D φ^4理论格点上复现SESaMo，检查生成配置的Z2对称性保持、两点函数与MCMC基准的一致性，评估训练时间与推理延迟，并检验模型在破缺相区外推时的鲁棒性。&lt;/p&gt;&lt;p&gt;&lt;a href="https://arxiv.org/abs/2505.19619"&gt;arXiv 页面&lt;/a&gt; · &lt;a href="https://github.com/quxnb/hepml-digest/issues/new?title=%5B%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%5D+2505.19619+SESaMo%3A+Symmetry-Enforcing+Stochastic+Modulation+for+Normalizing+Flows&amp;amp;body=%23%23+%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%0A%0A-+arXiv%EF%BC%9A%5B2505.19619%5D%28https%3A%2F%2Farxiv.org%2Fabs%2F2505.19619%29%0A-+%E6%A0%8F%E7%9B%AE%EF%BC%9A%E6%96%B9%E6%B3%95%E9%9B%B7%E8%BE%BE%0A-+%E5%BD%93%E5%89%8D%E7%9B%B8%E5%85%B3%E6%80%A7%EF%BC%9A0.80%0A-+%E5%BD%93%E5%89%8D%E8%AF%81%E6%8D%AE%E7%AD%89%E7%BA%A7%EF%BC%9Adirect%0A%0A%23%23+%E5%88%A4%E6%96%AD%0A%0A-+%5B+%5D+%E6%8E%A8%E8%8D%90%E4%BF%9D%E7%95%99%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E5%90%88%E7%90%86%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E8%BF%87%E5%BA%A6%E6%8E%A8%E6%B5%8B%0A-+%5B+%5D+%E5%BA%94%E7%A7%BB%E8%87%B3%E5%8F%A6%E4%B8%80%E4%B8%AA%E6%A0%8F%E7%9B%AE%0A-+%5B+%5D+%E5%BB%BA%E8%AE%AE%E7%B2%BE%E8%AF%BB%E5%85%A8%E6%96%87%0A%0A%23%23+%E8%A1%A5%E5%85%85%E8%AF%B4%E6%98%8E%0A%0A"&gt;提交反馈&lt;/a&gt; · cond-mat.str-el, cs.LG, hep-lat, physics.comp-ph&lt;/p&gt;</ns1:encoded>
+      <guid isPermaLink="false">arxiv:2505.19619:hepml-v1</guid>
+      <category>cond-mat.str-el</category>
+      <category>cs.LG</category>
+      <category>hep-lat</category>
+      <category>physics.comp-ph</category>
+      <category>track:method_radar</category>
+      <category>处理对称性物理模型</category>
+      <category>快速模拟</category>
+      <category>无似然推断</category>
+      <pubDate>Fri, 24 Jul 2026 04:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Generative Bayesian Filtering for State Estimation</title>
+      <link>https://arxiv.org/abs/2607.20521</link>
+      <description>方法关注状态估计与不确定性量化，适用于HEP在线触发及异常检测任务，且已在类似动态系统上验证。</description>
+      <ns1:encoded>&lt;p&gt;&lt;strong&gt;栏目：&lt;/strong&gt;方法雷达&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法：&lt;/strong&gt;基于条件变分自编码器的生成贝叶斯滤波&lt;/p&gt;&lt;p&gt;&lt;strong&gt;相关性：&lt;/strong&gt;0.80；&lt;strong&gt;证据等级：&lt;/strong&gt;transferable&lt;/p&gt;&lt;p&gt;&lt;strong&gt;初筛理由：&lt;/strong&gt;方法关注状态估计与不确定性量化，适用于HEP在线触发及异常检测任务，且已在类似动态系统上验证。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法总结：&lt;/strong&gt;提出生成贝叶斯滤波(GBF)框架，用条件变分自编码器(CVAE)替代传统线性高斯观测模型，将测量更新构造为结合动力学先验与CVAE似然的后验采样问题，并通过分数采样实现。该方法利用生成模型的灵活性和集成的不确定性量化能力，在合成数据及制造监测、心律失常诊断等应用中提升了状态估计精度与鲁棒性。&lt;/p&gt;&lt;h4&gt;论文明确支持的结论&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;GBF框架通过CVAE参数化观测模型，可处理高维非线性传感器信号。&lt;/li&gt;&lt;li&gt;GBF将滤波测量更新转化为基于分数的后验采样，兼具生成模型灵活性与不确定性量化优势。&lt;/li&gt;&lt;li&gt;在合成和真实应用中，GBF相比基线方法提高了状态估计精度和鲁棒性。&lt;/li&gt;&lt;/ul&gt;&lt;h4&gt;对高能实验物理的潜在帮助&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;用于在线触发系统中的径迹状态估计，改善非线性探测器响应建模。&lt;/li&gt;&lt;li&gt;应用于探测器状态监测与异常检测，从高维多通道读出数据中推断潜在运行模式。&lt;/li&gt;&lt;li&gt;替代卡尔曼滤波进行粒子轨迹重建，尤其在非高斯噪声或非线性径迹模型下。&lt;/li&gt;&lt;/ul&gt;&lt;h4&gt;迁移风险&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;CVAE观测模型可能无法准确捕捉HEP数据中的物理约束（如洛伦兹对称性、探测器几何效应）。&lt;/li&gt;&lt;li&gt;基于分数的后验采样可能增加推理延迟，难以满足微秒级实时触发要求。&lt;/li&gt;&lt;li&gt;生成模型依赖训练数据分布，在仿真-数据迁移（simulation-to-data shift）下可能失效，未考虑校准及系统误差。&lt;/li&gt;&lt;li&gt;HEP事件中的负权及稀疏数据特性未在方法中体现，可能导致似然估计有偏。&lt;/li&gt;&lt;li&gt;未阐明如何处理高维散射截面等nuisance参数，可能影响粒子识别鲁棒性。&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;strong&gt;最小验证方案：&lt;/strong&gt;在简化径迹模拟数据（如直线径迹+探测器点响应）上复现GBF，与卡尔曼滤波对比位置估计精度；测量单次推理耗时；引入模拟-数据不一致（如探测器效率变化）测试性能下降程度。&lt;/p&gt;&lt;p&gt;&lt;a href="https://arxiv.org/abs/2607.20521"&gt;arXiv 页面&lt;/a&gt; · &lt;a href="https://github.com/quxnb/hepml-digest/issues/new?title=%5B%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%5D+2607.20521+Generative+Bayesian+Filtering+for+State+Estimation&amp;amp;body=%23%23+%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%0A%0A-+arXiv%EF%BC%9A%5B2607.20521%5D%28https%3A%2F%2Farxiv.org%2Fabs%2F2607.20521%29%0A-+%E6%A0%8F%E7%9B%AE%EF%BC%9A%E6%96%B9%E6%B3%95%E9%9B%B7%E8%BE%BE%0A-+%E5%BD%93%E5%89%8D%E7%9B%B8%E5%85%B3%E6%80%A7%EF%BC%9A0.80%0A-+%E5%BD%93%E5%89%8D%E8%AF%81%E6%8D%AE%E7%AD%89%E7%BA%A7%EF%BC%9Atransferable%0A%0A%23%23+%E5%88%A4%E6%96%AD%0A%0A-+%5B+%5D+%E6%8E%A8%E8%8D%90%E4%BF%9D%E7%95%99%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E5%90%88%E7%90%86%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E8%BF%87%E5%BA%A6%E6%8E%A8%E6%B5%8B%0A-+%5B+%5D+%E5%BA%94%E7%A7%BB%E8%87%B3%E5%8F%A6%E4%B8%80%E4%B8%AA%E6%A0%8F%E7%9B%AE%0A-+%5B+%5D+%E5%BB%BA%E8%AE%AE%E7%B2%BE%E8%AF%BB%E5%85%A8%E6%96%87%0A%0A%23%23+%E8%A1%A5%E5%85%85%E8%AF%B4%E6%98%8E%0A%0A"&gt;提交反馈&lt;/a&gt; · cs.LG, stat.ML&lt;/p&gt;</ns1:encoded>
+      <guid isPermaLink="false">arxiv:2607.20521:hepml-v1</guid>
+      <category>cs.LG</category>
+      <category>stat.ML</category>
+      <category>track:method_radar</category>
+      <category>在线触发</category>
+      <category>异常检测</category>
+      <category>粒子跟踪</category>
+      <pubDate>Fri, 24 Jul 2026 04:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Statistical Inference for Generative Model Comparison</title>
+      <link>https://arxiv.org/abs/2501.18897</link>
+      <description>方法提供不确定性量化，可应用于HEP生成模型（如快速模拟）的统计比较和校准，但需调整以适应高能物理数据特性。</description>
+      <ns1:encoded>&lt;p&gt;&lt;strong&gt;栏目：&lt;/strong&gt;方法雷达&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法：&lt;/strong&gt;基于KL散度的生成模型比较推断方法，结合Edgeworth展开&lt;/p&gt;&lt;p&gt;&lt;strong&gt;相关性：&lt;/strong&gt;0.70；&lt;strong&gt;证据等级：&lt;/strong&gt;transferable&lt;/p&gt;&lt;p&gt;&lt;strong&gt;初筛理由：&lt;/strong&gt;方法提供不确定性量化，可应用于HEP生成模型（如快速模拟）的统计比较和校准，但需调整以适应高能物理数据特性。&lt;/p&gt;&lt;p&gt;&lt;em&gt;本条目仅完成摘要级筛选。&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;a href="https://arxiv.org/abs/2501.18897"&gt;arXiv 页面&lt;/a&gt; · &lt;a href="https://github.com/quxnb/hepml-digest/issues/new?title=%5B%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%5D+2501.18897+Statistical+Inference+for+Generative+Model+Comparison&amp;amp;body=%23%23+%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%0A%0A-+arXiv%EF%BC%9A%5B2501.18897%5D%28https%3A%2F%2Farxiv.org%2Fabs%2F2501.18897%29%0A-+%E6%A0%8F%E7%9B%AE%EF%BC%9A%E6%96%B9%E6%B3%95%E9%9B%B7%E8%BE%BE%0A-+%E5%BD%93%E5%89%8D%E7%9B%B8%E5%85%B3%E6%80%A7%EF%BC%9A0.70%0A-+%E5%BD%93%E5%89%8D%E8%AF%81%E6%8D%AE%E7%AD%89%E7%BA%A7%EF%BC%9Atransferable%0A%0A%23%23+%E5%88%A4%E6%96%AD%0A%0A-+%5B+%5D+%E6%8E%A8%E8%8D%90%E4%BF%9D%E7%95%99%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E5%90%88%E7%90%86%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E8%BF%87%E5%BA%A6%E6%8E%A8%E6%B5%8B%0A-+%5B+%5D+%E5%BA%94%E7%A7%BB%E8%87%B3%E5%8F%A6%E4%B8%80%E4%B8%AA%E6%A0%8F%E7%9B%AE%0A-+%5B+%5D+%E5%BB%BA%E8%AE%AE%E7%B2%BE%E8%AF%BB%E5%85%A8%E6%96%87%0A%0A%23%23+%E8%A1%A5%E5%85%85%E8%AF%B4%E6%98%8E%0A%0A"&gt;提交反馈&lt;/a&gt; · cs.LG, stat.ML&lt;/p&gt;</ns1:encoded>
+      <guid isPermaLink="false">arxiv:2501.18897:hepml-v1</guid>
+      <category>cs.LG</category>
+      <category>stat.ML</category>
+      <category>track:method_radar</category>
+      <category>快速模拟验证</category>
+      <category>生成模型评估</category>
+      <category>系统误差处理</category>
+      <pubDate>Fri, 24 Jul 2026 04:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>CLOE: Christoffel Loss Autoencoder for Anomaly Detection</title>
+      <link>https://arxiv.org/abs/2607.20530</link>
+      <description>方法轻量、少参数，但未在HEP数据上验证，HEP异常检测常需处理高维、含噪数据。</description>
+      <ns1:encoded>&lt;p&gt;&lt;strong&gt;栏目：&lt;/strong&gt;方法雷达&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法：&lt;/strong&gt;Christoffel损失自编码器（CLOE）&lt;/p&gt;&lt;p&gt;&lt;strong&gt;相关性：&lt;/strong&gt;0.60；&lt;strong&gt;证据等级：&lt;/strong&gt;transferable&lt;/p&gt;&lt;p&gt;&lt;strong&gt;初筛理由：&lt;/strong&gt;方法轻量、少参数，但未在HEP数据上验证，HEP异常检测常需处理高维、含噪数据。&lt;/p&gt;&lt;p&gt;&lt;em&gt;本条目仅完成摘要级筛选。&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;a href="https://arxiv.org/abs/2607.20530"&gt;arXiv 页面&lt;/a&gt; · &lt;a href="https://github.com/quxnb/hepml-digest/issues/new?title=%5B%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%5D+2607.20530+CLOE%3A+Christoffel+Loss+Autoencoder+for+Anomaly+Detection&amp;amp;body=%23%23+%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%0A%0A-+arXiv%EF%BC%9A%5B2607.20530%5D%28https%3A%2F%2Farxiv.org%2Fabs%2F2607.20530%29%0A-+%E6%A0%8F%E7%9B%AE%EF%BC%9A%E6%96%B9%E6%B3%95%E9%9B%B7%E8%BE%BE%0A-+%E5%BD%93%E5%89%8D%E7%9B%B8%E5%85%B3%E6%80%A7%EF%BC%9A0.60%0A-+%E5%BD%93%E5%89%8D%E8%AF%81%E6%8D%AE%E7%AD%89%E7%BA%A7%EF%BC%9Atransferable%0A%0A%23%23+%E5%88%A4%E6%96%AD%0A%0A-+%5B+%5D+%E6%8E%A8%E8%8D%90%E4%BF%9D%E7%95%99%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E5%90%88%E7%90%86%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E8%BF%87%E5%BA%A6%E6%8E%A8%E6%B5%8B%0A-+%5B+%5D+%E5%BA%94%E7%A7%BB%E8%87%B3%E5%8F%A6%E4%B8%80%E4%B8%AA%E6%A0%8F%E7%9B%AE%0A-+%5B+%5D+%E5%BB%BA%E8%AE%AE%E7%B2%BE%E8%AF%BB%E5%85%A8%E6%96%87%0A%0A%23%23+%E8%A1%A5%E5%85%85%E8%AF%B4%E6%98%8E%0A%0A"&gt;提交反馈&lt;/a&gt; · cs.AI, cs.LG, stat.ML&lt;/p&gt;</ns1:encoded>
+      <guid isPermaLink="false">arxiv:2607.20530:hepml-v1</guid>
+      <category>cs.AI</category>
+      <category>cs.LG</category>
+      <category>stat.ML</category>
+      <category>track:method_radar</category>
+      <category>异常检测</category>
+      <category>无监督学习</category>
+      <pubDate>Fri, 24 Jul 2026 04:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Zero-Flow Two-Sample Tests</title>
+      <link>https://arxiv.org/abs/2607.21542</link>
+      <description>两样本检验方法可检测模拟与实验数据分布差异，对系统误差和校准验证有直接价值。</description>
+      <ns1:encoded>&lt;p&gt;&lt;strong&gt;栏目：&lt;/strong&gt;方法雷达&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法：&lt;/strong&gt;零流差异（Zero-Flow Discrepancy）与两样本检验&lt;/p&gt;&lt;p&gt;&lt;strong&gt;相关性：&lt;/strong&gt;0.80；&lt;strong&gt;证据等级：&lt;/strong&gt;speculative&lt;/p&gt;&lt;p&gt;&lt;strong&gt;初筛理由：&lt;/strong&gt;两样本检验方法可检测模拟与实验数据分布差异，对系统误差和校准验证有直接价值。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法总结：&lt;/strong&gt;提出零流差异(ZFD)与零流两样本检验(ZF2ST)，通过学习局部不对齐的方向模式判断两个样本集是否同分布。检验将证据网络学习与假设评估分离，支持灵活神经网络并保证统计校准。提供回归和功效最大化两种证据学习方法。人工及图像数据集实验显示，方法对结构化分布变化具有高检验功效，且一类错误校准良好。&lt;/p&gt;&lt;h4&gt;论文明确支持的结论&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;提出基于零流准则的统计差异ZFD&lt;/li&gt;&lt;li&gt;证明了ZFD的有效性&lt;/li&gt;&lt;li&gt;提出实际检验流程ZF2ST&lt;/li&gt;&lt;li&gt;ZF2ST可分离证据学习与假设检验，使用灵活神经网络并保持统计校准&lt;/li&gt;&lt;li&gt;开发了基于回归和功效最大化的证据学习方法&lt;/li&gt;&lt;li&gt;合成和图像数据集实验表明ZF2ST对结构化分布变化有强检验功效且一类错误校准良好&lt;/li&gt;&lt;/ul&gt;&lt;h4&gt;对高能实验物理的潜在帮助&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;检测模拟数据与真实数据间的分布差异(simulation-to-data shift)&lt;/li&gt;&lt;li&gt;识别系统误差或校准问题，通过比较不同运行期或触发条件下的数据分布&lt;/li&gt;&lt;li&gt;比较具有不同探测器几何或物理条件的数据样本&lt;/li&gt;&lt;/ul&gt;&lt;h4&gt;迁移风险&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;仅在合成和图像数据集上验证，未在HEP数据上测试，实际性能未知&lt;/li&gt;&lt;li&gt;HEP数据高维稀疏且含系统不确定性，需调整神经网络架构和评估校准&lt;/li&gt;&lt;li&gt;功效最大化方法可能需要大量事件，可能不适用于负权事件处理&lt;/li&gt;&lt;li&gt;对洛伦兹对称性等物理约束的适应性不清楚&lt;/li&gt;&lt;li&gt;推理延迟可能对大型数据集构成挑战&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;strong&gt;最小验证方案：&lt;/strong&gt;在公开HEP数据集（如HIGGS或Susy）上实现ZF2ST，与MMD、C2ST等两样本检验比较，评估检测模拟-数据分布差异的功效，并检查存在统计波动和系统不确定时的一类错误校准。&lt;/p&gt;&lt;p&gt;&lt;a href="https://arxiv.org/abs/2607.21542"&gt;arXiv 页面&lt;/a&gt; · &lt;a href="https://github.com/quxnb/hepml-digest/issues/new?title=%5B%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%5D+2607.21542+Zero-Flow+Two-Sample+Tests&amp;amp;body=%23%23+%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%0A%0A-+arXiv%EF%BC%9A%5B2607.21542%5D%28https%3A%2F%2Farxiv.org%2Fabs%2F2607.21542%29%0A-+%E6%A0%8F%E7%9B%AE%EF%BC%9A%E6%96%B9%E6%B3%95%E9%9B%B7%E8%BE%BE%0A-+%E5%BD%93%E5%89%8D%E7%9B%B8%E5%85%B3%E6%80%A7%EF%BC%9A0.80%0A-+%E5%BD%93%E5%89%8D%E8%AF%81%E6%8D%AE%E7%AD%89%E7%BA%A7%EF%BC%9Aspeculative%0A%0A%23%23+%E5%88%A4%E6%96%AD%0A%0A-+%5B+%5D+%E6%8E%A8%E8%8D%90%E4%BF%9D%E7%95%99%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E5%90%88%E7%90%86%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E8%BF%87%E5%BA%A6%E6%8E%A8%E6%B5%8B%0A-+%5B+%5D+%E5%BA%94%E7%A7%BB%E8%87%B3%E5%8F%A6%E4%B8%80%E4%B8%AA%E6%A0%8F%E7%9B%AE%0A-+%5B+%5D+%E5%BB%BA%E8%AE%AE%E7%B2%BE%E8%AF%BB%E5%85%A8%E6%96%87%0A%0A%23%23+%E8%A1%A5%E5%85%85%E8%AF%B4%E6%98%8E%0A%0A"&gt;提交反馈&lt;/a&gt; · cs.LG, stat.ML&lt;/p&gt;</ns1:encoded>
+      <guid isPermaLink="false">arxiv:2607.21542:hepml-v1</guid>
+      <category>cs.LG</category>
+      <category>stat.ML</category>
+      <category>track:method_radar</category>
+      <category>数据分布对齐验证</category>
+      <category>模拟与真实数据差异检测</category>
+      <category>系统误差诊断</category>
+      <pubDate>Fri, 24 Jul 2026 04:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Direct Bethe Free Energy Minimization for Bayesian Neural Networks</title>
+      <link>https://arxiv.org/abs/2605.08446</link>
+      <description>方法改进贝叶斯神经网络的校准与NLL，适用于HEP中的不确定性建模与校准，但未在HEP数据上验证。</description>
+      <ns1:encoded>&lt;p&gt;&lt;strong&gt;栏目：&lt;/strong&gt;方法雷达&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法：&lt;/strong&gt;Bethe自由能最小化（直接优化Bethe自由能，基于预测密度）&lt;/p&gt;&lt;p&gt;&lt;strong&gt;相关性：&lt;/strong&gt;0.70；&lt;strong&gt;证据等级：&lt;/strong&gt;transferable&lt;/p&gt;&lt;p&gt;&lt;strong&gt;初筛理由：&lt;/strong&gt;方法改进贝叶斯神经网络的校准与NLL，适用于HEP中的不确定性建模与校准，但未在HEP数据上验证。&lt;/p&gt;&lt;p&gt;&lt;em&gt;本条目仅完成摘要级筛选。&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;a href="https://arxiv.org/abs/2605.08446"&gt;arXiv 页面&lt;/a&gt; · &lt;a href="https://github.com/quxnb/hepml-digest/issues/new?title=%5B%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%5D+2605.08446+Direct+Bethe+Free+Energy+Minimization+for+Bayesian+Neural+Networks&amp;amp;body=%23%23+%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%0A%0A-+arXiv%EF%BC%9A%5B2605.08446%5D%28https%3A%2F%2Farxiv.org%2Fabs%2F2605.08446%29%0A-+%E6%A0%8F%E7%9B%AE%EF%BC%9A%E6%96%B9%E6%B3%95%E9%9B%B7%E8%BE%BE%0A-+%E5%BD%93%E5%89%8D%E7%9B%B8%E5%85%B3%E6%80%A7%EF%BC%9A0.70%0A-+%E5%BD%93%E5%89%8D%E8%AF%81%E6%8D%AE%E7%AD%89%E7%BA%A7%EF%BC%9Atransferable%0A%0A%23%23+%E5%88%A4%E6%96%AD%0A%0A-+%5B+%5D+%E6%8E%A8%E8%8D%90%E4%BF%9D%E7%95%99%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E5%90%88%E7%90%86%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E8%BF%87%E5%BA%A6%E6%8E%A8%E6%B5%8B%0A-+%5B+%5D+%E5%BA%94%E7%A7%BB%E8%87%B3%E5%8F%A6%E4%B8%80%E4%B8%AA%E6%A0%8F%E7%9B%AE%0A-+%5B+%5D+%E5%BB%BA%E8%AE%AE%E7%B2%BE%E8%AF%BB%E5%85%A8%E6%96%87%0A%0A%23%23+%E8%A1%A5%E5%85%85%E8%AF%B4%E6%98%8E%0A%0A"&gt;提交反馈&lt;/a&gt; · cs.LG&lt;/p&gt;</ns1:encoded>
+      <guid isPermaLink="false">arxiv:2605.08446:hepml-v1</guid>
+      <category>cs.LG</category>
+      <category>track:method_radar</category>
+      <category>回归不确定性量化</category>
+      <category>异常检测</category>
+      <category>校准</category>
+      <category>系统误差处理</category>
+      <pubDate>Fri, 24 Jul 2026 04:00:00 +0000</pubDate>
+    </item>
     <item>
       <title>Diffusion-based Annealed Boltzmann Generators : benefits, pitfalls and hopes</title>
       <link>https://arxiv.org/abs/2601.21026</link>
