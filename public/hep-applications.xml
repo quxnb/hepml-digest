@@ -8,7 +8,79 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Sun, 26 Jul 2026 03:56:19 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 27 Jul 2026 04:08:04 +0000</lastBuildDate>
+    <item>
+      <title>An Introduction to Bayesian and Frequentist Simulation-Based Inference with Machine Learning</title>
+      <link>https://arxiv.org/abs/2607.21702</link>
+      <description>直接针对HEP中的参数推断和反卷积任务，且摘要明确提到unfolding和hep-ex分类</description>
+      <ns1:encoded>&lt;p&gt;&lt;strong&gt;栏目：&lt;/strong&gt;HEP 直接应用&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法：&lt;/strong&gt;模拟推断（SBI），包括神经后验估计、神经似然估计等机器学习方法&lt;/p&gt;&lt;p&gt;&lt;strong&gt;相关性：&lt;/strong&gt;0.95；&lt;strong&gt;证据等级：&lt;/strong&gt;direct&lt;/p&gt;&lt;p&gt;&lt;strong&gt;初筛理由：&lt;/strong&gt;直接针对HEP中的参数推断和反卷积任务，且摘要明确提到unfolding和hep-ex分类&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法总结：&lt;/strong&gt;本文介绍了基于机器学习的仿真推断（SBI）方法在贝叶斯和频率统计框架下的应用。包括神经后验估计和神经似然估计，用于参数推断及探测器效应反卷积（unfolding），并可扩展至经验贝叶斯。同时讨论了验证策略与局限性，为HEP中逆问题解决提供参考。&lt;/p&gt;&lt;h4&gt;论文明确支持的结论&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;神经后验估计和神经似然估计等机器学习SBI方法可用于贝叶斯和频率框架下的参数估计。&lt;/li&gt;&lt;li&gt;这些方法也可应用于经验贝叶斯和反卷积（unfolding）任务。&lt;/li&gt;&lt;li&gt;推断结果需要经过验证，且SBI方法存在局限性。&lt;/li&gt;&lt;/ul&gt;&lt;h4&gt;对高能实验物理的潜在帮助&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;在粒子物理中利用神经后验估计进行高效参数推断，减少对全模拟的依赖。&lt;/li&gt;&lt;li&gt;使用神经似然估计实现探测器效应反卷积，替代传统迭代反卷积方法。&lt;/li&gt;&lt;li&gt;结合经验贝叶斯方法处理系统误差或干扰参数（nuisance parameter）。&lt;/li&gt;&lt;/ul&gt;&lt;h4&gt;迁移风险&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;模拟与真实数据之间的分布偏移（simulation-to-data shift）可能导致推断偏差。&lt;/li&gt;&lt;li&gt;训练样本中未包含的探测器几何或校准细节可能影响泛化。&lt;/li&gt;&lt;li&gt;负权事件在损失函数和密度估计中的处理不明确。&lt;/li&gt;&lt;li&gt;推断延迟可能不满足实时触发或分析需求。&lt;/li&gt;&lt;li&gt;置换对称性或洛伦兹对称性需显式编码，否则可能被破坏。&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;strong&gt;最小验证方案：&lt;/strong&gt;在已知真实参数的玩具模拟上测试神经后验的覆盖概率；对比传统反卷积方法的拟合偏差与不确定性校准；在受控探测器仿真上评估分布偏移下的性能。&lt;/p&gt;&lt;p&gt;&lt;a href="https://arxiv.org/abs/2607.21702"&gt;arXiv 页面&lt;/a&gt; · &lt;a href="https://github.com/quxnb/hepml-digest/issues/new?title=%5B%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%5D+2607.21702+An+Introduction+to+Bayesian+and+Frequentist+Simulation-Based+Inference+with+Mach&amp;amp;body=%23%23+%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%0A%0A-+arXiv%EF%BC%9A%5B2607.21702%5D%28https%3A%2F%2Farxiv.org%2Fabs%2F2607.21702%29%0A-+%E6%A0%8F%E7%9B%AE%EF%BC%9AHEP+%E7%9B%B4%E6%8E%A5%E5%BA%94%E7%94%A8%0A-+%E5%BD%93%E5%89%8D%E7%9B%B8%E5%85%B3%E6%80%A7%EF%BC%9A0.95%0A-+%E5%BD%93%E5%89%8D%E8%AF%81%E6%8D%AE%E7%AD%89%E7%BA%A7%EF%BC%9Adirect%0A%0A%23%23+%E5%88%A4%E6%96%AD%0A%0A-+%5B+%5D+%E6%8E%A8%E8%8D%90%E4%BF%9D%E7%95%99%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E5%90%88%E7%90%86%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E8%BF%87%E5%BA%A6%E6%8E%A8%E6%B5%8B%0A-+%5B+%5D+%E5%BA%94%E7%A7%BB%E8%87%B3%E5%8F%A6%E4%B8%80%E4%B8%AA%E6%A0%8F%E7%9B%AE%0A-+%5B+%5D+%E5%BB%BA%E8%AE%AE%E7%B2%BE%E8%AF%BB%E5%85%A8%E6%96%87%0A%0A%23%23+%E8%A1%A5%E5%85%85%E8%AF%B4%E6%98%8E%0A%0A"&gt;提交反馈&lt;/a&gt; · astro-ph.CO, astro-ph.GA, cs.LG, hep-ex, hep-ph, stat.ML&lt;/p&gt;</ns1:encoded>
+      <guid isPermaLink="false">arxiv:2607.21702:hepml-v1</guid>
+      <category>astro-ph.CO</category>
+      <category>astro-ph.GA</category>
+      <category>cs.LG</category>
+      <category>hep-ex</category>
+      <category>hep-ph</category>
+      <category>stat.ML</category>
+      <category>track:hep_application</category>
+      <category>参数推断</category>
+      <category>反卷积（unfolding）</category>
+      <category>探测器效应反演</category>
+      <category>经验贝叶斯</category>
+      <pubDate>Mon, 27 Jul 2026 04:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Cross-section measurements of boosted Higgs boson production in final states with pairs of hadronically decaying $\tau$-leptons with the ATLAS experiment</title>
+      <link>https://arxiv.org/abs/2607.22193</link>
+      <description>直接使用ATLAS数据，针对强子化τ轻子对的增强重建，结合多变量分析来提升高动量希格斯玻色子的截面测量。</description>
+      <ns1:encoded>&lt;p&gt;&lt;strong&gt;栏目：&lt;/strong&gt;HEP 直接应用&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法：&lt;/strong&gt;Boosted di-τ reconstruction, multivariate analysis&lt;/p&gt;&lt;p&gt;&lt;strong&gt;相关性：&lt;/strong&gt;0.85；&lt;strong&gt;证据等级：&lt;/strong&gt;direct&lt;/p&gt;&lt;p&gt;&lt;strong&gt;初筛理由：&lt;/strong&gt;直接使用ATLAS数据，针对强子化τ轻子对的增强重建，结合多变量分析来提升高动量希格斯玻色子的截面测量。&lt;/p&gt;&lt;p&gt;&lt;em&gt;本条目仅完成摘要级筛选。&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;a href="https://arxiv.org/abs/2607.22193"&gt;arXiv 页面&lt;/a&gt; · &lt;a href="https://github.com/quxnb/hepml-digest/issues/new?title=%5B%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%5D+2607.22193+Cross-section+measurements+of+boosted+Higgs+boson+production+in+final+states+wit&amp;amp;body=%23%23+%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%0A%0A-+arXiv%EF%BC%9A%5B2607.22193%5D%28https%3A%2F%2Farxiv.org%2Fabs%2F2607.22193%29%0A-+%E6%A0%8F%E7%9B%AE%EF%BC%9AHEP+%E7%9B%B4%E6%8E%A5%E5%BA%94%E7%94%A8%0A-+%E5%BD%93%E5%89%8D%E7%9B%B8%E5%85%B3%E6%80%A7%EF%BC%9A0.85%0A-+%E5%BD%93%E5%89%8D%E8%AF%81%E6%8D%AE%E7%AD%89%E7%BA%A7%EF%BC%9Adirect%0A%0A%23%23+%E5%88%A4%E6%96%AD%0A%0A-+%5B+%5D+%E6%8E%A8%E8%8D%90%E4%BF%9D%E7%95%99%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E5%90%88%E7%90%86%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E8%BF%87%E5%BA%A6%E6%8E%A8%E6%B5%8B%0A-+%5B+%5D+%E5%BA%94%E7%A7%BB%E8%87%B3%E5%8F%A6%E4%B8%80%E4%B8%AA%E6%A0%8F%E7%9B%AE%0A-+%5B+%5D+%E5%BB%BA%E8%AE%AE%E7%B2%BE%E8%AF%BB%E5%85%A8%E6%96%87%0A%0A%23%23+%E8%A1%A5%E5%85%85%E8%AF%B4%E6%98%8E%0A%0A"&gt;提交反馈&lt;/a&gt; · hep-ex&lt;/p&gt;</ns1:encoded>
+      <guid isPermaLink="false">arxiv:2607.22193:hepml-v1</guid>
+      <category>hep-ex</category>
+      <category>track:hep_application</category>
+      <category>异常检测</category>
+      <category>粒子鉴别</category>
+      <category>重建</category>
+      <pubDate>Mon, 27 Jul 2026 04:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Decorrelation of neural networks from particle lifetimes in the LHCb topological $b$ trigger</title>
+      <link>https://arxiv.org/abs/2607.22281</link>
+      <description>直接研究LHCb b触发中的去相关方法，匹配HEP任务并已在实验数据验证</description>
+      <ns1:encoded>&lt;p&gt;&lt;strong&gt;栏目：&lt;/strong&gt;HEP 直接应用&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法：&lt;/strong&gt;单调Lipschitz神经网络&lt;/p&gt;&lt;p&gt;&lt;strong&gt;相关性：&lt;/strong&gt;1.00；&lt;strong&gt;证据等级：&lt;/strong&gt;direct&lt;/p&gt;&lt;p&gt;&lt;strong&gt;初筛理由：&lt;/strong&gt;直接研究LHCb b触发中的去相关方法，匹配HEP任务并已在实验数据验证&lt;/p&gt;&lt;p&gt;&lt;em&gt;本条目仅完成摘要级筛选。&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;a href="https://arxiv.org/abs/2607.22281"&gt;arXiv 页面&lt;/a&gt; · &lt;a href="https://github.com/quxnb/hepml-digest/issues/new?title=%5B%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%5D+2607.22281+Decorrelation+of+neural+networks+from+particle+lifetimes+in+the+LHCb+topological&amp;amp;body=%23%23+%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%0A%0A-+arXiv%EF%BC%9A%5B2607.22281%5D%28https%3A%2F%2Farxiv.org%2Fabs%2F2607.22281%29%0A-+%E6%A0%8F%E7%9B%AE%EF%BC%9AHEP+%E7%9B%B4%E6%8E%A5%E5%BA%94%E7%94%A8%0A-+%E5%BD%93%E5%89%8D%E7%9B%B8%E5%85%B3%E6%80%A7%EF%BC%9A1.00%0A-+%E5%BD%93%E5%89%8D%E8%AF%81%E6%8D%AE%E7%AD%89%E7%BA%A7%EF%BC%9Adirect%0A%0A%23%23+%E5%88%A4%E6%96%AD%0A%0A-+%5B+%5D+%E6%8E%A8%E8%8D%90%E4%BF%9D%E7%95%99%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E5%90%88%E7%90%86%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E8%BF%87%E5%BA%A6%E6%8E%A8%E6%B5%8B%0A-+%5B+%5D+%E5%BA%94%E7%A7%BB%E8%87%B3%E5%8F%A6%E4%B8%80%E4%B8%AA%E6%A0%8F%E7%9B%AE%0A-+%5B+%5D+%E5%BB%BA%E8%AE%AE%E7%B2%BE%E8%AF%BB%E5%85%A8%E6%96%87%0A%0A%23%23+%E8%A1%A5%E5%85%85%E8%AF%B4%E6%98%8E%0A%0A"&gt;提交反馈&lt;/a&gt; · hep-ex&lt;/p&gt;</ns1:encoded>
+      <guid isPermaLink="false">arxiv:2607.22281:hepml-v1</guid>
+      <category>b触发</category>
+      <category>hep-ex</category>
+      <category>track:hep_application</category>
+      <category>粒子鉴别</category>
+      <category>顶点重建</category>
+      <pubDate>Mon, 27 Jul 2026 04:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Proton-air interaction properties at $\sqrt{s} \simeq 100$ TeV from shower-depth measurements with the Pierre Auger Observatory and their connection to the Muon Puzzle</title>
+      <link>https://arxiv.org/abs/2607.22323</link>
+      <description>利用宇宙线观测数据约束强子相互作用模型，方法可迁移至对撞机实验的系统误差处理</description>
+      <ns1:encoded>&lt;p&gt;&lt;strong&gt;栏目：&lt;/strong&gt;HEP 直接应用&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法：&lt;/strong&gt;Universal relation mapping between shower maximum and secondary particle variables&lt;/p&gt;&lt;p&gt;&lt;strong&gt;相关性：&lt;/strong&gt;0.60；&lt;strong&gt;证据等级：&lt;/strong&gt;transferable&lt;/p&gt;&lt;p&gt;&lt;strong&gt;初筛理由：&lt;/strong&gt;利用宇宙线观测数据约束强子相互作用模型，方法可迁移至对撞机实验的系统误差处理&lt;/p&gt;&lt;p&gt;&lt;em&gt;本条目仅完成摘要级筛选。&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;a href="https://arxiv.org/abs/2607.22323"&gt;arXiv 页面&lt;/a&gt; · &lt;a href="https://github.com/quxnb/hepml-digest/issues/new?title=%5B%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%5D+2607.22323+Proton-air+interaction+properties+at+%24%5Csqrt%7Bs%7D+%5Csimeq+100%24+TeV+from+shower-depth&amp;amp;body=%23%23+%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%0A%0A-+arXiv%EF%BC%9A%5B2607.22323%5D%28https%3A%2F%2Farxiv.org%2Fabs%2F2607.22323%29%0A-+%E6%A0%8F%E7%9B%AE%EF%BC%9AHEP+%E7%9B%B4%E6%8E%A5%E5%BA%94%E7%94%A8%0A-+%E5%BD%93%E5%89%8D%E7%9B%B8%E5%85%B3%E6%80%A7%EF%BC%9A0.60%0A-+%E5%BD%93%E5%89%8D%E8%AF%81%E6%8D%AE%E7%AD%89%E7%BA%A7%EF%BC%9Atransferable%0A%0A%23%23+%E5%88%A4%E6%96%AD%0A%0A-+%5B+%5D+%E6%8E%A8%E8%8D%90%E4%BF%9D%E7%95%99%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E5%90%88%E7%90%86%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E8%BF%87%E5%BA%A6%E6%8E%A8%E6%B5%8B%0A-+%5B+%5D+%E5%BA%94%E7%A7%BB%E8%87%B3%E5%8F%A6%E4%B8%80%E4%B8%AA%E6%A0%8F%E7%9B%AE%0A-+%5B+%5D+%E5%BB%BA%E8%AE%AE%E7%B2%BE%E8%AF%BB%E5%85%A8%E6%96%87%0A%0A%23%23+%E8%A1%A5%E5%85%85%E8%AF%B4%E6%98%8E%0A%0A"&gt;提交反馈&lt;/a&gt; · astro-ph.HE, hep-ex&lt;/p&gt;</ns1:encoded>
+      <guid isPermaLink="false">arxiv:2607.22323:hepml-v1</guid>
+      <category>air shower modeling</category>
+      <category>astro-ph.HE</category>
+      <category>hadronic interaction tuning</category>
+      <category>hep-ex</category>
+      <category>muon puzzle</category>
+      <category>track:hep_application</category>
+      <pubDate>Mon, 27 Jul 2026 04:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Statistical validation of template-based parameter extraction from toy thrust distributions for future FCC-ee studies</title>
+      <link>https://arxiv.org/abs/2607.22282</link>
+      <description>直接面向FCC-ee事件形状研究，比较多种统计方法，验证模板拟合在HEP参数提取中的可靠性</description>
+      <ns1:encoded>&lt;p&gt;&lt;strong&gt;栏目：&lt;/strong&gt;HEP 直接应用&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法：&lt;/strong&gt;template-based inference with multinomial likelihood and interpolation&lt;/p&gt;&lt;p&gt;&lt;strong&gt;相关性：&lt;/strong&gt;0.85；&lt;strong&gt;证据等级：&lt;/strong&gt;direct&lt;/p&gt;&lt;p&gt;&lt;strong&gt;初筛理由：&lt;/strong&gt;直接面向FCC-ee事件形状研究，比较多种统计方法，验证模板拟合在HEP参数提取中的可靠性&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法总结：&lt;/strong&gt;本文提出并验证了基于模板的统计推断框架，用于未来FCC-ee事件形状研究。利用受控玩具推力分布，比较了离散Pearson卡方、多项负对数似然及线性插值似然三种参数提取方法。通过1万次伪实验量化性能，发现多项似然一致优于基线，插值可将最大绝对平均偏差降至约0.003。同时研究了模型失配的影响，表明名义闭合不足以保证稳健性。该框架为在实际物理模拟和探测器效应应用前提供统计验证基准。&lt;/p&gt;&lt;h4&gt;论文明确支持的结论&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;多项负对数似然估计器一致优于简单的不相关Pearson型卡方基线&lt;/li&gt;&lt;li&gt;对于输入参数0.30，正确模板比例从200事例时的0.467±0.005提升至2000事例时的0.934±0.002&lt;/li&gt;&lt;li&gt;线性插值模板有效减小离格离散化效应，最大绝对平均偏差约0.003&lt;/li&gt;&lt;li&gt;模型失配可产生可测量偏差，表明名义闭合本身不足以建立稳健性&lt;/li&gt;&lt;/ul&gt;&lt;h4&gt;对高能实验物理的潜在帮助&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;该方法可迁移至FCC-ee事件形状可观测量（如推力）的参数提取，例如从分布中拟合强耦合常数或其他理论参数&lt;/li&gt;&lt;li&gt;模板插值框架可改进连续参数扫描时的精度，减少因网格离散化导致的偏差&lt;/li&gt;&lt;li&gt;可作为基准用于评估和比较未来实验中的统计推断方法&lt;/li&gt;&lt;/ul&gt;&lt;h4&gt;迁移风险&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;玩具模型与真实部分子簇射、强子化和探测器效应存在差异，导致潜在模拟-数据偏移&lt;/li&gt;&lt;li&gt;模型失配检验已表明方法对底层假设敏感，实际应用中未知的物理效应可能引入无法量化的偏差&lt;/li&gt;&lt;li&gt;模板统计量有限会导致似然估计的额外不确定性，尤其在低事例数区域&lt;/li&gt;&lt;li&gt;插值方法可能对模板形状的锐利特征处理不佳，影响参数提取的准确性&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;strong&gt;最小验证方案：&lt;/strong&gt;在包含部分子簇射、强子化和简化的探测器效应（如动量涂抹和接受度）的全模拟环境中，生成推力分布赝数据，并应用该模板框架提取控制参数。验证闭合并评估偏差，对比不同事例统计量下的性能。同时检查模板统计不确定性、分bin选择以及模型失配（通过改变物理模型参数）的影响。&lt;/p&gt;&lt;p&gt;&lt;a href="https://arxiv.org/abs/2607.22282"&gt;arXiv 页面&lt;/a&gt; · &lt;a href="https://github.com/quxnb/hepml-digest/issues/new?title=%5B%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%5D+2607.22282+Statistical+validation+of+template-based+parameter+extraction+from+toy+thrust+di&amp;amp;body=%23%23+%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%0A%0A-+arXiv%EF%BC%9A%5B2607.22282%5D%28https%3A%2F%2Farxiv.org%2Fabs%2F2607.22282%29%0A-+%E6%A0%8F%E7%9B%AE%EF%BC%9AHEP+%E7%9B%B4%E6%8E%A5%E5%BA%94%E7%94%A8%0A-+%E5%BD%93%E5%89%8D%E7%9B%B8%E5%85%B3%E6%80%A7%EF%BC%9A0.85%0A-+%E5%BD%93%E5%89%8D%E8%AF%81%E6%8D%AE%E7%AD%89%E7%BA%A7%EF%BC%9Adirect%0A%0A%23%23+%E5%88%A4%E6%96%AD%0A%0A-+%5B+%5D+%E6%8E%A8%E8%8D%90%E4%BF%9D%E7%95%99%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E5%90%88%E7%90%86%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E8%BF%87%E5%BA%A6%E6%8E%A8%E6%B5%8B%0A-+%5B+%5D+%E5%BA%94%E7%A7%BB%E8%87%B3%E5%8F%A6%E4%B8%80%E4%B8%AA%E6%A0%8F%E7%9B%AE%0A-+%5B+%5D+%E5%BB%BA%E8%AE%AE%E7%B2%BE%E8%AF%BB%E5%85%A8%E6%96%87%0A%0A%23%23+%E8%A1%A5%E5%85%85%E8%AF%B4%E6%98%8E%0A%0A"&gt;提交反馈&lt;/a&gt; · hep-ex, hep-ph&lt;/p&gt;</ns1:encoded>
+      <guid isPermaLink="false">arxiv:2607.22282:hepml-v1</guid>
+      <category>hep-ex</category>
+      <category>hep-ph</category>
+      <category>track:hep_application</category>
+      <category>事件形状分析</category>
+      <category>参数提取（如强耦合常数αS）</category>
+      <pubDate>Mon, 27 Jul 2026 04:00:00 +0000</pubDate>
+    </item>
     <item>
       <title>The Well-Tempered Likelihood: Honest Confidence Intervals for Misspecified Models</title>
       <link>https://arxiv.org/abs/2607.20718</link>
