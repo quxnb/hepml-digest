@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh-CN">
   <id>https://quxnb.github.io/hepml-digest</id>
   <title>Daily HEP-ML Digest</title>
-  <updated>2026-07-28T03:36:58.043062+00:00</updated>
+  <updated>2026-07-29T03:40:28.820191+00:00</updated>
   <author>
     <name>HEP-ML Digest Bot</name>
   </author>
@@ -10,6 +10,92 @@
   <link href="https://quxnb.github.io/hepml-digest/atom.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
   <subtitle>统计与机器学习方法对高能实验物理的每日启发</subtitle>
+  <entry>
+    <id>arxiv:2607.23856:hepml-v1</id>
+    <title>Covariance Last-Layer Ensembles: Function-Space Diversity for Efficient Uncertainty Quantification</title>
+    <updated>2026-07-29T03:36:35.203391+00:00</updated>
+    <author>
+      <name>H. Martin Gillis, Isaac Xu, Gabriel Spadon, Thomas Trappenberg</name>
+    </author>
+    <content type="html">&lt;p&gt;&lt;strong&gt;栏目：&lt;/strong&gt;方法雷达&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法：&lt;/strong&gt;Covariance Last-Layer Ensembles&lt;/p&gt;&lt;p&gt;&lt;strong&gt;相关性：&lt;/strong&gt;0.70；&lt;strong&gt;证据等级：&lt;/strong&gt;transferable&lt;/p&gt;&lt;p&gt;&lt;strong&gt;初筛理由：&lt;/strong&gt;方法直接对标深度集成的高效不确定性量化，可在HEP中用于事件分类或异常检测中的不确定性估计。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法总结：&lt;/strong&gt;提出协方差末层集成（cov-LLE），在共享冻结特征的基础上，对末层线性单元的激活施加直接协方差惩罚，以恢复函数空间多样性，避免传统末层集成中因共享梯度导致的成员预测趋同。该方法在保持单次骨干前传的成本下，实现了接近深度集成的分布外检测不确定度估计和校准性能，且不牺牲精度。同时将正交认证视为末层集成特例，构建检测器分类体系，并提出尺度不变的方向评分，改善近分布外检测的AUC。&lt;/p&gt;&lt;h4&gt;论文明确支持的结论&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;cov-LLE通过在激活上施加协方差惩罚直接恢复函数空间多样性，优于仅去相关权重的正交认证方法&lt;/li&gt;&lt;li&gt;在匹配的集成成员数下，cov-LLE以1倍骨干成本达到接近深度集成的校准度与预测方差，且不损失准确率&lt;/li&gt;&lt;li&gt;将正交认证重新解释为末层集成可组织检测器分类，提出方向评分修复近OOD失效，提升ROC AUC&lt;/li&gt;&lt;/ul&gt;&lt;h4&gt;对高能实验物理的潜在帮助&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;在喷注分类或事例重建中，利用cov-LLE对分布外数据（如新物理信号或探测器异常）进行高效不确定度估计，降低计算成本&lt;/li&gt;&lt;li&gt;在模拟样本训练、真实数据推断的场景中，借助cov-LLE的多样性增强，缓解sim-to-data shift下的过自信问题&lt;/li&gt;&lt;li&gt;结合探测器几何感知的特征提取器，用于标记可能违反洛伦兹对称性或置换对称性的事例&lt;/li&gt;&lt;/ul&gt;&lt;h4&gt;迁移风险&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;协方差惩罚依赖于激活分布假设，若物理数据特征稀疏或呈现长尾分布（如罕见粒子衰变），多样性恢复效果可能退化&lt;/li&gt;&lt;li&gt;方法未考虑负权事件或系统误差的传播，直接应用于加权HEP数据可能导致校准偏差&lt;/li&gt;&lt;li&gt;冻结骨干网络若在通用视觉任务上预训练，可能忽略探测器几何特有的对称性，导致特征不适应&lt;/li&gt;&lt;li&gt;方向评分依赖阈值定义，在物理分析中nuisance parameter的调谐可能复杂化&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;strong&gt;最小验证方案：&lt;/strong&gt;在喷注图像分类任务上，使用公开HEP数据集（如JetNet）训练分类器，部署cov-LLE与深度集成、标准LLE对比，评估分布外检测AUC、预期校准误差（ECE）和推理延迟；引入模拟-真实偏移测试校准鲁棒性，并检查加权事件下的表现。&lt;/p&gt;&lt;p&gt;&lt;a href="https://arxiv.org/abs/2607.23856"&gt;arXiv 页面&lt;/a&gt; · &lt;a href="https://github.com/quxnb/hepml-digest/issues/new?title=%5B%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%5D+2607.23856+Covariance+Last-Layer+Ensembles%3A+Function-Space+Diversity+for+Efficient+Uncertai&amp;amp;body=%23%23+%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%0A%0A-+arXiv%EF%BC%9A%5B2607.23856%5D%28https%3A%2F%2Farxiv.org%2Fabs%2F2607.23856%29%0A-+%E6%A0%8F%E7%9B%AE%EF%BC%9A%E6%96%B9%E6%B3%95%E9%9B%B7%E8%BE%BE%0A-+%E5%BD%93%E5%89%8D%E7%9B%B8%E5%85%B3%E6%80%A7%EF%BC%9A0.70%0A-+%E5%BD%93%E5%89%8D%E8%AF%81%E6%8D%AE%E7%AD%89%E7%BA%A7%EF%BC%9Atransferable%0A%0A%23%23+%E5%88%A4%E6%96%AD%0A%0A-+%5B+%5D+%E6%8E%A8%E8%8D%90%E4%BF%9D%E7%95%99%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E5%90%88%E7%90%86%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E8%BF%87%E5%BA%A6%E6%8E%A8%E6%B5%8B%0A-+%5B+%5D+%E5%BA%94%E7%A7%BB%E8%87%B3%E5%8F%A6%E4%B8%80%E4%B8%AA%E6%A0%8F%E7%9B%AE%0A-+%5B+%5D+%E5%BB%BA%E8%AE%AE%E7%B2%BE%E8%AF%BB%E5%85%A8%E6%96%87%0A%0A%23%23+%E8%A1%A5%E5%85%85%E8%AF%B4%E6%98%8E%0A%0A"&gt;提交反馈&lt;/a&gt; · cs.LG&lt;/p&gt;</content>
+    <link href="https://arxiv.org/abs/2607.23856"/>
+    <summary>方法直接对标深度集成的高效不确定性量化，可在HEP中用于事件分类或异常检测中的不确定性估计。</summary>
+    <category term="OOD检测"/>
+    <category term="cs.LG"/>
+    <category term="track:method_radar"/>
+    <category term="不确定性量化"/>
+    <category term="校准"/>
+    <published>2026-07-28T04:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>arxiv:2607.15928:hepml-v1</id>
+    <title>Knowledge-Guided Cross-Modal Fusion for Adult-to-Pediatric ECG Transfer via Label-Conditioned Contrastive Alignment</title>
+    <updated>2026-07-29T03:36:35.203391+00:00</updated>
+    <author>
+      <name>Xinran Liu, Yuwen Li, Hongxiang Gao, Heyang Xu, Jianqing Li, Zongmin Wang, Chengyu Liu</name>
+    </author>
+    <content type="html">&lt;p&gt;&lt;strong&gt;栏目：&lt;/strong&gt;方法雷达&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法：&lt;/strong&gt;标签条件跨模态对比对齐与知识引导融合&lt;/p&gt;&lt;p&gt;&lt;strong&gt;相关性：&lt;/strong&gt;0.70；&lt;strong&gt;证据等级：&lt;/strong&gt;transferable&lt;/p&gt;&lt;p&gt;&lt;strong&gt;初筛理由：&lt;/strong&gt;方法层面：利用诊断标签作为查询进行交叉注意力融合，并结合带标签条件的对比学习来对齐特征，这种策略可类比于HEP中利用物理先验（如粒子类型标签）指导特征学习，解决域迁移（如模拟到真实数据）问题。但任务领域不同（ECG vs. 高能物理），关键细节（如轴特征设计）需要适配，因此可迁移性中等。证据等级为转移性。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法总结：&lt;/strong&gt;PEACE框架在成人ECG预训练中构建知识引导的跨模态增强：利用诊断标签作为查询，通过交叉注意力融合ECG信号与由词条组成的轴嵌入（节律、形态、ST-T）；采用标签集合感知的双向对比损失对齐池化特征和融合嵌入，并引入课程自适应融合平滑优化。推理时仅用ECG单模态，实现成人到儿科的域迁移。&lt;/p&gt;&lt;h4&gt;论文明确支持的结论&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;PEACE在儿科ECG数据集上，零样本、50样本和全微调下宏平均AUC分别达到59.39%、81.74%和91.56%，在有限监督下优于基线。&lt;/li&gt;&lt;li&gt;标签条件知识对齐是儿科迁移增益的关键驱动因素，而非全局文本融合。&lt;/li&gt;&lt;li&gt;在PTB-XL微调后PEACE达到宏平均AUC 96.90%。&lt;/li&gt;&lt;/ul&gt;&lt;h4&gt;对高能实验物理的潜在帮助&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;可将诊断标签类比为粒子类型标签，利用已知物理先验引导对比学习，实现模拟到真实数据的域迁移，例如在喷注分类中将粒子类型作为查询对齐生成器与探测器特征。&lt;/li&gt;&lt;li&gt;可引入物理轴（如横动量、质量、子结构变量）替代ECG轴，构造知识分支辅助训练，推理时仅用探测器信号，缓解sim-to-data差异。&lt;/li&gt;&lt;/ul&gt;&lt;h4&gt;迁移风险&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;ECG时序信号与HEP探测器高维数据差异大，轴特征定义需领域专家设计，物理轴的可迁移性未经验证。&lt;/li&gt;&lt;li&gt;对比学习依赖多标签共现假设，HEP中标签噪声和类别不平衡可能削弱对齐效果。&lt;/li&gt;&lt;li&gt;课程自适应融合依赖分类损失平滑，HEP训练动态不同可能导致优化不稳定。&lt;/li&gt;&lt;li&gt;推理时实际延迟需评估，对比学习可能引入额外计算，不适合强实时要求场景。&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;strong&gt;最小验证方案：&lt;/strong&gt;在简化的模拟到真实粒子分类任务上复现：使用公开的HIGGS或相似数据集，定义粒子类型为标签，设计基于喷注子结构的物理轴嵌入，搭建带标签查询的交叉注意力网络，训练标签感知对比损失，测试零样本/少样本迁移性能，并消融知识分支与融合策略。&lt;/p&gt;&lt;p&gt;&lt;a href="https://arxiv.org/abs/2607.15928"&gt;arXiv 页面&lt;/a&gt; · &lt;a href="https://github.com/quxnb/hepml-digest/issues/new?title=%5B%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%5D+2607.15928+Knowledge-Guided+Cross-Modal+Fusion+for+Adult-to-Pediatric+ECG+Transfer+via+Labe&amp;amp;body=%23%23+%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%0A%0A-+arXiv%EF%BC%9A%5B2607.15928%5D%28https%3A%2F%2Farxiv.org%2Fabs%2F2607.15928%29%0A-+%E6%A0%8F%E7%9B%AE%EF%BC%9A%E6%96%B9%E6%B3%95%E9%9B%B7%E8%BE%BE%0A-+%E5%BD%93%E5%89%8D%E7%9B%B8%E5%85%B3%E6%80%A7%EF%BC%9A0.70%0A-+%E5%BD%93%E5%89%8D%E8%AF%81%E6%8D%AE%E7%AD%89%E7%BA%A7%EF%BC%9Atransferable%0A%0A%23%23+%E5%88%A4%E6%96%AD%0A%0A-+%5B+%5D+%E6%8E%A8%E8%8D%90%E4%BF%9D%E7%95%99%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E5%90%88%E7%90%86%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E8%BF%87%E5%BA%A6%E6%8E%A8%E6%B5%8B%0A-+%5B+%5D+%E5%BA%94%E7%A7%BB%E8%87%B3%E5%8F%A6%E4%B8%80%E4%B8%AA%E6%A0%8F%E7%9B%AE%0A-+%5B+%5D+%E5%BB%BA%E8%AE%AE%E7%B2%BE%E8%AF%BB%E5%85%A8%E6%96%87%0A%0A%23%23+%E8%A1%A5%E5%85%85%E8%AF%B4%E6%98%8E%0A%0A"&gt;提交反馈&lt;/a&gt; · cs.LG&lt;/p&gt;</content>
+    <link href="https://arxiv.org/abs/2607.15928"/>
+    <summary>方法层面：利用诊断标签作为查询进行交叉注意力融合，并结合带标签条件的对比学习来对齐特征，这种策略可类比于HEP中利用物理先验（如粒子类型标签）指导特征学习，解决域迁移（如模拟到真实数据）问题。但任务领域不同（ECG vs. 高能物理），关键细节（如轴特征设计）需要适配，因此可迁移性中等。证据等级为转移性。</summary>
+    <category term="cs.LG"/>
+    <category term="track:method_radar"/>
+    <category term="基于知识迁移的模型泛化"/>
+    <category term="有限标签下的分类（如粒子鉴别）"/>
+    <category term="跨领域域适应（不同实验或探测器）"/>
+    <published>2026-07-28T04:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>arxiv:2607.24250:hepml-v1</id>
+    <title>The mathematical theory of photomultiplier tube calibration</title>
+    <updated>2026-07-29T03:36:35.203391+00:00</updated>
+    <author>
+      <name>L. N. Kalousis, E. A. Dris, A. Vynias</name>
+    </author>
+    <content type="html">&lt;p&gt;&lt;strong&gt;栏目：&lt;/strong&gt;HEP 直接应用&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法：&lt;/strong&gt;数学建模与数值拟合（Gamma函数模型、Poisson统计、软电荷成分处理）&lt;/p&gt;&lt;p&gt;&lt;strong&gt;相关性：&lt;/strong&gt;0.70；&lt;strong&gt;证据等级：&lt;/strong&gt;direct&lt;/p&gt;&lt;p&gt;&lt;strong&gt;初筛理由：&lt;/strong&gt;PMT校准是高能物理实验的基础任务，文中方法虽传统但实用性强，且提及软电荷成分影响，对实际校准有参考价值&lt;/p&gt;&lt;p&gt;&lt;em&gt;本条目仅完成摘要级筛选。&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;a href="https://arxiv.org/abs/2607.24250"&gt;arXiv 页面&lt;/a&gt; · &lt;a href="https://github.com/quxnb/hepml-digest/issues/new?title=%5B%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%5D+2607.24250+The+mathematical+theory+of+photomultiplier+tube+calibration&amp;amp;body=%23%23+%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%0A%0A-+arXiv%EF%BC%9A%5B2607.24250%5D%28https%3A%2F%2Farxiv.org%2Fabs%2F2607.24250%29%0A-+%E6%A0%8F%E7%9B%AE%EF%BC%9AHEP+%E7%9B%B4%E6%8E%A5%E5%BA%94%E7%94%A8%0A-+%E5%BD%93%E5%89%8D%E7%9B%B8%E5%85%B3%E6%80%A7%EF%BC%9A0.70%0A-+%E5%BD%93%E5%89%8D%E8%AF%81%E6%8D%AE%E7%AD%89%E7%BA%A7%EF%BC%9Adirect%0A%0A%23%23+%E5%88%A4%E6%96%AD%0A%0A-+%5B+%5D+%E6%8E%A8%E8%8D%90%E4%BF%9D%E7%95%99%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E5%90%88%E7%90%86%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E8%BF%87%E5%BA%A6%E6%8E%A8%E6%B5%8B%0A-+%5B+%5D+%E5%BA%94%E7%A7%BB%E8%87%B3%E5%8F%A6%E4%B8%80%E4%B8%AA%E6%A0%8F%E7%9B%AE%0A-+%5B+%5D+%E5%BB%BA%E8%AE%AE%E7%B2%BE%E8%AF%BB%E5%85%A8%E6%96%87%0A%0A%23%23+%E8%A1%A5%E5%85%85%E8%AF%B4%E6%98%8E%0A%0A"&gt;提交反馈&lt;/a&gt; · hep-ex&lt;/p&gt;</content>
+    <link href="https://arxiv.org/abs/2607.24250"/>
+    <summary>PMT校准是高能物理实验的基础任务，文中方法虽传统但实用性强，且提及软电荷成分影响，对实际校准有参考价值</summary>
+    <category term="hep-ex"/>
+    <category term="track:hep_application"/>
+    <category term="增益标定"/>
+    <category term="探测器校准"/>
+    <category term="电荷输出建模"/>
+    <published>2026-07-28T04:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>arxiv:2607.23377:hepml-v1</id>
+    <title>Predict before you train: Scaling Laws for particle physics foundation models</title>
+    <updated>2026-07-29T03:36:35.203391+00:00</updated>
+    <author>
+      <name>Jan-Lucas Uslu, Benjamin Nachman, Christopher Re</name>
+    </author>
+    <content type="html">&lt;p&gt;&lt;strong&gt;栏目：&lt;/strong&gt;HEP 直接应用&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法：&lt;/strong&gt;Scaling laws for transformers&lt;/p&gt;&lt;p&gt;&lt;strong&gt;相关性：&lt;/strong&gt;0.90；&lt;strong&gt;证据等级：&lt;/strong&gt;direct&lt;/p&gt;&lt;p&gt;&lt;strong&gt;初筛理由：&lt;/strong&gt;直接研究粒子物理基础模型的可扩展性，并连接至喷注标记性能。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法总结：&lt;/strong&gt;本研究针对对撞机喷注预训练的通用Transformer，提出了一种联合模型与数据缩放定律。仅利用小模型在三个数量级训练计算量上拟合的缩放关系，即可预测百倍以上计算量训练模型的损失，误差低于1%。进一步建立了预训练损失与下游喷注标记性能（如微调损失、背景排除率）的正相关关系，使得在训练任意大模型前，能根据计算预算预估物理性能。最终模型在准确率、AUC和夸克/胶子排除率上与先进物理感知模型持平，仅在顶夸克标记高纯度尾部略有差距。该方法为粒子物理基础模型的高效扩展提供了实用工具。&lt;/p&gt;&lt;h4&gt;论文明确支持的结论&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;仅使用小模型拟合的缩放定律，可预测百倍计算量训练模型的损失，误差在1%以内&lt;/li&gt;&lt;li&gt;预训练损失越低，下游微调损失越低，背景排除率越高&lt;/li&gt;&lt;li&gt;最终预训练模型性能与当前最先进的物理感知基础模型在多个指标上一致&lt;/li&gt;&lt;/ul&gt;&lt;h4&gt;对高能实验物理的潜在帮助&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;可将缩放定律用于资源规划，在训练前预估给定计算预算下喷注标记的物理性能&lt;/li&gt;&lt;li&gt;方法可迁移至其他对撞机对象（如轻子、光子）或探测器模拟数据上的基础模型训练&lt;/li&gt;&lt;li&gt;指导不同规模探测器（如ATLAS、CMS）或未来对撞机（FCC）上基础模型的架构选择与训练策略&lt;/li&gt;&lt;/ul&gt;&lt;h4&gt;迁移风险&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;缩放定律拟合依赖特定的Transformer架构和喷注预处理方式，更换架构或数据集可能需重新标定&lt;/li&gt;&lt;li&gt;仅基于模拟喷注预训练，未在真实探测器数据上验证，存在模拟-数据分布偏移风险&lt;/li&gt;&lt;li&gt;下游迁移任务（喷注标记）可能掩盖预训练表征在某些物理可观测上的局限&lt;/li&gt;&lt;li&gt;外推到远超拟合范围的计算量时，缩放定律可能失效&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;strong&gt;最小验证方案：&lt;/strong&gt;在独立喷注数据集（如不同产生器或不同对撞条件模拟样本）上验证预训练损失预测精度，然后微调至多个标准标记任务，检查下游AUC与预测是否一致；进一步在一组真实探测器数据上进行适应性微调，评估性能保持水平。&lt;/p&gt;&lt;p&gt;&lt;a href="https://arxiv.org/abs/2607.23377"&gt;arXiv 页面&lt;/a&gt; · &lt;a href="https://github.com/quxnb/hepml-digest/issues/new?title=%5B%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%5D+2607.23377+Predict+before+you+train%3A+Scaling+Laws+for+particle+physics+foundation+models&amp;amp;body=%23%23+%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%0A%0A-+arXiv%EF%BC%9A%5B2607.23377%5D%28https%3A%2F%2Farxiv.org%2Fabs%2F2607.23377%29%0A-+%E6%A0%8F%E7%9B%AE%EF%BC%9AHEP+%E7%9B%B4%E6%8E%A5%E5%BA%94%E7%94%A8%0A-+%E5%BD%93%E5%89%8D%E7%9B%B8%E5%85%B3%E6%80%A7%EF%BC%9A0.90%0A-+%E5%BD%93%E5%89%8D%E8%AF%81%E6%8D%AE%E7%AD%89%E7%BA%A7%EF%BC%9Adirect%0A%0A%23%23+%E5%88%A4%E6%96%AD%0A%0A-+%5B+%5D+%E6%8E%A8%E8%8D%90%E4%BF%9D%E7%95%99%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E5%90%88%E7%90%86%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E8%BF%87%E5%BA%A6%E6%8E%A8%E6%B5%8B%0A-+%5B+%5D+%E5%BA%94%E7%A7%BB%E8%87%B3%E5%8F%A6%E4%B8%80%E4%B8%AA%E6%A0%8F%E7%9B%AE%0A-+%5B+%5D+%E5%BB%BA%E8%AE%AE%E7%B2%BE%E8%AF%BB%E5%85%A8%E6%96%87%0A%0A%23%23+%E8%A1%A5%E5%85%85%E8%AF%B4%E6%98%8E%0A%0A"&gt;提交反馈&lt;/a&gt; · hep-ex&lt;/p&gt;</content>
+    <link href="https://arxiv.org/abs/2607.23377"/>
+    <summary>直接研究粒子物理基础模型的可扩展性，并连接至喷注标记性能。</summary>
+    <category term="foundation models"/>
+    <category term="hep-ex"/>
+    <category term="jet tagging"/>
+    <category term="particle identification"/>
+    <category term="track:hep_application"/>
+    <published>2026-07-28T04:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>arxiv:2603.18172:hepml-v1</id>
+    <title>Reconstruction of overlapping electromagnetic showers in calorimeters using Transformers</title>
+    <updated>2026-07-29T03:36:35.203391+00:00</updated>
+    <author>
+      <name>Yuliia Maidannyk, Fabrice Couderc, Julie Malcl\`es, Mehmet \"Ozg\"ur Sahin</name>
+    </author>
+    <content type="html">&lt;p&gt;&lt;strong&gt;栏目：&lt;/strong&gt;HEP 直接应用&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法：&lt;/strong&gt;Transformer（注意力机制）与图神经网络（Message Passing, Graph Transformer）&lt;/p&gt;&lt;p&gt;&lt;strong&gt;相关性：&lt;/strong&gt;0.90；&lt;strong&gt;证据等级：&lt;/strong&gt;direct&lt;/p&gt;&lt;p&gt;&lt;strong&gt;初筛理由：&lt;/strong&gt;直接针对高能物理重叠电磁簇射重建问题，使用Transformer和GNN，并在GEANT4模拟的ECAL类拓扑上验证，关注了能量分辨率、位置分辨率等关键指标。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法总结：&lt;/strong&gt;本文提出基于 Transformer 和图神经网络的量热器能量沉积聚类方法，直接从读出重建光子/电子的能量和位置。ClusTEX 模型采用单步推理和新型位置编码，在模拟的玩具量热器和 ECAL 类拓扑上训练，相比标准算法和两步法，显著改善重叠簇射的能量分辨率和分裂率，并在探测器局部故障下保持稳健。&lt;/p&gt;&lt;h4&gt;论文明确支持的结论&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;注意力机制改进了重叠簇射的重建性能，同时保持孤立光子的性能&lt;/li&gt;&lt;li&gt;ClusTEX 在 ECAL 类拓扑上提供最佳能量分辨率和最低分裂率&lt;/li&gt;&lt;li&gt;基于注意力的模型在 boosted π0→γγ 中保持了双光子质量重建能力&lt;/li&gt;&lt;li&gt;ClusTEX 对局部探测器故障具有稳健性，能够部分恢复能量&lt;/li&gt;&lt;/ul&gt;&lt;h4&gt;对高能实验物理的潜在帮助&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;将 ClusTEX 应用于 LHC 实验中电磁量能器的光子/电子重建，以处理高堆积和 boosted 拓扑下的重叠簇射&lt;/li&gt;&lt;li&gt;利用图变换器改进喷注子结构中的中性 pion 重建，提升双光子质量分辨率&lt;/li&gt;&lt;li&gt;作为快速模拟中的替代重建算法，减少计算时间同时保持精度&lt;/li&gt;&lt;/ul&gt;&lt;h4&gt;迁移风险&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;模拟到数据的差异：GEANT4 模拟可能未完全捕捉真实探测器的噪声、非均匀性等效应&lt;/li&gt;&lt;li&gt;校准依赖：方法可能对量能器校准误差敏感，需要在实际数据中重新校准&lt;/li&gt;&lt;li&gt;探测器几何复杂性：简化拓扑可能与真实 ECAL 的精细几何存在差异，影响位置编码有效性&lt;/li&gt;&lt;li&gt;推理延迟：单步图变换器在真实高吞吐量触发系统中可能面临计算资源限制&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;strong&gt;最小验证方案：&lt;/strong&gt;在真实 LHC 实验（如 CMS 或 ATLAS）的一组标记数据上，使用标准算法和 ClusTEX 进行重建，比较能量分辨率、位置分辨率和分裂率；同时评估在局部探测器模块失效时的鲁棒性，并与模拟性能进行对比，量化模拟到数据的偏移。&lt;/p&gt;&lt;p&gt;&lt;a href="https://arxiv.org/abs/2603.18172"&gt;arXiv 页面&lt;/a&gt; · &lt;a href="https://github.com/quxnb/hepml-digest/issues/new?title=%5B%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%5D+2603.18172+Reconstruction+of+overlapping+electromagnetic+showers+in+calorimeters+using+Tran&amp;amp;body=%23%23+%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%0A%0A-+arXiv%EF%BC%9A%5B2603.18172%5D%28https%3A%2F%2Farxiv.org%2Fabs%2F2603.18172%29%0A-+%E6%A0%8F%E7%9B%AE%EF%BC%9AHEP+%E7%9B%B4%E6%8E%A5%E5%BA%94%E7%94%A8%0A-+%E5%BD%93%E5%89%8D%E7%9B%B8%E5%85%B3%E6%80%A7%EF%BC%9A0.90%0A-+%E5%BD%93%E5%89%8D%E8%AF%81%E6%8D%AE%E7%AD%89%E7%BA%A7%EF%BC%9Adirect%0A%0A%23%23+%E5%88%A4%E6%96%AD%0A%0A-+%5B+%5D+%E6%8E%A8%E8%8D%90%E4%BF%9D%E7%95%99%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E5%90%88%E7%90%86%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E8%BF%87%E5%BA%A6%E6%8E%A8%E6%B5%8B%0A-+%5B+%5D+%E5%BA%94%E7%A7%BB%E8%87%B3%E5%8F%A6%E4%B8%80%E4%B8%AA%E6%A0%8F%E7%9B%AE%0A-+%5B+%5D+%E5%BB%BA%E8%AE%AE%E7%B2%BE%E8%AF%BB%E5%85%A8%E6%96%87%0A%0A%23%23+%E8%A1%A5%E5%85%85%E8%AF%B4%E6%98%8E%0A%0A"&gt;提交反馈&lt;/a&gt; · hep-ex&lt;/p&gt;</content>
+    <link href="https://arxiv.org/abs/2603.18172"/>
+    <summary>直接针对高能物理重叠电磁簇射重建问题，使用Transformer和GNN，并在GEANT4模拟的ECAL类拓扑上验证，关注了能量分辨率、位置分辨率等关键指标。</summary>
+    <category term="hep-ex"/>
+    <category term="track:hep_application"/>
+    <category term="位置重建"/>
+    <category term="电磁簇射重建"/>
+    <category term="粒子能量重建"/>
+    <category term="重叠簇射分解"/>
+    <published>2026-07-28T04:00:00+00:00</published>
+  </entry>
   <entry>
     <id>arxiv:2607.21817:hepml-v1</id>
     <title>Longitudinal Random Forests for Sparse and Irregular Response Trajectories</title>
@@ -125,7 +211,7 @@
     <author>
       <name>Michael Wieck-Sosa, Cosma Rohilla Shalizi</name>
     </author>
-    <content type="html">&lt;p&gt;&lt;strong&gt;栏目：&lt;/strong&gt;方法雷达&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法：&lt;/strong&gt;随机特征匹配 (random feature matching)&lt;/p&gt;&lt;p&gt;&lt;strong&gt;相关性：&lt;/strong&gt;0.60；&lt;strong&gt;证据等级：&lt;/strong&gt;transferable&lt;/p&gt;&lt;p&gt;&lt;strong&gt;初筛理由：&lt;/strong&gt;匹配随机特征估计参数的方法在无似然推断场景对HEP有迁移潜力，但当前未在HEP上验证。&lt;/p&gt;&lt;p&gt;&lt;em&gt;本条目仅完成摘要级筛选。&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;a href="https://arxiv.org/abs/2607.21916"&gt;arXiv 页面&lt;/a&gt; · &lt;a href="https://github.com/quxnb/hepml-digest/issues/new?title=%5B%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%5D+2607.21916+Estimating+dynamic+models+by+matching+random+features&amp;amp;body=%23%23+%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%0A%0A-+arXiv%EF%BC%9A%5B2607.21916%5D%28https%3A%2F%2Farxiv.org%2Fabs%2F2607.21916%29%0A-+%E6%A0%8F%E7%9B%AE%EF%BC%9A%E6%96%B9%E6%B3%95%E9%9B%B7%E8%BE%BE%0A-+%E5%BD%93%E5%89%8D%E7%9B%B8%E5%85%B3%E6%80%A7%EF%BC%9A0.60%0A-+%E5%BD%93%E5%89%8D%E8%AF%81%E6%8D%AE%E7%AD%89%E7%BA%A7%EF%BC%9Atransferable%0A%0A%23%23+%E5%88%A4%E6%96%AD%0A%0A-+%5B+%5D+%E6%8E%A8%E8%8D%90%E4%BF%9D%E7%95%99%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E5%90%88%E7%90%86%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E8%BF%87%E5%BA%A6%E6%8E%A8%E6%B5%8B%0A-+%5B+%5D+%E5%BA%94%E7%A7%BB%E8%87%B3%E5%8F%A6%E4%B8%80%E4%B8%AA%E6%A0%8F%E7%9B%AE%0A-+%5B+%5D+%E5%BB%BA%E8%AE%AE%E7%B2%BE%E8%AF%BB%E5%85%A8%E6%96%87%0A%0A%23%23+%E8%A1%A5%E5%85%85%E8%AF%B4%E6%98%8E%0A%0A"&gt;提交反馈&lt;/a&gt; · math.ST, nlin.CD, physics.data-an, stat.ME, stat.TH&lt;/p&gt;</content>
+    <content type="html">&lt;p&gt;&lt;strong&gt;栏目：&lt;/strong&gt;方法雷达&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法：&lt;/strong&gt;随机特征匹配 (random feature matching)&lt;/p&gt;&lt;p&gt;&lt;strong&gt;相关性：&lt;/strong&gt;0.60；&lt;strong&gt;证据等级：&lt;/strong&gt;transferable&lt;/p&gt;&lt;p&gt;&lt;strong&gt;初筛理由：&lt;/strong&gt;匹配随机特征估计参数的方法在无似然推断场景对HEP有迁移潜力，但当前未在HEP上验证。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法总结：&lt;/strong&gt;本文提出通过匹配观测数据与模拟数据的少量随机特征来估计动态模型参数，无需计算似然函数或人工选择汇总统计量。对于p维参数，仅需2p+1个随机特征即可识别模型。作者针对平稳和非平稳过程分别构造了估计器，并在温和条件下证明了相合性。该方法为基于模拟的推断提供了新框架，有望迁移至高能物理中模拟器参数调谐等无似然场景，但尚需处理探测器效应、加权事例及系统性误差等实际问题。&lt;/p&gt;&lt;h4&gt;论文明确支持的结论&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;参数可通过匹配少量随机特征估计，无需似然函数或人工汇总统计量&lt;/li&gt;&lt;li&gt;p维参数模型只需2p+1个随机特征即可识别&lt;/li&gt;&lt;li&gt;针对平稳和非平稳过程分别提出估计器并证明相合性&lt;/li&gt;&lt;li&gt;奠定了一类用于基于模拟的估计和推断的随机特征方法基础&lt;/li&gt;&lt;/ul&gt;&lt;h4&gt;对高能实验物理的潜在帮助&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;可用于高能物理蒙特卡洛产生器参数调谐，替代或补充现有神经网络方法&lt;/li&gt;&lt;li&gt;适用于动态模型参数估计，如部分子簇射或强子化过程建模&lt;/li&gt;&lt;li&gt;无似然推断框架可降低计算负担，尤其适合模拟代价较高的场景&lt;/li&gt;&lt;/ul&gt;&lt;h4&gt;迁移风险&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;未考虑HEP中常见的负权重事例及事例权重处理&lt;/li&gt;&lt;li&gt;随机特征可能破坏物理对称性（如洛伦兹不变性）&lt;/li&gt;&lt;li&gt;未处理探测器效应、模拟-数据偏移及系统性误差&lt;/li&gt;&lt;li&gt;对高维数据和冗余特征（nuisance parameters）的鲁棒性未知&lt;/li&gt;&lt;li&gt;推理延迟未评估，可能不适用于实时触发或筛选&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;strong&gt;最小验证方案：&lt;/strong&gt;采用简化的HEP模拟模型（如Z玻色子质量谱生成），已知真实参数，检验随机特征匹配能否准确恢复参数。逐步加入探测器展宽、背景及事例权重，评估偏差和方差，并与似然无关神经网络方法对比。&lt;/p&gt;&lt;p&gt;&lt;a href="https://arxiv.org/abs/2607.21916"&gt;arXiv 页面&lt;/a&gt; · &lt;a href="https://github.com/quxnb/hepml-digest/issues/new?title=%5B%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%5D+2607.21916+Estimating+dynamic+models+by+matching+random+features&amp;amp;body=%23%23+%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%0A%0A-+arXiv%EF%BC%9A%5B2607.21916%5D%28https%3A%2F%2Farxiv.org%2Fabs%2F2607.21916%29%0A-+%E6%A0%8F%E7%9B%AE%EF%BC%9A%E6%96%B9%E6%B3%95%E9%9B%B7%E8%BE%BE%0A-+%E5%BD%93%E5%89%8D%E7%9B%B8%E5%85%B3%E6%80%A7%EF%BC%9A0.60%0A-+%E5%BD%93%E5%89%8D%E8%AF%81%E6%8D%AE%E7%AD%89%E7%BA%A7%EF%BC%9Atransferable%0A%0A%23%23+%E5%88%A4%E6%96%AD%0A%0A-+%5B+%5D+%E6%8E%A8%E8%8D%90%E4%BF%9D%E7%95%99%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E5%90%88%E7%90%86%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E8%BF%87%E5%BA%A6%E6%8E%A8%E6%B5%8B%0A-+%5B+%5D+%E5%BA%94%E7%A7%BB%E8%87%B3%E5%8F%A6%E4%B8%80%E4%B8%AA%E6%A0%8F%E7%9B%AE%0A-+%5B+%5D+%E5%BB%BA%E8%AE%AE%E7%B2%BE%E8%AF%BB%E5%85%A8%E6%96%87%0A%0A%23%23+%E8%A1%A5%E5%85%85%E8%AF%B4%E6%98%8E%0A%0A"&gt;提交反馈&lt;/a&gt; · math.ST, nlin.CD, physics.data-an, stat.ME, stat.TH&lt;/p&gt;</content>
     <link href="https://arxiv.org/abs/2607.21916"/>
     <summary>匹配随机特征估计参数的方法在无似然推断场景对HEP有迁移潜力，但当前未在HEP上验证。</summary>
     <category term="math.ST"/>

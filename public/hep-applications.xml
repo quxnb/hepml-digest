@@ -8,7 +8,47 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Tue, 28 Jul 2026 03:36:58 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 29 Jul 2026 03:40:28 +0000</lastBuildDate>
+    <item>
+      <title>The mathematical theory of photomultiplier tube calibration</title>
+      <link>https://arxiv.org/abs/2607.24250</link>
+      <description>PMT校准是高能物理实验的基础任务，文中方法虽传统但实用性强，且提及软电荷成分影响，对实际校准有参考价值</description>
+      <ns1:encoded>&lt;p&gt;&lt;strong&gt;栏目：&lt;/strong&gt;HEP 直接应用&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法：&lt;/strong&gt;数学建模与数值拟合（Gamma函数模型、Poisson统计、软电荷成分处理）&lt;/p&gt;&lt;p&gt;&lt;strong&gt;相关性：&lt;/strong&gt;0.70；&lt;strong&gt;证据等级：&lt;/strong&gt;direct&lt;/p&gt;&lt;p&gt;&lt;strong&gt;初筛理由：&lt;/strong&gt;PMT校准是高能物理实验的基础任务，文中方法虽传统但实用性强，且提及软电荷成分影响，对实际校准有参考价值&lt;/p&gt;&lt;p&gt;&lt;em&gt;本条目仅完成摘要级筛选。&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;a href="https://arxiv.org/abs/2607.24250"&gt;arXiv 页面&lt;/a&gt; · &lt;a href="https://github.com/quxnb/hepml-digest/issues/new?title=%5B%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%5D+2607.24250+The+mathematical+theory+of+photomultiplier+tube+calibration&amp;amp;body=%23%23+%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%0A%0A-+arXiv%EF%BC%9A%5B2607.24250%5D%28https%3A%2F%2Farxiv.org%2Fabs%2F2607.24250%29%0A-+%E6%A0%8F%E7%9B%AE%EF%BC%9AHEP+%E7%9B%B4%E6%8E%A5%E5%BA%94%E7%94%A8%0A-+%E5%BD%93%E5%89%8D%E7%9B%B8%E5%85%B3%E6%80%A7%EF%BC%9A0.70%0A-+%E5%BD%93%E5%89%8D%E8%AF%81%E6%8D%AE%E7%AD%89%E7%BA%A7%EF%BC%9Adirect%0A%0A%23%23+%E5%88%A4%E6%96%AD%0A%0A-+%5B+%5D+%E6%8E%A8%E8%8D%90%E4%BF%9D%E7%95%99%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E5%90%88%E7%90%86%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E8%BF%87%E5%BA%A6%E6%8E%A8%E6%B5%8B%0A-+%5B+%5D+%E5%BA%94%E7%A7%BB%E8%87%B3%E5%8F%A6%E4%B8%80%E4%B8%AA%E6%A0%8F%E7%9B%AE%0A-+%5B+%5D+%E5%BB%BA%E8%AE%AE%E7%B2%BE%E8%AF%BB%E5%85%A8%E6%96%87%0A%0A%23%23+%E8%A1%A5%E5%85%85%E8%AF%B4%E6%98%8E%0A%0A"&gt;提交反馈&lt;/a&gt; · hep-ex&lt;/p&gt;</ns1:encoded>
+      <guid isPermaLink="false">arxiv:2607.24250:hepml-v1</guid>
+      <category>hep-ex</category>
+      <category>track:hep_application</category>
+      <category>增益标定</category>
+      <category>探测器校准</category>
+      <category>电荷输出建模</category>
+      <pubDate>Tue, 28 Jul 2026 04:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Predict before you train: Scaling Laws for particle physics foundation models</title>
+      <link>https://arxiv.org/abs/2607.23377</link>
+      <description>直接研究粒子物理基础模型的可扩展性，并连接至喷注标记性能。</description>
+      <ns1:encoded>&lt;p&gt;&lt;strong&gt;栏目：&lt;/strong&gt;HEP 直接应用&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法：&lt;/strong&gt;Scaling laws for transformers&lt;/p&gt;&lt;p&gt;&lt;strong&gt;相关性：&lt;/strong&gt;0.90；&lt;strong&gt;证据等级：&lt;/strong&gt;direct&lt;/p&gt;&lt;p&gt;&lt;strong&gt;初筛理由：&lt;/strong&gt;直接研究粒子物理基础模型的可扩展性，并连接至喷注标记性能。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法总结：&lt;/strong&gt;本研究针对对撞机喷注预训练的通用Transformer，提出了一种联合模型与数据缩放定律。仅利用小模型在三个数量级训练计算量上拟合的缩放关系，即可预测百倍以上计算量训练模型的损失，误差低于1%。进一步建立了预训练损失与下游喷注标记性能（如微调损失、背景排除率）的正相关关系，使得在训练任意大模型前，能根据计算预算预估物理性能。最终模型在准确率、AUC和夸克/胶子排除率上与先进物理感知模型持平，仅在顶夸克标记高纯度尾部略有差距。该方法为粒子物理基础模型的高效扩展提供了实用工具。&lt;/p&gt;&lt;h4&gt;论文明确支持的结论&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;仅使用小模型拟合的缩放定律，可预测百倍计算量训练模型的损失，误差在1%以内&lt;/li&gt;&lt;li&gt;预训练损失越低，下游微调损失越低，背景排除率越高&lt;/li&gt;&lt;li&gt;最终预训练模型性能与当前最先进的物理感知基础模型在多个指标上一致&lt;/li&gt;&lt;/ul&gt;&lt;h4&gt;对高能实验物理的潜在帮助&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;可将缩放定律用于资源规划，在训练前预估给定计算预算下喷注标记的物理性能&lt;/li&gt;&lt;li&gt;方法可迁移至其他对撞机对象（如轻子、光子）或探测器模拟数据上的基础模型训练&lt;/li&gt;&lt;li&gt;指导不同规模探测器（如ATLAS、CMS）或未来对撞机（FCC）上基础模型的架构选择与训练策略&lt;/li&gt;&lt;/ul&gt;&lt;h4&gt;迁移风险&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;缩放定律拟合依赖特定的Transformer架构和喷注预处理方式，更换架构或数据集可能需重新标定&lt;/li&gt;&lt;li&gt;仅基于模拟喷注预训练，未在真实探测器数据上验证，存在模拟-数据分布偏移风险&lt;/li&gt;&lt;li&gt;下游迁移任务（喷注标记）可能掩盖预训练表征在某些物理可观测上的局限&lt;/li&gt;&lt;li&gt;外推到远超拟合范围的计算量时，缩放定律可能失效&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;strong&gt;最小验证方案：&lt;/strong&gt;在独立喷注数据集（如不同产生器或不同对撞条件模拟样本）上验证预训练损失预测精度，然后微调至多个标准标记任务，检查下游AUC与预测是否一致；进一步在一组真实探测器数据上进行适应性微调，评估性能保持水平。&lt;/p&gt;&lt;p&gt;&lt;a href="https://arxiv.org/abs/2607.23377"&gt;arXiv 页面&lt;/a&gt; · &lt;a href="https://github.com/quxnb/hepml-digest/issues/new?title=%5B%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%5D+2607.23377+Predict+before+you+train%3A+Scaling+Laws+for+particle+physics+foundation+models&amp;amp;body=%23%23+%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%0A%0A-+arXiv%EF%BC%9A%5B2607.23377%5D%28https%3A%2F%2Farxiv.org%2Fabs%2F2607.23377%29%0A-+%E6%A0%8F%E7%9B%AE%EF%BC%9AHEP+%E7%9B%B4%E6%8E%A5%E5%BA%94%E7%94%A8%0A-+%E5%BD%93%E5%89%8D%E7%9B%B8%E5%85%B3%E6%80%A7%EF%BC%9A0.90%0A-+%E5%BD%93%E5%89%8D%E8%AF%81%E6%8D%AE%E7%AD%89%E7%BA%A7%EF%BC%9Adirect%0A%0A%23%23+%E5%88%A4%E6%96%AD%0A%0A-+%5B+%5D+%E6%8E%A8%E8%8D%90%E4%BF%9D%E7%95%99%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E5%90%88%E7%90%86%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E8%BF%87%E5%BA%A6%E6%8E%A8%E6%B5%8B%0A-+%5B+%5D+%E5%BA%94%E7%A7%BB%E8%87%B3%E5%8F%A6%E4%B8%80%E4%B8%AA%E6%A0%8F%E7%9B%AE%0A-+%5B+%5D+%E5%BB%BA%E8%AE%AE%E7%B2%BE%E8%AF%BB%E5%85%A8%E6%96%87%0A%0A%23%23+%E8%A1%A5%E5%85%85%E8%AF%B4%E6%98%8E%0A%0A"&gt;提交反馈&lt;/a&gt; · hep-ex&lt;/p&gt;</ns1:encoded>
+      <guid isPermaLink="false">arxiv:2607.23377:hepml-v1</guid>
+      <category>foundation models</category>
+      <category>hep-ex</category>
+      <category>jet tagging</category>
+      <category>particle identification</category>
+      <category>track:hep_application</category>
+      <pubDate>Tue, 28 Jul 2026 04:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Reconstruction of overlapping electromagnetic showers in calorimeters using Transformers</title>
+      <link>https://arxiv.org/abs/2603.18172</link>
+      <description>直接针对高能物理重叠电磁簇射重建问题，使用Transformer和GNN，并在GEANT4模拟的ECAL类拓扑上验证，关注了能量分辨率、位置分辨率等关键指标。</description>
+      <ns1:encoded>&lt;p&gt;&lt;strong&gt;栏目：&lt;/strong&gt;HEP 直接应用&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法：&lt;/strong&gt;Transformer（注意力机制）与图神经网络（Message Passing, Graph Transformer）&lt;/p&gt;&lt;p&gt;&lt;strong&gt;相关性：&lt;/strong&gt;0.90；&lt;strong&gt;证据等级：&lt;/strong&gt;direct&lt;/p&gt;&lt;p&gt;&lt;strong&gt;初筛理由：&lt;/strong&gt;直接针对高能物理重叠电磁簇射重建问题，使用Transformer和GNN，并在GEANT4模拟的ECAL类拓扑上验证，关注了能量分辨率、位置分辨率等关键指标。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法总结：&lt;/strong&gt;本文提出基于 Transformer 和图神经网络的量热器能量沉积聚类方法，直接从读出重建光子/电子的能量和位置。ClusTEX 模型采用单步推理和新型位置编码，在模拟的玩具量热器和 ECAL 类拓扑上训练，相比标准算法和两步法，显著改善重叠簇射的能量分辨率和分裂率，并在探测器局部故障下保持稳健。&lt;/p&gt;&lt;h4&gt;论文明确支持的结论&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;注意力机制改进了重叠簇射的重建性能，同时保持孤立光子的性能&lt;/li&gt;&lt;li&gt;ClusTEX 在 ECAL 类拓扑上提供最佳能量分辨率和最低分裂率&lt;/li&gt;&lt;li&gt;基于注意力的模型在 boosted π0→γγ 中保持了双光子质量重建能力&lt;/li&gt;&lt;li&gt;ClusTEX 对局部探测器故障具有稳健性，能够部分恢复能量&lt;/li&gt;&lt;/ul&gt;&lt;h4&gt;对高能实验物理的潜在帮助&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;将 ClusTEX 应用于 LHC 实验中电磁量能器的光子/电子重建，以处理高堆积和 boosted 拓扑下的重叠簇射&lt;/li&gt;&lt;li&gt;利用图变换器改进喷注子结构中的中性 pion 重建，提升双光子质量分辨率&lt;/li&gt;&lt;li&gt;作为快速模拟中的替代重建算法，减少计算时间同时保持精度&lt;/li&gt;&lt;/ul&gt;&lt;h4&gt;迁移风险&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;模拟到数据的差异：GEANT4 模拟可能未完全捕捉真实探测器的噪声、非均匀性等效应&lt;/li&gt;&lt;li&gt;校准依赖：方法可能对量能器校准误差敏感，需要在实际数据中重新校准&lt;/li&gt;&lt;li&gt;探测器几何复杂性：简化拓扑可能与真实 ECAL 的精细几何存在差异，影响位置编码有效性&lt;/li&gt;&lt;li&gt;推理延迟：单步图变换器在真实高吞吐量触发系统中可能面临计算资源限制&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;strong&gt;最小验证方案：&lt;/strong&gt;在真实 LHC 实验（如 CMS 或 ATLAS）的一组标记数据上，使用标准算法和 ClusTEX 进行重建，比较能量分辨率、位置分辨率和分裂率；同时评估在局部探测器模块失效时的鲁棒性，并与模拟性能进行对比，量化模拟到数据的偏移。&lt;/p&gt;&lt;p&gt;&lt;a href="https://arxiv.org/abs/2603.18172"&gt;arXiv 页面&lt;/a&gt; · &lt;a href="https://github.com/quxnb/hepml-digest/issues/new?title=%5B%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%5D+2603.18172+Reconstruction+of+overlapping+electromagnetic+showers+in+calorimeters+using+Tran&amp;amp;body=%23%23+%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%0A%0A-+arXiv%EF%BC%9A%5B2603.18172%5D%28https%3A%2F%2Farxiv.org%2Fabs%2F2603.18172%29%0A-+%E6%A0%8F%E7%9B%AE%EF%BC%9AHEP+%E7%9B%B4%E6%8E%A5%E5%BA%94%E7%94%A8%0A-+%E5%BD%93%E5%89%8D%E7%9B%B8%E5%85%B3%E6%80%A7%EF%BC%9A0.90%0A-+%E5%BD%93%E5%89%8D%E8%AF%81%E6%8D%AE%E7%AD%89%E7%BA%A7%EF%BC%9Adirect%0A%0A%23%23+%E5%88%A4%E6%96%AD%0A%0A-+%5B+%5D+%E6%8E%A8%E8%8D%90%E4%BF%9D%E7%95%99%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E5%90%88%E7%90%86%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E8%BF%87%E5%BA%A6%E6%8E%A8%E6%B5%8B%0A-+%5B+%5D+%E5%BA%94%E7%A7%BB%E8%87%B3%E5%8F%A6%E4%B8%80%E4%B8%AA%E6%A0%8F%E7%9B%AE%0A-+%5B+%5D+%E5%BB%BA%E8%AE%AE%E7%B2%BE%E8%AF%BB%E5%85%A8%E6%96%87%0A%0A%23%23+%E8%A1%A5%E5%85%85%E8%AF%B4%E6%98%8E%0A%0A"&gt;提交反馈&lt;/a&gt; · hep-ex&lt;/p&gt;</ns1:encoded>
+      <guid isPermaLink="false">arxiv:2603.18172:hepml-v1</guid>
+      <category>hep-ex</category>
+      <category>track:hep_application</category>
+      <category>位置重建</category>
+      <category>电磁簇射重建</category>
+      <category>粒子能量重建</category>
+      <category>重叠簇射分解</category>
+      <pubDate>Tue, 28 Jul 2026 04:00:00 +0000</pubDate>
+    </item>
     <item>
       <title>Optimised Graph Convolution for Calorimetry Event Classification</title>
       <link>https://arxiv.org/abs/2502.04193</link>
