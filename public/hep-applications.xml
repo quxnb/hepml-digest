@@ -8,7 +8,121 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Wed, 29 Jul 2026 03:40:28 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 30 Jul 2026 03:32:15 +0000</lastBuildDate>
+    <item>
+      <title>The calibration of large-radius jets using the Run 2 dataset with the ATLAS detector</title>
+      <link>https://arxiv.org/abs/2607.25893</link>
+      <description>论文直接针对ATLAS实验的大半径喷注标定，属于HEP核心任务</description>
+      <ns1:encoded>&lt;p&gt;&lt;strong&gt;栏目：&lt;/strong&gt;HEP 直接应用&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法：&lt;/strong&gt;蒙特卡罗模拟与碰撞数据结合的原位标定方法&lt;/p&gt;&lt;p&gt;&lt;strong&gt;相关性：&lt;/strong&gt;1.00；&lt;strong&gt;证据等级：&lt;/strong&gt;direct&lt;/p&gt;&lt;p&gt;&lt;strong&gt;初筛理由：&lt;/strong&gt;论文直接针对ATLAS实验的大半径喷注标定，属于HEP核心任务&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法总结：&lt;/strong&gt;本文介绍ATLAS实验利用Run 2质子-质子碰撞数据，结合蒙特卡罗模拟，对大半径喷注进行原位标定。喷注由统一流对象重建并经Soft Drop修剪。给出了能量和质量标度的蒙特卡罗修正及原位验证结果，残余不确定度在横动量1 TeV以下约为1%，2 TeV以下为2-3%，这为增强物体的标准模型精确测量和超越标准模型搜索提供了关键支持。&lt;/p&gt;&lt;h4&gt;论文明确支持的结论&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;ATLAS实验开发了基于蒙特卡罗模拟和碰撞数据的大半径喷注响应标定程序。&lt;/li&gt;&lt;li&gt;喷注由统一流对象重建并用Soft Drop算法修剪。&lt;/li&gt;&lt;li&gt;喷注能量和质量标度的残余不确定性在横动量1 TeV以下接近1%，在2 TeV以下为2-3%。&lt;/li&gt;&lt;li&gt;该标定使得能够利用增强物体进行敏感的超越标准模型搜索和精确标准模型测量。&lt;/li&gt;&lt;/ul&gt;&lt;h4&gt;对高能实验物理的潜在帮助&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;可将此原位标定方法迁移至CMS或未来对撞机实验的大半径喷注标定。&lt;/li&gt;&lt;li&gt;该方法可应用于不同喷注重建算法或修剪技术的响应标定。&lt;/li&gt;&lt;li&gt;可借鉴其中的模拟-数据比对策略，改进重离子碰撞中喷注的标定。&lt;/li&gt;&lt;li&gt;残余不确定性的量化为其他分析提供了系统误差参照，例如用于top夸克或W/Z玻色子标记的效率标定。&lt;/li&gt;&lt;/ul&gt;&lt;h4&gt;迁移风险&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;探测器几何与响应差异（例如ATLAS与CMS电磁/强子量能器不同）可能导致校准修正因子不直接适用。&lt;/li&gt;&lt;li&gt;模拟中的负权事件处理方式可能不同，影响蒙特卡罗修正的准确性。&lt;/li&gt;&lt;li&gt;模拟与数据之间的位移（simulation-to-data shift）可能因对撞能量或堆积条件变化而加剧。&lt;/li&gt;&lt;li&gt;系统误差源（如喷注重建算法依赖的nuisance参数）在迁移时需重新评估。&lt;/li&gt;&lt;li&gt;原位标定方法依赖特定数据样本（如Z+jet、γ+jet），在低统计量或不同触发条件下可能失效。&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;strong&gt;最小验证方案：&lt;/strong&gt;在目标实验（如CMS）上选取类似的数据集（如Z+jet、γ+jet事件），应用相同的标定流程，比较能量与质量标度的闭合测试结果，并评估残余不确定度是否与原论文一致。同时检查模拟修正因子的普适性，并进行探测器模拟水平的系统误差传播分析。&lt;/p&gt;&lt;p&gt;&lt;a href="https://arxiv.org/abs/2607.25893"&gt;arXiv 页面&lt;/a&gt; · &lt;a href="https://github.com/quxnb/hepml-digest/issues/new?title=%5B%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%5D+2607.25893+The+calibration+of+large-radius+jets+using+the+Run+2+dataset+with+the+ATLAS+dete&amp;amp;body=%23%23+%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%0A%0A-+arXiv%EF%BC%9A%5B2607.25893%5D%28https%3A%2F%2Farxiv.org%2Fabs%2F2607.25893%29%0A-+%E6%A0%8F%E7%9B%AE%EF%BC%9AHEP+%E7%9B%B4%E6%8E%A5%E5%BA%94%E7%94%A8%0A-+%E5%BD%93%E5%89%8D%E7%9B%B8%E5%85%B3%E6%80%A7%EF%BC%9A1.00%0A-+%E5%BD%93%E5%89%8D%E8%AF%81%E6%8D%AE%E7%AD%89%E7%BA%A7%EF%BC%9Adirect%0A%0A%23%23+%E5%88%A4%E6%96%AD%0A%0A-+%5B+%5D+%E6%8E%A8%E8%8D%90%E4%BF%9D%E7%95%99%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E5%90%88%E7%90%86%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E8%BF%87%E5%BA%A6%E6%8E%A8%E6%B5%8B%0A-+%5B+%5D+%E5%BA%94%E7%A7%BB%E8%87%B3%E5%8F%A6%E4%B8%80%E4%B8%AA%E6%A0%8F%E7%9B%AE%0A-+%5B+%5D+%E5%BB%BA%E8%AE%AE%E7%B2%BE%E8%AF%BB%E5%85%A8%E6%96%87%0A%0A%23%23+%E8%A1%A5%E5%85%85%E8%AF%B4%E6%98%8E%0A%0A"&gt;提交反馈&lt;/a&gt; · hep-ex&lt;/p&gt;</ns1:encoded>
+      <guid isPermaLink="false">arxiv:2607.25893:hepml-v1</guid>
+      <category>hep-ex</category>
+      <category>track:hep_application</category>
+      <category>喷注能标定</category>
+      <category>喷注质量标定</category>
+      <category>超出标准模型搜索</category>
+      <pubDate>Wed, 29 Jul 2026 04:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Machine-Learning-Based Waveform Discrimination in the Front-End Electronics of the Belle II Central Drift Chamber for Cross-Talk Noise Reduction</title>
+      <link>https://arxiv.org/abs/2607.25174</link>
+      <description>Belle II CDC中基于BDT的波形鉴别，在线降低串扰噪声并已验证性能。</description>
+      <ns1:encoded>&lt;p&gt;&lt;strong&gt;栏目：&lt;/strong&gt;HEP 直接应用&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法：&lt;/strong&gt;Boosted Decision Trees (BDT) on FPGA&lt;/p&gt;&lt;p&gt;&lt;strong&gt;相关性：&lt;/strong&gt;1.00；&lt;strong&gt;证据等级：&lt;/strong&gt;direct&lt;/p&gt;&lt;p&gt;&lt;strong&gt;初筛理由：&lt;/strong&gt;Belle II CDC中基于BDT的波形鉴别，在线降低串扰噪声并已验证性能。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法总结：&lt;/strong&gt;在Belle II中心漂移室前端电子学的Xilinx Virtex-5 FPGA上实现紧凑的BDT波形鉴别，离线研究显示串扰噪声降低约一倍且信号效率高于98%，固件验证表明径迹段和触发率降低达50%而含径迹事件的触发接受度保持在10%以内，证明了低延迟ML推理在前端电子学中的技术可行性。&lt;/p&gt;&lt;h4&gt;论文明确支持的结论&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;离线研究中BDT可将串扰噪声降低约一倍，同时保持98%以上的信号效率。&lt;/li&gt;&lt;li&gt;Belle II刻度运行中的固件验证表明径迹段和触发率降低达50%，且对含径迹事件的触发接受度变化在10%以内。&lt;/li&gt;&lt;li&gt;紧凑的BDT模型可在FPGA上实现每通道全流水线处理，满足前端电子学的低延迟和资源限制。&lt;/li&gt;&lt;/ul&gt;&lt;h4&gt;对高能实验物理的潜在帮助&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;此类ML前端推理方法可迁移至其他漂移室或径迹探测器，用于在线抑制噪声和降低假触发率。&lt;/li&gt;&lt;li&gt;FPGA上低延迟BDT为未来高亮度实验中智能探测器读出系统提供技术参考。&lt;/li&gt;&lt;/ul&gt;&lt;h4&gt;迁移风险&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;模型性能依赖于Belle II CDC特定的串扰噪声特征，迁移至其他探测器需重新训练和校准。&lt;/li&gt;&lt;li&gt;不同FPGA资源限制和延迟要求可能影响模型部署；仿真到真实数据的差异可能导致在线性能偏离离线预期。&lt;/li&gt;&lt;li&gt;还需验证对系统误差（如刻度参数、几何依赖）的鲁棒性。&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;strong&gt;最小验证方案：&lt;/strong&gt;针对新探测器，先用仿真波形数据训练BDT，再在小规模真实数据离线测试，最后部署到目标FPGA，对比触发率、假触发率和信号效率，并监测对控制通道的触发接受度。&lt;/p&gt;&lt;p&gt;&lt;a href="https://arxiv.org/abs/2607.25174"&gt;arXiv 页面&lt;/a&gt; · &lt;a href="https://github.com/quxnb/hepml-digest/issues/new?title=%5B%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%5D+2607.25174+Machine-Learning-Based+Waveform+Discrimination+in+the+Front-End+Electronics+of+t&amp;amp;body=%23%23+%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%0A%0A-+arXiv%EF%BC%9A%5B2607.25174%5D%28https%3A%2F%2Farxiv.org%2Fabs%2F2607.25174%29%0A-+%E6%A0%8F%E7%9B%AE%EF%BC%9AHEP+%E7%9B%B4%E6%8E%A5%E5%BA%94%E7%94%A8%0A-+%E5%BD%93%E5%89%8D%E7%9B%B8%E5%85%B3%E6%80%A7%EF%BC%9A1.00%0A-+%E5%BD%93%E5%89%8D%E8%AF%81%E6%8D%AE%E7%AD%89%E7%BA%A7%EF%BC%9Adirect%0A%0A%23%23+%E5%88%A4%E6%96%AD%0A%0A-+%5B+%5D+%E6%8E%A8%E8%8D%90%E4%BF%9D%E7%95%99%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E5%90%88%E7%90%86%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E8%BF%87%E5%BA%A6%E6%8E%A8%E6%B5%8B%0A-+%5B+%5D+%E5%BA%94%E7%A7%BB%E8%87%B3%E5%8F%A6%E4%B8%80%E4%B8%AA%E6%A0%8F%E7%9B%AE%0A-+%5B+%5D+%E5%BB%BA%E8%AE%AE%E7%B2%BE%E8%AF%BB%E5%85%A8%E6%96%87%0A%0A%23%23+%E8%A1%A5%E5%85%85%E8%AF%B4%E6%98%8E%0A%0A"&gt;提交反馈&lt;/a&gt; · hep-ex, physics.ins-det&lt;/p&gt;</ns1:encoded>
+      <guid isPermaLink="false">arxiv:2607.25174:hepml-v1</guid>
+      <category>hep-ex</category>
+      <category>physics.ins-det</category>
+      <category>track:hep_application</category>
+      <category>噪声抑制</category>
+      <category>径迹重建</category>
+      <category>触发</category>
+      <pubDate>Wed, 29 Jul 2026 04:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Using Cosmic Rays to Predict the Weather: Meteorological Data Assimilation of Atmospheric Muon Flux Data</title>
+      <link>https://arxiv.org/abs/2509.04627</link>
+      <description>使用大气μ子通量进行数据同化，方法可能迁移至HEP中利用宇宙线进行探测器标定或环境监测</description>
+      <ns1:encoded>&lt;p&gt;&lt;strong&gt;栏目：&lt;/strong&gt;HEP 直接应用&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法：&lt;/strong&gt;数据同化（资料同化）&lt;/p&gt;&lt;p&gt;&lt;strong&gt;相关性：&lt;/strong&gt;0.60；&lt;strong&gt;证据等级：&lt;/strong&gt;transferable&lt;/p&gt;&lt;p&gt;&lt;strong&gt;初筛理由：&lt;/strong&gt;使用大气μ子通量进行数据同化，方法可能迁移至HEP中利用宇宙线进行探测器标定或环境监测&lt;/p&gt;&lt;p&gt;&lt;em&gt;本条目仅完成摘要级筛选。&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;a href="https://arxiv.org/abs/2509.04627"&gt;arXiv 页面&lt;/a&gt; · &lt;a href="https://github.com/quxnb/hepml-digest/issues/new?title=%5B%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%5D+2509.04627+Using+Cosmic+Rays+to+Predict+the+Weather%3A+Meteorological+Data+Assimilation+of+At&amp;amp;body=%23%23+%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%0A%0A-+arXiv%EF%BC%9A%5B2509.04627%5D%28https%3A%2F%2Farxiv.org%2Fabs%2F2509.04627%29%0A-+%E6%A0%8F%E7%9B%AE%EF%BC%9AHEP+%E7%9B%B4%E6%8E%A5%E5%BA%94%E7%94%A8%0A-+%E5%BD%93%E5%89%8D%E7%9B%B8%E5%85%B3%E6%80%A7%EF%BC%9A0.60%0A-+%E5%BD%93%E5%89%8D%E8%AF%81%E6%8D%AE%E7%AD%89%E7%BA%A7%EF%BC%9Atransferable%0A%0A%23%23+%E5%88%A4%E6%96%AD%0A%0A-+%5B+%5D+%E6%8E%A8%E8%8D%90%E4%BF%9D%E7%95%99%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E5%90%88%E7%90%86%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E8%BF%87%E5%BA%A6%E6%8E%A8%E6%B5%8B%0A-+%5B+%5D+%E5%BA%94%E7%A7%BB%E8%87%B3%E5%8F%A6%E4%B8%80%E4%B8%AA%E6%A0%8F%E7%9B%AE%0A-+%5B+%5D+%E5%BB%BA%E8%AE%AE%E7%B2%BE%E8%AF%BB%E5%85%A8%E6%96%87%0A%0A%23%23+%E8%A1%A5%E5%85%85%E8%AF%B4%E6%98%8E%0A%0A"&gt;提交反馈&lt;/a&gt; · astro-ph.EP, astro-ph.IM, hep-ex, physics.ao-ph&lt;/p&gt;</ns1:encoded>
+      <guid isPermaLink="false">arxiv:2509.04627:hepml-v1</guid>
+      <category>astro-ph.EP</category>
+      <category>astro-ph.IM</category>
+      <category>hep-ex</category>
+      <category>physics.ao-ph</category>
+      <category>track:hep_application</category>
+      <category>宇宙射线背景建模</category>
+      <category>探测器校准</category>
+      <pubDate>Wed, 29 Jul 2026 04:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Deep-learning jet flavor tagging for precision hadronic Higgs measurements at future $e^+e^-$ Higgs factories</title>
+      <link>https://arxiv.org/abs/2512.21558</link>
+      <description>直接在HEP中应用深度神经网络进行喷注味识别，并用于希格斯衰变分支比精确测量，证据直接且与HEP紧密相关。</description>
+      <ns1:encoded>&lt;p&gt;&lt;strong&gt;栏目：&lt;/strong&gt;HEP 直接应用&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法：&lt;/strong&gt;ParticleNet, Particle Transformer, More-Interaction Particle Transformer, XGBoost&lt;/p&gt;&lt;p&gt;&lt;strong&gt;相关性：&lt;/strong&gt;0.95；&lt;strong&gt;证据等级：&lt;/strong&gt;direct&lt;/p&gt;&lt;p&gt;&lt;strong&gt;初筛理由：&lt;/strong&gt;直接在HEP中应用深度神经网络进行喷注味识别，并用于希格斯衰变分支比精确测量，证据直接且与HEP紧密相关。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法总结：&lt;/strong&gt;本研究针对未来环形正负电子对撞机（CEPC）设计，在240 GeV质心能量下模拟e+e-→ZH过程，Z玻色子衰变为中微子对，希格斯玻色子强子衰变到b、c、s夸克对及胶子。采用粒子级深度神经网络喷注味标记算法（ParticleNet、Particle Transformer及其变体），结合全局事件观测量，通过XGBoost分类器进行两阶段分析。在20 ab⁻¹积分亮度下，预期σ(ZH)×Br(H→X)精度：H→bb为0.17%，H→cc为1.06%，H→gg为0.50%，H→ss为68%（约1.5σ显著性）。与CEPC已发表结果相比，H→cc和H→gg精度分别提升约43%和29%，证明深度学习喷注味标记在希格斯精确测量中的潜力。&lt;/p&gt;&lt;h4&gt;论文明确支持的结论&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;H→cc和H→gg的测量精度较CEPC已发表结果分别提升约43%和29%&lt;/li&gt;&lt;li&gt;得出σ(ZH)×Br(H→X)预期精度：H→bb 0.17%，H→cc 1.06%，H→gg 0.50%，H→ss 68%&lt;/li&gt;&lt;li&gt;给出H→ss衰变的定量灵敏度估计，对应约1.5σ统计显著性&lt;/li&gt;&lt;li&gt;深度学习喷注味标记在未来e⁺e⁻希格斯工厂的精确测量中具有潜力&lt;/li&gt;&lt;/ul&gt;&lt;h4&gt;对高能实验物理的潜在帮助&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;该方法可迁移至其他未来正负电子对撞机（如FCC-ee、ILC）的希格斯工厂，用于提升强子衰变分支比测量精度&lt;/li&gt;&lt;li&gt;粒子级深度标记器与全局观测量组合的策略可推广到其他希格斯产生过程（如WW融合）或顶夸克对事例的喷注味识别&lt;/li&gt;&lt;li&gt;在低本底环境下验证的深度学习标记算法，其架构设计思路可为强子对撞机上的同类任务提供参考&lt;/li&gt;&lt;/ul&gt;&lt;h4&gt;迁移风险&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;模拟训练数据与真实数据之间的差异（simulation-to-data shift）可能导致标记器性能下降，须评估探测器效应、束流本底和重建算法的不确定性&lt;/li&gt;&lt;li&gt;喷注能量、角度等刻度系统误差会影响输入特征，进而影响分支比测量精度，需纳入弥合参数控制&lt;/li&gt;&lt;li&gt;粒子级标记器高度依赖粒子流重建，不同探测器的几何接受度和重建性能可能带来额外系统误差&lt;/li&gt;&lt;li&gt;训练样本中包含的物理过程有限，在推广到新物理场景时可能出现偏差&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;strong&gt;最小验证方案：&lt;/strong&gt;在真实数据中选取已知喷注味的控制样本（如Z→bb事例）进行标记效率与精度刻度；对比数据与模拟的喷注特征分布，利用数据驱动方法校正模拟失配；在统计推断中同时约束分支比与关键系统误差；检验不同标记工作点下统计显著性的稳定性；评估探测器升级和更高亮度条件的影响。&lt;/p&gt;&lt;p&gt;&lt;a href="https://arxiv.org/abs/2512.21558"&gt;arXiv 页面&lt;/a&gt; · &lt;a href="https://github.com/quxnb/hepml-digest/issues/new?title=%5B%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%5D+2512.21558+Deep-learning+jet+flavor+tagging+for+precision+hadronic+Higgs+measurements+at+fu&amp;amp;body=%23%23+%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%0A%0A-+arXiv%EF%BC%9A%5B2512.21558%5D%28https%3A%2F%2Farxiv.org%2Fabs%2F2512.21558%29%0A-+%E6%A0%8F%E7%9B%AE%EF%BC%9AHEP+%E7%9B%B4%E6%8E%A5%E5%BA%94%E7%94%A8%0A-+%E5%BD%93%E5%89%8D%E7%9B%B8%E5%85%B3%E6%80%A7%EF%BC%9A0.95%0A-+%E5%BD%93%E5%89%8D%E8%AF%81%E6%8D%AE%E7%AD%89%E7%BA%A7%EF%BC%9Adirect%0A%0A%23%23+%E5%88%A4%E6%96%AD%0A%0A-+%5B+%5D+%E6%8E%A8%E8%8D%90%E4%BF%9D%E7%95%99%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E5%90%88%E7%90%86%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E8%BF%87%E5%BA%A6%E6%8E%A8%E6%B5%8B%0A-+%5B+%5D+%E5%BA%94%E7%A7%BB%E8%87%B3%E5%8F%A6%E4%B8%80%E4%B8%AA%E6%A0%8F%E7%9B%AE%0A-+%5B+%5D+%E5%BB%BA%E8%AE%AE%E7%B2%BE%E8%AF%BB%E5%85%A8%E6%96%87%0A%0A%23%23+%E8%A1%A5%E5%85%85%E8%AF%B4%E6%98%8E%0A%0A"&gt;提交反馈&lt;/a&gt; · hep-ex, hep-ph&lt;/p&gt;</ns1:encoded>
+      <guid isPermaLink="false">arxiv:2512.21558:hepml-v1</guid>
+      <category>Higgs branching fraction measurement</category>
+      <category>event classification</category>
+      <category>hep-ex</category>
+      <category>hep-ph</category>
+      <category>jet flavor tagging</category>
+      <category>track:hep_application</category>
+      <pubDate>Wed, 29 Jul 2026 04:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>GPT-like transformer model for silicon tracking detector simulation</title>
+      <link>https://arxiv.org/abs/2512.24254</link>
+      <description>直接针对硅径迹探测器模拟，结果与全模拟可比，是HEP创新的生成式方法。</description>
+      <ns1:encoded>&lt;p&gt;&lt;strong&gt;栏目：&lt;/strong&gt;HEP 直接应用&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法：&lt;/strong&gt;GPT-like transformer&lt;/p&gt;&lt;p&gt;&lt;strong&gt;相关性：&lt;/strong&gt;0.95；&lt;strong&gt;证据等级：&lt;/strong&gt;direct&lt;/p&gt;&lt;p&gt;&lt;strong&gt;初筛理由：&lt;/strong&gt;直接针对硅径迹探测器模拟，结果与全模拟可比，是HEP创新的生成式方法。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法总结：&lt;/strong&gt;提出基于GPT-like transformer的硅径迹探测器模拟方法，将击中表示为扁平特征序列，通过自回归生成保持击中间完全关联。在Open Data Detector上评估，径迹性能与全模拟相当，为加速HEP探测器模拟提供新途径。&lt;/p&gt;&lt;h4&gt;论文明确支持的结论&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;首次将神经网络应用于硅径迹探测器模拟&lt;/li&gt;&lt;li&gt;GPT-like transformer架构在该任务中表现最优&lt;/li&gt;&lt;li&gt;全生成方式确保击中间完全关联&lt;/li&gt;&lt;li&gt;在Open Data Detector上的径迹性能与全模拟可比&lt;/li&gt;&lt;/ul&gt;&lt;h4&gt;对高能实验物理的潜在帮助&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;替代硅径迹探测器的全模拟以加速事件生成&lt;/li&gt;&lt;li&gt;用于径迹重建算法的开发和验证&lt;/li&gt;&lt;li&gt;为未来探测器设计提供快速模拟工具&lt;/li&gt;&lt;/ul&gt;&lt;h4&gt;迁移风险&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;从文本生成到击中序列生成的领域偏移可能引入未知系统误差&lt;/li&gt;&lt;li&gt;扁平序列表示可能丢失探测器几何和空间对称性&lt;/li&gt;&lt;li&gt;Transformer模型可能无法正确模拟探测器校准和噪声&lt;/li&gt;&lt;li&gt;自回归生成可能带来推理延迟，影响实时应用&lt;/li&gt;&lt;li&gt;未在真实数据上验证模拟到数据的偏移&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;strong&gt;最小验证方案：&lt;/strong&gt;在真实硅径迹探测器数据上评估生成样本与数据在径迹参数、击中分布和关联性上的一致性，并与基于全模拟的重建性能对比，量化系统偏差。&lt;/p&gt;&lt;p&gt;&lt;a href="https://arxiv.org/abs/2512.24254"&gt;arXiv 页面&lt;/a&gt; · &lt;a href="https://github.com/quxnb/hepml-digest/issues/new?title=%5B%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%5D+2512.24254+GPT-like+transformer+model+for+silicon+tracking+detector+simulation&amp;amp;body=%23%23+%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%0A%0A-+arXiv%EF%BC%9A%5B2512.24254%5D%28https%3A%2F%2Farxiv.org%2Fabs%2F2512.24254%29%0A-+%E6%A0%8F%E7%9B%AE%EF%BC%9AHEP+%E7%9B%B4%E6%8E%A5%E5%BA%94%E7%94%A8%0A-+%E5%BD%93%E5%89%8D%E7%9B%B8%E5%85%B3%E6%80%A7%EF%BC%9A0.95%0A-+%E5%BD%93%E5%89%8D%E8%AF%81%E6%8D%AE%E7%AD%89%E7%BA%A7%EF%BC%9Adirect%0A%0A%23%23+%E5%88%A4%E6%96%AD%0A%0A-+%5B+%5D+%E6%8E%A8%E8%8D%90%E4%BF%9D%E7%95%99%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E5%90%88%E7%90%86%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E8%BF%87%E5%BA%A6%E6%8E%A8%E6%B5%8B%0A-+%5B+%5D+%E5%BA%94%E7%A7%BB%E8%87%B3%E5%8F%A6%E4%B8%80%E4%B8%AA%E6%A0%8F%E7%9B%AE%0A-+%5B+%5D+%E5%BB%BA%E8%AE%AE%E7%B2%BE%E8%AF%BB%E5%85%A8%E6%96%87%0A%0A%23%23+%E8%A1%A5%E5%85%85%E8%AF%B4%E6%98%8E%0A%0A"&gt;提交反馈&lt;/a&gt; · hep-ex, physics.ins-det&lt;/p&gt;</ns1:encoded>
+      <guid isPermaLink="false">arxiv:2512.24254:hepml-v1</guid>
+      <category>generative simulation</category>
+      <category>hep-ex</category>
+      <category>physics.ins-det</category>
+      <category>silicon detector simulation</category>
+      <category>track:hep_application</category>
+      <category>tracking detector fast simulation</category>
+      <pubDate>Wed, 29 Jul 2026 04:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Recursive Manifold Coherence for Deadtime-Aware Distributed Triggering through Geometric State Estimation</title>
+      <link>https://arxiv.org/abs/2601.17043</link>
+      <description>方法直接针对高能物理中大体积探测器死时间下的触发问题，并在光学探测器阵列模拟上验证了有效性。</description>
+      <ns1:encoded>&lt;p&gt;&lt;strong&gt;栏目：&lt;/strong&gt;HEP 直接应用&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法：&lt;/strong&gt;Recursive Manifold Coherence (RMC) - 几何流形上的递归更新方法&lt;/p&gt;&lt;p&gt;&lt;strong&gt;相关性：&lt;/strong&gt;0.85；&lt;strong&gt;证据等级：&lt;/strong&gt;direct&lt;/p&gt;&lt;p&gt;&lt;strong&gt;初筛理由：&lt;/strong&gt;方法直接针对高能物理中大体积探测器死时间下的触发问题，并在光学探测器阵列模拟上验证了有效性。&lt;/p&gt;&lt;p&gt;&lt;em&gt;本条目仅完成摘要级筛选。&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;a href="https://arxiv.org/abs/2601.17043"&gt;arXiv 页面&lt;/a&gt; · &lt;a href="https://github.com/quxnb/hepml-digest/issues/new?title=%5B%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%5D+2601.17043+Recursive+Manifold+Coherence+for+Deadtime-Aware+Distributed+Triggering+through+G&amp;amp;body=%23%23+%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%0A%0A-+arXiv%EF%BC%9A%5B2601.17043%5D%28https%3A%2F%2Farxiv.org%2Fabs%2F2601.17043%29%0A-+%E6%A0%8F%E7%9B%AE%EF%BC%9AHEP+%E7%9B%B4%E6%8E%A5%E5%BA%94%E7%94%A8%0A-+%E5%BD%93%E5%89%8D%E7%9B%B8%E5%85%B3%E6%80%A7%EF%BC%9A0.85%0A-+%E5%BD%93%E5%89%8D%E8%AF%81%E6%8D%AE%E7%AD%89%E7%BA%A7%EF%BC%9Adirect%0A%0A%23%23+%E5%88%A4%E6%96%AD%0A%0A-+%5B+%5D+%E6%8E%A8%E8%8D%90%E4%BF%9D%E7%95%99%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E5%90%88%E7%90%86%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E8%BF%87%E5%BA%A6%E6%8E%A8%E6%B5%8B%0A-+%5B+%5D+%E5%BA%94%E7%A7%BB%E8%87%B3%E5%8F%A6%E4%B8%80%E4%B8%AA%E6%A0%8F%E7%9B%AE%0A-+%5B+%5D+%E5%BB%BA%E8%AE%AE%E7%B2%BE%E8%AF%BB%E5%85%A8%E6%96%87%0A%0A%23%23+%E8%A1%A5%E5%85%85%E8%AF%B4%E6%98%8E%0A%0A"&gt;提交反馈&lt;/a&gt; · physics.comp-ph, physics.data-an, physics.ins-det&lt;/p&gt;</ns1:encoded>
+      <guid isPermaLink="false">arxiv:2601.17043:hepml-v1</guid>
+      <category>physics.comp-ph</category>
+      <category>physics.data-an</category>
+      <category>physics.ins-det</category>
+      <category>track:hep_application</category>
+      <category>信号重建（Reconstruction）</category>
+      <category>死时间处理（Deadtime mitigation）</category>
+      <category>触发（Triggering）</category>
+      <pubDate>Wed, 29 Jul 2026 04:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Mitigating Deadtime in Distributed Optical Arrays Using A Liveness-Aware Trigger Approach for High-Energy Neutrino Detection</title>
+      <link>https://arxiv.org/abs/2601.18114</link>
+      <description>直接针对中微子探测器的死时间问题提出触发架构，低延迟FPGA部署，与HEP实验触发系统高度相关，已在光探测阵列上模拟验证。</description>
+      <ns1:encoded>&lt;p&gt;&lt;strong&gt;栏目：&lt;/strong&gt;HEP 直接应用&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法：&lt;/strong&gt;递归IIR更新律的可综合流水线，构建连续有效观测值，区分连续测量与离散触发决策&lt;/p&gt;&lt;p&gt;&lt;strong&gt;相关性：&lt;/strong&gt;0.80；&lt;strong&gt;证据等级：&lt;/strong&gt;direct&lt;/p&gt;&lt;p&gt;&lt;strong&gt;初筛理由：&lt;/strong&gt;直接针对中微子探测器的死时间问题提出触发架构，低延迟FPGA部署，与HEP实验触发系统高度相关，已在光探测阵列上模拟验证。&lt;/p&gt;&lt;p&gt;&lt;em&gt;本条目仅完成摘要级筛选。&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;a href="https://arxiv.org/abs/2601.18114"&gt;arXiv 页面&lt;/a&gt; · &lt;a href="https://github.com/quxnb/hepml-digest/issues/new?title=%5B%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%5D+2601.18114+Mitigating+Deadtime+in+Distributed+Optical+Arrays+Using+A+Liveness-Aware+Trigger&amp;amp;body=%23%23+%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%0A%0A-+arXiv%EF%BC%9A%5B2601.18114%5D%28https%3A%2F%2Farxiv.org%2Fabs%2F2601.18114%29%0A-+%E6%A0%8F%E7%9B%AE%EF%BC%9AHEP+%E7%9B%B4%E6%8E%A5%E5%BA%94%E7%94%A8%0A-+%E5%BD%93%E5%89%8D%E7%9B%B8%E5%85%B3%E6%80%A7%EF%BC%9A0.80%0A-+%E5%BD%93%E5%89%8D%E8%AF%81%E6%8D%AE%E7%AD%89%E7%BA%A7%EF%BC%9Adirect%0A%0A%23%23+%E5%88%A4%E6%96%AD%0A%0A-+%5B+%5D+%E6%8E%A8%E8%8D%90%E4%BF%9D%E7%95%99%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E5%90%88%E7%90%86%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E8%BF%87%E5%BA%A6%E6%8E%A8%E6%B5%8B%0A-+%5B+%5D+%E5%BA%94%E7%A7%BB%E8%87%B3%E5%8F%A6%E4%B8%80%E4%B8%AA%E6%A0%8F%E7%9B%AE%0A-+%5B+%5D+%E5%BB%BA%E8%AE%AE%E7%B2%BE%E8%AF%BB%E5%85%A8%E6%96%87%0A%0A%23%23+%E8%A1%A5%E5%85%85%E8%AF%B4%E6%98%8E%0A%0A"&gt;提交反馈&lt;/a&gt; · physics.comp-ph, physics.data-an, physics.ins-det&lt;/p&gt;</ns1:encoded>
+      <guid isPermaLink="false">arxiv:2601.18114:hepml-v1</guid>
+      <category>physics.comp-ph</category>
+      <category>physics.data-an</category>
+      <category>physics.ins-det</category>
+      <category>track:hep_application</category>
+      <category>死时间缓解</category>
+      <category>触发系统设计</category>
+      <pubDate>Wed, 29 Jul 2026 04:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Quantum detection of CP violation in the $t\bar{t}$ system: production</title>
+      <link>https://arxiv.org/abs/2607.25029</link>
+      <description>研究CP破坏在顶夸克对产生中的量子编码，提供可直接用于HEP实验的可观测量和灵敏度评估。</description>
+      <ns1:encoded>&lt;p&gt;&lt;strong&gt;栏目：&lt;/strong&gt;HEP 直接应用&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法：&lt;/strong&gt;量子态层析与Fano-Bloch分解&lt;/p&gt;&lt;p&gt;&lt;strong&gt;相关性：&lt;/strong&gt;0.90；&lt;strong&gt;证据等级：&lt;/strong&gt;direct&lt;/p&gt;&lt;p&gt;&lt;strong&gt;初筛理由：&lt;/strong&gt;研究CP破坏在顶夸克对产生中的量子编码，提供可直接用于HEP实验的可观测量和灵敏度评估。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法总结：&lt;/strong&gt;本文利用量子态层析与Fano-Bloch分解，分析顶夸克对产生中CP破坏的量子编码。在共同自旋基下识别出两个CP-odd特征：顶与反顶极化矢量之差，以及自旋关联矩阵的反对称部分。构造了直接探测这些结构的可观测量，并用量子信息度量（如discord、concurrence、magic）评估了SMEFT中CP-even和CP-odd贡献的灵敏度。结合当前与未来对撞机投影，评估了CP破坏的可探测性，为实验重建提供理论框架。&lt;/p&gt;&lt;h4&gt;论文明确支持的结论&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;在顶夸克对产生中，通过Fano-Bloch分解识别出两个特征CP-odd结构：顶与反顶极化矢量之差和自旋关联矩阵的反对称部分。&lt;/li&gt;&lt;li&gt;构造了直接探测上述CP-odd结构的可观测量。&lt;/li&gt;&lt;li&gt;量子信息度量（discord, concurrence, magic, trace distance）可区分CP-even和CP-odd SMEFT贡献。&lt;/li&gt;&lt;li&gt;利用现有测量和未来对撞机投影，评估了这些可观测量对新CP破坏来源的灵敏度。&lt;/li&gt;&lt;/ul&gt;&lt;h4&gt;对高能实验物理的潜在帮助&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;可在LHC或未来对撞机（如e+e-对撞机）中，通过顶夸克对产生过程，利用构建的CP-odd观测量直接探测新的CP破坏来源。&lt;/li&gt;&lt;li&gt;将量子信息度量用作区分SMEFT中CP-even和CP-odd贡献的新工具，增强对顶夸克CP性质的约束。&lt;/li&gt;&lt;li&gt;为顶夸克自旋关联的量子层析提供实验方案，推动HEP中量子技术应用。&lt;/li&gt;&lt;/ul&gt;&lt;h4&gt;迁移风险&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;探测器重建顶夸克自旋态依赖末态粒子动量，可能受系统误差（喷注能量刻度、b标记效率）和仿真-数据偏移影响。&lt;/li&gt;&lt;li&gt;顶夸克对产生中的负权事件可能扭曲自旋关联的测量，需在模拟中仔细处理。&lt;/li&gt;&lt;li&gt;量子信息度量（如concurrence、magic）的计算可能对统计涨落敏感，且推理延迟高，不适于实时分析。&lt;/li&gt;&lt;li&gt;自旋基的选择和极化矢量的定义依赖于理论模型，不同基准过程（如gg与qqbar）可能需不同处理，引入模型不确定性。&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;strong&gt;最小验证方案：&lt;/strong&gt;在标准模型与SMEFT模拟样本中，用简化的探测器仿真（如Delphes）重建顶夸克对自旋态，应用Fano-Bloch分解提取CP-odd观测量，检查其能否区分CP-even和CP-odd贡献，并评估统计与系统误差下的灵敏度。最后与当前LHC数据比较，验证方法可行性。&lt;/p&gt;&lt;p&gt;&lt;a href="https://arxiv.org/abs/2607.25029"&gt;arXiv 页面&lt;/a&gt; · &lt;a href="https://github.com/quxnb/hepml-digest/issues/new?title=%5B%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%5D+2607.25029+Quantum+detection+of+CP+violation+in+the+%24t%5Cbar%7Bt%7D%24+system%3A+production&amp;amp;body=%23%23+%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%0A%0A-+arXiv%EF%BC%9A%5B2607.25029%5D%28https%3A%2F%2Farxiv.org%2Fabs%2F2607.25029%29%0A-+%E6%A0%8F%E7%9B%AE%EF%BC%9AHEP+%E7%9B%B4%E6%8E%A5%E5%BA%94%E7%94%A8%0A-+%E5%BD%93%E5%89%8D%E7%9B%B8%E5%85%B3%E6%80%A7%EF%BC%9A0.90%0A-+%E5%BD%93%E5%89%8D%E8%AF%81%E6%8D%AE%E7%AD%89%E7%BA%A7%EF%BC%9Adirect%0A%0A%23%23+%E5%88%A4%E6%96%AD%0A%0A-+%5B+%5D+%E6%8E%A8%E8%8D%90%E4%BF%9D%E7%95%99%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E5%90%88%E7%90%86%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E8%BF%87%E5%BA%A6%E6%8E%A8%E6%B5%8B%0A-+%5B+%5D+%E5%BA%94%E7%A7%BB%E8%87%B3%E5%8F%A6%E4%B8%80%E4%B8%AA%E6%A0%8F%E7%9B%AE%0A-+%5B+%5D+%E5%BB%BA%E8%AE%AE%E7%B2%BE%E8%AF%BB%E5%85%A8%E6%96%87%0A%0A%23%23+%E8%A1%A5%E5%85%85%E8%AF%B4%E6%98%8E%0A%0A"&gt;提交反馈&lt;/a&gt; · hep-ex, hep-ph, hep-th, quant-ph&lt;/p&gt;</ns1:encoded>
+      <guid isPermaLink="false">arxiv:2607.25029:hepml-v1</guid>
+      <category>CP破坏测量</category>
+      <category>hep-ex</category>
+      <category>hep-ph</category>
+      <category>hep-th</category>
+      <category>quant-ph</category>
+      <category>track:hep_application</category>
+      <category>顶夸克对产生自旋关联分析</category>
+      <pubDate>Wed, 29 Jul 2026 04:00:00 +0000</pubDate>
+    </item>
     <item>
       <title>The mathematical theory of photomultiplier tube calibration</title>
       <link>https://arxiv.org/abs/2607.24250</link>
