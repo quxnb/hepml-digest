@@ -8,7 +8,68 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Fri, 31 Jul 2026 03:56:50 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 01 Aug 2026 03:54:27 +0000</lastBuildDate>
+    <item>
+      <title>Uncertainty in Physics and AI: Taxonomy, Quantification, and Validation</title>
+      <link>https://arxiv.org/abs/2605.10378</link>
+      <description>综述聚焦物理中ML的不确定性量化，直接关联HEP中的系统误差与统计推断，但未在具体HEP任务中验证</description>
+      <ns1:encoded>&lt;p&gt;&lt;strong&gt;栏目：&lt;/strong&gt;HEP 直接应用&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法：&lt;/strong&gt;不确定性量化综述，涵盖分类、验证工具如覆盖率、校准、偏差检验和评分规则&lt;/p&gt;&lt;p&gt;&lt;strong&gt;相关性：&lt;/strong&gt;0.90；&lt;strong&gt;证据等级：&lt;/strong&gt;transferable&lt;/p&gt;&lt;p&gt;&lt;strong&gt;初筛理由：&lt;/strong&gt;综述聚焦物理中ML的不确定性量化，直接关联HEP中的系统误差与统计推断，但未在具体HEP任务中验证&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法总结：&lt;/strong&gt;该综述系统梳理了物理中机器学习的不确定性量化方法，提出统一的不确定性分类体系，并阐释频率学派与贝叶斯框架下的预测与推断不确定性解释。重点介绍了覆盖率、校准、偏差检验及恰当评分规则等验证工具，并通过简单回归和分类示例加以说明。旨在为物理学家提供可靠的概率声明验证框架，支撑科学发现。&lt;/p&gt;&lt;h4&gt;论文明确支持的结论&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;提出物理中ML不确定性的统一分类法&lt;/li&gt;&lt;li&gt;澄清频率学派与贝叶斯视角下预测和推断不确定性的解释&lt;/li&gt;&lt;li&gt;介绍了覆盖率、校准、偏差检验和恰当评分规则等验证工具&lt;/li&gt;&lt;li&gt;通过简单回归和分类示例说明了这些工具的应用&lt;/li&gt;&lt;/ul&gt;&lt;h4&gt;对高能实验物理的潜在帮助&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;可将覆盖率、校准等验证工具用于评估探测器响应模型的不确定性量化质量&lt;/li&gt;&lt;li&gt;帮助量化模拟到数据迁移中的系统误差，提升统计推断可靠性&lt;/li&gt;&lt;li&gt;为无负权事件生成、喷注校准等任务提供不确定性量化的最佳实践&lt;/li&gt;&lt;/ul&gt;&lt;h4&gt;迁移风险&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;综述未在真实HEP数据或复杂探测器几何条件下验证，工具的有效性待检验&lt;/li&gt;&lt;li&gt;简单示例可能无法涵盖高能物理中常见的重尾分布、多峰后验或高度相关的系统误差&lt;/li&gt;&lt;li&gt;验证工具对计算资源的需求在高维参数空间中可能难以承受&lt;/li&gt;&lt;li&gt;可能未充分考虑HEP中特有的真实世界误差传播和实验系统学&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;strong&gt;最小验证方案：&lt;/strong&gt;选择一个典型HEP任务（如喷注能量校准），利用仿真数据构建ML模型，应用综述中的覆盖率、校准曲线和偏差检验评估不确定性。对比频率学派和贝叶斯方法在校准误差和评分规则上的表现，并检查在模拟到数据偏移场景下模型的稳健性。&lt;/p&gt;&lt;p&gt;&lt;a href="https://arxiv.org/abs/2605.10378"&gt;arXiv 页面&lt;/a&gt; · &lt;a href="https://github.com/quxnb/hepml-digest/issues/new?title=%5B%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%5D+2605.10378+Uncertainty+in+Physics+and+AI%3A+Taxonomy%2C+Quantification%2C+and+Validation&amp;amp;body=%23%23+%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%0A%0A-+arXiv%EF%BC%9A%5B2605.10378%5D%28https%3A%2F%2Farxiv.org%2Fabs%2F2605.10378%29%0A-+%E6%A0%8F%E7%9B%AE%EF%BC%9AHEP+%E7%9B%B4%E6%8E%A5%E5%BA%94%E7%94%A8%0A-+%E5%BD%93%E5%89%8D%E7%9B%B8%E5%85%B3%E6%80%A7%EF%BC%9A0.90%0A-+%E5%BD%93%E5%89%8D%E8%AF%81%E6%8D%AE%E7%AD%89%E7%BA%A7%EF%BC%9Atransferable%0A%0A%23%23+%E5%88%A4%E6%96%AD%0A%0A-+%5B+%5D+%E6%8E%A8%E8%8D%90%E4%BF%9D%E7%95%99%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E5%90%88%E7%90%86%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E8%BF%87%E5%BA%A6%E6%8E%A8%E6%B5%8B%0A-+%5B+%5D+%E5%BA%94%E7%A7%BB%E8%87%B3%E5%8F%A6%E4%B8%80%E4%B8%AA%E6%A0%8F%E7%9B%AE%0A-+%5B+%5D+%E5%BB%BA%E8%AE%AE%E7%B2%BE%E8%AF%BB%E5%85%A8%E6%96%87%0A%0A%23%23+%E8%A1%A5%E5%85%85%E8%AF%B4%E6%98%8E%0A%0A"&gt;提交反馈&lt;/a&gt; · astro-ph.CO, astro-ph.GA, hep-ex, hep-ph, stat.ML&lt;/p&gt;</ns1:encoded>
+      <guid isPermaLink="false">arxiv:2605.10378:hepml-v1</guid>
+      <category>astro-ph.CO</category>
+      <category>astro-ph.GA</category>
+      <category>hep-ex</category>
+      <category>hep-ph</category>
+      <category>stat.ML</category>
+      <category>track:hep_application</category>
+      <category>不确定性量化</category>
+      <category>回归与分类预测</category>
+      <category>模型校准</category>
+      <category>系统误差处理</category>
+      <pubDate>Fri, 31 Jul 2026 04:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Computer vision-based neural networks for radioisotope identification in urban environments</title>
+      <link>https://arxiv.org/abs/2607.00270</link>
+      <description>方法针对辐射探测与识别，与HEP粒子鉴别和异常检测任务相似，但数据领域不同，需评估迁移性。</description>
+      <ns1:encoded>&lt;p&gt;&lt;strong&gt;栏目：&lt;/strong&gt;HEP 直接应用&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法：&lt;/strong&gt;将列表模式伽马射线数据转换为二维瀑布谱图，并使用卷积神经网络和视觉Transformer进行分类&lt;/p&gt;&lt;p&gt;&lt;strong&gt;相关性：&lt;/strong&gt;0.60；&lt;strong&gt;证据等级：&lt;/strong&gt;transferable&lt;/p&gt;&lt;p&gt;&lt;strong&gt;初筛理由：&lt;/strong&gt;方法针对辐射探测与识别，与HEP粒子鉴别和异常检测任务相似，但数据领域不同，需评估迁移性。&lt;/p&gt;&lt;p&gt;&lt;em&gt;本条目仅完成摘要级筛选。&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;a href="https://arxiv.org/abs/2607.00270"&gt;arXiv 页面&lt;/a&gt; · &lt;a href="https://github.com/quxnb/hepml-digest/issues/new?title=%5B%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%5D+2607.00270+Computer+vision-based+neural+networks+for+radioisotope+identification+in+urban+e&amp;amp;body=%23%23+%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%0A%0A-+arXiv%EF%BC%9A%5B2607.00270%5D%28https%3A%2F%2Farxiv.org%2Fabs%2F2607.00270%29%0A-+%E6%A0%8F%E7%9B%AE%EF%BC%9AHEP+%E7%9B%B4%E6%8E%A5%E5%BA%94%E7%94%A8%0A-+%E5%BD%93%E5%89%8D%E7%9B%B8%E5%85%B3%E6%80%A7%EF%BC%9A0.60%0A-+%E5%BD%93%E5%89%8D%E8%AF%81%E6%8D%AE%E7%AD%89%E7%BA%A7%EF%BC%9Atransferable%0A%0A%23%23+%E5%88%A4%E6%96%AD%0A%0A-+%5B+%5D+%E6%8E%A8%E8%8D%90%E4%BF%9D%E7%95%99%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E5%90%88%E7%90%86%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E8%BF%87%E5%BA%A6%E6%8E%A8%E6%B5%8B%0A-+%5B+%5D+%E5%BA%94%E7%A7%BB%E8%87%B3%E5%8F%A6%E4%B8%80%E4%B8%AA%E6%A0%8F%E7%9B%AE%0A-+%5B+%5D+%E5%BB%BA%E8%AE%AE%E7%B2%BE%E8%AF%BB%E5%85%A8%E6%96%87%0A%0A%23%23+%E8%A1%A5%E5%85%85%E8%AF%B4%E6%98%8E%0A%0A"&gt;提交反馈&lt;/a&gt; · cs.LG, physics.ins-det&lt;/p&gt;</ns1:encoded>
+      <guid isPermaLink="false">arxiv:2607.00270:hepml-v1</guid>
+      <category>cs.LG</category>
+      <category>physics.ins-det</category>
+      <category>track:hep_application</category>
+      <category>异常检测</category>
+      <category>粒子鉴别</category>
+      <category>谱分析</category>
+      <pubDate>Fri, 31 Jul 2026 04:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>ParticleTransformer is all you need for reconstructing hadronic tau leptons</title>
+      <link>https://arxiv.org/abs/2606.18460</link>
+      <description>直接针对高能实验物理中的tau重建任务，使用Transformer架构并在FCC-ee上验证，方法直接适用。</description>
+      <ns1:encoded>&lt;p&gt;&lt;strong&gt;栏目：&lt;/strong&gt;HEP 直接应用&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法：&lt;/strong&gt;Transformer-based multi-task reconstruction, including identification, decay mode classification, charge reconstruction, and momentum regression&lt;/p&gt;&lt;p&gt;&lt;strong&gt;相关性：&lt;/strong&gt;0.95；&lt;strong&gt;证据等级：&lt;/strong&gt;direct&lt;/p&gt;&lt;p&gt;&lt;strong&gt;初筛理由：&lt;/strong&gt;直接针对高能实验物理中的tau重建任务，使用Transformer架构并在FCC-ee上验证，方法直接适用。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法总结：&lt;/strong&gt;针对FCC-ee上强子衰变tau轻子重建，提出首个全机器学习多任务方法，包括tau鉴别、衰变模式分类、电荷重建和四动量回归。在CLD探测器全模拟样本上，统一多任务模型在各项指标上均优于传统方法，千分位误鉴别率、亚千分位电荷误判率，角度分辨率达千分位，可见横动量分辨率达百分比级，为高精度tau重建提供了可行方案。&lt;/p&gt;&lt;h4&gt;论文明确支持的结论&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;多任务模型在tau鉴别上达到千分位误鉴别率&lt;/li&gt;&lt;li&gt;衰变模式分类F1分数最高0.95&lt;/li&gt;&lt;li&gt;电荷误判率低于千分位，优于传统jet-charge估计两个数量级&lt;/li&gt;&lt;li&gt;全运动学重建角度分辨率达千分位，可见横动量分辨率达百分比级&lt;/li&gt;&lt;li&gt;性能超越基于重建级喷流可观测量&lt;/li&gt;&lt;/ul&gt;&lt;h4&gt;对高能实验物理的潜在帮助&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;可迁移至LHC或未来对撞机的强子tau重建，提升触发、鉴别和四动量精度&lt;/li&gt;&lt;li&gt;可用于Z→ττ过程的高精度测量和新物理寻找&lt;/li&gt;&lt;li&gt;为其他类似粒子流或喷注的多任务重建提供框架&lt;/li&gt;&lt;/ul&gt;&lt;h4&gt;迁移风险&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;探测器几何和响应差异需重新训练或微调&lt;/li&gt;&lt;li&gt;系统误差需评估探测器校准、堆叠和pile-up的影响&lt;/li&gt;&lt;li&gt;负权重事件和模拟到数据偏移可能导致实际性能退化&lt;/li&gt;&lt;li&gt;对喷注假tau的背景抑制能力需在真实数据中验证&lt;/li&gt;&lt;li&gt;推理延迟可能限制在线应用&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;strong&gt;最小验证方案：&lt;/strong&gt;在独立fully simulated样本上评估鉴别效率、衰变模式分类F1、电荷误判率和四动量分辨率，与传统算法对比，并检查模拟到数据的潜在偏移。&lt;/p&gt;&lt;p&gt;&lt;a href="https://arxiv.org/abs/2606.18460"&gt;arXiv 页面&lt;/a&gt; · &lt;a href="https://github.com/quxnb/hepml-digest/issues/new?title=%5B%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%5D+2606.18460+ParticleTransformer+is+all+you+need+for+reconstructing+hadronic+tau+leptons&amp;amp;body=%23%23+%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%0A%0A-+arXiv%EF%BC%9A%5B2606.18460%5D%28https%3A%2F%2Farxiv.org%2Fabs%2F2606.18460%29%0A-+%E6%A0%8F%E7%9B%AE%EF%BC%9AHEP+%E7%9B%B4%E6%8E%A5%E5%BA%94%E7%94%A8%0A-+%E5%BD%93%E5%89%8D%E7%9B%B8%E5%85%B3%E6%80%A7%EF%BC%9A0.95%0A-+%E5%BD%93%E5%89%8D%E8%AF%81%E6%8D%AE%E7%AD%89%E7%BA%A7%EF%BC%9Adirect%0A%0A%23%23+%E5%88%A4%E6%96%AD%0A%0A-+%5B+%5D+%E6%8E%A8%E8%8D%90%E4%BF%9D%E7%95%99%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E5%90%88%E7%90%86%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E8%BF%87%E5%BA%A6%E6%8E%A8%E6%B5%8B%0A-+%5B+%5D+%E5%BA%94%E7%A7%BB%E8%87%B3%E5%8F%A6%E4%B8%80%E4%B8%AA%E6%A0%8F%E7%9B%AE%0A-+%5B+%5D+%E5%BB%BA%E8%AE%AE%E7%B2%BE%E8%AF%BB%E5%85%A8%E6%96%87%0A%0A%23%23+%E8%A1%A5%E5%85%85%E8%AF%B4%E6%98%8E%0A%0A"&gt;提交反馈&lt;/a&gt; · hep-ex&lt;/p&gt;</ns1:encoded>
+      <guid isPermaLink="false">arxiv:2606.18460:hepml-v1</guid>
+      <category>classification</category>
+      <category>hep-ex</category>
+      <category>particle identification</category>
+      <category>regression</category>
+      <category>tau reconstruction</category>
+      <category>track:hep_application</category>
+      <pubDate>Fri, 31 Jul 2026 04:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>SNAC-Pack 2.0: Scaled-Out Surrogate Neural Architecture Codesign</title>
+      <link>https://arxiv.org/abs/2605.16138</link>
+      <description>直接应用于LHC喷注分类，并实现端到端FPGA部署，对实时触发有较大价值，但量子比特读取非核心HEP任务。</description>
+      <ns1:encoded>&lt;p&gt;&lt;strong&gt;栏目：&lt;/strong&gt;HEP 直接应用&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法：&lt;/strong&gt;多目标神经架构搜索、代理硬件模型、量化感知训练与剪枝、hls4ml FPGA部署&lt;/p&gt;&lt;p&gt;&lt;strong&gt;相关性：&lt;/strong&gt;0.90；&lt;strong&gt;证据等级：&lt;/strong&gt;transferable&lt;/p&gt;&lt;p&gt;&lt;strong&gt;初筛理由：&lt;/strong&gt;直接应用于LHC喷注分类，并实现端到端FPGA部署，对实时触发有较大价值，但量子比特读取非核心HEP任务。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法总结：&lt;/strong&gt;SNAC-Pack 是一套面向 FPGA 部署的硬件感知神经架构协同设计框架，结合多目标优化、代理硬件模型、量化感知训练与迭代剪枝，端到端生成 hls4ml 固件。论文在 LHC 喷注分类和超导量子比特读取上验证，能够发现帕累托最优架构，在匹配基线性能的同时降低 FPGA 资源消耗，或在少量性能损失下大幅缩减硬件开销。&lt;/p&gt;&lt;h4&gt;论文明确支持的结论&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;SNAC-Pack 在 LHC 喷注分类上发现的帕累托最优架构，能在匹配基线性能的同时减少 FPGA 资源使用，或在大幅降低硬件利用率的条件下仅带来轻微的任务性能下降。&lt;/li&gt;&lt;li&gt;在量子比特读取任务上，SNAC-Pack 将设计空间探索时间从数月人工调优缩短至数小时自动化搜索。&lt;/li&gt;&lt;li&gt;该框架通过代理硬件模型避免综合开销，支持并行多目标全局搜索与本地压缩循环，最终通过 hls4ml 完成 FPGA 部署。&lt;/li&gt;&lt;/ul&gt;&lt;h4&gt;对高能实验物理的潜在帮助&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;可迁移至其他依赖 FPGA 实时推理的高能物理任务，如径迹重建、粒子鉴别、异常检测触发系统。&lt;/li&gt;&lt;li&gt;自动化硬件感知模型设计能加速高能物理实验中触发算法的迭代与部署。&lt;/li&gt;&lt;/ul&gt;&lt;h4&gt;迁移风险&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;代理硬件模型可能对不同的 FPGA 平台或资源约束泛化不足，需重新训练或校准。&lt;/li&gt;&lt;li&gt;量化感知训练与剪枝过程需针对高能物理数据分布（如稀疏性、系统误差）和精度要求仔细调优，否则可能引入性能退化。&lt;/li&gt;&lt;li&gt;从仿真到真实数据的迁移可能受探测器效应和仿真偏差影响，需额外校准。&lt;/li&gt;&lt;li&gt;触发系统对延迟有严格限制，框架需保证时序收敛。&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;strong&gt;最小验证方案：&lt;/strong&gt;选取一个标准高能物理基准（如 Top 标记或喷注分类，含探测器仿真数据），使用 SNAC-Pack 搜索架构并在目标 FPGA 上部署，测量实际资源利用与推理延迟，对比手工设计的 hls4ml 模型，评估准确率、AUC 等物理指标，并检查仿真数据集与实测数据的系统偏移。&lt;/p&gt;&lt;p&gt;&lt;a href="https://arxiv.org/abs/2605.16138"&gt;arXiv 页面&lt;/a&gt; · &lt;a href="https://github.com/quxnb/hepml-digest/issues/new?title=%5B%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%5D+2605.16138+SNAC-Pack+2.0%3A+Scaled-Out+Surrogate+Neural+Architecture+Codesign&amp;amp;body=%23%23+%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%0A%0A-+arXiv%EF%BC%9A%5B2605.16138%5D%28https%3A%2F%2Farxiv.org%2Fabs%2F2605.16138%29%0A-+%E6%A0%8F%E7%9B%AE%EF%BC%9AHEP+%E7%9B%B4%E6%8E%A5%E5%BA%94%E7%94%A8%0A-+%E5%BD%93%E5%89%8D%E7%9B%B8%E5%85%B3%E6%80%A7%EF%BC%9A0.90%0A-+%E5%BD%93%E5%89%8D%E8%AF%81%E6%8D%AE%E7%AD%89%E7%BA%A7%EF%BC%9Atransferable%0A%0A%23%23+%E5%88%A4%E6%96%AD%0A%0A-+%5B+%5D+%E6%8E%A8%E8%8D%90%E4%BF%9D%E7%95%99%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E5%90%88%E7%90%86%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E8%BF%87%E5%BA%A6%E6%8E%A8%E6%B5%8B%0A-+%5B+%5D+%E5%BA%94%E7%A7%BB%E8%87%B3%E5%8F%A6%E4%B8%80%E4%B8%AA%E6%A0%8F%E7%9B%AE%0A-+%5B+%5D+%E5%BB%BA%E8%AE%AE%E7%B2%BE%E8%AF%BB%E5%85%A8%E6%96%87%0A%0A%23%23+%E8%A1%A5%E5%85%85%E8%AF%B4%E6%98%8E%0A%0A"&gt;提交反馈&lt;/a&gt; · cs.AI, cs.LG, hep-ex&lt;/p&gt;</ns1:encoded>
+      <guid isPermaLink="false">arxiv:2605.16138:hepml-v1</guid>
+      <category>cs.AI</category>
+      <category>cs.LG</category>
+      <category>hep-ex</category>
+      <category>track:hep_application</category>
+      <category>喷注分类</category>
+      <category>实时触发</category>
+      <category>超导量子比特读取（相关实验）</category>
+      <pubDate>Fri, 31 Jul 2026 04:00:00 +0000</pubDate>
+    </item>
     <item>
       <title>Simplex Demixing: Disentangling Multiple Light-Flavor Jets at Colliders</title>
       <link>https://arxiv.org/abs/2607.24921</link>
