@@ -10,29 +10,34 @@ concurrency:
   group: daily-hepml-digest
   cancel-in-progress: false
 
-permissions:
-  contents: write
-  pages: write
-  id-token: write
-
 jobs:
   build:
     runs-on: ubuntu-latest
     timeout-minutes: 30
+    outputs:
+      revision: ${{ steps.persist.outputs.revision }}
+    permissions:
+      contents: write
     steps:
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
         with:
           fetch-depth: 0
+          persist-credentials: false
 
-      - uses: actions/setup-python@v6
+      - uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1 # v6
         with:
           python-version: "3.12"
           cache: pip
+          cache-dependency-path: requirements.lock
 
       - name: Install
-        run: python -m pip install .
+        run: |
+          python -m pip install --require-hashes -r requirements.lock
+          python -m pip install --no-deps .
 
       - name: Build digest
+        id: digest
+        continue-on-error: true
         env:
           DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
           SCREENING_MODEL: deepseek-v4-flash
@@ -46,24 +51,56 @@ jobs:
           MAX_DEEP_REVIEWS: "5"
           MIN_DEEP_REVIEWS: "3"
           REVIEW_THRESHOLD: "0.45"
+          REQUEST_TIMEOUT_SECONDS: "60"
+          API_TIME_BUDGET_SECONDS: "1200"
+          MAX_CONSECUTIVE_API_FAILURES: "5"
+          MAX_PROMPT_TOKENS: "300000"
+          REANALYSIS_SLOTS: "5"
+          CHECKPOINT_INTERVAL: "5"
           FEEDBACK_REPOSITORY: ${{ github.repository }}
         run: python -m hepml_digest
 
       - name: Persist state and reports
+        id: persist
+        if: always() && !cancelled()
+        env:
+          DIGEST_OUTCOME: ${{ steps.digest.outcome }}
+          GITHUB_TOKEN: ${{ github.token }}
         run: |
           git config user.name "hepml-digest-bot"
           git config user.email "hepml-digest-bot@users.noreply.github.com"
-          git add data public
+          git add data
+          if [ "${DIGEST_OUTCOME}" = "success" ]; then
+            git add public
+          fi
           git diff --cached --quiet || git commit -m "daily digest"
-          git push
+          push_url="https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
+          if ! git push "${push_url}" "HEAD:${GITHUB_REF_NAME}"; then
+            git fetch origin "${GITHUB_REF_NAME}"
+            if [ "$(git rev-parse HEAD)" != "$(git rev-parse "origin/${GITHUB_REF_NAME}")" ]; then
+              echo "::error::Remote branch advanced during the build; rerun from its latest revision."
+              exit 1
+            fi
+            echo "Digest commit is already the remote branch tip."
+          fi
+          echo "revision=$(git rev-parse HEAD)" >> "${GITHUB_OUTPUT}"
 
-      - name: Configure Pages
-        # One-time prerequisite: Settings > Pages > Source = GitHub Actions.
-        # Automatic enablement would require a separate high-privilege PAT.
-        uses: actions/configure-pages@v6
+      - name: Fail incomplete digest
+        if: steps.digest.outcome != 'success'
+        run: |
+          echo "::error::Digest generation failed after checkpoint persistence."
+          exit 1
+
+      - name: Verify published revision
+        run: |
+          git fetch origin "${GITHUB_REF_NAME}"
+          if [ "$(git rev-parse HEAD)" != "$(git rev-parse "origin/${GITHUB_REF_NAME}")" ]; then
+            echo "::error::Remote branch changed before artifact upload."
+            exit 1
+          fi
 
       - name: Upload Pages artifact
-        uses: actions/upload-pages-artifact@v5
+        uses: actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9 # v5
         with:
           path: public
 
@@ -72,8 +109,32 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
+    timeout-minutes: 10
     needs: build
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
     steps:
+      - name: Configure Pages
+        # One-time prerequisite: Settings > Pages > Source = GitHub Actions.
+        uses: actions/configure-pages@45bfe0192ca1faeb007ade9deae92b16b8254a0d # v6
+
+      - name: Verify deployment revision
+        env:
+          EXPECTED_REVISION: ${{ needs.build.outputs.revision }}
+          GITHUB_TOKEN: ${{ github.token }}
+        run: |
+          read -r remote_revision _ < <(
+            git ls-remote \
+              "https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" \
+              "refs/heads/${GITHUB_REF_NAME}"
+          )
+          if [ "${remote_revision}" != "${EXPECTED_REVISION}" ]; then
+            echo "::error::Remote branch changed before Pages deployment."
+            exit 1
+          fi
+
       - name: Deploy Pages
         id: deployment
-        uses: actions/deploy-pages@v5
+        uses: actions/deploy-pages@cd2ce8fcbc39b97be8ca5fce6e763baed58fa128 # v5

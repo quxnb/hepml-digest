@@ -1,7 +1,9 @@
 from __future__ import annotations
 
 import os
-from typing import Protocol, TypeVar
+from dataclasses import dataclass
+from hashlib import sha256
+from typing import Callable, Protocol, TypeVar
 
 from openai import (
     APIConnectionError,
@@ -19,7 +21,44 @@ from .models import Paper, Review, Screening
 T = TypeVar("T", bound=BaseModel)
 
 
+@dataclass(slots=True)
+class AnalysisUsage:
+    screening_calls: int = 0
+    screening_prompt_tokens: int = 0
+    screening_cache_hit_tokens: int = 0
+    screening_cache_miss_tokens: int = 0
+    screening_completion_tokens: int = 0
+    review_calls: int = 0
+    review_prompt_tokens: int = 0
+    review_cache_hit_tokens: int = 0
+    review_cache_miss_tokens: int = 0
+    review_completion_tokens: int = 0
+
+    @property
+    def prompt_tokens(self) -> int:
+        return self.screening_prompt_tokens + self.review_prompt_tokens
+
+    @property
+    def completion_tokens(self) -> int:
+        return (
+            self.screening_completion_tokens
+            + self.review_completion_tokens
+        )
+
+
+def _analysis_fingerprint(stage: str, model: str, prompt: str) -> str:
+    payload = f"{stage}\0{model}\0{prompt}".encode("utf-8")
+    return sha256(payload).hexdigest()
+
+
+class APICallBudgetExceeded(RuntimeError):
+    pass
+
+
 class Analyzer(Protocol):
+    screening_fingerprint: str
+    review_fingerprint: str
+
     def screen(self, paper: Paper) -> Screening: ...
 
     def review(self, paper: Paper, screening: Screening) -> Review: ...
@@ -43,11 +82,29 @@ class DeepSeekAnalyzer:
             api_key=api_key,
             base_url="https://api.deepseek.com",
             timeout=timeout,
+            max_retries=0,
         )
         self.screening_model = screening_model
         self.review_model = review_model
         self.screen_prompt = screen_prompt
         self.review_prompt = review_prompt
+        self.screening_fingerprint = _analysis_fingerprint(
+            "screen-v1", screening_model, screen_prompt
+        )
+        self.review_fingerprint = _analysis_fingerprint(
+            "review-v1", review_model, review_prompt
+        )
+        self.usage = AnalysisUsage()
+        self.request_guard: Callable[[], bool] | None = None
+        self.request_failure_callback: Callable[[], None] | None = None
+
+    def set_request_guard(self, guard: Callable[[], bool]) -> None:
+        self.request_guard = guard
+
+    def set_request_failure_callback(
+        self, callback: Callable[[], None]
+    ) -> None:
+        self.request_failure_callback = callback
 
     @retry(
         retry=retry_if_exception_type(
@@ -72,24 +129,67 @@ class DeepSeekAnalyzer:
         response_model: type[T],
         thinking: bool,
         max_tokens: int,
+        stage: str,
     ) -> T:
-        response = self.client.chat.completions.create(
-            model=model,
-            messages=[
-                {"role": "system", "content": system},
-                {"role": "user", "content": user},
-            ],
-            response_format={"type": "json_object"},
-            max_tokens=max_tokens,
-            stream=False,
-            extra_body={
-                "thinking": {"type": "enabled" if thinking else "disabled"}
-            },
-        )
-        content = response.choices[0].message.content
-        if not content or not content.strip():
-            raise ValueError("Model returned empty content")
-        return response_model.model_validate_json(content)
+        if self.request_guard is not None and not self.request_guard():
+            raise APICallBudgetExceeded("API call budget exhausted")
+        try:
+            if stage == "screening":
+                self.usage.screening_calls += 1
+            else:
+                self.usage.review_calls += 1
+            response = self.client.chat.completions.create(
+                model=model,
+                messages=[
+                    {"role": "system", "content": system},
+                    {"role": "user", "content": user},
+                ],
+                response_format={"type": "json_object"},
+                max_tokens=max_tokens,
+                stream=False,
+                extra_body={
+                    "thinking": {
+                        "type": "enabled" if thinking else "disabled"
+                    }
+                },
+            )
+            usage = response.usage
+            prompt_tokens = int(getattr(usage, "prompt_tokens", 0) or 0)
+            cache_hit_tokens = int(
+                getattr(usage, "prompt_cache_hit_tokens", 0) or 0
+            )
+            cache_miss_tokens = int(
+                getattr(usage, "prompt_cache_miss_tokens", 0) or 0
+            )
+            if cache_hit_tokens == 0 and cache_miss_tokens == 0:
+                details = getattr(usage, "prompt_tokens_details", None)
+                cache_hit_tokens = int(
+                    getattr(details, "cached_tokens", 0) or 0
+                )
+            cache_miss_tokens += max(
+                0, prompt_tokens - cache_hit_tokens - cache_miss_tokens
+            )
+            completion_tokens = int(
+                getattr(usage, "completion_tokens", 0) or 0
+            )
+            if stage == "screening":
+                self.usage.screening_prompt_tokens += prompt_tokens
+                self.usage.screening_cache_hit_tokens += cache_hit_tokens
+                self.usage.screening_cache_miss_tokens += cache_miss_tokens
+                self.usage.screening_completion_tokens += completion_tokens
+            else:
+                self.usage.review_prompt_tokens += prompt_tokens
+                self.usage.review_cache_hit_tokens += cache_hit_tokens
+                self.usage.review_cache_miss_tokens += cache_miss_tokens
+                self.usage.review_completion_tokens += completion_tokens
+            content = response.choices[0].message.content
+            if not content or not content.strip():
+                raise ValueError("Model returned empty content")
+            return response_model.model_validate_json(content)
+        except Exception:
+            if self.request_failure_callback is not None:
+                self.request_failure_callback()
+            raise
 
     def screen(self, paper: Paper) -> Screening:
         user = (
@@ -104,6 +204,7 @@ class DeepSeekAnalyzer:
             Screening,
             thinking=False,
             max_tokens=900,
+            stage="screening",
         )
 
     def review(self, paper: Paper, screening: Screening) -> Review:
@@ -121,11 +222,15 @@ class DeepSeekAnalyzer:
             Review,
             thinking=True,
             max_tokens=2200,
+            stage="review",
         )
 
 
 class DemoAnalyzer:
     """Deterministic analyzer for installation checks; never calls an API."""
+
+    screening_fingerprint = "demo-screen-v1"
+    review_fingerprint = "demo-review-v1"
 
     def screen(self, paper: Paper) -> Screening:
         direct = "collider" in paper.abstract.lower()

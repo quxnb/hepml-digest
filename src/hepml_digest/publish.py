@@ -125,13 +125,15 @@ def _eligible_records(
 ) -> list[Record]:
     latest: dict[str, Record] = {}
     for record in state.records.values():
-        if record.screening.relevance < publish_threshold:
-            continue
         previous = latest.get(record.paper.arxiv_id)
         if previous is None or record.paper.version > previous.paper.version:
             latest[record.paper.arxiv_id] = record
     return sorted(
-        latest.values(),
+        (
+            record
+            for record in latest.values()
+            if record.screening.relevance >= publish_threshold
+        ),
         key=lambda item: (item.processed_at, item.paper.updated),
         reverse=True,
     )[:max_items]
@@ -300,35 +302,25 @@ def publish(
         f"{site_url}/hep-applications.xml",
         feedback_repository,
     )
-    atom_payload = atom_feed.atom_str(pretty=True)
-    rss_root = ElementTree.fromstring(rss_feed.rss_str(pretty=True))
-    channel_link = rss_root.find("./channel/link")
-    if channel_link is not None:
-        channel_link.text = site_url
-    rss_payload = ElementTree.tostring(
-        rss_root, encoding="utf-8", xml_declaration=True
-    )
-    index_payload = _build_index(
-        records, site_url, feed_title, feedback_repository
-    ).encode("utf-8")
-    _atomic_write(output_dir / "atom.xml", atom_payload)
-    _atomic_write(output_dir / "rss.xml", rss_payload)
-    for name, generated_feed in (
-        ("methods.xml", method_feed),
-        ("hep-applications.xml", application_feed),
-    ):
+
+    def rss_payload(generated_feed: FeedGenerator) -> bytes:
         root = ElementTree.fromstring(generated_feed.rss_str(pretty=True))
         channel_link = root.find("./channel/link")
         if channel_link is not None:
             channel_link.text = site_url
-        _atomic_write(
-            output_dir / name,
-            ElementTree.tostring(
-                root, encoding="utf-8", xml_declaration=True
-            ),
+        return ElementTree.tostring(
+            root, encoding="utf-8", xml_declaration=True
         )
-    _atomic_write(
-        output_dir / "index.html",
-        index_payload,
-    )
+
+    payloads = {
+        "atom.xml": atom_feed.atom_str(pretty=True),
+        "rss.xml": rss_payload(rss_feed),
+        "methods.xml": rss_payload(method_feed),
+        "hep-applications.xml": rss_payload(application_feed),
+        "index.html": _xml_text(
+            _build_index(records, site_url, feed_title, feedback_repository)
+        ).encode("utf-8"),
+    }
+    for name, payload in payloads.items():
+        _atomic_write(output_dir / name, payload)
     return len(records)

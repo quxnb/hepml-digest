@@ -5,6 +5,7 @@ import hashlib
 import html
 import logging
 import re
+import time
 import urllib.request
 from urllib.parse import urlencode
 from datetime import datetime, timezone
@@ -132,7 +133,9 @@ def parse_feed_bytes(
 def fetch_feeds(
     feed_urls: Iterable[str], user_agent: str, timeout: float = 30.0
 ) -> list[Paper]:
+    feed_urls = tuple(feed_urls)
     papers: list[Paper] = []
+    successful_feeds = 0
     for url in feed_urls:
         category = url.rstrip("/").rsplit("/", 1)[-1]
         request = urllib.request.Request(
@@ -142,9 +145,28 @@ def fetch_feeds(
                 "Accept": "application/rss+xml, application/xml, text/xml",
             },
         )
-        LOGGER.info("Fetching %s", url)
-        with urllib.request.urlopen(request, timeout=timeout) as response:
-            papers.extend(parse_feed_bytes(response.read(), category))
+        for attempt in range(1, 3):
+            try:
+                LOGGER.info("Fetching %s (attempt %d/2)", url, attempt)
+                with urllib.request.urlopen(
+                    request, timeout=timeout
+                ) as response:
+                    papers.extend(
+                        parse_feed_bytes(response.read(), category)
+                    )
+            except (OSError, ValueError) as exc:
+                if attempt == 2:
+                    LOGGER.error("Failed to fetch %s: %s", url, exc)
+                else:
+                    LOGGER.warning(
+                        "Fetching %s failed; retrying: %s", url, exc
+                    )
+                    time.sleep(2)
+            else:
+                successful_feeds += 1
+                break
+    if feed_urls and successful_feeds == 0:
+        raise RuntimeError("All configured arXiv feeds failed")
     return merge_duplicates(papers)
 
 

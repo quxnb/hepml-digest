@@ -33,7 +33,8 @@
 ```bash
 python -m venv .venv
 source .venv/bin/activate
-python -m pip install -e '.[dev]'
+python -m pip install --require-hashes -r requirements.lock
+python -m pip install --no-deps -e .
 ```
 
 Windows PowerShell 激活命令：
@@ -84,11 +85,12 @@ python -m hepml_digest
 程序的关键容错行为：
 
 - 跨分类论文按 `arXiv ID + version` 去重；
-- 已筛选版本不会重复调用模型；
+- 已筛选版本不会重复调用模型，模型或 prompt 改变时会按日配额重算；
 - 深度分析失败会保持 `pending`，下一天重试；
 - RSS 抓取或模型失败不会主动清空历史 Feed；
 - JSON 必须通过 Pydantic 字段和值域校验；
-- 状态和发布文件使用原子替换写入。
+- 状态读改写使用进程锁，并按配置间隔 checkpoint；
+- 所有发布内容完成序列化后才开始原子替换文件。
 
 ## 4. GitHub 部署
 
@@ -155,12 +157,36 @@ https://<用户名>.github.io/hepml-digest/hep-applications.xml
 | `PUBLISH_THRESHOLD` | `0.55` | RSS 发布阈值 |
 | `REVIEW_THRESHOLD` | `0.45` | 模型主动推荐进入深评的最低相关性 |
 | `FEED_MAX_ITEMS` | `300` | Feed 最大条目数 |
+| `REQUEST_TIMEOUT_SECONDS` | `90` | 单次模型请求超时秒数 |
+| `API_TIME_BUDGET_SECONDS` | `1440` | 达到后停止新增 API 调用并发布已有结果 |
+| `MAX_CONSECUTIVE_API_FAILURES` | `5` | 连续失败达到此数后停止新增 API 调用 |
+| `MAX_PROMPT_TOKENS` | `300000` | 单次运行输入 token 预算 |
+| `REANALYSIS_SLOTS` | `5` | 模型或 prompt 变化后每日保留的历史重算名额 |
+| `CHECKPOINT_INTERVAL` | `5` | 每完成多少次分析将状态增量写盘 |
+| `SCREENING_CACHE_HIT_PRICE_PER_MILLION_RMB` | `0.02` | 初筛缓存命中输入价格 |
+| `SCREENING_INPUT_PRICE_PER_MILLION_RMB` | `1` | 初筛缓存未命中输入价格 |
+| `SCREENING_OUTPUT_PRICE_PER_MILLION_RMB` | `2` | 初筛输出价格，用于费用估算 |
+| `REVIEW_CACHE_HIT_PRICE_PER_MILLION_RMB` | `0.025` | 深评缓存命中输入价格 |
+| `REVIEW_INPUT_PRICE_PER_MILLION_RMB` | `3` | 深评缓存未命中输入价格 |
+| `REVIEW_OUTPUT_PRICE_PER_MILLION_RMB` | `6` | 深评输出价格，用于费用估算 |
 | `FEEDBACK_REPOSITORY` | 空 | GitHub `owner/repo`，启用预填 Issue 反馈入口 |
 | `SITE_URL` | 本地地址 | 发布站点根 URL |
 | `STATE_FILE` | `data/state.json` | 状态文件 |
 | `OUTPUT_DIR` | `public` | 静态输出目录 |
 
 示例见 [.env.example](.env.example)，但不要提交包含真实密钥的 `.env`。
+
+模型调用次数、输入/输出 token 和估算费用会写入命令输出；在 GitHub
+Actions 中还会写入对应 run 的 Step Summary。价格可能变化，更新价格配置后
+再使用费用估算结果。
+
+生产和 CI 使用带哈希的 `requirements.lock` 锁定运行时依赖；构建后端版本固定在
+`pyproject.toml`。更新依赖后运行：
+
+```bash
+uv pip compile pyproject.toml --extra dev --universal --generate-hashes \
+  --output-file requirements.lock
+```
 
 ## 6. 调整科研判断标准
 

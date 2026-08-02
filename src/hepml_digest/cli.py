@@ -3,6 +3,7 @@ from __future__ import annotations
 import argparse
 import json
 import logging
+import os
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -108,3 +109,22 @@ def main() -> None:
 
     result = run_pipeline(settings, analyzer, papers=papers)
     print(json.dumps(result, ensure_ascii=False, indent=2))
+    summary_path = os.getenv("GITHUB_STEP_SUMMARY")
+    if summary_path:
+        summary = (
+            "## Daily digest metrics\n\n"
+            "| Metric | Value |\n"
+            "|---|---:|\n"
+            f"| Screened papers | {result['screened']} |\n"
+            f"| Reviewed papers | {result['reviewed']} |\n"
+            f"| Screening API calls | {result['screening_api_calls']} |\n"
+            f"| Review API calls | {result['review_api_calls']} |\n"
+            f"| Prompt tokens | {result['prompt_tokens']} |\n"
+            f"| Prompt cache hits | {result['prompt_cache_hit_tokens']} |\n"
+            f"| Prompt cache misses | {result['prompt_cache_miss_tokens']} |\n"
+            f"| Completion tokens | {result['completion_tokens']} |\n"
+            f"| Estimated cost (RMB) | {result['estimated_cost_rmb']:.6f} |\n"
+            f"| API circuit stopped | {result['api_calls_stopped']} |\n\n"
+        )
+        with Path(summary_path).open("a", encoding="utf-8") as handle:
+            handle.write(summary)

@@ -74,8 +74,17 @@ class Record(BaseModel):
     processed_at: datetime
     screening_model: str
     review_model: str | None = None
+    screening_fingerprint: str = ""
+    review_fingerprint: str | None = None
+
+    @field_validator("processed_at")
+    @classmethod
+    def ensure_processed_timezone(cls, value: datetime) -> datetime:
+        if value.tzinfo is None:
+            return value.replace(tzinfo=timezone.utc)
+        return value
 
 
 class State(BaseModel):
-    schema_version: int = 1
+    schema_version: int = 2
     records: dict[str, Record] = Field(default_factory=dict)

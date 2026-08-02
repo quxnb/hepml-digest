@@ -3,6 +3,7 @@ from pathlib import Path
 
 from hepml_digest.fetch import (
     keyword_score,
+    fetch_feeds,
     merge_duplicates,
     parse_arxiv_identifier,
     parse_feed_bytes,
@@ -80,3 +81,54 @@ def test_candidate_selection_reserves_both_tracks_and_discovery():
         item.digest_track == "hep_application" for item in selected[40:50]
     )
     assert len({item.version_key for item in selected}) == 60
+
+
+class FeedResponse:
+    def __init__(self, payload: bytes):
+        self.payload = payload
+
+    def __enter__(self):
+        return self
+
+    def __exit__(self, exc_type, exc_value, traceback):
+        return False
+
+    def read(self):
+        return self.payload
+
+
+def test_fetch_feeds_continues_after_one_source_fails(monkeypatch):
+    payload = Path("tests/fixtures/arxiv_rss.xml").read_bytes()
+
+    def urlopen(request, timeout):
+        if "broken" in request.full_url:
+            raise OSError("feed unavailable")
+        return FeedResponse(payload)
+
+    monkeypatch.setattr("hepml_digest.fetch.urllib.request.urlopen", urlopen)
+    monkeypatch.setattr("hepml_digest.fetch.time.sleep", lambda _: None)
+
+    papers = fetch_feeds(
+        (
+            "https://rss.arxiv.org/rss/broken",
+            "https://rss.arxiv.org/rss/stat.ML",
+        ),
+        "test-agent",
+    )
+
+    assert len(papers) == 1
+
+
+def test_fetch_feeds_fails_when_all_sources_fail(monkeypatch):
+    def urlopen(request, timeout):
+        raise OSError("feed unavailable")
+
+    monkeypatch.setattr("hepml_digest.fetch.urllib.request.urlopen", urlopen)
+    monkeypatch.setattr("hepml_digest.fetch.time.sleep", lambda _: None)
+
+    try:
+        fetch_feeds(("https://rss.arxiv.org/rss/broken",), "test-agent")
+    except RuntimeError as exc:
+        assert str(exc) == "All configured arXiv feeds failed"
+    else:
+        raise AssertionError("all-source failure must abort the fetch")
