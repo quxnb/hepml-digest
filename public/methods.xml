@@ -8,7 +8,83 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Mon, 03 Aug 2026 03:57:53 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 04 Aug 2026 03:50:40 +0000</lastBuildDate>
+    <item>
+      <title>Structured Neural Chaos: An Adaptive Surrogate Modeling Framework for Functional Uncertainty Quantification and Global Sensitivity Analysis</title>
+      <link>https://arxiv.org/abs/2607.28903</link>
+      <description>方法适用于高维随机输入和函数响应，可迁移至HEP模拟器代理与系统误差传播。</description>
+      <ns1:encoded>&lt;p&gt;&lt;strong&gt;栏目：&lt;/strong&gt;方法雷达&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法：&lt;/strong&gt;基于神经网络参数化的多项式混沌展开，结合功能ANOVA分解和低秩近似&lt;/p&gt;&lt;p&gt;&lt;strong&gt;相关性：&lt;/strong&gt;0.70；&lt;strong&gt;证据等级：&lt;/strong&gt;transferable&lt;/p&gt;&lt;p&gt;&lt;strong&gt;初筛理由：&lt;/strong&gt;方法适用于高维随机输入和函数响应，可迁移至HEP模拟器代理与系统误差传播。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法总结：&lt;/strong&gt;提出了结构化神经混沌展开（sNC），一种用于方差基础全局敏感性分析的替代建模框架。sNC受多项式混沌展开（PCE）启发，保留结构化分解的可解释性，同时利用神经网络的表达能力。该方法将功能ANOVA分解截断为低阶交互，每个交互分量采用神经网络参数化的可分离低秩近似，其中基函数与系数均由网络生成。构建过程顺序进行，自适应确定各ANOVA子空间的主导模式与有效复杂度。最终模型可直接从系数中以极低成本提取统计量及Sobol敏感性指数，旨在缓解高维随机输入与函数响应下PCE的维度灾难。&lt;/p&gt;&lt;h4&gt;论文明确支持的结论&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;提出了sNC替代模型框架，结合了PCE的可解释性和神经网络的表达能力。&lt;/li&gt;&lt;li&gt;sNC镜像截断的功能ANOVA分解，各交互分量采用神经网络参数化的可分离低秩近似。&lt;/li&gt;&lt;li&gt;构建过程顺序自适应，识别ANOVA子空间的主导模式并确定表示的有效复杂度。&lt;/li&gt;&lt;li&gt;可从sNC系数直接提取统计量和敏感性量，几乎零额外成本。&lt;/li&gt;&lt;/ul&gt;&lt;h4&gt;对高能实验物理的潜在帮助&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;可作为高能物理模拟器的代理模型，快速传播高维理论参数或探测器参数的系统误差。&lt;/li&gt;&lt;li&gt;用于全局敏感性分析，识别对可观测量方差贡献最大的 nuisance 参数，指导校准策略。&lt;/li&gt;&lt;li&gt;替代昂贵的全模拟以评估模拟到数据的偏移对物理结果的影响。&lt;/li&gt;&lt;/ul&gt;&lt;h4&gt;迁移风险&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;HEP模拟常输出高维、稀疏且带Poisson噪声的事件分布，与摘要假设的函数响应可能不同，需适配。&lt;/li&gt;&lt;li&gt;部分生成器产生负权重事件，可能破坏方差分解的统计解释，需要特殊处理。&lt;/li&gt;&lt;li&gt;模型未编码Lorentz对称性或置换对称性，可能降低数据效率或引入非物理近似。&lt;/li&gt;&lt;li&gt;高维参数空间下，低秩近似和顺序构建的实际扩展性未经HEP典型数百维场景验证。&lt;/li&gt;&lt;li&gt;代理模型的推理延迟可能不适合在线触发或实时校准。&lt;/li&gt;&lt;li&gt;训练数据来自模拟，若模拟与真实数据存在偏差，代理模型可能有偏，需额外校准。&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;strong&gt;最小验证方案：&lt;/strong&gt;选取简化的HEP基准（如变化部分子分布函数参数，用Pythia生成喷注质量分布），用全模拟计算Sobol指数作为参考。用sNC基于少量模拟样本构建代理模型，比较一阶和总效应指数的准确度与秩相关系数。评估统计一致性（如误差传播后均值的偏差），并检查不同模拟预算下的稳健性。&lt;/p&gt;&lt;p&gt;&lt;a href="https://arxiv.org/abs/2607.28903"&gt;arXiv 页面&lt;/a&gt; · &lt;a href="https://github.com/quxnb/hepml-digest/issues/new?title=%5B%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%5D+2607.28903+Structured+Neural+Chaos%3A+An+Adaptive+Surrogate+Modeling+Framework+for+Functional&amp;amp;body=%23%23+%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%0A%0A-+arXiv%EF%BC%9A%5B2607.28903%5D%28https%3A%2F%2Farxiv.org%2Fabs%2F2607.28903%29%0A-+%E6%A0%8F%E7%9B%AE%EF%BC%9A%E6%96%B9%E6%B3%95%E9%9B%B7%E8%BE%BE%0A-+%E5%BD%93%E5%89%8D%E7%9B%B8%E5%85%B3%E6%80%A7%EF%BC%9A0.70%0A-+%E5%BD%93%E5%89%8D%E8%AF%81%E6%8D%AE%E7%AD%89%E7%BA%A7%EF%BC%9Atransferable%0A%0A%23%23+%E5%88%A4%E6%96%AD%0A%0A-+%5B+%5D+%E6%8E%A8%E8%8D%90%E4%BF%9D%E7%95%99%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E5%90%88%E7%90%86%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E8%BF%87%E5%BA%A6%E6%8E%A8%E6%B5%8B%0A-+%5B+%5D+%E5%BA%94%E7%A7%BB%E8%87%B3%E5%8F%A6%E4%B8%80%E4%B8%AA%E6%A0%8F%E7%9B%AE%0A-+%5B+%5D+%E5%BB%BA%E8%AE%AE%E7%B2%BE%E8%AF%BB%E5%85%A8%E6%96%87%0A%0A%23%23+%E8%A1%A5%E5%85%85%E8%AF%B4%E6%98%8E%0A%0A"&gt;提交反馈&lt;/a&gt; · cs.LG, stat.ML&lt;/p&gt;</ns1:encoded>
+      <guid isPermaLink="false">arxiv:2607.28903:hepml-v1</guid>
+      <category>cs.LG</category>
+      <category>stat.ML</category>
+      <category>track:method_radar</category>
+      <category>不确定性量化</category>
+      <category>代理模型构建</category>
+      <category>全局敏感性分析</category>
+      <pubDate>Mon, 03 Aug 2026 04:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Statistical Inference for Stochastic Gradient Descent: Beyond Finite Variance</title>
+      <link>https://arxiv.org/abs/2605.26000</link>
+      <description>方法为优化算法提供几乎免调参的不确定度量化，但未在HEP数据上验证，需评估可迁移性。</description>
+      <ns1:encoded>&lt;p&gt;&lt;strong&gt;栏目：&lt;/strong&gt;方法雷达&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法：&lt;/strong&gt;自归一化统计量与子抽样&lt;/p&gt;&lt;p&gt;&lt;strong&gt;相关性：&lt;/strong&gt;0.60；&lt;strong&gt;证据等级：&lt;/strong&gt;transferable&lt;/p&gt;&lt;p&gt;&lt;strong&gt;初筛理由：&lt;/strong&gt;方法为优化算法提供几乎免调参的不确定度量化，但未在HEP数据上验证，需评估可迁移性。&lt;/p&gt;&lt;p&gt;&lt;em&gt;本条目仅完成摘要级筛选。&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;a href="https://arxiv.org/abs/2605.26000"&gt;arXiv 页面&lt;/a&gt; · &lt;a href="https://github.com/quxnb/hepml-digest/issues/new?title=%5B%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%5D+2605.26000+Statistical+Inference+for+Stochastic+Gradient+Descent%3A+Beyond+Finite+Variance&amp;amp;body=%23%23+%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%0A%0A-+arXiv%EF%BC%9A%5B2605.26000%5D%28https%3A%2F%2Farxiv.org%2Fabs%2F2605.26000%29%0A-+%E6%A0%8F%E7%9B%AE%EF%BC%9A%E6%96%B9%E6%B3%95%E9%9B%B7%E8%BE%BE%0A-+%E5%BD%93%E5%89%8D%E7%9B%B8%E5%85%B3%E6%80%A7%EF%BC%9A0.60%0A-+%E5%BD%93%E5%89%8D%E8%AF%81%E6%8D%AE%E7%AD%89%E7%BA%A7%EF%BC%9Atransferable%0A%0A%23%23+%E5%88%A4%E6%96%AD%0A%0A-+%5B+%5D+%E6%8E%A8%E8%8D%90%E4%BF%9D%E7%95%99%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E5%90%88%E7%90%86%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E8%BF%87%E5%BA%A6%E6%8E%A8%E6%B5%8B%0A-+%5B+%5D+%E5%BA%94%E7%A7%BB%E8%87%B3%E5%8F%A6%E4%B8%80%E4%B8%AA%E6%A0%8F%E7%9B%AE%0A-+%5B+%5D+%E5%BB%BA%E8%AE%AE%E7%B2%BE%E8%AF%BB%E5%85%A8%E6%96%87%0A%0A%23%23+%E8%A1%A5%E5%85%85%E8%AF%B4%E6%98%8E%0A%0A"&gt;提交反馈&lt;/a&gt; · cs.LG, stat.ME, stat.ML&lt;/p&gt;</ns1:encoded>
+      <guid isPermaLink="false">arxiv:2605.26000:hepml-v1</guid>
+      <category>cs.LG</category>
+      <category>stat.ME</category>
+      <category>stat.ML</category>
+      <category>track:method_radar</category>
+      <category>不确定度量化</category>
+      <category>优化算法统计推断</category>
+      <category>系统误差处理</category>
+      <pubDate>Mon, 03 Aug 2026 04:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Moment kernels: a simple and scalable approach for equivariance to rotations and reflections in deep convolutional networks</title>
+      <link>https://arxiv.org/abs/2505.21736</link>
+      <description>提供O(d)等变卷积的通用参数化，适用于具有旋转对称性的HEP数据，但未在HEP上验证。</description>
+      <ns1:encoded>&lt;p&gt;&lt;strong&gt;栏目：&lt;/strong&gt;方法雷达&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法：&lt;/strong&gt;Moment kernels for O(d) equivariant convolutions&lt;/p&gt;&lt;p&gt;&lt;strong&gt;相关性：&lt;/strong&gt;0.60；&lt;strong&gt;证据等级：&lt;/strong&gt;transferable&lt;/p&gt;&lt;p&gt;&lt;strong&gt;初筛理由：&lt;/strong&gt;提供O(d)等变卷积的通用参数化，适用于具有旋转对称性的HEP数据，但未在HEP上验证。&lt;/p&gt;&lt;p&gt;&lt;em&gt;本条目仅完成摘要级筛选。&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;a href="https://arxiv.org/abs/2505.21736"&gt;arXiv 页面&lt;/a&gt; · &lt;a href="https://github.com/quxnb/hepml-digest/issues/new?title=%5B%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%5D+2505.21736+Moment+kernels%3A+a+simple+and+scalable+approach+for+equivariance+to+rotations+and&amp;amp;body=%23%23+%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%0A%0A-+arXiv%EF%BC%9A%5B2505.21736%5D%28https%3A%2F%2Farxiv.org%2Fabs%2F2505.21736%29%0A-+%E6%A0%8F%E7%9B%AE%EF%BC%9A%E6%96%B9%E6%B3%95%E9%9B%B7%E8%BE%BE%0A-+%E5%BD%93%E5%89%8D%E7%9B%B8%E5%85%B3%E6%80%A7%EF%BC%9A0.60%0A-+%E5%BD%93%E5%89%8D%E8%AF%81%E6%8D%AE%E7%AD%89%E7%BA%A7%EF%BC%9Atransferable%0A%0A%23%23+%E5%88%A4%E6%96%AD%0A%0A-+%5B+%5D+%E6%8E%A8%E8%8D%90%E4%BF%9D%E7%95%99%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E5%90%88%E7%90%86%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E8%BF%87%E5%BA%A6%E6%8E%A8%E6%B5%8B%0A-+%5B+%5D+%E5%BA%94%E7%A7%BB%E8%87%B3%E5%8F%A6%E4%B8%80%E4%B8%AA%E6%A0%8F%E7%9B%AE%0A-+%5B+%5D+%E5%BB%BA%E8%AE%AE%E7%B2%BE%E8%AF%BB%E5%85%A8%E6%96%87%0A%0A%23%23+%E8%A1%A5%E5%85%85%E8%AF%B4%E6%98%8E%0A%0A"&gt;提交反馈&lt;/a&gt; · cs.CV, cs.LG&lt;/p&gt;</ns1:encoded>
+      <guid isPermaLink="false">arxiv:2505.21736:hepml-v1</guid>
+      <category>Calorimeter shower generation</category>
+      <category>Jet image classification</category>
+      <category>Particle tracking</category>
+      <category>cs.CV</category>
+      <category>cs.LG</category>
+      <category>track:method_radar</category>
+      <pubDate>Mon, 03 Aug 2026 04:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Conditioning Tree-Based Diffusions and Flows for Probabilistic Tabular Regression</title>
+      <link>https://arxiv.org/abs/2607.28864</link>
+      <description>提出树模型上的生成式概率回归，适用于表格数据，但未涉及高能物理实验，迁移需验证。</description>
+      <ns1:encoded>&lt;p&gt;&lt;strong&gt;栏目：&lt;/strong&gt;方法雷达&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法：&lt;/strong&gt;基于树的扩散模型与流匹配&lt;/p&gt;&lt;p&gt;&lt;strong&gt;相关性：&lt;/strong&gt;0.60；&lt;strong&gt;证据等级：&lt;/strong&gt;speculative&lt;/p&gt;&lt;p&gt;&lt;strong&gt;初筛理由：&lt;/strong&gt;提出树模型上的生成式概率回归，适用于表格数据，但未涉及高能物理实验，迁移需验证。&lt;/p&gt;&lt;p&gt;&lt;em&gt;本条目仅完成摘要级筛选。&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;a href="https://arxiv.org/abs/2607.28864"&gt;arXiv 页面&lt;/a&gt; · &lt;a href="https://github.com/quxnb/hepml-digest/issues/new?title=%5B%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%5D+2607.28864+Conditioning+Tree-Based+Diffusions+and+Flows+for+Probabilistic+Tabular+Regressio&amp;amp;body=%23%23+%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%0A%0A-+arXiv%EF%BC%9A%5B2607.28864%5D%28https%3A%2F%2Farxiv.org%2Fabs%2F2607.28864%29%0A-+%E6%A0%8F%E7%9B%AE%EF%BC%9A%E6%96%B9%E6%B3%95%E9%9B%B7%E8%BE%BE%0A-+%E5%BD%93%E5%89%8D%E7%9B%B8%E5%85%B3%E6%80%A7%EF%BC%9A0.60%0A-+%E5%BD%93%E5%89%8D%E8%AF%81%E6%8D%AE%E7%AD%89%E7%BA%A7%EF%BC%9Aspeculative%0A%0A%23%23+%E5%88%A4%E6%96%AD%0A%0A-+%5B+%5D+%E6%8E%A8%E8%8D%90%E4%BF%9D%E7%95%99%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E5%90%88%E7%90%86%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E8%BF%87%E5%BA%A6%E6%8E%A8%E6%B5%8B%0A-+%5B+%5D+%E5%BA%94%E7%A7%BB%E8%87%B3%E5%8F%A6%E4%B8%80%E4%B8%AA%E6%A0%8F%E7%9B%AE%0A-+%5B+%5D+%E5%BB%BA%E8%AE%AE%E7%B2%BE%E8%AF%BB%E5%85%A8%E6%96%87%0A%0A%23%23+%E8%A1%A5%E5%85%85%E8%AF%B4%E6%98%8E%0A%0A"&gt;提交反馈&lt;/a&gt; · cs.LG, stat.ML&lt;/p&gt;</ns1:encoded>
+      <guid isPermaLink="false">arxiv:2607.28864:hepml-v1</guid>
+      <category>cs.LG</category>
+      <category>stat.ML</category>
+      <category>track:method_radar</category>
+      <category>不确定性量化</category>
+      <category>概率回归</category>
+      <pubDate>Mon, 03 Aug 2026 04:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Provable Diffusion Posterior Sampling for Bayesian Inversion</title>
+      <link>https://arxiv.org/abs/2512.08022</link>
+      <description>扩散模型是生成式机器学习，可应用于HEP的模拟和推断，但论文未在HEP数据验证，需要跨领域迁移。</description>
+      <ns1:encoded>&lt;p&gt;&lt;strong&gt;栏目：&lt;/strong&gt;方法雷达&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法：&lt;/strong&gt;基于扩散模型的后验采样，结合蒙特卡洛估计和Langevin动力学，具有热启动策略&lt;/p&gt;&lt;p&gt;&lt;strong&gt;相关性：&lt;/strong&gt;0.70；&lt;strong&gt;证据等级：&lt;/strong&gt;transferable&lt;/p&gt;&lt;p&gt;&lt;strong&gt;初筛理由：&lt;/strong&gt;扩散模型是生成式机器学习，可应用于HEP的模拟和推断，但论文未在HEP数据验证，需要跨领域迁移。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法总结：&lt;/strong&gt;提出一种基于扩散模型的即插即用贝叶斯后验采样方法。利用扩散过程构建概率传输，采用热启动策略初始化粒子，并通过朗之万动力学的蒙特卡洛估计逼近后验得分，避免启发式近似。得分函数从数据学习，能捕捉先验结构特征。提供非渐近误差界保证收敛性，并在多种逆问题上验证有效性。&lt;/p&gt;&lt;h4&gt;论文明确支持的结论&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;提出一种新颖的基于扩散模型的后验采样方法，具有可证明的收敛性。&lt;/li&gt;&lt;li&gt;引入热启动策略和基于朗之万动力学的蒙特卡洛得分估计，避免启发式近似。&lt;/li&gt;&lt;li&gt;建立了非渐近Wasserstein-2距离误差界，保证复杂多模态后验的收敛。&lt;/li&gt;&lt;li&gt;数值实验表明方法在多种逆问题上有效。&lt;/li&gt;&lt;/ul&gt;&lt;h4&gt;对高能实验物理的潜在帮助&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;用于高能物理中的贝叶斯推断，如探测器校准、反卷积解谱、参数估计等高维后验采样。&lt;/li&gt;&lt;li&gt;替代传统马尔可夫链蒙特卡洛方法，加速高维复杂后验的采样。&lt;/li&gt;&lt;li&gt;结合物理模拟器，实现仿真到数据的迁移学习，但需处理系统误差和探测器几何不确定性。&lt;/li&gt;&lt;/ul&gt;&lt;h4&gt;迁移风险&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;方法依赖从训练数据学习的得分函数，若训练数据与真实物理数据存在分布偏移，将导致偏差。&lt;/li&gt;&lt;li&gt;高能物理问题维度极高（如径迹重建），扩散采样推理延迟可能不满足在线需求。&lt;/li&gt;&lt;li&gt;未考虑系统误差、nuisance参数和探测器非理想效应，直接迁移可能失效。&lt;/li&gt;&lt;li&gt;负权事件和置换对称性等特殊结构可能未被现有框架捕获。&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;strong&gt;最小验证方案：&lt;/strong&gt;选取一个简化的高能物理逆问题（如从观测能谱反推真实能谱，考虑探测器响应矩阵），生成仿真数据，训练得分网络，比较该方法与标准MCMC的后验采样质量、效率，并评估对仿真-数据偏移的敏感性。&lt;/p&gt;&lt;p&gt;&lt;a href="https://arxiv.org/abs/2512.08022"&gt;arXiv 页面&lt;/a&gt; · &lt;a href="https://github.com/quxnb/hepml-digest/issues/new?title=%5B%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%5D+2512.08022+Provable+Diffusion+Posterior+Sampling+for+Bayesian+Inversion&amp;amp;body=%23%23+%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%0A%0A-+arXiv%EF%BC%9A%5B2512.08022%5D%28https%3A%2F%2Farxiv.org%2Fabs%2F2512.08022%29%0A-+%E6%A0%8F%E7%9B%AE%EF%BC%9A%E6%96%B9%E6%B3%95%E9%9B%B7%E8%BE%BE%0A-+%E5%BD%93%E5%89%8D%E7%9B%B8%E5%85%B3%E6%80%A7%EF%BC%9A0.70%0A-+%E5%BD%93%E5%89%8D%E8%AF%81%E6%8D%AE%E7%AD%89%E7%BA%A7%EF%BC%9Atransferable%0A%0A%23%23+%E5%88%A4%E6%96%AD%0A%0A-+%5B+%5D+%E6%8E%A8%E8%8D%90%E4%BF%9D%E7%95%99%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E5%90%88%E7%90%86%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E8%BF%87%E5%BA%A6%E6%8E%A8%E6%B5%8B%0A-+%5B+%5D+%E5%BA%94%E7%A7%BB%E8%87%B3%E5%8F%A6%E4%B8%80%E4%B8%AA%E6%A0%8F%E7%9B%AE%0A-+%5B+%5D+%E5%BB%BA%E8%AE%AE%E7%B2%BE%E8%AF%BB%E5%85%A8%E6%96%87%0A%0A%23%23+%E8%A1%A5%E5%85%85%E8%AF%B4%E6%98%8E%0A%0A"&gt;提交反馈&lt;/a&gt; · cs.LG, cs.NA, math.NA, math.PR, math.ST, stat.ML, stat.TH&lt;/p&gt;</ns1:encoded>
+      <guid isPermaLink="false">arxiv:2512.08022:hepml-v1</guid>
+      <category>cs.LG</category>
+      <category>cs.NA</category>
+      <category>math.NA</category>
+      <category>math.PR</category>
+      <category>math.ST</category>
+      <category>stat.ML</category>
+      <category>stat.TH</category>
+      <category>track:method_radar</category>
+      <category>不确定度量化</category>
+      <category>展开</category>
+      <category>快速模拟</category>
+      <category>无似然推断</category>
+      <pubDate>Mon, 03 Aug 2026 04:00:00 +0000</pubDate>
+    </item>
     <item>
       <title>Random Projection Flows for Efficient Manifold Density Estimation</title>
       <link>https://arxiv.org/abs/2509.25228</link>
