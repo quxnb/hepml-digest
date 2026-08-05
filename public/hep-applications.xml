@@ -8,7 +8,91 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Tue, 04 Aug 2026 03:50:40 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 05 Aug 2026 03:35:48 +0000</lastBuildDate>
+    <item>
+      <title>Amortized Inference of Multi-Modal Posteriors using Likelihood-Weighted Normalizing Flows</title>
+      <link>https://arxiv.org/abs/2512.04954</link>
+      <description>方法针对多模态后验推断，已在重味物理具体问题（Wolfenstein参数提取）上验证，具有直接相关性。</description>
+      <ns1:encoded>&lt;p&gt;&lt;strong&gt;栏目：&lt;/strong&gt;HEP 直接应用&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法：&lt;/strong&gt;Likelihood-weighted importance sampling with normalizing flows, initialized with Gaussian mixture models&lt;/p&gt;&lt;p&gt;&lt;strong&gt;相关性：&lt;/strong&gt;0.70；&lt;strong&gt;证据等级：&lt;/strong&gt;direct&lt;/p&gt;&lt;p&gt;&lt;strong&gt;初筛理由：&lt;/strong&gt;方法针对多模态后验推断，已在重味物理具体问题（Wolfenstein参数提取）上验证，具有直接相关性。&lt;/p&gt;&lt;p&gt;&lt;em&gt;本条目仅完成摘要级筛选。&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;a href="https://arxiv.org/abs/2512.04954"&gt;arXiv 页面&lt;/a&gt; · &lt;a href="https://github.com/quxnb/hepml-digest/issues/new?title=%5B%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%5D+2512.04954+Amortized+Inference+of+Multi-Modal+Posteriors+using+Likelihood-Weighted+Normaliz&amp;amp;body=%23%23+%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%0A%0A-+arXiv%EF%BC%9A%5B2512.04954%5D%28https%3A%2F%2Farxiv.org%2Fabs%2F2512.04954%29%0A-+%E6%A0%8F%E7%9B%AE%EF%BC%9AHEP+%E7%9B%B4%E6%8E%A5%E5%BA%94%E7%94%A8%0A-+%E5%BD%93%E5%89%8D%E7%9B%B8%E5%85%B3%E6%80%A7%EF%BC%9A0.70%0A-+%E5%BD%93%E5%89%8D%E8%AF%81%E6%8D%AE%E7%AD%89%E7%BA%A7%EF%BC%9Adirect%0A%0A%23%23+%E5%88%A4%E6%96%AD%0A%0A-+%5B+%5D+%E6%8E%A8%E8%8D%90%E4%BF%9D%E7%95%99%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E5%90%88%E7%90%86%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E8%BF%87%E5%BA%A6%E6%8E%A8%E6%B5%8B%0A-+%5B+%5D+%E5%BA%94%E7%A7%BB%E8%87%B3%E5%8F%A6%E4%B8%80%E4%B8%AA%E6%A0%8F%E7%9B%AE%0A-+%5B+%5D+%E5%BB%BA%E8%AE%AE%E7%B2%BE%E8%AF%BB%E5%85%A8%E6%96%87%0A%0A%23%23+%E8%A1%A5%E5%85%85%E8%AF%B4%E6%98%8E%0A%0A"&gt;提交反馈&lt;/a&gt; · cs.LG, hep-ex, hep-ph, physics.comp-ph, physics.data-an&lt;/p&gt;</ns1:encoded>
+      <guid isPermaLink="false">arxiv:2512.04954:hepml-v1</guid>
+      <category>cs.LG</category>
+      <category>hep-ex</category>
+      <category>hep-ph</category>
+      <category>physics.comp-ph</category>
+      <category>physics.data-an</category>
+      <category>track:hep_application</category>
+      <category>参数推断</category>
+      <category>重味物理CP不对称分析</category>
+      <pubDate>Tue, 04 Aug 2026 04:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>An eightfold equivalence-preserving speedup of the JUNO OMILREC vertex and energy reconstruction</title>
+      <link>https://arxiv.org/abs/2608.00461</link>
+      <description>针对JUNO实验的顶点和能量重建算法进行加速，方法在真实HEP数据上验证，具有直接参考价值。</description>
+      <ns1:encoded>&lt;p&gt;&lt;strong&gt;栏目：&lt;/strong&gt;HEP 直接应用&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法：&lt;/strong&gt;等价保持优化（数据布局扁平化、向量化、循环拆分、降精度快速路径）以及AI辅助代码生成&lt;/p&gt;&lt;p&gt;&lt;strong&gt;相关性：&lt;/strong&gt;0.70；&lt;strong&gt;证据等级：&lt;/strong&gt;direct&lt;/p&gt;&lt;p&gt;&lt;strong&gt;初筛理由：&lt;/strong&gt;针对JUNO实验的顶点和能量重建算法进行加速，方法在真实HEP数据上验证，具有直接参考价值。&lt;/p&gt;&lt;p&gt;&lt;em&gt;本条目仅完成摘要级筛选。&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;a href="https://arxiv.org/abs/2608.00461"&gt;arXiv 页面&lt;/a&gt; · &lt;a href="https://github.com/quxnb/hepml-digest/issues/new?title=%5B%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%5D+2608.00461+An+eightfold+equivalence-preserving+speedup+of+the+JUNO+OMILREC+vertex+and+energ&amp;amp;body=%23%23+%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%0A%0A-+arXiv%EF%BC%9A%5B2608.00461%5D%28https%3A%2F%2Farxiv.org%2Fabs%2F2608.00461%29%0A-+%E6%A0%8F%E7%9B%AE%EF%BC%9AHEP+%E7%9B%B4%E6%8E%A5%E5%BA%94%E7%94%A8%0A-+%E5%BD%93%E5%89%8D%E7%9B%B8%E5%85%B3%E6%80%A7%EF%BC%9A0.70%0A-+%E5%BD%93%E5%89%8D%E8%AF%81%E6%8D%AE%E7%AD%89%E7%BA%A7%EF%BC%9Adirect%0A%0A%23%23+%E5%88%A4%E6%96%AD%0A%0A-+%5B+%5D+%E6%8E%A8%E8%8D%90%E4%BF%9D%E7%95%99%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E5%90%88%E7%90%86%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E8%BF%87%E5%BA%A6%E6%8E%A8%E6%B5%8B%0A-+%5B+%5D+%E5%BA%94%E7%A7%BB%E8%87%B3%E5%8F%A6%E4%B8%80%E4%B8%AA%E6%A0%8F%E7%9B%AE%0A-+%5B+%5D+%E5%BB%BA%E8%AE%AE%E7%B2%BE%E8%AF%BB%E5%85%A8%E6%96%87%0A%0A%23%23+%E8%A1%A5%E5%85%85%E8%AF%B4%E6%98%8E%0A%0A"&gt;提交反馈&lt;/a&gt; · hep-ex, physics.ins-det&lt;/p&gt;</ns1:encoded>
+      <guid isPermaLink="false">arxiv:2608.00461:hepml-v1</guid>
+      <category>hep-ex</category>
+      <category>physics.ins-det</category>
+      <category>track:hep_application</category>
+      <category>事件重建</category>
+      <category>能量重建</category>
+      <category>计算加速</category>
+      <category>顶点重建</category>
+      <pubDate>Tue, 04 Aug 2026 04:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Physics-Constrained Generative Inference of Sub-Crystal Electromagnetic Shower Structure in a Segmented Calorimeter</title>
+      <link>https://arxiv.org/abs/2608.00348</link>
+      <description>针对量能器分割有限导致信息损失问题，用物理约束生成模型重建簇射结构，在KOTO实验上验证，改善角度和顶点重建。</description>
+      <ns1:encoded>&lt;p&gt;&lt;strong&gt;栏目：&lt;/strong&gt;HEP 直接应用&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法：&lt;/strong&gt;物理约束生成模型&lt;/p&gt;&lt;p&gt;&lt;strong&gt;相关性：&lt;/strong&gt;0.85；&lt;strong&gt;证据等级：&lt;/strong&gt;direct&lt;/p&gt;&lt;p&gt;&lt;strong&gt;初筛理由：&lt;/strong&gt;针对量能器分割有限导致信息损失问题，用物理约束生成模型重建簇射结构，在KOTO实验上验证，改善角度和顶点重建。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法总结：&lt;/strong&gt;针对分段量能器横向颗粒度有限导致簇射信息丢失的问题，提出一种物理约束生成推断方法。该方法将重建视为逆问题，用簇射低阶空间矩约束生成模型，向物理一致的能量分布驱动，而非仅追求图像相似性。在KOTO实验的CsI量能器上验证，1 GeV能区中低阶矩的每事例残差相对真实值减少40-62%；在Kl→π0ννbar蒙特卡洛样本上，未经训练的角度和π0衰变顶点重建也得到改善。结果表明分段限制的是直接测量能力而非保留物理信息的上限，可恢复比例依赖于可观测量和能量。&lt;/p&gt;&lt;h4&gt;论文明确支持的结论&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;生成模型在1 GeV能区将低阶空间矩的每事例残差减少40-62%&lt;/li&gt;&lt;li&gt;推断形态推广至训练目标之外，在Kl→π0ννbar MC样本上改善光子入射角和π0衰变顶点重建&lt;/li&gt;&lt;/ul&gt;&lt;h4&gt;对高能实验物理的潜在帮助&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;迁移至ATLAS、CMS、LHCb、Belle II等实验的分段量能器，提高光子/电子方向与顶点重建精度，增强相关物理测量（如希格斯双光子、B介子辐射衰变）的灵敏度&lt;/li&gt;&lt;li&gt;用于未来量能器设计优化，通过算法补偿颗粒度不足，降低硬件成本&lt;/li&gt;&lt;/ul&gt;&lt;h4&gt;迁移风险&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;方法仅在KOTO CsI量能器的仿真的1 GeV事例上验证，不同量能器技术（如闪烁体、液氩）、几何结构、噪声水平可能导致性能下降&lt;/li&gt;&lt;li&gt;物理约束依赖的低阶矩可能对探测器校准、非线性响应、死区等系统效应敏感&lt;/li&gt;&lt;li&gt;生成模型可能面临仿真到数据的域偏移，真实数据中的堆积效应或不完美模拟会削弱重建效果&lt;/li&gt;&lt;li&gt;推理延迟可能限制在线触发场景的应用&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;strong&gt;最小验证方案：&lt;/strong&gt;在另一个具有不同量能器技术的实验（如LHCb ECAL）中，使用其公开仿真样本测试该方法，对比标准重建的角分辨率改善；随后在真实数据控制样本（如Bhabha或π0峰值事例）上评估，检查仿真到数据的一致性。&lt;/p&gt;&lt;p&gt;&lt;a href="https://arxiv.org/abs/2608.00348"&gt;arXiv 页面&lt;/a&gt; · &lt;a href="https://github.com/quxnb/hepml-digest/issues/new?title=%5B%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%5D+2608.00348+Physics-Constrained+Generative+Inference+of+Sub-Crystal+Electromagnetic+Shower+S&amp;amp;body=%23%23+%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%0A%0A-+arXiv%EF%BC%9A%5B2608.00348%5D%28https%3A%2F%2Farxiv.org%2Fabs%2F2608.00348%29%0A-+%E6%A0%8F%E7%9B%AE%EF%BC%9AHEP+%E7%9B%B4%E6%8E%A5%E5%BA%94%E7%94%A8%0A-+%E5%BD%93%E5%89%8D%E7%9B%B8%E5%85%B3%E6%80%A7%EF%BC%9A0.85%0A-+%E5%BD%93%E5%89%8D%E8%AF%81%E6%8D%AE%E7%AD%89%E7%BA%A7%EF%BC%9Adirect%0A%0A%23%23+%E5%88%A4%E6%96%AD%0A%0A-+%5B+%5D+%E6%8E%A8%E8%8D%90%E4%BF%9D%E7%95%99%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E5%90%88%E7%90%86%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E8%BF%87%E5%BA%A6%E6%8E%A8%E6%B5%8B%0A-+%5B+%5D+%E5%BA%94%E7%A7%BB%E8%87%B3%E5%8F%A6%E4%B8%80%E4%B8%AA%E6%A0%8F%E7%9B%AE%0A-+%5B+%5D+%E5%BB%BA%E8%AE%AE%E7%B2%BE%E8%AF%BB%E5%85%A8%E6%96%87%0A%0A%23%23+%E8%A1%A5%E5%85%85%E8%AF%B4%E6%98%8E%0A%0A"&gt;提交反馈&lt;/a&gt; · hep-ex, physics.ins-det&lt;/p&gt;</ns1:encoded>
+      <guid isPermaLink="false">arxiv:2608.00348:hepml-v1</guid>
+      <category>hep-ex</category>
+      <category>physics.ins-det</category>
+      <category>track:hep_application</category>
+      <category>物理量推断</category>
+      <category>电磁簇射重建</category>
+      <category>量能器信息提取</category>
+      <pubDate>Tue, 04 Aug 2026 04:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>3D software compensation of hadronic showers in the CRILIN crystal calorimeter</title>
+      <link>https://arxiv.org/abs/2606.05111</link>
+      <description>针对晶体量能器强子能量重建，使用GNN和软件补偿，直接提升ECAL+HCAL性能，方法对HEP实验高相关。</description>
+      <ns1:encoded>&lt;p&gt;&lt;strong&gt;栏目：&lt;/strong&gt;HEP 直接应用&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法：&lt;/strong&gt;ParticleNet Graph Neural Network with shower-shape observables for software compensation&lt;/p&gt;&lt;p&gt;&lt;strong&gt;相关性：&lt;/strong&gt;0.90；&lt;strong&gt;证据等级：&lt;/strong&gt;direct&lt;/p&gt;&lt;p&gt;&lt;strong&gt;初筛理由：&lt;/strong&gt;针对晶体量能器强子能量重建，使用GNN和软件补偿，直接提升ECAL+HCAL性能，方法对HEP实验高相关。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法总结：&lt;/strong&gt;该工作基于Geant4模拟研究CRILIN晶体电磁量能器的强子簇射软件补偿。通过簇射横向RMS与纵向重心等形状特征实现逐事例修正，并利用ParticleNet图神经网络挖掘三维拓扑信息，显著提升强子能量重建精度。结果显示，GNN补偿有效降低了ECAL对组合量能器分辨率的贡献，在不同HCAL分辨率假设下均保持良好性能，证明了高度粒度量能器能通过软件补偿恢复非补偿响应损失的信息。&lt;/p&gt;&lt;h4&gt;论文明确支持的结论&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;簇射形状可观测量与CRILIN模块中沉积能量比例强相关。&lt;/li&gt;&lt;li&gt;基于横向RMS和纵向重心的简单逐事例修正可实质性改善强子能量重建。&lt;/li&gt;&lt;li&gt;利用完整三维簇射拓扑的ParticleNet图神经网络相比简单能量求和重建性能显著提升。&lt;/li&gt;&lt;li&gt;在多种下游强子量能器分辨率假设下，GNN重建显著降低了CRILIN对组合量能器分辨率的有效贡献，保持了出色的ECAL+HCAL组合性能。&lt;/li&gt;&lt;li&gt;结果对假定HCAL分辨率的依赖性在考虑范围内是有限的。&lt;/li&gt;&lt;li&gt;高度粒度的晶体量能器能通过软件补偿技术恢复因固有非补偿响应而丢失的大部分信息，在组合系统中实现出色的强子能量分辨率。&lt;/li&gt;&lt;/ul&gt;&lt;h4&gt;对高能实验物理的潜在帮助&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;将基于GNN的软件补偿方法迁移至未来希格斯工厂的其他晶体电磁量能器设计，提升强子喷注能量分辨率，辅助希格斯耦合精密测量。&lt;/li&gt;&lt;li&gt;用于当前或升级实验（如Belle II、CMS ECAL）中，改善强子重建性能，减少对硬件补偿或大型强子量能器的依赖。&lt;/li&gt;&lt;li&gt;结合高粒度量能器读出，发展在线或离线的强子能量校准算法，降低实验系统误差。&lt;/li&gt;&lt;/ul&gt;&lt;h4&gt;迁移风险&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;模拟到真实数据的偏差：Geant4强子簇射模型可能无法精确复现真实物理，导致实际性能下降。&lt;/li&gt;&lt;li&gt;探测器几何与材料的依赖性：PbF2晶体的切伦科夫响应特性可能与其他晶体不同，方法泛化需要针对具体设计验证。&lt;/li&gt;&lt;li&gt;校准与系统误差：软件补偿需精细校准，且可能引入与能量、入射角度相关的额外系统误差，影响jet能量尺度。&lt;/li&gt;&lt;li&gt;推理延迟：图神经网络的计算开销可能限制在实时触发中应用，需评估离线处理流程的效率。&lt;/li&gt;&lt;li&gt;负权事件处理：若使用重新加权或生成式模型，需谨慎处理负权重，但此方法基于监督学习，风险较低。&lt;/li&gt;&lt;li&gt;纵向分段与横向粒度的权衡：不同探测器设计方案可能影响三维拓扑信息的提取，进而影响补偿效果。&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;strong&gt;最小验证方案：&lt;/strong&gt;在公开的CRILIN测试束流数据（若可用）上验证单π介子能量重建的改进；若无真实数据，使用另一独立Geant4仿真样本评估模型在探测器几何参数变化下的鲁棒；在简化的喷注模拟中测试将CRILIN作为EM层的组合量能器重建性能，并与仅用能量求和基线对比JER；最后将方法接入全探测器模拟框架，检查对Higgs耦合测量精度的影响。&lt;/p&gt;&lt;p&gt;&lt;a href="https://arxiv.org/abs/2606.05111"&gt;arXiv 页面&lt;/a&gt; · &lt;a href="https://github.com/quxnb/hepml-digest/issues/new?title=%5B%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%5D+2606.05111+3D+software+compensation+of+hadronic+showers+in+the+CRILIN+crystal+calorimeter&amp;amp;body=%23%23+%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%0A%0A-+arXiv%EF%BC%9A%5B2606.05111%5D%28https%3A%2F%2Farxiv.org%2Fabs%2F2606.05111%29%0A-+%E6%A0%8F%E7%9B%AE%EF%BC%9AHEP+%E7%9B%B4%E6%8E%A5%E5%BA%94%E7%94%A8%0A-+%E5%BD%93%E5%89%8D%E7%9B%B8%E5%85%B3%E6%80%A7%EF%BC%9A0.90%0A-+%E5%BD%93%E5%89%8D%E8%AF%81%E6%8D%AE%E7%AD%89%E7%BA%A7%EF%BC%9Adirect%0A%0A%23%23+%E5%88%A4%E6%96%AD%0A%0A-+%5B+%5D+%E6%8E%A8%E8%8D%90%E4%BF%9D%E7%95%99%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E5%90%88%E7%90%86%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E8%BF%87%E5%BA%A6%E6%8E%A8%E6%B5%8B%0A-+%5B+%5D+%E5%BA%94%E7%A7%BB%E8%87%B3%E5%8F%A6%E4%B8%80%E4%B8%AA%E6%A0%8F%E7%9B%AE%0A-+%5B+%5D+%E5%BB%BA%E8%AE%AE%E7%B2%BE%E8%AF%BB%E5%85%A8%E6%96%87%0A%0A%23%23+%E8%A1%A5%E5%85%85%E8%AF%B4%E6%98%8E%0A%0A"&gt;提交反馈&lt;/a&gt; · hep-ex&lt;/p&gt;</ns1:encoded>
+      <guid isPermaLink="false">arxiv:2606.05111:hepml-v1</guid>
+      <category>hep-ex</category>
+      <category>track:hep_application</category>
+      <category>喷注能量分辨率</category>
+      <category>强子量能器补偿</category>
+      <category>能量重建</category>
+      <pubDate>Tue, 04 Aug 2026 04:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Search for Higgs boson production at high transverse momentum in the WW decay channel in proton-proton collisions at $\sqrt{s}$ = 13 TeV</title>
+      <link>https://arxiv.org/abs/2603.22233</link>
+      <description>直接应用于HEP的transformer方法与重新加权技术，但非统计推断创新，主要为搜索分析。</description>
+      <ns1:encoded>&lt;p&gt;&lt;strong&gt;栏目：&lt;/strong&gt;HEP 直接应用&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法：&lt;/strong&gt;Transformer-based jet tagging algorithm and Lund jet plane reweighting calibration technique&lt;/p&gt;&lt;p&gt;&lt;strong&gt;相关性：&lt;/strong&gt;0.70；&lt;strong&gt;证据等级：&lt;/strong&gt;direct&lt;/p&gt;&lt;p&gt;&lt;strong&gt;初筛理由：&lt;/strong&gt;直接应用于HEP的transformer方法与重新加权技术，但非统计推断创新，主要为搜索分析。&lt;/p&gt;&lt;p&gt;&lt;em&gt;本条目仅完成摘要级筛选。&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;a href="https://arxiv.org/abs/2603.22233"&gt;arXiv 页面&lt;/a&gt; · &lt;a href="https://github.com/quxnb/hepml-digest/issues/new?title=%5B%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%5D+2603.22233+Search+for+Higgs+boson+production+at+high+transverse+momentum+in+the+WW+decay+ch&amp;amp;body=%23%23+%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%0A%0A-+arXiv%EF%BC%9A%5B2603.22233%5D%28https%3A%2F%2Farxiv.org%2Fabs%2F2603.22233%29%0A-+%E6%A0%8F%E7%9B%AE%EF%BC%9AHEP+%E7%9B%B4%E6%8E%A5%E5%BA%94%E7%94%A8%0A-+%E5%BD%93%E5%89%8D%E7%9B%B8%E5%85%B3%E6%80%A7%EF%BC%9A0.70%0A-+%E5%BD%93%E5%89%8D%E8%AF%81%E6%8D%AE%E7%AD%89%E7%BA%A7%EF%BC%9Adirect%0A%0A%23%23+%E5%88%A4%E6%96%AD%0A%0A-+%5B+%5D+%E6%8E%A8%E8%8D%90%E4%BF%9D%E7%95%99%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E5%90%88%E7%90%86%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E8%BF%87%E5%BA%A6%E6%8E%A8%E6%B5%8B%0A-+%5B+%5D+%E5%BA%94%E7%A7%BB%E8%87%B3%E5%8F%A6%E4%B8%80%E4%B8%AA%E6%A0%8F%E7%9B%AE%0A-+%5B+%5D+%E5%BB%BA%E8%AE%AE%E7%B2%BE%E8%AF%BB%E5%85%A8%E6%96%87%0A%0A%23%23+%E8%A1%A5%E5%85%85%E8%AF%B4%E6%98%8E%0A%0A"&gt;提交反馈&lt;/a&gt; · hep-ex&lt;/p&gt;</ns1:encoded>
+      <guid isPermaLink="false">arxiv:2603.22233:hepml-v1</guid>
+      <category>hep-ex</category>
+      <category>jet tagging</category>
+      <category>particle identification</category>
+      <category>search for boosted Higgs boson</category>
+      <category>track:hep_application</category>
+      <pubDate>Tue, 04 Aug 2026 04:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Long-Delayed Afterpulse Measurement of JUNO 20-inch Photomultiplier Tubes</title>
+      <link>https://arxiv.org/abs/2608.01943</link>
+      <description>测量JUNO PMT长延迟后脉冲，对延时相关本底建模重要，但统计方法不新颖。</description>
+      <ns1:encoded>&lt;p&gt;&lt;strong&gt;栏目：&lt;/strong&gt;HEP 直接应用&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法：&lt;/strong&gt;实验测量与时间谱分析，使用滑动窗口读出策略&lt;/p&gt;&lt;p&gt;&lt;strong&gt;相关性：&lt;/strong&gt;0.70；&lt;strong&gt;证据等级：&lt;/strong&gt;direct&lt;/p&gt;&lt;p&gt;&lt;strong&gt;初筛理由：&lt;/strong&gt;测量JUNO PMT长延迟后脉冲，对延时相关本底建模重要，但统计方法不新颖。&lt;/p&gt;&lt;p&gt;&lt;em&gt;本条目仅完成摘要级筛选。&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;a href="https://arxiv.org/abs/2608.01943"&gt;arXiv 页面&lt;/a&gt; · &lt;a href="https://github.com/quxnb/hepml-digest/issues/new?title=%5B%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%5D+2608.01943+Long-Delayed+Afterpulse+Measurement+of+JUNO+20-inch+Photomultiplier+Tubes&amp;amp;body=%23%23+%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%0A%0A-+arXiv%EF%BC%9A%5B2608.01943%5D%28https%3A%2F%2Farxiv.org%2Fabs%2F2608.01943%29%0A-+%E6%A0%8F%E7%9B%AE%EF%BC%9AHEP+%E7%9B%B4%E6%8E%A5%E5%BA%94%E7%94%A8%0A-+%E5%BD%93%E5%89%8D%E7%9B%B8%E5%85%B3%E6%80%A7%EF%BC%9A0.70%0A-+%E5%BD%93%E5%89%8D%E8%AF%81%E6%8D%AE%E7%AD%89%E7%BA%A7%EF%BC%9Adirect%0A%0A%23%23+%E5%88%A4%E6%96%AD%0A%0A-+%5B+%5D+%E6%8E%A8%E8%8D%90%E4%BF%9D%E7%95%99%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E5%90%88%E7%90%86%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E8%BF%87%E5%BA%A6%E6%8E%A8%E6%B5%8B%0A-+%5B+%5D+%E5%BA%94%E7%A7%BB%E8%87%B3%E5%8F%A6%E4%B8%80%E4%B8%AA%E6%A0%8F%E7%9B%AE%0A-+%5B+%5D+%E5%BB%BA%E8%AE%AE%E7%B2%BE%E8%AF%BB%E5%85%A8%E6%96%87%0A%0A%23%23+%E8%A1%A5%E5%85%85%E8%AF%B4%E6%98%8E%0A%0A"&gt;提交反馈&lt;/a&gt; · hep-ex&lt;/p&gt;</ns1:encoded>
+      <guid isPermaLink="false">arxiv:2608.01943:hepml-v1</guid>
+      <category>PMT响应建模</category>
+      <category>hep-ex</category>
+      <category>track:hep_application</category>
+      <category>探测器表征</category>
+      <category>背景估计</category>
+      <pubDate>Tue, 04 Aug 2026 04:00:00 +0000</pubDate>
+    </item>
     <item>
       <title>Learning transferable event representations for charmed baryon physics at BESIII</title>
       <link>https://arxiv.org/abs/2607.29088</link>
