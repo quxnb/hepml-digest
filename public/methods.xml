@@ -8,7 +8,68 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Thu, 06 Aug 2026 03:39:56 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 07 Aug 2026 03:18:54 +0000</lastBuildDate>
+    <item>
+      <title>Group-Equivariant Diffusion Models for Lattice Field Theory</title>
+      <link>https://arxiv.org/abs/2510.26081</link>
+      <description>直接处理格点场论采样，等变扩散模型可缓解临界慢化，对HEP格点模拟有明确价值。</description>
+      <ns1:encoded>&lt;p&gt;&lt;strong&gt;栏目：&lt;/strong&gt;方法雷达&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法：&lt;/strong&gt;Group-equivariant score-based diffusion models&lt;/p&gt;&lt;p&gt;&lt;strong&gt;相关性：&lt;/strong&gt;0.85；&lt;strong&gt;证据等级：&lt;/strong&gt;direct&lt;/p&gt;&lt;p&gt;&lt;strong&gt;初筛理由：&lt;/strong&gt;直接处理格点场论采样，等变扩散模型可缓解临界慢化，对HEP格点模拟有明确价值。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法总结：&lt;/strong&gt;论文提出群等变扩散模型在临界点附近采样二维φ⁴和U(1)格点场论，以缓解马尔可夫链蒙特卡洛模拟的临界慢化。模型对全局Z₂反射、局域U(1)旋转及平移变换保持等变性，并采用增强训练方案提升样本质量。实验表明，相比通用分数网络，对称性感知模型在样本质量、表达力和有效样本量上均更优。&lt;/p&gt;&lt;h4&gt;论文明确支持的结论&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;基于分数的对称性保持扩散模型可作为采样二维φ⁴和U(1)格点场论的替代策略&lt;/li&gt;&lt;li&gt;所提模型对全局Z₂反射、局域U(1)旋转及周期平移群等变&lt;/li&gt;&lt;li&gt;增强训练方案显著提高样本质量&lt;/li&gt;&lt;li&gt;对称性感知模型在样本质量、表达力和有效样本量上优于通用分数网络&lt;/li&gt;&lt;/ul&gt;&lt;h4&gt;对高能实验物理的潜在帮助&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;将等变扩散模型迁移至四维格点QCD以缓解临界慢化&lt;/li&gt;&lt;li&gt;与现有混合蒙特卡洛结合，作为独立采样器或提议分布&lt;/li&gt;&lt;li&gt;用于产生格点规范组态的增强采样&lt;/li&gt;&lt;/ul&gt;&lt;h4&gt;迁移风险&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;二维标量/规范场到四维非阿贝尔规范场扩展时，对称群更复杂且计算开销增大&lt;/li&gt;&lt;li&gt;扩散模型训练成本与推断延迟可能抵消采样加速收益&lt;/li&gt;&lt;li&gt;未见对系统误差、重加权或物理观测量校准的讨论&lt;/li&gt;&lt;li&gt;未涉及模拟到数据偏移、负权事件或探测器几何等实际因素&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;strong&gt;最小验证方案：&lt;/strong&gt;在四维SU(3)格点规范理论中训练等变扩散模型，与标准HMC比较拓扑电荷演化、关联时间与临界指数，评估物理观测量一致性并量化系统误差。&lt;/p&gt;&lt;p&gt;&lt;a href="https://arxiv.org/abs/2510.26081"&gt;arXiv 页面&lt;/a&gt; · &lt;a href="https://github.com/quxnb/hepml-digest/issues/new?title=%5B%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%5D+2510.26081+Group-Equivariant+Diffusion+Models+for+Lattice+Field+Theory&amp;amp;body=%23%23+%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%0A%0A-+arXiv%EF%BC%9A%5B2510.26081%5D%28https%3A%2F%2Farxiv.org%2Fabs%2F2510.26081%29%0A-+%E6%A0%8F%E7%9B%AE%EF%BC%9A%E6%96%B9%E6%B3%95%E9%9B%B7%E8%BE%BE%0A-+%E5%BD%93%E5%89%8D%E7%9B%B8%E5%85%B3%E6%80%A7%EF%BC%9A0.85%0A-+%E5%BD%93%E5%89%8D%E8%AF%81%E6%8D%AE%E7%AD%89%E7%BA%A7%EF%BC%9Adirect%0A%0A%23%23+%E5%88%A4%E6%96%AD%0A%0A-+%5B+%5D+%E6%8E%A8%E8%8D%90%E4%BF%9D%E7%95%99%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E5%90%88%E7%90%86%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E8%BF%87%E5%BA%A6%E6%8E%A8%E6%B5%8B%0A-+%5B+%5D+%E5%BA%94%E7%A7%BB%E8%87%B3%E5%8F%A6%E4%B8%80%E4%B8%AA%E6%A0%8F%E7%9B%AE%0A-+%5B+%5D+%E5%BB%BA%E8%AE%AE%E7%B2%BE%E8%AF%BB%E5%85%A8%E6%96%87%0A%0A%23%23+%E8%A1%A5%E5%85%85%E8%AF%B4%E6%98%8E%0A%0A"&gt;提交反馈&lt;/a&gt; · cs.LG, hep-lat&lt;/p&gt;</ns1:encoded>
+      <guid isPermaLink="false">arxiv:2510.26081:hepml-v1</guid>
+      <category>critical slowing down mitigation</category>
+      <category>cs.LG</category>
+      <category>field configuration generation</category>
+      <category>hep-lat</category>
+      <category>lattice QFT sampling</category>
+      <category>track:method_radar</category>
+      <pubDate>Thu, 06 Aug 2026 04:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>When Is a Conformal Guarantee Fair? Auditing Silent Subgroup Under-Coverage in Alzheimer's Disease Longitudinal Prediction</title>
+      <link>https://arxiv.org/abs/2608.04254</link>
+      <description>关注群体覆盖不足与公平性，与高能物理中系统误差和校准高度相关，但领域不同，迁移需验证。</description>
+      <ns1:encoded>&lt;p&gt;&lt;strong&gt;栏目：&lt;/strong&gt;方法雷达&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法：&lt;/strong&gt;机制驱动的审计与修复框架，结合保形预测校正（交叉保形池化、子组校准、覆盖安全边际下限）&lt;/p&gt;&lt;p&gt;&lt;strong&gt;相关性：&lt;/strong&gt;0.65；&lt;strong&gt;证据等级：&lt;/strong&gt;transferable&lt;/p&gt;&lt;p&gt;&lt;strong&gt;初筛理由：&lt;/strong&gt;关注群体覆盖不足与公平性，与高能物理中系统误差和校准高度相关，但领域不同，迁移需验证。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法总结：&lt;/strong&gt;本文提出一种基于机制的审计与修复框架，用于检测和纠正保形预测中的子群覆盖不足。方法包括交叉保形池化（针对稀有性）、子群校准（针对厚尾性）和覆盖安全边际下限（两种机制并存时），在阿尔茨海默病纵向预测中恢复了高风险子群的目标覆盖率，并在ADNI和OASIS-3队列上验证。&lt;/p&gt;&lt;h4&gt;论文明确支持的结论&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;总体保形预测在68种审计组合中的57种中低估了高风险子群的覆盖率，尽管达到了标称边缘覆盖率。&lt;/li&gt;&lt;li&gt;覆盖不足不成比例地影响高遗传风险和疾病严重程度的患者（平均赤字6.1个百分点，95% CI [3.3, 8.9]），而人口统计学子群平均保持在目标水平（0.0个百分点，CI [-1.9, 1.7]）。&lt;/li&gt;&lt;li&gt;所提出的保形校正方法（交叉保形池化、子群校准、覆盖安全边际下限）在几乎所有高风险子群中恢复了目标覆盖率。&lt;/li&gt;&lt;/ul&gt;&lt;h4&gt;对高能实验物理的潜在帮助&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;在高能物理预测任务（如喷注能量回归、事例分类置信度）中，针对不同子群（喷注风味、探测器区域、过程类别）审计置信区间的覆盖公平性。&lt;/li&gt;&lt;li&gt;利用稀有性子群池化解决因统计量不足导致的覆盖失效，通过子群校准解决不同物理尺度下的异方差或厚尾分布。&lt;/li&gt;&lt;li&gt;结合覆盖安全边际下限确保在复杂物理背景和系统不确定性的情况下，特定子群仍满足目标覆盖率。&lt;/li&gt;&lt;/ul&gt;&lt;h4&gt;迁移风险&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;高能物理数据常违反可交换性假设，存在模拟到数据的分布偏移、时间依赖的探测器效应和非平稳过程。&lt;/li&gt;&lt;li&gt;子群定义可能涉及模型依赖（如喷注溯源），池化不同物理过程的子群可能不合理。&lt;/li&gt;&lt;li&gt;覆盖失效机制可能由系统误差主导（如刻度不确定度、本底建模），而非稀有性或厚尾性。&lt;/li&gt;&lt;li&gt;子群校准可能面临负权重事件、高维参数空间和推理延迟的约束。&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;strong&gt;最小验证方案：&lt;/strong&gt;选择一个高能物理回归任务（如喷注横动量校正），基于模拟数据定义子群（如不同喷注风味、横动量区间）。应用标准保形预测，审计子群覆盖率。分别实施稀有性子群池化和厚尾性子群校准，评估覆盖率修复效果。通过引入可控的模拟-数据偏移和系统不确定性，测试方法的稳健性。&lt;/p&gt;&lt;p&gt;&lt;a href="https://arxiv.org/abs/2608.04254"&gt;arXiv 页面&lt;/a&gt; · &lt;a href="https://github.com/quxnb/hepml-digest/issues/new?title=%5B%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%5D+2608.04254+When+Is+a+Conformal+Guarantee+Fair%3F+Auditing+Silent+Subgroup+Under-Coverage+in+A&amp;amp;body=%23%23+%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%0A%0A-+arXiv%EF%BC%9A%5B2608.04254%5D%28https%3A%2F%2Farxiv.org%2Fabs%2F2608.04254%29%0A-+%E6%A0%8F%E7%9B%AE%EF%BC%9A%E6%96%B9%E6%B3%95%E9%9B%B7%E8%BE%BE%0A-+%E5%BD%93%E5%89%8D%E7%9B%B8%E5%85%B3%E6%80%A7%EF%BC%9A0.65%0A-+%E5%BD%93%E5%89%8D%E8%AF%81%E6%8D%AE%E7%AD%89%E7%BA%A7%EF%BC%9Atransferable%0A%0A%23%23+%E5%88%A4%E6%96%AD%0A%0A-+%5B+%5D+%E6%8E%A8%E8%8D%90%E4%BF%9D%E7%95%99%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E5%90%88%E7%90%86%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E8%BF%87%E5%BA%A6%E6%8E%A8%E6%B5%8B%0A-+%5B+%5D+%E5%BA%94%E7%A7%BB%E8%87%B3%E5%8F%A6%E4%B8%80%E4%B8%AA%E6%A0%8F%E7%9B%AE%0A-+%5B+%5D+%E5%BB%BA%E8%AE%AE%E7%B2%BE%E8%AF%BB%E5%85%A8%E6%96%87%0A%0A%23%23+%E8%A1%A5%E5%85%85%E8%AF%B4%E6%98%8E%0A%0A"&gt;提交反馈&lt;/a&gt; · stat.ME, stat.ML&lt;/p&gt;</ns1:encoded>
+      <guid isPermaLink="false">arxiv:2608.04254:hepml-v1</guid>
+      <category>stat.ME</category>
+      <category>stat.ML</category>
+      <category>track:method_radar</category>
+      <category>不确定度量化</category>
+      <category>校准</category>
+      <category>系统误差处理</category>
+      <pubDate>Thu, 06 Aug 2026 04:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Nonparametric Goodness-of-fit Testing under Covariate Shift</title>
+      <link>https://arxiv.org/abs/2608.04860</link>
+      <description>协变量偏移下的拟合优度检验与HEP中模拟与数据分布失配相关，重要性加权和核回归可用于系统误差估计。</description>
+      <ns1:encoded>&lt;p&gt;&lt;strong&gt;栏目：&lt;/strong&gt;方法雷达&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法：&lt;/strong&gt;Truncated importance-weighting kernel ridge regression with multiplier bootstrap&lt;/p&gt;&lt;p&gt;&lt;strong&gt;相关性：&lt;/strong&gt;0.65；&lt;strong&gt;证据等级：&lt;/strong&gt;speculative&lt;/p&gt;&lt;p&gt;&lt;strong&gt;初筛理由：&lt;/strong&gt;协变量偏移下的拟合优度检验与HEP中模拟与数据分布失配相关，重要性加权和核回归可用于系统误差估计。&lt;/p&gt;&lt;p&gt;&lt;em&gt;本条目仅完成摘要级筛选。&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;a href="https://arxiv.org/abs/2608.04860"&gt;arXiv 页面&lt;/a&gt; · &lt;a href="https://github.com/quxnb/hepml-digest/issues/new?title=%5B%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%5D+2608.04860+Nonparametric+Goodness-of-fit+Testing+under+Covariate+Shift&amp;amp;body=%23%23+%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%0A%0A-+arXiv%EF%BC%9A%5B2608.04860%5D%28https%3A%2F%2Farxiv.org%2Fabs%2F2608.04860%29%0A-+%E6%A0%8F%E7%9B%AE%EF%BC%9A%E6%96%B9%E6%B3%95%E9%9B%B7%E8%BE%BE%0A-+%E5%BD%93%E5%89%8D%E7%9B%B8%E5%85%B3%E6%80%A7%EF%BC%9A0.65%0A-+%E5%BD%93%E5%89%8D%E8%AF%81%E6%8D%AE%E7%AD%89%E7%BA%A7%EF%BC%9Aspeculative%0A%0A%23%23+%E5%88%A4%E6%96%AD%0A%0A-+%5B+%5D+%E6%8E%A8%E8%8D%90%E4%BF%9D%E7%95%99%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E5%90%88%E7%90%86%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E8%BF%87%E5%BA%A6%E6%8E%A8%E6%B5%8B%0A-+%5B+%5D+%E5%BA%94%E7%A7%BB%E8%87%B3%E5%8F%A6%E4%B8%80%E4%B8%AA%E6%A0%8F%E7%9B%AE%0A-+%5B+%5D+%E5%BB%BA%E8%AE%AE%E7%B2%BE%E8%AF%BB%E5%85%A8%E6%96%87%0A%0A%23%23+%E8%A1%A5%E5%85%85%E8%AF%B4%E6%98%8E%0A%0A"&gt;提交反馈&lt;/a&gt; · cs.LG, math.ST, stat.ME, stat.ML, stat.TH&lt;/p&gt;</ns1:encoded>
+      <guid isPermaLink="false">arxiv:2608.04860:hepml-v1</guid>
+      <category>cs.LG</category>
+      <category>math.ST</category>
+      <category>stat.ME</category>
+      <category>stat.ML</category>
+      <category>stat.TH</category>
+      <category>track:method_radar</category>
+      <category>展开</category>
+      <category>无似然推断</category>
+      <category>系统误差处理</category>
+      <pubDate>Thu, 06 Aug 2026 04:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Unscented KalmanNet: a hybrid deep learning filter with calibrated posterior covariance for nonlinear state estimation</title>
+      <link>https://arxiv.org/abs/2608.04201</link>
+      <description>方法针对非线性状态估计和协方差校准，可迁移至粒子追踪或探测器对准等任务，但未在HEP数据上验证。</description>
+      <ns1:encoded>&lt;p&gt;&lt;strong&gt;栏目：&lt;/strong&gt;方法雷达&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法：&lt;/strong&gt;Unscented KalmanNet，结合无迹卡尔曼滤波与深度学习组件（噪声网络和增益网络），并采用标定感知训练&lt;/p&gt;&lt;p&gt;&lt;strong&gt;相关性：&lt;/strong&gt;0.60；&lt;strong&gt;证据等级：&lt;/strong&gt;transferable&lt;/p&gt;&lt;p&gt;&lt;strong&gt;初筛理由：&lt;/strong&gt;方法针对非线性状态估计和协方差校准，可迁移至粒子追踪或探测器对准等任务，但未在HEP数据上验证。&lt;/p&gt;&lt;p&gt;&lt;em&gt;本条目仅完成摘要级筛选。&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;a href="https://arxiv.org/abs/2608.04201"&gt;arXiv 页面&lt;/a&gt; · &lt;a href="https://github.com/quxnb/hepml-digest/issues/new?title=%5B%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%5D+2608.04201+Unscented+KalmanNet%3A+a+hybrid+deep+learning+filter+with+calibrated+posterior+cov&amp;amp;body=%23%23+%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%0A%0A-+arXiv%EF%BC%9A%5B2608.04201%5D%28https%3A%2F%2Farxiv.org%2Fabs%2F2608.04201%29%0A-+%E6%A0%8F%E7%9B%AE%EF%BC%9A%E6%96%B9%E6%B3%95%E9%9B%B7%E8%BE%BE%0A-+%E5%BD%93%E5%89%8D%E7%9B%B8%E5%85%B3%E6%80%A7%EF%BC%9A0.60%0A-+%E5%BD%93%E5%89%8D%E8%AF%81%E6%8D%AE%E7%AD%89%E7%BA%A7%EF%BC%9Atransferable%0A%0A%23%23+%E5%88%A4%E6%96%AD%0A%0A-+%5B+%5D+%E6%8E%A8%E8%8D%90%E4%BF%9D%E7%95%99%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E5%90%88%E7%90%86%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E8%BF%87%E5%BA%A6%E6%8E%A8%E6%B5%8B%0A-+%5B+%5D+%E5%BA%94%E7%A7%BB%E8%87%B3%E5%8F%A6%E4%B8%80%E4%B8%AA%E6%A0%8F%E7%9B%AE%0A-+%5B+%5D+%E5%BB%BA%E8%AE%AE%E7%B2%BE%E8%AF%BB%E5%85%A8%E6%96%87%0A%0A%23%23+%E8%A1%A5%E5%85%85%E8%AF%B4%E6%98%8E%0A%0A"&gt;提交反馈&lt;/a&gt; · cs.LG, cs.NA, eess.SP, math.NA&lt;/p&gt;</ns1:encoded>
+      <guid isPermaLink="false">arxiv:2608.04201:hepml-v1</guid>
+      <category>cs.LG</category>
+      <category>cs.NA</category>
+      <category>eess.SP</category>
+      <category>math.NA</category>
+      <category>track:method_radar</category>
+      <category>在线滤波与不确定度量化</category>
+      <category>异常检测</category>
+      <category>系统状态估计</category>
+      <pubDate>Thu, 06 Aug 2026 04:00:00 +0000</pubDate>
+    </item>
     <item>
       <title>Conformal risk control for model-form uncertainty in parametric non-intrusive reduced-order models</title>
       <link>https://arxiv.org/abs/2608.03360</link>
