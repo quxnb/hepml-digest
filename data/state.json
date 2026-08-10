@@ -9604,13 +9604,38 @@
         "needs_deep_review": true,
         "evidence_level": "transferable"
       },
-      "review": null,
-      "review_status": "pending",
+      "review": {
+        "summary_cn": "提出一类紧支撑非平稳核，使协方差矩阵自然稀疏化，结合分布式计算实现千万级数据点的精确高斯过程训练。方法无需诱导点或近似，核、噪声和均值函数设计灵活，适用于各类输入空间。为高能物理中需精确不确定度量的大规模替代模型提供可能。",
+        "paper_claims": [
+          "将精确高斯过程扩展至超千万数据点，无需诱导点、核插值或近邻近似",
+          "利用紧支撑非平稳核产生协方差矩阵的自然稀疏结构",
+          "利用稀疏性高效计算线性系统解和对数行列式以进行训练",
+          "在多个真实数据集上展现优越的近似性能（相较于现有近似算法）",
+          "方法对任意高斯过程定制（核、噪声、均值函数）和输入空间保持无偏好性"
+        ],
+        "hep_opportunities": [
+          "对高统计量模拟数据（如探测器响应）进行大规模替代建模，以加速物理分析",
+          "在共振态搜索中使用高亮度控制区数据构建精确背景模型",
+          "用于参数估计的似然自由推理，需要高精度不确定性量化",
+          "作为蒙特卡洛生成器的快速仿真器，用于快速参数扫描"
+        ],
+        "transfer_risks": [
+          "高能物理数据常含长程关联，紧支撑核可能截断物理关联，需谨慎设计核函数",
+          "模拟与真实数据之间的差异可能降低模型外推能力，需引入校正机制",
+          "分布式计算集成到现有高层物理分析框架（如RDataFrame）存在工程挑战",
+          "尽管训练可扩展，推理延迟可能影响实时应用（如在线触发）",
+          "系统误差和扰动参数处理需在高能物理典型场景下验证，如形状系统变异"
+        ],
+        "validation_plan": "选择高能物理中典型的替代模型任务（如用运动学输入预测粒子鉴别变量），使用百万级模拟样本。训练gp2Scale并与精确GP（子集）和主流稀疏GP（如SVGP）对比预测精度、不确定性校准（覆盖度）和训练时间。引入系统偏移（如鉴别器响应函数畸变）测试鲁棒性。在相空间边界检测外推行为。在分布式高能物理计算集群上评估内存和时间开销。",
+        "evidence_level": "transferable",
+        "confidence": 0.7
+      },
+      "review_status": "complete",
       "processed_at": "2026-07-27T04:00:36.249844Z",
       "screening_model": "deepseek-v4-flash",
-      "review_model": null,
+      "review_model": "deepseek-v4-pro",
       "screening_fingerprint": "195fb0b173d8bc9a4c28c78a16fb55810e78ed0d42329ccadb12ddb4dd876ed2",
-      "review_fingerprint": null
+      "review_fingerprint": "6afcc0548b61a39044110499acc2c6b22571a29a7b7258150a845e3320dc2562"
     },
     "2605.12183:v1": {
       "paper": {
@@ -10440,13 +10465,35 @@
         "needs_deep_review": true,
         "evidence_level": "transferable"
       },
-      "review": null,
-      "review_status": "pending",
+      "review": {
+        "summary_cn": "提出谱流证书(SFCs)，一种从归一化图拉普拉斯谱计算得到的标量诊断指标，可在不训练模型的情况下预测图神经网络(GNN)在长程任务上的准确性。SFCs结合了代数连通性与消息传递深度，能评估图拓扑是否允许信息在给定层数内充分传播。在25种合成图和150个真实分子图上验证了其预测能力，解释方差超过90%。该方法为GNN部署前提供了低成本预判工具。",
+        "paper_claims": [
+          "SFCs是无需训练和无标签数据的图拓扑诊断标量",
+          "SFCs能预测GNN在长程传播任务上的训练准确率",
+          "在合成图和真实分子图上，SFCs解释方差超过90%",
+          "相比传统结构统计量，SFCs解释方差提高两倍以上"
+        ],
+        "hep_opportunities": [
+          "将SFCs应用于粒子物理事件图(如喷注重建、径迹重建)，在训练前评估基于探测器几何构建的图是否适合GNN长程信息传播",
+          "在异构探测器图中，利用SFCs诊断跨子探测器信息融合的可行性",
+          "作为GNN模型选择或图构建方式的快速筛选工具，避免无效训练"
+        ],
+        "transfer_risks": [
+          "粒子物理图的构建(如节点为径迹或能量团，边连接基于动量空间或角度)与分子图不同，谱性质可能不直接对应",
+          "探测器效应(如缺失径迹、噪声、非均匀效率)会引入系统不确定性，影响图拓扑和SFCs的可靠性",
+          "图常具有动态大小和置换对称性，SFCs基于静态拉普拉斯算子，未考虑这些物理约束",
+          "推理延迟可能受限，若每次事件需实时计算SFCs则不切实际，更适合离线分析"
+        ],
+        "validation_plan": "选取HEP标准GNN基准(如TopTagging、JetNet或TrackML数据)，构建典型图(如粒子图基于ΔR或k-NN)，计算SFCs并与其在实际GNN(如MPNN、EdgeConv)上的长程任务准确率进行相关性分析。同时引入探测器系统效应(如随机丢弃节点、添加噪声)检验SFCs的鲁棒性。与图直径、平均有效电阻等基线指标对比。",
+        "evidence_level": "transferable",
+        "confidence": 0.5
+      },
+      "review_status": "complete",
       "processed_at": "2026-07-27T04:00:36.249844Z",
       "screening_model": "deepseek-v4-flash",
-      "review_model": null,
+      "review_model": "deepseek-v4-pro",
       "screening_fingerprint": "195fb0b173d8bc9a4c28c78a16fb55810e78ed0d42329ccadb12ddb4dd876ed2",
-      "review_fingerprint": null
+      "review_fingerprint": "6afcc0548b61a39044110499acc2c6b22571a29a7b7258150a845e3320dc2562"
     },
     "2607.21660:v1": {
       "paper": {
@@ -10696,13 +10743,35 @@
         "needs_deep_review": true,
         "evidence_level": "transferable"
       },
-      "review": null,
-      "review_status": "pending",
+      "review": {
+        "summary_cn": "利用Pierre Auger观测站混合测量数据，发现平均簇射极大深度与初代质子-空气相互作用中次级粒子能谱变量的普适关系。通过该关系将数据偏好的簇射极大深度映射为平均弹性和强子能量份额的增加，所有模型均显示后两者需增强，且强子能量份额需放大2.8–4.6倍以解释μ子疑难。",
+        "paper_claims": [
+          "高能强子相互作用模型普遍低估了平均簇射极大深度。",
+          "模型预测的⟨Xmax⟩与首次相互作用中次级粒子能谱变量存在普适关系。",
+          "数据要求平均弹性和强子能量份额均需增加。",
+          "为解释μ子疑难，强子能量份额需放大2.8至4.6倍。"
+        ],
+        "hep_opportunities": [
+          "将对撞机实验的强子相互作用模型约束从前向区域拓展至空气簇射对应能区。",
+          "利用该普适关系减少对撞机模拟中强子化与截面模型的系统误差。",
+          "为对撞机环境下前向强子产生提供模型无关的间接检验手段。"
+        ],
+        "transfer_risks": [
+          "宇宙线空气靶与对撞机质子或核靶的差异可能导致普适关系不成立。",
+          "Auger数据的能量标度和探测器响应系统误差在对撞机中可能不同。",
+          "大气效应和簇射重建算法引入的模型依赖不确定性尚未量化。",
+          "普适关系依赖于空气簇射中特定可观测量的选择，迁移到对撞机可能需要新的观测量映射。"
+        ],
+        "validation_plan": "在LHC固定靶或前向探测器（如LHCf）的模拟数据中重现该普适关系，并用现有对撞机数据检验其预测的弹性分布和强子能量份额的一致性。",
+        "evidence_level": "transferable",
+        "confidence": 0.7
+      },
+      "review_status": "complete",
       "processed_at": "2026-07-27T04:00:36.249844Z",
       "screening_model": "deepseek-v4-flash",
-      "review_model": null,
+      "review_model": "deepseek-v4-pro",
       "screening_fingerprint": "195fb0b173d8bc9a4c28c78a16fb55810e78ed0d42329ccadb12ddb4dd876ed2",
-      "review_fingerprint": null
+      "review_fingerprint": "6afcc0548b61a39044110499acc2c6b22571a29a7b7258150a845e3320dc2562"
     },
     "2607.22507:v1": {
       "paper": {
@@ -19139,13 +19208,37 @@
         "needs_deep_review": true,
         "evidence_level": "transferable"
       },
-      "review": null,
-      "review_status": "pending",
+      "review": {
+        "summary_cn": "论文提出从离散观测轨迹数据学习受控随机微分方程（SDE）的核方法。先为每个控制样本估计状态密度流，再通过匹配Fokker-Planck方程拟合漂移与扩散系数。理论给出有限样本误差界，量化控制数、状态维数及正则性对精度的影响。提供开源Python实现。",
+        "paper_claims": [
+          "可以从轨迹数据中学习非线性受控SDE的漂移和扩散系数",
+          "通过核密度估计和Fokker-Planck方程匹配实现系数拟合",
+          "推导了有限样本下密度流的误差界限，并给出了收敛速率",
+          "数值实验验证了方法的有效性"
+        ],
+        "hep_opportunities": [
+          "学习粒子在探测器中的随机传播过程，替代部分全模拟以加速生成",
+          "为量能器能量沉积等受探测器几何与入射条件控制的随机过程建立代理模型",
+          "从实验数据或慢速模拟中学习控制相关的随机效应，用于快速重现观测量分布"
+        ],
+        "transfer_risks": [
+          "核方法面临高维状态空间（如径迹参数）的维数灾难，密度估计误差急剧增大",
+          "探测器几何复杂且具有非连续边界，SDE平滑假设可能被破坏",
+          "真实数据中存在系统误差、校准偏移和背景污染，与理想化轨迹假设不符",
+          "蒙特卡洛模拟中的负权事件难以直接纳入密度估计框架",
+          "控制变量可能不可直接观测或带有噪声，违反观测输入假定",
+          "推理延迟可能较高，实时或大规模生成场景难以满足"
+        ],
+        "validation_plan": "在一个简化的量能器几何模拟中，使用已知参数化的受控SDE生成粒子能量沉积轨迹，控制为入射粒子类型与能量。将论文方法应用于生成数据，比较恢复的漂移和扩散系数与真实值，并检验下游物理量（如总沉积能量分布）的一致性。评估随状态维数、轨迹数和噪声水平的退化情况。",
+        "evidence_level": "transferable",
+        "confidence": 0.35
+      },
+      "review_status": "complete",
       "processed_at": "2026-07-31T03:48:33.011304Z",
       "screening_model": "deepseek-v4-flash",
-      "review_model": null,
+      "review_model": "deepseek-v4-pro",
       "screening_fingerprint": "195fb0b173d8bc9a4c28c78a16fb55810e78ed0d42329ccadb12ddb4dd876ed2",
-      "review_fingerprint": null
+      "review_fingerprint": "6afcc0548b61a39044110499acc2c6b22571a29a7b7258150a845e3320dc2562"
     },
     "2603.15384:v1": {
       "paper": {
@@ -26696,13 +26789,35 @@
         "needs_deep_review": true,
         "evidence_level": "transferable"
       },
-      "review": null,
-      "review_status": "pending",
+      "review": {
+        "summary_cn": "论文针对全吸收伽马谱学中提取β-馈入分布的逆问题，比较了监督机器学习与响应矩阵两种解卷积方法。机器学习方法通过训练非参数估计器从测量谱直接推断馈入强度，响应矩阵方法则通过最小化测量谱与重建谱的差异求解。结果显示机器学习在重建单个馈入强度时精度更高，而响应矩阵方法提供稳健且物理一致的初始解。因此提出混合策略：先由响应矩阵获得初始估计，再用机器学习细化以提升整体精度。",
+        "paper_claims": [
+          "监督机器学习技术在重建单个馈入强度方面具有优越的准确度",
+          "响应矩阵方法提供稳健且物理一致的初始解",
+          "混合策略结合两者优势可提升整体精度"
+        ],
+        "hep_opportunities": [
+          "可将该混合解卷积方法迁移至量能器能量重建、射流能量标度等逆问题，用响应矩阵获得初始谱，再通过机器学习优化以减少偏差",
+          "可用于处理堆积效应下的信号分离，先用矩阵方法粗解，再基于模拟数据训练的神经网络细化",
+          "适用于中微子实验中的事例重建，例如反冲能量谱的解卷积以提取物理参数"
+        ],
+        "transfer_risks": [
+          "高能物理探测器响应非线性强、维度高，核物理模拟的简单响应矩阵可能不适用",
+          "模拟与实验数据的分布偏移会严重影响机器学习模型的泛化能力，需处理领域适应问题",
+          "系统不确定性（如刻度误差、本底涨落）和负权重事件在解卷积中引入的偏差未在核物理场景中充分验证",
+          "混合策略的迭代过程可能增加推理延迟，不适用于在线触发的实时解卷积需求",
+          "置换对称性（如粒子组合）和探测器几何的复杂性可能使核物理中简单的馈入分布推断失效"
+        ],
+        "validation_plan": "在量能器能量重建任务中，利用Geant4模拟生成训练和测试样本，引入真实探测器噪声和非线性响应。先采用响应矩阵方法获得初始解，再训练神经网络进行细化。对比标准迭代贝叶斯反卷积和单纯机器学习方法，评估能量分辨率和偏差。进行闭包测试（无统计涨落），并改变模拟参数（如刻度因子）检验对系统不确定性的鲁棒性。在真实数据上验证时，选取清晰的共振峰作为检验对象。",
+        "evidence_level": "speculative",
+        "confidence": 0.4
+      },
+      "review_status": "complete",
       "processed_at": "2026-08-05T03:30:51.342042Z",
       "screening_model": "deepseek-v4-flash",
-      "review_model": null,
+      "review_model": "deepseek-v4-pro",
       "screening_fingerprint": "195fb0b173d8bc9a4c28c78a16fb55810e78ed0d42329ccadb12ddb4dd876ed2",
-      "review_fingerprint": null
+      "review_fingerprint": "6afcc0548b61a39044110499acc2c6b22571a29a7b7258150a845e3320dc2562"
     },
     "2608.00168:v1": {
       "paper": {
