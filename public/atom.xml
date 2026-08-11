@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh-CN">
   <id>https://quxnb.github.io/hepml-digest</id>
   <title>Daily HEP-ML Digest</title>
-  <updated>2026-08-10T02:37:14.057500+00:00</updated>
+  <updated>2026-08-11T02:33:47.533062+00:00</updated>
   <author>
     <name>HEP-ML Digest Bot</name>
   </author>
@@ -10,6 +10,119 @@
   <link href="https://quxnb.github.io/hepml-digest/atom.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
   <subtitle>统计与机器学习方法对高能实验物理的每日启发</subtitle>
+  <entry>
+    <id>arxiv:2608.07161:hepml-v1</id>
+    <title>Fluid-DiT: Graph-Free Diffusion Transformers for Fluid Flow Simulations Learning</title>
+    <updated>2026-08-11T02:26:18.601915+00:00</updated>
+    <author>
+      <name>Shentong Mo, Guolin Ke</name>
+    </author>
+    <content type="html">&lt;p&gt;&lt;strong&gt;栏目：&lt;/strong&gt;方法雷达&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法：&lt;/strong&gt;Graph-free diffusion transformer with latent space formulation for fluid flow simulation&lt;/p&gt;&lt;p&gt;&lt;strong&gt;相关性：&lt;/strong&gt;0.60；&lt;strong&gt;证据等级：&lt;/strong&gt;transferable&lt;/p&gt;&lt;p&gt;&lt;strong&gt;初筛理由：&lt;/strong&gt;扩散模型生成流体分布，技术可迁移至HEP快速模拟，但未在HEP验证，属于间接相关。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法总结：&lt;/strong&gt;Fluid-DiT提出一种无图扩散变换器，用注意力去噪取代图消息传递，无需显式图设计即可模拟混沌流分布。通过潜在空间解耦几何保真与分布学习，减少高频伪影并加速采样。利用Transformer全局感受野捕捉局部和长程关联。在层流圆柱尾流、椭圆流和湍流3D机翼等基准上，采样质量和分布精度均优于图基扩散基线，R²更高、Wasserstein距离更低，且能从短轨迹泛化到未知雷诺数和几何。&lt;/p&gt;&lt;h4&gt;论文明确支持的结论&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;在层流圆柱尾流、椭圆流和湍流3D机翼基准上，Fluid-DiT始终优于图基扩散基线，获得更高R²相关性和更低的Wasserstein距离。&lt;/li&gt;&lt;li&gt;Fluid-DiT能从短而不完整的轨迹稳健泛化到未见过的雷诺数和几何形状。&lt;/li&gt;&lt;li&gt;潜在空间公式减少了高频伪影并加速了采样。&lt;/li&gt;&lt;li&gt;无需显式图设计，通过注意力去噪保留了建模混沌流分布的能力。&lt;/li&gt;&lt;/ul&gt;&lt;h4&gt;对高能实验物理的潜在帮助&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;可用于粒子物理快速模拟，替代昂贵的全模拟，加速探测器响应生成，如量能器簇射、喷注子结构。&lt;/li&gt;&lt;li&gt;注意力机制可处理点云数据，适配非结构化探测器信号，无需手工构建图。&lt;/li&gt;&lt;li&gt;潜在空间和扩散过程可能捕捉粒子分布的不确定性，用于系统误差建模。&lt;/li&gt;&lt;/ul&gt;&lt;h4&gt;迁移风险&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;流体模拟与粒子物理的物理过程不同，缺乏洛伦兹对称性等约束，模型可能无法学到关键对称性。&lt;/li&gt;&lt;li&gt;数据格式差异：流体为网格或点云，粒子物理常涉及稀疏点云和量能器塔形结构。&lt;/li&gt;&lt;li&gt;扩散模型采样速度可能无法满足实时触发或在线推理需求。&lt;/li&gt;&lt;li&gt;需要处理粒子物理中的负权重事件、模拟-数据偏移和系统误差。&lt;/li&gt;&lt;li&gt;校准nuisance参数和探测器几何的复杂性可能超出当前模型能力。&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;strong&gt;最小验证方案：&lt;/strong&gt;最小可行验证：在公开的粒子物理快仿数据集（如CaloGAN的层状量能器数据）上，将Fluid-DiT适配为从噪声生成能量沉积点云，评估分布相似度（如Wasserstein距离）和推理速度，与GAN等基线比较；逐步引入探测器几何和物理约束，测试对未知粒子能量和入射角的泛化；检查是否能够捕捉关键对称性，如洛伦兹不变性。&lt;/p&gt;&lt;p&gt;&lt;a href="https://arxiv.org/abs/2608.07161"&gt;arXiv 页面&lt;/a&gt; · &lt;a href="https://github.com/quxnb/hepml-digest/issues/new?title=%5B%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%5D+2608.07161+Fluid-DiT%3A+Graph-Free+Diffusion+Transformers+for+Fluid+Flow+Simulations+Learning&amp;amp;body=%23%23+%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%0A%0A-+arXiv%EF%BC%9A%5B2608.07161%5D%28https%3A%2F%2Farxiv.org%2Fabs%2F2608.07161%29%0A-+%E6%A0%8F%E7%9B%AE%EF%BC%9A%E6%96%B9%E6%B3%95%E9%9B%B7%E8%BE%BE%0A-+%E5%BD%93%E5%89%8D%E7%9B%B8%E5%85%B3%E6%80%A7%EF%BC%9A0.60%0A-+%E5%BD%93%E5%89%8D%E8%AF%81%E6%8D%AE%E7%AD%89%E7%BA%A7%EF%BC%9Atransferable%0A%0A%23%23+%E5%88%A4%E6%96%AD%0A%0A-+%5B+%5D+%E6%8E%A8%E8%8D%90%E4%BF%9D%E7%95%99%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E5%90%88%E7%90%86%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E8%BF%87%E5%BA%A6%E6%8E%A8%E6%B5%8B%0A-+%5B+%5D+%E5%BA%94%E7%A7%BB%E8%87%B3%E5%8F%A6%E4%B8%80%E4%B8%AA%E6%A0%8F%E7%9B%AE%0A-+%5B+%5D+%E5%BB%BA%E8%AE%AE%E7%B2%BE%E8%AF%BB%E5%85%A8%E6%96%87%0A%0A%23%23+%E8%A1%A5%E5%85%85%E8%AF%B4%E6%98%8E%0A%0A"&gt;提交反馈&lt;/a&gt; · cs.AI, cs.CE, cs.LG&lt;/p&gt;</content>
+    <link href="https://arxiv.org/abs/2608.07161"/>
+    <summary>扩散模型生成流体分布，技术可迁移至HEP快速模拟，但未在HEP验证，属于间接相关。</summary>
+    <category term="cs.AI"/>
+    <category term="cs.CE"/>
+    <category term="cs.LG"/>
+    <category term="track:method_radar"/>
+    <category term="异常检测"/>
+    <category term="快速模拟"/>
+    <category term="生成模型"/>
+    <published>2026-08-10T04:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>arxiv:2408.14402:hepml-v1</id>
+    <title>Quasi-Bayesian sequential deconvolution</title>
+    <updated>2026-08-11T02:26:18.601915+00:00</updated>
+    <author>
+      <name>Stefano Favaro, Sandra Fortini</name>
+    </author>
+    <content type="html">&lt;p&gt;&lt;strong&gt;栏目：&lt;/strong&gt;方法雷达&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法：&lt;/strong&gt;基于牛顿递归算法的拟贝叶斯非参数方法用于序列密度去卷积&lt;/p&gt;&lt;p&gt;&lt;strong&gt;相关性：&lt;/strong&gt;0.70；&lt;strong&gt;证据等级：&lt;/strong&gt;transferable&lt;/p&gt;&lt;p&gt;&lt;strong&gt;初筛理由：&lt;/strong&gt;密度去卷积与HEP展开任务高度类比，但需进一步验证物理测量场景适用性。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法总结：&lt;/strong&gt;提出基于牛顿递归算法的拟贝叶斯非参数序列密度去卷积方法，适用于流数据，每观测计算成本恒定，可扩展至大规模数据集。通过局部和均匀中心极限定理提供渐近可信区间等不确定性量化，在频率论生成模型下证明L1一致性，并给出L1-Wasserstein收敛速率及与Dirichlet过程混合模型后验均值的合并速率。合成数据与流式细胞术实验显示准确性与计算优势。&lt;/p&gt;&lt;h4&gt;论文明确支持的结论&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;方法估计简单且可扩展，每观测计算成本恒定&lt;/li&gt;&lt;li&gt;提供基于渐近可信区间和带的不确定性量化&lt;/li&gt;&lt;li&gt;在频率论模型下具有L1一致性，且渐近等同于直接观察无污染变量的估计&lt;/li&gt;&lt;li&gt;在额外正则条件下达到L1-Wasserstein收敛速率并显式速率合并于贝叶斯非参数后验均值&lt;/li&gt;&lt;li&gt;合成数据与流式细胞术应用中精度可比拟贝叶斯非参数和傅里叶去卷积方法，且计算优势显著&lt;/li&gt;&lt;/ul&gt;&lt;h4&gt;对高能实验物理的潜在帮助&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;可用于从探测器响应中在线去卷积以恢复真实粒子能谱或动量谱，提供实时不确定性量化并适应高数据率触发流&lt;/li&gt;&lt;/ul&gt;&lt;h4&gt;迁移风险&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;加性噪声假设可能不符复杂探测器响应（如非平移不变或能量相关偏差）&lt;/li&gt;&lt;li&gt;噪声分布未知或校准不准确时将引入系统误差&lt;/li&gt;&lt;li&gt;负权事件或超出支持域的数据会影响密度估计的合理性&lt;/li&gt;&lt;li&gt;模拟-数据偏移可能导致噪声模型失配&lt;/li&gt;&lt;li&gt;未验证在探测器几何、洛伦兹对称性等物理约束下的适用性&lt;/li&gt;&lt;li&gt;需评估高数据率下的推理延迟是否满足实时要求&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;strong&gt;最小验证方案：&lt;/strong&gt;在模拟的Z玻色子质量谱数据上，引入Tracker与ECAL联合分辨率模型作为噪声，将方法用于去卷积恢复真实谱，与标准贝叶斯展开进行精度、计算时间和不确定性覆盖对比；进一步引入真实数据与模拟的差异测试鲁棒性。&lt;/p&gt;&lt;p&gt;&lt;a href="https://arxiv.org/abs/2408.14402"&gt;arXiv 页面&lt;/a&gt; · &lt;a href="https://github.com/quxnb/hepml-digest/issues/new?title=%5B%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%5D+2408.14402+Quasi-Bayesian+sequential+deconvolution&amp;amp;body=%23%23+%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%0A%0A-+arXiv%EF%BC%9A%5B2408.14402%5D%28https%3A%2F%2Farxiv.org%2Fabs%2F2408.14402%29%0A-+%E6%A0%8F%E7%9B%AE%EF%BC%9A%E6%96%B9%E6%B3%95%E9%9B%B7%E8%BE%BE%0A-+%E5%BD%93%E5%89%8D%E7%9B%B8%E5%85%B3%E6%80%A7%EF%BC%9A0.70%0A-+%E5%BD%93%E5%89%8D%E8%AF%81%E6%8D%AE%E7%AD%89%E7%BA%A7%EF%BC%9Atransferable%0A%0A%23%23+%E5%88%A4%E6%96%AD%0A%0A-+%5B+%5D+%E6%8E%A8%E8%8D%90%E4%BF%9D%E7%95%99%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E5%90%88%E7%90%86%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E8%BF%87%E5%BA%A6%E6%8E%A8%E6%B5%8B%0A-+%5B+%5D+%E5%BA%94%E7%A7%BB%E8%87%B3%E5%8F%A6%E4%B8%80%E4%B8%AA%E6%A0%8F%E7%9B%AE%0A-+%5B+%5D+%E5%BB%BA%E8%AE%AE%E7%B2%BE%E8%AF%BB%E5%85%A8%E6%96%87%0A%0A%23%23+%E8%A1%A5%E5%85%85%E8%AF%B4%E6%98%8E%0A%0A"&gt;提交反馈&lt;/a&gt; · stat.ME, stat.ML&lt;/p&gt;</content>
+    <link href="https://arxiv.org/abs/2408.14402"/>
+    <summary>密度去卷积与HEP展开任务高度类比，但需进一步验证物理测量场景适用性。</summary>
+    <category term="stat.ME"/>
+    <category term="stat.ML"/>
+    <category term="track:method_radar"/>
+    <category term="不确定性量化"/>
+    <category term="噪声数据密度估计"/>
+    <category term="展开"/>
+    <published>2026-08-10T04:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>arxiv:2608.07183:hepml-v1</id>
+    <title>Conformal Fusion Under Missing Modalities</title>
+    <updated>2026-08-11T02:26:18.601915+00:00</updated>
+    <author>
+      <name>Alireza Moayedikia</name>
+    </author>
+    <content type="html">&lt;p&gt;&lt;strong&gt;栏目：&lt;/strong&gt;方法雷达&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法：&lt;/strong&gt;Modality-Conditioned Conformal Fusion (MCCF) combining evidential heads and Dempster-Shafer fusion with Mondrian conformal calibration&lt;/p&gt;&lt;p&gt;&lt;strong&gt;相关性：&lt;/strong&gt;0.60；&lt;strong&gt;证据等级：&lt;/strong&gt;transferable&lt;/p&gt;&lt;p&gt;&lt;strong&gt;初筛理由：&lt;/strong&gt;提供缺失模态下的校准不确定性，但HEP应用需定制，未见直接验证。&lt;/p&gt;&lt;p&gt;&lt;em&gt;本条目仅完成摘要级筛选。&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;a href="https://arxiv.org/abs/2608.07183"&gt;arXiv 页面&lt;/a&gt; · &lt;a href="https://github.com/quxnb/hepml-digest/issues/new?title=%5B%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%5D+2608.07183+Conformal+Fusion+Under+Missing+Modalities&amp;amp;body=%23%23+%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%0A%0A-+arXiv%EF%BC%9A%5B2608.07183%5D%28https%3A%2F%2Farxiv.org%2Fabs%2F2608.07183%29%0A-+%E6%A0%8F%E7%9B%AE%EF%BC%9A%E6%96%B9%E6%B3%95%E9%9B%B7%E8%BE%BE%0A-+%E5%BD%93%E5%89%8D%E7%9B%B8%E5%85%B3%E6%80%A7%EF%BC%9A0.60%0A-+%E5%BD%93%E5%89%8D%E8%AF%81%E6%8D%AE%E7%AD%89%E7%BA%A7%EF%BC%9Atransferable%0A%0A%23%23+%E5%88%A4%E6%96%AD%0A%0A-+%5B+%5D+%E6%8E%A8%E8%8D%90%E4%BF%9D%E7%95%99%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E5%90%88%E7%90%86%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E8%BF%87%E5%BA%A6%E6%8E%A8%E6%B5%8B%0A-+%5B+%5D+%E5%BA%94%E7%A7%BB%E8%87%B3%E5%8F%A6%E4%B8%80%E4%B8%AA%E6%A0%8F%E7%9B%AE%0A-+%5B+%5D+%E5%BB%BA%E8%AE%AE%E7%B2%BE%E8%AF%BB%E5%85%A8%E6%96%87%0A%0A%23%23+%E8%A1%A5%E5%85%85%E8%AF%B4%E6%98%8E%0A%0A"&gt;提交反馈&lt;/a&gt; · cs.LG&lt;/p&gt;</content>
+    <link href="https://arxiv.org/abs/2608.07183"/>
+    <summary>提供缺失模态下的校准不确定性，但HEP应用需定制，未见直接验证。</summary>
+    <category term="cs.LG"/>
+    <category term="missing data handling"/>
+    <category term="multimodal sensor fusion"/>
+    <category term="track:method_radar"/>
+    <category term="uncertainty quantification"/>
+    <published>2026-08-10T04:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>arxiv:2608.06518:hepml-v1</id>
+    <title>Gamma Neutron Radioactive Source Identification in Water Cherenkov Detectors</title>
+    <updated>2026-08-11T02:26:18.601915+00:00</updated>
+    <author>
+      <name>A. N\'u\~nez Selin, C. Sarmiento Cano, H. Asorey, I. Sidelnik</name>
+    </author>
+    <content type="html">&lt;p&gt;&lt;strong&gt;栏目：&lt;/strong&gt;HEP 直接应用&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法：&lt;/strong&gt;统计阈值（3σ）与机器学习集成（Bagging、CatBoost、MLP软投票）相结合&lt;/p&gt;&lt;p&gt;&lt;strong&gt;相关性：&lt;/strong&gt;0.60；&lt;strong&gt;证据等级：&lt;/strong&gt;transferable&lt;/p&gt;&lt;p&gt;&lt;strong&gt;初筛理由：&lt;/strong&gt;虽然面向核安全应用，但基于水切伦科夫探测器的粒子鉴别方法可迁移至HEP相关任务。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法总结：&lt;/strong&gt;本工作在水切伦科夫探测器中证明伽马-中子甄别的可行性，结合3σ统计阈值与机器学习集成（Bagging、CatBoost、MLP软投票）。实验使用AmBe、Co-60、Cs-137源及不同屏蔽配置，通过统计方法确定能量阈值并建立电荷谱-能量线性关系，然后利用脉冲形状信息训练ML模型，分类准确率达0.816。该方法为水基探测器粒子鉴别提供了物理与数据驱动结合的策略。&lt;/p&gt;&lt;h4&gt;论文明确支持的结论&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;水切伦科夫探测器可用于伽马-中子甄别&lt;/li&gt;&lt;li&gt;3σ显著性准则能有效定义能量阈值并建立线性校准&lt;/li&gt;&lt;li&gt;结合统计与机器学习的集成模型（Bagging+CatBoost+MLP）实现了0.816的准确率并计算了ROC曲线下面积&lt;/li&gt;&lt;li&gt;该方法在不同屏蔽条件下展现出潜力，适用于核安全与辐射探测领域&lt;/li&gt;&lt;/ul&gt;&lt;h4&gt;对高能实验物理的潜在帮助&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;大型水切伦科夫探测器（如超级神冈、未来中微子实验）中利用脉冲形状辨别电子中微子与中子本底&lt;/li&gt;&lt;li&gt;宇宙射线实验中改善伽马/中子分离以提高成分测量精度&lt;/li&gt;&lt;li&gt;质子衰变搜索时压制中微子诱发的中子本底&lt;/li&gt;&lt;li&gt;中微子探测器中提升低能事件粒子类型分类，辅助能量重建&lt;/li&gt;&lt;/ul&gt;&lt;h4&gt;迁移风险&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;实验室小型探测器与HEP大尺寸探测器在光收集、噪声水平和时间响应上存在差异&lt;/li&gt;&lt;li&gt;实验能量范围（MeV级）远低于HEP典型能量（GeV至TeV），脉冲形状可能显著不同&lt;/li&gt;&lt;li&gt;实际HEP环境中多粒子叠加效应和复杂本底会降低鉴别能力&lt;/li&gt;&lt;li&gt;屏蔽配置引人的系统不确定性及线性校准的外推风险&lt;/li&gt;&lt;li&gt;机器学习模型在单一实验条件下训练，泛化至不同几何、介质和电子学时性能可能下降&lt;/li&gt;&lt;li&gt;集成模型推理延迟可能不满足实时触发系统的低延迟要求&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;strong&gt;最小验证方案：&lt;/strong&gt;在已知的HEP校准数据（如超级神冈的Ni-Cf源或宇宙线缪子数据）上测试该方法，并与标准粒子鉴别算法（如基于似然）对比；利用大规模水切伦科夫探测器模拟数据评估不同能量和粒子类型下的效率与误判率；分析探测器电子学噪声和波形数字化对脉冲形状特征的影响；在小型原型探测器上用测试束流验证迁移性；测量集成模型推理时间，评估在线触发可行性。&lt;/p&gt;&lt;p&gt;&lt;a href="https://arxiv.org/abs/2608.06518"&gt;arXiv 页面&lt;/a&gt; · &lt;a href="https://github.com/quxnb/hepml-digest/issues/new?title=%5B%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%5D+2608.06518+Gamma+Neutron+Radioactive+Source+Identification+in+Water+Cherenkov+Detectors&amp;amp;body=%23%23+%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%0A%0A-+arXiv%EF%BC%9A%5B2608.06518%5D%28https%3A%2F%2Farxiv.org%2Fabs%2F2608.06518%29%0A-+%E6%A0%8F%E7%9B%AE%EF%BC%9AHEP+%E7%9B%B4%E6%8E%A5%E5%BA%94%E7%94%A8%0A-+%E5%BD%93%E5%89%8D%E7%9B%B8%E5%85%B3%E6%80%A7%EF%BC%9A0.60%0A-+%E5%BD%93%E5%89%8D%E8%AF%81%E6%8D%AE%E7%AD%89%E7%BA%A7%EF%BC%9Atransferable%0A%0A%23%23+%E5%88%A4%E6%96%AD%0A%0A-+%5B+%5D+%E6%8E%A8%E8%8D%90%E4%BF%9D%E7%95%99%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E5%90%88%E7%90%86%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E8%BF%87%E5%BA%A6%E6%8E%A8%E6%B5%8B%0A-+%5B+%5D+%E5%BA%94%E7%A7%BB%E8%87%B3%E5%8F%A6%E4%B8%80%E4%B8%AA%E6%A0%8F%E7%9B%AE%0A-+%5B+%5D+%E5%BB%BA%E8%AE%AE%E7%B2%BE%E8%AF%BB%E5%85%A8%E6%96%87%0A%0A%23%23+%E8%A1%A5%E5%85%85%E8%AF%B4%E6%98%8E%0A%0A"&gt;提交反馈&lt;/a&gt; · hep-ex, physics.ins-det&lt;/p&gt;</content>
+    <link href="https://arxiv.org/abs/2608.06518"/>
+    <summary>虽然面向核安全应用，但基于水切伦科夫探测器的粒子鉴别方法可迁移至HEP相关任务。</summary>
+    <category term="hep-ex"/>
+    <category term="physics.ins-det"/>
+    <category term="track:hep_application"/>
+    <category term="事件分类"/>
+    <category term="粒子鉴别"/>
+    <published>2026-08-10T04:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>arxiv:2604.24783:hepml-v1</id>
+    <title>Hyperstatistics</title>
+    <updated>2026-08-11T02:26:18.601915+00:00</updated>
+    <author>
+      <name>Lucas Squillante, Samuel M. Soares, Constantino Tsallis, Mariano de Souza</name>
+    </author>
+    <content type="html">&lt;p&gt;&lt;strong&gt;栏目：&lt;/strong&gt;HEP 直接应用&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法：&lt;/strong&gt;超统计框架，结合q-熵和非广延统计，推导广义Boltzmann因子&lt;/p&gt;&lt;p&gt;&lt;strong&gt;相关性：&lt;/strong&gt;0.65；&lt;strong&gt;证据等级：&lt;/strong&gt;speculative&lt;/p&gt;&lt;p&gt;&lt;strong&gt;初筛理由：&lt;/strong&gt;涉及p-Pb碰撞数据，但方法属于统计物理拓展，HEP应用有限&lt;/p&gt;&lt;p&gt;&lt;em&gt;本条目仅完成摘要级筛选。&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;a href="https://arxiv.org/abs/2604.24783"&gt;arXiv 页面&lt;/a&gt; · &lt;a href="https://github.com/quxnb/hepml-digest/issues/new?title=%5B%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%5D+2604.24783+Hyperstatistics&amp;amp;body=%23%23+%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%0A%0A-+arXiv%EF%BC%9A%5B2604.24783%5D%28https%3A%2F%2Farxiv.org%2Fabs%2F2604.24783%29%0A-+%E6%A0%8F%E7%9B%AE%EF%BC%9AHEP+%E7%9B%B4%E6%8E%A5%E5%BA%94%E7%94%A8%0A-+%E5%BD%93%E5%89%8D%E7%9B%B8%E5%85%B3%E6%80%A7%EF%BC%9A0.65%0A-+%E5%BD%93%E5%89%8D%E8%AF%81%E6%8D%AE%E7%AD%89%E7%BA%A7%EF%BC%9Aspeculative%0A%0A%23%23+%E5%88%A4%E6%96%AD%0A%0A-+%5B+%5D+%E6%8E%A8%E8%8D%90%E4%BF%9D%E7%95%99%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E5%90%88%E7%90%86%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E8%BF%87%E5%BA%A6%E6%8E%A8%E6%B5%8B%0A-+%5B+%5D+%E5%BA%94%E7%A7%BB%E8%87%B3%E5%8F%A6%E4%B8%80%E4%B8%AA%E6%A0%8F%E7%9B%AE%0A-+%5B+%5D+%E5%BB%BA%E8%AE%AE%E7%B2%BE%E8%AF%BB%E5%85%A8%E6%96%87%0A%0A%23%23+%E8%A1%A5%E5%85%85%E8%AF%B4%E6%98%8E%0A%0A"&gt;提交反馈&lt;/a&gt; · cond-mat.stat-mech, hep-ex, hep-th, nucl-th, physics.acc-ph, physics.data-an, physics.ins-det&lt;/p&gt;</content>
+    <link href="https://arxiv.org/abs/2604.24783"/>
+    <summary>涉及p-Pb碰撞数据，但方法属于统计物理拓展，HEP应用有限</summary>
+    <category term="cond-mat.stat-mech"/>
+    <category term="hep-ex"/>
+    <category term="hep-th"/>
+    <category term="nucl-th"/>
+    <category term="physics.acc-ph"/>
+    <category term="physics.data-an"/>
+    <category term="physics.ins-det"/>
+    <category term="track:hep_application"/>
+    <category term="重离子碰撞中的粒子谱分析"/>
+    <category term="非平衡系统建模"/>
+    <published>2026-08-10T04:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>arxiv:2608.06543:hepml-v1</id>
+    <title>Estimating the sensitivity of the IceCube Upgrade to probe the interior of the Earth using atmospheric neutrino oscillations</title>
+    <updated>2026-08-11T02:26:18.601915+00:00</updated>
+    <author>
+      <name>The IceCube Collaboration, R. Abbasi, M. Ackermann, J. Adams, S. K. Agarwalla, J. A. Aguilar, M. Ahlers, J. M. Alameddine, S. Ali, N. M. Amin, K. Andeen, C. Arg{\"u}elles, S. Athanasiadou, S. N. Axani, R. Babu, X. Bai, A. Balagopal V., S. W. Barwick, V. Basu, R. Bay, J. J. Beatty, J. Becker Tjus, P. Behrens, J. Beise, C. Bellenghi, S. Benkel, S. BenZvi, D. Berley, E. Bernardini, D. Z. Besson, E. Blaufuss, L. Bloom, S. Blot, F. Bontempo, J. Y. Book Motzkin, C. Boscolo Meneguolo, S. B{\"o}ser, O. Botner, J. B{\"o}ttcher, J. Braun, B. Brinson, Z. Brisson-Tsavoussis, L. Brusa, R. T. Burley, D. Butterfield, K. Carloni, J. Carpio, S. Chattopadhyay, N. Chau, Y. C. Chen, Z. Chen, D. Chirkin, S. Choi, A. Chubarov, B. A. Clark, D. A. Coloma Borja, A. Connolly, J. M. Conrad, D. F. Cowen, C. De Clercq, J. J. DeLaunay, D. Delgado, T. Delmeulle, S. Deng, P. Desiati, K. D. de Vries, G. de Wasseige, T. DeYoung, J. C. D{\'\i}az-V{\'e}lez, S. DiKerby, T. Ding, M. Dittmer, A. Domi, L. Draper, L. Dueser, D. Durnford, K. Dutta, M. A. DuVernois, T. Ehrhardt, L. Eidenschink, A. Eimer, C. Eldridge, P. Eller, E. Ellinger, D. Els{\"a}sser, R. Engel, H. Erpenbeck, W. Esmail, S. Eulig, J. Evans, P. A. Evenson, K. L. Fan, K. Fang, K. Farrag, A. Fattorini, A. R. Fazely, A. Fedynitch, N. Feigl, C. Finley, D. Fox, A. Franckowiak, S. Fukami, P. F{\"u}rst, J. Gallagher, E. Ganster, A. Garcia, M. Garcia, E. Genton, L. Gerhardt, A. Ghadimi, C. Glaser, T. Gl{\"u}senkamp, J. G. Gonzalez, S. Goswami, A. Granados, D. Grant, S. J. Gray, S. Griffin, S. Griswold, K. M. Groth, D. Guevel, C. G{\"u}nther, P. Gutjahr, C. Ha, A. Hallgren, L. Halve, F. Halzen, L. Hamacher, M. Handt, K. Hanson, J. Hardin, A. A. Harnisch, P. Hatch, A. Haungs, J. H{\"a}u{\ss}ler, K. Helbing, J. Hellrung, B. Henke, L. Hennig, F. Henningsen, L. Heuermann, R. Hewett, N. Heyer, S. Hickford, A. Hidvegi, C. Hill, G. C. Hill, R. Hmaid, K. D. Hoffman, A. Hollnagel, D. Hooper, S. Hori, K. Hoshina, M. Hostert, W. Hou, M. Hrywniak, T. Huber, K. Hultqvist, K. Hymon, A. Ishihara, W. Iwakiri, M. Jacquart, S. Jain, O. Janik, M. Jansson, M. Jin, N. Kamp, D. Kang, W. Kang, A. Kappes, L. Kardum, T. Karg, A. Karle, A. Katil, M. Kauer, J. L. Kelley, M. Khanal, A. Khatee Zathul, A. Kheirandish, T. Kim, H. Kimku, F. Kirchner, J. Kiryluk, C. Klein, Y. Kobayashi, S. Koch, A. Kochocki, R. Koirala, H. Kolanoski, T. Kontrimas, L. K{\"o}pke, C. Kopper, D. J. Koskinen, P. Koundal, M. Kowalski, T. Kozynets, A. Kravka, N. Krieger, J. Krishnamoorthi, T. Krishnan, K. Kruiswijk, E. Krupczak, A. Kumar, E. Kun, N. Kurahashi, C. Lagunas Gualda, L. Lallement Arnaud, M. J. Larson, F. Lauber, J. P. Lazar, K. Leonard DeHolton, A. Leszczy{\'n}ska, C. Li, J. Liao, C. Lin, Q. R. Liu, Y. T. Liu, M. Liubarska, C. Love, L. Lu, F. Lucarelli, W. Luszczak, Y. Lyu, M. Macdonald, E. Magnus, Y. Makino, E. Manao, S. Mancina, A. Mand, I. C. Mari{\c{s}}, S. Marka, Z. Marka, L. Marten, I. Martinez-Soler, R. Maruyama, J. Mauro, F. Mayhew, F. McNally, K. Meagher, A. Medina, M. Meier, Y. Merckx, L. Merten, J. Mitchell, L. Molchany, S. Mondal, T. Montaruli, R. W. Moore, Y. Morii, A. Mosbrugger, D. Mousadi, E. Moyaux, T. Mukherjee, M. Nakos, U. Naumann, R. Neshat, L. Neste, M. Neumann, H. Niederhausen, M. U. Nisa, K. Noda, A. Noell, A. Novikov, A. Obertacke, V. O'Dell, A. Olivas, R. Orsoe, J. Osborn, E. O'Sullivan, B. Owens, V. Palusova, H. Pandya, A. Parenti, C. Parisel, N. Park, V. Parrish, E. N. Paudel, L. Paul, T. Pernice, T. C. Petersen, J. Peterson, S. Pick, M. Plum, A. Pont{\'e}n, V. Poojyam, B. Pries, R. Procter-Murphy, G. T. Przybylski, L. Pyras, C. Raab, J. Rack-Helleis, N. Rad, M. Ravn, K. Rawlins, Z. Rechav, A. Rehman, I. Reistroffer, E. Resconi, C. D. Rho, W. Rhode, L. Ricca, B. Riedel, A. Rifaie, E. J. Roberts, S. Rodan, M. Rongen, A. Rosted, C. Rott, T. Ruhe, L. Ruohan, D. Ryckbosch, J. Saffer, D. Salazar-Gallegos, P. Sampathkumar, A. Sandrock, G. Sanger-Johnson, M. Santander, S. Sarkar, M. Scarnera, M. Schaufel, H. Schieler, S. Schindler, L. Schlickmann, B. Schl{\"u}ter, F. Schl{\"u}ter, N. Schmeisser, T. Schmidt, F. Schmitt, A. Scholz, F. G. Schr{\"o}der, S. Schwirn, S. Sclafani, D. Seckel, L. Seen, M. Seikh, S. Seunarine, P. A. Sevle Myhr, R. Shah, S. Shah, S. Shefali, N. Shimizu, M. Shin, B. Skrzypek, R. Snihur, J. Soedingrekso, D. Soldin, P. Soldin, G. Sommani, D. Song, C. Spannfellner, G. M. Spiczak, C. Spiering, J. Stachurska, M. Stamatikos, T. Stanev, T. Stezelberger, T. St{\"u}rwald, T. Stuttard, G. W. Sullivan, I. Taboada, S. Ter-Antonyan, A. Terliuk, A. Thakuri, M. Thiesmeyer, W. G. Thompson, J. Thwaites, W. Tian, S. Tilav, K. Tollefson, J. A. Torres, S. Toscano, D. Tosi, A. K. Upadhyay, K. Upshaw, A. Vaidyanathan, N. Valtonen-Mattila, J. Valverde, J. Vandenbroucke, T. Van Eeden, N. van Eijndhoven, L. Van Rootselaar, J. van Santen, J. Vara, F. Varsi, M. Velazquez, M. Venugopal, M. Vereecken, S. Vergara Carrasco, S. Verpoest, D. Veske, A. Vijai, J. Villarreal, C. Walck, A. Wang, E. H. S. Warrick, C. Weaver, A. Weindl, J. Weldert, A. Y. Wen, C. Wendt, J. Werthebach, M. Weyrauch, N. Whitehorn, C. H. Wiebusch, D. R. Williams, L. Witthaus, J. Woodward, G. Wrede, X. W. Xu, J. P. Yanez, Y. Yao, E. Yildizci, S. Yoshida, F. Yu, S. Yu, T. Yuan, S. Yun-C{\'a}rcamo, A. Zander Jurowitzki, A. Zegarelli, S. Zhang, Z. Zhang, P. Zhelnin, P. Zilberman, C. Zilleruelo Ca{\~n}as</name>
+    </author>
+    <content type="html">&lt;p&gt;&lt;strong&gt;栏目：&lt;/strong&gt;HEP 直接应用&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法：&lt;/strong&gt;Sensitivity estimation using atmospheric neutrino oscillations and Earth matter effects&lt;/p&gt;&lt;p&gt;&lt;strong&gt;相关性：&lt;/strong&gt;0.60；&lt;strong&gt;证据等级：&lt;/strong&gt;transferable&lt;/p&gt;&lt;p&gt;&lt;strong&gt;初筛理由：&lt;/strong&gt;直接针对中微子实验，方法为灵敏度估计，对HEP实验设计有参考价值，但非通用方法。&lt;/p&gt;&lt;p&gt;&lt;em&gt;本条目仅完成摘要级筛选。&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;a href="https://arxiv.org/abs/2608.06543"&gt;arXiv 页面&lt;/a&gt; · &lt;a href="https://github.com/quxnb/hepml-digest/issues/new?title=%5B%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%5D+2608.06543+Estimating+the+sensitivity+of+the+IceCube+Upgrade+to+probe+the+interior+of+the+E&amp;amp;body=%23%23+%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%0A%0A-+arXiv%EF%BC%9A%5B2608.06543%5D%28https%3A%2F%2Farxiv.org%2Fabs%2F2608.06543%29%0A-+%E6%A0%8F%E7%9B%AE%EF%BC%9AHEP+%E7%9B%B4%E6%8E%A5%E5%BA%94%E7%94%A8%0A-+%E5%BD%93%E5%89%8D%E7%9B%B8%E5%85%B3%E6%80%A7%EF%BC%9A0.60%0A-+%E5%BD%93%E5%89%8D%E8%AF%81%E6%8D%AE%E7%AD%89%E7%BA%A7%EF%BC%9Atransferable%0A%0A%23%23+%E5%88%A4%E6%96%AD%0A%0A-+%5B+%5D+%E6%8E%A8%E8%8D%90%E4%BF%9D%E7%95%99%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E5%90%88%E7%90%86%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E8%BF%87%E5%BA%A6%E6%8E%A8%E6%B5%8B%0A-+%5B+%5D+%E5%BA%94%E7%A7%BB%E8%87%B3%E5%8F%A6%E4%B8%80%E4%B8%AA%E6%A0%8F%E7%9B%AE%0A-+%5B+%5D+%E5%BB%BA%E8%AE%AE%E7%B2%BE%E8%AF%BB%E5%85%A8%E6%96%87%0A%0A%23%23+%E8%A1%A5%E5%85%85%E8%AF%B4%E6%98%8E%0A%0A"&gt;提交反馈&lt;/a&gt; · astro-ph.EP, hep-ex, hep-ph, physics.geo-ph&lt;/p&gt;</content>
+    <link href="https://arxiv.org/abs/2608.06543"/>
+    <summary>直接针对中微子实验，方法为灵敏度估计，对HEP实验设计有参考价值，但非通用方法。</summary>
+    <category term="astro-ph.EP"/>
+    <category term="hep-ex"/>
+    <category term="hep-ph"/>
+    <category term="neutrino oscillation analysis"/>
+    <category term="parameter estimation"/>
+    <category term="physics.geo-ph"/>
+    <category term="sensitivity forecast"/>
+    <category term="track:hep_application"/>
+    <published>2026-08-10T04:00:00+00:00</published>
+  </entry>
   <entry>
     <id>arxiv:2608.05666:hepml-v1</id>
     <title>Potential Matching Optimal Transport: Continuous Normalizing Flows for Exact $p$-Wasserstein Dynamics</title>

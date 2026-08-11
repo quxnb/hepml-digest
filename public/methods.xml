@@ -8,7 +8,49 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Mon, 10 Aug 2026 02:37:14 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 11 Aug 2026 02:33:47 +0000</lastBuildDate>
+    <item>
+      <title>Fluid-DiT: Graph-Free Diffusion Transformers for Fluid Flow Simulations Learning</title>
+      <link>https://arxiv.org/abs/2608.07161</link>
+      <description>扩散模型生成流体分布，技术可迁移至HEP快速模拟，但未在HEP验证，属于间接相关。</description>
+      <ns1:encoded>&lt;p&gt;&lt;strong&gt;栏目：&lt;/strong&gt;方法雷达&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法：&lt;/strong&gt;Graph-free diffusion transformer with latent space formulation for fluid flow simulation&lt;/p&gt;&lt;p&gt;&lt;strong&gt;相关性：&lt;/strong&gt;0.60；&lt;strong&gt;证据等级：&lt;/strong&gt;transferable&lt;/p&gt;&lt;p&gt;&lt;strong&gt;初筛理由：&lt;/strong&gt;扩散模型生成流体分布，技术可迁移至HEP快速模拟，但未在HEP验证，属于间接相关。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法总结：&lt;/strong&gt;Fluid-DiT提出一种无图扩散变换器，用注意力去噪取代图消息传递，无需显式图设计即可模拟混沌流分布。通过潜在空间解耦几何保真与分布学习，减少高频伪影并加速采样。利用Transformer全局感受野捕捉局部和长程关联。在层流圆柱尾流、椭圆流和湍流3D机翼等基准上，采样质量和分布精度均优于图基扩散基线，R²更高、Wasserstein距离更低，且能从短轨迹泛化到未知雷诺数和几何。&lt;/p&gt;&lt;h4&gt;论文明确支持的结论&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;在层流圆柱尾流、椭圆流和湍流3D机翼基准上，Fluid-DiT始终优于图基扩散基线，获得更高R²相关性和更低的Wasserstein距离。&lt;/li&gt;&lt;li&gt;Fluid-DiT能从短而不完整的轨迹稳健泛化到未见过的雷诺数和几何形状。&lt;/li&gt;&lt;li&gt;潜在空间公式减少了高频伪影并加速了采样。&lt;/li&gt;&lt;li&gt;无需显式图设计，通过注意力去噪保留了建模混沌流分布的能力。&lt;/li&gt;&lt;/ul&gt;&lt;h4&gt;对高能实验物理的潜在帮助&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;可用于粒子物理快速模拟，替代昂贵的全模拟，加速探测器响应生成，如量能器簇射、喷注子结构。&lt;/li&gt;&lt;li&gt;注意力机制可处理点云数据，适配非结构化探测器信号，无需手工构建图。&lt;/li&gt;&lt;li&gt;潜在空间和扩散过程可能捕捉粒子分布的不确定性，用于系统误差建模。&lt;/li&gt;&lt;/ul&gt;&lt;h4&gt;迁移风险&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;流体模拟与粒子物理的物理过程不同，缺乏洛伦兹对称性等约束，模型可能无法学到关键对称性。&lt;/li&gt;&lt;li&gt;数据格式差异：流体为网格或点云，粒子物理常涉及稀疏点云和量能器塔形结构。&lt;/li&gt;&lt;li&gt;扩散模型采样速度可能无法满足实时触发或在线推理需求。&lt;/li&gt;&lt;li&gt;需要处理粒子物理中的负权重事件、模拟-数据偏移和系统误差。&lt;/li&gt;&lt;li&gt;校准nuisance参数和探测器几何的复杂性可能超出当前模型能力。&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;strong&gt;最小验证方案：&lt;/strong&gt;最小可行验证：在公开的粒子物理快仿数据集（如CaloGAN的层状量能器数据）上，将Fluid-DiT适配为从噪声生成能量沉积点云，评估分布相似度（如Wasserstein距离）和推理速度，与GAN等基线比较；逐步引入探测器几何和物理约束，测试对未知粒子能量和入射角的泛化；检查是否能够捕捉关键对称性，如洛伦兹不变性。&lt;/p&gt;&lt;p&gt;&lt;a href="https://arxiv.org/abs/2608.07161"&gt;arXiv 页面&lt;/a&gt; · &lt;a href="https://github.com/quxnb/hepml-digest/issues/new?title=%5B%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%5D+2608.07161+Fluid-DiT%3A+Graph-Free+Diffusion+Transformers+for+Fluid+Flow+Simulations+Learning&amp;amp;body=%23%23+%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%0A%0A-+arXiv%EF%BC%9A%5B2608.07161%5D%28https%3A%2F%2Farxiv.org%2Fabs%2F2608.07161%29%0A-+%E6%A0%8F%E7%9B%AE%EF%BC%9A%E6%96%B9%E6%B3%95%E9%9B%B7%E8%BE%BE%0A-+%E5%BD%93%E5%89%8D%E7%9B%B8%E5%85%B3%E6%80%A7%EF%BC%9A0.60%0A-+%E5%BD%93%E5%89%8D%E8%AF%81%E6%8D%AE%E7%AD%89%E7%BA%A7%EF%BC%9Atransferable%0A%0A%23%23+%E5%88%A4%E6%96%AD%0A%0A-+%5B+%5D+%E6%8E%A8%E8%8D%90%E4%BF%9D%E7%95%99%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E5%90%88%E7%90%86%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E8%BF%87%E5%BA%A6%E6%8E%A8%E6%B5%8B%0A-+%5B+%5D+%E5%BA%94%E7%A7%BB%E8%87%B3%E5%8F%A6%E4%B8%80%E4%B8%AA%E6%A0%8F%E7%9B%AE%0A-+%5B+%5D+%E5%BB%BA%E8%AE%AE%E7%B2%BE%E8%AF%BB%E5%85%A8%E6%96%87%0A%0A%23%23+%E8%A1%A5%E5%85%85%E8%AF%B4%E6%98%8E%0A%0A"&gt;提交反馈&lt;/a&gt; · cs.AI, cs.CE, cs.LG&lt;/p&gt;</ns1:encoded>
+      <guid isPermaLink="false">arxiv:2608.07161:hepml-v1</guid>
+      <category>cs.AI</category>
+      <category>cs.CE</category>
+      <category>cs.LG</category>
+      <category>track:method_radar</category>
+      <category>异常检测</category>
+      <category>快速模拟</category>
+      <category>生成模型</category>
+      <pubDate>Mon, 10 Aug 2026 04:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Quasi-Bayesian sequential deconvolution</title>
+      <link>https://arxiv.org/abs/2408.14402</link>
+      <description>密度去卷积与HEP展开任务高度类比，但需进一步验证物理测量场景适用性。</description>
+      <ns1:encoded>&lt;p&gt;&lt;strong&gt;栏目：&lt;/strong&gt;方法雷达&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法：&lt;/strong&gt;基于牛顿递归算法的拟贝叶斯非参数方法用于序列密度去卷积&lt;/p&gt;&lt;p&gt;&lt;strong&gt;相关性：&lt;/strong&gt;0.70；&lt;strong&gt;证据等级：&lt;/strong&gt;transferable&lt;/p&gt;&lt;p&gt;&lt;strong&gt;初筛理由：&lt;/strong&gt;密度去卷积与HEP展开任务高度类比，但需进一步验证物理测量场景适用性。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法总结：&lt;/strong&gt;提出基于牛顿递归算法的拟贝叶斯非参数序列密度去卷积方法，适用于流数据，每观测计算成本恒定，可扩展至大规模数据集。通过局部和均匀中心极限定理提供渐近可信区间等不确定性量化，在频率论生成模型下证明L1一致性，并给出L1-Wasserstein收敛速率及与Dirichlet过程混合模型后验均值的合并速率。合成数据与流式细胞术实验显示准确性与计算优势。&lt;/p&gt;&lt;h4&gt;论文明确支持的结论&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;方法估计简单且可扩展，每观测计算成本恒定&lt;/li&gt;&lt;li&gt;提供基于渐近可信区间和带的不确定性量化&lt;/li&gt;&lt;li&gt;在频率论模型下具有L1一致性，且渐近等同于直接观察无污染变量的估计&lt;/li&gt;&lt;li&gt;在额外正则条件下达到L1-Wasserstein收敛速率并显式速率合并于贝叶斯非参数后验均值&lt;/li&gt;&lt;li&gt;合成数据与流式细胞术应用中精度可比拟贝叶斯非参数和傅里叶去卷积方法，且计算优势显著&lt;/li&gt;&lt;/ul&gt;&lt;h4&gt;对高能实验物理的潜在帮助&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;可用于从探测器响应中在线去卷积以恢复真实粒子能谱或动量谱，提供实时不确定性量化并适应高数据率触发流&lt;/li&gt;&lt;/ul&gt;&lt;h4&gt;迁移风险&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;加性噪声假设可能不符复杂探测器响应（如非平移不变或能量相关偏差）&lt;/li&gt;&lt;li&gt;噪声分布未知或校准不准确时将引入系统误差&lt;/li&gt;&lt;li&gt;负权事件或超出支持域的数据会影响密度估计的合理性&lt;/li&gt;&lt;li&gt;模拟-数据偏移可能导致噪声模型失配&lt;/li&gt;&lt;li&gt;未验证在探测器几何、洛伦兹对称性等物理约束下的适用性&lt;/li&gt;&lt;li&gt;需评估高数据率下的推理延迟是否满足实时要求&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;strong&gt;最小验证方案：&lt;/strong&gt;在模拟的Z玻色子质量谱数据上，引入Tracker与ECAL联合分辨率模型作为噪声，将方法用于去卷积恢复真实谱，与标准贝叶斯展开进行精度、计算时间和不确定性覆盖对比；进一步引入真实数据与模拟的差异测试鲁棒性。&lt;/p&gt;&lt;p&gt;&lt;a href="https://arxiv.org/abs/2408.14402"&gt;arXiv 页面&lt;/a&gt; · &lt;a href="https://github.com/quxnb/hepml-digest/issues/new?title=%5B%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%5D+2408.14402+Quasi-Bayesian+sequential+deconvolution&amp;amp;body=%23%23+%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%0A%0A-+arXiv%EF%BC%9A%5B2408.14402%5D%28https%3A%2F%2Farxiv.org%2Fabs%2F2408.14402%29%0A-+%E6%A0%8F%E7%9B%AE%EF%BC%9A%E6%96%B9%E6%B3%95%E9%9B%B7%E8%BE%BE%0A-+%E5%BD%93%E5%89%8D%E7%9B%B8%E5%85%B3%E6%80%A7%EF%BC%9A0.70%0A-+%E5%BD%93%E5%89%8D%E8%AF%81%E6%8D%AE%E7%AD%89%E7%BA%A7%EF%BC%9Atransferable%0A%0A%23%23+%E5%88%A4%E6%96%AD%0A%0A-+%5B+%5D+%E6%8E%A8%E8%8D%90%E4%BF%9D%E7%95%99%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E5%90%88%E7%90%86%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E8%BF%87%E5%BA%A6%E6%8E%A8%E6%B5%8B%0A-+%5B+%5D+%E5%BA%94%E7%A7%BB%E8%87%B3%E5%8F%A6%E4%B8%80%E4%B8%AA%E6%A0%8F%E7%9B%AE%0A-+%5B+%5D+%E5%BB%BA%E8%AE%AE%E7%B2%BE%E8%AF%BB%E5%85%A8%E6%96%87%0A%0A%23%23+%E8%A1%A5%E5%85%85%E8%AF%B4%E6%98%8E%0A%0A"&gt;提交反馈&lt;/a&gt; · stat.ME, stat.ML&lt;/p&gt;</ns1:encoded>
+      <guid isPermaLink="false">arxiv:2408.14402:hepml-v1</guid>
+      <category>stat.ME</category>
+      <category>stat.ML</category>
+      <category>track:method_radar</category>
+      <category>不确定性量化</category>
+      <category>噪声数据密度估计</category>
+      <category>展开</category>
+      <pubDate>Mon, 10 Aug 2026 04:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Conformal Fusion Under Missing Modalities</title>
+      <link>https://arxiv.org/abs/2608.07183</link>
+      <description>提供缺失模态下的校准不确定性，但HEP应用需定制，未见直接验证。</description>
+      <ns1:encoded>&lt;p&gt;&lt;strong&gt;栏目：&lt;/strong&gt;方法雷达&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法：&lt;/strong&gt;Modality-Conditioned Conformal Fusion (MCCF) combining evidential heads and Dempster-Shafer fusion with Mondrian conformal calibration&lt;/p&gt;&lt;p&gt;&lt;strong&gt;相关性：&lt;/strong&gt;0.60；&lt;strong&gt;证据等级：&lt;/strong&gt;transferable&lt;/p&gt;&lt;p&gt;&lt;strong&gt;初筛理由：&lt;/strong&gt;提供缺失模态下的校准不确定性，但HEP应用需定制，未见直接验证。&lt;/p&gt;&lt;p&gt;&lt;em&gt;本条目仅完成摘要级筛选。&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;a href="https://arxiv.org/abs/2608.07183"&gt;arXiv 页面&lt;/a&gt; · &lt;a href="https://github.com/quxnb/hepml-digest/issues/new?title=%5B%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%5D+2608.07183+Conformal+Fusion+Under+Missing+Modalities&amp;amp;body=%23%23+%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%0A%0A-+arXiv%EF%BC%9A%5B2608.07183%5D%28https%3A%2F%2Farxiv.org%2Fabs%2F2608.07183%29%0A-+%E6%A0%8F%E7%9B%AE%EF%BC%9A%E6%96%B9%E6%B3%95%E9%9B%B7%E8%BE%BE%0A-+%E5%BD%93%E5%89%8D%E7%9B%B8%E5%85%B3%E6%80%A7%EF%BC%9A0.60%0A-+%E5%BD%93%E5%89%8D%E8%AF%81%E6%8D%AE%E7%AD%89%E7%BA%A7%EF%BC%9Atransferable%0A%0A%23%23+%E5%88%A4%E6%96%AD%0A%0A-+%5B+%5D+%E6%8E%A8%E8%8D%90%E4%BF%9D%E7%95%99%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E5%90%88%E7%90%86%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E8%BF%87%E5%BA%A6%E6%8E%A8%E6%B5%8B%0A-+%5B+%5D+%E5%BA%94%E7%A7%BB%E8%87%B3%E5%8F%A6%E4%B8%80%E4%B8%AA%E6%A0%8F%E7%9B%AE%0A-+%5B+%5D+%E5%BB%BA%E8%AE%AE%E7%B2%BE%E8%AF%BB%E5%85%A8%E6%96%87%0A%0A%23%23+%E8%A1%A5%E5%85%85%E8%AF%B4%E6%98%8E%0A%0A"&gt;提交反馈&lt;/a&gt; · cs.LG&lt;/p&gt;</ns1:encoded>
+      <guid isPermaLink="false">arxiv:2608.07183:hepml-v1</guid>
+      <category>cs.LG</category>
+      <category>missing data handling</category>
+      <category>multimodal sensor fusion</category>
+      <category>track:method_radar</category>
+      <category>uncertainty quantification</category>
+      <pubDate>Mon, 10 Aug 2026 04:00:00 +0000</pubDate>
+    </item>
     <item>
       <title>Potential Matching Optimal Transport: Continuous Normalizing Flows for Exact $p$-Wasserstein Dynamics</title>
       <link>https://arxiv.org/abs/2608.05666</link>
