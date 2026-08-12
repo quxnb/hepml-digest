@@ -8,7 +8,111 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Tue, 11 Aug 2026 02:33:47 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 12 Aug 2026 02:47:09 +0000</lastBuildDate>
+    <item>
+      <title>In-Context Density Estimation for Tabular Data</title>
+      <link>https://arxiv.org/abs/2608.09348</link>
+      <description>高能实验数据为表格且需密度估计，但ICED针对通用表格，未在HEP验证；可迁移至异常检测和OOD，快速模拟可能性较低。</description>
+      <ns1:encoded>&lt;p&gt;&lt;strong&gt;栏目：&lt;/strong&gt;方法雷达&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法：&lt;/strong&gt;基于Transformer的上下文能量密度估计，预训练于合成数据&lt;/p&gt;&lt;p&gt;&lt;strong&gt;相关性：&lt;/strong&gt;0.55；&lt;strong&gt;证据等级：&lt;/strong&gt;transferable&lt;/p&gt;&lt;p&gt;&lt;strong&gt;初筛理由：&lt;/strong&gt;高能实验数据为表格且需密度估计，但ICED针对通用表格，未在HEP验证；可迁移至异常检测和OOD，快速模拟可能性较低。&lt;/p&gt;&lt;p&gt;&lt;em&gt;本条目仅完成摘要级筛选。&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;a href="https://arxiv.org/abs/2608.09348"&gt;arXiv 页面&lt;/a&gt; · &lt;a href="https://github.com/quxnb/hepml-digest/issues/new?title=%5B%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%5D+2608.09348+In-Context+Density+Estimation+for+Tabular+Data&amp;amp;body=%23%23+%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%0A%0A-+arXiv%EF%BC%9A%5B2608.09348%5D%28https%3A%2F%2Farxiv.org%2Fabs%2F2608.09348%29%0A-+%E6%A0%8F%E7%9B%AE%EF%BC%9A%E6%96%B9%E6%B3%95%E9%9B%B7%E8%BE%BE%0A-+%E5%BD%93%E5%89%8D%E7%9B%B8%E5%85%B3%E6%80%A7%EF%BC%9A0.55%0A-+%E5%BD%93%E5%89%8D%E8%AF%81%E6%8D%AE%E7%AD%89%E7%BA%A7%EF%BC%9Atransferable%0A%0A%23%23+%E5%88%A4%E6%96%AD%0A%0A-+%5B+%5D+%E6%8E%A8%E8%8D%90%E4%BF%9D%E7%95%99%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E5%90%88%E7%90%86%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E8%BF%87%E5%BA%A6%E6%8E%A8%E6%B5%8B%0A-+%5B+%5D+%E5%BA%94%E7%A7%BB%E8%87%B3%E5%8F%A6%E4%B8%80%E4%B8%AA%E6%A0%8F%E7%9B%AE%0A-+%5B+%5D+%E5%BB%BA%E8%AE%AE%E7%B2%BE%E8%AF%BB%E5%85%A8%E6%96%87%0A%0A%23%23+%E8%A1%A5%E5%85%85%E8%AF%B4%E6%98%8E%0A%0A"&gt;提交反馈&lt;/a&gt; · cs.LG&lt;/p&gt;</ns1:encoded>
+      <guid isPermaLink="false">arxiv:2608.09348:hepml-v1</guid>
+      <category>cs.LG</category>
+      <category>track:method_radar</category>
+      <category>异常检测</category>
+      <category>快速模拟/数据增强</category>
+      <category>离分布检测</category>
+      <pubDate>Tue, 11 Aug 2026 04:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Leveraging generative models to assist Monte Carlo sampling</title>
+      <link>https://arxiv.org/abs/2608.07648</link>
+      <description>生成模型辅助蒙特卡洛采样与高能物理事件生成和快速模拟需求高度相关，方法可迁移性强。</description>
+      <ns1:encoded>&lt;p&gt;&lt;strong&gt;栏目：&lt;/strong&gt;方法雷达&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法：&lt;/strong&gt;生成模型（normalizing flows, diffusion models）辅助蒙特卡洛采样&lt;/p&gt;&lt;p&gt;&lt;strong&gt;相关性：&lt;/strong&gt;0.85；&lt;strong&gt;证据等级：&lt;/strong&gt;transferable&lt;/p&gt;&lt;p&gt;&lt;strong&gt;初筛理由：&lt;/strong&gt;生成模型辅助蒙特卡洛采样与高能物理事件生成和快速模拟需求高度相关，方法可迁移性强。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法总结：&lt;/strong&gt;本文综述了利用生成模型（归一化流、扩散模型）辅助蒙特卡洛采样的方法，专注于从仅知未归一化常数的分布中采样，涵盖精确采样器与无数据训练策略，旨在解决高维、多模态分布采样难题，并讨论了方法优缺点。&lt;/p&gt;&lt;h4&gt;论文明确支持的结论&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;生成模型（如归一化流和扩散模型）可作为工具辅助从仅知未归一化密度的分布中采样&lt;/li&gt;&lt;li&gt;可在无数据情况下训练生成模型用于采样&lt;/li&gt;&lt;li&gt;综述了精确采样器和无数据训练策略等若干方法方向&lt;/li&gt;&lt;/ul&gt;&lt;h4&gt;对高能实验物理的潜在帮助&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;将生成模型用于高能物理蒙特卡洛事件生成，以快速采样高维相空间分布&lt;/li&gt;&lt;li&gt;辅助探测器快速模拟中的多峰分布采样&lt;/li&gt;&lt;li&gt;用于贝叶斯参数推断中后验分布的直接采样&lt;/li&gt;&lt;/ul&gt;&lt;h4&gt;迁移风险&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;方法未在高维动量守恒、共振条件等复杂约束下验证，可能无法直接迁移&lt;/li&gt;&lt;li&gt;综述未讨论系统误差处理、模拟到数据偏差、标定不确定性等实际实验问题&lt;/li&gt;&lt;li&gt;无数据训练策略可能对分布微小特征（如共振峰尾部）不够敏感，导致物理偏差&lt;/li&gt;&lt;li&gt;推理延迟可能超出在线触发系统要求&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;strong&gt;最小验证方案：&lt;/strong&gt;在简化物理场景（如e+e- → μ+μ-过程）中，用生成模型采样末态相空间，与标准蒙特卡洛真值比较直方图差异、有效样本数及计算时间，检查共振峰和尾部保真度。&lt;/p&gt;&lt;p&gt;&lt;a href="https://arxiv.org/abs/2608.07648"&gt;arXiv 页面&lt;/a&gt; · &lt;a href="https://github.com/quxnb/hepml-digest/issues/new?title=%5B%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%5D+2608.07648+Leveraging+generative+models+to+assist+Monte+Carlo+sampling&amp;amp;body=%23%23+%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%0A%0A-+arXiv%EF%BC%9A%5B2608.07648%5D%28https%3A%2F%2Farxiv.org%2Fabs%2F2608.07648%29%0A-+%E6%A0%8F%E7%9B%AE%EF%BC%9A%E6%96%B9%E6%B3%95%E9%9B%B7%E8%BE%BE%0A-+%E5%BD%93%E5%89%8D%E7%9B%B8%E5%85%B3%E6%80%A7%EF%BC%9A0.85%0A-+%E5%BD%93%E5%89%8D%E8%AF%81%E6%8D%AE%E7%AD%89%E7%BA%A7%EF%BC%9Atransferable%0A%0A%23%23+%E5%88%A4%E6%96%AD%0A%0A-+%5B+%5D+%E6%8E%A8%E8%8D%90%E4%BF%9D%E7%95%99%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E5%90%88%E7%90%86%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E8%BF%87%E5%BA%A6%E6%8E%A8%E6%B5%8B%0A-+%5B+%5D+%E5%BA%94%E7%A7%BB%E8%87%B3%E5%8F%A6%E4%B8%80%E4%B8%AA%E6%A0%8F%E7%9B%AE%0A-+%5B+%5D+%E5%BB%BA%E8%AE%AE%E7%B2%BE%E8%AF%BB%E5%85%A8%E6%96%87%0A%0A%23%23+%E8%A1%A5%E5%85%85%E8%AF%B4%E6%98%8E%0A%0A"&gt;提交反馈&lt;/a&gt; · cond-mat.dis-nn, cond-mat.stat-mech, cs.LG, physics.comp-ph, stat.ML&lt;/p&gt;</ns1:encoded>
+      <guid isPermaLink="false">arxiv:2608.07648:hepml-v1</guid>
+      <category>cond-mat.dis-nn</category>
+      <category>cond-mat.stat-mech</category>
+      <category>cs.LG</category>
+      <category>physics.comp-ph</category>
+      <category>stat.ML</category>
+      <category>track:method_radar</category>
+      <category>事件生成</category>
+      <category>快速模拟</category>
+      <category>无似然推断</category>
+      <category>相位空间采样</category>
+      <pubDate>Tue, 11 Aug 2026 04:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>CPDA: Class-Conditional Path Distribution Alignment for Unsupervised Time-Series Domain Adaptation</title>
+      <link>https://arxiv.org/abs/2608.09193</link>
+      <description>非对抗式类条件对齐，适用于探测器迁移等域偏移，但未在HEP验证</description>
+      <ns1:encoded>&lt;p&gt;&lt;strong&gt;栏目：&lt;/strong&gt;方法雷达&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法：&lt;/strong&gt;Class-Conditional Path Distribution Alignment (CPDA) with signature-spectral kernel&lt;/p&gt;&lt;p&gt;&lt;strong&gt;相关性：&lt;/strong&gt;0.60；&lt;strong&gt;证据等级：&lt;/strong&gt;transferable&lt;/p&gt;&lt;p&gt;&lt;strong&gt;初筛理由：&lt;/strong&gt;非对抗式类条件对齐，适用于探测器迁移等域偏移，但未在HEP验证&lt;/p&gt;&lt;p&gt;&lt;em&gt;本条目仅完成摘要级筛选。&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;a href="https://arxiv.org/abs/2608.09193"&gt;arXiv 页面&lt;/a&gt; · &lt;a href="https://github.com/quxnb/hepml-digest/issues/new?title=%5B%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%5D+2608.09193+CPDA%3A+Class-Conditional+Path+Distribution+Alignment+for+Unsupervised+Time-Series&amp;amp;body=%23%23+%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%0A%0A-+arXiv%EF%BC%9A%5B2608.09193%5D%28https%3A%2F%2Farxiv.org%2Fabs%2F2608.09193%29%0A-+%E6%A0%8F%E7%9B%AE%EF%BC%9A%E6%96%B9%E6%B3%95%E9%9B%B7%E8%BE%BE%0A-+%E5%BD%93%E5%89%8D%E7%9B%B8%E5%85%B3%E6%80%A7%EF%BC%9A0.60%0A-+%E5%BD%93%E5%89%8D%E8%AF%81%E6%8D%AE%E7%AD%89%E7%BA%A7%EF%BC%9Atransferable%0A%0A%23%23+%E5%88%A4%E6%96%AD%0A%0A-+%5B+%5D+%E6%8E%A8%E8%8D%90%E4%BF%9D%E7%95%99%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E5%90%88%E7%90%86%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E8%BF%87%E5%BA%A6%E6%8E%A8%E6%B5%8B%0A-+%5B+%5D+%E5%BA%94%E7%A7%BB%E8%87%B3%E5%8F%A6%E4%B8%80%E4%B8%AA%E6%A0%8F%E7%9B%AE%0A-+%5B+%5D+%E5%BB%BA%E8%AE%AE%E7%B2%BE%E8%AF%BB%E5%85%A8%E6%96%87%0A%0A%23%23+%E8%A1%A5%E5%85%85%E8%AF%B4%E6%98%8E%0A%0A"&gt;提交反馈&lt;/a&gt; · cs.LG, stat.ML&lt;/p&gt;</ns1:encoded>
+      <guid isPermaLink="false">arxiv:2608.09193:hepml-v1</guid>
+      <category>cs.LG</category>
+      <category>domain shift</category>
+      <category>event classification</category>
+      <category>stat.ML</category>
+      <category>systematic uncertainty</category>
+      <category>track:method_radar</category>
+      <pubDate>Tue, 11 Aug 2026 04:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>An invertible generative model for forward and inverse problems</title>
+      <link>https://arxiv.org/abs/2509.03910</link>
+      <description>可逆生成模型同时支持前向模拟与后验采样，与HEP展开和无似然推断高度相关，但未在HEP数据上验证。</description>
+      <ns1:encoded>&lt;p&gt;&lt;strong&gt;栏目：&lt;/strong&gt;方法雷达&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法：&lt;/strong&gt;可逆生成模型，结合上下三角归一化流实现前向与逆向采样&lt;/p&gt;&lt;p&gt;&lt;strong&gt;相关性：&lt;/strong&gt;0.70；&lt;strong&gt;证据等级：&lt;/strong&gt;transferable&lt;/p&gt;&lt;p&gt;&lt;strong&gt;初筛理由：&lt;/strong&gt;可逆生成模型同时支持前向模拟与后验采样，与HEP展开和无似然推断高度相关，但未在HEP数据上验证。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法总结：&lt;/strong&gt;本文提出一种可逆生成模型，称为可逆模拟器，通过结合下三角和上三角归一化流构造一个可逆映射，能够同时进行前向模拟（从似然中采样）和逆向推断（从后验中采样）。模型基于变分公式从配对样本直接训练，在贝叶斯框架下解决前向与逆问题。论文在解析可处理的玩具示例上演示了其作为统一条件生成模型的潜力，但未在真实物理实验数据上验证。&lt;/p&gt;&lt;h4&gt;论文明确支持的结论&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;Formulates inverse problems in a Bayesian framework with an invertible generative model capable of simulation (forward) and inference (inverse).&lt;/li&gt;&lt;li&gt;Combines lower and upper triangular normalizing flows into an invertible map to create a Reversible Simulator.&lt;/li&gt;&lt;li&gt;Derives a variational training objective from paired samples and analyzes structural non-uniqueness.&lt;/li&gt;&lt;li&gt;Demonstrates on stylized analytical examples the potential for unified conditional generative modeling.&lt;/li&gt;&lt;/ul&gt;&lt;h4&gt;对高能实验物理的潜在帮助&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;Could serve as a foundation for simultaneous fast simulation and unfolding in HEP, learning a bi-directional mapping between particle-level and detector-level data.&lt;/li&gt;&lt;li&gt;Potential for amortized likelihood-free inference, enabling rapid parameter estimation and systematic studies.&lt;/li&gt;&lt;li&gt;May be applied to generative modeling of detector responses where both forward generation and inversion are required, such as in calorimeter simulation.&lt;/li&gt;&lt;/ul&gt;&lt;h4&gt;迁移风险&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;Scalability to high-dimensional, sparse, and heterogeneous HEP data is unproven; only low-dimensional stylized examples tested.&lt;/li&gt;&lt;li&gt;Normalizing flows may be insufficiently expressive for complex, discontinuous detector effects (e.g., geometry, particle interactions).&lt;/li&gt;&lt;li&gt;No demonstration of handling systematic uncertainties, nuisance parameters, or simulation-to-data shift, crucial in HEP.&lt;/li&gt;&lt;li&gt;Robustness to negative event weights, missing data, or irregular detector acceptance is unknown.&lt;/li&gt;&lt;li&gt;Inference latency and memory footprint for realistic HEP scales are not characterized.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;strong&gt;最小验证方案：&lt;/strong&gt;1. Implement on a toy physics problem: forward mapping particle kinematics to smeared observables, inverse mapping back. 2. Train on paired simulation samples; evaluate forward generation quality via distribution tests and inverse accuracy via bias and coverage. 3. Test on a simplified Z→ee simulation with realistic detector effects, comparing to standard unfolding. 4. Assess robustness to systematic shifts by introducing distortions unseen during training.&lt;/p&gt;&lt;p&gt;&lt;a href="https://arxiv.org/abs/2509.03910"&gt;arXiv 页面&lt;/a&gt; · &lt;a href="https://github.com/quxnb/hepml-digest/issues/new?title=%5B%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%5D+2509.03910+An+invertible+generative+model+for+forward+and+inverse+problems&amp;amp;body=%23%23+%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%0A%0A-+arXiv%EF%BC%9A%5B2509.03910%5D%28https%3A%2F%2Farxiv.org%2Fabs%2F2509.03910%29%0A-+%E6%A0%8F%E7%9B%AE%EF%BC%9A%E6%96%B9%E6%B3%95%E9%9B%B7%E8%BE%BE%0A-+%E5%BD%93%E5%89%8D%E7%9B%B8%E5%85%B3%E6%80%A7%EF%BC%9A0.70%0A-+%E5%BD%93%E5%89%8D%E8%AF%81%E6%8D%AE%E7%AD%89%E7%BA%A7%EF%BC%9Atransferable%0A%0A%23%23+%E5%88%A4%E6%96%AD%0A%0A-+%5B+%5D+%E6%8E%A8%E8%8D%90%E4%BF%9D%E7%95%99%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E5%90%88%E7%90%86%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E8%BF%87%E5%BA%A6%E6%8E%A8%E6%B5%8B%0A-+%5B+%5D+%E5%BA%94%E7%A7%BB%E8%87%B3%E5%8F%A6%E4%B8%80%E4%B8%AA%E6%A0%8F%E7%9B%AE%0A-+%5B+%5D+%E5%BB%BA%E8%AE%AE%E7%B2%BE%E8%AF%BB%E5%85%A8%E6%96%87%0A%0A%23%23+%E8%A1%A5%E5%85%85%E8%AF%B4%E6%98%8E%0A%0A"&gt;提交反馈&lt;/a&gt; · cs.LG, math.PR, stat.ML&lt;/p&gt;</ns1:encoded>
+      <guid isPermaLink="false">arxiv:2509.03910:hepml-v1</guid>
+      <category>cs.LG</category>
+      <category>math.PR</category>
+      <category>stat.ML</category>
+      <category>track:method_radar</category>
+      <category>展开</category>
+      <category>快速模拟</category>
+      <category>无似然推断</category>
+      <pubDate>Tue, 11 Aug 2026 04:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Bayesian Symbolic Regression with Entropic Reinforcement Learning</title>
+      <link>https://arxiv.org/abs/2608.09617</link>
+      <description>符号回归可发现简洁物理公式，贝叶斯框架提供不确定性量化，但未在HEP数据上验证。</description>
+      <ns1:encoded>&lt;p&gt;&lt;strong&gt;栏目：&lt;/strong&gt;方法雷达&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法：&lt;/strong&gt;最大熵强化学习用于贝叶斯符号回归&lt;/p&gt;&lt;p&gt;&lt;strong&gt;相关性：&lt;/strong&gt;0.60；&lt;strong&gt;证据等级：&lt;/strong&gt;transferable&lt;/p&gt;&lt;p&gt;&lt;strong&gt;初筛理由：&lt;/strong&gt;符号回归可发现简洁物理公式，贝叶斯框架提供不确定性量化，但未在HEP数据上验证。&lt;/p&gt;&lt;p&gt;&lt;em&gt;本条目仅完成摘要级筛选。&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;a href="https://arxiv.org/abs/2608.09617"&gt;arXiv 页面&lt;/a&gt; · &lt;a href="https://github.com/quxnb/hepml-digest/issues/new?title=%5B%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%5D+2608.09617+Bayesian+Symbolic+Regression+with+Entropic+Reinforcement+Learning&amp;amp;body=%23%23+%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%0A%0A-+arXiv%EF%BC%9A%5B2608.09617%5D%28https%3A%2F%2Farxiv.org%2Fabs%2F2608.09617%29%0A-+%E6%A0%8F%E7%9B%AE%EF%BC%9A%E6%96%B9%E6%B3%95%E9%9B%B7%E8%BE%BE%0A-+%E5%BD%93%E5%89%8D%E7%9B%B8%E5%85%B3%E6%80%A7%EF%BC%9A0.60%0A-+%E5%BD%93%E5%89%8D%E8%AF%81%E6%8D%AE%E7%AD%89%E7%BA%A7%EF%BC%9Atransferable%0A%0A%23%23+%E5%88%A4%E6%96%AD%0A%0A-+%5B+%5D+%E6%8E%A8%E8%8D%90%E4%BF%9D%E7%95%99%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E5%90%88%E7%90%86%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E8%BF%87%E5%BA%A6%E6%8E%A8%E6%B5%8B%0A-+%5B+%5D+%E5%BA%94%E7%A7%BB%E8%87%B3%E5%8F%A6%E4%B8%80%E4%B8%AA%E6%A0%8F%E7%9B%AE%0A-+%5B+%5D+%E5%BB%BA%E8%AE%AE%E7%B2%BE%E8%AF%BB%E5%85%A8%E6%96%87%0A%0A%23%23+%E8%A1%A5%E5%85%85%E8%AF%B4%E6%98%8E%0A%0A"&gt;提交反馈&lt;/a&gt; · cs.LG&lt;/p&gt;</ns1:encoded>
+      <guid isPermaLink="false">arxiv:2608.09617:hepml-v1</guid>
+      <category>cs.LG</category>
+      <category>track:method_radar</category>
+      <category>快速模拟替代模型</category>
+      <category>物理公式发现</category>
+      <category>系统误差建模</category>
+      <pubDate>Tue, 11 Aug 2026 04:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Weighted Bayesian Conformal Prediction</title>
+      <link>https://arxiv.org/abs/2604.06464</link>
+      <description>处理协变量偏移和权重估计误差，与HEP中模拟与数据分布失配场景相关，但未在HEP验证。</description>
+      <ns1:encoded>&lt;p&gt;&lt;strong&gt;栏目：&lt;/strong&gt;方法雷达&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法：&lt;/strong&gt;加权贝叶斯共形预测，推Dirichlet过程先验通过似然比得到部署风险的后验，并给出有限样本界&lt;/p&gt;&lt;p&gt;&lt;strong&gt;相关性：&lt;/strong&gt;0.70；&lt;strong&gt;证据等级：&lt;/strong&gt;transferable&lt;/p&gt;&lt;p&gt;&lt;strong&gt;初筛理由：&lt;/strong&gt;处理协变量偏移和权重估计误差，与HEP中模拟与数据分布失配场景相关，但未在HEP验证。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法总结：&lt;/strong&gt;提出加权贝叶斯共形预测方法，通过将狄利克雷过程先验施加于校准分布，利用似然比推导出部署风险的确切贝叶斯后验。针对实际中权重函数需估计的情况，进一步证明在权重估计误差和条件偏移下所选阈值实际风险的有限样本上下界。在合成和真实协变量偏移的回归与分类任务中，实现失败率接近目标。&lt;/p&gt;&lt;h4&gt;论文明确支持的结论&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;给定真实权重函数时，方法能给出部署风险的确切贝叶斯后验。&lt;/li&gt;&lt;li&gt;在权重函数需估计时，证明了风险随权重估计误差和条件偏移的有限样本上下界。&lt;/li&gt;&lt;li&gt;在协变量偏移场景下，方法的实际失败率保持接近目标，优于忽略偏移的方法。&lt;/li&gt;&lt;/ul&gt;&lt;h4&gt;对高能实验物理的潜在帮助&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;粒子物理中模拟与数据分布偏移的量化：将方法用于粒子鉴别或事例分类的阈值选择，利用似然比估计处理探测器响应差异，提供部署风险的贝叶斯后验及有限样本保证。&lt;/li&gt;&lt;li&gt;背景估计中的不确定性量化：在协变量偏移下为基于机器学习的选择阈值提供风险界，代替固定假设检验水平。&lt;/li&gt;&lt;li&gt;系统误差作为权重估计不确定性的扩展：将权重估计误差与系统不确定性关联，提供更稳健的覆盖保证。&lt;/li&gt;&lt;/ul&gt;&lt;h4&gt;迁移风险&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;高维数据中似然比估计的误差可能远大于论文测试场景，导致有限样本界过松或后验偏差。&lt;/li&gt;&lt;li&gt;粒子物理数据常存在时变条件（如探测器老化），违反校准集与部署数据独立同分布的隐含假设。&lt;/li&gt;&lt;li&gt;狄利克雷过程先验可能在大校准集下计算代价高，且其超参数选择缺乏HEP特定指导。&lt;/li&gt;&lt;li&gt;论文未考虑粒子物理中常见的系统不确定性与干扰参数，直接迁移可能低估实际风险。&lt;/li&gt;&lt;li&gt;负权重事件和复杂探测器几何效应使得权重函数估计极具挑战，可能产生不可靠的上下界。&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;strong&gt;最小验证方案：&lt;/strong&gt;在一个简化HEP场景中验证：二分类问题（信号/背景），通过引入已知探测器响应差异（如能量标度偏移）产生模拟与数据协变量偏移。用神经网络估计似然比，应用方法获得分类分数阈值的风险后验和界。在真实偏移数据集上检查覆盖频率，评估权重估计误差和校准集大小的影响，并与忽略偏移的符合性方法对比。&lt;/p&gt;&lt;p&gt;&lt;a href="https://arxiv.org/abs/2604.06464"&gt;arXiv 页面&lt;/a&gt; · &lt;a href="https://github.com/quxnb/hepml-digest/issues/new?title=%5B%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%5D+2604.06464+Weighted+Bayesian+Conformal+Prediction&amp;amp;body=%23%23+%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%0A%0A-+arXiv%EF%BC%9A%5B2604.06464%5D%28https%3A%2F%2Farxiv.org%2Fabs%2F2604.06464%29%0A-+%E6%A0%8F%E7%9B%AE%EF%BC%9A%E6%96%B9%E6%B3%95%E9%9B%B7%E8%BE%BE%0A-+%E5%BD%93%E5%89%8D%E7%9B%B8%E5%85%B3%E6%80%A7%EF%BC%9A0.70%0A-+%E5%BD%93%E5%89%8D%E8%AF%81%E6%8D%AE%E7%AD%89%E7%BA%A7%EF%BC%9Atransferable%0A%0A%23%23+%E5%88%A4%E6%96%AD%0A%0A-+%5B+%5D+%E6%8E%A8%E8%8D%90%E4%BF%9D%E7%95%99%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E5%90%88%E7%90%86%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E8%BF%87%E5%BA%A6%E6%8E%A8%E6%B5%8B%0A-+%5B+%5D+%E5%BA%94%E7%A7%BB%E8%87%B3%E5%8F%A6%E4%B8%80%E4%B8%AA%E6%A0%8F%E7%9B%AE%0A-+%5B+%5D+%E5%BB%BA%E8%AE%AE%E7%B2%BE%E8%AF%BB%E5%85%A8%E6%96%87%0A%0A%23%23+%E8%A1%A5%E5%85%85%E8%AF%B4%E6%98%8E%0A%0A"&gt;提交反馈&lt;/a&gt; · cs.LG, physics.app-ph, stat.ML&lt;/p&gt;</ns1:encoded>
+      <guid isPermaLink="false">arxiv:2604.06464:hepml-v1</guid>
+      <category>cs.LG</category>
+      <category>physics.app-ph</category>
+      <category>stat.ML</category>
+      <category>track:method_radar</category>
+      <category>不确定性量化</category>
+      <category>域偏移处理</category>
+      <category>系统误差处理</category>
+      <pubDate>Tue, 11 Aug 2026 04:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Sparse corruption in low-rank matrix inference: the PCA benchmark</title>
+      <link>https://arxiv.org/abs/2511.11927</link>
+      <description>研究稀疏噪声下矩阵信号恢复的相变，可类比HEP中稀疏背景下的新物理信号提取，方法有迁移潜力。</description>
+      <ns1:encoded>&lt;p&gt;&lt;strong&gt;栏目：&lt;/strong&gt;方法雷达&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法：&lt;/strong&gt;复制方法（replica method）和种群动力学递归分布方程&lt;/p&gt;&lt;p&gt;&lt;strong&gt;相关性：&lt;/strong&gt;0.70；&lt;strong&gt;证据等级：&lt;/strong&gt;transferable&lt;/p&gt;&lt;p&gt;&lt;strong&gt;初筛理由：&lt;/strong&gt;研究稀疏噪声下矩阵信号恢复的相变，可类比HEP中稀疏背景下的新物理信号提取，方法有迁移潜力。&lt;/p&gt;&lt;p&gt;&lt;em&gt;本条目仅完成摘要级筛选。&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;a href="https://arxiv.org/abs/2511.11927"&gt;arXiv 页面&lt;/a&gt; · &lt;a href="https://github.com/quxnb/hepml-digest/issues/new?title=%5B%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%5D+2511.11927+Sparse+corruption+in+low-rank+matrix+inference%3A+the+PCA+benchmark&amp;amp;body=%23%23+%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%0A%0A-+arXiv%EF%BC%9A%5B2511.11927%5D%28https%3A%2F%2Farxiv.org%2Fabs%2F2511.11927%29%0A-+%E6%A0%8F%E7%9B%AE%EF%BC%9A%E6%96%B9%E6%B3%95%E9%9B%B7%E8%BE%BE%0A-+%E5%BD%93%E5%89%8D%E7%9B%B8%E5%85%B3%E6%80%A7%EF%BC%9A0.70%0A-+%E5%BD%93%E5%89%8D%E8%AF%81%E6%8D%AE%E7%AD%89%E7%BA%A7%EF%BC%9Atransferable%0A%0A%23%23+%E5%88%A4%E6%96%AD%0A%0A-+%5B+%5D+%E6%8E%A8%E8%8D%90%E4%BF%9D%E7%95%99%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E5%90%88%E7%90%86%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E8%BF%87%E5%BA%A6%E6%8E%A8%E6%B5%8B%0A-+%5B+%5D+%E5%BA%94%E7%A7%BB%E8%87%B3%E5%8F%A6%E4%B8%80%E4%B8%AA%E6%A0%8F%E7%9B%AE%0A-+%5B+%5D+%E5%BB%BA%E8%AE%AE%E7%B2%BE%E8%AF%BB%E5%85%A8%E6%96%87%0A%0A%23%23+%E8%A1%A5%E5%85%85%E8%AF%B4%E6%98%8E%0A%0A"&gt;提交反馈&lt;/a&gt; · cond-mat.dis-nn, cond-mat.stat-mech, cs.LG, stat.ML&lt;/p&gt;</ns1:encoded>
+      <guid isPermaLink="false">arxiv:2511.11927:hepml-v1</guid>
+      <category>cond-mat.dis-nn</category>
+      <category>cond-mat.stat-mech</category>
+      <category>cs.LG</category>
+      <category>stat.ML</category>
+      <category>track:method_radar</category>
+      <category>信号提取</category>
+      <category>异常检测</category>
+      <category>粒子鉴别</category>
+      <pubDate>Tue, 11 Aug 2026 04:00:00 +0000</pubDate>
+    </item>
     <item>
       <title>Fluid-DiT: Graph-Free Diffusion Transformers for Fluid Flow Simulations Learning</title>
       <link>https://arxiv.org/abs/2608.07161</link>

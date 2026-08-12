@@ -8,7 +8,64 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Tue, 11 Aug 2026 02:33:47 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 12 Aug 2026 02:47:09 +0000</lastBuildDate>
+    <item>
+      <title>Silent coverage failures in rare-event searches and a degeneracy index that predicts them</title>
+      <link>https://arxiv.org/abs/2608.09203</link>
+      <description>直接针对低本底稀有事件搜索的覆盖性质，提出退化指数诊断模型偏差，与HEP上限推断高度相关。</description>
+      <ns1:encoded>&lt;p&gt;&lt;strong&gt;栏目：&lt;/strong&gt;HEP 直接应用&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法：&lt;/strong&gt;Poisson-Fisher degeneracy index and coverage analysis of interval procedures&lt;/p&gt;&lt;p&gt;&lt;strong&gt;相关性：&lt;/strong&gt;0.80；&lt;strong&gt;证据等级：&lt;/strong&gt;direct&lt;/p&gt;&lt;p&gt;&lt;strong&gt;初筛理由：&lt;/strong&gt;直接针对低本底稀有事件搜索的覆盖性质，提出退化指数诊断模型偏差，与HEP上限推断高度相关。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法总结：&lt;/strong&gt;提出Poisson-Fisher退化指数，通过将预期计数形变投影至拟合切空间，分解为信号偏移β和未被吸收残差范数γ，诊断稀有事件搜索中因模型误设导致的静默覆盖失效。大|β|且小γ的形变难以被常规拟合优度检验发现，却会威胁区间覆盖，需通过辅助测量约束或纳入误差包络。在共线约束基准中，建模形变可恢复覆盖，但会损失灵敏度。&lt;/p&gt;&lt;h4&gt;论文明确支持的结论&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;名义频率覆盖要求有效的区间构造和充分的数据模型。&lt;/li&gt;&lt;li&gt;引入Poisson–Fisher退化指数，将预期计数形变映射为信号偏移β和未被吸收残差范数γ。&lt;/li&gt;&lt;li&gt;大|β|且小γ的形变可能逃避诊断，导致覆盖失效。&lt;/li&gt;&lt;li&gt;基于名义模拟器的校准不能防止该模拟器相对于真实数据生成过程的误设。&lt;/li&gt;&lt;li&gt;在共线约束基准中，建模形变可在评估网格点恢复覆盖，但以区间灵敏度为代价。&lt;/li&gt;&lt;/ul&gt;&lt;h4&gt;对高能实验物理的潜在帮助&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;用于暗物质直接探测、无中微子双β衰变等低本底实验的上限设定，作为诊断工具识别静默覆盖风险。&lt;/li&gt;&lt;li&gt;集成到分析流程中，当退化指数指示大偏移、低检测能力时，自动触发额外系统误差建模或稳健推断。&lt;/li&gt;&lt;li&gt;帮助评估模拟器与真实探测器响应差异（如效率、能量分辨率）是否会未察觉地偏置物理结果。&lt;/li&gt;&lt;/ul&gt;&lt;h4&gt;迁移风险&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;退化指数基于局域线性近似和泊松似然，对于强的非线性形变或离散系统效应可能失效。&lt;/li&gt;&lt;li&gt;所结合的饱和泊松拟合优度检验预设5%显著性阈值，可能不适应HEP常用渐近公式或不同误发现率控制需求。&lt;/li&gt;&lt;li&gt;未显式处理模拟负权重、事例堆积、或数据-模拟分布整体平移等常见实验系统误差形式。&lt;/li&gt;&lt;li&gt;共线约束基准可能过度简化实际的复杂关联误差结构，影响结论的通用性。&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;strong&gt;最小验证方案：&lt;/strong&gt;选取一个正在进行的暗物质或0νββ分析，注入已知的探测器效率误估或本底形状扭曲，生成大量玩具蒙特卡洛样本。分别计算退化指数预测的覆盖威胁和实际基于瑕疵模型的区间覆盖，验证指数能否正确识别覆盖不足或过分保守的情形。同时对同一形变实施建议的误差包络或约束建模，检查覆盖恢复程度与灵敏度损失。&lt;/p&gt;&lt;p&gt;&lt;a href="https://arxiv.org/abs/2608.09203"&gt;arXiv 页面&lt;/a&gt; · &lt;a href="https://github.com/quxnb/hepml-digest/issues/new?title=%5B%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%5D+2608.09203+Silent+coverage+failures+in+rare-event+searches+and+a+degeneracy+index+that+pred&amp;amp;body=%23%23+%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%0A%0A-+arXiv%EF%BC%9A%5B2608.09203%5D%28https%3A%2F%2Farxiv.org%2Fabs%2F2608.09203%29%0A-+%E6%A0%8F%E7%9B%AE%EF%BC%9AHEP+%E7%9B%B4%E6%8E%A5%E5%BA%94%E7%94%A8%0A-+%E5%BD%93%E5%89%8D%E7%9B%B8%E5%85%B3%E6%80%A7%EF%BC%9A0.80%0A-+%E5%BD%93%E5%89%8D%E8%AF%81%E6%8D%AE%E7%AD%89%E7%BA%A7%EF%BC%9Adirect%0A%0A%23%23+%E5%88%A4%E6%96%AD%0A%0A-+%5B+%5D+%E6%8E%A8%E8%8D%90%E4%BF%9D%E7%95%99%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E5%90%88%E7%90%86%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E8%BF%87%E5%BA%A6%E6%8E%A8%E6%B5%8B%0A-+%5B+%5D+%E5%BA%94%E7%A7%BB%E8%87%B3%E5%8F%A6%E4%B8%80%E4%B8%AA%E6%A0%8F%E7%9B%AE%0A-+%5B+%5D+%E5%BB%BA%E8%AE%AE%E7%B2%BE%E8%AF%BB%E5%85%A8%E6%96%87%0A%0A%23%23+%E8%A1%A5%E5%85%85%E8%AF%B4%E6%98%8E%0A%0A"&gt;提交反馈&lt;/a&gt; · hep-ex, stat.ME&lt;/p&gt;</ns1:encoded>
+      <guid isPermaLink="false">arxiv:2608.09203:hepml-v1</guid>
+      <category>hep-ex</category>
+      <category>stat.ME</category>
+      <category>track:hep_application</category>
+      <category>稀有事件搜索</category>
+      <category>系统误差评估</category>
+      <category>置信区间构造</category>
+      <pubDate>Tue, 11 Aug 2026 04:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Transport of $D^0$ meson in hadronic matter in the domain of Non-Extensive statistics</title>
+      <link>https://arxiv.org/abs/2602.05478</link>
+      <description>方法针对重离子碰撞中的重夸克输运，具有直接应用价值，但侧重物理结论而非统计方法创新。</description>
+      <ns1:encoded>&lt;p&gt;&lt;strong&gt;栏目：&lt;/strong&gt;HEP 直接应用&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法：&lt;/strong&gt;Tsallis非广延统计下的Fokker-Planck方程&lt;/p&gt;&lt;p&gt;&lt;strong&gt;相关性：&lt;/strong&gt;0.60；&lt;strong&gt;证据等级：&lt;/strong&gt;direct&lt;/p&gt;&lt;p&gt;&lt;strong&gt;初筛理由：&lt;/strong&gt;方法针对重离子碰撞中的重夸克输运，具有直接应用价值，但侧重物理结论而非统计方法创新。&lt;/p&gt;&lt;p&gt;&lt;em&gt;本条目仅完成摘要级筛选。&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;a href="https://arxiv.org/abs/2602.05478"&gt;arXiv 页面&lt;/a&gt; · &lt;a href="https://github.com/quxnb/hepml-digest/issues/new?title=%5B%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%5D+2602.05478+Transport+of+%24D%5E0%24+meson+in+hadronic+matter+in+the+domain+of+Non-Extensive+stati&amp;amp;body=%23%23+%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%0A%0A-+arXiv%EF%BC%9A%5B2602.05478%5D%28https%3A%2F%2Farxiv.org%2Fabs%2F2602.05478%29%0A-+%E6%A0%8F%E7%9B%AE%EF%BC%9AHEP+%E7%9B%B4%E6%8E%A5%E5%BA%94%E7%94%A8%0A-+%E5%BD%93%E5%89%8D%E7%9B%B8%E5%85%B3%E6%80%A7%EF%BC%9A0.60%0A-+%E5%BD%93%E5%89%8D%E8%AF%81%E6%8D%AE%E7%AD%89%E7%BA%A7%EF%BC%9Adirect%0A%0A%23%23+%E5%88%A4%E6%96%AD%0A%0A-+%5B+%5D+%E6%8E%A8%E8%8D%90%E4%BF%9D%E7%95%99%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E5%90%88%E7%90%86%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E8%BF%87%E5%BA%A6%E6%8E%A8%E6%B5%8B%0A-+%5B+%5D+%E5%BA%94%E7%A7%BB%E8%87%B3%E5%8F%A6%E4%B8%80%E4%B8%AA%E6%A0%8F%E7%9B%AE%0A-+%5B+%5D+%E5%BB%BA%E8%AE%AE%E7%B2%BE%E8%AF%BB%E5%85%A8%E6%96%87%0A%0A%23%23+%E8%A1%A5%E5%85%85%E8%AF%B4%E6%98%8E%0A%0A"&gt;提交反馈&lt;/a&gt; · hep-ex, hep-ph, nucl-th&lt;/p&gt;</ns1:encoded>
+      <guid isPermaLink="false">arxiv:2602.05478:hepml-v1</guid>
+      <category>hep-ex</category>
+      <category>hep-ph</category>
+      <category>nucl-th</category>
+      <category>track:hep_application</category>
+      <category>重离子碰撞中重夸克输运系数计算</category>
+      <category>非平衡介质建模</category>
+      <pubDate>Tue, 11 Aug 2026 04:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Multitask Scanning Probe Microscopy</title>
+      <link>https://arxiv.org/abs/2608.09104</link>
+      <description>多任务高斯过程与主动学习可迁移至探测器扫描优化，但领域差异较大，需验证。</description>
+      <ns1:encoded>&lt;p&gt;&lt;strong&gt;栏目：&lt;/strong&gt;HEP 直接应用&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法：&lt;/strong&gt;多任务高斯过程主动学习&lt;/p&gt;&lt;p&gt;&lt;strong&gt;相关性：&lt;/strong&gt;0.60；&lt;strong&gt;证据等级：&lt;/strong&gt;transferable&lt;/p&gt;&lt;p&gt;&lt;strong&gt;初筛理由：&lt;/strong&gt;多任务高斯过程与主动学习可迁移至探测器扫描优化，但领域差异较大，需验证。&lt;/p&gt;&lt;p&gt;&lt;em&gt;本条目仅完成摘要级筛选。&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;a href="https://arxiv.org/abs/2608.09104"&gt;arXiv 页面&lt;/a&gt; · &lt;a href="https://github.com/quxnb/hepml-digest/issues/new?title=%5B%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%5D+2608.09104+Multitask+Scanning+Probe+Microscopy&amp;amp;body=%23%23+%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%0A%0A-+arXiv%EF%BC%9A%5B2608.09104%5D%28https%3A%2F%2Farxiv.org%2Fabs%2F2608.09104%29%0A-+%E6%A0%8F%E7%9B%AE%EF%BC%9AHEP+%E7%9B%B4%E6%8E%A5%E5%BA%94%E7%94%A8%0A-+%E5%BD%93%E5%89%8D%E7%9B%B8%E5%85%B3%E6%80%A7%EF%BC%9A0.60%0A-+%E5%BD%93%E5%89%8D%E8%AF%81%E6%8D%AE%E7%AD%89%E7%BA%A7%EF%BC%9Atransferable%0A%0A%23%23+%E5%88%A4%E6%96%AD%0A%0A-+%5B+%5D+%E6%8E%A8%E8%8D%90%E4%BF%9D%E7%95%99%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E5%90%88%E7%90%86%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E8%BF%87%E5%BA%A6%E6%8E%A8%E6%B5%8B%0A-+%5B+%5D+%E5%BA%94%E7%A7%BB%E8%87%B3%E5%8F%A6%E4%B8%80%E4%B8%AA%E6%A0%8F%E7%9B%AE%0A-+%5B+%5D+%E5%BB%BA%E8%AE%AE%E7%B2%BE%E8%AF%BB%E5%85%A8%E6%96%87%0A%0A%23%23+%E8%A1%A5%E5%85%85%E8%AF%B4%E6%98%8E%0A%0A"&gt;提交反馈&lt;/a&gt; · cond-mat.mtrl-sci, cs.LG, physics.ins-det&lt;/p&gt;</ns1:encoded>
+      <guid isPermaLink="false">arxiv:2608.09104:hepml-v1</guid>
+      <category>cond-mat.mtrl-sci</category>
+      <category>cs.LG</category>
+      <category>physics.ins-det</category>
+      <category>track:hep_application</category>
+      <category>多模态数据融合</category>
+      <category>异常检测</category>
+      <category>探测器扫描策略优化</category>
+      <pubDate>Tue, 11 Aug 2026 04:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Double Parton Scattering Effects on the Measurement of the W-Boson Mass</title>
+      <link>https://arxiv.org/abs/2411.04082</link>
+      <description>直接研究HEP关键测量，提供系统误差来源的物理解释，对理解CDF偏差有价值</description>
+      <ns1:encoded>&lt;p&gt;&lt;strong&gt;栏目：&lt;/strong&gt;HEP 直接应用&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法：&lt;/strong&gt;物理建模与蒙特卡罗模拟，研究双部分子散射对W玻色子质量测量的影响&lt;/p&gt;&lt;p&gt;&lt;strong&gt;相关性：&lt;/strong&gt;0.70；&lt;strong&gt;证据等级：&lt;/strong&gt;direct&lt;/p&gt;&lt;p&gt;&lt;strong&gt;初筛理由：&lt;/strong&gt;直接研究HEP关键测量，提供系统误差来源的物理解释，对理解CDF偏差有价值&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法总结：&lt;/strong&gt;论文研究双部分子散射（DPS）对W玻色子质量测量的影响。通过分析DPS中旁观者散射产生的额外缺失横向动量及其对总缺失横动量分布的改变，发现DPS效应可能导致CDF实验测量的W质量值偏高，从而为理解CDF-II与其他测量间的偏差提供物理解释。研究建议利用Z玻色子产生的类似分析进行交叉验证，以探究半硬QCD动力学。&lt;/p&gt;&lt;h4&gt;论文明确支持的结论&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;DPS效应通过旁观者散射贡献额外的缺失横向动量并改变总缺失横动量分布&lt;/li&gt;&lt;li&gt;DPS效应可能导致CDF-II测得的W玻色子质量偏大&lt;/li&gt;&lt;li&gt;该效应有助于解释CDF-II结果与标准模型预言及其他实验测量之间的差异&lt;/li&gt;&lt;/ul&gt;&lt;h4&gt;对高能实验物理的潜在帮助&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;将DPS纳入W质量测量的系统误差模型，改进LHC等实验的精度&lt;/li&gt;&lt;li&gt;通过Z玻色子事件中类似的分析验证DPS影响，并开发半硬QCD探针&lt;/li&gt;&lt;li&gt;用于约束部分子分布函数和多部分子相互作用模型，优化探测器校正&lt;/li&gt;&lt;/ul&gt;&lt;h4&gt;迁移风险&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;DPS模型依赖特定假设（如有效截面、空间分布），不同模型可能导致定量差异&lt;/li&gt;&lt;li&gt;模拟与真实数据之间的偏差未在论文中验证&lt;/li&gt;&lt;li&gt;CDF探测器几何和重建算法可能与其他实验不兼容&lt;/li&gt;&lt;li&gt;缺失横向动量标度、分辨率和校准的系统误差可能混淆DPS信号&lt;/li&gt;&lt;li&gt;未讨论负权事件、非微扰效应及探测器响应的对称性影响&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;strong&gt;最小验证方案：&lt;/strong&gt;选取Z玻色子产生事例，应用相同的DPS模型，预测缺失横向动量分布的改变，与实验数据对比。若DPS引入的偏移模式与W分析一致，则可佐证该解释。同时，在LHC公开的W质量测量中，重复类似模拟，检查DPS贡献的普适性。&lt;/p&gt;&lt;p&gt;&lt;a href="https://arxiv.org/abs/2411.04082"&gt;arXiv 页面&lt;/a&gt; · &lt;a href="https://github.com/quxnb/hepml-digest/issues/new?title=%5B%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%5D+2411.04082+Double+Parton+Scattering+Effects+on+the+Measurement+of+the+W-Boson+Mass&amp;amp;body=%23%23+%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%0A%0A-+arXiv%EF%BC%9A%5B2411.04082%5D%28https%3A%2F%2Farxiv.org%2Fabs%2F2411.04082%29%0A-+%E6%A0%8F%E7%9B%AE%EF%BC%9AHEP+%E7%9B%B4%E6%8E%A5%E5%BA%94%E7%94%A8%0A-+%E5%BD%93%E5%89%8D%E7%9B%B8%E5%85%B3%E6%80%A7%EF%BC%9A0.70%0A-+%E5%BD%93%E5%89%8D%E8%AF%81%E6%8D%AE%E7%AD%89%E7%BA%A7%EF%BC%9Adirect%0A%0A%23%23+%E5%88%A4%E6%96%AD%0A%0A-+%5B+%5D+%E6%8E%A8%E8%8D%90%E4%BF%9D%E7%95%99%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E5%90%88%E7%90%86%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E8%BF%87%E5%BA%A6%E6%8E%A8%E6%B5%8B%0A-+%5B+%5D+%E5%BA%94%E7%A7%BB%E8%87%B3%E5%8F%A6%E4%B8%80%E4%B8%AA%E6%A0%8F%E7%9B%AE%0A-+%5B+%5D+%E5%BB%BA%E8%AE%AE%E7%B2%BE%E8%AF%BB%E5%85%A8%E6%96%87%0A%0A%23%23+%E8%A1%A5%E5%85%85%E8%AF%B4%E6%98%8E%0A%0A"&gt;提交反馈&lt;/a&gt; · hep-ex, hep-ph&lt;/p&gt;</ns1:encoded>
+      <guid isPermaLink="false">arxiv:2411.04082:hepml-v1</guid>
+      <category>QCD背景建模</category>
+      <category>W玻色子质量测量</category>
+      <category>hep-ex</category>
+      <category>hep-ph</category>
+      <category>track:hep_application</category>
+      <category>系统误差处理</category>
+      <pubDate>Tue, 11 Aug 2026 04:00:00 +0000</pubDate>
+    </item>
     <item>
       <title>Gamma Neutron Radioactive Source Identification in Water Cherenkov Detectors</title>
       <link>https://arxiv.org/abs/2608.06518</link>
