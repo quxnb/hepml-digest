@@ -8,7 +8,87 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Wed, 12 Aug 2026 02:47:09 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 13 Aug 2026 02:50:53 +0000</lastBuildDate>
+    <item>
+      <title>Goodness-of-Fit Tests and Calibration Machine-Learning Algorithms for Logistic Regression with Sparse Data</title>
+      <link>https://arxiv.org/abs/2608.11140</link>
+      <description>逻辑回归拟合优度和校准方法可迁移至HEP分类器评估，但非直接HEP应用，证据等级为可迁移。</description>
+      <ns1:encoded>&lt;p&gt;&lt;strong&gt;栏目：&lt;/strong&gt;方法雷达&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法：&lt;/strong&gt;比较约30种统计检验和机器学习校准算法，包括卡方、Hosmer-Lemeshow变体、标准化Pearson统计量、平滑方法、校准机器学习及bootstrap程序&lt;/p&gt;&lt;p&gt;&lt;strong&gt;相关性：&lt;/strong&gt;0.60；&lt;strong&gt;证据等级：&lt;/strong&gt;transferable&lt;/p&gt;&lt;p&gt;&lt;strong&gt;初筛理由：&lt;/strong&gt;逻辑回归拟合优度和校准方法可迁移至HEP分类器评估，但非直接HEP应用，证据等级为可迁移。&lt;/p&gt;&lt;p&gt;&lt;em&gt;本条目仅完成摘要级筛选。&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;a href="https://arxiv.org/abs/2608.11140"&gt;arXiv 页面&lt;/a&gt; · &lt;a href="https://github.com/quxnb/hepml-digest/issues/new?title=%5B%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%5D+2608.11140+Goodness-of-Fit+Tests+and+Calibration+Machine-Learning+Algorithms+for+Logistic+R&amp;amp;body=%23%23+%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%0A%0A-+arXiv%EF%BC%9A%5B2608.11140%5D%28https%3A%2F%2Farxiv.org%2Fabs%2F2608.11140%29%0A-+%E6%A0%8F%E7%9B%AE%EF%BC%9A%E6%96%B9%E6%B3%95%E9%9B%B7%E8%BE%BE%0A-+%E5%BD%93%E5%89%8D%E7%9B%B8%E5%85%B3%E6%80%A7%EF%BC%9A0.60%0A-+%E5%BD%93%E5%89%8D%E8%AF%81%E6%8D%AE%E7%AD%89%E7%BA%A7%EF%BC%9Atransferable%0A%0A%23%23+%E5%88%A4%E6%96%AD%0A%0A-+%5B+%5D+%E6%8E%A8%E8%8D%90%E4%BF%9D%E7%95%99%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E5%90%88%E7%90%86%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E8%BF%87%E5%BA%A6%E6%8E%A8%E6%B5%8B%0A-+%5B+%5D+%E5%BA%94%E7%A7%BB%E8%87%B3%E5%8F%A6%E4%B8%80%E4%B8%AA%E6%A0%8F%E7%9B%AE%0A-+%5B+%5D+%E5%BB%BA%E8%AE%AE%E7%B2%BE%E8%AF%BB%E5%85%A8%E6%96%87%0A%0A%23%23+%E8%A1%A5%E5%85%85%E8%AF%B4%E6%98%8E%0A%0A"&gt;提交反馈&lt;/a&gt; · stat.AP, stat.ME, stat.ML&lt;/p&gt;</ns1:encoded>
+      <guid isPermaLink="false">arxiv:2608.11140:hepml-v1</guid>
+      <category>stat.AP</category>
+      <category>stat.ME</category>
+      <category>stat.ML</category>
+      <category>track:method_radar</category>
+      <category>分类器校准</category>
+      <category>模型拟合优度评估</category>
+      <category>系统误差处理</category>
+      <pubDate>Wed, 12 Aug 2026 04:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>TSCoNet: A Two-Stage Copula CNN-LSTM for Uncertainty-Aware Spatio-Temporal Forecasting</title>
+      <link>https://arxiv.org/abs/2607.10410</link>
+      <description>方法强调在不牺牲点预测精度下提供校准的不确定性区间，对HEP中系统误差处理有启发，但领域差异较大。</description>
+      <ns1:encoded>&lt;p&gt;&lt;strong&gt;栏目：&lt;/strong&gt;方法雷达&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法：&lt;/strong&gt;两阶段卷积递归网络与高斯Copula结合，用于时空预测中的不确定性量化&lt;/p&gt;&lt;p&gt;&lt;strong&gt;相关性：&lt;/strong&gt;0.60；&lt;strong&gt;证据等级：&lt;/strong&gt;speculative&lt;/p&gt;&lt;p&gt;&lt;strong&gt;初筛理由：&lt;/strong&gt;方法强调在不牺牲点预测精度下提供校准的不确定性区间，对HEP中系统误差处理有启发，但领域差异较大。&lt;/p&gt;&lt;p&gt;&lt;em&gt;本条目仅完成摘要级筛选。&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;a href="https://arxiv.org/abs/2607.10410"&gt;arXiv 页面&lt;/a&gt; · &lt;a href="https://github.com/quxnb/hepml-digest/issues/new?title=%5B%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%5D+2607.10410+TSCoNet%3A+A+Two-Stage+Copula+CNN-LSTM+for+Uncertainty-Aware+Spatio-Temporal+Forec&amp;amp;body=%23%23+%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%0A%0A-+arXiv%EF%BC%9A%5B2607.10410%5D%28https%3A%2F%2Farxiv.org%2Fabs%2F2607.10410%29%0A-+%E6%A0%8F%E7%9B%AE%EF%BC%9A%E6%96%B9%E6%B3%95%E9%9B%B7%E8%BE%BE%0A-+%E5%BD%93%E5%89%8D%E7%9B%B8%E5%85%B3%E6%80%A7%EF%BC%9A0.60%0A-+%E5%BD%93%E5%89%8D%E8%AF%81%E6%8D%AE%E7%AD%89%E7%BA%A7%EF%BC%9Aspeculative%0A%0A%23%23+%E5%88%A4%E6%96%AD%0A%0A-+%5B+%5D+%E6%8E%A8%E8%8D%90%E4%BF%9D%E7%95%99%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E5%90%88%E7%90%86%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E8%BF%87%E5%BA%A6%E6%8E%A8%E6%B5%8B%0A-+%5B+%5D+%E5%BA%94%E7%A7%BB%E8%87%B3%E5%8F%A6%E4%B8%80%E4%B8%AA%E6%A0%8F%E7%9B%AE%0A-+%5B+%5D+%E5%BB%BA%E8%AE%AE%E7%B2%BE%E8%AF%BB%E5%85%A8%E6%96%87%0A%0A%23%23+%E8%A1%A5%E5%85%85%E8%AF%B4%E6%98%8E%0A%0A"&gt;提交反馈&lt;/a&gt; · cs.LG, stat.ML&lt;/p&gt;</ns1:encoded>
+      <guid isPermaLink="false">arxiv:2607.10410:hepml-v1</guid>
+      <category>cs.LG</category>
+      <category>stat.ML</category>
+      <category>track:method_radar</category>
+      <category>不确定度量化</category>
+      <category>系统误差处理</category>
+      <pubDate>Wed, 12 Aug 2026 04:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>TauPolaris: reconstructing tau lepton polarimetric vectors with conditional normalizing flows</title>
+      <link>https://arxiv.org/abs/2608.10961</link>
+      <description>直接在LHC模拟数据上验证，改善自旋观测量分辨率，用于CP破坏和纠缠探测，高相关</description>
+      <ns1:encoded>&lt;p&gt;&lt;strong&gt;栏目：&lt;/strong&gt;HEP 直接应用&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法：&lt;/strong&gt;条件归一化流&lt;/p&gt;&lt;p&gt;&lt;strong&gt;相关性：&lt;/strong&gt;0.90；&lt;strong&gt;证据等级：&lt;/strong&gt;direct&lt;/p&gt;&lt;p&gt;&lt;strong&gt;初筛理由：&lt;/strong&gt;直接在LHC模拟数据上验证，改善自旋观测量分辨率，用于CP破坏和纠缠探测，高相关&lt;/p&gt;&lt;p&gt;&lt;em&gt;本条目仅完成摘要级筛选。&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;a href="https://arxiv.org/abs/2608.10961"&gt;arXiv 页面&lt;/a&gt; · &lt;a href="https://github.com/quxnb/hepml-digest/issues/new?title=%5B%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%5D+2608.10961+TauPolaris%3A+reconstructing+tau+lepton+polarimetric+vectors+with+conditional+norm&amp;amp;body=%23%23+%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%0A%0A-+arXiv%EF%BC%9A%5B2608.10961%5D%28https%3A%2F%2Farxiv.org%2Fabs%2F2608.10961%29%0A-+%E6%A0%8F%E7%9B%AE%EF%BC%9AHEP+%E7%9B%B4%E6%8E%A5%E5%BA%94%E7%94%A8%0A-+%E5%BD%93%E5%89%8D%E7%9B%B8%E5%85%B3%E6%80%A7%EF%BC%9A0.90%0A-+%E5%BD%93%E5%89%8D%E8%AF%81%E6%8D%AE%E7%AD%89%E7%BA%A7%EF%BC%9Adirect%0A%0A%23%23+%E5%88%A4%E6%96%AD%0A%0A-+%5B+%5D+%E6%8E%A8%E8%8D%90%E4%BF%9D%E7%95%99%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E5%90%88%E7%90%86%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E8%BF%87%E5%BA%A6%E6%8E%A8%E6%B5%8B%0A-+%5B+%5D+%E5%BA%94%E7%A7%BB%E8%87%B3%E5%8F%A6%E4%B8%80%E4%B8%AA%E6%A0%8F%E7%9B%AE%0A-+%5B+%5D+%E5%BB%BA%E8%AE%AE%E7%B2%BE%E8%AF%BB%E5%85%A8%E6%96%87%0A%0A%23%23+%E8%A1%A5%E5%85%85%E8%AF%B4%E6%98%8E%0A%0A"&gt;提交反馈&lt;/a&gt; · hep-ex, hep-ph&lt;/p&gt;</ns1:encoded>
+      <guid isPermaLink="false">arxiv:2608.10961:hepml-v1</guid>
+      <category>hep-ex</category>
+      <category>hep-ph</category>
+      <category>tau轻子重建</category>
+      <category>track:hep_application</category>
+      <category>自旋观测量重建</category>
+      <category>飞行中微子动量推断</category>
+      <pubDate>Wed, 12 Aug 2026 04:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Search for a resonance in events with four top quarks decaying into two leptons and jets in proton-proton collisions</title>
+      <link>https://arxiv.org/abs/2608.10148</link>
+      <description>直接针对HEP的共振搜索，方法包括机器学习标记和变量喷注，对相关分析有参考价值，但未提出新统计方法。</description>
+      <ns1:encoded>&lt;p&gt;&lt;strong&gt;栏目：&lt;/strong&gt;HEP 直接应用&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法：&lt;/strong&gt;机器学习用于jet分类，数据驱动背景估计，变量喷注重建&lt;/p&gt;&lt;p&gt;&lt;strong&gt;相关性：&lt;/strong&gt;0.60；&lt;strong&gt;证据等级：&lt;/strong&gt;direct&lt;/p&gt;&lt;p&gt;&lt;strong&gt;初筛理由：&lt;/strong&gt;直接针对HEP的共振搜索，方法包括机器学习标记和变量喷注，对相关分析有参考价值，但未提出新统计方法。&lt;/p&gt;&lt;p&gt;&lt;em&gt;本条目仅完成摘要级筛选。&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;a href="https://arxiv.org/abs/2608.10148"&gt;arXiv 页面&lt;/a&gt; · &lt;a href="https://github.com/quxnb/hepml-digest/issues/new?title=%5B%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%5D+2608.10148+Search+for+a+resonance+in+events+with+four+top+quarks+decaying+into+two+leptons+&amp;amp;body=%23%23+%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%0A%0A-+arXiv%EF%BC%9A%5B2608.10148%5D%28https%3A%2F%2Farxiv.org%2Fabs%2F2608.10148%29%0A-+%E6%A0%8F%E7%9B%AE%EF%BC%9AHEP+%E7%9B%B4%E6%8E%A5%E5%BA%94%E7%94%A8%0A-+%E5%BD%93%E5%89%8D%E7%9B%B8%E5%85%B3%E6%80%A7%EF%BC%9A0.60%0A-+%E5%BD%93%E5%89%8D%E8%AF%81%E6%8D%AE%E7%AD%89%E7%BA%A7%EF%BC%9Adirect%0A%0A%23%23+%E5%88%A4%E6%96%AD%0A%0A-+%5B+%5D+%E6%8E%A8%E8%8D%90%E4%BF%9D%E7%95%99%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E5%90%88%E7%90%86%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E8%BF%87%E5%BA%A6%E6%8E%A8%E6%B5%8B%0A-+%5B+%5D+%E5%BA%94%E7%A7%BB%E8%87%B3%E5%8F%A6%E4%B8%80%E4%B8%AA%E6%A0%8F%E7%9B%AE%0A-+%5B+%5D+%E5%BB%BA%E8%AE%AE%E7%B2%BE%E8%AF%BB%E5%85%A8%E6%96%87%0A%0A%23%23+%E8%A1%A5%E5%85%85%E8%AF%B4%E6%98%8E%0A%0A"&gt;提交反馈&lt;/a&gt; · hep-ex&lt;/p&gt;</ns1:encoded>
+      <guid isPermaLink="false">arxiv:2608.10148:hepml-v1</guid>
+      <category>hep-ex</category>
+      <category>track:hep_application</category>
+      <category>喷注重建</category>
+      <category>背景估计</category>
+      <category>重共振搜索</category>
+      <category>顶夸克标记</category>
+      <pubDate>Wed, 12 Aug 2026 04:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Particle tracking at high luminosities using a novel reconstruction approach</title>
+      <link>https://arxiv.org/abs/2608.10900</link>
+      <description>论文聚焦于CMS实验高亮度下的径迹重建，使用机器学习架构，直接在HEP模拟数据上验证，高度相关。</description>
+      <ns1:encoded>&lt;p&gt;&lt;strong&gt;栏目：&lt;/strong&gt;HEP 直接应用&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法：&lt;/strong&gt;基于机器学习的轨迹重建算法&lt;/p&gt;&lt;p&gt;&lt;strong&gt;相关性：&lt;/strong&gt;0.95；&lt;strong&gt;证据等级：&lt;/strong&gt;direct&lt;/p&gt;&lt;p&gt;&lt;strong&gt;初筛理由：&lt;/strong&gt;论文聚焦于CMS实验高亮度下的径迹重建，使用机器学习架构，直接在HEP模拟数据上验证，高度相关。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法总结：&lt;/strong&gt;论文提出一种针对CMS Phase2外径迹探测器在高亮度LHC环境下的新型径迹重建算法。该算法利用机器学习架构从高精度三维位置数据中识别每个径迹对应的击中点，并拟合带电粒子的运动学参数（横动量、赝快度、方位角）。研究使用Pythia8与Geant4在等效CMS外径迹几何下模拟高亮度硬相互作用样本进行验证，评估指标包括重建效率、假径迹率和参数分辨率。与传统方法比较，该算法展现出优异的效率和分辨率，同时保持极低的假径迹率。摘要未给出具体数值验证结果。&lt;/p&gt;&lt;h4&gt;论文明确支持的结论&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;提出了一种适用于CMS Phase2高亮度LHC的基于机器学习的新型径迹重建算法。&lt;/li&gt;&lt;li&gt;算法能够识别径迹对应的击中点并确定运动学参数（pt、eta0、phi0）。&lt;/li&gt;&lt;li&gt;在Pythia8和Geant4模拟的CMS外径迹等效几何样本上进行了性能验证。&lt;/li&gt;&lt;li&gt;与传统方法相比，该算法在效率、分辨率方面表现优异，且假径迹率极低。&lt;/li&gt;&lt;/ul&gt;&lt;h4&gt;对高能实验物理的潜在帮助&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;可作为CMS Phase2高亮度LHC径迹重建的候选算法，处理高堆叠密度下的轨迹识别。&lt;/li&gt;&lt;li&gt;机器学习架构可能加速径迹重建，适用于在线触发或高吞吐量离线处理。&lt;/li&gt;&lt;li&gt;方法思想可迁移至其他对撞机实验（如ATLAS、Belle II）的径迹重建任务。&lt;/li&gt;&lt;li&gt;可用于探测器设计阶段的性能评估，辅助优化几何布局。&lt;/li&gt;&lt;/ul&gt;&lt;h4&gt;迁移风险&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;仅在模拟数据上验证，未涉及真实数据，可能存在simulation-to-data shift。&lt;/li&gt;&lt;li&gt;摘要未报告系统误差、负权事件、探测器噪声或校准误差的影响。&lt;/li&gt;&lt;li&gt;未提及模型对探测器几何偏差、材料描述不确定性的稳健性。&lt;/li&gt;&lt;li&gt;缺少推理延迟和计算资源的具体评估，实际在线部署可行性未知。&lt;/li&gt;&lt;li&gt;性能比较基于特定模拟设置，迁移到不同亮度或探测器配置时可能下降。&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;strong&gt;最小验证方案：&lt;/strong&gt;在公开的CMS Phase2模拟样本或未来真实试验束数据上复现算法，对比标准径迹重建（如Combinatorial Kalman Filter）的效率、假率和分辨率；引入探测器噪声、对齐误差和pile-up变化进行系统扫描；测量推理延迟与内存占用；评估模拟与数据间的性能差异并校正。&lt;/p&gt;&lt;p&gt;&lt;a href="https://arxiv.org/abs/2608.10900"&gt;arXiv 页面&lt;/a&gt; · &lt;a href="https://github.com/quxnb/hepml-digest/issues/new?title=%5B%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%5D+2608.10900+Particle+tracking+at+high+luminosities+using+a+novel+reconstruction+approach&amp;amp;body=%23%23+%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%0A%0A-+arXiv%EF%BC%9A%5B2608.10900%5D%28https%3A%2F%2Farxiv.org%2Fabs%2F2608.10900%29%0A-+%E6%A0%8F%E7%9B%AE%EF%BC%9AHEP+%E7%9B%B4%E6%8E%A5%E5%BA%94%E7%94%A8%0A-+%E5%BD%93%E5%89%8D%E7%9B%B8%E5%85%B3%E6%80%A7%EF%BC%9A0.95%0A-+%E5%BD%93%E5%89%8D%E8%AF%81%E6%8D%AE%E7%AD%89%E7%BA%A7%EF%BC%9Adirect%0A%0A%23%23+%E5%88%A4%E6%96%AD%0A%0A-+%5B+%5D+%E6%8E%A8%E8%8D%90%E4%BF%9D%E7%95%99%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E5%90%88%E7%90%86%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E8%BF%87%E5%BA%A6%E6%8E%A8%E6%B5%8B%0A-+%5B+%5D+%E5%BA%94%E7%A7%BB%E8%87%B3%E5%8F%A6%E4%B8%80%E4%B8%AA%E6%A0%8F%E7%9B%AE%0A-+%5B+%5D+%E5%BB%BA%E8%AE%AE%E7%B2%BE%E8%AF%BB%E5%85%A8%E6%96%87%0A%0A%23%23+%E8%A1%A5%E5%85%85%E8%AF%B4%E6%98%8E%0A%0A"&gt;提交反馈&lt;/a&gt; · hep-ex&lt;/p&gt;</ns1:encoded>
+      <guid isPermaLink="false">arxiv:2608.10900:hepml-v1</guid>
+      <category>hep-ex</category>
+      <category>track:hep_application</category>
+      <category>径迹重建</category>
+      <pubDate>Wed, 12 Aug 2026 04:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Particle Identification at Future Colliders</title>
+      <link>https://arxiv.org/abs/2608.11028</link>
+      <description>直接涉及HEP中PID技术，对探测器设计和粒子鉴别很有参考价值，但非具体方法，需深入阅读其中引用的技术细节</description>
+      <ns1:encoded>&lt;p&gt;&lt;strong&gt;栏目：&lt;/strong&gt;HEP 直接应用&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法：&lt;/strong&gt;综述性论文，探讨多种粒子鉴别（PID）技术，包括Cherenkov探测器、漂移室计数、硅传感器定时等&lt;/p&gt;&lt;p&gt;&lt;strong&gt;相关性：&lt;/strong&gt;0.80；&lt;strong&gt;证据等级：&lt;/strong&gt;direct&lt;/p&gt;&lt;p&gt;&lt;strong&gt;初筛理由：&lt;/strong&gt;直接涉及HEP中PID技术，对探测器设计和粒子鉴别很有参考价值，但非具体方法，需深入阅读其中引用的技术细节&lt;/p&gt;&lt;p&gt;&lt;em&gt;本条目仅完成摘要级筛选。&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;a href="https://arxiv.org/abs/2608.11028"&gt;arXiv 页面&lt;/a&gt; · &lt;a href="https://github.com/quxnb/hepml-digest/issues/new?title=%5B%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%5D+2608.11028+Particle+Identification+at+Future+Colliders&amp;amp;body=%23%23+%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%0A%0A-+arXiv%EF%BC%9A%5B2608.11028%5D%28https%3A%2F%2Farxiv.org%2Fabs%2F2608.11028%29%0A-+%E6%A0%8F%E7%9B%AE%EF%BC%9AHEP+%E7%9B%B4%E6%8E%A5%E5%BA%94%E7%94%A8%0A-+%E5%BD%93%E5%89%8D%E7%9B%B8%E5%85%B3%E6%80%A7%EF%BC%9A0.80%0A-+%E5%BD%93%E5%89%8D%E8%AF%81%E6%8D%AE%E7%AD%89%E7%BA%A7%EF%BC%9Adirect%0A%0A%23%23+%E5%88%A4%E6%96%AD%0A%0A-+%5B+%5D+%E6%8E%A8%E8%8D%90%E4%BF%9D%E7%95%99%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E5%90%88%E7%90%86%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E8%BF%87%E5%BA%A6%E6%8E%A8%E6%B5%8B%0A-+%5B+%5D+%E5%BA%94%E7%A7%BB%E8%87%B3%E5%8F%A6%E4%B8%80%E4%B8%AA%E6%A0%8F%E7%9B%AE%0A-+%5B+%5D+%E5%BB%BA%E8%AE%AE%E7%B2%BE%E8%AF%BB%E5%85%A8%E6%96%87%0A%0A%23%23+%E8%A1%A5%E5%85%85%E8%AF%B4%E6%98%8E%0A%0A"&gt;提交反馈&lt;/a&gt; · hep-ex&lt;/p&gt;</ns1:encoded>
+      <guid isPermaLink="false">arxiv:2608.11028:hepml-v1</guid>
+      <category>hep-ex</category>
+      <category>track:hep_application</category>
+      <category>探测器设计</category>
+      <category>粒子鉴别</category>
+      <category>触发系统</category>
+      <pubDate>Wed, 12 Aug 2026 04:00:00 +0000</pubDate>
+    </item>
     <item>
       <title>In-Context Density Estimation for Tabular Data</title>
       <link>https://arxiv.org/abs/2608.09348</link>
