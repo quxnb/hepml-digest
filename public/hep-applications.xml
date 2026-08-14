@@ -8,7 +8,95 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Thu, 13 Aug 2026 02:50:53 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 14 Aug 2026 02:52:43 +0000</lastBuildDate>
+    <item>
+      <title>Robust Quantum Machine Learning for Collider Event Selection under Detector Variability</title>
+      <link>https://arxiv.org/abs/2608.11330</link>
+      <description>论文直接研究HEP事件选择，但量子方法尚未在真实探测系统噪声下验证，仅有模拟偏移。</description>
+      <ns1:encoded>&lt;p&gt;&lt;strong&gt;栏目：&lt;/strong&gt;HEP 直接应用&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法：&lt;/strong&gt;量子自编码器、量子数据重载分类器，与经典变分自编码器及多层感知机对比&lt;/p&gt;&lt;p&gt;&lt;strong&gt;相关性：&lt;/strong&gt;0.75；&lt;strong&gt;证据等级：&lt;/strong&gt;transferable&lt;/p&gt;&lt;p&gt;&lt;strong&gt;初筛理由：&lt;/strong&gt;论文直接研究HEP事件选择，但量子方法尚未在真实探测系统噪声下验证，仅有模拟偏移。&lt;/p&gt;&lt;p&gt;&lt;em&gt;本条目仅完成摘要级筛选。&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;a href="https://arxiv.org/abs/2608.11330"&gt;arXiv 页面&lt;/a&gt; · &lt;a href="https://github.com/quxnb/hepml-digest/issues/new?title=%5B%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%5D+2608.11330+Robust+Quantum+Machine+Learning+for+Collider+Event+Selection+under+Detector+Vari&amp;amp;body=%23%23+%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%0A%0A-+arXiv%EF%BC%9A%5B2608.11330%5D%28https%3A%2F%2Farxiv.org%2Fabs%2F2608.11330%29%0A-+%E6%A0%8F%E7%9B%AE%EF%BC%9AHEP+%E7%9B%B4%E6%8E%A5%E5%BA%94%E7%94%A8%0A-+%E5%BD%93%E5%89%8D%E7%9B%B8%E5%85%B3%E6%80%A7%EF%BC%9A0.75%0A-+%E5%BD%93%E5%89%8D%E8%AF%81%E6%8D%AE%E7%AD%89%E7%BA%A7%EF%BC%9Atransferable%0A%0A%23%23+%E5%88%A4%E6%96%AD%0A%0A-+%5B+%5D+%E6%8E%A8%E8%8D%90%E4%BF%9D%E7%95%99%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E5%90%88%E7%90%86%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E8%BF%87%E5%BA%A6%E6%8E%A8%E6%B5%8B%0A-+%5B+%5D+%E5%BA%94%E7%A7%BB%E8%87%B3%E5%8F%A6%E4%B8%80%E4%B8%AA%E6%A0%8F%E7%9B%AE%0A-+%5B+%5D+%E5%BB%BA%E8%AE%AE%E7%B2%BE%E8%AF%BB%E5%85%A8%E6%96%87%0A%0A%23%23+%E8%A1%A5%E5%85%85%E8%AF%B4%E6%98%8E%0A%0A"&gt;提交反馈&lt;/a&gt; · hep-ex, hep-ph, quant-ph&lt;/p&gt;</ns1:encoded>
+      <guid isPermaLink="false">arxiv:2608.11330:hepml-v1</guid>
+      <category>hep-ex</category>
+      <category>hep-ph</category>
+      <category>quant-ph</category>
+      <category>track:hep_application</category>
+      <category>事件选择</category>
+      <category>异常检测</category>
+      <category>触发</category>
+      <pubDate>Thu, 13 Aug 2026 04:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>End-to-end Differentiable Calibration and Reconstruction for Optical Particle Detectors</title>
+      <link>https://arxiv.org/abs/2602.24129</link>
+      <description>直接在光学粒子探测器上验证，统一了模拟、标定和重建，性能优于传统方法。</description>
+      <ns1:encoded>&lt;p&gt;&lt;strong&gt;栏目：&lt;/strong&gt;HEP 直接应用&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法：&lt;/strong&gt;端到端可微分模拟器，基于梯度优化的标定与重建&lt;/p&gt;&lt;p&gt;&lt;strong&gt;相关性：&lt;/strong&gt;0.95；&lt;strong&gt;证据等级：&lt;/strong&gt;direct&lt;/p&gt;&lt;p&gt;&lt;strong&gt;初筛理由：&lt;/strong&gt;直接在光学粒子探测器上验证，统一了模拟、标定和重建，性能优于传统方法。&lt;/p&gt;&lt;p&gt;&lt;em&gt;本条目仅完成摘要级筛选。&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;a href="https://arxiv.org/abs/2602.24129"&gt;arXiv 页面&lt;/a&gt; · &lt;a href="https://github.com/quxnb/hepml-digest/issues/new?title=%5B%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%5D+2602.24129+End-to-end+Differentiable+Calibration+and+Reconstruction+for+Optical+Particle+De&amp;amp;body=%23%23+%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%0A%0A-+arXiv%EF%BC%9A%5B2602.24129%5D%28https%3A%2F%2Farxiv.org%2Fabs%2F2602.24129%29%0A-+%E6%A0%8F%E7%9B%AE%EF%BC%9AHEP+%E7%9B%B4%E6%8E%A5%E5%BA%94%E7%94%A8%0A-+%E5%BD%93%E5%89%8D%E7%9B%B8%E5%85%B3%E6%80%A7%EF%BC%9A0.95%0A-+%E5%BD%93%E5%89%8D%E8%AF%81%E6%8D%AE%E7%AD%89%E7%BA%A7%EF%BC%9Adirect%0A%0A%23%23+%E5%88%A4%E6%96%AD%0A%0A-+%5B+%5D+%E6%8E%A8%E8%8D%90%E4%BF%9D%E7%95%99%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E5%90%88%E7%90%86%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E8%BF%87%E5%BA%A6%E6%8E%A8%E6%B5%8B%0A-+%5B+%5D+%E5%BA%94%E7%A7%BB%E8%87%B3%E5%8F%A6%E4%B8%80%E4%B8%AA%E6%A0%8F%E7%9B%AE%0A-+%5B+%5D+%E5%BB%BA%E8%AE%AE%E7%B2%BE%E8%AF%BB%E5%85%A8%E6%96%87%0A%0A%23%23+%E8%A1%A5%E5%85%85%E8%AF%B4%E6%98%8E%0A%0A"&gt;提交反馈&lt;/a&gt; · cs.LG, hep-ex, physics.ins-det&lt;/p&gt;</ns1:encoded>
+      <guid isPermaLink="false">arxiv:2602.24129:hepml-v1</guid>
+      <category>cs.LG</category>
+      <category>hep-ex</category>
+      <category>physics.ins-det</category>
+      <category>track:hep_application</category>
+      <category>快速模拟</category>
+      <category>探测器标定</category>
+      <category>粒子重建</category>
+      <pubDate>Thu, 13 Aug 2026 04:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Inverse Autoregressive Flows for Zero Degree Calorimeter fast simulation</title>
+      <link>https://arxiv.org/abs/2512.20346</link>
+      <description>论文直接针对HEP实验（ALICE ZDC）的探测器快模拟，方法有效且性能优越，高度相关。</description>
+      <ns1:encoded>&lt;p&gt;&lt;strong&gt;栏目：&lt;/strong&gt;HEP 直接应用&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法：&lt;/strong&gt;基于逆自回归流的生成模型，结合物理启发的损失函数和输出变异性缩放机制，采用教师-学生框架进行快速模拟&lt;/p&gt;&lt;p&gt;&lt;strong&gt;相关性：&lt;/strong&gt;0.95；&lt;strong&gt;证据等级：&lt;/strong&gt;direct&lt;/p&gt;&lt;p&gt;&lt;strong&gt;初筛理由：&lt;/strong&gt;论文直接针对HEP实验（ALICE ZDC）的探测器快模拟，方法有效且性能优越，高度相关。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法总结：&lt;/strong&gt;论文提出一种基于物理知识嵌入的快速模拟方法，针对ALICE零度量能器（ZDC）。方法在教师-学生生成框架中使用逆自回归流（IAF），引入新颖损失函数和基于输出变异性的缩放机制，以更准确表示探测器输出中粒子簇射的空间分布与形态，并减少罕见伪影对训练的影响。作者报告该方法优于经典数据驱动模型同化，且比现有ZDC模拟文献中的归一化流实现快421倍。&lt;/p&gt;&lt;h4&gt;论文明确支持的结论&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;提出一种新的损失函数和基于输出变异性的缩放机制。&lt;/li&gt;&lt;li&gt;该方法增强了模型表示探测器输出中粒子簇射空间分布和形态的能力。&lt;/li&gt;&lt;li&gt;该方法减轻了罕见伪影对训练的影响。&lt;/li&gt;&lt;li&gt;在教师-学生生成框架中使用归一化流。&lt;/li&gt;&lt;li&gt;该方法优于经典数据驱动模型同化。&lt;/li&gt;&lt;li&gt;所得模型比现有ZDC模拟文献中的归一化流实现快421倍。&lt;/li&gt;&lt;/ul&gt;&lt;h4&gt;对高能实验物理的潜在帮助&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;可迁移为ALICE ZDC的快速模拟替代方案，用于生成粒子簇射响应，加速模拟样本产生。&lt;/li&gt;&lt;li&gt;可尝试用于其他量能器或探测器组件的快速生成，通过嵌入领域知识提高分布拟合和外推能力。&lt;/li&gt;&lt;li&gt;速度提升可能支持大规模蒙特卡洛样本生成，减少计算资源消耗。&lt;/li&gt;&lt;/ul&gt;&lt;h4&gt;迁移风险&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;摘要未报告与完整Geant4模拟或实验数据在关键物理分布上的一致性，存在模拟到数据偏移风险。&lt;/li&gt;&lt;li&gt;未涉及负权事件、探测器几何变化、校准和系统不确定性等实际HEP分析需求。&lt;/li&gt;&lt;li&gt;输出变异性缩放可能改变低概率尾部或罕见物理过程，需验证对物理结果的影响。&lt;/li&gt;&lt;li&gt;教师-学生框架可能继承教师模型的偏差，未量化不确定性。&lt;/li&gt;&lt;li&gt;仅报告相对速度，未给出绝对推理延迟或吞吐量，能否满足在线或离线需求需验证。&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;strong&gt;最小验证方案：&lt;/strong&gt;在ALICE ZDC模拟数据上，将生成样本与完整仿真（如Geant4）和/或实验数据进行比较：比较簇射形状、能量响应和位置分布；检验不同入射粒子类型、能量和位置的泛化能力；评估罕见事件覆盖和尾部一致性；量化推理延迟与吞吐；开展下游物理分析（如ZDC相关测量）并检验系统不确定性传递。&lt;/p&gt;&lt;p&gt;&lt;a href="https://arxiv.org/abs/2512.20346"&gt;arXiv 页面&lt;/a&gt; · &lt;a href="https://github.com/quxnb/hepml-digest/issues/new?title=%5B%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%5D+2512.20346+Inverse+Autoregressive+Flows+for+Zero+Degree+Calorimeter+fast+simulation&amp;amp;body=%23%23+%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%0A%0A-+arXiv%EF%BC%9A%5B2512.20346%5D%28https%3A%2F%2Farxiv.org%2Fabs%2F2512.20346%29%0A-+%E6%A0%8F%E7%9B%AE%EF%BC%9AHEP+%E7%9B%B4%E6%8E%A5%E5%BA%94%E7%94%A8%0A-+%E5%BD%93%E5%89%8D%E7%9B%B8%E5%85%B3%E6%80%A7%EF%BC%9A0.95%0A-+%E5%BD%93%E5%89%8D%E8%AF%81%E6%8D%AE%E7%AD%89%E7%BA%A7%EF%BC%9Adirect%0A%0A%23%23+%E5%88%A4%E6%96%AD%0A%0A-+%5B+%5D+%E6%8E%A8%E8%8D%90%E4%BF%9D%E7%95%99%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E5%90%88%E7%90%86%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E8%BF%87%E5%BA%A6%E6%8E%A8%E6%B5%8B%0A-+%5B+%5D+%E5%BA%94%E7%A7%BB%E8%87%B3%E5%8F%A6%E4%B8%80%E4%B8%AA%E6%A0%8F%E7%9B%AE%0A-+%5B+%5D+%E5%BB%BA%E8%AE%AE%E7%B2%BE%E8%AF%BB%E5%85%A8%E6%96%87%0A%0A%23%23+%E8%A1%A5%E5%85%85%E8%AF%B4%E6%98%8E%0A%0A"&gt;提交反馈&lt;/a&gt; · cs.LG, hep-ex, physics.ins-det&lt;/p&gt;</ns1:encoded>
+      <guid isPermaLink="false">arxiv:2512.20346:hepml-v1</guid>
+      <category>cs.LG</category>
+      <category>hep-ex</category>
+      <category>physics.ins-det</category>
+      <category>track:hep_application</category>
+      <category>探测器快模拟</category>
+      <category>粒子簇射空间分布建模</category>
+      <category>量能器响应模拟</category>
+      <pubDate>Thu, 13 Aug 2026 04:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Analytically Consistent Reconstruction of Finite Data Using Pad\'e Sequences</title>
+      <link>https://arxiv.org/abs/2608.11262</link>
+      <description>方法处理有限数据解析重建，对谱函数、散射振幅等HEP数据建模具有迁移价值，但未直接用于HEP任务。</description>
+      <ns1:encoded>&lt;p&gt;&lt;strong&gt;栏目：&lt;/strong&gt;HEP 直接应用&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法：&lt;/strong&gt;Padé序列与Froissart doublet动力学分析的迭代重建算法&lt;/p&gt;&lt;p&gt;&lt;strong&gt;相关性：&lt;/strong&gt;0.75；&lt;strong&gt;证据等级：&lt;/strong&gt;transferable&lt;/p&gt;&lt;p&gt;&lt;strong&gt;初筛理由：&lt;/strong&gt;方法处理有限数据解析重建，对谱函数、散射振幅等HEP数据建模具有迁移价值，但未直接用于HEP任务。&lt;/p&gt;&lt;p&gt;&lt;em&gt;本条目仅完成摘要级筛选。&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;a href="https://arxiv.org/abs/2608.11262"&gt;arXiv 页面&lt;/a&gt; · &lt;a href="https://github.com/quxnb/hepml-digest/issues/new?title=%5B%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%5D+2608.11262+Analytically+Consistent+Reconstruction+of+Finite+Data+Using+Pad%5C%27e+Sequences&amp;amp;body=%23%23+%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%0A%0A-+arXiv%EF%BC%9A%5B2608.11262%5D%28https%3A%2F%2Farxiv.org%2Fabs%2F2608.11262%29%0A-+%E6%A0%8F%E7%9B%AE%EF%BC%9AHEP+%E7%9B%B4%E6%8E%A5%E5%BA%94%E7%94%A8%0A-+%E5%BD%93%E5%89%8D%E7%9B%B8%E5%85%B3%E6%80%A7%EF%BC%9A0.75%0A-+%E5%BD%93%E5%89%8D%E8%AF%81%E6%8D%AE%E7%AD%89%E7%BA%A7%EF%BC%9Atransferable%0A%0A%23%23+%E5%88%A4%E6%96%AD%0A%0A-+%5B+%5D+%E6%8E%A8%E8%8D%90%E4%BF%9D%E7%95%99%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E5%90%88%E7%90%86%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E8%BF%87%E5%BA%A6%E6%8E%A8%E6%B5%8B%0A-+%5B+%5D+%E5%BA%94%E7%A7%BB%E8%87%B3%E5%8F%A6%E4%B8%80%E4%B8%AA%E6%A0%8F%E7%9B%AE%0A-+%5B+%5D+%E5%BB%BA%E8%AE%AE%E7%B2%BE%E8%AF%BB%E5%85%A8%E6%96%87%0A%0A%23%23+%E8%A1%A5%E5%85%85%E8%AF%B4%E6%98%8E%0A%0A"&gt;提交反馈&lt;/a&gt; · hep-ex, hep-lat, hep-ph, physics.data-an&lt;/p&gt;</ns1:encoded>
+      <guid isPermaLink="false">arxiv:2608.11262:hepml-v1</guid>
+      <category>hep-ex</category>
+      <category>hep-lat</category>
+      <category>hep-ph</category>
+      <category>physics.data-an</category>
+      <category>track:hep_application</category>
+      <category>数据驱动建模</category>
+      <category>系统误差处理</category>
+      <category>解析结构重建</category>
+      <pubDate>Thu, 13 Aug 2026 04:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Structured generalized sliced Wasserstein distance for keV X-ray polarization analysis with Gas Pixel Detector</title>
+      <link>https://arxiv.org/abs/2603.03384</link>
+      <description>方法针对像素探测器原始图像分析，虽源于天体物理，但对HEP探测器数据有直接借鉴意义。</description>
+      <ns1:encoded>&lt;p&gt;&lt;strong&gt;栏目：&lt;/strong&gt;HEP 直接应用&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法：&lt;/strong&gt;Structured generalized sliced Wasserstein distance with random-weight neural networks&lt;/p&gt;&lt;p&gt;&lt;strong&gt;相关性：&lt;/strong&gt;0.75；&lt;strong&gt;证据等级：&lt;/strong&gt;transferable&lt;/p&gt;&lt;p&gt;&lt;strong&gt;初筛理由：&lt;/strong&gt;方法针对像素探测器原始图像分析，虽源于天体物理，但对HEP探测器数据有直接借鉴意义。&lt;/p&gt;&lt;p&gt;&lt;em&gt;本条目仅完成摘要级筛选。&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;a href="https://arxiv.org/abs/2603.03384"&gt;arXiv 页面&lt;/a&gt; · &lt;a href="https://github.com/quxnb/hepml-digest/issues/new?title=%5B%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%5D+2603.03384+Structured+generalized+sliced+Wasserstein+distance+for+keV+X-ray+polarization+an&amp;amp;body=%23%23+%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%0A%0A-+arXiv%EF%BC%9A%5B2603.03384%5D%28https%3A%2F%2Farxiv.org%2Fabs%2F2603.03384%29%0A-+%E6%A0%8F%E7%9B%AE%EF%BC%9AHEP+%E7%9B%B4%E6%8E%A5%E5%BA%94%E7%94%A8%0A-+%E5%BD%93%E5%89%8D%E7%9B%B8%E5%85%B3%E6%80%A7%EF%BC%9A0.75%0A-+%E5%BD%93%E5%89%8D%E8%AF%81%E6%8D%AE%E7%AD%89%E7%BA%A7%EF%BC%9Atransferable%0A%0A%23%23+%E5%88%A4%E6%96%AD%0A%0A-+%5B+%5D+%E6%8E%A8%E8%8D%90%E4%BF%9D%E7%95%99%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E5%90%88%E7%90%86%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E8%BF%87%E5%BA%A6%E6%8E%A8%E6%B5%8B%0A-+%5B+%5D+%E5%BA%94%E7%A7%BB%E8%87%B3%E5%8F%A6%E4%B8%80%E4%B8%AA%E6%A0%8F%E7%9B%AE%0A-+%5B+%5D+%E5%BB%BA%E8%AE%AE%E7%B2%BE%E8%AF%BB%E5%85%A8%E6%96%87%0A%0A%23%23+%E8%A1%A5%E5%85%85%E8%AF%B4%E6%98%8E%0A%0A"&gt;提交反馈&lt;/a&gt; · astro-ph.IM, physics.data-an, physics.ins-det&lt;/p&gt;</ns1:encoded>
+      <guid isPermaLink="false">arxiv:2603.03384:hepml-v1</guid>
+      <category>astro-ph.IM</category>
+      <category>physics.data-an</category>
+      <category>physics.ins-det</category>
+      <category>track:hep_application</category>
+      <category>图像分析</category>
+      <category>粒子鉴别</category>
+      <category>触发</category>
+      <pubDate>Thu, 13 Aug 2026 04:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>A determination of the backscattering probability of low-energy antiprotons</title>
+      <link>https://arxiv.org/abs/2608.11795</link>
+      <description>直接涉及HEP实验GBAR，但方法为实验测量，非新统计方法，可参考其背散射处理。</description>
+      <ns1:encoded>&lt;p&gt;&lt;strong&gt;栏目：&lt;/strong&gt;HEP 直接应用&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法：&lt;/strong&gt;实验测量与置信区间估计&lt;/p&gt;&lt;p&gt;&lt;strong&gt;相关性：&lt;/strong&gt;0.60；&lt;strong&gt;证据等级：&lt;/strong&gt;direct&lt;/p&gt;&lt;p&gt;&lt;strong&gt;初筛理由：&lt;/strong&gt;直接涉及HEP实验GBAR，但方法为实验测量，非新统计方法，可参考其背散射处理。&lt;/p&gt;&lt;p&gt;&lt;em&gt;本条目仅完成摘要级筛选。&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;a href="https://arxiv.org/abs/2608.11795"&gt;arXiv 页面&lt;/a&gt; · &lt;a href="https://github.com/quxnb/hepml-digest/issues/new?title=%5B%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%5D+2608.11795+A+determination+of+the+backscattering+probability+of+low-energy+antiprotons&amp;amp;body=%23%23+%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%0A%0A-+arXiv%EF%BC%9A%5B2608.11795%5D%28https%3A%2F%2Farxiv.org%2Fabs%2F2608.11795%29%0A-+%E6%A0%8F%E7%9B%AE%EF%BC%9AHEP+%E7%9B%B4%E6%8E%A5%E5%BA%94%E7%94%A8%0A-+%E5%BD%93%E5%89%8D%E7%9B%B8%E5%85%B3%E6%80%A7%EF%BC%9A0.60%0A-+%E5%BD%93%E5%89%8D%E8%AF%81%E6%8D%AE%E7%AD%89%E7%BA%A7%EF%BC%9Adirect%0A%0A%23%23+%E5%88%A4%E6%96%AD%0A%0A-+%5B+%5D+%E6%8E%A8%E8%8D%90%E4%BF%9D%E7%95%99%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E5%90%88%E7%90%86%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E8%BF%87%E5%BA%A6%E6%8E%A8%E6%B5%8B%0A-+%5B+%5D+%E5%BA%94%E7%A7%BB%E8%87%B3%E5%8F%A6%E4%B8%80%E4%B8%AA%E6%A0%8F%E7%9B%AE%0A-+%5B+%5D+%E5%BB%BA%E8%AE%AE%E7%B2%BE%E8%AF%BB%E5%85%A8%E6%96%87%0A%0A%23%23+%E8%A1%A5%E5%85%85%E8%AF%B4%E6%98%8E%0A%0A"&gt;提交反馈&lt;/a&gt; · hep-ex&lt;/p&gt;</ns1:encoded>
+      <guid isPermaLink="false">arxiv:2608.11795:hepml-v1</guid>
+      <category>hep-ex</category>
+      <category>track:hep_application</category>
+      <category>束流诊断</category>
+      <category>粒子探测器响应模拟</category>
+      <pubDate>Thu, 13 Aug 2026 04:00:00 +0000</pubDate>
+    </item>
     <item>
       <title>TauPolaris: reconstructing tau lepton polarimetric vectors with conditional normalizing flows</title>
       <link>https://arxiv.org/abs/2608.10961</link>
