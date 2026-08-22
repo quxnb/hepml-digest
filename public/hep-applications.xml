@@ -8,7 +8,132 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Fri, 21 Aug 2026 02:05:51 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 22 Aug 2026 02:00:46 +0000</lastBuildDate>
+    <item>
+      <title>Distilling Normalizing Flows for Real-Time Anomaly Detection at the LHC</title>
+      <link>https://arxiv.org/abs/2608.19912</link>
+      <description>论文针对LHC硬件触发延迟约束，蒸馏归一化流感概率用于实时异常检测，直接解决HEP关键问题。</description>
+      <ns1:encoded>&lt;p&gt;&lt;strong&gt;栏目：&lt;/strong&gt;HEP 直接应用&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法：&lt;/strong&gt;知识蒸馏：将大型条件归一化流蒸馏为轻量级学生模型（决策树或量化神经网络）&lt;/p&gt;&lt;p&gt;&lt;strong&gt;相关性：&lt;/strong&gt;1.00；&lt;strong&gt;证据等级：&lt;/strong&gt;direct&lt;/p&gt;&lt;p&gt;&lt;strong&gt;初筛理由：&lt;/strong&gt;论文针对LHC硬件触发延迟约束，蒸馏归一化流感概率用于实时异常检测，直接解决HEP关键问题。&lt;/p&gt;&lt;p&gt;&lt;em&gt;本条目仅完成摘要级筛选。&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;a href="https://arxiv.org/abs/2608.19912"&gt;arXiv 页面&lt;/a&gt; · &lt;a href="https://github.com/quxnb/hepml-digest/issues/new?title=%5B%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%5D+2608.19912+Distilling+Normalizing+Flows+for+Real-Time+Anomaly+Detection+at+the+LHC&amp;amp;body=%23%23+%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%0A%0A-+arXiv%EF%BC%9A%5B2608.19912%5D%28https%3A%2F%2Farxiv.org%2Fabs%2F2608.19912%29%0A-+%E6%A0%8F%E7%9B%AE%EF%BC%9AHEP+%E7%9B%B4%E6%8E%A5%E5%BA%94%E7%94%A8%0A-+%E5%BD%93%E5%89%8D%E7%9B%B8%E5%85%B3%E6%80%A7%EF%BC%9A1.00%0A-+%E5%BD%93%E5%89%8D%E8%AF%81%E6%8D%AE%E7%AD%89%E7%BA%A7%EF%BC%9Adirect%0A%0A%23%23+%E5%88%A4%E6%96%AD%0A%0A-+%5B+%5D+%E6%8E%A8%E8%8D%90%E4%BF%9D%E7%95%99%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E5%90%88%E7%90%86%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E8%BF%87%E5%BA%A6%E6%8E%A8%E6%B5%8B%0A-+%5B+%5D+%E5%BA%94%E7%A7%BB%E8%87%B3%E5%8F%A6%E4%B8%80%E4%B8%AA%E6%A0%8F%E7%9B%AE%0A-+%5B+%5D+%E5%BB%BA%E8%AE%AE%E7%B2%BE%E8%AF%BB%E5%85%A8%E6%96%87%0A%0A%23%23+%E8%A1%A5%E5%85%85%E8%AF%B4%E6%98%8E%0A%0A"&gt;提交反馈&lt;/a&gt; · hep-ex&lt;/p&gt;</ns1:encoded>
+      <guid isPermaLink="false">arxiv:2608.19912:hepml-v1</guid>
+      <category>hep-ex</category>
+      <category>track:hep_application</category>
+      <category>高能物理触发中的实时异常检测</category>
+      <pubDate>Fri, 21 Aug 2026 04:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Normalizing flows for density estimation in multi-detector gravitational-wave searches</title>
+      <link>https://arxiv.org/abs/2604.26581</link>
+      <description>方法针对高能物理中泊松背景密度估计，与HEP触发或显著性计算类似，且已在引力波数据验证，有直接迁移潜力。</description>
+      <ns1:encoded>&lt;p&gt;&lt;strong&gt;栏目：&lt;/strong&gt;HEP 直接应用&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法：&lt;/strong&gt;Normalizing flows for density estimation&lt;/p&gt;&lt;p&gt;&lt;strong&gt;相关性：&lt;/strong&gt;0.80；&lt;strong&gt;证据等级：&lt;/strong&gt;transferable&lt;/p&gt;&lt;p&gt;&lt;strong&gt;初筛理由：&lt;/strong&gt;方法针对高能物理中泊松背景密度估计，与HEP触发或显著性计算类似，且已在引力波数据验证，有直接迁移潜力。&lt;/p&gt;&lt;p&gt;&lt;em&gt;本条目仅完成摘要级筛选。&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;a href="https://arxiv.org/abs/2604.26581"&gt;arXiv 页面&lt;/a&gt; · &lt;a href="https://github.com/quxnb/hepml-digest/issues/new?title=%5B%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%5D+2604.26581+Normalizing+flows+for+density+estimation+in+multi-detector+gravitational-wave+se&amp;amp;body=%23%23+%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%0A%0A-+arXiv%EF%BC%9A%5B2604.26581%5D%28https%3A%2F%2Farxiv.org%2Fabs%2F2604.26581%29%0A-+%E6%A0%8F%E7%9B%AE%EF%BC%9AHEP+%E7%9B%B4%E6%8E%A5%E5%BA%94%E7%94%A8%0A-+%E5%BD%93%E5%89%8D%E7%9B%B8%E5%85%B3%E6%80%A7%EF%BC%9A0.80%0A-+%E5%BD%93%E5%89%8D%E8%AF%81%E6%8D%AE%E7%AD%89%E7%BA%A7%EF%BC%9Atransferable%0A%0A%23%23+%E5%88%A4%E6%96%AD%0A%0A-+%5B+%5D+%E6%8E%A8%E8%8D%90%E4%BF%9D%E7%95%99%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E5%90%88%E7%90%86%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E8%BF%87%E5%BA%A6%E6%8E%A8%E6%B5%8B%0A-+%5B+%5D+%E5%BA%94%E7%A7%BB%E8%87%B3%E5%8F%A6%E4%B8%80%E4%B8%AA%E6%A0%8F%E7%9B%AE%0A-+%5B+%5D+%E5%BB%BA%E8%AE%AE%E7%B2%BE%E8%AF%BB%E5%85%A8%E6%96%87%0A%0A%23%23+%E8%A1%A5%E5%85%85%E8%AF%B4%E6%98%8E%0A%0A"&gt;提交反馈&lt;/a&gt; · astro-ph.CO, astro-ph.HE, astro-ph.IM, gr-qc, hep-ex&lt;/p&gt;</ns1:encoded>
+      <guid isPermaLink="false">arxiv:2604.26581:hepml-v1</guid>
+      <category>astro-ph.CO</category>
+      <category>astro-ph.HE</category>
+      <category>astro-ph.IM</category>
+      <category>gr-qc</category>
+      <category>hep-ex</category>
+      <category>track:hep_application</category>
+      <category>事件显著性评估</category>
+      <category>多探测器网络扩展</category>
+      <category>背景密度估计</category>
+      <pubDate>Fri, 21 Aug 2026 04:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>WavePID: Low-energy flavor identification using single-PMT time series in IceCube</title>
+      <link>https://arxiv.org/abs/2607.02078</link>
+      <description>方法在IceCube真实数据上验证，针对低能中微子风味鉴别，与HEP粒子鉴别任务高度相关，且证明时间信息补充形态学分类器。</description>
+      <ns1:encoded>&lt;p&gt;&lt;strong&gt;栏目：&lt;/strong&gt;HEP 直接应用&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法：&lt;/strong&gt;模板化的对数似然比分类器，利用单PMT时间序列的三个观测量（顶点距离、早期电荷分数、模块间时间差）&lt;/p&gt;&lt;p&gt;&lt;strong&gt;相关性：&lt;/strong&gt;0.90；&lt;strong&gt;证据等级：&lt;/strong&gt;direct&lt;/p&gt;&lt;p&gt;&lt;strong&gt;初筛理由：&lt;/strong&gt;方法在IceCube真实数据上验证，针对低能中微子风味鉴别，与HEP粒子鉴别任务高度相关，且证明时间信息补充形态学分类器。&lt;/p&gt;&lt;p&gt;&lt;em&gt;本条目仅完成摘要级筛选。&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;a href="https://arxiv.org/abs/2607.02078"&gt;arXiv 页面&lt;/a&gt; · &lt;a href="https://github.com/quxnb/hepml-digest/issues/new?title=%5B%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%5D+2607.02078+WavePID%3A+Low-energy+flavor+identification+using+single-PMT+time+series+in+IceCub&amp;amp;body=%23%23+%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%0A%0A-+arXiv%EF%BC%9A%5B2607.02078%5D%28https%3A%2F%2Farxiv.org%2Fabs%2F2607.02078%29%0A-+%E6%A0%8F%E7%9B%AE%EF%BC%9AHEP+%E7%9B%B4%E6%8E%A5%E5%BA%94%E7%94%A8%0A-+%E5%BD%93%E5%89%8D%E7%9B%B8%E5%85%B3%E6%80%A7%EF%BC%9A0.90%0A-+%E5%BD%93%E5%89%8D%E8%AF%81%E6%8D%AE%E7%AD%89%E7%BA%A7%EF%BC%9Adirect%0A%0A%23%23+%E5%88%A4%E6%96%AD%0A%0A-+%5B+%5D+%E6%8E%A8%E8%8D%90%E4%BF%9D%E7%95%99%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E5%90%88%E7%90%86%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E8%BF%87%E5%BA%A6%E6%8E%A8%E6%B5%8B%0A-+%5B+%5D+%E5%BA%94%E7%A7%BB%E8%87%B3%E5%8F%A6%E4%B8%80%E4%B8%AA%E6%A0%8F%E7%9B%AE%0A-+%5B+%5D+%E5%BB%BA%E8%AE%AE%E7%B2%BE%E8%AF%BB%E5%85%A8%E6%96%87%0A%0A%23%23+%E8%A1%A5%E5%85%85%E8%AF%B4%E6%98%8E%0A%0A"&gt;提交反馈&lt;/a&gt; · hep-ex, physics.data-an, physics.ins-det&lt;/p&gt;</ns1:encoded>
+      <guid isPermaLink="false">arxiv:2607.02078:hepml-v1</guid>
+      <category>hep-ex</category>
+      <category>physics.data-an</category>
+      <category>physics.ins-det</category>
+      <category>track:hep_application</category>
+      <category>事件重建（低能中微子）</category>
+      <category>分类器改进（与图神经网络结合）</category>
+      <category>粒子鉴别（中微子风味鉴别）</category>
+      <pubDate>Fri, 21 Aug 2026 04:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Green BOA: Determining the environmental break-even point for ML-based data compression</title>
+      <link>https://arxiv.org/abs/2608.19994</link>
+      <description>论文讨论ML压缩在HEP数据存储中的环境平衡点，虽非核心物理分析，但涉及数据压缩应用，有一定参考价值。</description>
+      <ns1:encoded>&lt;p&gt;&lt;strong&gt;栏目：&lt;/strong&gt;HEP 直接应用&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法：&lt;/strong&gt;ML-based lossless data compression with environmental cost analysis&lt;/p&gt;&lt;p&gt;&lt;strong&gt;相关性：&lt;/strong&gt;0.60；&lt;strong&gt;证据等级：&lt;/strong&gt;transferable&lt;/p&gt;&lt;p&gt;&lt;strong&gt;初筛理由：&lt;/strong&gt;论文讨论ML压缩在HEP数据存储中的环境平衡点，虽非核心物理分析，但涉及数据压缩应用，有一定参考价值。&lt;/p&gt;&lt;p&gt;&lt;em&gt;本条目仅完成摘要级筛选。&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;a href="https://arxiv.org/abs/2608.19994"&gt;arXiv 页面&lt;/a&gt; · &lt;a href="https://github.com/quxnb/hepml-digest/issues/new?title=%5B%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%5D+2608.19994+Green+BOA%3A+Determining+the+environmental+break-even+point+for+ML-based+data+comp&amp;amp;body=%23%23+%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%0A%0A-+arXiv%EF%BC%9A%5B2608.19994%5D%28https%3A%2F%2Farxiv.org%2Fabs%2F2608.19994%29%0A-+%E6%A0%8F%E7%9B%AE%EF%BC%9AHEP+%E7%9B%B4%E6%8E%A5%E5%BA%94%E7%94%A8%0A-+%E5%BD%93%E5%89%8D%E7%9B%B8%E5%85%B3%E6%80%A7%EF%BC%9A0.60%0A-+%E5%BD%93%E5%89%8D%E8%AF%81%E6%8D%AE%E7%AD%89%E7%BA%A7%EF%BC%9Atransferable%0A%0A%23%23+%E5%88%A4%E6%96%AD%0A%0A-+%5B+%5D+%E6%8E%A8%E8%8D%90%E4%BF%9D%E7%95%99%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E5%90%88%E7%90%86%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E8%BF%87%E5%BA%A6%E6%8E%A8%E6%B5%8B%0A-+%5B+%5D+%E5%BA%94%E7%A7%BB%E8%87%B3%E5%8F%A6%E4%B8%80%E4%B8%AA%E6%A0%8F%E7%9B%AE%0A-+%5B+%5D+%E5%BB%BA%E8%AE%AE%E7%B2%BE%E8%AF%BB%E5%85%A8%E6%96%87%0A%0A%23%23+%E8%A1%A5%E5%85%85%E8%AF%B4%E6%98%8E%0A%0A"&gt;提交反馈&lt;/a&gt; · cs.LG, hep-ex, physics.comp-ph&lt;/p&gt;</ns1:encoded>
+      <guid isPermaLink="false">arxiv:2608.19994:hepml-v1</guid>
+      <category>cs.LG</category>
+      <category>hep-ex</category>
+      <category>physics.comp-ph</category>
+      <category>track:hep_application</category>
+      <category>数据处理与存储优化</category>
+      <pubDate>Fri, 21 Aug 2026 04:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Multivariate amplitude analysis of the cascade particle decays based on the Nearest Neighbors fitting</title>
+      <link>https://arxiv.org/abs/2608.19267</link>
+      <description>在B介子衰变振幅分析中验证，直接解决粒子物理拟合问题，无需解析概率密度和再生成，节省计算资源。</description>
+      <ns1:encoded>&lt;p&gt;&lt;strong&gt;栏目：&lt;/strong&gt;HEP 直接应用&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法：&lt;/strong&gt;基于最近邻估计的似然拟合方法&lt;/p&gt;&lt;p&gt;&lt;strong&gt;相关性：&lt;/strong&gt;0.85；&lt;strong&gt;证据等级：&lt;/strong&gt;direct&lt;/p&gt;&lt;p&gt;&lt;strong&gt;初筛理由：&lt;/strong&gt;在B介子衰变振幅分析中验证，直接解决粒子物理拟合问题，无需解析概率密度和再生成，节省计算资源。&lt;/p&gt;&lt;p&gt;&lt;em&gt;本条目仅完成摘要级筛选。&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;a href="https://arxiv.org/abs/2608.19267"&gt;arXiv 页面&lt;/a&gt; · &lt;a href="https://github.com/quxnb/hepml-digest/issues/new?title=%5B%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%5D+2608.19267+Multivariate+amplitude+analysis+of+the+cascade+particle+decays+based+on+the+Near&amp;amp;body=%23%23+%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%0A%0A-+arXiv%EF%BC%9A%5B2608.19267%5D%28https%3A%2F%2Farxiv.org%2Fabs%2F2608.19267%29%0A-+%E6%A0%8F%E7%9B%AE%EF%BC%9AHEP+%E7%9B%B4%E6%8E%A5%E5%BA%94%E7%94%A8%0A-+%E5%BD%93%E5%89%8D%E7%9B%B8%E5%85%B3%E6%80%A7%EF%BC%9A0.85%0A-+%E5%BD%93%E5%89%8D%E8%AF%81%E6%8D%AE%E7%AD%89%E7%BA%A7%EF%BC%9Adirect%0A%0A%23%23+%E5%88%A4%E6%96%AD%0A%0A-+%5B+%5D+%E6%8E%A8%E8%8D%90%E4%BF%9D%E7%95%99%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E5%90%88%E7%90%86%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E8%BF%87%E5%BA%A6%E6%8E%A8%E6%B5%8B%0A-+%5B+%5D+%E5%BA%94%E7%A7%BB%E8%87%B3%E5%8F%A6%E4%B8%80%E4%B8%AA%E6%A0%8F%E7%9B%AE%0A-+%5B+%5D+%E5%BB%BA%E8%AE%AE%E7%B2%BE%E8%AF%BB%E5%85%A8%E6%96%87%0A%0A%23%23+%E8%A1%A5%E5%85%85%E8%AF%B4%E6%98%8E%0A%0A"&gt;提交反馈&lt;/a&gt; · hep-ex, physics.data-an&lt;/p&gt;</ns1:encoded>
+      <guid isPermaLink="false">arxiv:2608.19267:hepml-v1</guid>
+      <category>hep-ex</category>
+      <category>physics.data-an</category>
+      <category>track:hep_application</category>
+      <category>振幅分析</category>
+      <category>粒子衰变链</category>
+      <category>重建效应修正</category>
+      <pubDate>Fri, 21 Aug 2026 04:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Observation of an excess at the top quark pair production threshold in the single-lepton channel</title>
+      <link>https://arxiv.org/abs/2608.19546</link>
+      <description>直接涉及HEP实验数据分析，方法为简化模型拟合与显著性计算，对类似共振搜索有参考价值。</description>
+      <ns1:encoded>&lt;p&gt;&lt;strong&gt;栏目：&lt;/strong&gt;HEP 直接应用&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法：&lt;/strong&gt;相对速度与角度观测量的统计检验，基于简化模型的似然比检验&lt;/p&gt;&lt;p&gt;&lt;strong&gt;相关性：&lt;/strong&gt;0.80；&lt;strong&gt;证据等级：&lt;/strong&gt;direct&lt;/p&gt;&lt;p&gt;&lt;strong&gt;初筛理由：&lt;/strong&gt;直接涉及HEP实验数据分析，方法为简化模型拟合与显著性计算，对类似共振搜索有参考价值。&lt;/p&gt;&lt;p&gt;&lt;em&gt;本条目仅完成摘要级筛选。&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;a href="https://arxiv.org/abs/2608.19546"&gt;arXiv 页面&lt;/a&gt; · &lt;a href="https://github.com/quxnb/hepml-digest/issues/new?title=%5B%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%5D+2608.19546+Observation+of+an+excess+at+the+top+quark+pair+production+threshold+in+the+singl&amp;amp;body=%23%23+%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%0A%0A-+arXiv%EF%BC%9A%5B2608.19546%5D%28https%3A%2F%2Farxiv.org%2Fabs%2F2608.19546%29%0A-+%E6%A0%8F%E7%9B%AE%EF%BC%9AHEP+%E7%9B%B4%E6%8E%A5%E5%BA%94%E7%94%A8%0A-+%E5%BD%93%E5%89%8D%E7%9B%B8%E5%85%B3%E6%80%A7%EF%BC%9A0.80%0A-+%E5%BD%93%E5%89%8D%E8%AF%81%E6%8D%AE%E7%AD%89%E7%BA%A7%EF%BC%9Adirect%0A%0A%23%23+%E5%88%A4%E6%96%AD%0A%0A-+%5B+%5D+%E6%8E%A8%E8%8D%90%E4%BF%9D%E7%95%99%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E5%90%88%E7%90%86%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E8%BF%87%E5%BA%A6%E6%8E%A8%E6%B5%8B%0A-+%5B+%5D+%E5%BA%94%E7%A7%BB%E8%87%B3%E5%8F%A6%E4%B8%80%E4%B8%AA%E6%A0%8F%E7%9B%AE%0A-+%5B+%5D+%E5%BB%BA%E8%AE%AE%E7%B2%BE%E8%AF%BB%E5%85%A8%E6%96%87%0A%0A%23%23+%E8%A1%A5%E5%85%85%E8%AF%B4%E6%98%8E%0A%0A"&gt;提交反馈&lt;/a&gt; · hep-ex&lt;/p&gt;</ns1:encoded>
+      <guid isPermaLink="false">arxiv:2608.19546:hepml-v1</guid>
+      <category>hep-ex</category>
+      <category>track:hep_application</category>
+      <category>共振搜索</category>
+      <category>截面测量</category>
+      <category>粒子产生阈值附近的信号提取</category>
+      <pubDate>Fri, 21 Aug 2026 04:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Search for top quark flavor-changing neutral currents in multilepton final states using an effective field theory approach in proton--proton collisions at $\sqrt{s}$ = 13 TeV</title>
+      <link>https://arxiv.org/abs/2608.19547</link>
+      <description>该论文直接针对顶级夸克FCNC这一HEP物理过程，使用似然拟合和MVAs，方法成熟，结果对HEP有直接价值。</description>
+      <ns1:encoded>&lt;p&gt;&lt;strong&gt;栏目：&lt;/strong&gt;HEP 直接应用&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法：&lt;/strong&gt;有效场论框架下的最大似然拟合，结合多变量判别式（MVAs）进行信号-背景分离&lt;/p&gt;&lt;p&gt;&lt;strong&gt;相关性：&lt;/strong&gt;0.80；&lt;strong&gt;证据等级：&lt;/strong&gt;direct&lt;/p&gt;&lt;p&gt;&lt;strong&gt;初筛理由：&lt;/strong&gt;该论文直接针对顶级夸克FCNC这一HEP物理过程，使用似然拟合和MVAs，方法成熟，结果对HEP有直接价值。&lt;/p&gt;&lt;p&gt;&lt;em&gt;本条目仅完成摘要级筛选。&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;a href="https://arxiv.org/abs/2608.19547"&gt;arXiv 页面&lt;/a&gt; · &lt;a href="https://github.com/quxnb/hepml-digest/issues/new?title=%5B%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%5D+2608.19547+Search+for+top+quark+flavor-changing+neutral+currents+in+multilepton+final+state&amp;amp;body=%23%23+%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%0A%0A-+arXiv%EF%BC%9A%5B2608.19547%5D%28https%3A%2F%2Farxiv.org%2Fabs%2F2608.19547%29%0A-+%E6%A0%8F%E7%9B%AE%EF%BC%9AHEP+%E7%9B%B4%E6%8E%A5%E5%BA%94%E7%94%A8%0A-+%E5%BD%93%E5%89%8D%E7%9B%B8%E5%85%B3%E6%80%A7%EF%BC%9A0.80%0A-+%E5%BD%93%E5%89%8D%E8%AF%81%E6%8D%AE%E7%AD%89%E7%BA%A7%EF%BC%9Adirect%0A%0A%23%23+%E5%88%A4%E6%96%AD%0A%0A-+%5B+%5D+%E6%8E%A8%E8%8D%90%E4%BF%9D%E7%95%99%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E5%90%88%E7%90%86%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E8%BF%87%E5%BA%A6%E6%8E%A8%E6%B5%8B%0A-+%5B+%5D+%E5%BA%94%E7%A7%BB%E8%87%B3%E5%8F%A6%E4%B8%80%E4%B8%AA%E6%A0%8F%E7%9B%AE%0A-+%5B+%5D+%E5%BB%BA%E8%AE%AE%E7%B2%BE%E8%AF%BB%E5%85%A8%E6%96%87%0A%0A%23%23+%E8%A1%A5%E5%85%85%E8%AF%B4%E6%98%8E%0A%0A"&gt;提交反馈&lt;/a&gt; · hep-ex&lt;/p&gt;</ns1:encoded>
+      <guid isPermaLink="false">arxiv:2608.19547:hepml-v1</guid>
+      <category>hep-ex</category>
+      <category>track:hep_application</category>
+      <category>信号-背景分类</category>
+      <category>参数估计与置信区间</category>
+      <category>稀有过程搜寻</category>
+      <pubDate>Fri, 21 Aug 2026 04:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>The Search Budget of the BSM Resonance Program</title>
+      <link>https://arxiv.org/abs/2608.19764</link>
+      <description>直接分析ATLAS共振搜寻的试验数因子，提出两阶段揭盲作为机器学习搜索的保护，对高能物理实验的搜索策略有直接参考价值。</description>
+      <ns1:encoded>&lt;p&gt;&lt;strong&gt;栏目：&lt;/strong&gt;HEP 直接应用&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法：&lt;/strong&gt;统计试验数因子估计与两阶段揭盲设计比较&lt;/p&gt;&lt;p&gt;&lt;strong&gt;相关性：&lt;/strong&gt;0.70；&lt;strong&gt;证据等级：&lt;/strong&gt;direct&lt;/p&gt;&lt;p&gt;&lt;strong&gt;初筛理由：&lt;/strong&gt;直接分析ATLAS共振搜寻的试验数因子，提出两阶段揭盲作为机器学习搜索的保护，对高能物理实验的搜索策略有直接参考价值。&lt;/p&gt;&lt;p&gt;&lt;em&gt;本条目仅完成摘要级筛选。&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;a href="https://arxiv.org/abs/2608.19764"&gt;arXiv 页面&lt;/a&gt; · &lt;a href="https://github.com/quxnb/hepml-digest/issues/new?title=%5B%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%5D+2608.19764+The+Search+Budget+of+the+BSM+Resonance+Program&amp;amp;body=%23%23+%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%0A%0A-+arXiv%EF%BC%9A%5B2608.19764%5D%28https%3A%2F%2Farxiv.org%2Fabs%2F2608.19764%29%0A-+%E6%A0%8F%E7%9B%AE%EF%BC%9AHEP+%E7%9B%B4%E6%8E%A5%E5%BA%94%E7%94%A8%0A-+%E5%BD%93%E5%89%8D%E7%9B%B8%E5%85%B3%E6%80%A7%EF%BC%9A0.70%0A-+%E5%BD%93%E5%89%8D%E8%AF%81%E6%8D%AE%E7%AD%89%E7%BA%A7%EF%BC%9Adirect%0A%0A%23%23+%E5%88%A4%E6%96%AD%0A%0A-+%5B+%5D+%E6%8E%A8%E8%8D%90%E4%BF%9D%E7%95%99%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E5%90%88%E7%90%86%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E8%BF%87%E5%BA%A6%E6%8E%A8%E6%B5%8B%0A-+%5B+%5D+%E5%BA%94%E7%A7%BB%E8%87%B3%E5%8F%A6%E4%B8%80%E4%B8%AA%E6%A0%8F%E7%9B%AE%0A-+%5B+%5D+%E5%BB%BA%E8%AE%AE%E7%B2%BE%E8%AF%BB%E5%85%A8%E6%96%87%0A%0A%23%23+%E8%A1%A5%E5%85%85%E8%AF%B4%E6%98%8E%0A%0A"&gt;提交反馈&lt;/a&gt; · hep-ex&lt;/p&gt;</ns1:encoded>
+      <guid isPermaLink="false">arxiv:2608.19764:hepml-v1</guid>
+      <category>hep-ex</category>
+      <category>track:hep_application</category>
+      <category>共振搜寻</category>
+      <category>异常检测</category>
+      <category>显著性估计</category>
+      <pubDate>Fri, 21 Aug 2026 04:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>QED radiative effects in semi-inclusive deep-inelastic scattering: traditional and factorized approaches</title>
+      <link>https://arxiv.org/abs/2608.20294</link>
+      <description>方法针对辐射修正，但主要面向SIDIS物理，对HEP实验通用性有限。</description>
+      <ns1:encoded>&lt;p&gt;&lt;strong&gt;栏目：&lt;/strong&gt;HEP 直接应用&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法：&lt;/strong&gt;比较传统Bardin-Shumeiko方法与因子化方法，提出混合框架&lt;/p&gt;&lt;p&gt;&lt;strong&gt;相关性：&lt;/strong&gt;0.55；&lt;strong&gt;证据等级：&lt;/strong&gt;transferable&lt;/p&gt;&lt;p&gt;&lt;strong&gt;初筛理由：&lt;/strong&gt;方法针对辐射修正，但主要面向SIDIS物理，对HEP实验通用性有限。&lt;/p&gt;&lt;p&gt;&lt;em&gt;本条目仅完成摘要级筛选。&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;a href="https://arxiv.org/abs/2608.20294"&gt;arXiv 页面&lt;/a&gt; · &lt;a href="https://github.com/quxnb/hepml-digest/issues/new?title=%5B%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%5D+2608.20294+QED+radiative+effects+in+semi-inclusive+deep-inelastic+scattering%3A+traditional+a&amp;amp;body=%23%23+%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%0A%0A-+arXiv%EF%BC%9A%5B2608.20294%5D%28https%3A%2F%2Farxiv.org%2Fabs%2F2608.20294%29%0A-+%E6%A0%8F%E7%9B%AE%EF%BC%9AHEP+%E7%9B%B4%E6%8E%A5%E5%BA%94%E7%94%A8%0A-+%E5%BD%93%E5%89%8D%E7%9B%B8%E5%85%B3%E6%80%A7%EF%BC%9A0.55%0A-+%E5%BD%93%E5%89%8D%E8%AF%81%E6%8D%AE%E7%AD%89%E7%BA%A7%EF%BC%9Atransferable%0A%0A%23%23+%E5%88%A4%E6%96%AD%0A%0A-+%5B+%5D+%E6%8E%A8%E8%8D%90%E4%BF%9D%E7%95%99%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E5%90%88%E7%90%86%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E8%BF%87%E5%BA%A6%E6%8E%A8%E6%B5%8B%0A-+%5B+%5D+%E5%BA%94%E7%A7%BB%E8%87%B3%E5%8F%A6%E4%B8%80%E4%B8%AA%E6%A0%8F%E7%9B%AE%0A-+%5B+%5D+%E5%BB%BA%E8%AE%AE%E7%B2%BE%E8%AF%BB%E5%85%A8%E6%96%87%0A%0A%23%23+%E8%A1%A5%E5%85%85%E8%AF%B4%E6%98%8E%0A%0A"&gt;提交反馈&lt;/a&gt; · hep-ex, hep-ph, nucl-ex, nucl-th&lt;/p&gt;</ns1:encoded>
+      <guid isPermaLink="false">arxiv:2608.20294:hepml-v1</guid>
+      <category>hep-ex</category>
+      <category>hep-ph</category>
+      <category>nucl-ex</category>
+      <category>nucl-th</category>
+      <category>track:hep_application</category>
+      <category>截面计算</category>
+      <category>自旋不对称</category>
+      <category>辐射修正</category>
+      <pubDate>Fri, 21 Aug 2026 04:00:00 +0000</pubDate>
+    </item>
     <item>
       <title>Machine learning techniques for jet reconstruction at LHCb and application to the search for $H \to b \bar{b}$ and $H \to c \bar{c}$ in $\sqrt{s}=13$ TeV $pp$ collisions</title>
       <link>https://arxiv.org/abs/2601.16802</link>
@@ -26,7 +151,7 @@
       <title>An AI-based Detector Simulation and Reconstruction Model for the ALEPH Experiment at LEP</title>
       <link>https://arxiv.org/abs/2604.11834</link>
       <description>直接在HEP实验（ALEPH）上验证，针对探测器模拟与重建，高相关。</description>
-      <ns1:encoded>&lt;p&gt;&lt;strong&gt;栏目：&lt;/strong&gt;HEP 直接应用&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法：&lt;/strong&gt;生成模型（Parnassus）用于全探测器模拟与重建&lt;/p&gt;&lt;p&gt;&lt;strong&gt;相关性：&lt;/strong&gt;0.95；&lt;strong&gt;证据等级：&lt;/strong&gt;direct&lt;/p&gt;&lt;p&gt;&lt;strong&gt;初筛理由：&lt;/strong&gt;直接在HEP实验（ALEPH）上验证，针对探测器模拟与重建，高相关。&lt;/p&gt;&lt;p&gt;&lt;em&gt;本条目仅完成摘要级筛选。&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;a href="https://arxiv.org/abs/2604.11834"&gt;arXiv 页面&lt;/a&gt; · &lt;a href="https://github.com/quxnb/hepml-digest/issues/new?title=%5B%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%5D+2604.11834+An+AI-based+Detector+Simulation+and+Reconstruction+Model+for+the+ALEPH+Experimen&amp;amp;body=%23%23+%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%0A%0A-+arXiv%EF%BC%9A%5B2604.11834%5D%28https%3A%2F%2Farxiv.org%2Fabs%2F2604.11834%29%0A-+%E6%A0%8F%E7%9B%AE%EF%BC%9AHEP+%E7%9B%B4%E6%8E%A5%E5%BA%94%E7%94%A8%0A-+%E5%BD%93%E5%89%8D%E7%9B%B8%E5%85%B3%E6%80%A7%EF%BC%9A0.95%0A-+%E5%BD%93%E5%89%8D%E8%AF%81%E6%8D%AE%E7%AD%89%E7%BA%A7%EF%BC%9Adirect%0A%0A%23%23+%E5%88%A4%E6%96%AD%0A%0A-+%5B+%5D+%E6%8E%A8%E8%8D%90%E4%BF%9D%E7%95%99%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E5%90%88%E7%90%86%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E8%BF%87%E5%BA%A6%E6%8E%A8%E6%B5%8B%0A-+%5B+%5D+%E5%BA%94%E7%A7%BB%E8%87%B3%E5%8F%A6%E4%B8%80%E4%B8%AA%E6%A0%8F%E7%9B%AE%0A-+%5B+%5D+%E5%BB%BA%E8%AE%AE%E7%B2%BE%E8%AF%BB%E5%85%A8%E6%96%87%0A%0A%23%23+%E8%A1%A5%E5%85%85%E8%AF%B4%E6%98%8E%0A%0A"&gt;提交反馈&lt;/a&gt; · hep-ex, hep-ph, physics.ins-det&lt;/p&gt;</ns1:encoded>
+      <ns1:encoded>&lt;p&gt;&lt;strong&gt;栏目：&lt;/strong&gt;HEP 直接应用&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法：&lt;/strong&gt;生成模型（Parnassus）用于全探测器模拟与重建&lt;/p&gt;&lt;p&gt;&lt;strong&gt;相关性：&lt;/strong&gt;0.95；&lt;strong&gt;证据等级：&lt;/strong&gt;direct&lt;/p&gt;&lt;p&gt;&lt;strong&gt;初筛理由：&lt;/strong&gt;直接在HEP实验（ALEPH）上验证，针对探测器模拟与重建，高相关。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法总结：&lt;/strong&gt;论文将生成模型Parnassus应用于LEP的ALEPH探测器全模拟与重建，在模拟的e+e-→Z→qqbar事件上训练，声称在事件、喷注和粒子级别上忠实复现探测器响应，且一致性优于Delphes快速模拟。干净的e+e-环境无堆叠、拓扑简单，为评估生成模型保真度提供了受控基准。作者认为该神经网络生成模拟方法可自然推广到具有不同探测器几何与物理环境的历史对撞机实验，可作为遗留数据分析的重要工具。&lt;/p&gt;&lt;h4&gt;论文明确支持的结论&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;Parnassus可应用于ALEPH探测器的全模拟与重建。&lt;/li&gt;&lt;li&gt;在模拟的e+e-→Z→qqbar事件上训练生成模型。&lt;/li&gt;&lt;li&gt;Parnassus在事件、喷注和粒子级别上忠实复现探测器响应。&lt;/li&gt;&lt;li&gt;与Delphes快速模拟相比，Parnassus的一致性显著更好。&lt;/li&gt;&lt;li&gt;干净的e+e-环境无堆叠且拓扑简单，为生成模型保真度提供了受控基准。&lt;/li&gt;&lt;li&gt;现代神经网络生成模拟方法可自然推广到具有不同探测器几何与物理环境的历史对撞机实验。&lt;/li&gt;&lt;li&gt;Parnassus可应用于LHC之外，并可作为遗留数据分析的重要工具。&lt;/li&gt;&lt;/ul&gt;&lt;h4&gt;对高能实验物理的潜在帮助&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;将Parnassus作为ALEPH等退役实验遗留数据的快速模拟工具，用于新物理分析或旧数据的重新解释。&lt;/li&gt;&lt;li&gt;为无法运行原始软件的历史实验生成合成数据，以训练或验证重建算法。&lt;/li&gt;&lt;li&gt;用于LEP数据系统误差研究，例如通过生成大量模拟样本评估选择效率和不确定性。&lt;/li&gt;&lt;li&gt;将Parnassus扩展到其他轻子对撞机（如CEPC、FCC-ee）的探测器快速模拟。&lt;/li&gt;&lt;/ul&gt;&lt;h4&gt;迁移风险&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;模型仅在模拟的Z→qqbar样本上训练，向其他末态（如ττ、γγ、稀有衰变）推广可能失效。&lt;/li&gt;&lt;li&gt;未在真实ALEPH数据上验证，存在模拟与真实数据差异（simulation-to-data shift）风险。&lt;/li&gt;&lt;li&gt;Delphes作为基准可能较弱，与完整Geant4模拟的差异可能被低估。&lt;/li&gt;&lt;li&gt;ALEPH探测器几何和响应与LHC差异大，模型架构或训练策略可能需要重新调参。&lt;/li&gt;&lt;li&gt;生成模型本身可能引入系统不确定性和模式坍塌，未评估校准及nuisance参数。&lt;/li&gt;&lt;li&gt;推理延迟和资源需求可能不适合大规模产生。&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;strong&gt;最小验证方案：&lt;/strong&gt;在独立模拟的ALEPH Z→qqbar样本上比较Parnassus与完整探测器模拟在事件形状、喷注子结构、粒子多重数、能量响应等分布的一致性；至少对ττ、μμ等非强子末态做跨通道泛化测试；如可行，用ALEPH真实数据（如已公开的分布）检查重建级变量并量化残差；评估生成样本用于效率校正和系统误差时的偏差；比较推理速度与内存占用；检查模型对探测器几何参数和标定常数变化的敏感性。&lt;/p&gt;&lt;p&gt;&lt;a href="https://arxiv.org/abs/2604.11834"&gt;arXiv 页面&lt;/a&gt; · &lt;a href="https://github.com/quxnb/hepml-digest/issues/new?title=%5B%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%5D+2604.11834+An+AI-based+Detector+Simulation+and+Reconstruction+Model+for+the+ALEPH+Experimen&amp;amp;body=%23%23+%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%0A%0A-+arXiv%EF%BC%9A%5B2604.11834%5D%28https%3A%2F%2Farxiv.org%2Fabs%2F2604.11834%29%0A-+%E6%A0%8F%E7%9B%AE%EF%BC%9AHEP+%E7%9B%B4%E6%8E%A5%E5%BA%94%E7%94%A8%0A-+%E5%BD%93%E5%89%8D%E7%9B%B8%E5%85%B3%E6%80%A7%EF%BC%9A0.95%0A-+%E5%BD%93%E5%89%8D%E8%AF%81%E6%8D%AE%E7%AD%89%E7%BA%A7%EF%BC%9Adirect%0A%0A%23%23+%E5%88%A4%E6%96%AD%0A%0A-+%5B+%5D+%E6%8E%A8%E8%8D%90%E4%BF%9D%E7%95%99%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E5%90%88%E7%90%86%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E8%BF%87%E5%BA%A6%E6%8E%A8%E6%B5%8B%0A-+%5B+%5D+%E5%BA%94%E7%A7%BB%E8%87%B3%E5%8F%A6%E4%B8%80%E4%B8%AA%E6%A0%8F%E7%9B%AE%0A-+%5B+%5D+%E5%BB%BA%E8%AE%AE%E7%B2%BE%E8%AF%BB%E5%85%A8%E6%96%87%0A%0A%23%23+%E8%A1%A5%E5%85%85%E8%AF%B4%E6%98%8E%0A%0A"&gt;提交反馈&lt;/a&gt; · hep-ex, hep-ph, physics.ins-det&lt;/p&gt;</ns1:encoded>
       <guid isPermaLink="false">arxiv:2604.11834:hepml-v1</guid>
       <category>hep-ex</category>
       <category>hep-ph</category>
