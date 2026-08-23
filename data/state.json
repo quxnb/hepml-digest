@@ -55710,6 +55710,479 @@
       "review_model": null,
       "screening_fingerprint": "195fb0b173d8bc9a4c28c78a16fb55810e78ed0d42329ccadb12ddb4dd876ed2",
       "review_fingerprint": null
+    },
+    "2608.19229:v1": {
+      "paper": {
+        "arxiv_id": "2608.19229",
+        "version": 1,
+        "title": "Cosmic-ray characterization of a timing detector based on extruded scintillators and wavelength-shifting fibers read-out through SiPMs",
+        "abstract": "arXiv:2608.19229v1 Announce Type: cross Abstract: Timing detectors based on extruded scintillators of different dimensions with different kinds of wavelength-shifting fibers read-out through SiPMs have been extensively tested using a cosmic ray telescope. Results in terms of light-yield, time resolutions and longitudinal coordinate resolutions are presented.",
+        "authors": [
+          "F. Anulli, A. Betti, C. Bini, M. Corradi, C. Luci, L. Martinelli, A. Nisati, M. Pantalena, S. Rosati, R. Vari, S. Veneziano"
+        ],
+        "link": "https://arxiv.org/abs/2608.19229",
+        "published": "2026-08-22T04:00:00Z",
+        "updated": "2026-08-22T04:00:00Z",
+        "categories": [
+          "hep-ex",
+          "physics.ins-det"
+        ]
+      },
+      "screening": {
+        "relevance": 0.3,
+        "method": "实验测量与表征，非统计或机器学习方法",
+        "hep_tasks": [
+          "探测器性能评估",
+          "定时探测器研发"
+        ],
+        "reason": "论文为探测器表征实验，不涉及统计或机器学习新方法，对HEP分析方法的参考价值有限。",
+        "needs_deep_review": false,
+        "evidence_level": "direct"
+      },
+      "review": null,
+      "review_status": "pending",
+      "processed_at": "2026-08-23T01:58:57.989968Z",
+      "screening_model": "deepseek-v4-flash",
+      "review_model": null,
+      "screening_fingerprint": "195fb0b173d8bc9a4c28c78a16fb55810e78ed0d42329ccadb12ddb4dd876ed2",
+      "review_fingerprint": null
+    },
+    "2608.19473:v1": {
+      "paper": {
+        "arxiv_id": "2608.19473",
+        "version": 1,
+        "title": "PSEC6: an 8-Channel 40 GSa/s Waveform Sampling ASIC in TSMC 65nm with 10.24 GHz PLL",
+        "abstract": "arXiv:2608.19473v1 Announce Type: cross Abstract: Picosecond level timing resolution is a prerequisite capability for improved coincidence matching, time-of-flight measurements, and secondary vertex reconstruction. Here, we present the specification, design, and simulation results for a new Application Specific Integrated Circuit (ASIC), called PSEC6, in the TSMC 65nm process. It features 8 channels, a maximum sampling rate of 40 GSa/s, a buffer length of 204.8 nanoseconds, and a 10.24 GHz Phase Locked Loop (PLL), which is the first of its kind in the 65nm CMOS process. The event readout rate is 32 kHz, with the digitization done by an off-chip Analog-to-Digital Converter (ADC). Simulations predict a 4.0 GHz analog input bandwidth and 20 mW per channel during sampling; the 10.24 GHz PLL has a predicted jitter of 550 fs RMS at 15.7 mW. The paper describes the sampling architecture, chip signal paths, PLL design, and presents simulation results.",
+        "authors": [
+          "Ahan Datta, Andrew Arzac, Davide Braga, Gordon Chen, Troy England, Farah Fahim, Henry J. Frisch, Nathan Gehl, Mary Heintz, Sumin Kim, Ava Lalich, Jinseo Park, Nathaniel J. Pastika, Hector D. Rico-Aniles, Paul M. Rubinov, Xiaoran Wang, Y. M. Richmond Yeung"
+        ],
+        "link": "https://arxiv.org/abs/2608.19473",
+        "published": "2026-08-22T04:00:00Z",
+        "updated": "2026-08-22T04:00:00Z",
+        "categories": [
+          "hep-ex",
+          "physics.ins-det"
+        ]
+      },
+      "screening": {
+        "relevance": 0.7,
+        "method": "专用集成电路（ASIC）设计，包含高速波形采样、PLL与信号路径设计，属于硬件技术而非统计/机器学习方法。",
+        "hep_tasks": [
+          "粒子飞行时间测量",
+          "次级顶点重建",
+          "触发系统前端电子学"
+        ],
+        "reason": "该芯片用于粒子探测中的高速波形采样，对时间分辨和触发能力有直接价值，但方法主要为硬件设计，统计方法较少。",
+        "needs_deep_review": true,
+        "evidence_level": "direct"
+      },
+      "review": null,
+      "review_status": "pending",
+      "processed_at": "2026-08-23T01:58:57.989968Z",
+      "screening_model": "deepseek-v4-flash",
+      "review_model": null,
+      "screening_fingerprint": "195fb0b173d8bc9a4c28c78a16fb55810e78ed0d42329ccadb12ddb4dd876ed2",
+      "review_fingerprint": null
+    },
+    "2608.19651:v1": {
+      "paper": {
+        "arxiv_id": "2608.19651",
+        "version": 1,
+        "title": "Electroweak Baryogenesis in Top-Philic Type-III Two-Higgs-Doublet Model motivated by the $t\\bar{t}$ Excess at the LHC",
+        "abstract": "arXiv:2608.19651v1 Announce Type: cross Abstract: Recently, the CMS and ATLAS Collaborations reported an enhancement near the production threshold in the invariant-mass distribution of top-antitop pairs. Possible interpretations include a pseudoscalar toponium quasi-bound state and an additional elementary pseudoscalar that coexists or mixes with toponium. Motivated by the latter interpretation, we identify the additional pseudoscalar with the CP-odd Higgs boson of a top-philic Type-III two-Higgs-doublet model (2HDM). This possibility is also interesting from the viewpoint of electroweak baryogenesis: the extended scalar sector can support a strong first-order electroweak phase transition, while the additional top-quark Yukawa interaction can provide a CP-violating source through the bubble-wall background. We therefore investigate whether the same parameter region motivated by the $t\\bar{t}$ threshold enhancement can also account for the observed baryon asymmetry of the Universe (BAU). We compare two scenarios with different origins of CP violation. In the explicit CP violation scenario, a complex phase is introduced into the additional top-quark Yukawa coupling $\\rho_{tt}$. In the transitional CP violation (TCPV) scenario, a CP-odd field configuration is generated dynamically inside the bubble wall through finite-temperature effects. Within the present one-loop treatment, explicit CP violation remains a scheme-dependent possibility, whereas no viable transitional CP violation branch is identified. In addition, we discuss the physical differences and viability of these two scenarios.",
+        "authors": [
+          "Yoshiki Matsuoka"
+        ],
+        "link": "https://arxiv.org/abs/2608.19651",
+        "published": "2026-08-22T04:00:00Z",
+        "updated": "2026-08-22T04:00:00Z",
+        "categories": [
+          "hep-ex",
+          "hep-ph",
+          "hep-th"
+        ]
+      },
+      "screening": {
+        "relevance": 0.1,
+        "method": "电弱重子生成机制中的CP破坏源分析，包括一阶相变和气泡壁背景",
+        "hep_tasks": [
+          "电弱相变物理",
+          "CP破坏研究"
+        ],
+        "reason": "论文主要关注理论模型和宇宙学现象，未涉及重建、触发、异常检测等实验技术，方法不直接适用于高能实验物理分析。",
+        "needs_deep_review": false,
+        "evidence_level": "irrelevant"
+      },
+      "review": null,
+      "review_status": "not_selected",
+      "processed_at": "2026-08-23T01:58:57.989968Z",
+      "screening_model": "deepseek-v4-flash",
+      "review_model": null,
+      "screening_fingerprint": "195fb0b173d8bc9a4c28c78a16fb55810e78ed0d42329ccadb12ddb4dd876ed2",
+      "review_fingerprint": null
+    },
+    "2608.19708:v1": {
+      "paper": {
+        "arxiv_id": "2608.19708",
+        "version": 1,
+        "title": "Tracing Vacuum Hadronization with Conserved Currents",
+        "abstract": "arXiv:2608.19708v1 Announce Type: cross Abstract: We show that color triality constrains the nonperturbative states that screen a Wilson-line endpoint, allowing the joint flows of net electric charge, baryon number, and strangeness to probe QCD vacuum hadronization. Whether evaluated from resolved hadrons in a jet initiated by a quark of flavor $f$ or from the corresponding charge correlators, these flows satisfy the Gell-Mann--Nishijima relation $\\langle Q_{\\rm flow}\\rangle_f \\simeq I_{3,f} +\\frac{1}{2}\\left( \\langle S_{\\rm flow}\\rangle_f +\\langle B_{\\rm flow}\\rangle_f \\right)$, where $I_{3,f}$ is the third component of the initiating-quark isospin. The net jet baryon number, $\\langle B_{\\rm flow}\\rangle_f\\simeq \\frac{r_{qq}}{1+r_{qq}}$, directly probes the relative probability of a diquark--antidiquark vacuum excitation, with $r_{qq}$ the diquark-to-quark production ratio. Thus, for $r_{qq}\\ll1$, the baryon number carried by the jet is substantially suppressed relative to the initiating-quark value $B_f=1/3$. Likewise, the strange-to-light pair-production ratio, defined by $u\\bar u:d\\bar d:s\\bar s=1:1:r_s$, is encoded in the measured jet strangeness $\\langle S_{\\rm flow}\\rangle_f \\simeq S_f+\\frac{3r_s}{2+r_s} \\left(\\frac{1}{3}- \\langle B_{\\rm flow}\\rangle_f\\right)$, predicting a nonzero mean net strangeness even in $u$- and $d$-initiated jets. The conserved-current moments appearing in these relations are independent of the renormalization scale. Their simultaneous measurement therefore provides a direct, flavor-resolved probe of vacuum pair production and quantum-number transport during hadronization.",
+        "authors": [
+          "Weiyao Ke, Hai Tao Li, Wanchen Li, Xiaohui Liu, Ding Yu Shao"
+        ],
+        "link": "https://arxiv.org/abs/2608.19708",
+        "published": "2026-08-22T04:00:00Z",
+        "updated": "2026-08-22T04:00:00Z",
+        "categories": [
+          "hep-ex",
+          "hep-ph",
+          "nucl-ex",
+          "nucl-th"
+        ]
+      },
+      "screening": {
+        "relevance": 0.3,
+        "method": "基于守恒流和色三重态约束的理论分析",
+        "hep_tasks": [
+          "强子化建模",
+          "喷注电荷关联"
+        ],
+        "reason": "理论推导为主，无具体统计或机器学习方法，迁移性有限。",
+        "needs_deep_review": false,
+        "evidence_level": "speculative"
+      },
+      "review": null,
+      "review_status": "not_selected",
+      "processed_at": "2026-08-23T01:58:57.989968Z",
+      "screening_model": "deepseek-v4-flash",
+      "review_model": null,
+      "screening_fingerprint": "195fb0b173d8bc9a4c28c78a16fb55810e78ed0d42329ccadb12ddb4dd876ed2",
+      "review_fingerprint": null
+    },
+    "2605.09694:v1": {
+      "paper": {
+        "arxiv_id": "2605.09694",
+        "version": 1,
+        "title": "Measurement of branching fractions of $D^+_s\\to K^0_SK^0_S \\pi^+\\pi^0$ and $D^+_s\\to K^0_S K^+\\pi^0\\pi^0$",
+        "abstract": "arXiv:2605.09694v3 Announce Type: replace Abstract: By analyzing $e^+e^-$ collision data corresponding to an integrated luminosity of 7.33~fb$^{-1}$ collected with the BESIII detector at center-of-mass energies ranging from 4.128 to 4.226~GeV, we report the observations of the hadronic decays $D^+_s\\to K^0_SK^0_S\\pi^+\\pi^0$ and $D^+_s\\to K^0_S K^+\\pi^0\\pi^0$. Their decay branching fractions are determined to be ${\\mathcal B}(D^+_s\\to K^0_SK^0_S \\pi^+\\pi^0)=(4.08\\pm0.46_{\\rm stat}\\pm0.45_{\\rm syst})\\times 10^{-3}$ and ${\\mathcal B}(D^+_s\\to K^0_S K^+\\pi^0\\pi^0)=(3.32\\pm0.64_{\\rm stat}\\pm0.31_{\\rm syst})\\times 10^{-3}$, where the first uncertainties are statistical and the second are systematic.",
+        "authors": [
+          "BESIII Collaboration, M. Ablikim, M. N. Achasov, P. Adlarson, X. C. Ai, R. Aliberti, A. Amoroso, Q. An, Y. Bai, O. Bakina, Y. Ban, H. -R. Bao, V. Batozskaya, K. Begzsuren, N. Berger, M. Berlowski, M. B. Bertani, D. Bettoni, F. Bianchi, E. Bianco, A. Bortone, I. Boyko, R. A. Briere, A. Brueggemann, H. Cai, M. H. Cai, X. Cai, A. Calcaterra, G. F. Cao, N. Cao, S. A. Cetin, X. Y. Chai, J. F. Chang, T. T. Chang, G. R. Che, Y. Z. Che, C. H. Chen, Chao Chen, G. Chen, H. S. Chen, H. Y. Chen, M. L. Chen, S. J. Chen, S. M. Chen, T. Chen, X. R. Chen, X. T. Chen, X. Y. Chen, Y. B. Chen, Y. Q. Chen, Z. K. Chen, J. C. Cheng, L. N. Cheng, S. K. Choi, X. Chu, G. Cibinetto, F. Cossio, J. Cottee-Meldrum, H. L. Dai, J. P. Dai, X. C. Dai, A. Dbeyssi, R. E. de Boer, D. Dedovich, C. Q. Deng, Z. Y. Deng, A. Denig, I. Denisenko, M. Destefanis, F. De Mori, X. X. Ding, Y. Ding, Y. X. Ding, J. Dong, L. Y. Dong, M. Y. Dong, X. Dong, M. C. Du, S. X. Du, S. X. Du, X. L. Du, Y. Y. Duan, Z. H. Duan, P. Egorov, G. F. Fan, J. J. Fan, Y. H. Fan, J. Fang, J. Fang, S. S. Fang, W. X. Fang, Y. Q. Fang, L. Fava, F. Feldbauer, G. Felici, C. Q. Feng, J. H. Feng, L. Feng, Q. X. Feng, Y. T. Feng, M. Fritsch, C. D. Fu, J. L. Fu, Y. W. Fu, H. Gao, Y. Gao, Y. N. Gao, Y. N. Gao, Y. Y. Gao, Z. Gao, S. Garbolino, I. Garzia, L. Ge, P. T. Ge, Z. W. Ge, C. Geng, E. M. Gersabeck, A. Gilman, K. Goetzen, J. D. Gong, L. Gong, W. X. Gong, W. Gradl, S. Gramigna, M. Greco, M. D. Gu, M. H. Gu, C. Y. Guan, A. Q. Guo, J. N. Guo, L. B. Guo, M. J. Guo, R. P. Guo, X. Guo, Y. P. Guo, A. Guskov, J. Gutierrez, T. T. Han, F. Hanisch, K. D. Hao, X. Q. Hao, F. A. Harris, C. Z. He, K. L. He, F. H. Heinsius, C. H. Heinz, Y. K. Heng, C. Herold, P. C. Hong, G. Y. Hou, X. T. Hou, Y. R. Hou, Z. L. Hou, H. M. Hu, J. F. Hu, Q. P. Hu, S. L. Hu, T. Hu, Y. Hu, Z. M. Hu, G. S. Huang, K. X. Huang, L. Q. Huang, P. Huang, X. T. Huang, Y. P. Huang, Y. S. Huang, T. Hussain, N. H\\\"usken, N. in der Wiesche, J. Jackson, Q. Ji, Q. P. Ji, W. Ji, X. B. Ji, X. L. Ji, X. Q. Jia, Z. K. Jia, D. Jiang, H. B. Jiang, P. C. Jiang, S. J. Jiang, X. S. Jiang, Y. Jiang, J. B. Jiao, J. K. Jiao, Z. Jiao, S. Jin, Y. Jin, M. Q. Jing, X. M. Jing, T. Johansson, S. Kabana, N. Kalantar-Nayestanaki, X. L. Kang, X. S. Kang, M. Kavatsyuk, B. C. Ke, V. Khachatryan, A. Khoukaz, O. B. Kolcu, B. Kopf, M. Kuessner, X. Kui, N. Kumar, A. Kupsc, W. K\\\"uhn, Q. Lan, W. N. Lan, T. T. Lei, M. Lellmann, T. Lenz, C. Li, C. Li, C. H. Li, C. K. Li, D. M. Li, F. Li, G. Li, H. B. Li, H. J. Li, H. L. Li, H. N. Li, Hui Li, J. R. Li, J. S. Li, J. W. Li, K. Li, K. L. Li, L. J. Li, Lei Li, M. H. Li, M. R. Li, P. L. Li, P. R. Li, Q. M. Li, Q. X. Li, R. Li, S. X. Li, Shanshan Li, T. Li, T. Y. Li, W. D. Li, W. G. Li, X. Li, X. H. Li, X. K. Li, X. L. Li, X. Y. Li, X. Z. Li, Y. Li, Y. G. Li, Y. P. Li, Z. H. Li, Z. J. Li, Z. X. Li, Z. Y. Li, C. Liang, H. Liang, Y. F. Liang, Y. T. Liang, G. R. Liao, L. B. Liao, M. H. Liao, Y. P. Liao, J. Libby, A. Limphirat, D. X. Lin, L. Q. Lin, T. Lin, B. J. Liu, B. X. Liu, C. X. Liu, F. Liu, F. H. Liu, Feng Liu, G. M. Liu, H. Liu, H. B. Liu, H. H. Liu, H. M. Liu, Huihui Liu, J. B. Liu, J. J. Liu, K. Liu, K. Liu, K. Y. Liu, Ke Liu, L. Liu, L. C. Liu, Lu Liu, M. H. Liu, P. L. Liu, Q. Liu, S. B. Liu, W. M. Liu, W. T. Liu, X. Liu, X. K. Liu, X. L. Liu, X. Y. Liu, Y. Liu, Y. Liu, Y. B. Liu, Z. A. Liu, Z. D. Liu, Z. Q. Liu, Z. Y. Liu, X. C. Lou, H. J. Lu, J. G. Lu, X. L. Lu, Y. Lu, Y. H. Lu, Y. P. Lu, Z. H. Lu, C. L. Luo, J. R. Luo, J. S. Luo, M. X. Luo, T. Luo, X. L. Luo, Z. Y. Lv, X. R. Lyu, Y. F. Lyu, Y. H. Lyu, F. C. Ma, H. L. Ma, Heng Ma, J. L. Ma, L. L. Ma, L. R. Ma, Q. M. Ma, R. Q. Ma, R. Y. Ma, T. Ma, X. T. Ma, X. Y. Ma, Y. M. Ma, F. E. Maas, I. MacKay, M. Maggiora, S. Malde, Q. A. Malik, H. X. Mao, Y. J. Mao, Z. P. Mao, S. Marcello, A. Marshall, F. M. Melendi, Y. H. Meng, Z. X. Meng, G. Mezzadri, H. Miao, T. J. Min, T. Mineeva, R. E. Mitchell, X. H. Mo, B. Moses, N. Yu. Muchnoi, J. Muskalla, Y. Nefedov, F. Nerling, Z. Ning, S. Nisar, Q. L. Niu, W. D. Niu, Y. Niu, C. Normand, S. L. Olsen, Q. Ouyang, S. Pacetti, X. Pan, Y. Pan, A. Pathak, Y. P. Pei, M. Pelizaeus, H. P. Peng, X. J. Peng, Y. Y. Peng, K. Peters, K. Petridis, J. L. Ping, R. G. Ping, S. Plura, V. Prasad, F. Z. Qi, H. R. Qi, M. Qi, S. Qian, W. B. Qian, C. F. Qiao, J. H. Qiao, J. J. Qin, J. L. Qin, L. Q. Qin, L. Y. Qin, P. B. Qin, X. P. Qin, X. S. Qin, Z. H. Qin, J. F. Qiu, Z. H. Qu, J. Rademacker, C. F. Redmer, A. Rivetti, M. Rolo, G. Rong, S. S. Rong, F. Rosini, Ch. Rosner, M. Q. Ruan, N. Salone, A. Sarantsev, Y. Schelhaas, K. Schoenning, M. Scodeggio, W. Shan, X. Y. Shan, Z. J. Shang, J. F. Shangguan, L. G. Shao, M. Shao, C. P. Shen, H. F. Shen, W. H. Shen, X. Y. Shen, B. A. Shi, H. Shi, J. L. Shi, J. Y. Shi, S. Y. Shi, X. Shi, H. L. Song, J. J. Song, M. H. Song, T. Z. Song, W. M. Song, Y. X. Song, Zirong Song, S. Sosio, S. Spataro, S Stansilaus, F. Stieler, S. S Su, G. B. Sun, G. X. Sun, H. Sun, H. K. Sun, J. F. Sun, K. Sun, L. Sun, R. Sun, S. S. Sun, T. Sun, W. Y. Sun, Y. C. Sun, Y. H. Sun, Y. J. Sun, Y. Z. Sun, Z. Q. Sun, Z. T. Sun, C. J. Tang, G. Y. Tang, J. Tang, J. J. Tang, L. F. Tang, Y. A. Tang, L. Y. Tao, M. Tat, J. X. Teng, J. Y. Tian, W. H. Tian, Y. Tian, Z. F. Tian, I. Uman, B. Wang, B. Wang, Bo Wang, C. Wang, C. Wang, Cong Wang, D. Y. Wang, H. J. Wang, J. Wang, J. J. Wang, J. P. Wang, K. Wang, L. L. Wang, L. W. Wang, M. Wang, M. Wang, N. Y. Wang, S. Wang, S. Wang, T. Wang, T. J. Wang, W. Wang, W. P. Wang, X. Wang, X. F. Wang, X. L. Wang, X. N. Wang, Xin Wang, Y. Wang, Y. D. Wang, Y. F. Wang, Y. H. Wang, Y. J. Wang, Y. L. Wang, Y. N. Wang, Y. N. Wang, Yaqian Wang, Yi Wang, Yuan Wang, Z. Wang, Z. Wang, Z. L. Wang, Z. Q. Wang, Z. Y. Wang, Ziyi Wang, D. Wei, D. H. Wei, H. R. Wei, F. Weidner, S. P. Wen, U. Wiedner, G. Wilkinson, M. Wolke, J. F. Wu, L. H. Wu, L. J. Wu, L. J. Wu, Lianjie Wu, S. G. Wu, S. M. Wu, X. Wu, Y. J. Wu, Z. Wu, L. Xia, B. H. Xiang, D. Xiao, G. Y. Xiao, H. Xiao, Y. L. Xiao, Z. J. Xiao, C. Xie, K. J. Xie, Y. Xie, Y. G. Xie, Y. H. Xie, Z. P. Xie, T. Y. Xing, C. F. Xu, C. J. Xu, G. F. Xu, H. Y. Xu, M. Xu, Q. J. Xu, Q. N. Xu, T. D. Xu, X. P. Xu, Y. Xu, Y. C. Xu, Z. S. Xu, F. Yan, L. Yan, W. B. Yan, W. C. Yan, W. H. Yan, W. P. Yan, X. Q. Yan, H. J. Yang, H. L. Yang, H. X. Yang, J. H. Yang, R. J. Yang, Y. Yang, Y. H. Yang, Y. Q. Yang, Y. Z. Yang, Z. P. Yao, M. Ye, M. H. Ye, Z. J. Ye, Junhao Yin, Z. Y. You, B. X. Yu, C. X. Yu, G. Yu, J. S. Yu, L. W. Yu, T. Yu, X. D. Yu, Y. C. Yu, Y. C. Yu, C. Z. Yuan, H. Yuan, J. Yuan, J. Yuan, L. Yuan, M. K. Yuan, S. H. Yuan, Y. Yuan, C. X. Yue, Ying Yue, A. A. Zafar, F. R. Zeng, S. H. Zeng, X. Zeng, Y. J. Zeng, Y. J. Zeng, Y. C. Zhai, Y. H. Zhan,  Zhang, B. L. Zhang, B. X. Zhang, D. H. Zhang, G. Y. Zhang, G. Y. Zhang, H. Zhang, H. Zhang, H. C. Zhang, H. H. Zhang, H. Q. Zhang, H. R. Zhang, H. Y. Zhang, J. Zhang, J. J. Zhang, J. L. Zhang, J. Q. Zhang, J. S. Zhang, J. W. Zhang, J. X. Zhang, J. Y. Zhang, J. Z. Zhang, Jianyu Zhang, L. M. Zhang, Lei Zhang, N. Zhang, P. Zhang, Q. Zhang, Q. Y. Zhang, R. Y. Zhang, S. H. Zhang, Shulei Zhang, X. M. Zhang, X. Y. Zhang, Y. Zhang, Y. Zhang, Y. T. Zhang, Y. H. Zhang, Y. P. Zhang, Z. D. Zhang, Z. H. Zhang, Z. L. Zhang, Z. L. Zhang, Z. X. Zhang, Z. Y. Zhang, Z. Y. Zhang, Z. Z. Zhang, Zh. Zh. Zhang, G. Zhao, J. Y. Zhao, J. Z. Zhao, L. Zhao, L. Zhao, M. G. Zhao, S. J. Zhao, Y. B. Zhao, Y. L. Zhao, Y. X. Zhao, Z. G. Zhao, A. Zhemchugov, B. Zheng, B. M. Zheng, J. P. Zheng, W. J. Zheng, X. R. Zheng, Y. H. Zheng, B. Zhong, C. Zhong, H. Zhou, J. Q. Zhou, S. Zhou, X. Zhou, X. K. Zhou, X. R. Zhou, X. Y. Zhou, Y. X. Zhou, Y. Z. Zhou, A. N. Zhu, J. Zhu, K. Zhu, K. J. Zhu, K. S. Zhu, L. Zhu, L. X. Zhu, S. H. Zhu, T. J. Zhu, W. D. Zhu, W. J. Zhu, W. Z. Zhu, Y. C. Zhu, Z. A. Zhu, X. Y. Zhuang, J. H. Zou, J. Zu"
+        ],
+        "link": "https://arxiv.org/abs/2605.09694",
+        "published": "2026-08-22T04:00:00Z",
+        "updated": "2026-08-22T04:00:00Z",
+        "categories": [
+          "hep-ex"
+        ]
+      },
+      "screening": {
+        "relevance": 0.2,
+        "method": "事件重建与分支比测量，基于似然拟合",
+        "hep_tasks": [
+          "分支比测量"
+        ],
+        "reason": "该论文是实验测量，统计方法为标准似然拟合，对ML开发帮助有限。",
+        "needs_deep_review": false,
+        "evidence_level": "irrelevant"
+      },
+      "review": null,
+      "review_status": "not_selected",
+      "processed_at": "2026-08-23T01:58:57.989968Z",
+      "screening_model": "deepseek-v4-flash",
+      "review_model": null,
+      "screening_fingerprint": "195fb0b173d8bc9a4c28c78a16fb55810e78ed0d42329ccadb12ddb4dd876ed2",
+      "review_fingerprint": null
+    },
+    "2506.00115:v1": {
+      "paper": {
+        "arxiv_id": "2506.00115",
+        "version": 1,
+        "title": "Dark Matter Haloscope with a Disordered Dielectric Absorber",
+        "abstract": "arXiv:2506.00115v2 Announce Type: replace-cross Abstract: Light dark matter candidates such as axions and dark photons generically couple to electromagnetism, yielding dark-matter-to-photon conversion as a key search strategy. In addition to resonant conversion in cavities and circuits, light dark matter bosons efficiently convert to photons on material interfaces, with a broadband power proportional to the total area of these interfaces. In this work, we make use of interface conversion to develop a new experimental dark matter detector design: the disordered dielectric detector. We show that a volume filled with dielectric powder is an efficient, robust, and broadband target for axion-to-photon or dark-photon-to-photon conversion. We perform semi-analytical and numerical studies in small-volume 2D and 3D disordered systems to compute the conversion power as a function of dark matter mass. We also discuss the power gathered onto a sensitive photodetector in terms of the bulk properties of the disordered material, making it possible to characterize the predicted dark-matter-to-photon conversion rate across a wide range of wavelengths. Finally, we propose DPHaSE: the Dielectric Powder Haloscope SNSPD Experiment which is composed of a disordered dielectric target, a veto system, and a photon collection chamber to maximize the coupling between the powder target and a low noise superconducting nanowire single photon detector (SNSPD). With ambitious but realistic improvements to sensor area and detection efficiency at low energy, the projected reach in the 10 meV-eV mass range is sensitive to QCD axion-photon couplings and exceeds current constraints on dark photon dark matter by up to 5 orders of magnitude.",
+        "authors": [
+          "Stewart Koppell, Otavio D. A. R. Bittencourt, Dip Joti Paul, Junwu Huang, Masha Baryakhtar, Karl K. Berggren"
+        ],
+        "link": "https://arxiv.org/abs/2506.00115",
+        "published": "2026-08-22T04:00:00Z",
+        "updated": "2026-08-22T04:00:00Z",
+        "categories": [
+          "cond-mat.mes-hall",
+          "hep-ex",
+          "hep-ph",
+          "physics.ins-det"
+        ]
+      },
+      "screening": {
+        "relevance": 0.2,
+        "method": "半解析和数值模拟，无序介电系统",
+        "hep_tasks": [
+          "新型暗物质探测器的设计"
+        ],
+        "reason": "方法为特定暗物质探测器设计，非统计或机器学习方法，HEP相关性有限。",
+        "needs_deep_review": false,
+        "evidence_level": "irrelevant"
+      },
+      "review": null,
+      "review_status": "not_selected",
+      "processed_at": "2026-08-23T01:58:57.989968Z",
+      "screening_model": "deepseek-v4-flash",
+      "review_model": null,
+      "screening_fingerprint": "195fb0b173d8bc9a4c28c78a16fb55810e78ed0d42329ccadb12ddb4dd876ed2",
+      "review_fingerprint": null
+    },
+    "2508.21442:v1": {
+      "paper": {
+        "arxiv_id": "2508.21442",
+        "version": 1,
+        "title": "Construction of the $a_4$ family",
+        "abstract": "arXiv:2508.21442v3 Announce Type: replace-cross Abstract: The COMPASS Collaboration recently reported \\sout{the observation of a new resonance, $a_4(2610)$}{\\blue{a new broad $J^{PC}=4^{++}$ structure, denoted as $a_4(2610)$}}, which has sparked our interest in studying the $a_4$ family with {$I^GJ^{PC}=1^{-}4^{++}$}. In this work, we investigate the mass spectra and Okubo-Zweig-Iizuka-allowed two-body strong decays of the $a_4$ family using the modified Godfrey-Isgur quark model and the quark-pair creation model. We also explore the possibility of identifying $a_4(2610)$ as a $4F$ or $2H$ state, {and our numerical results suggest that it could be a promising candidate for the $a_4(2H)$ state. In addition, we predict the masses and the widths of the $a_4(1H)$ and $a_4(3F)$ states.}",
+        "authors": [
+          "Ya-Rong Wang, Cheng-Qun Pang, Hao Chen, Xiao-Hai Liu"
+        ],
+        "link": "https://arxiv.org/abs/2508.21442",
+        "published": "2026-08-22T04:00:00Z",
+        "updated": "2026-08-22T04:00:00Z",
+        "categories": [
+          "hep-ex",
+          "hep-ph"
+        ]
+      },
+      "screening": {
+        "relevance": 0.1,
+        "method": "修正的Godfrey-Isgur夸克模型与夸克对产生模型",
+        "hep_tasks": [
+          "强子谱学"
+        ],
+        "reason": "论文专注于强子谱与衰变，未涉及统计学习或高能实验方法，与粒子实验物理交叉不大。",
+        "needs_deep_review": false,
+        "evidence_level": "irrelevant"
+      },
+      "review": null,
+      "review_status": "not_selected",
+      "processed_at": "2026-08-23T01:58:57.989968Z",
+      "screening_model": "deepseek-v4-flash",
+      "review_model": null,
+      "screening_fingerprint": "195fb0b173d8bc9a4c28c78a16fb55810e78ed0d42329ccadb12ddb4dd876ed2",
+      "review_fingerprint": null
+    },
+    "2602.20249:v1": {
+      "paper": {
+        "arxiv_id": "2602.20249",
+        "version": 1,
+        "title": "Resummed azimuthal decorrelation and transverse momentum imbalance of dijets at the LHC",
+        "abstract": "arXiv:2602.20249v2 Announce Type: replace-cross Abstract: We present a theoretical study of the azimuthal decorrelation $\\delta\\phi$ and transverse momentum imbalance $q_T$ in dijet production at the LHC, offering intriguing insights into the dynamics of quantum chromodynamics. We define the jet axes using the recoil-free winner-take-all (WTA) recombination scheme. For the azimuthal decorrelation $\\delta\\phi$, this axis choice eliminates non-global logarithms (NGLs) entirely. For the transverse momentum imbalance $q_T$, NGLs emerge specifically in the small jet radius limit ($R \\ll 1$). In this regime, the WTA scheme simplifies the theoretical framework by restricting jet radius logarithms to the soft sector. We derive factorization formulae for both observables within soft-collinear effective theory. To address the small-$R$ NGLs in the $q_T$ distribution, we refactorize the soft function into global soft, collinear-soft, and ultra-collinear-soft modes. We perform the resummation of global large logarithms $\\ln(\\delta\\phi)$ and $\\ln(q_T/Q)$ up to next-to-next-to-leading logarithmic accuracy. For the $q_T$ distribution, this is combined with a leading-logarithmic resummation of the non-global $\\ln R$ terms. We match our predictions to leading fixed-order $O(\\alpha_s^3)$ calculations. We also numerically investigate the structure of the first subleading power corrections. Comparisons with PYTHIA8 simulations demonstrate that the observables we consider are robust against non-perturbative multi-parton interactions and hadronization effects.",
+        "authors": [
+          "Rong-Jun Fu, Rudi Rahn, Ding Yu Shao, Wouter J. Waalewijn, Bin Wu"
+        ],
+        "link": "https://arxiv.org/abs/2602.20249",
+        "published": "2026-08-22T04:00:00Z",
+        "updated": "2026-08-22T04:00:00Z",
+        "categories": [
+          "hep-ex",
+          "hep-ph",
+          "nucl-th"
+        ]
+      },
+      "screening": {
+        "relevance": 0.2,
+        "method": "soft-collinear effective theory with resummation",
+        "hep_tasks": [
+          "dijet azimuthal decorrelation and transverse momentum imbalance predictions"
+        ],
+        "reason": "理论计算，与实验数据分析关系不大，但可用于验证或推动测量，相关性较低。",
+        "needs_deep_review": false,
+        "evidence_level": "speculative"
+      },
+      "review": null,
+      "review_status": "not_selected",
+      "processed_at": "2026-08-23T01:58:57.989968Z",
+      "screening_model": "deepseek-v4-flash",
+      "review_model": null,
+      "screening_fingerprint": "195fb0b173d8bc9a4c28c78a16fb55810e78ed0d42329ccadb12ddb4dd876ed2",
+      "review_fingerprint": null
+    },
+    "2604.13269:v1": {
+      "paper": {
+        "arxiv_id": "2604.13269",
+        "version": 1,
+        "title": "Charged kaon electric polarizability from four-point functions in lattice QCD",
+        "abstract": "arXiv:2604.13269v2 Announce Type: replace-cross Abstract: We present a lattice QCD calculation of the electric polarizability of the charged kaon using a four-point function approach, which is the Euclidean analog of low-energy Compton scattering. In the case of the charged kaon, the polarizability is separated into an elastic term, determined from the charge radius extracted via the kaon electromagnetic form factor, and an inelastic term obtained from the time-integrated difference of four-point correlation functions. Our study employs 500 configurations of Wilson quenched $24^3 \\times 48$ lattices, and we compute connected diagrams as a proof of principle. From this analysis we obtain a charged kaon electric polarizability of $\\alpha_E = (1.682 \\pm 0.523) \\times 10^{-4}$ fm$^3$ and a squared charge radius $r_E^2 = 0.3303 \\pm 0.0028$ fm$^2$ after extrapolation to the physical pion mass. The quoted uncertainties include statistical errors and, for $\\alpha_E$, the $\\boldsymbol{q}^2 \\to 0$ extrapolation; they do not include systematic effects from the quenched approximation, omitted disconnected diagrams, finite volume, or the single lattice spacing, which may be comparable in size. The results at the simulated masses should therefore be regarded as the primary outcome, with the physical-point values serving as an indicative extrapolation. The study demonstrates the applicability of the four-point function framework to strange mesons, extends previous four-point function polarizability studies, and provides a foundation for future calculations with increased statistics, dynamical fermions, and improved control of systematic uncertainties.",
+        "authors": [
+          "Shayan Nadeem, Walter Wilcox, Frank X. Lee"
+        ],
+        "link": "https://arxiv.org/abs/2604.13269",
+        "published": "2026-08-22T04:00:00Z",
+        "updated": "2026-08-22T04:00:00Z",
+        "categories": [
+          "hep-ex",
+          "hep-lat"
+        ]
+      },
+      "screening": {
+        "relevance": 0.1,
+        "method": "格点QCD四点函数方法",
+        "hep_tasks": [],
+        "reason": "聚焦于格点QCD计算强子性质，与实验粒子物理中的统计方法关联弱。",
+        "needs_deep_review": false,
+        "evidence_level": "irrelevant"
+      },
+      "review": null,
+      "review_status": "not_selected",
+      "processed_at": "2026-08-23T01:58:57.989968Z",
+      "screening_model": "deepseek-v4-flash",
+      "review_model": null,
+      "screening_fingerprint": "195fb0b173d8bc9a4c28c78a16fb55810e78ed0d42329ccadb12ddb4dd876ed2",
+      "review_fingerprint": null
+    },
+    "2604.17756:v1": {
+      "paper": {
+        "arxiv_id": "2604.17756",
+        "version": 1,
+        "title": "Polarization, Maximal Concurrence, and Pure States in High-Energy Collisions",
+        "abstract": "arXiv:2604.17756v3 Announce Type: replace-cross Abstract: We establish a quantitative relation between local spin polarization and quantum entanglement in two-qubit systems by mathematically proving a closed-form upper bound on the concurrence at fixed local polarization magnitudes. The bound shows how the maximal concurrence is jointly constrained by the two local polarizations. We further demonstrate that this bound is saturated by pure states in certain cases with identical polarizations. As a concrete physical application, we consider the parity-violating process $e^+e^- \\to Z^0 \\to q\\bar{q}$, which generates final-state spin polarization. We show that the maximal concurrence is attained in specific kinematic regions and is significantly reduced relative to the unpolarized case. These results establish a general, process-independent framework connecting local polarization, maximal entanglement, and pure states.",
+        "authors": [
+          "Yu-Xuan Liu, Wei Qi, Luo-Ting He, Bo-Wen Xiao"
+        ],
+        "link": "https://arxiv.org/abs/2604.17756",
+        "published": "2026-08-22T04:00:00Z",
+        "updated": "2026-08-22T04:00:00Z",
+        "categories": [
+          "hep-ex",
+          "hep-ph",
+          "nucl-th",
+          "quant-ph"
+        ]
+      },
+      "screening": {
+        "relevance": 0.2,
+        "method": "量子纠缠与偏振的数学关系证明",
+        "hep_tasks": [
+          "自旋相关纠缠测量"
+        ],
+        "reason": "主要关注量子信息理论，对HEP实验方法帮助有限，仅间接关联到自旋纠缠测量。",
+        "needs_deep_review": false,
+        "evidence_level": "speculative"
+      },
+      "review": null,
+      "review_status": "not_selected",
+      "processed_at": "2026-08-23T01:58:57.989968Z",
+      "screening_model": "deepseek-v4-flash",
+      "review_model": null,
+      "screening_fingerprint": "195fb0b173d8bc9a4c28c78a16fb55810e78ed0d42329ccadb12ddb4dd876ed2",
+      "review_fingerprint": null
+    },
+    "2604.26386:v1": {
+      "paper": {
+        "arxiv_id": "2604.26386",
+        "version": 1,
+        "title": "Comparison of Silvaco and Synopsys TCAD Predictions Including the Perugia Radiation Damage Model in Silicon Pixel Detectors for the HL-LHC",
+        "abstract": "arXiv:2604.26386v3 Announce Type: replace-cross Abstract: At the High Luminosity Large Hadron Collider (HL-LHC), silicon pixel detectors will be exposed to radiation fluences about 5 to 10 times larger than those experienced by the current innermost pixel layers up to today. Due to radiation damage to bulk of pixel detectors, leakage current and depletion voltage will increase significantly over time, posing severe constraints on operating conditions, with important modifications to the electric field profile due to radiation induced deep defects in silicon bulk. It is important to have reliable predictions for all observables - such as leakage current level and breakdown voltage - after irradiation, in order to estimate operational voltage values. In this paper, the predictions of Silvaco and Synopsys TCAD device simulations are compared when the surface and bulk defects and traps of the ``New University of Perugia radiation damage model'' are included by studying observables like leakage current, depletion and breakdown voltage, along with electric field and trap occupancy profiles. The results are quite promising regarding leakage current, depletion voltage, electric field and trap statistics, at two distinct reference temperatures and fluences.",
+        "authors": [
+          "M. Bomben, T. Croci, K. Aouadj, A. Fondacci, F. Moscatelli, A. Morozzi, D. Passeri"
+        ],
+        "link": "https://arxiv.org/abs/2604.26386",
+        "published": "2026-08-22T04:00:00Z",
+        "updated": "2026-08-22T04:00:00Z",
+        "categories": [
+          "hep-ex",
+          "physics.ins-det"
+        ]
+      },
+      "screening": {
+        "relevance": 0.4,
+        "method": "TCAD器件模拟，包含辐射损伤模型",
+        "hep_tasks": [
+          "探测器模拟",
+          "辐射损伤效应研究"
+        ],
+        "reason": "研究硅像素探测器辐射损伤，但主要涉及器件物理模拟而非统计机器学习方法，对HEP数据分析方法借鉴有限。",
+        "needs_deep_review": false,
+        "evidence_level": "irrelevant"
+      },
+      "review": null,
+      "review_status": "not_selected",
+      "processed_at": "2026-08-23T01:58:57.989968Z",
+      "screening_model": "deepseek-v4-flash",
+      "review_model": null,
+      "screening_fingerprint": "195fb0b173d8bc9a4c28c78a16fb55810e78ed0d42329ccadb12ddb4dd876ed2",
+      "review_fingerprint": null
+    },
+    "2606.25486:v1": {
+      "paper": {
+        "arxiv_id": "2606.25486",
+        "version": 1,
+        "title": "The renormalization of the shell-model neutrinoless double-beta decay operator starting from effective field theory (I)",
+        "abstract": "arXiv:2606.25486v2 Announce Type: replace-cross Abstract: In this work, we approach for the first time the task to perform a shell-model calculation of the matrix element for the neutrinoless double-beta decay, within a fully-consistent framework where the expressions of the nuclear Hamiltonian and of the decay operators have been derived through chiral perturbation theory. More precisely, the effective shell-model Hamiltonian and all transition operators have been constructed by way of the many-body perturbation theory, and then employed to calculate both spectroscopic properties of the nuclei involved in the decays under our consideration - namely 48Ca, 76Ge, and 82Se -, as well as the nuclear matrix elements of the electromagnetic and neutrinoless double-beta decays. We also present a study of the convergence properties of the calculated matrix elements in order to provide the elements for an estimate of the theoretical uncertainty.",
+        "authors": [
+          "L. Coraggio, G. De Gregorio, S. L. Lyu, N. Itaco"
+        ],
+        "link": "https://arxiv.org/abs/2606.25486",
+        "published": "2026-08-22T04:00:00Z",
+        "updated": "2026-08-22T04:00:00Z",
+        "categories": [
+          "hep-ex",
+          "nucl-ex",
+          "nucl-th"
+        ]
+      },
+      "screening": {
+        "relevance": 0.25,
+        "method": "手征有效场论与多体微扰理论的壳模型计算",
+        "hep_tasks": [
+          "无中微子双贝塔衰变矩阵元计算",
+          "核结构计算"
+        ],
+        "reason": "虽涉及理论不确定度估计，但主要面向核物理特定模型，对粒子实验统计方法借鉴有限。",
+        "needs_deep_review": false,
+        "evidence_level": "irrelevant"
+      },
+      "review": null,
+      "review_status": "not_selected",
+      "processed_at": "2026-08-23T01:58:57.989968Z",
+      "screening_model": "deepseek-v4-flash",
+      "review_model": null,
+      "screening_fingerprint": "195fb0b173d8bc9a4c28c78a16fb55810e78ed0d42329ccadb12ddb4dd876ed2",
+      "review_fingerprint": null
+    },
+    "2607.10403:v1": {
+      "paper": {
+        "arxiv_id": "2607.10403",
+        "version": 1,
+        "title": "The muon Moonshot: Moon subsurface tomography with upward-going muons",
+        "abstract": "arXiv:2607.10403v2 Announce Type: replace-cross Abstract: We propose a novel muon Moonshot concept for lunar subsurface tomography based on upward-going muons originated from the lunar regolith. Unlike the Earth, the Moon lacks an atmosphere, leaving a dense regolith below and a near-vacuum environment above. Consequently, while most downward-going hadrons are absorbed before decaying, upward-going hadrons escaping the regolith can decay in flight, producing a significant source of lunar muons. These muons are detectable by instruments on the lunar surface or in near-lunar orbit. We perform Monte Carlo simulations to investigate their energy spectra, angular distributions, and integrated fluxes under various theoretical and detector configurations. The results indicate that the lunar muon flux is sensitive to detector altitude under a flat-terrain assumption, demonstrating its potential as a novel non-invasive probe of shallow subsurface voids. We also present case studies on the detection of underground cavities and water resources, with cavity-induced flux variations observable in less than two minutes and weaker water signals distinguishable after about 36 minutes of data collection with a $1~\\mathrm{m^2}$ detector, and discuss potential implementations in future lunar missions.",
+        "authors": [
+          "Zimo Hu, Leyun Gao, Zhengyun You, Qite Li, Qiang Li, Yuhong Yu, Liangwen Chen, Xueheng Zhang, Zhiyu Sun"
+        ],
+        "link": "https://arxiv.org/abs/2607.10403",
+        "published": "2026-08-22T04:00:00Z",
+        "updated": "2026-08-22T04:00:00Z",
+        "categories": [
+          "astro-ph.EP",
+          "astro-ph.IM",
+          "hep-ex",
+          "hep-ph",
+          "physics.space-ph"
+        ]
+      },
+      "screening": {
+        "relevance": 0.75,
+        "method": "Monte Carlo simulation of upward-going muon flux and sensitivity analysis",
+        "hep_tasks": [
+          "Muon tomography",
+          "Detector design and optimization",
+          "Geant4-based simulations"
+        ],
+        "reason": "使用缪子成像原理，与地下结构探测相关，但主要面向月球，HEP直接应用有限。",
+        "needs_deep_review": false,
+        "evidence_level": "transferable"
+      },
+      "review": null,
+      "review_status": "pending",
+      "processed_at": "2026-08-23T01:58:57.989968Z",
+      "screening_model": "deepseek-v4-flash",
+      "review_model": null,
+      "screening_fingerprint": "195fb0b173d8bc9a4c28c78a16fb55810e78ed0d42329ccadb12ddb4dd876ed2",
+      "review_fingerprint": null
     }
   }
 }

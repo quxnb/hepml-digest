@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh-CN">
   <id>https://quxnb.github.io/hepml-digest</id>
   <title>Daily HEP-ML Digest</title>
-  <updated>2026-08-22T02:00:46.751013+00:00</updated>
+  <updated>2026-08-23T02:03:14.551571+00:00</updated>
   <author>
     <name>HEP-ML Digest Bot</name>
   </author>
@@ -10,6 +10,45 @@
   <link href="https://quxnb.github.io/hepml-digest/atom.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
   <subtitle>统计与机器学习方法对高能实验物理的每日启发</subtitle>
+  <entry>
+    <id>arxiv:2608.19473:hepml-v1</id>
+    <title>PSEC6: an 8-Channel 40 GSa/s Waveform Sampling ASIC in TSMC 65nm with 10.24 GHz PLL</title>
+    <updated>2026-08-23T01:58:57.989968+00:00</updated>
+    <author>
+      <name>Ahan Datta, Andrew Arzac, Davide Braga, Gordon Chen, Troy England, Farah Fahim, Henry J. Frisch, Nathan Gehl, Mary Heintz, Sumin Kim, Ava Lalich, Jinseo Park, Nathaniel J. Pastika, Hector D. Rico-Aniles, Paul M. Rubinov, Xiaoran Wang, Y. M. Richmond Yeung</name>
+    </author>
+    <content type="html">&lt;p&gt;&lt;strong&gt;栏目：&lt;/strong&gt;HEP 直接应用&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法：&lt;/strong&gt;专用集成电路（ASIC）设计，包含高速波形采样、PLL与信号路径设计，属于硬件技术而非统计/机器学习方法。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;相关性：&lt;/strong&gt;0.70；&lt;strong&gt;证据等级：&lt;/strong&gt;direct&lt;/p&gt;&lt;p&gt;&lt;strong&gt;初筛理由：&lt;/strong&gt;该芯片用于粒子探测中的高速波形采样，对时间分辨和触发能力有直接价值，但方法主要为硬件设计，统计方法较少。&lt;/p&gt;&lt;p&gt;&lt;em&gt;本条目仅完成摘要级筛选。&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;a href="https://arxiv.org/abs/2608.19473"&gt;arXiv 页面&lt;/a&gt; · &lt;a href="https://github.com/quxnb/hepml-digest/issues/new?title=%5B%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%5D+2608.19473+PSEC6%3A+an+8-Channel+40+GSa%2Fs+Waveform+Sampling+ASIC+in+TSMC+65nm+with+10.24+GHz+&amp;amp;body=%23%23+%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%0A%0A-+arXiv%EF%BC%9A%5B2608.19473%5D%28https%3A%2F%2Farxiv.org%2Fabs%2F2608.19473%29%0A-+%E6%A0%8F%E7%9B%AE%EF%BC%9AHEP+%E7%9B%B4%E6%8E%A5%E5%BA%94%E7%94%A8%0A-+%E5%BD%93%E5%89%8D%E7%9B%B8%E5%85%B3%E6%80%A7%EF%BC%9A0.70%0A-+%E5%BD%93%E5%89%8D%E8%AF%81%E6%8D%AE%E7%AD%89%E7%BA%A7%EF%BC%9Adirect%0A%0A%23%23+%E5%88%A4%E6%96%AD%0A%0A-+%5B+%5D+%E6%8E%A8%E8%8D%90%E4%BF%9D%E7%95%99%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E5%90%88%E7%90%86%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E8%BF%87%E5%BA%A6%E6%8E%A8%E6%B5%8B%0A-+%5B+%5D+%E5%BA%94%E7%A7%BB%E8%87%B3%E5%8F%A6%E4%B8%80%E4%B8%AA%E6%A0%8F%E7%9B%AE%0A-+%5B+%5D+%E5%BB%BA%E8%AE%AE%E7%B2%BE%E8%AF%BB%E5%85%A8%E6%96%87%0A%0A%23%23+%E8%A1%A5%E5%85%85%E8%AF%B4%E6%98%8E%0A%0A"&gt;提交反馈&lt;/a&gt; · hep-ex, physics.ins-det&lt;/p&gt;</content>
+    <link href="https://arxiv.org/abs/2608.19473"/>
+    <summary>该芯片用于粒子探测中的高速波形采样，对时间分辨和触发能力有直接价值，但方法主要为硬件设计，统计方法较少。</summary>
+    <category term="hep-ex"/>
+    <category term="physics.ins-det"/>
+    <category term="track:hep_application"/>
+    <category term="次级顶点重建"/>
+    <category term="粒子飞行时间测量"/>
+    <category term="触发系统前端电子学"/>
+    <published>2026-08-22T04:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>arxiv:2607.10403:hepml-v1</id>
+    <title>The muon Moonshot: Moon subsurface tomography with upward-going muons</title>
+    <updated>2026-08-23T01:58:57.989968+00:00</updated>
+    <author>
+      <name>Zimo Hu, Leyun Gao, Zhengyun You, Qite Li, Qiang Li, Yuhong Yu, Liangwen Chen, Xueheng Zhang, Zhiyu Sun</name>
+    </author>
+    <content type="html">&lt;p&gt;&lt;strong&gt;栏目：&lt;/strong&gt;HEP 直接应用&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法：&lt;/strong&gt;Monte Carlo simulation of upward-going muon flux and sensitivity analysis&lt;/p&gt;&lt;p&gt;&lt;strong&gt;相关性：&lt;/strong&gt;0.75；&lt;strong&gt;证据等级：&lt;/strong&gt;transferable&lt;/p&gt;&lt;p&gt;&lt;strong&gt;初筛理由：&lt;/strong&gt;使用缪子成像原理，与地下结构探测相关，但主要面向月球，HEP直接应用有限。&lt;/p&gt;&lt;p&gt;&lt;em&gt;本条目仅完成摘要级筛选。&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;a href="https://arxiv.org/abs/2607.10403"&gt;arXiv 页面&lt;/a&gt; · &lt;a href="https://github.com/quxnb/hepml-digest/issues/new?title=%5B%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%5D+2607.10403+The+muon+Moonshot%3A+Moon+subsurface+tomography+with+upward-going+muons&amp;amp;body=%23%23+%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%0A%0A-+arXiv%EF%BC%9A%5B2607.10403%5D%28https%3A%2F%2Farxiv.org%2Fabs%2F2607.10403%29%0A-+%E6%A0%8F%E7%9B%AE%EF%BC%9AHEP+%E7%9B%B4%E6%8E%A5%E5%BA%94%E7%94%A8%0A-+%E5%BD%93%E5%89%8D%E7%9B%B8%E5%85%B3%E6%80%A7%EF%BC%9A0.75%0A-+%E5%BD%93%E5%89%8D%E8%AF%81%E6%8D%AE%E7%AD%89%E7%BA%A7%EF%BC%9Atransferable%0A%0A%23%23+%E5%88%A4%E6%96%AD%0A%0A-+%5B+%5D+%E6%8E%A8%E8%8D%90%E4%BF%9D%E7%95%99%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E5%90%88%E7%90%86%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E8%BF%87%E5%BA%A6%E6%8E%A8%E6%B5%8B%0A-+%5B+%5D+%E5%BA%94%E7%A7%BB%E8%87%B3%E5%8F%A6%E4%B8%80%E4%B8%AA%E6%A0%8F%E7%9B%AE%0A-+%5B+%5D+%E5%BB%BA%E8%AE%AE%E7%B2%BE%E8%AF%BB%E5%85%A8%E6%96%87%0A%0A%23%23+%E8%A1%A5%E5%85%85%E8%AF%B4%E6%98%8E%0A%0A"&gt;提交反馈&lt;/a&gt; · astro-ph.EP, astro-ph.IM, hep-ex, hep-ph, physics.space-ph&lt;/p&gt;</content>
+    <link href="https://arxiv.org/abs/2607.10403"/>
+    <summary>使用缪子成像原理，与地下结构探测相关，但主要面向月球，HEP直接应用有限。</summary>
+    <category term="Detector design and optimization"/>
+    <category term="Geant4-based simulations"/>
+    <category term="Muon tomography"/>
+    <category term="astro-ph.EP"/>
+    <category term="astro-ph.IM"/>
+    <category term="hep-ex"/>
+    <category term="hep-ph"/>
+    <category term="physics.space-ph"/>
+    <category term="track:hep_application"/>
+    <published>2026-08-22T04:00:00+00:00</published>
+  </entry>
   <entry>
     <id>arxiv:2601.02610:hepml-v1</id>
     <title>Reliable conformal novelty detection at the decision boundary</title>
