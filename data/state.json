@@ -56183,6 +56183,2156 @@
       "review_model": null,
       "screening_fingerprint": "195fb0b173d8bc9a4c28c78a16fb55810e78ed0d42329ccadb12ddb4dd876ed2",
       "review_fingerprint": null
+    },
+    "2606.09857:v1": {
+      "paper": {
+        "arxiv_id": "2606.09857",
+        "version": 1,
+        "title": "Uncertainty-aware Multi-fidelity Closure via Conditional Normalizing Flows",
+        "abstract": "arXiv:2606.09857v2 Announce Type: replace Abstract: Reduced-order models (ROMs) provide efficient surrogates for complex multiscale systems, but their predictive accuracy is often compromised by truncation errors and the inadequate representation of interactions between resolved and unresolved scales. The missing effect of truncated (unresolved) scales on ROM (resolved) scales is often denoted as the closure problem. In this work, we formulate ROM closure modeling as a multi-fidelity (MF) learning problem and propose an uncertainty-aware MF framework based on conditional normalizing flows to enhance ROM predictive accuracy. The proposed approach learns a probabilistic mapping from low-fidelity (LF) ROM coefficients to high-fidelity (HF) coefficients, thereby improving predictive fidelity while quantifying the uncertainty associated with the learned closure. Two correction strategies are investigated: direct learning, in which HF coefficients are predicted directly from LF inputs, and residual learning, which learns the discrepancy between LF and HF coefficients. The framework is demonstrated on a double shear layer and vortex merging problems governed by the two-dimensional NavierStokes equations. Results show that both correction strategies improve ROM accuracy over uncorrected ROM, with residual learning achieving consistently better performance than direct learning. Moreover, the two proposed deep generative model-based strategies provide uncertainty quantification for the corrected ROM coefficients, which is critical for assessing prediction confidence and supporting the reliable use of ROMs in practical applications.",
+        "authors": [
+          "Jice Zeng, Shady E. Ahmed, David Barajas-Solano, Panos Stinis"
+        ],
+        "link": "https://arxiv.org/abs/2606.09857",
+        "published": "2026-08-24T04:00:00Z",
+        "updated": "2026-08-24T04:00:00Z",
+        "categories": [
+          "cs.LG",
+          "physics.comp-ph"
+        ]
+      },
+      "screening": {
+        "relevance": 0.2,
+        "method": "Conditional Normalizing Flows for multi-fidelity surrogate modeling",
+        "hep_tasks": [
+          "快速模拟",
+          "不确定度量化"
+        ],
+        "reason": "方法为通用多保真度学习，未在HEP数据验证，迁移至粒子物理快速模拟链较长。",
+        "needs_deep_review": false,
+        "evidence_level": "speculative"
+      },
+      "review": null,
+      "review_status": "not_selected",
+      "processed_at": "2026-08-25T01:51:06.151498Z",
+      "screening_model": "deepseek-v4-flash",
+      "review_model": null,
+      "screening_fingerprint": "195fb0b173d8bc9a4c28c78a16fb55810e78ed0d42329ccadb12ddb4dd876ed2",
+      "review_fingerprint": null
+    },
+    "2606.02507:v1": {
+      "paper": {
+        "arxiv_id": "2606.02507",
+        "version": 1,
+        "title": "Towards Automated Discovery: A Review of Generative Models, Multimodal Learning and Closed-Loop Workflows in Inverse Materials Design",
+        "abstract": "arXiv:2606.02507v2 Announce Type: replace-cross Abstract: Inverse materials design is shifting materials discovery from forward prediction toward targeted proposal of candidates that satisfy objectives under physical constraints. Here, we review advances in generative crystal structure modeling, multimodal learning, and closed-loop design pipelines for crystalline solids. We survey how generators learn chemical-structural priors from databases to enable controllable sampling of periodic structures, comparing variational autoencoders, normalizing flows, autoregressive models, and diffusion models. Across these families, we examine where feasibility constraints and physical priors enter, from representations and training objectives to sampling-time guidance, screening, and relaxation. We also discuss multimodal learning combining crystal structures, thermodynamic and electronic information, microscopy, spectroscopy, processing context, and scientific text to construct materials representations. Inverse-design strategies integrating conditional generation with latent optimization, Bayesian optimization, reinforcement learning, and active learning are also examined. We highlight recurring failure modes, including surrogate exploitation, diversity collapse, distribution shift, and the stability-synthesizability gap, and outline evaluation based on validity, novelty, uniqueness, stability, and cost. To support credible claims, we define a nine-rung discovery-credibility ladder and propose a minimum reporting standard: declared matching tolerances and database snapshots; separate reporting of uniqueness, training-set memorization, and external rediscovery; novelty as a continuous distance distribution; energy-above-hull distributions with functional and hull version; relaxation-survival and dynamical stability rates; and validation cost per credible hit. Headline validity or S.U.N. rates without these disclosures should be treated as uninformative.",
+        "authors": [
+          "Anand Babu, Rog\\'erio Almeida Gouv\\^ea, Gian-Marco Rignanese"
+        ],
+        "link": "https://arxiv.org/abs/2606.02507",
+        "published": "2026-08-24T04:00:00Z",
+        "updated": "2026-08-24T04:00:00Z",
+        "categories": [
+          "cond-mat.mtrl-sci",
+          "cs.ET",
+          "cs.LG",
+          "physics.app-ph",
+          "physics.comp-ph"
+        ]
+      },
+      "screening": {
+        "relevance": 0.15,
+        "method": "生成模型、多模态学习、闭环优化",
+        "hep_tasks": [
+          "快速模拟",
+          "异常检测",
+          "域转移"
+        ],
+        "reason": "主题为材料逆设计，与高能物理任务无直接关联，仅生成模型思想有潜在迁移性。",
+        "needs_deep_review": false,
+        "evidence_level": "speculative"
+      },
+      "review": null,
+      "review_status": "not_selected",
+      "processed_at": "2026-08-25T01:51:06.151498Z",
+      "screening_model": "deepseek-v4-flash",
+      "review_model": null,
+      "screening_fingerprint": "195fb0b173d8bc9a4c28c78a16fb55810e78ed0d42329ccadb12ddb4dd876ed2",
+      "review_fingerprint": null
+    },
+    "2608.20758:v1": {
+      "paper": {
+        "arxiv_id": "2608.20758",
+        "version": 1,
+        "title": "Hidden Axis of Uncertainty: Latent-Posterior Alignment in Graph Neural Networks with Bayesian Output Layers",
+        "abstract": "arXiv:2608.20758v1 Announce Type: new Abstract: Bayesian Neural Networks (BNNs) with Bayesian output layers provide a principled and tractable framework for quantifying predictive uncertainty, yet the mechanisms shaping that uncertainty remain unclear. While conventional theory attributes uncertainty reduction to posterior contraction, the corresponding assumptions need not hold for deep models. In the Graph Neural Networks (GNNs) with Bayesian output layers studied here, we observe that predictive uncertainty decreases as latent representations shift toward lower-variance posterior directions, even though the posterior variance does not contract. We term this behavior Latent-Posterior Alignment (LPA) and conduct interventional experiments that support its functional role in shaping predictive uncertainty. Building on this insight, we propose Alignment-Guided Learning (AGL), which explicitly promotes this alignment during training. AGL effectively reduces predictive uncertainty while preserving accuracy and improves structural calibration, ensuring that the model confidence faithfully mirrors underlying data density. These findings provide a new perspective on uncertainty dynamics in GNNs with mean-field Bayesian output layers, shifting the focus from the magnitude of the posterior to the geometric interplay between latent and parameter spaces.",
+        "authors": [
+          "Suk Hoon Choi, Damdae Park, Junhyuk Choi, Hyein Jung, Changsoo Kim, Ung Lee, Kyeongsu Kim"
+        ],
+        "link": "https://arxiv.org/abs/2608.20758",
+        "published": "2026-08-24T04:00:00Z",
+        "updated": "2026-08-24T04:00:00Z",
+        "categories": [
+          "cs.LG"
+        ]
+      },
+      "screening": {
+        "relevance": 0.35,
+        "method": "贝叶斯神经网络与贝叶斯输出层，提出潜在的-后验对齐概念和 Alignment-Guided Learning (AGL)",
+        "hep_tasks": [
+          "不确定度量化与校准",
+          "系统误差处理"
+        ],
+        "reason": "概念与HEP中的不确定度量化相关，但基于图神经网络，且未在HEP数据上验证，迁移性有限。",
+        "needs_deep_review": false,
+        "evidence_level": "speculative"
+      },
+      "review": null,
+      "review_status": "not_selected",
+      "processed_at": "2026-08-25T01:51:06.151498Z",
+      "screening_model": "deepseek-v4-flash",
+      "review_model": null,
+      "screening_fingerprint": "195fb0b173d8bc9a4c28c78a16fb55810e78ed0d42329ccadb12ddb4dd876ed2",
+      "review_fingerprint": null
+    },
+    "2608.20839:v1": {
+      "paper": {
+        "arxiv_id": "2608.20839",
+        "version": 1,
+        "title": "SAC-Copula: Quality-Preserving Watermarking for Diffusion Language Models via Smooth Correlated Gumbel Fields",
+        "abstract": "arXiv:2608.20839v1 Announce Type: cross Abstract: Watermarking diffusion language models (DLMs) requires mechanisms compatible with iterative parallel unmasking rather than autoregressive decoding. Existing sampling-based watermarking methods typically inject position-wise i.i.d. perturbations, which can be poorly aligned with DLM decoding dynamics and degrade generation quality. We propose SAC-Copula, a quality-preserving watermarking method for DLMs based on smooth, locally correlated Gumbel perturbation fields constructed via a Gaussian copula. We further develop a SAC-aware detector using covariance-aware filtering and native-sample calibration. Mechanism-level analysis shows that local correlation reduces latent perturbation roughness and better matches iterative refinement dynamics. Experiments on LLaDA show that SAC-Copula achieves a favorable quality-detectability trade-off compared with existing baselines. In particular, further evaluations on Dream-7B and additional datasets show that SAC-Copula substantially improves PPL tail stability over the i.i.d. Gumbel baseline, while maintaining strong low-FPR detectability and competitive overall generation quality. Additional token-edit stress tests further assess watermark robustness under controlled synchronization drift.",
+        "authors": [
+          "Baixin Li, Haiyun He"
+        ],
+        "link": "https://arxiv.org/abs/2608.20839",
+        "published": "2026-08-24T04:00:00Z",
+        "updated": "2026-08-24T04:00:00Z",
+        "categories": [
+          "cs.CL",
+          "cs.CR",
+          "cs.LG"
+        ]
+      },
+      "screening": {
+        "relevance": 0.1,
+        "method": "基于高斯copula的平滑相关Gumbel扰动场的水印方法",
+        "hep_tasks": [],
+        "reason": "关注扩散语言模型水印，与高能物理实验任务无直接或间接关联。",
+        "needs_deep_review": false,
+        "evidence_level": "irrelevant"
+      },
+      "review": null,
+      "review_status": "not_selected",
+      "processed_at": "2026-08-25T01:51:06.151498Z",
+      "screening_model": "deepseek-v4-flash",
+      "review_model": null,
+      "screening_fingerprint": "195fb0b173d8bc9a4c28c78a16fb55810e78ed0d42329ccadb12ddb4dd876ed2",
+      "review_fingerprint": null
+    },
+    "2509.21624:v1": {
+      "paper": {
+        "arxiv_id": "2509.21624",
+        "version": 1,
+        "title": "HIP: Hessian Interatomic Potentials without derivatives",
+        "abstract": "arXiv:2509.21624v4 Announce Type: replace Abstract: Molecular Hessians, the second derivatives of the potential energy, are fundamental to many workflows in computational chemistry. Usually, accurate Hessians are computationally expensive to calculate and scale poorly with system size, whether computed using quantum chemistry methods or machine-learning interatomic potentials (MLIPs). In this work, we introduce Hessian interatomic potentials (HIPs), a deep learning model that directly predicts Hessians without relying on automatic differentiation or finite differences. To do so, we construct SE(3)-equivariant, symmetric Hessians from irreducible representation (irrep) features up to degree $l$=2, computed by a graph neural network. HIP Hessians are one to two orders of magnitude faster, more accurate, more memory efficient, easier to train, and exhibit more favourable scaling with system size. We validate our predictions across a wide range of downstream tasks, demonstrating consistently superior performance in transition state search, geometry optimization, zero-point energy corrections, and vibrational analysis. We open-source the HIP code and model weights.",
+        "authors": [
+          "Andreas Burger, Luca Thiede, Nikolaj R{\\o}nne, Varinia Bernales, Nandita Vijaykumar, Tejs Vegge, Arghya Bhowmik, Alan Aspuru-Guzik"
+        ],
+        "link": "https://arxiv.org/abs/2509.21624",
+        "published": "2026-08-24T04:00:00Z",
+        "updated": "2026-08-24T04:00:00Z",
+        "categories": [
+          "cs.LG",
+          "physics.chem-ph",
+          "physics.comp-ph"
+        ]
+      },
+      "screening": {
+        "relevance": 0.2,
+        "method": "SE(3)-等变图神经网络直接预测Hessian矩阵",
+        "hep_tasks": [
+          "探测器响应模拟(需加速梯度计算)"
+        ],
+        "reason": "针对分子势能面二阶导数，与高能物理核心任务关联弱，仅快速模拟可间接借鉴",
+        "needs_deep_review": false,
+        "evidence_level": "speculative"
+      },
+      "review": null,
+      "review_status": "not_selected",
+      "processed_at": "2026-08-25T01:51:06.151498Z",
+      "screening_model": "deepseek-v4-flash",
+      "review_model": null,
+      "screening_fingerprint": "195fb0b173d8bc9a4c28c78a16fb55810e78ed0d42329ccadb12ddb4dd876ed2",
+      "review_fingerprint": null
+    },
+    "2601.12614:v1": {
+      "paper": {
+        "arxiv_id": "2601.12614",
+        "version": 1,
+        "title": "Deterministic and probabilistic neural surrogates of global hybrid-Vlasov simulations",
+        "abstract": "arXiv:2601.12614v4 Announce Type: replace-cross Abstract: Hybrid-Vlasov simulations resolve ion-kinetic effects in the solar wind-magnetosphere interaction, but even 5D (2D + 3V) configurations are computationally expensive. We show that graph-based machine learning emulators can learn the spatiotemporal evolution of electromagnetic fields and lower-order moments of the ion velocity distribution function in near-Earth space from four 5D Vlasiator runs, each driven by steady solar wind conditions. The upstream ion number density is systematically varied between the runs, while the grid spacing is held constant, to scan the ratio of ion inertial length to grid size. Using a graph neural network (GNN) operating on the 2D spatial simulation grid comprising 670k cells, we demonstrate that both a deterministic forecasting model (Graph-FM) and a probabilistic ensemble forecasting model (Graph-EFM) based on a latent variable formulation produce accurate predictions of future plasma states. A divergence penalty is incorporated to encourage divergence-freeness in the magnetic fields. For the probabilistic model, a continuous ranked probability score objective is added to improve the calibration of the ensemble forecasts. In terms of wall time per output step, the trained emulators run over two orders of magnitude faster on a single GPU than the Vlasiator simulations on 100 CPUs. Most forecasted fields have Pearson correlations above 0.95 at 50 seconds lead time. Fields that exhibit degenerate (near-zero) distributions in the 5D setting are more challenging for the emulator to keep well correlated. The ensemble forecasts remain underdispersive, with spread-skill ratios of approximately 0.2-0.3, and thus provide spatially structured relative uncertainty estimates. Overall, these results demonstrate that GNNs provide a viable framework for rapid ensemble generation in hybrid-Vlasov modeling and highlight promising directions for future work.",
+        "authors": [
+          "Daniel Holmberg, Ivan Zaitsev, Markku Alho, Ioanna Bouri, Fanni Franssila, Haewon Jeong, Minna Palmroth, Teemu Roos"
+        ],
+        "link": "https://arxiv.org/abs/2601.12614",
+        "published": "2026-08-24T04:00:00Z",
+        "updated": "2026-08-24T04:00:00Z",
+        "categories": [
+          "cs.LG",
+          "physics.plasm-ph",
+          "physics.space-ph"
+        ]
+      },
+      "screening": {
+        "relevance": 0.25,
+        "method": "图神经网络（GNN）的确定性与概率性序列预测模型，含散度惩罚和CRPS校准",
+        "hep_tasks": [
+          "快速模拟",
+          "不确定性量化"
+        ],
+        "reason": "方法为高维场时空演化预测，但领域为空间物理等离子体，与HEP粒子物理差异大，仅概念上有借鉴",
+        "needs_deep_review": false,
+        "evidence_level": "speculative"
+      },
+      "review": null,
+      "review_status": "not_selected",
+      "processed_at": "2026-08-25T01:51:06.151498Z",
+      "screening_model": "deepseek-v4-flash",
+      "review_model": null,
+      "screening_fingerprint": "195fb0b173d8bc9a4c28c78a16fb55810e78ed0d42329ccadb12ddb4dd876ed2",
+      "review_fingerprint": null
+    },
+    "2608.20610:v1": {
+      "paper": {
+        "arxiv_id": "2608.20610",
+        "version": 1,
+        "title": "Let Time Tell: Identification and Gaussian Process Estimation for Interrupted Time Series",
+        "abstract": "arXiv:2608.20610v1 Announce Type: cross Abstract: We study causal inference in interrupted time series designs where a treatment affects every unit simultaneously, so that the contemporaneous controls used by difference-in-differences and synthetic control are unavailable and the counterfactual must be extrapolated from a unit's own pre-treatment history. We establish identification within the potential outcomes framework and estimate the counterfactual by Gaussian process regression. Rather than committing to a single best-fitting trend, the estimator retains the functions consistent with the pre-treatment series and widens its intervals where extrapolation magnifies their divergence. Connecting it to reproducing kernel Hilbert space theory, we derive a bias decomposition that isolates the component extrapolation inflates and a worst-case bound on that component, justifying the Gaussian process estimator's posterior variance as extrapolation-aware uncertainty quantification. In closed form, the band equals the worst-case divergence the model class permits among functions consistent with the pre-treatment data. The method is illustrated with calibrated simulations and an analysis of handgun purchases after the Supreme Court's Heller decision, a universal treatment whose practical effect concentrates in a single jurisdiction. An R package, gpss, implements the approach.",
+        "authors": [
+          "Soonhong Cho"
+        ],
+        "link": "https://arxiv.org/abs/2608.20610",
+        "published": "2026-08-24T04:00:00Z",
+        "updated": "2026-08-24T04:00:00Z",
+        "categories": [
+          "stat.ME",
+          "stat.ML"
+        ]
+      },
+      "screening": {
+        "relevance": 0.55,
+        "method": "高斯过程回归的不连续时间序列因果推断",
+        "hep_tasks": [
+          "系统误差处理",
+          "不确定度量化",
+          "函数外推与校准"
+        ],
+        "reason": "高斯过程外推不确定度量化与展开类似，但未针对HEP数据，迁移链较长。",
+        "needs_deep_review": false,
+        "evidence_level": "speculative"
+      },
+      "review": null,
+      "review_status": "not_selected",
+      "processed_at": "2026-08-25T01:51:06.151498Z",
+      "screening_model": "deepseek-v4-flash",
+      "review_model": null,
+      "screening_fingerprint": "195fb0b173d8bc9a4c28c78a16fb55810e78ed0d42329ccadb12ddb4dd876ed2",
+      "review_fingerprint": null
+    },
+    "2608.21251:v1": {
+      "paper": {
+        "arxiv_id": "2608.21251",
+        "version": 1,
+        "title": "TRACE-C: Rank-Calibrated Relational Anomaly Detection for Multi-Stream Operational Telemetry",
+        "abstract": "arXiv:2608.21251v1 Announce Type: cross Abstract: Operational telemetry can be jointly anomalous while every individual stream stays inside its familiar range. TRACE-C is an auditable strictly-prior rank-calibrated detector for aligned multi-stream telemetry: same-regime rolling median/MAD residuals feed three window channels -- a maximum normalized local sum, a Gaussian copula-form dependence contrast on robust-z residuals, and a worst standardized AR(1) innovation -- whose channel ranks are Fisher-aggregated and ranked against earlier aggregates. We evaluate six Great Britain grid streams with a January-April 2019 fit, July-December 2019 development evidence, and a 2020 hold-out frozen before inspection. TRACE-C ranks Storm Atiyah first among 2019 test windows, but a disclosed channel ablation attributes that rank to the local channel, not the copula-form channel: copula-only ranks Atiyah 59th. The short 9 August frequency event is ranked far lower by the fused detector (143) than by the temporal channel alone (40), and reconstruction baselines rank it first. In 2020 no window is selected, which is consistent with record-rule saturation rather than an uneventful year; the highest-ranked frozen window was later interpreted as Storm Ellen. Three interpretive limits carry throughout. The resulting p-values are selection quantities, not event probabilities. The copula-form channel is not a literal copula density: the method applies no probability-integral or normal-score transform. Empirical rank counts are diagnostics, not coverage or false-discovery proofs. Every table and figure in this paper is generated from committed machine-readable reports.",
+        "authors": [
+          "Matthew Faucher"
+        ],
+        "link": "https://arxiv.org/abs/2608.21251",
+        "published": "2026-08-24T04:00:00Z",
+        "updated": "2026-08-24T04:00:00Z",
+        "categories": [
+          "cs.LG",
+          "stat.ML"
+        ]
+      },
+      "screening": {
+        "relevance": 0.6,
+        "method": "Rank-calibrated anomaly detection using rolling median/MAD residuals, Gaussian copula-form dependence contrast, AR(1) innovations, Fisher aggregation of channel ranks",
+        "hep_tasks": [
+          "异常检测",
+          "数据质量监控",
+          "系统误差识别"
+        ],
+        "reason": "异常检测方法可迁移至探测器监控，但特征为时间序列遥测，无高能物理验证，迁移链中等。",
+        "needs_deep_review": false,
+        "evidence_level": "transferable"
+      },
+      "review": null,
+      "review_status": "not_selected",
+      "processed_at": "2026-08-25T01:51:06.151498Z",
+      "screening_model": "deepseek-v4-flash",
+      "review_model": null,
+      "screening_fingerprint": "195fb0b173d8bc9a4c28c78a16fb55810e78ed0d42329ccadb12ddb4dd876ed2",
+      "review_fingerprint": null
+    },
+    "2608.21070:v1": {
+      "paper": {
+        "arxiv_id": "2608.21070",
+        "version": 1,
+        "title": "TracingFlow: A Simulation-Free Trajectory Inference Framework Based on Second-Order Dynamics",
+        "abstract": "arXiv:2608.21070v1 Announce Type: new Abstract: Inferring continuous system evolution from sparse temporal snapshots is a key challenge in generative modeling and single-cell omics. While Optimal Transport (OT) is popular, existing frameworks are largely restricted to first-order dynamics, assuming memoryless velocity fields. This limits expressiveness, as first-order systems fail to account for regulatory momentum and time-delayed responses inherent in processes like cell differentiation. Here, we introduce TracingFlow, a simulation-free Flow Matching framework generalizing to second-order dynamics. By using neural networks to regress the acceleration field, TracingFlow provides an exact, efficient solution to the Dynamical Optimal Acceleration Transport (DOAT) problem. Unlike first-order methods yielding over-smoothed trajectories, our second-order formulation captures high-curvature transitions and nonlinear evolutions by learning the underlying force fields. Evaluated on complex synthetic and large-scale scRNA-seq datasets, TracingFlow achieves superior accuracy in distributional reconstruction and trajectory faithfulness. Moreover, by integrating lineage tracing priors, it recovers dynamical structures that are both mathematically optimal and biologically plausible.",
+        "authors": [
+          "Yuhao Sun, Zekun Wu, Zixun Huang, Peijie Zhou"
+        ],
+        "link": "https://arxiv.org/abs/2608.21070",
+        "published": "2026-08-24T04:00:00Z",
+        "updated": "2026-08-24T04:00:00Z",
+        "categories": [
+          "cs.AI",
+          "cs.LG",
+          "q-bio.GN"
+        ]
+      },
+      "screening": {
+        "relevance": 0.4,
+        "method": "Second-order Flow Matching for trajectory inference",
+        "hep_tasks": [
+          "粒子轨迹重建",
+          "异常检测"
+        ],
+        "reason": "二阶动力学建模可能启发粒子轨迹重建，但未在HEP验证，迁移链较长。",
+        "needs_deep_review": false,
+        "evidence_level": "speculative"
+      },
+      "review": null,
+      "review_status": "not_selected",
+      "processed_at": "2026-08-25T01:51:06.151498Z",
+      "screening_model": "deepseek-v4-flash",
+      "review_model": null,
+      "screening_fingerprint": "195fb0b173d8bc9a4c28c78a16fb55810e78ed0d42329ccadb12ddb4dd876ed2",
+      "review_fingerprint": null
+    },
+    "2512.24407:v1": {
+      "paper": {
+        "arxiv_id": "2512.24407",
+        "version": 1,
+        "title": "Efficient Inference for Inverse Reinforcement Learning and Dynamic Discrete Choice Models",
+        "abstract": "arXiv:2512.24407v2 Announce Type: replace Abstract: In many sequential decision-making problems, researchers observe actions but not the rewards that drive behavior, yet still wish to evaluate and compare counterfactual policies. Inverse reinforcement learning (IRL) and dynamic discrete choice (DDC) models address this setting by positing an optimality model that links latent rewards to observed actions. Existing flexible IRL methods allow rich reward representations but typically do not provide valid inference, whereas classical DDC methods support inference only under restrictive parametric structure. We develop a semiparametric framework for debiased inverse reinforcement learning in maximum-entropy IRL and Gumbel-shock DDC models. Our key identification result is that the log-behavior policy can be treated as a pseudo-reward: it point-identifies policy value differences and, under a normalization constraint, the reward itself. This reduces inference on reward-dependent estimands to inference on smooth functionals of the behavior policy and transition kernel. We establish pathwise differentiability, derive efficient influence functions, and construct automatic debiased machine-learning estimators that permit flexible nuisance estimation while attaining $\\sqrt{n}$-consistency, asymptotic normality, and semiparametric efficiency. The result is a computationally tractable framework for valid uncertainty quantification in flexible IRL and DDC models.",
+        "authors": [
+          "Lars van der Laan, Aur\\'elien Bibaut, Nathan Kallus"
+        ],
+        "link": "https://arxiv.org/abs/2512.24407",
+        "published": "2026-08-24T04:00:00Z",
+        "updated": "2026-08-24T04:00:00Z",
+        "categories": [
+          "cs.LG",
+          "math.ST",
+          "stat.TH"
+        ]
+      },
+      "screening": {
+        "relevance": 0.2,
+        "method": "去偏机器学习估计器",
+        "hep_tasks": [
+          "不确定度量化",
+          "反事实策略评估"
+        ],
+        "reason": "方法针对逆强化学习，与HEP常用任务关联弱，但不确定度量化有一定迁移可能。",
+        "needs_deep_review": false,
+        "evidence_level": "speculative"
+      },
+      "review": null,
+      "review_status": "not_selected",
+      "processed_at": "2026-08-25T01:51:06.151498Z",
+      "screening_model": "deepseek-v4-flash",
+      "review_model": null,
+      "screening_fingerprint": "195fb0b173d8bc9a4c28c78a16fb55810e78ed0d42329ccadb12ddb4dd876ed2",
+      "review_fingerprint": null
+    },
+    "2608.21262:v1": {
+      "paper": {
+        "arxiv_id": "2608.21262",
+        "version": 1,
+        "title": "The Exceedance Design Effect: Effective Sample Size for Thresholds under Clustering",
+        "abstract": "arXiv:2608.21262v1 Announce Type: cross Abstract: Many machine-learning systems set a threshold at a quantile of a calibration set: conformal predictors that promise 90% coverage by drawing their cutoff at the calibration set's 90th percentile, abstention gates that decline to answer when a model's score falls below the calibration set's tenth percentile, safety filters that block any output scoring above the 99th percentile of a reference set. All of them promise that the threshold will hold at the stated rate on new data. The promise assumes the calibration examples are independent, and in modern pipelines they usually are not: they share a prompt, a document, a reasoning trace. Survey statistics has known how to discount correlated data since 1965, by counting how many independent observations a sample is worth, but only for averages. We show that a threshold needs a different count. The count depends on how often clustered scores land on the same side of the threshold, and that changes with where the threshold is set. How similar the scores are as numbers does not enter. We prove a closed-form law for the resulting effective sample size and for the spread of the coverage a deployed system actually sees. Three consequences follow. The correction now used in the conformal literature is the wrong quantity, and can miss in either direction. A dataset has no single effective sample size. It has one for each level the threshold is set at. And the damage is invisible in coverage averaged over many runs, and fully felt by whoever deploys once. On a released calibration set of 25,028 examples, we measure the reliability of about 1,300.",
+        "authors": [
+          "Adam Noonan"
+        ],
+        "link": "https://arxiv.org/abs/2608.21262",
+        "published": "2026-08-24T04:00:00Z",
+        "updated": "2026-08-24T04:00:00Z",
+        "categories": [
+          "cs.LG",
+          "stat.ML"
+        ]
+      },
+      "screening": {
+        "relevance": 0.1,
+        "method": "聚类阈值下的有效样本量推导，基于极值理论",
+        "hep_tasks": [],
+        "reason": "论文针对校准集阈值设定与聚类相关，未涉及HEP实验物理任务，迁移性低。",
+        "needs_deep_review": false,
+        "evidence_level": "irrelevant"
+      },
+      "review": null,
+      "review_status": "not_selected",
+      "processed_at": "2026-08-25T01:51:06.151498Z",
+      "screening_model": "deepseek-v4-flash",
+      "review_model": null,
+      "screening_fingerprint": "195fb0b173d8bc9a4c28c78a16fb55810e78ed0d42329ccadb12ddb4dd876ed2",
+      "review_fingerprint": null
+    },
+    "2608.20511:v1": {
+      "paper": {
+        "arxiv_id": "2608.20511",
+        "version": 1,
+        "title": "EDGE: a closed-form directed test for the calibration of probabilistic binary classifiers",
+        "abstract": "arXiv:2608.20511v1 Announce Type: cross Abstract: A probabilistic binary classifier is judged almost everywhere by discrimination - accuracy, the ROC curve, the area under it. Every such criterion is invariant to a monotone distortion of the predicted probabilities, so a classifier can rank perfectly and still return probabilities that are badly wrong. Calibration is the property decisions need, and the field's instrument for it, the binned expected calibration error with its reliability diagram, is descriptive: it has no null distribution, so it cannot say whether the miscalibration it displays is real or noise, and it depends on the binning. We propose EDGE, a calibration test for the canonical probabilistic classifier, logistic regression. EDGE reads the same binned predicted-versus-observed table a reliability diagram plots, and projects its standardized bin residuals onto a small pre-specified basis of smooth calibration-distortion shapes. Its null distribution is a weighted sum of chi-square variables in closed form, costing one pass over the data and one small eigendecomposition: no refit, no resampling, no tuning, so it can run inside cross-validation loops. Binning also makes it robust to the sparsity continuous features create. Across link and feature misspecification the pre-specified default led or tied every rival binned test on the fitted index in 19 of 22 detectable scenarios, and stayed computable where the refit-based Stukel score test separates in 20% to 28% of sparse samples. Its honest limit is rough, high-frequency miscalibration, where omnibus statistics win - a limit an elementary resolution argument shows is shared by every binned instrument, the calibration error included.",
+        "authors": [
+          "Ebrahim Khaled Ebrahim, Ahmed El-Kotory"
+        ],
+        "link": "https://arxiv.org/abs/2608.20511",
+        "published": "2026-08-24T04:00:00Z",
+        "updated": "2026-08-24T04:00:00Z",
+        "categories": [
+          "stat.AP",
+          "stat.ME",
+          "stat.ML"
+        ]
+      },
+      "screening": {
+        "relevance": 0.3,
+        "method": "EDGE：基于卡方分布的封闭形式校准检验",
+        "hep_tasks": [
+          "分类器校准评估"
+        ],
+        "reason": "针对通用二分类器校准，未在HEP验证，迁移性有限，但可借鉴校准检验思路",
+        "needs_deep_review": false,
+        "evidence_level": "speculative"
+      },
+      "review": null,
+      "review_status": "not_selected",
+      "processed_at": "2026-08-25T01:51:06.151498Z",
+      "screening_model": "deepseek-v4-flash",
+      "review_model": null,
+      "screening_fingerprint": "195fb0b173d8bc9a4c28c78a16fb55810e78ed0d42329ccadb12ddb4dd876ed2",
+      "review_fingerprint": null
+    },
+    "2411.02771:v1": {
+      "paper": {
+        "arxiv_id": "2411.02771",
+        "version": 1,
+        "title": "Doubly robust inference via calibration",
+        "abstract": "arXiv:2411.02771v3 Announce Type: replace-cross Abstract: Doubly robust estimators are widely used for estimating average treatment effects and other linear summaries of regression functions. While consistency requires only one of two nuisance functions to be estimated consistently, asymptotic normality for linear functionals typically requires sufficiently fast convergence of both. We address this mismatch by showing that calibrating the nuisance estimators within a doubly robust procedure can yield doubly robust asymptotic normality. We introduce the idea of calibrated debiased machine learning (DML) and propose a specific implementation in which standard DML is augmented with a simple isotonic regression adjustment. We show that, under a partial orthogonality condition, a calibrated DML estimator remains asymptotically normal if either the regression function or Riesz representer of the functional is estimated sufficiently well, allowing the other to converge arbitrarily slowly or even inconsistently. We also propose a bootstrap-assisted method for constructing confidence intervals, enabling doubly robust inference without additional nuisance estimation. In a range of semi-synthetic benchmark datasets, calibrated DML reduces bias and improves coverage relative to standard DML. Our method can be integrated into existing DML pipelines by adding just a few lines of code to calibrate cross-fitted estimates via isotonic regression.",
+        "authors": [
+          "Lars van der Laan, Alex Luedtke, Marco Carone"
+        ],
+        "link": "https://arxiv.org/abs/2411.02771",
+        "published": "2026-08-24T04:00:00Z",
+        "updated": "2026-08-24T04:00:00Z",
+        "categories": [
+          "math.ST",
+          "stat.ME",
+          "stat.ML",
+          "stat.TH"
+        ]
+      },
+      "screening": {
+        "relevance": 0.4,
+        "method": "校准的去偏机器学习 (Calibrated DML) 结合等渗回归",
+        "hep_tasks": [
+          "系统误差校正",
+          "展开",
+          "参数估计的鲁棒推断"
+        ],
+        "reason": "方法聚焦因果推断，与HEP常见任务差异大，但等渗回归校准可能用于系统误差处理。",
+        "needs_deep_review": false,
+        "evidence_level": "speculative"
+      },
+      "review": null,
+      "review_status": "not_selected",
+      "processed_at": "2026-08-25T01:51:06.151498Z",
+      "screening_model": "deepseek-v4-flash",
+      "review_model": null,
+      "screening_fingerprint": "195fb0b173d8bc9a4c28c78a16fb55810e78ed0d42329ccadb12ddb4dd876ed2",
+      "review_fingerprint": null
+    },
+    "2607.23130:v1": {
+      "paper": {
+        "arxiv_id": "2607.23130",
+        "version": 1,
+        "title": "Identification and Honest Recovery from Semantic Observation Kernels: Operator Error, Coarsening, and Stability",
+        "abstract": "arXiv:2607.23130v2 Announce Type: replace-cross Abstract: Probabilistic text generators, such as large language models, assign probabilities to phrases, but consequential decisions require posterior uncertainty over meaningful states. These are not interchangeable: language probabilities depend on the prompt, may be incomplete and need not reliably identify state uncertainty. Without a statistical bridge, fluent responses and numerical confidence are insufficient for inference or governance. We formulate recovery of the target posterior as a semiparametric inverse problem and develop honest recovery guarantees that account jointly for calibration error, measurement noise, incomplete probabilities and weak identification. Simulations demonstrate the predicted coverage and stability behaviour, while two frozen language-model studies demonstrate held-out recovery. The resulting method determines when a semantic measurement can be trusted for inference and when use, review, recalibration or abstention is warranted, providing a statistical foundation for runtime AI governance.",
+        "authors": [
+          "Matthew Francis Dixon"
+        ],
+        "link": "https://arxiv.org/abs/2607.23130",
+        "published": "2026-08-24T04:00:00Z",
+        "updated": "2026-08-24T04:00:00Z",
+        "categories": [
+          "stat.ME",
+          "stat.ML"
+        ]
+      },
+      "screening": {
+        "relevance": 0.15,
+        "method": "semiparametric inverse problem with honest recovery guarantees",
+        "hep_tasks": [
+          "unfolding",
+          "posterior inference"
+        ],
+        "reason": "概念上类似反问题和后验恢复，但面向语言模型概率，与HEP物理任务关联弱。",
+        "needs_deep_review": false,
+        "evidence_level": "speculative"
+      },
+      "review": null,
+      "review_status": "not_selected",
+      "processed_at": "2026-08-25T01:51:06.151498Z",
+      "screening_model": "deepseek-v4-flash",
+      "review_model": null,
+      "screening_fingerprint": "195fb0b173d8bc9a4c28c78a16fb55810e78ed0d42329ccadb12ddb4dd876ed2",
+      "review_fingerprint": null
+    },
+    "2608.20439:v1": {
+      "paper": {
+        "arxiv_id": "2608.20439",
+        "version": 1,
+        "title": "Wrong-Physics Backdoors in Neural PDE Operators",
+        "abstract": "arXiv:2608.20439v1 Announce Type: new Abstract: Neural PDE operators are increasingly trained on reusable solver archives, yet validation often relies on clean prediction error and parameter-agnostic plausibility checks. We introduce cross-parameter relinking, a data-poisoning primitive that makes a triggered input select a valid solution from the same PDE family under an incorrect physical parameter. We term this a wrong-physics backdoor: the output remains physically plausible but is wrong for the intended parameter. The attack exploits tensor-to-parameter provenance failures in multi-parameter archives by stamping the surrogate input and relinking its supervision to a cached alternate-parameter solution for the same latent sample. Across 476 attack campaigns, we evaluate Burgers, advection-diffusion, two-dimensional Navier-Stokes, and an elliptic Poisson case. Fourier Neural Operators and DeepONet provide the primary evidence, with Transformer, GRU, and LSTM models as support. FNO reaches a backdoor success rate of 1.0000 on both advection-diffusion and two-dimensional Navier-Stokes while retaining low clean relative L2 error. Clean-label, label-only, and shuffled controls show that high attack success alone is insufficient: successful attacks must move predictions toward the intended alternate-physics target while preserving bounded clean error. These results expose a structural validation gap: smoothness or generic solver-like behavior is insufficient unless the provenance of the intended physical parameter is also verified.",
+        "authors": [
+          "Hanbing Liang, Fujun Liu"
+        ],
+        "link": "https://arxiv.org/abs/2608.20439",
+        "published": "2026-08-24T04:00:00Z",
+        "updated": "2026-08-24T04:00:00Z",
+        "categories": [
+          "cs.LG",
+          "physics.comp-ph"
+        ]
+      },
+      "screening": {
+        "relevance": 0.1,
+        "method": "数据投毒攻击，交叉参数重链接",
+        "hep_tasks": [
+          "系统误差处理",
+          "验证与校准"
+        ],
+        "reason": "研究针对神经PDE算子的后门攻击，与HEP数据投毒风险相关，但任务间接，迁移链长。",
+        "needs_deep_review": false,
+        "evidence_level": "irrelevant"
+      },
+      "review": null,
+      "review_status": "not_selected",
+      "processed_at": "2026-08-25T01:51:06.151498Z",
+      "screening_model": "deepseek-v4-flash",
+      "review_model": null,
+      "screening_fingerprint": "195fb0b173d8bc9a4c28c78a16fb55810e78ed0d42329ccadb12ddb4dd876ed2",
+      "review_fingerprint": null
+    },
+    "2608.20445:v1": {
+      "paper": {
+        "arxiv_id": "2608.20445",
+        "version": 1,
+        "title": "Amortized Bandwidth Learning for Kernel Density Estimation under Logarithmic Score",
+        "abstract": "arXiv:2608.20445v1 Announce Type: new Abstract: Kernel density estimation converts finite samples into probability densities, but its performance depends critically on bandwidth selection. Classical selectors prescribe the sample-to-bandwidth rule analytically or asymptotically, or solve a new optimization for each sample. An amortized framework is proposed that instead learns this mapping across a distribution of density-estimation tasks by optimizing the logarithmic score. A truncated-and-renormalized bounded-support formulation enables stable learning across heterogeneous tasks, while affine standardization allows a selector trained on a single reference interval to transfer across bounded intervals. Experiments under Gaussian sampling, a multi-family benchmark, and randomized Gaussian-mixture training show that the amortized selector consistently and substantially outperforms Silverman's rule, the Sheather--Jones selector, and least-squares cross-validation, with especially large gains in small and heterogeneous samples. Finite Gaussian mixtures provide a generic training mechanism supported by their $L^1$ approximation property. Selectors trained in this way generalize strongly across different density structures, allowing the same trained selector to be applied directly to finite samples from unknown densities without specifying or fitting a distributional family. This combination of broad applicability and strong empirical performance makes the framework attractive for a wide range of applications in which finite samples or ensembles must be converted into continuous probability densities.",
+        "authors": [
+          "Junyi Liang, Hailiang Du"
+        ],
+        "link": "https://arxiv.org/abs/2608.20445",
+        "published": "2026-08-24T04:00:00Z",
+        "updated": "2026-08-24T04:00:00Z",
+        "categories": [
+          "cs.LG"
+        ]
+      },
+      "screening": {
+        "relevance": 0.8,
+        "method": "Amortized learning for bandwidth selection in kernel density estimation, optimizing logarithmic score",
+        "hep_tasks": [
+          "Event reconstruction",
+          "Particle identification",
+          "Fast simulation"
+        ],
+        "reason": "核密度估计用于HEP相空间平滑，摊销带宽选择可加速和提升性能，但需验证在HEP数据上的适用性。",
+        "needs_deep_review": true,
+        "evidence_level": "transferable"
+      },
+      "review": null,
+      "review_status": "pending",
+      "processed_at": "2026-08-25T01:51:06.151498Z",
+      "screening_model": "deepseek-v4-flash",
+      "review_model": null,
+      "screening_fingerprint": "195fb0b173d8bc9a4c28c78a16fb55810e78ed0d42329ccadb12ddb4dd876ed2",
+      "review_fingerprint": null
+    },
+    "2608.20818:v1": {
+      "paper": {
+        "arxiv_id": "2608.20818",
+        "version": 1,
+        "title": "Scaling Muon for Diffusion Transformers",
+        "abstract": "arXiv:2608.20818v1 Announce Type: new Abstract: The matrix-aware optimizer Muon improves large model training by balancing updates across singular directions, yet its scaling behavior and end-to-end efficiency on large Diffusion Transformers (DiTs) remain unclear. We first establish Muon's scaling behavior on DiTs from 1.3B to 15B parameters, showing that its optimization and generative quality advantages over AdamW persist across model scales. However, at scale, the 5-step Newton--Schulz iteration (NS5) performed at every optimization step, together with full-momentum materialization, introduces substantial computation and communication overhead that can offset Muon's step-efficiency advantage. We introduce \\emph{Periodic Row-wise Muon}, which performs a full NS5 spectral update once every \\(K\\) steps and applies a low compute and communication cost row-wise constrained update based on the current momentum at the remaining steps. We further co-design a distributed implementation that operates directly on sharded momentum during non-refresh steps and accelerates spectral refreshes through bucketed all-gather and communication--computation overlap. Across all scales, Muon improves the best observed generative quality over AdamW by 12.9--19.1\\%. Compared with vanilla Muon, Periodic Row-wise Muon remains within 0.5\\% in best generative quality on the 1.3B--4B models and improves it by 4.5\\% at 9B. It reduces optimizer time by 46.9--54.3\\%, end-to-end step time by 15.7--24.3\\%, and logical communication volume by 66.7\\%, while reaching its respective best generative quality with 33.7--64.8\\% less active training time. These results show that Periodic Row-wise Muon preserves Muon's generative quality advantage while translating it into end-to-end training efficiency for large DiTs.",
+        "authors": [
+          "Chenghao Li, Xiao Han, Xinxin Huang, Wei Liu, Boyang Li, Bing Xiao, Heran Zhang, Juanma Perez Rua, Ke Xu, Kangning Liu, Linjun Kuang, Na Li, Tan Wang, Tian Xie, Wei Peng, Yang Pei, Yifan Xu, Yuanhao Zhai, Yuwei Lin, Zhe Wang, Zihao He, Daniel Li, Junbiao Tang, Ziyang Jiang, Dake Chen"
+        ],
+        "link": "https://arxiv.org/abs/2608.20818",
+        "published": "2026-08-24T04:00:00Z",
+        "updated": "2026-08-24T04:00:00Z",
+        "categories": [
+          "cs.AI",
+          "cs.CV",
+          "cs.LG"
+        ]
+      },
+      "screening": {
+        "relevance": 0.1,
+        "method": "Periodic Row-wise Muon优化器",
+        "hep_tasks": [],
+        "reason": "论文聚焦于扩散Transformer训练优化，与HEP物理分析无直接关联。",
+        "needs_deep_review": false,
+        "evidence_level": "irrelevant"
+      },
+      "review": null,
+      "review_status": "not_selected",
+      "processed_at": "2026-08-25T01:51:06.151498Z",
+      "screening_model": "deepseek-v4-flash",
+      "review_model": null,
+      "screening_fingerprint": "195fb0b173d8bc9a4c28c78a16fb55810e78ed0d42329ccadb12ddb4dd876ed2",
+      "review_fingerprint": null
+    },
+    "2608.21142:v1": {
+      "paper": {
+        "arxiv_id": "2608.21142",
+        "version": 1,
+        "title": "COEC: Calibrated Orthogonal-Equivalence Compensation for Structured Pruning of Large Language Models",
+        "abstract": "arXiv:2608.21142v1 Announce Type: new Abstract: Structured pruning reduces the size and inference cost of large language models (LLMs) by removing weight columns, but the resulting output error can degrade accuracy. Existing training-free compensation methods use an additive bias or a single orthogonal rotation on the output side of the retained weight. These corrections leave its input singular frame unchanged and therefore limit how the retained weight can adapt after column removal. We propose COEC (Calibrated Orthogonal-Equivalence Compensation), a training-free compensation framework that applies alternating left and right orthogonal rotations to the retained weight. The right rotation is optimized on a reduced Stiefel manifold, while singular values are rescaled using generalized cross-validation to select the regularization strength for each layer. COEC further tempers the calibration Gram matrix to reduce the dominance of high-energy activation directions and introduces an alignment penalty that preserves the geometric relation between adjacent attention projections.All components use second-order statistics from a small calibration set and require neither backpropagation through the LLM nor retraining of the model parameters. COEC is independent of the column pruning criterion and can be applied to multiple structured pruning methods. Experiments on the Llama-3, Llama-3.1, and Qwen2.5 model families across multiple structured sparsity levels show that COEC improves perplexity on every model and zero-shot accuracy in most settings over existing compensation methods, with larger gains at higher sparsity. These results show that post-pruning compensation can recover part of the performance lost to column removal.",
+        "authors": [
+          "Peiqi Yu, Nam Ling, Wei Wang, Wei Jiang"
+        ],
+        "link": "https://arxiv.org/abs/2608.21142",
+        "published": "2026-08-24T04:00:00Z",
+        "updated": "2026-08-24T04:00:00Z",
+        "categories": [
+          "cs.LG"
+        ]
+      },
+      "screening": {
+        "relevance": 0.0,
+        "method": "结构化剪枝后的正交等价补偿",
+        "hep_tasks": [],
+        "reason": "研究针对大语言模型，与高能物理实验无关",
+        "needs_deep_review": false,
+        "evidence_level": "irrelevant"
+      },
+      "review": null,
+      "review_status": "not_selected",
+      "processed_at": "2026-08-25T01:51:06.151498Z",
+      "screening_model": "deepseek-v4-flash",
+      "review_model": null,
+      "screening_fingerprint": "195fb0b173d8bc9a4c28c78a16fb55810e78ed0d42329ccadb12ddb4dd876ed2",
+      "review_fingerprint": null
+    },
+    "2608.21147:v1": {
+      "paper": {
+        "arxiv_id": "2608.21147",
+        "version": 1,
+        "title": "Capturing Cardiac Cyclicity through Phase-Equivariant Self-Supervised Learning",
+        "abstract": "arXiv:2608.21147v1 Announce Type: new Abstract: The cyclic structure of physiological processes offers a natural prior for self-supervised representation learning, and the cardiac cycle provides a particularly well-defined setting in which to exploit it. We derive a phase-equivariant self-supervised objective and introduce Winder, a joint-embedding architecture that organises representations into phase-invariant coordinates and phase-rotating harmonic subspaces. Its transport operator is fixed and closed-form, derived from the cycle's geometry rather than learned, and adds no parameters. Evaluated on PTB-XL under a frozen linear-probe protocol, Winder attains diagnostic accuracy within the range reported by state-of-the-art self-supervised methods at a ~1 M parameter footprint, while exhibiting phase-equivariant latent geometry. These findings demonstrate that explicitly encoding cardiac-phase symmetry can preserve diagnostically useful information while yielding a latent geometry that is legible, parameter-efficient, and directly tied to a measurable physiological quantity.",
+        "authors": [
+          "Blaise Delaney, Dominic Dootson, Juan Jose Juan Castella, Salil Patel, Andrew Pfaff, Yuji Xing, Jonny Hancox, Karin Sevegnani"
+        ],
+        "link": "https://arxiv.org/abs/2608.21147",
+        "published": "2026-08-24T04:00:00Z",
+        "updated": "2026-08-24T04:00:00Z",
+        "categories": [
+          "cs.LG"
+        ]
+      },
+      "screening": {
+        "relevance": 0.3,
+        "method": "Phase-equivariant self-supervised learning with joint-embedding architecture (Winder)",
+        "hep_tasks": [
+          "粒子鉴别",
+          "异常检测",
+          "触发"
+        ],
+        "reason": "相位对称性概念可迁移至周期性物理信号，但未涉及高能物理数据验证。",
+        "needs_deep_review": false,
+        "evidence_level": "speculative"
+      },
+      "review": null,
+      "review_status": "not_selected",
+      "processed_at": "2026-08-25T01:51:06.151498Z",
+      "screening_model": "deepseek-v4-flash",
+      "review_model": null,
+      "screening_fingerprint": "195fb0b173d8bc9a4c28c78a16fb55810e78ed0d42329ccadb12ddb4dd876ed2",
+      "review_fingerprint": null
+    },
+    "2608.20376:v1": {
+      "paper": {
+        "arxiv_id": "2608.20376",
+        "version": 1,
+        "title": "TH-GNN: Heterogeneous Temporal Graph Neural Networks for LLM-Agent Shilling Attack Detection",
+        "abstract": "arXiv:2608.20376v1 Announce Type: cross Abstract: LLM agents can now generate realistic shilling profiles, fluent reviews, and coherent ratings at scale, systematically defeating recommender-system defenses. Text-only detectors that flag semantic drift in review embeddings are blind to graph structure and temporal coordination, while graph-only detectors that exploit neighborhood anomalies cannot reason over review semantics or the cross-modal inconsistencies produced by LLM-generated content. We propose TH-GNN, a heterogeneous temporal graph neural network with a two-layer Heterogeneous Graph Transformer backbone that applies per-type and per-relation attention augmented with learnable sinusoidal temporal encodings on every edge. Cross-modal attention fuses structural user embeddings with frozen RoBERTa representations of reviews and item descriptions, while a GRU operating over log inter-arrival times captures temporal burstiness. Evaluated across five attack families and four benchmark datasets, TH-GNN achieves a grand-mean F1 score of 0.870, outperforming the strongest text-only baseline on Agent4SR attacks by 10.9 percentage points and 11.5 percentage points at the lowest injection rate. These results demonstrate the effectiveness of jointly modeling temporal, structural, and semantic signals for detecting sophisticated LLM-driven shilling attacks.",
+        "authors": [
+          "Shivam Swarup, Divya Prakash Shrivastava, Rakesh Thakur"
+        ],
+        "link": "https://arxiv.org/abs/2608.20376",
+        "published": "2026-08-24T04:00:00Z",
+        "updated": "2026-08-24T04:00:00Z",
+        "categories": [
+          "cs.CL",
+          "cs.LG"
+        ]
+      },
+      "screening": {
+        "relevance": 0.1,
+        "method": "Heterogeneous Temporal Graph Neural Network with Graph Transformer and cross-modal attention",
+        "hep_tasks": [],
+        "reason": "研究LLM代理攻击检测，应用场景是推荐系统，与高能物理实验不相关。",
+        "needs_deep_review": false,
+        "evidence_level": "irrelevant"
+      },
+      "review": null,
+      "review_status": "not_selected",
+      "processed_at": "2026-08-25T01:51:06.151498Z",
+      "screening_model": "deepseek-v4-flash",
+      "review_model": null,
+      "screening_fingerprint": "195fb0b173d8bc9a4c28c78a16fb55810e78ed0d42329ccadb12ddb4dd876ed2",
+      "review_fingerprint": null
+    },
+    "2608.20380:v1": {
+      "paper": {
+        "arxiv_id": "2608.20380",
+        "version": 1,
+        "title": "Interpretable Information-Decomposed Brain Graph Learning for fMRI-based Disease Diagnosis",
+        "abstract": "arXiv:2608.20380v1 Announce Type: cross Abstract: Resting-state functional magnetic resonance imaging (rs-fMRI) has enabled non-invasive mapping of functional brain interactions for computer-aided diagnosis, yet most existing approaches reduce inter-regional relationships to correlation-based edge weights. Such representations capture co-fluctuation strength but obscure how information is shared across brain regions. Because brain disorders may disrupt not only connectivity strength but also the organization of redundancy, uniqueness and synergy, traditional functional connectivity may miss disease-relevant information structures. Here we introduce IID-GCN, an interpretable graph learning framework that decomposes rs-fMRI interactions into redundancy, uniqueness and synergy graphs using partial entropy decomposition. These information-specific graphs separately characterize shared, region-specific and jointly emergent components of brain activity. A multi-channel graph convolutional network then integrates the decomposed graphs through edge recalibration, cross-information interaction, ROI-attention readout and channel-attentive fusion. Across three datasets, IID-GCN consistently captures complementary diagnostic information beyond traditional functional connectivity. The learned information profiles reveal disorder-specific patterns of altered redundancy, uniqueness and synergy, suggesting that brain diseases reshape functional information organization rather than merely changing connection strength. These results establish information-decomposed brain graphs as an interpretable representation for rs-fMRI-based diagnosis. Our code is available at https://github.com/Zdy12/IID-GCN.",
+        "authors": [
+          "Dengyi Zhao, Zhiheng Zhou, Zihan Wang, Guiying Yan, Xingqin Qi"
+        ],
+        "link": "https://arxiv.org/abs/2608.20380",
+        "published": "2026-08-24T04:00:00Z",
+        "updated": "2026-08-24T04:00:00Z",
+        "categories": [
+          "cs.LG",
+          "q-bio.NC"
+        ]
+      },
+      "screening": {
+        "relevance": 0.2,
+        "method": "基于部分熵分解的信息分解图学习与多通道图卷积网络",
+        "hep_tasks": [
+          "异常检测",
+          "分类"
+        ],
+        "reason": "方法用于脑影像诊断，与HEP任务无直接关联，但信息分解概念或可迁移至特征交互分析。",
+        "needs_deep_review": false,
+        "evidence_level": "speculative"
+      },
+      "review": null,
+      "review_status": "not_selected",
+      "processed_at": "2026-08-25T01:51:06.151498Z",
+      "screening_model": "deepseek-v4-flash",
+      "review_model": null,
+      "screening_fingerprint": "195fb0b173d8bc9a4c28c78a16fb55810e78ed0d42329ccadb12ddb4dd876ed2",
+      "review_fingerprint": null
+    },
+    "2608.20607:v1": {
+      "paper": {
+        "arxiv_id": "2608.20607",
+        "version": 1,
+        "title": "JuryProbe: An Empirical Consensus-Risk Diagnostic for Routing Reference-Free Factuality Judge Panels to Grounded Verification",
+        "abstract": "arXiv:2608.20607v1 Announce Type: cross Abstract: Panels of inexpensive LLM judges increasingly make accept-or-escalate decisions. In factuality settings, accepting a claim because several reference-free judges agree can create a hidden risk: agreement may reflect shared false-negative blind spots rather than independent evidence. We introduce JuryProbe, an empirical consensus-risk diagnostic for reference-free factuality judge panels, paired with a calibration-based routing policy. JuryProbe estimates consensus risk from a labeled calibration probe using false-negative-only (FN-only) judge correlation and false-consensus lift; when flagged high-risk, reference-free majority accepts are routed to the same judges with trusted references. On audited FEVER corruptions, reference-free panels show correlated false negatives (FN-only correlations 0.402 and 0.368; lifts 3.13x and 18.13x), while unanimous false consensus drops to zero under a trusted-reference best-case diagnostic on both minimal-pair and non-minimal-pair evidence. In flagged settings, the routed policy is by construction equivalent to grounding every reference-free majority accept (verified in 34/34 splits): improvement comes from accept-conditioned grounding, while the diagnostic determines whether to activate it. A fixed, pre-specified rule flags 8-10 of 10 splits across synthetic, benchmark-authored, and scientific families and 0 of 10 on a negative control, where standing down avoids 28% of reference acquisitions at a 0.004 increase in false accepts. False-accept reduction persists under weak BM25 retrieval at substantial coverage cost, while stale stand-down labels require periodic recalibration. JuryProbe provides no formal risk guarantee and does not establish reliable stand-down on natural panels; its supported contribution is an empirical diagnostic of high-risk panel error dependence.",
+        "authors": [
+          "Tianxin Zhou, Ruixi Lin"
+        ],
+        "link": "https://arxiv.org/abs/2608.20607",
+        "published": "2026-08-24T04:00:00Z",
+        "updated": "2026-08-24T04:00:00Z",
+        "categories": [
+          "cs.AI",
+          "cs.CL",
+          "cs.LG"
+        ]
+      },
+      "screening": {
+        "relevance": 0.1,
+        "method": "基于校准探针的共识风险诊断与路由策略",
+        "hep_tasks": [],
+        "reason": "论文关注LLM事实性判断中的共识风险，与高能物理无直接关联",
+        "needs_deep_review": false,
+        "evidence_level": "irrelevant"
+      },
+      "review": null,
+      "review_status": "not_selected",
+      "processed_at": "2026-08-25T01:51:06.151498Z",
+      "screening_model": "deepseek-v4-flash",
+      "review_model": null,
+      "screening_fingerprint": "195fb0b173d8bc9a4c28c78a16fb55810e78ed0d42329ccadb12ddb4dd876ed2",
+      "review_fingerprint": null
+    },
+    "2608.21348:v1": {
+      "paper": {
+        "arxiv_id": "2608.21348",
+        "version": 1,
+        "title": "Truthful Calibration Measures for Sequential Prediction",
+        "abstract": "arXiv:2608.21348v1 Announce Type: cross Abstract: Calibration requires probabilistic reports to be conditionally unbiased and reliably interpretable as probabilities. A calibration measure assigns numerical error to miscalibrated reports. Haghtalab et al. (2024) proposed an approximately truthful calibration measure for online prediction, leaving open whether exact truthfulness is compatible with completeness and soundness. We resolve this question negatively for sequential binary prediction: exact truthfulness is incompatible with completeness and soundness, even for independent outcomes. We then show that this impossibility is specific to exact truthfulness. We give two general reductions from a base calibration measure, producing additively and multiplicatively approximately truthful calibration measures, respectively. Applying the multiplicative reduction, for every $0 < \\varepsilon < 1$ we construct a sound and complete calibration measure that is $(1+\\exp(-T^{(1-\\varepsilon)/2}/2))$-multiplicatively truthful. This improves the approximate-truthfulness guarantee of Haghtalab et al. (2024).",
+        "authors": [
+          "Anagha Gokul, Jason Hartline, Lunjia Hu, Jonathan Ullman, Yifan Wu"
+        ],
+        "link": "https://arxiv.org/abs/2608.21348",
+        "published": "2026-08-24T04:00:00Z",
+        "updated": "2026-08-24T04:00:00Z",
+        "categories": [
+          "cs.DS",
+          "cs.GT",
+          "cs.LG"
+        ]
+      },
+      "screening": {
+        "relevance": 0.1,
+        "method": "校准度量与在线预测的博弈论分析",
+        "hep_tasks": [],
+        "reason": "该论文工作为理论计算机科学，关注在线预测校准度量的真实性，未涉及HEP实验数据或方法，迁移链条过长。",
+        "needs_deep_review": false,
+        "evidence_level": "irrelevant"
+      },
+      "review": null,
+      "review_status": "not_selected",
+      "processed_at": "2026-08-25T01:51:06.151498Z",
+      "screening_model": "deepseek-v4-flash",
+      "review_model": null,
+      "screening_fingerprint": "195fb0b173d8bc9a4c28c78a16fb55810e78ed0d42329ccadb12ddb4dd876ed2",
+      "review_fingerprint": null
+    },
+    "2608.21051:v1": {
+      "paper": {
+        "arxiv_id": "2608.21051",
+        "version": 1,
+        "title": "NestyNet. III. Symbolic Regression from Analytic Neural Surrogates",
+        "abstract": "arXiv:2608.21051v1 Announce Type: cross Abstract: Many physical laws are simple only after the right representation, decomposition or internal coordinate has been found, but discovering that structure from data is combinatorially hard. This task is symbolic regression (SR), the search for closed-form expressions that fit data without assuming a fixed model class. Here we present NestyNet-SR. A neural surrogate with analytic derivatives is used to detect separability, recursively reducing multivariate problems to simpler neural atoms. These atoms are distilled into closed form by a tiered symbolic-search stack, whose final tier is a novel factorized symbolic search that separates structure from calibration. Composing candidate internal coordinates freely, it scores each coordinate by how well calibrated functions of it (e.g., polynomials, power laws, sinusoids) fit the data, so the constants of those calibrated maps, however deeply nested in the final expression, are fitted rather than searched. The method supports multi-dataset regression, automated feature discovery, and dimensional-analysis pruning. On the SRBench AI~Feynman benchmark, NestyNet-SR achieves exact symbolic recovery of all 120 noiseless equations, the first such result, and under noise a statistical audit certifies which structures survive. As a real-data vignette, given only the separate mass-model components of SPARC-survey galaxies, the algorithm discovers the baryonic acceleration coordinate, reproduces the established mass-to-light and acceleration scales and the non-unique form of the radial acceleration relation, and adds held-out-galaxy generalization, a calibrated symmetry abstention, and a posterior for the local slope of the law. Analytic derivatives thus provide a practical route from neural surrogates to interpretable closed-form empirical laws.",
+        "authors": [
+          "Rodrigo Ibata, Wassim Tenachi, Foivos Diakogiannis, Neil Ibata, Anirudh Shankar"
+        ],
+        "link": "https://arxiv.org/abs/2608.21051",
+        "published": "2026-08-24T04:00:00Z",
+        "updated": "2026-08-24T04:00:00Z",
+        "categories": [
+          "astro-ph.IM",
+          "physics.data-an"
+        ]
+      },
+      "screening": {
+        "relevance": 0.4,
+        "method": "符号回归结合神经网络代理与解析导数",
+        "hep_tasks": [
+          "物理定律发现",
+          "快速模拟替代",
+          "系统误差建模"
+        ],
+        "reason": "符号回归可解释性强，但主要面向天文学，HEP迁移需额外适配。",
+        "needs_deep_review": false,
+        "evidence_level": "transferable"
+      },
+      "review": null,
+      "review_status": "not_selected",
+      "processed_at": "2026-08-25T01:51:06.151498Z",
+      "screening_model": "deepseek-v4-flash",
+      "review_model": null,
+      "screening_fingerprint": "195fb0b173d8bc9a4c28c78a16fb55810e78ed0d42329ccadb12ddb4dd876ed2",
+      "review_fingerprint": null
+    },
+    "2608.20635:v1": {
+      "paper": {
+        "arxiv_id": "2608.20635",
+        "version": 1,
+        "title": "Minimax Optimality of Score-Entropy Discrete Diffusion",
+        "abstract": "arXiv:2608.20635v1 Announce Type: cross Abstract: Discrete diffusion models have demonstrated strong performance across a range of datasets, including natural language data and graph-structured data. Among many variants, score-entropy discrete diffusion (SEDD) has achieved particularly strong empirical results. In SEDD, new samples are generated by iteratively evaluating a sequence of concrete score functions, which are learned by minimizing a score-entropy loss. While much of the prior theoretical literature on discrete diffusion has focused on the sampling efficiency of SEDD under the assumption of small score estimation error, recent work has begun to investigate the finite-sample properties of score estimation itself. In this work, we take a different route by investigating the fundamental statistical limits of concrete score estimation. We focus on uniform and masking discrete diffusions, two of the most widely adopted discrete diffusion models. We establish a minimax lower bound under the score-entropy loss, and propose an MLE-based thresholding estimator that matches this lower bound up to constant and polylogarithmic factors that depend on neighboring density ratios. We further show that, for any target distribution, this density ratio is naturally controlled under both uniform and masking discrete diffusion models, yielding nearly matching minimax lower and upper bounds for the aggregated score estimation error. Our results imply that, with appropriate initialization and discretization, SEDD can achieve nearly optimal minimax sample complexity, as measured by the KL divergence between the target and generated distributions.",
+        "authors": [
+          "Cholyeon Cho, Yuchen Wu"
+        ],
+        "link": "https://arxiv.org/abs/2608.20635",
+        "published": "2026-08-24T04:00:00Z",
+        "updated": "2026-08-24T04:00:00Z",
+        "categories": [
+          "cs.LG",
+          "stat.ML"
+        ]
+      },
+      "screening": {
+        "relevance": 0.2,
+        "method": "score-entropy discrete diffusion, minimax lower bounds, MLE-based thresholding estimator",
+        "hep_tasks": [
+          "快速模拟"
+        ],
+        "reason": "离散扩散模型理论结果，未在HEP数据验证，迁移链条较长",
+        "needs_deep_review": false,
+        "evidence_level": "speculative"
+      },
+      "review": null,
+      "review_status": "not_selected",
+      "processed_at": "2026-08-25T01:51:06.151498Z",
+      "screening_model": "deepseek-v4-flash",
+      "review_model": null,
+      "screening_fingerprint": "195fb0b173d8bc9a4c28c78a16fb55810e78ed0d42329ccadb12ddb4dd876ed2",
+      "review_fingerprint": null
+    },
+    "2608.20562:v1": {
+      "paper": {
+        "arxiv_id": "2608.20562",
+        "version": 1,
+        "title": "Conditional-Independence-Regularized Distributional Autoencoders for Mixed-Type Data",
+        "abstract": "arXiv:2608.20562v1 Announce Type: cross Abstract: Mixed-type data containing both numerical and categorical variables arise in many scientific and real-world applications. Existing representation learning and generative modeling approaches typically focus either on reconstruction accuracy or unconditional data generation, but often fail to recover the full conditional distribution of the data while preserving interpretable structural relationships between heterogeneous variable types. In this work, we introduce Conditional-Independence-Regularized Distributional Autoencoders, a framework for learning low-dimensional representations of mixed-type data through conditional distribution matching and structural regularization. Our method combines an energy-score-based objective for numerical variables, a likelihood-based objective for categorical variables, and an auxiliary conditional independence regularization term encouraging the learned representation to capture the dependence between numerical and categorical components. We provide theoretical analysis showing that the optimal representation balances unexplained numerical variability, conditional entropy of categorical variables, and residual conditional dependence. Empirically, the proposed method achieves strong performance on both synthetic and real-world datasets, substantially improving categorical distribution recovery, achieving competitive overall conditional distribution recovery, and preserving mixed-type dependence structure. The code has been made available at GitHub.",
+        "authors": [
+          "Siyuan Tang, Gongjun Xu, Ji Zhu"
+        ],
+        "link": "https://arxiv.org/abs/2608.20562",
+        "published": "2026-08-24T04:00:00Z",
+        "updated": "2026-08-24T04:00:00Z",
+        "categories": [
+          "cs.LG",
+          "stat.ME",
+          "stat.ML"
+        ]
+      },
+      "screening": {
+        "relevance": 0.7,
+        "method": "条件独立正则化的分布自编码器，结合能量分数和似然目标处理混合类型数据",
+        "hep_tasks": [
+          "高维数据降维与表征学习",
+          "混合类型数据的生成模型",
+          "异常检测或数据压缩"
+        ],
+        "reason": "方法适用于混合数据类型，可启发HEP中数值与类别特征的处理，但未在HEP验证，迁移需进一步评估。",
+        "needs_deep_review": true,
+        "evidence_level": "transferable"
+      },
+      "review": null,
+      "review_status": "pending",
+      "processed_at": "2026-08-25T01:51:06.151498Z",
+      "screening_model": "deepseek-v4-flash",
+      "review_model": null,
+      "screening_fingerprint": "195fb0b173d8bc9a4c28c78a16fb55810e78ed0d42329ccadb12ddb4dd876ed2",
+      "review_fingerprint": null
+    },
+    "2608.20980:v1": {
+      "paper": {
+        "arxiv_id": "2608.20980",
+        "version": 1,
+        "title": "A Critical Audit of Spatiotemporal Forecasting Benchmark Datasets and Baselines",
+        "abstract": "arXiv:2608.20980v1 Announce Type: cross Abstract: Graph neural networks (GNNs) are routinely employed for short-range forecasting on multivariate time series with a spatial graph structure. Despite the availability of many alternative datasets, method innovations within this domain are predominantly assessed against a rather limited set of benchmark datasets, most notably Chickenpox, PedalMe, WikiMaths, METR-LA, and PEMS-BAY. The evaluation protocols contain baselines spanning from historical averages to classical machine learning approaches. These baselines often show competitive performance compared to GNNs. In the present work, we take a step back and analyse the benchmark datasets via classical time series methods to uncover why spatially-unaware linear models pose a stronger competitor than previously reported, casting further doubt on the discriminative reliability of the aforementioned widely adopted datasets. Our statistical analysis provides a toolset for identifying significant spatial and temporal correlations, while revealing a structural bias introduced by first-order differenced datasets. We therefore recommend reducing the over-reliance on such datasets for method comparison, and instead advocate for more rigorous statistical evaluation. By applying the results of our analysis to a simple hybrid model, we show how our methodology can lead to novel ways of developing GNN models",
+        "authors": [
+          "Kenneth Martin, Simon Heilig, Asja Fischer, Michel F. C. Haddad, Adam M. Sykulski, Moshe Eliasof"
+        ],
+        "link": "https://arxiv.org/abs/2608.20980",
+        "published": "2026-08-24T04:00:00Z",
+        "updated": "2026-08-24T04:00:00Z",
+        "categories": [
+          "cs.LG",
+          "stat.ML"
+        ]
+      },
+      "screening": {
+        "relevance": 0.1,
+        "method": "统计分析、时间序列方法、基准数据集审计",
+        "hep_tasks": [
+          "数据质量评估",
+          "系统误差分析"
+        ],
+        "reason": "研究时空预测基准及基线，与高能物理任务关联弱，仅为概念启发。",
+        "needs_deep_review": false,
+        "evidence_level": "irrelevant"
+      },
+      "review": null,
+      "review_status": "not_selected",
+      "processed_at": "2026-08-25T01:51:06.151498Z",
+      "screening_model": "deepseek-v4-flash",
+      "review_model": null,
+      "screening_fingerprint": "195fb0b173d8bc9a4c28c78a16fb55810e78ed0d42329ccadb12ddb4dd876ed2",
+      "review_fingerprint": null
+    },
+    "2602.06621:v1": {
+      "paper": {
+        "arxiv_id": "2602.06621",
+        "version": 1,
+        "title": "Infinite-dimensional generative diffusions via Doob's h-transform",
+        "abstract": "arXiv:2602.06621v2 Announce Type: replace-cross Abstract: This paper introduces a rigorous framework for defining generative diffusion models in infinite dimensions via Doob's h-transform. Rather than relying on time reversal of a noising process, a reference diffusion is forced towards the target distribution by an exponential change of measure. Compared to existing methodology, this approach readily generalises to the infinite-dimensional setting, hence offering greater flexibility in the diffusion model. The construction is derived rigorously under verifiable conditions, and bounds with respect to the target measure are established. We show that the forced process under the changed measure can be approximated by minimising a score-matching objective and validate our method on both synthetic and real data.",
+        "authors": [
+          "Thorben Pieper-Sethmacher, Daniel Paulin"
+        ],
+        "link": "https://arxiv.org/abs/2602.06621",
+        "published": "2026-08-24T04:00:00Z",
+        "updated": "2026-08-24T04:00:00Z",
+        "categories": [
+          "cs.LG",
+          "stat.ML"
+        ]
+      },
+      "screening": {
+        "relevance": 0.3,
+        "method": "通过Doob's h-transform构造无限维生成扩散模型，使用指数测度变换强制参考扩散趋向目标分布，并通过分数匹配优化。",
+        "hep_tasks": [
+          "快速模拟（如探测器响应模拟）"
+        ],
+        "reason": "无限维生成扩散对HEP快速模拟有潜在价值，但论文未在HEP数据验证，迁移链条较长。",
+        "needs_deep_review": false,
+        "evidence_level": "speculative"
+      },
+      "review": null,
+      "review_status": "not_selected",
+      "processed_at": "2026-08-25T01:51:06.151498Z",
+      "screening_model": "deepseek-v4-flash",
+      "review_model": null,
+      "screening_fingerprint": "195fb0b173d8bc9a4c28c78a16fb55810e78ed0d42329ccadb12ddb4dd876ed2",
+      "review_fingerprint": null
+    },
+    "2606.13629:v1": {
+      "paper": {
+        "arxiv_id": "2606.13629",
+        "version": 1,
+        "title": "Valid Inference with Synthetic Data via Task Exchangeability",
+        "abstract": "arXiv:2606.13629v2 Announce Type: replace-cross Abstract: There is a proliferation of work arguing for the use of synthetic data in scientific research. For example, social scientists are arguing for the use of LLM-generated \"silicon samples\" in pilot studies; AI evaluations increasingly rely on \"LLM-as-a-judge\" outputs; and proteomics research is accelerated by generative models that produce synthetic protein structures. These developments raise an intriguing possibility: synthetic data may help researchers ask more questions, run more studies, and accelerate discovery. But they also raise a fundamental concern: synthetic data can be biased, noisy, and misspecified. In this work, we propose statistical principles for using synthetic data in scientific research with provable validity guarantees. The key insight is a new technical condition that we call task exchangeability. Informally, this is a requirement that the researcher can identify historical tasks, for which real data is available, such that their current task of interest is exchangeable with the historical tasks in an appropriate mathematical sense. We develop methods for valid inference under task exchangeability, together with extensions that provide guarantees even beyond exchangeability. We demonstrate the framework on public opinion surveys with silicon samples and AI evaluation with autoraters.",
+        "authors": [
+          "Lezhi Tan, Tijana Zrnic"
+        ],
+        "link": "https://arxiv.org/abs/2606.13629",
+        "published": "2026-08-24T04:00:00Z",
+        "updated": "2026-08-24T04:00:00Z",
+        "categories": [
+          "cs.AI",
+          "cs.LG",
+          "stat.ME",
+          "stat.ML"
+        ]
+      },
+      "screening": {
+        "relevance": 0.35,
+        "method": "任务可交换性（Task Exchangeability）框架",
+        "hep_tasks": [
+          "不确定度量化",
+          "系统误差处理",
+          "模拟校准"
+        ],
+        "reason": "提供合成数据推断的原则，但未验证于HEP，概念迁移链条较长。",
+        "needs_deep_review": false,
+        "evidence_level": "speculative"
+      },
+      "review": null,
+      "review_status": "not_selected",
+      "processed_at": "2026-08-25T01:51:06.151498Z",
+      "screening_model": "deepseek-v4-flash",
+      "review_model": null,
+      "screening_fingerprint": "195fb0b173d8bc9a4c28c78a16fb55810e78ed0d42329ccadb12ddb4dd876ed2",
+      "review_fingerprint": null
+    },
+    "2608.20441:v1": {
+      "paper": {
+        "arxiv_id": "2608.20441",
+        "version": 1,
+        "title": "Shared Physics Responses Recover Hidden Rankings in Neural Operator Libraries",
+        "abstract": "arXiv:2608.20441v1 Announce Type: new Abstract: Selecting the optimal neural-operator prediction during deployment is challenging when high-fidelity reference solutions are unavailable. We demonstrate that under a squared Hilbert-space loss, ranking a finite model library depends strictly on the low-dimensional span of candidate differences, allowing us to score all models simultaneously using a single anchor-based linearized response of the governing equation. This shared physical diagnostic accurately recovered over 99.6\\% of pairwise preferences and 99.0\\% of optimal checkpoints across diverse Fourier and convolutional operator libraries for fluid, reaction-diffusion, and wave dynamics. Furthermore, the corrected physical proxy frequently outperformed the best individual candidates, and we establish computable sufficient conditions that rigorously certify exact decisions for strongly monotone discretizations. By exploiting the local dynamical response rather than raw defect magnitude, this framework enables the reliable and highly efficient deployment of scientific surrogates without requiring ground-truth data.",
+        "authors": [
+          "Hanbing Liang, Fujun Liu"
+        ],
+        "link": "https://arxiv.org/abs/2608.20441",
+        "published": "2026-08-24T04:00:00Z",
+        "updated": "2026-08-24T04:00:00Z",
+        "categories": [
+          "cs.LG",
+          "cs.NA",
+          "math.NA",
+          "physics.comp-ph"
+        ]
+      },
+      "screening": {
+        "relevance": 0.2,
+        "method": "基于锚点的线性化物理响应来对神经算子库进行排序和选择",
+        "hep_tasks": [
+          "代理模型选择（如快速模拟）"
+        ],
+        "reason": "该方法针对神经算子库排名，与HEP快速模拟的模型选择有关，但未在HEP数据验证，且侧重物理建模。",
+        "needs_deep_review": false,
+        "evidence_level": "transferable"
+      },
+      "review": null,
+      "review_status": "not_selected",
+      "processed_at": "2026-08-25T01:51:06.151498Z",
+      "screening_model": "deepseek-v4-flash",
+      "review_model": null,
+      "screening_fingerprint": "195fb0b173d8bc9a4c28c78a16fb55810e78ed0d42329ccadb12ddb4dd876ed2",
+      "review_fingerprint": null
+    },
+    "2608.20680:v1": {
+      "paper": {
+        "arxiv_id": "2608.20680",
+        "version": 1,
+        "title": "Reinforcement Learning for Continuous-Time Jump Markov Decision Processes with Applications to Network Dynamic Pricing",
+        "abstract": "arXiv:2608.20680v1 Announce Type: new Abstract: We study reinforcement learning (RL) in Continuous-Time Jump Markov Decision Processes (CTJMDPs) featuring general discrete state spaces (which need not possess a vector space structure) and continuous/discrete action spaces. The setup covers many well-known applications in operations such as multi-product dynamic pricing with capacitated resources (Gallego and van Ryzin 1997). To model the exploration-exploitation tradeoff, we formulate an entropy-regularized continuous-time control problem with stochastic policies. Recent continuous-time RL techniques such as $q$-learning for controlled diffusions in (Jia and Zhou 2023) focus on continuous state spaces $\\mathbb{R}^d$ and rely heavily on semimartingale theory in $\\mathbb{R}^d$ for their theoretical analysis. Consequently, their methods cannot be directly applied to CTJMDPs with general discrete state spaces, which may lack the algebraic addition and subtraction structures inherent to Euclidean spaces. To bridge this gap, we establish the theoretical foundations of $q$-learning for CTJMDPs and develop model-free $q$-learning algorithms. Compared to na\\\"{i}ve time discretization and approximating CTJMDPs using discrete-time MDPs, our approach has several conceptual and empirical benefits. Numerical experiments in network dynamic pricing (Gallego and van Ryzin 1997) show that our proposed RL algorithm reliably learns near-optimal policies and consistently outperforms standard benchmark methods, demonstrating superior solution quality and effective scalability to large-scale network instances.",
+        "authors": [
+          "Huiling Meng, Ningyuan Chen, Xuefeng Gao"
+        ],
+        "link": "https://arxiv.org/abs/2608.20680",
+        "published": "2026-08-24T04:00:00Z",
+        "updated": "2026-08-24T04:00:00Z",
+        "categories": [
+          "cs.LG"
+        ]
+      },
+      "screening": {
+        "relevance": 0.1,
+        "method": "Reinforcement learning with entropy-regularized continuous-time control and q-learning for CTJMDPs",
+        "hep_tasks": [],
+        "reason": "研究连续时间跳马决策过程的强化学习，应用于网络动态定价，与HEP任务无直接关联。",
+        "needs_deep_review": false,
+        "evidence_level": "irrelevant"
+      },
+      "review": null,
+      "review_status": "not_selected",
+      "processed_at": "2026-08-25T01:51:06.151498Z",
+      "screening_model": "deepseek-v4-flash",
+      "review_model": null,
+      "screening_fingerprint": "195fb0b173d8bc9a4c28c78a16fb55810e78ed0d42329ccadb12ddb4dd876ed2",
+      "review_fingerprint": null
+    },
+    "2608.20965:v1": {
+      "paper": {
+        "arxiv_id": "2608.20965",
+        "version": 1,
+        "title": "Training, learning and inference: unified dynamics of neural systems",
+        "abstract": "arXiv:2608.20965v1 Announce Type: new Abstract: We define an atomic generation fact f=(u,tau,omega,z;rho), recording the origin, realized transformation, concrete occurrence, generated result and relation role. Compiled into a Generation-Fact Graph (GFG), these facts provide an AI-native, compilable scientific fact substrate preserving generation histories. We establish a GFG-based recursive scientific process in which analysis, intervention, replay and validation form facts for later cycles. Using nanoGPT, we establish unified training-learning dynamics. Training is the evolution of a parameter-optimizer system with state and memory: each actual training action enters the receiving state and produces a finite-amplitude nonlinear functional response conditioned by that state and target-specific update geometry. Learning is the persistent reorganization of distributed functional support by these responses; capability formation, maintenance, decline or recovery becomes observable when target-specific states are evaluated against their readout boundaries. Three primary coordinates - target-boundary state, target-specific update geometry and parameter-Adam receiving state - yield a second-order predictor operating before post-update outputs are read. On held-out runs, it achieved 91.43% accuracy and 91.49% macro-averaged recall across four transitions. We further establish inference as a frozen projection of training-learning dynamics. Component gating and rollback show causal recruitment and non-additive combination of query-conditioned support formed during training, deriving organizational conditions realized by Attention. Controlled feedback indicates possible double-edged reinforcement effects. ResNet/CIFAR-100 and diffusion/CIFAR-10 experiments confirm receiving-state-conditioned responses, persistent support reorganization and frozen inference projection beyond nanoGPT.",
+        "authors": [
+          "Mian Wang"
+        ],
+        "link": "https://arxiv.org/abs/2608.20965",
+        "published": "2026-08-24T04:00:00Z",
+        "updated": "2026-08-24T04:00:00Z",
+        "categories": [
+          "cs.LG"
+        ]
+      },
+      "screening": {
+        "relevance": 0.2,
+        "method": "统一动力学框架，基于生成事实图（GFG）和纳米GPT模型",
+        "hep_tasks": [
+          "异常检测",
+          "事件分类"
+        ],
+        "reason": "论文以AI模型训练动力学的理论分析为主，缺乏HEP直接应用或任务匹配，仅概念上可迁移。",
+        "needs_deep_review": false,
+        "evidence_level": "speculative"
+      },
+      "review": null,
+      "review_status": "not_selected",
+      "processed_at": "2026-08-25T01:51:06.151498Z",
+      "screening_model": "deepseek-v4-flash",
+      "review_model": null,
+      "screening_fingerprint": "195fb0b173d8bc9a4c28c78a16fb55810e78ed0d42329ccadb12ddb4dd876ed2",
+      "review_fingerprint": null
+    },
+    "2608.20366:v1": {
+      "paper": {
+        "arxiv_id": "2608.20366",
+        "version": 1,
+        "title": "Harmonic Torsional Diffusion for Protein-Ligand Flexible Docking",
+        "abstract": "arXiv:2608.20366v1 Announce Type: cross Abstract: Molecular docking requires reasoning jointly about ligand pose and protein flexibility. Most diffusion-based docking models predict torsional updates with generic Euclidean heads that ignore the periodic geometry of angular variables. This mismatch is especially limiting in flexible docking, where ligand conformations and pocket side chains co-adapt to form the bound complex. Here, we introduce Harmony, a harmonic torsional diffusion framework for flexible protein-ligand docking. Harmony parameterizes ligand and side-chain torsional score fields as derivatives of learned harmonic potentials on the circle, whose noise-level dependence is supplied analytically by the heat semigroup of variance-exploding diffusion on the torus. This construction makes periodicity explicit and gives the model a frequency-aware inductive bias over rotameric motion. On the PDBBind benchmark, Harmony improves ligand pose accuracy and pocket all-atom reconstruction over recent flexible docking methods. On PoseBusters, it improves the physical validity of generated complexes. Case studies on EBNA1 and KRAS G12D illustrate the method's behavior on a polar and a shallow binding site, respectively. Together, these results indicate that aligning the score parameterization with the geometry of the diffusion process is a simple and effective lever for improving flexible docking.",
+        "authors": [
+          "Maksim Zhdanov, Pavel Strashnov, Vladislav Kurenkov"
+        ],
+        "link": "https://arxiv.org/abs/2608.20366",
+        "published": "2026-08-24T04:00:00Z",
+        "updated": "2026-08-24T04:00:00Z",
+        "categories": [
+          "cs.LG",
+          "q-bio.BM"
+        ]
+      },
+      "screening": {
+        "relevance": 0.15,
+        "method": "Harmonic torsional diffusion framework",
+        "hep_tasks": [],
+        "reason": "对象为蛋白质-配体柔性对接，与高能物理实验任务关联弱，方法迁移链条长。",
+        "needs_deep_review": false,
+        "evidence_level": "irrelevant"
+      },
+      "review": null,
+      "review_status": "not_selected",
+      "processed_at": "2026-08-25T01:51:06.151498Z",
+      "screening_model": "deepseek-v4-flash",
+      "review_model": null,
+      "screening_fingerprint": "195fb0b173d8bc9a4c28c78a16fb55810e78ed0d42329ccadb12ddb4dd876ed2",
+      "review_fingerprint": null
+    },
+    "2608.20561:v1": {
+      "paper": {
+        "arxiv_id": "2608.20561",
+        "version": 1,
+        "title": "Consistency Models for Fast MRI Reconstruction Using Regularization by Denoising",
+        "abstract": "arXiv:2608.20561v1 Announce Type: cross Abstract: Diffusion models (DMs) have emerged as powerful generative priors for MRI reconstruction with promising results. Yet DM-based methods require extensive iterative refinement, limiting their practical deployment. Consistency models (CMs) provide a compelling alternative, aiming to map out the diffusion trajectory in a single pass, enabling faster generation. In this work, we propose CM-RED, a novel MRI reconstruction method that integrates a pretrained CM into the regularization by denoising (RED) scheme. Our method builds on accelerated proximal gradient RED (RED-APG), and further incorporates controlled noise injection during the update steps to enhance generative diversity and accelerate convergence. Extensive experiments on the fastMRI knee and brain datasets demonstrate that CM-RED achieves high-quality reconstructions across multiple anatomies, contrast weights, acceleration factors, and undersampling patterns, using only 4 network function evaluations (NFEs). The proposed method consistently outperforms existing DM- and CM-based approaches in both quantitative metrics and visual fidelity, and exhibits strong robustness to hyperparameter variations, highlighting CM-RED as an efficient and effective generative framework for accelerated MRI reconstruction. The source code and pretrained models are publicly available at https://github.com/MerveGulle/CM-RED.",
+        "authors": [
+          "Merve G\\\"ulle, Junno Yun, Ya\\c{s}ar Utku Al\\c{c}alar, Mehmet Ak\\c{c}akaya"
+        ],
+        "link": "https://arxiv.org/abs/2608.20561",
+        "published": "2026-08-24T04:00:00Z",
+        "updated": "2026-08-24T04:00:00Z",
+        "categories": [
+          "cs.AI",
+          "cs.CV",
+          "cs.LG",
+          "eess.IV",
+          "physics.med-ph"
+        ]
+      },
+      "screening": {
+        "relevance": 0.4,
+        "method": "一致性模型（Consistency Models）与去噪正则化（RED）结合，用于快速MRI重建",
+        "hep_tasks": [
+          "快速模拟",
+          "生成模型加速",
+          "高维数据重建"
+        ],
+        "reason": "方法并非HEP专用，但生成模型加速和正则化重建思想可迁移至HEP快速模拟或反问题。",
+        "needs_deep_review": false,
+        "evidence_level": "transferable"
+      },
+      "review": null,
+      "review_status": "not_selected",
+      "processed_at": "2026-08-25T01:51:06.151498Z",
+      "screening_model": "deepseek-v4-flash",
+      "review_model": null,
+      "screening_fingerprint": "195fb0b173d8bc9a4c28c78a16fb55810e78ed0d42329ccadb12ddb4dd876ed2",
+      "review_fingerprint": null
+    },
+    "2602.09716:v1": {
+      "paper": {
+        "arxiv_id": "2602.09716",
+        "version": 1,
+        "title": "Degree-Mass Message Passing for Betweenness Ranking in Directed and Undirected Networks",
+        "abstract": "arXiv:2602.09716v2 Announce Type: replace Abstract: Computing the importance of nodes in networks is a long-standing fundamental problem that has driven extensive study of various centrality measures. A particularly well-known centrality measure is betweenness centrality, whose exact computation becomes prohibitive on large-scale networks. Graph Neural Network (GNN) models have thus been proposed to predict the ranking of nodes by betweenness centrality. However, existing GNN-based methods either have graph-size-dependent parameter counts or are limited to undirected graphs. We propose a lightweight GNN architecture that exploits the empirically observed relationship between betweenness centrality and multi-hop degree mass. This motivates the use of degree masses as size-invariant node features. To improve generalization, we train on synthetic graphs whose degree distributions more closely match those of real-world networks, including directed and undirected scale-free graphs and uniformly directed hyperbolic random graphs. We evaluate our model on 14 real-world networks spanning eight domains, including social, email, and citation networks, across both directed and undirected regimes. The experiments show that our model improves the Kendall $\\tau_b$ correlation by up to 24.6\\% on undirected and 10.9\\% on directed graphs, while using 56$\\times$ fewer parameters than the lightest competing GNN baseline and achieving competitive inference time, with up to a 24.5$\\times$ speedup on selected directed graphs.",
+        "authors": [
+          "Justin Dachille, Aurora Rossi, Sunil Kumar Maurya, Frederik Mallmann-Trenn, Xin Liu, Fr\\'ed\\'eric Giroire, Tsuyoshi Murata, Emanuele Natale"
+        ],
+        "link": "https://arxiv.org/abs/2602.09716",
+        "published": "2026-08-24T04:00:00Z",
+        "updated": "2026-08-24T04:00:00Z",
+        "categories": [
+          "cs.LG"
+        ]
+      },
+      "screening": {
+        "relevance": 0.2,
+        "method": "图神经网络（GNN）结合度质量特征进行节点介数中心性排名预测",
+        "hep_tasks": [
+          "事件图分析",
+          "粒子追踪"
+        ],
+        "reason": "针对网络节点重要性排序，与HEP常见任务关联弱，方法迁移性有限。",
+        "needs_deep_review": false,
+        "evidence_level": "speculative"
+      },
+      "review": null,
+      "review_status": "not_selected",
+      "processed_at": "2026-08-25T01:51:06.151498Z",
+      "screening_model": "deepseek-v4-flash",
+      "review_model": null,
+      "screening_fingerprint": "195fb0b173d8bc9a4c28c78a16fb55810e78ed0d42329ccadb12ddb4dd876ed2",
+      "review_fingerprint": null
+    },
+    "2608.19885:v1": {
+      "paper": {
+        "arxiv_id": "2608.19885",
+        "version": 1,
+        "title": "Separating Covariate Shift from Mechanism Change with Two Discriminators: CJSD, a Conditional Discrepancy with an Exact Covariate-Concept Decomposition",
+        "abstract": "arXiv:2608.19885v2 Announce Type: replace Abstract: After the inputs X are known, how much additional information does the label Y carry about which dataset a sample came from? That single quantity -- estimable as the difference of two discriminators' held-out cross-entropies, D_CJS = CE(Z|X) - CE(Z|X,Y) -- is exactly the part of a dataset difference that covariate shift cannot explain. We propose the Conditional Jensen-Shannon Discrepancy (CJSD): with a task indicator Z, the chain rule I(Z;X,Y) = I(Z;X) + I(Z;Y|X) splits total task discrepancy exactly into a covariate axis and a functional axis, both estimable from two ordinary classifiers, with no task-specific predictors, generative models, or bootstrap surrogates. We prove a covariate-null property (the functional axis is exactly zero under pure covariate shift, however severe), a drift-mass law (D_CJS/ln2 equals the mass of the disagreement region for deterministic labels), a one-sided misspecification-control inequality (each direction of estimation error is bounded, unconditionally, by the excess risk of a single discriminator), and a fixed-measure metrization via an identifiability lemma. Empirically, on a ten-measure battery over 202 dataset pairs (synthetic, Electricity, Covertype), only the two conditional-information estimators -- CJSD and a kNN plug-in for the same estimand -- separate concept from covariate shift with AUC 1.0; the case for CJSD is the estimator: under controlled dimensionality scaling the kNN plug-in fails from d=64 while the discriminator route holds to d=256 with a swappable classifier, and it alone yields paired confidence intervals and sequential extensions from the same learned object. The same estimator audits the conditional fidelity of synthetic-data generators that marginal and joint QA metrics pass, detects annotation-guideline changes invisible to input-space monitors, and supports null-calibrated fairness audits.",
+        "authors": [
+          "Kentaro Oda"
+        ],
+        "link": "https://arxiv.org/abs/2608.19885",
+        "published": "2026-08-24T04:00:00Z",
+        "updated": "2026-08-24T04:00:00Z",
+        "categories": [
+          "cs.AI",
+          "cs.LG"
+        ]
+      },
+      "screening": {
+        "relevance": 0.6,
+        "method": "条件Jensen-Shannon散度（CJSD）用于分解数据集差异为协变量转移和机制变化，通过两个判别器的交叉熵差估计",
+        "hep_tasks": [
+          "域偏移检测",
+          "系统误差分析",
+          "模拟与数据一致性校验"
+        ],
+        "reason": "方法可识别分布变化类型，对HEP中的模拟与数据差异诊断有潜在价值，但未在HEP数据上验证。",
+        "needs_deep_review": true,
+        "evidence_level": "transferable"
+      },
+      "review": null,
+      "review_status": "pending",
+      "processed_at": "2026-08-25T01:51:06.151498Z",
+      "screening_model": "deepseek-v4-flash",
+      "review_model": null,
+      "screening_fingerprint": "195fb0b173d8bc9a4c28c78a16fb55810e78ed0d42329ccadb12ddb4dd876ed2",
+      "review_fingerprint": null
+    },
+    "2608.20998:v1": {
+      "paper": {
+        "arxiv_id": "2608.20998",
+        "version": 1,
+        "title": "Free-Probability Kernels for Zero-Rollout Hyperparameter Selection in Reservoir Computing",
+        "abstract": "arXiv:2608.20998v1 Announce Type: cross Abstract: Reservoir computing (RC) couples a fixed recurrent dynamical system with a trained lightweight readout, but this efficiency is partly lost during hyperparameter selection: the recurrent gain, input scale, and leakage rate determine the reservoir's stability and temporal processing regime and are usually tuned through many rollouts. We introduce a deterministic, pilot-informed selector for leaky linear reservoirs followed by coordinate-wise nonlinear features. Free probability yields cross-lag propagation coefficients that summarize how the reservoir mixes past inputs. In the large-width limit, these coefficients define a deterministic temporal kernel that approximates the finite-reservoir feature geometry. Kernel ridge regression on a short labelled pilot sequence therefore ranks candidate operating regimes without instantiating or rolling out a reservoir, and the selected configuration transfers across widths. Across ten synthetic temporal benchmarks, zero-rollout selection obtains a mean deployment score of $0.772$, compared with $0.774$ for exhaustive simulation-based search, while avoiding $156\\,600$ selection rollouts. With a small rollout budget, the proposed ranking provides the strongest mean performance at every tested budget and reaches the exhaustive reference using $4.8\\%$ of its rollout cost. On four public electricity-transformer-temperature (ETT) forecasting datasets, five retained candidates recover the exhaustive operating point on three datasets. On multivariate cellular-traffic forecasting, 15 rollouts per cell reach the 462-rollout exhaustive reference and outperform random search and Bayesian optimization at low budgets. These results position free-probability kernels as deterministic surrogates for selecting reservoir operating regimes when validation rollouts are scarce.",
+        "authors": [
+          "Sara Malacarne, Andrea Ceni, Claudio Gallicchio"
+        ],
+        "link": "https://arxiv.org/abs/2608.20998",
+        "published": "2026-08-24T04:00:00Z",
+        "updated": "2026-08-24T04:00:00Z",
+        "categories": [
+          "cs.LG",
+          "cs.NE",
+          "stat.ML"
+        ]
+      },
+      "screening": {
+        "relevance": 0.1,
+        "method": "自由概率核与核岭回归用于超参数选择",
+        "hep_tasks": [],
+        "reason": "方法针对储层计算超参数选择，与HEP任务差异大，迁移链长",
+        "needs_deep_review": false,
+        "evidence_level": "irrelevant"
+      },
+      "review": null,
+      "review_status": "not_selected",
+      "processed_at": "2026-08-25T01:51:06.151498Z",
+      "screening_model": "deepseek-v4-flash",
+      "review_model": null,
+      "screening_fingerprint": "195fb0b173d8bc9a4c28c78a16fb55810e78ed0d42329ccadb12ddb4dd876ed2",
+      "review_fingerprint": null
+    },
+    "2608.20427:v1": {
+      "paper": {
+        "arxiv_id": "2608.20427",
+        "version": 1,
+        "title": "BF1: A Causal Dyadic Sparse-Attention Retrofit for Efficient Long-Context Transformers",
+        "abstract": "arXiv:2608.20427v1 Announce Type: new Abstract: Dense causal attention remains expensive at long context even when implemented with highly optimized exact kernels. We study BF1, a deterministic block-aligned dyadic sparse-attention route that combines a small exact local neighborhood, a global first block, and logarithmically spaced historical blocks. The route is related to prior log-sparse and dilated attention patterns; our contribution is a correctness-gated pretrained-model retrofit, a matched topology-control study, and a systems characterization that connects per-layer sparsity to whole-model latency. For fixed block width, every converted layer uses O(n log n) selected token interactions and has O(log n) graph communication depth. On an NVIDIA RTX PRO 6000 Blackwell GPU, an optimized BF16 implementation crosses dense attention between 2K and 4K tokens and reaches a 10.91x per-layer prefill speedup at 32K. Retrofitting eight of 28 Qwen3-0.6B attention layers lowers warm whole-model time to first token by 7.7%, 11.3%, and 15.3% at 8K, 16K, and 32K, respectively, while the remaining dense layers keep the complete model asymptotically quadratic. Under a matched 1,000-step, 16.384M-token adaptation protocol, BF1 ranks first across three training seeds: mean report perplexity is 1.68639 versus 1.69154 for a matched static-random nonlocal graph, 1.69258 for dense continued training, and 1.81505 for equal-budget local sliding. At seed 1234, the packed-report paired interval places Dense-CT 0.3169-0.4055% above BF1 and static-random graph 17 0.2441-0.3642% above BF1. These results establish BF1 as a reproducible sparse operator and selective retrofit primitive with real long-context systems value. This paper evaluates numerical correctness, selected-interaction scaling, kernel performance, partial-model inference, and matched next-token language modeling.",
+        "authors": [
+          "Hina Dixit"
+        ],
+        "link": "https://arxiv.org/abs/2608.20427",
+        "published": "2026-08-24T04:00:00Z",
+        "updated": "2026-08-24T04:00:00Z",
+        "categories": [
+          "cs.AI",
+          "cs.LG"
+        ]
+      },
+      "screening": {
+        "relevance": 0.1,
+        "method": "确定性块对齐二元稀疏注意力模式，结合局部精确块、全局首块和对数间隔历史块，用于预训练模型改造",
+        "hep_tasks": [],
+        "reason": "论文关注长上下文Transformer稀疏注意力，无科学数据验证，与HEP任务无直接关联",
+        "needs_deep_review": false,
+        "evidence_level": "irrelevant"
+      },
+      "review": null,
+      "review_status": "not_selected",
+      "processed_at": "2026-08-25T01:51:06.151498Z",
+      "screening_model": "deepseek-v4-flash",
+      "review_model": null,
+      "screening_fingerprint": "195fb0b173d8bc9a4c28c78a16fb55810e78ed0d42329ccadb12ddb4dd876ed2",
+      "review_fingerprint": null
+    },
+    "2608.21199:v1": {
+      "paper": {
+        "arxiv_id": "2608.21199",
+        "version": 1,
+        "title": "Tydra: An Efficient Hybrid Model for Tabular Data",
+        "abstract": "arXiv:2608.21199v1 Announce Type: new Abstract: Transformer-based tabular foundation models such as TabPFN achieve strong predictive performance but incur quadratic computational cost with context length. On the other hand, subquadratic SSM-based alternatives such as Hydra trade away accuracy for efficiency. To balance both, we introduce Tydra, a hybrid Transformer-State Space Model (SSM) architecture for tabular in-context learning that interleaves attention and SSM layers. Across 30 OpenML datasets, Tydra reduces inference time by 30% relative to TabPFN while retaining much of its predictive performance. Tydra also outperforms an approximately ten-times-larger Hydra model while providing faster inference. The results indicate that hybrid architectures are a promising direction for tabular foundation models.",
+        "authors": [
+          "Mieszko Komisarczyk, Saurabh Mathur, Maurice Kraus, Sriraam Natarajan, Kristian Kersting"
+        ],
+        "link": "https://arxiv.org/abs/2608.21199",
+        "published": "2026-08-24T04:00:00Z",
+        "updated": "2026-08-24T04:00:00Z",
+        "categories": [
+          "cs.LG"
+        ]
+      },
+      "screening": {
+        "relevance": 0.04,
+        "method": "混合Transformer和状态空间模型的表格数据上下文学习架构",
+        "hep_tasks": [],
+        "reason": "该论文聚焦表格数据的基础模型，方法未涉及高能物理特征，无直接关联。",
+        "needs_deep_review": false,
+        "evidence_level": "irrelevant"
+      },
+      "review": null,
+      "review_status": "not_selected",
+      "processed_at": "2026-08-25T01:51:06.151498Z",
+      "screening_model": "deepseek-v4-flash",
+      "review_model": null,
+      "screening_fingerprint": "195fb0b173d8bc9a4c28c78a16fb55810e78ed0d42329ccadb12ddb4dd876ed2",
+      "review_fingerprint": null
+    },
+    "2608.21207:v1": {
+      "paper": {
+        "arxiv_id": "2608.21207",
+        "version": 1,
+        "title": "Curriculum-Aware Interpolate-then-Refine: Learned Physiological Time-Series Imputation under Realistic Missingness",
+        "abstract": "arXiv:2608.21207v1 Announce Type: new Abstract: Imputing physiological time series (arterial blood pressure, blood glucose, etc.) is essential for addressing the missingness that pervades clinical data. Yet modern imputation methods perform poorly in this domain: a recent benchmark found that simple linear interpolation outperformed every learned imputer on real-world clinical signals with realistic gaps. We show that this reflects two properties of physiological missingness that generic imputers ignore: gaps may occur when the signal is clinically extreme rather than typical, and gap lengths can easily span orders of magnitude. To this end, we introduce Curriculum-Aware Interpolate-then-Refine (CAIR), a two-stage framework for physiological time-series imputation. Our key motivation is to learn a coarse base curve and then repeatedly correct it toward physiological realism, rather than predict a gap in a single pass. Consequently, CAIR couples a bidirectional-GRU interpolator with a Transformer refiner that corrects its own estimate over three successive passes, trained jointly under a broad, signal-agnostic random-gap curriculum. We evaluate imputers stratified by gap length and missingness mechanism (MCAR, MAR, NMAR) rather than by a single average, and CAIR is the most accurate under every mechanism on continuous glucose monitoring (AI-READI) and arterial pressure in intensive care (MIMIC-III). Its margin over the strongest baseline grows with difficulty, from 9% under MCAR to 19% under value-dependent dropout, where generic learned imputers are weakest. We further show low reconstruction error alone does not recover the burden metrics clinicians act on: interpolants matching CAIR's error fail to preserve those metrics, imputers that recover them are far less accurate, and CAIR alone ranks among the best on both axes.",
+        "authors": [
+          "Yu-Chao Huang, Haochen Zhang, Nicholas Konz, Tianlong Chen"
+        ],
+        "link": "https://arxiv.org/abs/2608.21207",
+        "published": "2026-08-24T04:00:00Z",
+        "updated": "2026-08-24T04:00:00Z",
+        "categories": [
+          "cs.AI",
+          "cs.LG"
+        ]
+      },
+      "screening": {
+        "relevance": 0.1,
+        "method": "Curriculum-aware interpolate-then-refine framework combining bidirectional GRU and Transformer",
+        "hep_tasks": [
+          "探测器数据缺失值填充"
+        ],
+        "reason": "生理时间序列填补方法，与高能物理数据特点差异大，迁移性弱。",
+        "needs_deep_review": false,
+        "evidence_level": "irrelevant"
+      },
+      "review": null,
+      "review_status": "not_selected",
+      "processed_at": "2026-08-25T01:51:06.151498Z",
+      "screening_model": "deepseek-v4-flash",
+      "review_model": null,
+      "screening_fingerprint": "195fb0b173d8bc9a4c28c78a16fb55810e78ed0d42329ccadb12ddb4dd876ed2",
+      "review_fingerprint": null
+    },
+    "2608.21216:v1": {
+      "paper": {
+        "arxiv_id": "2608.21216",
+        "version": 1,
+        "title": "Development of A Novel Compton Camera for MeV Gamma-Ray Measurement in Space",
+        "abstract": "arXiv:2608.21216v1 Announce Type: new Abstract: The astrophysical gamma rays in the MeV energy region have not yet been well-explored due to the limitation of detection technology in the past decades, and the famous gamma-ray \"MeV gap\" exists. Opening the window of MeV gamma-ray is not only critical for the gamma astronomy but also essential for rich frontier researches in astro-particle physics, such as detecting light dark matter, probing the primordial black hole and better understanding of nucleosynthesis. Using the novel scintillators, a three-layer Compton camera with the energy resolution better than 4% and position resolution of ~2 mm is developed. Here we show the design, detailed calibration and validation results of the novel Compton camera, and demonstrate its good ability of MeV gamma-ray source imaging for the upcoming in-orbit mission.",
+        "authors": [
+          "Pingwei Sun, Wenxiang Fang, Guorong He, Zhen Wu, Jinghe Yang, Jiancheng Zeng, Yiyu Pan, Jiacheng Ding, Enzhao Qi, Jiahao Su, Haoran Yang, Bowen Zhu, Mengjiao Xiao"
+        ],
+        "link": "https://arxiv.org/abs/2608.21216",
+        "published": "2026-08-24T04:00:00Z",
+        "updated": "2026-08-24T04:00:00Z",
+        "categories": [
+          "hep-ex"
+        ]
+      },
+      "screening": {
+        "relevance": 0.3,
+        "method": "探测器设计与校准，基于新型闪烁体的三层康普顿相机",
+        "hep_tasks": [
+          "探测器开发",
+          "校准与验证"
+        ],
+        "reason": "论文聚焦于天体物理伽马射线探测，而非高能对撞机物理，但探测器开发方法对HEP探测器设计有间接参考价值。",
+        "needs_deep_review": false,
+        "evidence_level": "transferable"
+      },
+      "review": null,
+      "review_status": "not_selected",
+      "processed_at": "2026-08-25T01:51:06.151498Z",
+      "screening_model": "deepseek-v4-flash",
+      "review_model": null,
+      "screening_fingerprint": "195fb0b173d8bc9a4c28c78a16fb55810e78ed0d42329ccadb12ddb4dd876ed2",
+      "review_fingerprint": null
+    },
+    "2608.21338:v1": {
+      "paper": {
+        "arxiv_id": "2608.21338",
+        "version": 1,
+        "title": "Efficient Event Generation for High-Multiplicity LHC Processes: An End-to-End GPU Workflow with Normalizing Flows",
+        "abstract": "arXiv:2608.21338v1 Announce Type: cross Abstract: Producing very large unweighted event samples for high-multiplicity processes is limited by expensive matrix-element evaluations and low unweighting efficiencies. We present the first end-to-end GPU-resident event-generation workflow that integrates normalizing-flow proposals with the parton-level event generator Pepper. Helicity-conditioned coupling flows are trained using online updates supplemented by sample replay and deployed across all subprocesses of complete proton--proton collision processes with many final-state jets. In this workflow, a Python-based control layer and Pepper exchange flow-generated phase-space points and the corresponding target-density evaluations directly in device memory. The control layer performs flow sampling, proposal-density evaluation, and unweighting, while Pepper evaluates the matrix elements, PDFs, and phase-space factors defining the target density and writes the accepted events in standard formats. We compare subprocess-specific flows, with one flow per partonic subprocess, to grouped conditional flows that share parameters among subprocesses with related parton content. The workflow is benchmarked for $pp \\to e^+e^- + 4j$, $pp \\to e^+e^- + 5j$, $pp \\to t \\bar t + 4j$, $pp \\to 4j$, and $pp \\to 5j$ production. On four H100 GPUs, we generate $10^9$ unweighted events for each benchmark process. Including the cost of flow training, the workflow achieves end-to-end speedups of up to two orders of magnitude over standalone Pepper event generation and turns a multi-week task into a sub-day computation. It thereby makes billion-event production more practical and offers a pathway to alleviating the Monte Carlo statistics bottleneck in high-multiplicity collider physics.",
+        "authors": [
+          "Enrico Bothmann, Joshua Isaacson, Claudius Krause, Carla J. L\\'opez-Zurita, Maximilian Spannring, Daohan Wang"
+        ],
+        "link": "https://arxiv.org/abs/2608.21338",
+        "published": "2026-08-24T04:00:00Z",
+        "updated": "2026-08-24T04:00:00Z",
+        "categories": [
+          "hep-ex",
+          "hep-ph"
+        ]
+      },
+      "screening": {
+        "relevance": 0.9,
+        "method": "结合归一化流与基于 helicity 的条件耦合，在 GPU 上进行端到端事件生成，采用在线更新和样本回放训练",
+        "hep_tasks": [
+          "事件生成",
+          "快速模拟",
+          "蒙特卡洛加速"
+        ],
+        "reason": "流模型用于高多重数LHC过程事件生成，提供端到端GPU加速，显著提升效率，直接相关。",
+        "needs_deep_review": true,
+        "evidence_level": "direct"
+      },
+      "review": null,
+      "review_status": "pending",
+      "processed_at": "2026-08-25T01:51:06.151498Z",
+      "screening_model": "deepseek-v4-flash",
+      "review_model": null,
+      "screening_fingerprint": "195fb0b173d8bc9a4c28c78a16fb55810e78ed0d42329ccadb12ddb4dd876ed2",
+      "review_fingerprint": null
+    },
+    "2603.26877:v1": {
+      "paper": {
+        "arxiv_id": "2603.26877",
+        "version": 1,
+        "title": "Pushing the Limits of Pulse Shape Discrimination in a Large Liquid Xenon Detector",
+        "abstract": "arXiv:2603.26877v2 Announce Type: replace-cross Abstract: The LUX-ZEPLIN (LZ) experiment is a direct-detection dark matter experiment, optimized to search for weakly interacting massive particles (WIMPs) through WIMP-nucleon interactions. The main challenge in dark matter detection is differentiating between WIMP signals and background events. In LZ, the ratio of ionization to scintillation signals (charge-to-light) is the primary method for rejecting electronic recoil (ER) background. Pulse shape discrimination (PSD) offers a method for additional ER backgrounds rejection in liquid xenon detectors. In this paper, the discrimination power of PSD with the LZ experiment is discussed. To precisely characterize the scintillation pulse shape, an analysis framework is developed to reconstruct the detection time of individual photons. Using LZ calibration data, the photon-timing prompt fraction discriminator is optimized and achieves ER leakage as low as $15\\%$. For specific background processes such as $^{124}$Xe double electron capture, the leakage is reduced further to about $5\\%$. PSD is combined with charge-to-light to form two-factor discrimination (TFD). The optimized TFD performance is compared with the performance of the charge-to-light method, with the corresponding false positive rate reduced by up to a factor of two for large scintillation pulses. Finally, PSD and TFD are applied to data from LZ's WS2024 run and their performance is summarized.",
+        "authors": [
+          "D. S. Akerib, A. K. Al Musalhi, F. Alder, B. J. Almquist, C. S. Amarasinghe, A. Ames, T. J. Anderson, N. Angelides, H. M. Ara\\'ujo, J. E. Armstrong, M. Arthurs, A. Baker, S. Balashov, J. Bang, J. W. Bargemann, E. E. Barillier, K. Beattie, A. Bhatti, T. P. Biesiadzinski, H. J. Birch, E. Bishop, G. M. Blockinger, C. A. J. Brew, P. Br\\'as, S. Burdin, M. C. Carmona-Benitez, M. Carter, A. Chawla, H. Chen, Y. T. Chin, N. I. Chott, S. Contreras, M. V. Converse, R. Coronel, A. Cottle, G. Cox, D. Curran, C. E. Dahl, I. Darlington, S. Dave, A. David, J. Delgaudio, S. Dey, L. de Viveiros, L. Di Felice, C. Ding, J. E. Y. Dobson, E. Druszkiewicz, S. Dubey, C. L. Dunbar, S. R. Eriksen, N. M. Fearon, N. Fieldhouse, S. Fiorucci, H. Flaecher, E. D. Fraser, T. M. A. Fruth, P. W. Gaemers, R. J. Gaitskell, A. Geffre, J. Genovesi, C. Ghag, J. Ghamsari, A. Ghosh, S. Ghosh, R. Gibbons, S. Gokhale, J. Green, M. G. D. van der Grinten, J. J. Haiston, C. R. Hall, T. Hall, R. H. Hampp, S. J. Haselschwardt, M. A. Hernandez, S. A. Hertel, G. J. Homenides, M. Horn, D. Q. Huang, D. Hunt, E. Jacquet, R. S. James, K. Jenkins, A. C. Kaboth, A. C. Kamaha, M. K. Kannichankandy, D. Khaitan, A. Khazov, J. Kim, Y. D. Kim, D. Kodroff, E. V. Korolkova, H. Kraus, S. Kravitz, L. Kreczko, V. A. Kudryavtsev, C. Lawes, E. B. Leon, D. S. Leonard, K. T. Lesko, C. Levy, J. Lin, A. Lindote, W. H. Lippincott, J. Long, M. I. Lopes, W. Lorenzon, C. Lu, S. Luitz, W. Ma, V. Mahajan, P. A. Majewski, A. Manalaysay, R. L. Mannino, R. J. Matheson, C. Maupin, M. E. McCarthy, D. N. McKinsey, J. McLaughlin, J. B. McLaughlin, R. McMonigle, B. Mitra, E. Mizrachi, M. E. Monzani, K. Mor{\\aa}, E. Morrison, B. J. Mount, M. Murdy, A. St. J. Murphy, H. N. Nelson, F. Neves, A. Nguyen, C. L. O'Brien, F. H. O'Shea, I. Olcina, K. C. Oliver-Mallory, J. Orpwood, K. Y. Oyulmaz, K. J. Palladino, N. J. Pannifer, S. J. Patton, B. Penning, G. Pereira, E. Perry, T. Pershing, A. Piepke, S. S. Poudel, Y. Qie, J. Reichenbacher, C. A. Rhyne, G. R. C. Rischbieter, E. Ritchey, H. S. Riyat, R. Rosero, N. J. Rowe, T. Rushton, D. Rynders, S. Salt\\~ao, D. Santone, A. B. M. R. Sazzad, R. W. Schnee, G. Sehr, B. Shafer, S. Shaw, W. Sherman, K. Shi, T. Shutt, C. Silva, G. Sinev, J. Siniscalco, A. M. Slivar, A. M. Softley-Brown, V. N. Solovov, P. Sorensen, J. Soria, T. J. Sumner, A. Swain, M. Szydagis, D. R. Tiedt, D. R. Tovey, J. Tranter, M. Trask, K. Trengove, M. Tripathi, A. Us\\'on, A. C. Vaitkus, O. Valentino, V. Velan, A. Wang, J. J. Wang, Y. Wang, L. Weeldreyer, T. J. Whitis, K. Wild, M. Williams, J. Winnicki, L. Wolf, F. L. H. Wolfs, S. Woodford, D. Woodward, C. J. Wright, Q. Xia, J. Xu, Y. Xu, M. Yeh, D. Yeum, J. Young, W. Zha, H. Zhang, T. Zhang, Y. Zhou"
+        ],
+        "link": "https://arxiv.org/abs/2603.26877",
+        "published": "2026-08-24T04:00:00Z",
+        "updated": "2026-08-24T04:00:00Z",
+        "categories": [
+          "hep-ex",
+          "physics.ins-det"
+        ]
+      },
+      "screening": {
+        "relevance": 0.7,
+        "method": "光子定时脉冲形状判别，结合电荷-光比的二因子判别",
+        "hep_tasks": [
+          "粒子鉴别（电子反冲与核反冲区分）",
+          "背景抑制"
+        ],
+        "reason": "基于LZ校准数据验证，方法适用于液体氙探测器，与HEP粒子鉴别任务直接相关，但非通用高能对撞机任务。",
+        "needs_deep_review": true,
+        "evidence_level": "direct"
+      },
+      "review": null,
+      "review_status": "pending",
+      "processed_at": "2026-08-25T01:51:06.151498Z",
+      "screening_model": "deepseek-v4-flash",
+      "review_model": null,
+      "screening_fingerprint": "195fb0b173d8bc9a4c28c78a16fb55810e78ed0d42329ccadb12ddb4dd876ed2",
+      "review_fingerprint": null
+    },
+    "2605.07460:v1": {
+      "paper": {
+        "arxiv_id": "2605.07460",
+        "version": 1,
+        "title": "Learning Minimal-Deviation Corrections for Multi-Dimensional Mismodelling in HEP Simulations",
+        "abstract": "arXiv:2605.07460v2 Announce Type: replace-cross Abstract: Accurate Monte Carlo (MC) modelling in high-energy physics is challenging, particularly in complex scenarios where simulations fail to reproduce observed data. In practice, experimental information is often limited to one-dimensional (1D) distributions, while mismodelling arises in a multidimensional feature space. This restricts traditional correction methods, as one-dimensional reweighting ignores correlations and fully multidimensional approaches require large target datasets. We propose a neural network-based method that operates under these constraints by learning a transformation of simulated events that reproduces the available 1D target distributions while remaining close to the original simulation. This minimal-deviation principle preserves the global correlation structure of the baseline model while enabling targeted corrections of mismodelled features. Using controlled studies with simulated pseudo-data, we show that the method improves agreement with target distributions and maintains a consistent multidimensional structure. The approach is designed for complex, high-dimensional analyses where traditional techniques are insufficient, providing a scalable way to enhance MC modelling under limited information.",
+        "authors": [
+          "Matthias Schott, Lucie Flek"
+        ],
+        "link": "https://arxiv.org/abs/2605.07460",
+        "published": "2026-08-24T04:00:00Z",
+        "updated": "2026-08-24T04:00:00Z",
+        "categories": [
+          "cs.LG",
+          "hep-ex"
+        ]
+      },
+      "screening": {
+        "relevance": 0.8,
+        "method": "Neural network-based transformation learning with minimal deviation principle",
+        "hep_tasks": [
+          "Monte Carlo simulation correction",
+          "Reweighting",
+          "Mismodelling correction"
+        ],
+        "reason": "该方法直接针对HEP模拟失真，在受限信息下实现多维校正，具有很强的实用价值。",
+        "needs_deep_review": true,
+        "evidence_level": "direct"
+      },
+      "review": null,
+      "review_status": "pending",
+      "processed_at": "2026-08-25T01:51:06.151498Z",
+      "screening_model": "deepseek-v4-flash",
+      "review_model": null,
+      "screening_fingerprint": "195fb0b173d8bc9a4c28c78a16fb55810e78ed0d42329ccadb12ddb4dd876ed2",
+      "review_fingerprint": null
+    },
+    "2608.20504:v1": {
+      "paper": {
+        "arxiv_id": "2608.20504",
+        "version": 1,
+        "title": "Measurement of the muon flux at SNOLAB using the DEAP-3600 experiment",
+        "abstract": "arXiv:2608.20504v1 Announce Type: new Abstract: A direct measurement of the muon flux at SNOLAB is performed using the DEAP-3600 experiment, located 2 km underground at SNOLAB near Sudbury, Canada. Primarily designed for the direct detection of weakly interacting massive particles (WIMPs), a dark matter candidate, DEAP-3600 consists of an inner spherical acrylic vessel containing a liquid argon target; this vessel is enclosed within a steel shell which is submerged in an instrumented water tank, serving as a muon veto for the dark matter search. The muon flux measurement is performed using a cut-and-count analysis of events observed in the muon veto detector and of events which are coincident between the muon veto and the liquid argon target. The requirement that muons traverse both the water and liquid argon minimizes instrumental backgrounds and systematic uncertainties. Using data collected from November 2016 to March 2020, the muon flux is measured by this coincidence analysis to be $(3.71 \\pm 0.25_{\\textrm{stat}} \\pm 0.09_{\\textrm{sys}}) \\times 10^{-10}\\, \\mu/$cm$^2$/s. The standalone measurement using muon veto data only is compatible within uncertainties. Both measurements agree with the previous result by the SNO experiment and with simulations carried out using the MUTE software. These results provide an important benchmark for future rare-event searches at the SNOLAB facility.",
+        "authors": [
+          "DEAP Collaboration, P. Adhikari, M. Alp\\'izar-Venegas, P. -A. Amaudruz, D. J. Auty, M. Batygov, B. Beltran, M. A. Bigentini, C. E. Bina, W. Bonivento, M. G. Boulay, J. F. Bueno, M. Cadeddu, B. Cai, M. C\\'ardenas-Montes, N. Cargioli, S. Cavuoti, S. Choudhary, B. T. Cleveland, R. Crampton, E. Darling, S. Daugherty, P. Di Stefano, G. Dolganov, L. Doria, F. A. Duncan, M. Dunford, E. Ellingwood, A. Erlandson, S. S. Farahani, N. Fatemighomi, L. Ferro, G. Fiorillo, R. J. Ford, A. Garai, P. Garc\\'ia Abia, S. Garg, P. Giampa, A. Gim\\'enez-Alc\\'azar, D. Goeldi, P. Gorel, K. Graham, A. L. Hallin, M. Hamstra, S. Haskins, J. Hu, J. Hucker, D. Huff, T. Hugues, A. Ilyasov, B. Jigmeddorj, C. J. Jillings, G. Kaur, A. Kemp, M. Khoshraftar Yazdi, G. Killaire, M. Ku\\'zniak, F. La Zia, M. Lai, S. Langrock, B. Lehnert, M. Lissia, L. Luzzi, I. Machulin, S. MacKenzie, A. Maru, J. Mason, A. B. McDonald, T. McElroy, J. B. McLaughlin, C. Mielnichuk, L. Mirasola, S. Mohanty, A. Moharana, J. Monroe, A. Murray, M. Needs, C. Ng, G. Nieradka, G. Olivi\\'ero, M. Olszewski, S. Pal, D. Papi, B. Park, R. Pavarani, M. Perry, V. Pesudo, T. R. Pollmann, F. Rad, C. Rethmeier, F. Reti\\`ere, L. Roszkowski, R. Santorelli, F. G. Schuckman II, M. Sestu, S. Seth, V. Shalamova, P. Skensved, T. Smirnova, K. Sobotkiewich, T. Sonley, J. Sosiak, J. Soukup, R. Stainforth, M. Stringer, J. Tang, P. Taylor, C. Tierney, P. Tokareva, S. Tullio, R. Turcotte-Tardif, E. V\\'azquez-J\\'auregui, G. Vera D\\'iaz, S. Viel, B. Vyas, J. Walding, M. Ward, S. Westerdale, R. Wormington"
+        ],
+        "link": "https://arxiv.org/abs/2608.20504",
+        "published": "2026-08-24T04:00:00Z",
+        "updated": "2026-08-24T04:00:00Z",
+        "categories": [
+          "hep-ex"
+        ]
+      },
+      "screening": {
+        "relevance": 0.04,
+        "method": "cut-and-count analysis",
+        "hep_tasks": [
+          "muon flux measurement",
+          "background estimation"
+        ],
+        "reason": "该论文仅提供μ子通量的测量结果，所用方法为简单的计数分析，无新统计方法，对HEP方法借鉴价值低。",
+        "needs_deep_review": false,
+        "evidence_level": "irrelevant"
+      },
+      "review": null,
+      "review_status": "not_selected",
+      "processed_at": "2026-08-25T01:51:06.151498Z",
+      "screening_model": "deepseek-v4-flash",
+      "review_model": null,
+      "screening_fingerprint": "195fb0b173d8bc9a4c28c78a16fb55810e78ed0d42329ccadb12ddb4dd876ed2",
+      "review_fingerprint": null
+    },
+    "2608.21006:v1": {
+      "paper": {
+        "arxiv_id": "2608.21006",
+        "version": 1,
+        "title": "Evidence for $\\eta_{c}(2S)\\to p\\bar{p}\\pi^{+}\\pi^{-}\\pi^{0}$ and observation of $\\chi_{cJ} \\to p\\bar{p}\\pi^{+}\\pi^{-}\\pi^{0}$",
+        "abstract": "arXiv:2608.21006v1 Announce Type: new Abstract: Using $(2.712\\pm0.014)\\times 10^9$ $\\psi(3686)$ events collected by the BESIII detector at the BEPCII collider, the $\\psi(3686) \\to \\gamma p\\bar{p}\\pi^+\\pi^-\\pi^0$ process is investigated. Evidence for the decay of $\\eta_{c}(2S)\\to p\\bar{p}\\pi^{+}\\pi^{-}\\pi^{0}$ is found with a signal significance of 3.3$\\sigma$. The product of branching fractions of $\\mathcal{B}[\\psi(3686)\\to \\gamma \\eta_{c}(2S)]\\times\\mathcal{B}[\\eta_{c}(2S)\\to p\\bar{p}\\pi^{+}\\pi^{-}\\pi^{0}]$ is determined to be $(3.4\\pm0.5\\pm0.8) \\times 10^{-6}$, where the first uncertainty is statistical and the second systematic. The hadronic decays of $\\chi_{cJ} \\to p\\bar{p}\\pi^+\\pi^-\\pi^0$$~(J=0,1,2)$ are observed, and their branching fractions are measured to be $\\mathcal{B}(\\chi_{c0}\\to p\\bar{p}\\pi^{+}\\pi^{-}\\pi^{0})=(4.79\\pm 0.01\\pm0.40) \\times 10^{-3}$, $\\mathcal{B}(\\chi_{c1}\\to p\\bar{p}\\pi^{+}\\pi^{-}\\pi^{0})=(2.13\\pm 0.01\\pm0.17) \\times 10^{-3}$, and $\\mathcal{B}(\\chi_{c2}\\to p\\bar{p}\\pi^{+}\\pi^{-}\\pi^{0})=(3.72\\pm 0.01\\pm0.29) \\times 10^{-3}$, respectively. Furthermore, the branching fractions for the intermediate processes $\\chi_{cJ}\\to p\\bar{p}\\omega$ are updated with significantly improved precision: $\\mathcal{B}(\\chi_{c0}\\to p\\bar{p}\\omega)=(5.76\\pm0.01\\pm0.42)\\times10^{-4}$, $\\mathcal{B}(\\chi_{c1}\\to p\\bar{p}\\omega)=(1.85\\pm0.01\\pm0.13)\\times10^{-4}$, and $\\mathcal{B}(\\chi_{c2}\\to p\\bar{p}\\omega)=(4.51\\pm0.01\\pm0.33)\\times10^{-4}$, respectively.",
+        "authors": [
+          "BESIII Collaboration, M. Ablikim, M. N. Achasov, P. Adlarson, X. C. Ai, C. S. Akondi, R. Aliberti, A. Amoroso, Q. An, Y. H. An, Y. Bai, O. Bakina, H. R. Bao, X. L. Bao, M. Barbagiovanni, V. Batozskaya, K. Begzsuren, N. Berger, M. Berlowski, M. B. Bertani, D. Bettoni, F. Bianchi, E. Bianco, A. Bortone, I. Boyko, R. A. Briere, A. Brueggemann, D. Cabiati, H. Cai, M. H. Cai, X. Cai, A. Calcaterra, G. F. Cao, N. Cao, S. A. Cetin, X. Y. Chai, J. F. Chang, T. T. Chang, G. R. Che, Y. Z. Che, C. H. Chen, Chao Chen, G. Chen, H. S. Chen, H. Y. Chen, M. L. Chen, S. J. Chen, S. M. Chen, T. Chen, W. Chen, X. R. Chen, X. T. Chen, X. Y. Chen, Y. B. Chen, Y. Q. Chen, Z. K. Chen, J. Cheng, L. N. Cheng, S. K. Choi, X. Chu, G. Cibinetto, F. Cossio, J. Cottee-Meldrum, H. L. Dai, J. P. Dai, X. C. Dai, A. Dbeyssi, R. E. de Boer, D. Dedovich, C. Q. Deng, Z. Y. Deng, A. Denig, I. Denisenko, M. Destefanis, F. De Mori, E. Di Fiore, X. X. Ding, Y. Ding, Y. X. Ding, Yi. Ding, J. Dong, L. Y. Dong, M. Y. Dong, X. Dong, Z. J. Dong, M. C. Du, S. X. Du, Shaoxu Du, X. L. Du, Y. Q. Du, Y. Y. Duan, Z. H. Duan, P. Egorov, G. F. Fan, J. J. Fan, Y. H. Fan, J. Fang, Jin Fang, S. S. Fang, W. X. Fang, Y. Q. Fang, L. Fava, F. Feldbauer, G. Felici, C. Q. Feng, J. H. Feng, L. Feng, Q. X. Feng, Y. T. Feng, M. Fritsch, C. D. Fu, J. L. Fu, Y. W. Fu, H. Gao, Xu Gao, Y. Gao, Y. N. Gao, Y. Y. Gao, Yunong Gao, Z. Gao, S. Garbolino, I. Garzia, L. Ge, P. T. Ge, Z. W. Ge, C. Geng, E. M. Gersabeck, A. Gilman, K. Goetzen, J. Gollub, J. B. Gong, J. D. Gong, L. Gong, W. X. Gong, W. Gradl, S. Gramigna, M. Greco, M. D. Gu, M. H. Gu, C. Y. Guan, A. Q. Guo, H. Guo, J. N. Guo, L. B. Guo, M. J. Guo, R. P. Guo, X. Guo, Y. P. Guo, Z. Guo, A. Guskov, J. Gutierrez, J. Y. Han, T. T. Han, X. Han, F. Hanisch, K. D. Hao, X. Q. Hao, F. A. Harris, C. Z. He, K. K. He, K. L. He, F. H. Heinsius, C. H. Heinz, Y. K. Heng, C. Herold, P. C. Hong, G. Y. Hou, X. T. Hou, Y. R. Hou, Z. L. Hou, H. M. Hu, J. F. Hu, Q. P. Hu, S. L. Hu, T. Hu, Y. Hu, Y. X. Hu, Z. M. Hu, G. S. Huang, K. X. Huang, L. Q. Huang, P. Huang, X. T. Huang, Y. P. Huang, Y. S. Huang, T. Hussain, N. H\\\"usken, N. in der Wiesche, J. Jackson, Q. Ji, Q. P. Ji, W. Ji, X. B. Ji, X. L. Ji, Y. Y. Ji, L. K. Jia, X. Q. Jia, D. Jiang, H. B. Jiang, S. J. Jiang, X. S. Jiang, Y. Jiang, J. B. Jiao, J. K. Jiao, Z. Jiao, L. C. L. Jin, S. Jin, Y. Jin, M. Q. Jing, X. M. Jing, T. Johansson, S. Kabana, X. L. Kang, X. S. Kang, B. C. Ke, V. Khachatryan, A. Khoukaz, O. B. Kolcu, B. Kopf, L. Kr\\\"oger, L. Kr\\\"ummel, Y. Y. Kuang, M. Kuessner, X. Kui, N. Kumar, A. Kupsc, W. K\\\"uhn, Q. Lan, W. N. Lan, T. T. Lei, M. Lellmann, T. Lenz, C. Li, C. H. Li, C. K. Li, Chunkai Li, Cong Li, D. M. Li, F. Li, G. Li, H. B. Li, H. J. Li, H. L. Li, H. N. Li, H. P. Li, Hui Li, J. N. Li, J. S. Li, J. W. Li, K. Li, K. L. Li, L. J. Li, L. K. Li, Lei Li, M. H. Li, M. R. Li, M. T. Li, P. L. Li, P. R. Li, Q. M. Li, Q. X. Li, R. Li, S. Li, S. X. Li, S. Y. Li, Shanshan Li, T. Li, T. Y. Li, W. D. Li, W. G. Li, X. Li, X. H. Li, X. K. Li, X. L. Li, X. Y. Li, X. Z. Li, Y. Li, Y. B. Li, Y. C. Li, Y. G. Li, Y. P. Li, Z. H. Li, Z. J. Li, Z. L. Li, Z. X. Li, Z. Y. Li, C. Liang, H. Liang, Y. F. Liang, Y. T. Liang, Z. Z. Liang, G. R. Liao, L. B. Liao, M. H. Liao, Y. P. Liao, J. Libby, A. Limphirat, C. C. Lin, C. X. Lin, D. X. Lin, T. Lin, B. J. Liu, B. X. Liu, C. Liu, C. X. Liu, F. Liu, F. H. Liu, Feng Liu, G. M. Liu, H. Liu, H. B. Liu, H. M. Liu, Huihui Liu, J. B. Liu, J. J. Liu, K. Liu, K. Y. Liu, Ke Liu, Kun Liu, L. Liu, L. C. Liu, Lu Liu, M. H. Liu, P. L. Liu, Q. Liu, S. B. Liu, T. Liu, W. M. Liu, W. T. Liu, X. Liu, X. K. Liu, X. L. Liu, X. P. Liu, X. T. Liu, X. Y. Liu, Y. Liu, Y. B. Liu, Yi Liu, Z. A. Liu, Z. D. Liu, Z. L. Liu, Z. Q. Liu, Z. X. Liu, Z. Y. Liu, X. C. Lou, H. J. Lu, J. G. Lu, X. L. Lu, Y. Lu, Y. H. Lu, Y. P. Lu, Z. H. Lu, C. L. Luo, J. R. Luo, J. S. Luo, M. X. Luo, T. Luo, X. L. Luo, Z. Y. Lv, X. R. Lyu, Y. F. Lyu, Y. H. Lyu, F. C. Ma, H. L. Ma, Heng Ma, J. L. Ma, L. L. Ma, L. R. Ma, Q. M. Ma, R. Q. Ma, R. Y. Ma, T. Ma, X. T. Ma, X. Y. Ma, Y. M. Ma, F. E. Maas, I. MacKay, M. Maggiora, S. Maity, S. Malde, Q. A. Malik, H. X. Mao, Y. J. Mao, Z. P. Mao, S. Marcello, A. Marshall, F. M. Melendi, Y. H. Meng, Z. X. Meng, G. Mezzadri, H. Miao, T. J. Min, R. E. Mitchell, X. H. Mo, B. Moses, N. Yu. Muchnoi, J. Muskalla, Y. Nefedov, F. Nerling, H. Neuwirth, Z. Ning, S. Nisar, Q. L. Niu, W. D. Niu, Y. Niu, C. Normand, S. L. Olsen, Q. Ouyang, I. V. Ovtin, S. Pacetti, Y. Pan, A. Pathak, Y. P. Pei, M. Pelizaeus, G. L. Peng, H. P. Peng, X. J. Peng, Y. Y. Peng, K. Peters, K. Petridis, J. L. Ping, R. G. Ping, S. Plura, V. Prasad, L. P\\\"opping, F. Z. Qi, H. R. Qi, M. Qi, S. Qian, W. B. Qian, C. F. Qiao, J. H. Qiao, J. J. Qin, J. L. Qin, L. Q. Qin, L. Y. Qin, P. B. Qin, X. P. Qin, X. S. Qin, Z. H. Qin, J. F. Qiu, Z. H. Qu, J. Rademacker, K. Ravindran, C. F. Redmer, A. Rivetti, M. Rolo, G. Rong, S. S. Rong, F. Rosini, Ch. Rosner, M. Q. Ruan, N. Salone, A. Sarantsev, Y. Schelhaas, M. Schernau, K. Schoenning, M. Scodeggio, W. Shan, X. Y. Shan, Z. J. Shang, J. F. Shangguan, L. G. Shao, M. Shao, C. P. Shen, H. F. Shen, W. H. Shen, X. Y. Shen, B. A. Shi, Ch. Y. Shi, H. Shi, J. L. Shi, J. Y. Shi, M. H. Shi, S. Y. Shi, X. Shi, H. L. Song, J. J. Song, M. H. Song, T. Z. Song, W. M. Song, Y. X. Song, Zirong Song, S. Sosio, S. Spataro, S. Stansilaus, F. Stieler, M. Stolte, S. S Su, G. B. Sun, G. X. Sun, H. Sun, H. K. Sun, J. F. Sun, K. Sun, L. Sun, R. Sun, S. S. Sun, T. Sun, W. Y. Sun, Y. C. Sun, Y. H. Sun, Y. J. Sun, Y. Z. Sun, Z. Q. Sun, Z. T. Sun, H. Tabaharizato, C. J. Tang, G. Y. Tang, J. Tang, J. J. Tang, L. F. Tang, Y. A. Tang, Z. H. Tang, L. Y. Tao, M. Tat, J. X. Teng, J. Y. Tian, W. H. Tian, Y. Tian, Z. F. Tian, K. Yu. Todyshev, I. Uman, E. van der Smagt, B. Wang, Bin Wang, Bo Wang, C. Wang, Chao Wang, Cong Wang, D. Y. Wang, F. K. Wang, H. J. Wang, H. R. Wang, J. Wang, J. J. Wang, J. P. Wang, K. Wang, L. L. Wang, L. W. Wang, M. Wang, Mi Wang, N. Y. Wang, P. Wang, S. Wang, Shun Wang, T. Wang, W. Wang, W. P. Wang, X. F. Wang, X. L. Wang, X. N. Wang, Xin Wang, Y. Wang, Y. D. Wang, Y. F. Wang, Y. H. Wang, Y. J. Wang, Y. L. Wang, Y. N. Wang, Yanning Wang, Yaqian Wang, Yi Wang, Yuan Wang, Z. Wang, Z. L. Wang, Z. Q. Wang, Z. Y. Wang, Zhi Wang, Ziyi Wang, D. Wei, D. H. Wei, D. J. Wei, H. R. Wei, F. Weidner, H. R. Wen, S. P. Wen, U. Wiedner, G. Wilkinson, M. Wolke, J. F. Wu, L. H. Wu, L. J. Wu, Lianjie Wu, S. G. Wu, S. M. Wu, X. W. Wu, Z. Wu, H. L. Xia, L. Xia, B. H. Xiang, D. Xiao, G. Y. Xiao, H. Xiao, Y. L. Xiao, Z. J. Xiao, C. Xie, K. J. Xie, Y. Xie, Y. G. Xie, Y. H. Xie, Z. P. Xie, T. Y. Xing, D. B. Xiong, G. F. Xu, H. Y. Xu, Q. J. Xu, Q. N. Xu, T. D. Xu, X. P. Xu, Y. Xu, Y. C. Xu, Z. S. Xu, F. Yan, L. Yan, W. B. Yan, W. C. Yan, W. H. Yan, W. P. Yan, X. Q. Yan, Y. Y. Yan, H. J. Yang, H. L. Yang, H. X. Yang, J. H. Yang, R. J. Yang, X. Y. Yang, Y. Yang, Y. G. Yang, Y. H. Yang, Y. M. Yang, Y. Q. Yang, Y. Z. Yang, Youhua Yang, Z. Y. Yang, W. J. Yao, Z. P. Yao, M. Ye, M. H. Ye, Z. J. Ye, K. Yi, Junhao Yin, Z. Y. You, B. X. Yu, C. X. Yu, G. Yu, J. S. Yu, L. W. Yu, T. Yu, X. D. Yu, Y. C. Yu, Yongchao Yu, C. Z. Yuan, H. Yuan, J. Yuan, Jie Yuan, L. Yuan, M. K. Yuan, S. H. Yuan, Y. Yuan, C. X. Yue, Ying Yue, A. A. Zafar, F. R. Zeng, S. H. Zeng, X. Zeng, Y. J. Zeng, Yujie Zeng, Y. C. Zhai, Y. H. Zhan, B. L. Zhang, B. X. Zhang, D. H. Zhang, G. Y. Zhang, Gengyuan Zhang, H. Zhang, H. C. Zhang, H. H. Zhang, H. Q. Zhang, H. R. Zhang, H. Y. Zhang, Han Zhang, J. Zhang, J. J. Zhang, J. L. Zhang, J. Q. Zhang, J. S. Zhang, J. W. Zhang, J. X. Zhang, J. Y. Zhang, J. Z. Zhang, Jianyu Zhang, Jin Zhang, Jiyuan Zhang, L. M. Zhang, Lei Zhang, N. Zhang, P. Zhang, Q. Zhang, Q. Y. Zhang, Q. Z. Zhang, R. Y. Zhang, S. H. Zhang, S. N. Zhang, Shulei Zhang, X. M. Zhang, X. Y. Zhang, Y. T. Zhang, Y. H. Zhang, Y. P. Zhang, Yao Zhang, Yu Zhang, Yu Zhang, Z. Zhang, Z. D. Zhang, Z. H. Zhang, Z. L. Zhang, Z. X. Zhang, Z. Y. Zhang, Zh. Zh. Zhang, Zhilong Zhang, Ziyang Zhang, Ziyu Zhang, G. Zhao, J. -P. Zhao, J. Y. Zhao, J. Z. Zhao, L. Zhao, Lei Zhao, M. G. Zhao, R. P. Zhao, S. J. Zhao, Y. B. Zhao, Y. L. Zhao, Y. P. Zhao, Y. X. Zhao, Z. G. Zhao, A. Zhemchugov, B. Zheng, B. M. Zheng, J. P. Zheng, W. J. Zheng, W. Q. Zheng, X. R. Zheng, Y. H. Zheng, B. Zhong, C. Zhong, X. Zhong, H. Zhou, J. Q. Zhou, S. Zhou, X. Zhou, X. K. Zhou, X. R. Zhou, X. Y. Zhou, Y. X. Zhou, Y. Z. Zhou, A. N. Zhu, J. Zhu, K. Zhu, K. J. Zhu, K. S. Zhu, L. X. Zhu, Lin Zhu, S. H. Zhu, T. J. Zhu, W. D. Zhu, W. J. Zhu, W. Z. Zhu, Y. C. Zhu, Z. A. Zhu, X. Y. Zhuang, M. Zhuge, J. H. Zou, J. Zu"
+        ],
+        "link": "https://arxiv.org/abs/2608.21006",
+        "published": "2026-08-24T04:00:00Z",
+        "updated": "2026-08-24T04:00:00Z",
+        "categories": [
+          "hep-ex"
+        ]
+      },
+      "screening": {
+        "relevance": 0.1,
+        "method": "利用BESIII探测器数据进行衰变分支比测量与信号显著性分析",
+        "hep_tasks": [
+          "重质量态衰变研究",
+          "分支比测量"
+        ],
+        "reason": "论文为实验测量，无新统计或机器学习方法，对HEP方法学参考价值低。",
+        "needs_deep_review": false,
+        "evidence_level": "irrelevant"
+      },
+      "review": null,
+      "review_status": "not_selected",
+      "processed_at": "2026-08-25T01:51:06.151498Z",
+      "screening_model": "deepseek-v4-flash",
+      "review_model": null,
+      "screening_fingerprint": "195fb0b173d8bc9a4c28c78a16fb55810e78ed0d42329ccadb12ddb4dd876ed2",
+      "review_fingerprint": null
+    },
+    "2608.21082:v1": {
+      "paper": {
+        "arxiv_id": "2608.21082",
+        "version": 1,
+        "title": "Angular analysis of the decay ${\\it \\Lambda}_{\\it b}^{0} \\to {\\it \\Lambda}(1520){\\it \\mu^{+}\\mu^{-}}$",
+        "abstract": "arXiv:2608.21082v1 Announce Type: new Abstract: The first angular analysis of ${\\it \\Lambda}_{\\it b}^{0} \\to {\\it \\Lambda}(1520){\\it \\mu^{+}\\mu^{-}}$ decays is presented, using proton-proton collision data collected with the LHCb detector between 2011 and 2018, corresponding to an integrated luminosity of 9 fb$^{-1}$. The leptonic forward-backward asymmetry, $A_\\text{FB, 3/2}^\\ell$, and the $CP$-averaged angular observable, $S_{1cc}$, are determined by fitting projections of the angular distributions in four intervals of the square of the dimuon invariant mass between 0.1 and 12.5 GeV$^2/c^4$. The results are in good agreement with predictions based on the Standard Model of particle physics.",
+        "authors": [
+          "LHCb collaboration, R. Aaij, M. Abdelfatah, A. S. W. Abdelmotteleb, C. Abellan Beteta, F. Abudin\\'en, T. Ackernley, A. A. Adefisoye, B. Adeva, M. Adinolfi, P. Adlarson, C. Agapopoulou, C. A. Aidala, S. Akar, K. Akiba, H. Al Saleh, P. Albicocco, J. Albrecht, R. Aleksiejunas, F. Alessio, P. Alvarez Cartelle, A. A. Alves Jr, S. Amato, J. L. Amey, Y. Amhis, Z. Amos, L. An, L. Anderlini, P. Andreola, M. Andreotti, S. Andres Estrada, A. Anelli, D. Ao, C. Arata, F. Archilli, Z. Areg, M. Argenton, S. Arguedas Cuendis, L. Arnone, M. Artuso, E. Aslanides, R. Ata\\'ide Da Silva, M. Atzeni, B. Audurier, J. A. Authier, D. Bacher, I. Bachiller Perea, S. Bachmann, M. Bachmayer, J. J. Back, M. Bai, Z. B. Bai, V. Balagura, A. Balboni, W. Baldini, Z. Baldwin, L. Balzani, H. Bao, J. Baptista de Souza Leite, C. Barbero Pretel, I. R. Barbosa, W. Barker, R. J. Barlow, M. Barnyakov, S. Baron, S. Barsuk, W. Barter, J. Bartz, S. Bashir, B. Batsukh, P. B. Battista, A. Bavarchee, A. Bay, A. Beck, M. Becker, F. Bedeschi, I. B. Bediaga, N. A. Behling, S. Belin, A. Bellavista, I. Belyaev, G. Bencivenni, E. Ben-Haim, J. L. M. Berkey, R. Bernet, A. Bertolin, L. Bertsch, F. Betti, J. Bex, O. Bezshyyko, S. Bhattacharya, M. S. Bieker, N. V. Biesuz, A. Biolchini, M. Birch, F. C. R. Bishop, A. Bitadze, A. Bizzeti, T. Blake, F. Blanc, J. E. Blank, S. Blusk, J. A. Boelhauve, O. Boente Garcia, T. Boettcher, A. Bohare, C. Bolognani, R. B. Bonacci, A. Bordelius, F. Borgato, S. Borghi, M. Borsato, J. T. Borsuk, E. Bottalico, S. A. Bouchiba, M. Bovill, T. J. V. Bowcock, A. Boyer, C. Bozzi, J. D. Brandenburg, A. Brea Rodriguez, N. Breer, C. Breitfeld, J. Brodzicka, J. Brown, E. Buchanan, M. Burgos Marcos, C. Burr, E. Butera, C. Buti, J. S. Butter, W. Byczynski, S. Cadeddu, H. Cai, Y. Cai, Y. Cai, A. Caillet, R. Calabrese, L. Calefice, M. Calvi, M. Calvo Gomez, P. Camargo Magalhaes, J. I. Cambon Bouzas, P. Campana, A. Campomagnani, A. C. Campos, A. F. Campoverde Quezada, Y. Cao, S. Capelli, M. Caporale, L. Capriotti, R. Caravaca-Mora, A. Carbone, L. Carcedo Salgado, R. Cardinale, A. Cardini, P. Carniti, L. Carus, R. Caspary, G. Casse, M. Cattaneo, G. Cavallero, V. Cavallini, S. Celani, I. Celestino, S. Cesare, A. J. Chadwick, M. Charles, Ph. Charpentier, E. Chatzianagnostou, R. Cheaib, M. Chefdeville, C. Chen, J. Chen, S. Chen, Z. Chen, A. Chen Hu, M. Cherif, S. Chernyshenko, X. Chiotopoulos, G. Chizhik, V. Chobanova, A. Christakakis, M. Chrzaszcz, Y. Chu, V. Chulikov, P. Ciambrone, X. Cid Vidal, P. Cifra, P. E. L. Clarke, M. Clemencic, H. V. Cliff, J. Closier, C. Cocha Toapaxi, V. Coco, A. Codovini, C. Codovini, J. Cogan, E. Cogneras, L. Cojocariu, S. Collaviti, P. Collins, T. Colombo, M. Colonna, A. Comerma-Montells, L. Congedo, J. Connaughton, A. Contu, N. Cooke, A. Corallo, G. Cordova, C. Coronel, I. Corredoira, A. Correia, G. Corti, G. C. Costantino, C. Cotirlan, J. Cottee Meldrum, B. Couturier, D. C. Craik, N. Crepet, M. Cruz Torres, M. Cubero Campos, E. Curras Rivera, R. Currie, C. L. Da Silva, X. Dai, J. Dalseno, C. D'Ambrosio, G. Darze, A. Davidson, O. De Aguiar Francisco, C. De Angelis, F. De Benedetti, J. de Boer, K. De Bruyn, S. De Capua, M. De Cian, U. De Freitas Carneiro Da Graca, F. De Gregorio, E. De Lucia, J. M. De Miranda, L. De Paula, A. De Robertis, E. De Santis, M. De Serio, P. De Simone, F. De Vellis, J. A. de Vries, F. Debernardis, D. Decamp, S. Dekkers, L. Del Buono, B. Demaire-Lepape, J. Deng, O. Deschamps, F. Dettori, B. Dey, P. Di Nezza, S. Ding, Y. Ding, L. Dittmann, J. F. Diverchy, A. D. Docheva, A. Doheny, C. Dong, F. Dordei, J. Dorta Moreno, A. C. dos Reis, J. Dos Santos Oliveira, A. D. Dowling, L. Dreyfus, W. Duan, P. Duda, L. Dufour, V. Duk, P. Durante, M. M. Duras, J. M. Durham, K. Duwe, A. Dziurda, S. Easo, E. Eckstein, U. Egede, S. Eisenhardt, E. Ejopu, L. Eklund, M. Elashri, D. Elizondo Blanco, J. Ellbracht, S. Ely, A. Ene, T. Evans, F. Fabiano, S. Faghih, L. N. Falcao, B. Fang, R. Fantechi, L. Fantini, M. Faria, K. Farmer, F. Fassin, D. Fazzini, L. Felkowski, C. Feng, M. Feng, A. Fernandez Casani, M. Fernandez Gomez, B. Fernandez Rodino, J. Fernandez-John, A. D. Fernez, F. Ferrari, F. Ferreira Rodrigues, R. A. Fini, R. Fiorenza, M. Fiorini, M. Firlej, D. S. Fitzgerald, C. Fitzpatrick, T. Fiutowski, F. Fleuret, A. Fomin, M. Fontana, M. Fontes Vaz, L. A. Foreman, R. Forty, D. Foulds-Holt, V. Franco Lima, M. Franco Sevilla, M. Frank, E. Franzoso, G. Frau, C. Frei, D. A. Friday, J. Fu, Y. Fu, Q. F\\\"uhring, T. Fulghesu, M. Fulghieri, G. Galati, M. D. Galati, A. Gallas Torreira, D. Galli, S. Gambetta, M. Gandelman, P. Gandini, B. Ganie, H. Gao, R. Gao, T. Q. Gao, Y. Gao, Y. Gao, Y. Gao, L. M. Garcia Martin, P. Garcia Moreno, J. Garc\\'ia Pardi\\~nas, P. Gardner, L. Garrido, C. Gaspar, A. Gavrikov, J. George, E. Gersabeck, M. Gersabeck, T. Gershon, S. Ghizzo, Z. Ghorbanimoghaddam, F. I. Giasemis, V. Gibson, H. K. Giemza, A. L. Gilman, M. Giovannetti, A. Giovent\\`u, L. Girardey, M. A. Giza, F. C. Glaser, V. V. Gligorov, A. Glioti, C. G\\\"obel, L. Golinka-Bezshyyko, E. Golobardes, A. Golutvin, S. Gomez Fernandez, A. G. Gomez Mongui, W. Gomulka, F. Goncalves Abrantes, I. Gon\\c{c}ales Vaz, M. Goncerz, G. Gong, S. Gong, J. A. Gooding, C. Gotti, E. Govorkova, J. P. Grabowski, L. A. Granado Cardoso, R. Grande Quartieri, E. Graug\\'es, E. Graverini, L. Grazette, G. Graziani, A. T. Grecu, N. A. Grieser, L. Grillo, C. Gu, M. Guarise, L. Guerry, M. Guittiere, A. -K. Guseinov, Y. Guz, T. Gys, K. Habermann, T. Hadavizadeh, C. Hadjivasiliou, G. Haefeli, C. Haen, S. Haken, G. Hallett, P. M. Hamilton, Q. Han, S. Han, X. Han, S. Hansmann-Menzemer, N. Harnew, T. J. Harris, L. Hartman, M. Hartmann, S. Hashmi, J. He, N. Heatley, A. Hedes, F. Hemmer, C. Henderson, R. Henderson, R. D. L. Henderson, A. M. Hennequin, K. Hennessy, A. Henrot, J. Herd, P. Herrero Gascon, J. Heuel, A. Heyn, A. Hicheur, G. Hijano Mendizabal, J. Horswill, R. Hou, Y. Hou, D. C. Houston, N. Howarth, W. Hu, X. Hu, W. Hulsbergen, R. J. Hunter, D. Hutchcroft, M. Idzik, P. Ilten, A. Iohner, S. Jacevicius, H. Jage, S. J. Jaimes Elles, S. Jakobsen, T. Jakoubek, E. Jans, A. Jawahery, C. Jayaweera, A. Jelavic, V. Jevtic, Z. Jia, E. Jiang, X. Jiang, Y. Jiang, Y. J. Jiang, E. Jimenez Moya, N. Jindal, M. John, A. John Rubesh Rajan, D. Johnson, C. R. Jones, S. Joshi, B. Jost, J. Juan Castella, N. Jurik, I. Juszczak, K. Kalecinska, D. Kaminaris, S. Kandybei, M. Kane, Y. Kang, C. Kar, A. Kauniskangas, J. W. Kautz, M. K. Kazanecki, F. Keizer, M. Kenzie, T. Ketel, B. Khanji, S. Kholodenko, V. Kholoimov, G. Khreich, F. Kiraz, T. Kirn, V. S. Kirsebom, N. Kleijne, A. Kleimenova, D. Klekots, K. Klimaszewski, M. R. Kmiec, T. Knospe, R. Kolb, S. Koliiev, L. Kolk, A. Konoplyannikov, P. Kopciewicz, P. Koppenburg, A. Korchin, I. Kostiuk, O. Kot, S. Kotriakhova, E. Kowalczyk, O. Kravcov, M. Kreps, W. Krupa, W. Krzemien, O. Kshyvanskyi, S. Kubis, M. Kucharczyk, A. Kupsc, A. Kurzina, V. Kushnir, B. Kutsenko, J. Kvapil, I. Kyryllin, D. Lacarrere, P. Laguarta Gonzalez, A. Lai, A. Lampis, D. Lancierini, C. Landesa Gomez, G. Lanfranchi, C. Langenbruch, T. Latham, F. Lazzari, C. Lazzeroni, R. Le Gac, H. Lee, R. Lef\\`evre, M. Lehuraux, C. Lemettais, E. Lemos Cid, O. Leroy, T. Lesiak, E. D. Lesser, B. Leverington, A. Li, C. Li, C. Li, H. Li, J. Li, K. Li, L. Li, L. Li, P. Li, P. -R. Li, Q. Li, T. Li, T. Li, W. Li, Y. Li, Y. Li, Y. Li, Z. Li, Z. Lian, Q. Liang, X. Liang, Z. Liang, S. Libralon, A. Lightbody, J. Lin, S. Lin, T. Lin, R. Lindner, H. Linton, R. Litvinov, D. Liu, F. L. Liu, G. Liu, K. Liu, S. Liu, W. Liu, X. Liu, Y. Liu, Y. Liu, Y. L. Liu, G. Loachamin Ordonez, I. Lobo, A. Lobo Salvia, A. Loi, T. Long, F. C. L. Lopes, J. H. Lopes, A. Lopez Huertas, C. Lopez Iribarnegaray, Q. Lu, C. Lucarelli, D. Lucchesi, M. Lucio Martinez, Y. Luo, A. Lupato, M. Lupberger, E. Luppi, K. Lynch, J. Lyu, S. Lyu, X. -R. Lyu, H. Ma, S. Maccolini, F. Machefert, F. Maciuc, B. Mack, I. Mackay, L. M. Mackey, L. R. Madhan Mohan, M. J. Madurai, D. Magdalinski, J. J. Malczewski, S. Malde, L. Malentacca, G. Manca, C. Mancuso, R. Manera Escalero, A. Mangalasseri, F. M. Manganella, R. Mangrulkar, D. Manuzzi, S. Mao, D. Marangotto, J. F. Marchand, R. Marchevski, U. Marconi, L. Mareso, E. Mariani, S. Mariani, C. Marin Benito, J. Marks, A. M. Marshall, L. Martel, G. Martelli, G. Martellotti, L. Martinazzoli, M. Martinelli, C. Martinez, A. Martinez Armas, D. Martinez Gomez, D. Martinez Santos, F. Martinez Vidal, A. Martorell i Granollers, A. Massafferri, R. Matev, A. Mathad, C. Matteuzzi, K. R. Mattioli, L. Matzner, A. Mauri, E. Maurice, J. Mauricio, P. Mayencourt, J. Mazorra de Cos, M. Mazurek, D. Mazzanti Tarancon, M. McCann, N. T. McHugh, A. McNab, R. McNulty, B. Meadows, S. E. R. Medaer, D. Melnychuk, D. Mendoza Granada, P. Menendez Valdes Perez, F. M. Meng, M. Merk, A. Merli, L. Meyer Garcia, D. Miao, H. Miao, S. Mico, M. Mikhasenko, D. A. Milanes, A. Minotti, E. Minucci, B. Mitreska, D. S. Mitzel, R. Mocanu, A. Modak, L. Moeser, R. D. Moise, E. F. Molina Cardenas, T. Momb\\\"acher, M. Monk, T. Monnard, S. Monteil, A. Morcillo Gomez, G. Morello, M. J. Morello, M. P. Morgenthaler, A. Moro, J. Moron, W. Morren, A. B. Morris, A. G. Morris, R. Mountain, Z. Mu, N. Muangkod, E. Muhammad, F. Muheim, M. Mulder, K. M\\\"uller, V. Mytrochenko, P. Naik, T. Nakada, R. Nandakumar, G. Napoletano, I. Nasteva, M. Needham, N. Neri, S. Neubert, N. Neufeld, J. Nicolini, D. Nicotra, E. M. Niel, L. Nisi, Q. Niu, B. K. Njoki, P. Nogarolli, P. Nogga, J. Nombela Royo, C. Normand, A. Novo Cal, J. Novoa Fernandez, G. Nowak, H. N. Nur, A. Oblakowska-Mucha, T. Oeser, O. Okhrimenko, R. Oldeman, N. Oldman, F. Oliva, E. Olivart Pino, M. Olocco, R. H. O'Neil, J. S. Ordonez Soto, D. Osthues, J. M. Otalora Goicochea, P. Owen, A. Oyanguren, O. Ozcelik, F. Paciolla, A. Padee, K. O. Padeken, B. Pagare, T. Pajero, A. Palano, L. Palini, L. Palombini, M. Palutan, C. Pan, X. Pan, S. Panebianco, S. Paniskaki, L. Paolucci, A. Papanestis, M. Pappagallo, L. L. Pappalardo, C. Pappenheimer, C. Parkes, D. Parmar, G. Passaleva, D. Passaro, A. Pastore, M. Patel, J. Patoc, C. Patrignani, A. Paul, C. J. Pawley, A. Pellegrino, J. Peng, X. Peng, M. Pepe Altarelli, S. Perazzini, H. Pereira Da Costa, M. Pereira Martinez, C. Perez, A. Perez Casas, P. Perret, A. Perrevoort, A. Perro, M. J. Peters, A. Petkovic, K. Petridis, A. Petrolini, S. Pezzulo, J. P. Pfaller, H. Pham, L. Pica, E. Picatoste Olloqui, M. Piccini, L. Piccolo, F. Piernas Diaz, B. Pietrzyk, R. N. Pilato, D. Pinci, F. Pisani, M. Pizzichemi, V. M. Placinta, M. Plo Casasus, T. Poeschl, F. Polci, M. Poli Lener, A. Poluektov, I. Polyakov, E. Polycarpo, S. Ponce, D. Popov, K. Popp, K. Prasanth, C. Prouve, D. Provenzano, V. Pugatch, A. Puicercus Gomez, G. Punzi, J. R. Pybus, Q. Qian, W. Qian, N. Qin, R. Quagliani, R. I. Rabadan Trejo, B. Rachwal, R. Racz, J. H. Rademacker, M. Rama, M. Ram\\'irez Garc\\'ia, V. Ramos De Oliveira, M. Ramos Pernas, G. Ramsey, M. S. Rangel, G. Raven, M. Rebollo De Miguel, F. Redi, J. Reich, F. Reiss, Z. Ren, P. K. Resmi, M. Ribalda Galvez, R. Ribatti, G. Ricart, D. Riccardi, S. Ricciardi, K. Richardson, M. Richardson-Slipper, F. Riehn, K. Rinnert, P. Robbe, G. Robertson, E. Rodrigues, A. Rodriguez Alvarez, E. Rodriguez Fernandez, J. A. Rodriguez Lopez, E. Rodriguez Rodriguez, J. Roensch, A. Rogovskiy, D. L. Rolf, P. Roloff, A. Romano, V. Romanovskiy, A. Romero Vidal, G. Romolini, F. Ronchetti, T. Rong, W. Rose, M. Rotondo, M. S. Rudolph, G. Ruggiero, M. Ruiz Diaz, J. Ruiz Vidal, J. Ruz Armendariz, J. J. Saavedra-Arias, J. J. Saborido Silva, D. Sahoo, N. Sahoo, B. Saitta, M. Salomoni, I. Sanderswood, R. Santacesaria, C. Santamarina Rios, M. Santimaria, L. Santoro, E. Santovetti, A. Saputi, A. Sarnatskiy, G. Sarpis, M. Sarpis, C. Satriano, A. Satta, M. Saur, H. Sazak, F. Sborzacchi, A. Scarabotto, S. Schael, S. Scherl, M. Schiller, H. Schindler, M. Schmelling, B. Schmidt, N. Schmidt, S. Schmitt, H. Schmitz, O. Schneider, A. Schopper, N. Schulte, H. Schumacher, M. H. Schune, G. Schwering, B. Sciascia, A. Sciuccati, G. Scriven, I. Segal, S. Sellam, M. Senghi Soares, A. Sergi, N. Serra, L. Sestini, B. Sevilla Sanjuan, Y. Shang, D. M. Shangase, R. S. Sharma, L. Shchutska, T. Shears, S. Shelton, J. Shen, Z. Shen, S. Sheng, B. Shi, J. Shi, Q. Shi, W. S. Shi, E. Shmanin, R. Silva Coutinho, G. Simi, S. Simone, M. Singha, I. Siral, N. Skidmore, T. Skwarnicki, M. W. Slater, E. Smith, M. Smith, M. Smith, L. Soares Lavra, M. D. Sokoloff, F. J. P. Soler, A. Solomin, K. Solovieva, N. S. Sommerfeld, R. Song, Y. Song, Y. Song, Y. S. Song, F. L. Souza De Almeida, G. Souza De Castro, B. Souza De Paula, K. M. Sowa, E. Spadaro Norella, E. Spedicato, J. G. Speer, P. Spradlin, F. Stagni, M. Stahl, S. Stahl, S. Stanislaus, M. Stefaniak, O. Steinkamp, F. Suljik, J. Sun, L. Sun, M. Sun, D. Sundfeld, P. Svihra, V. Svintozelskyi, J. Swallow, K. Swientek, F. Swystun, A. Szabelski, T. Szumlak, Y. Tan, Y. Tang, Y. T. Tang, M. D. Tat, J. A. Teijeiro Jimenez, F. Terzuoli, F. Teubert, E. Thomas, D. J. D. Thompson, A. R. Thomson-Strong, R. Thornton, H. Tilquin, V. Tisserand, S. T'Jampens, M. Tobin, T. T. Todorov, L. Tomassetti, G. Tonani, X. Tong, T. Tork, L. Torlai, L. Toscano, D. Y. Tou, G. Tuci, N. Tuning, L. H. Uecker, A. Ukleja, A. Upadhyay, B. Urbach, A. Usachov, U. Uwer, V. Vagnoni, A. Vaitkevicius, A. Valassi, V. Valcarce Cadenas, G. Valenti, N. Valls Canudas, J. van Eldik, H. Van Hecke, E. van Herwijnen, C. B. Van Hulse, R. Van Laak, M. van Veghel, P. Varrella, R. Vazquez Gomez, P. Vazquez Regueiro, C. V\\'azquez Sierra, S. Vecchi, J. Velilla Serna, J. J. Velthuis, M. Veltri, A. Venkateswaran, M. Verdoglia, M. Vesterinen, W. Vetens, D. Vico Benet, P. Vidrier Villalba, M. Vieites Diaz, X. Vilasis-Cardona, E. Vilella Figueras, A. Villa, P. Vincent, B. Vivacqua, F. C. Volle, D. vom Bruch, K. Vos, C. Vrahas, J. Wagner, J. Walsh, N. Walter, E. J. Walton, G. Wan, A. Wang, B. Wang, C. Wang, C. Wang, C. Wang, G. Wang, H. Wang, J. Wang, J. Wang, J. Wang, J. Wang, M. Wang, N. W. Wang, X. Wang, X. Wang, X. Wang, X. W. Wang, Y. Wang, Y. Wang, Y. Wang, Y. H. Wang, Z. Wang, Z. Wang, J. A. Ward, A. Wasili, M. Waterlaat, N. K. Watson, D. Websdale, Y. Wei, Z. Weida, J. Wendel, B. D. C. Westhenry, A. S. White, C. White, M. Whitehead, E. Whiter, A. R. Wiederhold, D. Wiedner, M. A. Wiegertjes, C. Wild, G. Wilkinson, M. K. Wilkinson, M. Williams, M. J. Williams, M. R. J. Williams, R. Williams, S. Williams, Z. Williams, F. F. Wilson, M. Winn, W. Wislicki, M. Witek, L. Witola, T. Wolf, E. Wood, G. Wormser, S. A. Wotton, H. Wu, J. Wu, T. Wu, X. Wu, Y. Wu, Z. Wu, K. Wyllie, S. Xian, Z. Xiang, Y. Xie, T. X. Xing, A. Xu, L. Xu, M. Xu, R. Xu, Z. Xu, Z. Xu, Z. Xu, Z. Xu, S. Yadav, K. Yang, X. Yang, Y. Yang, Y. Yang, Z. Yang, Z. Yang, H. Yeung, H. Yin, X. Yin, C. Y. Yu, J. Yu, K. Yu, X. Yuan, Y Yuan, S. Zalambani, J. A. Zamora Saa, F. Zangari, M. Zavertyaev, M. Zdybal, F. Zenesini, C. Zeng, M. Zeng, S. H Zeng, C. Zhang, C. Zhang, D. Zhang, J. Zhang, L. Zhang, Q. Z. Zhang, R. Zhang, S. Zhang, S. L. Zhang, Y. Zhang, Z. Zhang, J. Zhao, M. Zhao, Y. Zhao, A. Zhelezov, S. Z. Zheng, X. Z. Zheng, Y. Zheng, T. Zhou, X. Zhou, V. Zhovkovska, L. Z. Zhu, X. Zhu, X. Zhu, Y. Zhu, V. Zhukov, J. Zhuo, T. Zies, D. Zuliani, X. Zuo"
+        ],
+        "link": "https://arxiv.org/abs/2608.21082",
+        "published": "2026-08-24T04:00:00Z",
+        "updated": "2026-08-24T04:00:00Z",
+        "categories": [
+          "hep-ex"
+        ]
+      },
+      "screening": {
+        "relevance": 0.2,
+        "method": "角分布拟合",
+        "hep_tasks": [
+          "重味物理衰变分析",
+          "唯象学比较"
+        ],
+        "reason": "LHCb实验测量，但方法为标准角分析，非新机器学习方法，对统计方法参考有限。",
+        "needs_deep_review": false,
+        "evidence_level": "speculative"
+      },
+      "review": null,
+      "review_status": "not_selected",
+      "processed_at": "2026-08-25T01:51:06.151498Z",
+      "screening_model": "deepseek-v4-flash",
+      "review_model": null,
+      "screening_fingerprint": "195fb0b173d8bc9a4c28c78a16fb55810e78ed0d42329ccadb12ddb4dd876ed2",
+      "review_fingerprint": null
+    },
+    "2608.21120:v1": {
+      "paper": {
+        "arxiv_id": "2608.21120",
+        "version": 1,
+        "title": "New Limits on $n \\rightarrow n'$ Transformation from HFIR Cold Neutron Beam",
+        "abstract": "arXiv:2608.21120v1 Announce Type: new Abstract: Hypothetical neutron $n$ to sterile neutron $n'$ transformations would violate baryon number $\\mathcal{B}$ and point to the nature of Dark Matter. We performed a new search for $n \\rightarrow n'$ using an intense cold neutron beam from the High Flux Isotope Reactor at Oak Ridge National Laboratory. We used a theoretical model that describes the transformation $n \\rightarrow n'$ with two parameters: a small mass difference $\\Delta{m}$ between the interaction states $n$ and $n'$ and a mixing vacuum angle $\\theta_0$. A thin absorbing cadmium wafer was used in the center of the superconducting 6.6 T magnet which provided a large gradient for the non-adiabatic $n \\rightarrow n'$ transition. No signal was observed above background in the $^{3}\\text{He}$ neutron detector 20 meters downstream of the magnet. This result gives an order of magnitude improvement in the lower limit for the probability $2\\theta_0^2$ of the $n \\rightarrow n'$ transformation in vacuum in the range of $\\Delta{m}$ between $0.1$ neV and $1000$ neV.",
+        "authors": [
+          "James M. Rogers, Leah J. Broussard, Christopher B. Crawford, Lisa DeBeer-Schmitt, Matthew J. Frost, Francisco M. Gonzalez, Carolyn O. Haviland, Lawrence Heilbronn, Erik B. Iverson, Yuri Kamyshkov, Mubasshir Khan, Andrew Mullins, David Milstead, Linus B. Persson, Cary Rock, Valentina Santoro, Alexander Saunders, Shaun Vavra, Nathan D. Whittington"
+        ],
+        "link": "https://arxiv.org/abs/2608.21120",
+        "published": "2026-08-24T04:00:00Z",
+        "updated": "2026-08-24T04:00:00Z",
+        "categories": [
+          "hep-ex"
+        ]
+      },
+      "screening": {
+        "relevance": 0.1,
+        "method": "实验设置与参数扫描（无新统计方法）",
+        "hep_tasks": [
+          "稀有过程搜索",
+          "暗物质间接探测"
+        ],
+        "reason": "论文为稀有过程搜索实验，方法为探测器与束流装置，无新统计或机器学习方法，对HEP统计方法贡献有限。",
+        "needs_deep_review": false,
+        "evidence_level": "irrelevant"
+      },
+      "review": null,
+      "review_status": "not_selected",
+      "processed_at": "2026-08-25T01:51:06.151498Z",
+      "screening_model": "deepseek-v4-flash",
+      "review_model": null,
+      "screening_fingerprint": "195fb0b173d8bc9a4c28c78a16fb55810e78ed0d42329ccadb12ddb4dd876ed2",
+      "review_fingerprint": null
+    },
+    "2608.21327:v1": {
+      "paper": {
+        "arxiv_id": "2608.21327",
+        "version": 1,
+        "title": "On-Detector Machine Learning for Beam-Induced Background Rejection at a 10 TeV Muon Collider",
+        "abstract": "arXiv:2608.21327v1 Announce Type: new Abstract: A 10 TeV Muon Collider is a compelling candidate for a future energy-frontier facility, offering unprecedented opportunities to explore the fundamental laws of particle physics. Muon decays in the collider ring produce intense beam-induced background (BIB) that can overwhelm detector occupancy and exceed readout bandwidth constraints. We investigate the potential of on-detector Machine Learning for BIB rejection in the vertex detector, exploiting pixel cluster shapes to distinguish background from collision products. We study three classes of lightweight neural-network architectures, and evaluate their implementation feasibility using high-level synthesis. Selected architectures achieve 88 to 90% data reduction at 99% signal efficiency, while requiring hardware resources compatible with potential ASIC implementation. These results demonstrate the potential of performing substantial BIB rejection directly in the pixel readout, providing a strategy for meeting the tracker readout requirements at a future Muon Collider.",
+        "authors": [
+          "Daniel Abadjiev, Eliza Howard, Tsz Ngong You, Ryan Michaud, Benjamin Ryan Roberts, Benjamin Rosser, Karri Folan Di Petrillo, Anthony Badea, Doug Berry, Arghya Ranjan Das, Jennet Dickinson, Giuseppe Di Guglielmo, Harshul Gupta, Farah Fahim, Abhijith Gandrakota, Lindsey Gray, James Hirschauer, David Jiang, Shiqi Kuang, Ron Lipton, Mira Littmann, Miaoyuan Liu, Nicholas Manganelli, Petar Maksimovic, Corrinne Mills, Mark S. Neubauer, Aidan Nicholas, Benjamin Parpillon, Jannicke Pearkes, Adam Quinn, Danush Shekar, Ricardo Silvestre, Chinar Syal, Morris Swartz, Nhan Tran, Amit Trivedi, Keith Ulmer, Mohammad Abrar Wadud, Benjamin Weiss"
+        ],
+        "link": "https://arxiv.org/abs/2608.21327",
+        "published": "2026-08-24T04:00:00Z",
+        "updated": "2026-08-24T04:00:00Z",
+        "categories": [
+          "hep-ex"
+        ]
+      },
+      "screening": {
+        "relevance": 0.95,
+        "method": "轻量级神经网络（MLP、CNN等）用于像素簇形状分类，结合高综合实现评估",
+        "hep_tasks": [
+          "束致本底 rejection",
+          "在线触发/数据缩减",
+          "像素探测器读出"
+        ],
+        "reason": "论文直接针对缪子对撞机束致本底抑制，在探测器上实现机器学习，方法适用于HEP在线数据处理。",
+        "needs_deep_review": true,
+        "evidence_level": "direct"
+      },
+      "review": {
+        "summary_cn": "针对10 TeV缪子对撞机束致本底（BIB）导致像素探测器占用率和读出带宽压力，研究在探测器端部署轻量级神经网络，利用像素簇形状区分BIB与碰撞产物。比较三类轻量架构并通过高层次综合评估硬件可实现性。选定架构在保持99%信号效率下实现88-90%数据减少，资源消耗与潜在ASIC实现兼容。结果表明可在像素读出阶段直接进行显著BIB抑制，为未来缪子对撞机径迹探测器读出提供策略。",
+        "paper_claims": [
+          "On-detector machine learning using pixel cluster shapes can distinguish beam-induced background from collision products in a 10 TeV muon collider vertex detector.",
+          "Three classes of lightweight neural-network architectures were studied, and selected architectures achieve 88 to 90% data reduction at 99% signal efficiency.",
+          "The selected architectures require hardware resources compatible with potential ASIC implementation, as evaluated by high-level synthesis.",
+          "Substantial beam-induced background rejection can be performed directly in the pixel readout, providing a strategy to meet tracker readout requirements at a future muon collider."
+        ],
+        "hep_opportunities": [
+          "On-detector ML using cluster shapes could be applied to pileup or beam-induced background rejection in pixel detectors at HL-LHC or future colliders.",
+          "ASIC-friendly light neural networks may enable real-time data reduction in front-end electronics for high-occupancy environments.",
+          "The high-level synthesis evaluation workflow can be transferred to assess hardware feasibility of other detector-level ML algorithms.",
+          "Cluster-shape-based classification could be adapted for suppressing heavy-ion collision backgrounds or improving track trigger purity."
+        ],
+        "transfer_risks": [
+          "Performance is based on simulated muon collider BIB; pixel cluster shape distributions may differ under real detector conditions (simulation-to-data shift).",
+          "High-level synthesis resource estimates may not capture full ASIC implementation constraints such as power, latency, and radiation tolerance.",
+          "The 99% signal efficiency benchmark may not account for low-momentum tracks, displaced vertices, or rare signal topologies.",
+          "The approach may need retraining and recalibration for changing beam conditions, detector aging, or geometry variations.",
+          "Hardware feasibility on a specific ASIC technology may not directly transfer to other readout architectures or process nodes."
+        ],
+        "validation_plan": "Reproduce the simulation with full detector geometry and digitization, including BIB and signal samples. Train the three architectures and evaluate ROC, data reduction at fixed 99% signal efficiency, and background rejection. Perform high-level synthesis on target ASIC technology and report resource usage, latency, and power. Test on independent datasets with varied BIB flux, background simulation parameters, and detector geometry variations. If possible, validate on an FPGA or ASIC prototype using beam test or realistic pixel data. Assess systematic uncertainties from simulation-to-data shift and calibration by comparing cluster shape distributions from detector data or dedicated test beams.",
+        "evidence_level": "direct",
+        "confidence": 0.78
+      },
+      "review_status": "complete",
+      "processed_at": "2026-08-25T01:51:06.151498Z",
+      "screening_model": "deepseek-v4-flash",
+      "review_model": "deepseek-v4-pro",
+      "screening_fingerprint": "195fb0b173d8bc9a4c28c78a16fb55810e78ed0d42329ccadb12ddb4dd876ed2",
+      "review_fingerprint": "6afcc0548b61a39044110499acc2c6b22571a29a7b7258150a845e3320dc2562"
+    },
+    "2608.20458:v1": {
+      "paper": {
+        "arxiv_id": "2608.20458",
+        "version": 1,
+        "title": "Poles in $\\pi N$ scattering from forward dispersion relations and revised total cross-section data",
+        "abstract": "arXiv:2608.20458v1 Announce Type: cross Abstract: We present a model-independent calculation of $\\pi N$ forward dispersion relations and their analytic continuation to the complex plane, using a revised set of $\\pi^\\pm p$ total cross-section data up to 3 GeV, and Regge asymptotics above. Up to that energy, we find four stable poles for each isospin combination. The lightest pole in the $I=3/2$ channel corresponds to the $\\Delta(1232)$ resonance, while the lightest in the $I=1/2$ channel corresponds to the Roper resonance, even though the latter is imperceptible in the data. We extract their pole parameters and the parameter difference between the $\\Delta^0$ and $\\Delta^{++}$, without relying on a partial-wave analysis. The remaining poles cannot be identified with a single resonance each. They are not artifacts but the combined effect of multiple resonances unresolved by total cross-section data alone. Finally, we write sum rules relating the residues of these constituent resonances to the residues of the poles extracted from the dispersive representation.",
+        "authors": [
+          "Jos\\'e Ram\\'on Pel\\'aez, Pablo Rab\\'an, Jacobo Ruiz de Elvira"
+        ],
+        "link": "https://arxiv.org/abs/2608.20458",
+        "published": "2026-08-24T04:00:00Z",
+        "updated": "2026-08-24T04:00:00Z",
+        "categories": [
+          "hep-ex",
+          "hep-lat",
+          "hep-ph",
+          "nucl-th"
+        ]
+      },
+      "screening": {
+        "relevance": 0.2,
+        "method": "前向色散关系与解析延拓",
+        "hep_tasks": [
+          "共振极点提取"
+        ],
+        "reason": "方法针对强子散射物理，非高能对撞机典型任务，但极点提取思想可部分迁移至共振分析。",
+        "needs_deep_review": false,
+        "evidence_level": "speculative"
+      },
+      "review": null,
+      "review_status": "not_selected",
+      "processed_at": "2026-08-25T01:51:06.151498Z",
+      "screening_model": "deepseek-v4-flash",
+      "review_model": null,
+      "screening_fingerprint": "195fb0b173d8bc9a4c28c78a16fb55810e78ed0d42329ccadb12ddb4dd876ed2",
+      "review_fingerprint": null
+    },
+    "2510.12734:v1": {
+      "paper": {
+        "arxiv_id": "2510.12734",
+        "version": 1,
+        "title": "Doctor Rashomon and the UNIVERSE of Madness: Variable Importance with Unobserved Confounding and the Rashomon Effect",
+        "abstract": "arXiv:2510.12734v2 Announce Type: replace Abstract: Variable importance (VI) methods are often used for hypothesis generation, feature selection, and scientific validation. In the standard VI pipeline, an analyst estimates VI for a single predictive model with only the observed features. However, the importance of a feature depends heavily on which other variables are included in the model, and essential variables are often omitted from observational datasets. Moreover, the VI estimated for one model is often not the same as the VI estimated for another equally-good model - a phenomenon known as the Rashomon Effect. We address these gaps by introducing UNobservables and Inference for Variable importancE using Rashomon SEts (UNIVERSE). Our approach adapts Rashomon sets = the sets of near-optimal models in a dataset - to produce bounds on the true VI even with missing features. We theoretically guarantee the robustness of our approach, show strong performance on semi-synthetic simulations, and demonstrate its utility in a credit risk task.",
+        "authors": [
+          "Jon Donnelly, Srikar Katta, Emanuele Borgonovo, Cynthia Rudin"
+        ],
+        "link": "https://arxiv.org/abs/2510.12734",
+        "published": "2026-08-24T04:00:00Z",
+        "updated": "2026-08-24T04:00:00Z",
+        "categories": [
+          "cs.LG"
+        ]
+      },
+      "screening": {
+        "relevance": 0.2,
+        "method": "Rashomon sets for variable importance with unobserved confounding",
+        "hep_tasks": [],
+        "reason": "主题为变量重要性与混淆，距离HEP核心任务较远，且未在科学数据上验证。",
+        "needs_deep_review": false,
+        "evidence_level": "irrelevant"
+      },
+      "review": null,
+      "review_status": "not_selected",
+      "processed_at": "2026-08-25T01:51:06.151498Z",
+      "screening_model": "deepseek-v4-flash",
+      "review_model": null,
+      "screening_fingerprint": "195fb0b173d8bc9a4c28c78a16fb55810e78ed0d42329ccadb12ddb4dd876ed2",
+      "review_fingerprint": null
+    },
+    "2607.09431:v1": {
+      "paper": {
+        "arxiv_id": "2607.09431",
+        "version": 1,
+        "title": "comprisk: A scikit-learn-compatible Python toolkit for competing-risks survival analysis",
+        "abstract": "arXiv:2607.09431v2 Announce Type: replace-cross Abstract: Medical time-to-event data are frequently subject to competing risks, where the occurrence of one terminal event precludes the others and standard survival methods that treat competing events as censoring yield biased absolute-risk estimates. Valid analysis instead targets the cause-specific cumulative incidence function (CIF). This methodology has been available to applied researchers almost exclusively through R packages, forcing Python-based machine-learning workflows into a Python-to-R round trip. We present comprisk, a scikit-learn-compatible Python toolkit that puts the canonical competing-risks methods behind one API: a scalable competing-risks random survival forest, Fine-Gray subdistribution-hazard regression and a penalized variant, cause-specific Cox regression, the Aalen-Johansen CIF estimator, and Gray's K-sample test, together with competing-risks-aware model evaluation. Every estimator is validated numerically against its R reference implementation. The forest uses a histogram-based, numba-compiled split kernel that fits 10-22x faster than randomForestSRC at comparable discrimination on real clinical cohorts and scales to n = 10^6 on a consumer CPU. comprisk is distributed on PyPI and lets applied researchers run correct, scalable competing-risks analysis without leaving the Python scientific stack.",
+        "authors": [
+          "Sunny Yang, Weiyan Zhao, Wanqi Zhao"
+        ],
+        "link": "https://arxiv.org/abs/2607.09431",
+        "published": "2026-08-24T04:00:00Z",
+        "updated": "2026-08-24T04:00:00Z",
+        "categories": [
+          "stat.CO",
+          "stat.ML"
+        ]
+      },
+      "screening": {
+        "relevance": 0.2,
+        "method": "竞争风险生存分析的scikit-learn兼容工具包，包括随机生存森林、Fine-Gray回归等",
+        "hep_tasks": [],
+        "reason": "专注于医学竞争风险生存分析，未涉及HEP常见任务，方法迁移性弱。",
+        "needs_deep_review": false,
+        "evidence_level": "irrelevant"
+      },
+      "review": null,
+      "review_status": "not_selected",
+      "processed_at": "2026-08-25T01:51:06.151498Z",
+      "screening_model": "deepseek-v4-flash",
+      "review_model": null,
+      "screening_fingerprint": "195fb0b173d8bc9a4c28c78a16fb55810e78ed0d42329ccadb12ddb4dd876ed2",
+      "review_fingerprint": null
+    },
+    "2608.20660:v1": {
+      "paper": {
+        "arxiv_id": "2608.20660",
+        "version": 1,
+        "title": "Predicting Resource Efficient Hamiltonian Decomposition for Continuous-Time Quantum Walk Simulations",
+        "abstract": "arXiv:2608.20660v1 Announce Type: cross Abstract: Simulating a continuous-time quantum walk (CTQW) on a graph in the circuit model of quantum computing requires decomposing its Hamiltonian into terms that can be Trotterized into hardware-native gates. We consider two such decompositions: the standard Pauli decomposition and the recently introduced matching decomposition. Prior work suggests that the matching decomposition uses fewer CX gates on sparse graphs, while the Pauli decomposition uses fewer on denser graphs. Since CX gates dominate error and runtime on current hardware, we train machine learning models to predict, for a given graph, which of the two decompositions produces the smaller CX gate count. We train and evaluate on the complete population of all 11,117 connected eight-vertex graphs from Brendan McKay's database, so the class balance and overlap are measured directly rather than estimated. We use twelve features: ten topological properties of the graph and two that count the terms the Pauli and matching decompositions produce (n_Pauli and n_match), both computable without transpiling the simulation circuit. Standard topological properties alone provide little predictive power. Instead, the dominant signal comes from n_Pauli, a property of the Hamiltonian decomposition rather than an intrinsic property of the graph; degree variance is the only other feature that carries signal. Across a range of models the Matthews correlation coefficient (MCC) falls in a narrow band, from 0.569 untuned to 0.593 after tuning, so no single architecture stands out. We adopt a single-hidden-layer neural network at MCC 0.593. Applied frozen to a held-out, class-balanced test set of larger graphs (up to 256 vertices) from structured and Erdos-Renyi families, the model transfers, with MCC rising from 0.785 at N=8 to 1 at N>=64.",
+        "authors": [
+          "Mostafa Atallah, Rebekah Herrman, Zain H. Saleem"
+        ],
+        "link": "https://arxiv.org/abs/2608.20660",
+        "published": "2026-08-24T04:00:00Z",
+        "updated": "2026-08-24T04:00:00Z",
+        "categories": [
+          "cs.LG",
+          "quant-ph"
+        ]
+      },
+      "screening": {
+        "relevance": 0.2,
+        "method": "基于图拓扑特征和分解计数的机器学习分类器",
+        "hep_tasks": [
+          "量子模拟资源预测"
+        ],
+        "reason": "针对量子计算模拟，非高能物理数据，方法迁移性弱。",
+        "needs_deep_review": false,
+        "evidence_level": "irrelevant"
+      },
+      "review": null,
+      "review_status": "not_selected",
+      "processed_at": "2026-08-25T01:51:06.151498Z",
+      "screening_model": "deepseek-v4-flash",
+      "review_model": null,
+      "screening_fingerprint": "195fb0b173d8bc9a4c28c78a16fb55810e78ed0d42329ccadb12ddb4dd876ed2",
+      "review_fingerprint": null
+    },
+    "2604.14251:v1": {
+      "paper": {
+        "arxiv_id": "2604.14251",
+        "version": 1,
+        "title": "Calibrate-Then-Delegate: Safety Monitoring with Risk and Budget Guarantees via Model Cascades",
+        "abstract": "arXiv:2604.14251v2 Announce Type: replace Abstract: Monitoring LLM safety at scale requires balancing cost and accuracy: a cheap latent-space probe can screen every input, but hard cases should be escalated to a more expensive expert. Existing cascades delegate based on probe uncertainty, but uncertainty is a poor proxy for the utility of an expert call, as it ignores whether the expert would actually improve the prediction. To address this problem, we introduce Calibrate-Then-Delegate (CTD), a model-cascade approach that provides probabilistic guarantees on either computation cost or safety performance while enabling instance-level (streaming) decisions. CTD builds on a novel delegation value (DV) probe, a lightweight model operating on the same internal representations as the safety probe that predicts the benefit of replacing the probe score with the expert score after an expert call. CTD calibrates a threshold on the DV signal using held-out data and multiple hypothesis testing, yielding finite-sample guarantees while optimising the complementary objective. Evaluated on four safety datasets using learned-attention probes, CTD improves over uncertainty-based delegation over much of the budget range, avoids unnecessary expert calls, and extracts positive-value subsets even from groups where the expert score is worse than the probe score on average. Ablations across four probe architectures show that these findings are not specific to any particular architecture.",
+        "authors": [
+          "Edoardo Pona, Milad Kazemi, Mehran Hosseini, Yali Du, David Watson, Osvaldo Simeone, Nicola Paoletti"
+        ],
+        "link": "https://arxiv.org/abs/2604.14251",
+        "published": "2026-08-24T04:00:00Z",
+        "updated": "2026-08-24T04:00:00Z",
+        "categories": [
+          "cs.LG"
+        ]
+      },
+      "screening": {
+        "relevance": 0.1,
+        "method": "模型级联与校准阈值，基于价值探针的委托决策",
+        "hep_tasks": [],
+        "reason": "研究面向LLM安全监控，与HEP实验任务无直接关联，方法迁移链条长。",
+        "needs_deep_review": false,
+        "evidence_level": "irrelevant"
+      },
+      "review": null,
+      "review_status": "not_selected",
+      "processed_at": "2026-08-25T01:51:06.151498Z",
+      "screening_model": "deepseek-v4-flash",
+      "review_model": null,
+      "screening_fingerprint": "195fb0b173d8bc9a4c28c78a16fb55810e78ed0d42329ccadb12ddb4dd876ed2",
+      "review_fingerprint": null
+    },
+    "2602.12010:v1": {
+      "paper": {
+        "arxiv_id": "2602.12010",
+        "version": 1,
+        "title": "Existence of the $DD^*\\bar{K}^*$ and $BB^*K^*$ three-body molecular states",
+        "abstract": "arXiv:2602.12010v2 Announce Type: replace-cross Abstract: We investigate the existence of the three-body molecular state composed of $DD^*\\bar{K}^*$ within the one-boson-exchange (OBE) model. A major challenge is that while the pseudoscalar-meson couplings are well-determined, the couplings for scalar- and vector-meson exchanges render significant model dependence. To ensure the reliability of our predictions and reduce model dependence, we recalibrate the coupling constants of the OBE model. We treat the pole position of $Z_c(3900)$, or equivalently the scalar $\\sigma$-exchange coupling constant, as the only unknown parameter. The coupling constants for the vector $\\rho$- and $\\omega$-exchanges are determined by the pole positions of the well established states $X(3872)$ and $T_{cc}(3875)$. We demonstrate that these parameter sets also successfully describe the $T_{cs0}(2870)$ without further tuning. For the three-body system, our results indicate that an $I\\left(J^P\\right)=1 / 2\\left(0^{-}\\right)$ three-body molecular bound state exists when $Z_c(3900)$ is a virtual state located within approximately $-10~\\text{MeV}$ of the $D\\bar{D}^*$ threshold. Furthermore, we extend our analysis to the complex energy plane using the complex scaling method to search for molecular resonances, though no evidence of resonances is found in considered channels. We also apply this formalism to the bottom analog $BB^*K^*$ system. In this sector, the conditions for the existence of a three-body bound state are more relaxed, as a $Z_c(3900)$ virtual state located within $-25~\\text{MeV}$ below the threshold suffices, although three-body molecular resonances remain absent. We suggest that future experiments precisely measure the pole position of $Z_c(3900)$ or search for the three-body bound state in $DD\\bar{K}\\pi\\pi$ and $DD\\bar{K}$ channels, as these efforts would mutually illuminate the nature of the associated states.",
+        "authors": [
+          "Yan-Ke Chen, Lu Meng, Jun-Zhang Wang, Shi-Lin Zhu"
+        ],
+        "link": "https://arxiv.org/abs/2602.12010",
+        "published": "2026-08-24T04:00:00Z",
+        "updated": "2026-08-24T04:00:00Z",
+        "categories": [
+          "hep-ex",
+          "hep-ph"
+        ]
+      },
+      "screening": {
+        "relevance": 0.2,
+        "method": "单玻色子交换模型与复标度方法",
+        "hep_tasks": [
+          "强子谱预测",
+          "共振态搜索"
+        ],
+        "reason": "论文关注三体分子态，属强子物理而非高能实验主流任务，方法不易迁移至对撞机分析。",
+        "needs_deep_review": false,
+        "evidence_level": "speculative"
+      },
+      "review": null,
+      "review_status": "not_selected",
+      "processed_at": "2026-08-25T01:51:06.151498Z",
+      "screening_model": "deepseek-v4-flash",
+      "review_model": null,
+      "screening_fingerprint": "195fb0b173d8bc9a4c28c78a16fb55810e78ed0d42329ccadb12ddb4dd876ed2",
+      "review_fingerprint": null
+    },
+    "2605.01048:v1": {
+      "paper": {
+        "arxiv_id": "2605.01048",
+        "version": 1,
+        "title": "Compared to What? Baselines and Metrics for Counterfactual Prompting",
+        "abstract": "arXiv:2605.01048v2 Announce Type: replace-cross Abstract: Counterfactual prompting (i.e., perturbing a single factor and measuring output change) is widely used to evaluate things like LLM bias and CoT faithfulness. But in this work we argue that observed effects cannot be attributed to the targeted factor without accounting for baseline \"meaning-preserving\" modifications to text that establish general model sensitivity. This is because every counterfactual edit is a compound treatment that bundles the variable of interest with incidental surface-form variation; this violates treatment variation irrelevance. We observe prediction flip rates on MedQA of 14.9% when we surgically change patient gender. However, this is statistically indistinguishable from the flip rates induced by simply paraphrasing inputs (14.1%). In this case, it would therefore be unwarranted to conclude that the LLM is especially sensitive to patient gender. To account for this and robustly measure the effects of targeted interventions, we propose a framework in which we compare (via statistical testing) differences observed under target interventions to those induced by paraphrasing inputs. We then use this framework to revisit a analysis done on the MedPerturb dataset, which reported evidence of model sensitivity to patient demographics and stylistic cues. We find that these effects largely dissipate when we account for general model sensitivity, with only 5 of 120 tests reaching statistical significance. Applying the same framework to occupational biography classification, we detect clearly significant directional gender bias, showing that the framework identifies real directional effects even when they are small. We evaluate a range of metrics (aggregate, per-sample distributional, and regression) and find that per-sample metrics are dramatically more powerful than aggregate metrics and regression powerfully and uniquely characterizes effect direction and magnitude.",
+        "authors": [
+          "Zihao Yang, Mosh Levy, Yoav Goldberg, Byron C. Wallace"
+        ],
+        "link": "https://arxiv.org/abs/2605.01048",
+        "published": "2026-08-24T04:00:00Z",
+        "updated": "2026-08-24T04:00:00Z",
+        "categories": [
+          "cs.CL",
+          "cs.LG"
+        ]
+      },
+      "screening": {
+        "relevance": 0.2,
+        "method": "反事实提示与基线对照的统计检验框架",
+        "hep_tasks": [
+          "系统不确定性评估",
+          "领域偏移分析"
+        ],
+        "reason": "方法针对LLM文本扰动，物理数据任务匹配度低，概念较弱。",
+        "needs_deep_review": false,
+        "evidence_level": "irrelevant"
+      },
+      "review": null,
+      "review_status": "not_selected",
+      "processed_at": "2026-08-25T01:51:06.151498Z",
+      "screening_model": "deepseek-v4-flash",
+      "review_model": null,
+      "screening_fingerprint": "195fb0b173d8bc9a4c28c78a16fb55810e78ed0d42329ccadb12ddb4dd876ed2",
+      "review_fingerprint": null
+    },
+    "2608.20574:v1": {
+      "paper": {
+        "arxiv_id": "2608.20574",
+        "version": 1,
+        "title": "FlavourBench: Ranking Frontier Language Models with Executable Culinary Ground Truth",
+        "abstract": "arXiv:2608.20574v1 Announce Type: cross Abstract: Open-ended language-model benchmarks usually inherit a judge: a human preference panel, another model, or a brittle exact-match key. We introduce FlavourBench, an automated benchmark in which a versioned culinary system supplies dense, executable ground truth. Each task presents eight ingredients and asks for a three-ingredient portfolio; before model execution, Epicure scores all 56 possible portfolios. We evaluate 27 frontier endpoints on an identical 534-task core spanning substitution, pairing, and constrained composition. Every ranked model has exactly 89 valid responses per panel and family (14,418 model-task cells total), eliminating differential missingness from the leaderboard. The FlavourBench Score is the equal-family mean of the frozen task scores. We use 50,000 anchor-cluster bootstrap replicates for simultaneous 95% score bands and 100,000 sign-flip draws for all 351 paired model contrasts, with Holm control. The two independently compiled panels correlate at r = 0.89 (rank rho = 0.80). Grok 4.6 has the largest point estimate at 65.1 (simultaneous 95% CI 61.0-69.2); 101 of 351 model pairs are resolved. The release includes the prompts, all portfolio score maps, raw responses, exact routes, content hashes, and an offline verifier that reconstructs every result.",
+        "authors": [
+          "Josef Chen, Erim Hayretci"
+        ],
+        "link": "https://arxiv.org/abs/2608.20574",
+        "published": "2026-08-24T04:00:00Z",
+        "updated": "2026-08-24T04:00:00Z",
+        "categories": [
+          "cs.AI",
+          "cs.CY",
+          "cs.LG",
+          "cs.SE"
+        ]
+      },
+      "screening": {
+        "relevance": 0.2,
+        "method": "多语言模型基准测试，使用可执行的烹饪真值进行排名，采用自助法和符号翻转进行配对对比，Holm校正",
+        "hep_tasks": [
+          "无直接对应任务，但可类比为基于模拟的基准测试和不确定度量化"
+        ],
+        "reason": "研究焦点为语言模型评估，方法与高能物理不直接相关，但统计技术可能具有参考价值。",
+        "needs_deep_review": false,
+        "evidence_level": "speculative"
+      },
+      "review": null,
+      "review_status": "not_selected",
+      "processed_at": "2026-08-25T01:51:06.151498Z",
+      "screening_model": "deepseek-v4-flash",
+      "review_model": null,
+      "screening_fingerprint": "195fb0b173d8bc9a4c28c78a16fb55810e78ed0d42329ccadb12ddb4dd876ed2",
+      "review_fingerprint": null
+    },
+    "2608.20668:v1": {
+      "paper": {
+        "arxiv_id": "2608.20668",
+        "version": 1,
+        "title": "Lightweight Adaptive ReduNet via Hyperspherical Manifold Learning",
+        "abstract": "arXiv:2608.20668v1 Announce Type: new Abstract: In recent years, a white-box neural network called ReduNet has been proposed, which employs the maximal coding rate reduction (MCR$^2$) principle to transform raw data into low-dimensional discriminative features via a forward layer-wise construction process. Unlike traditional deep networks that rely on backpropagation, ReduNet explicitly derives the parameters of each layer from the features of its preceding layer, offering a mathematically interpretable paradigm. However, this layer-wise construction often requires a large number of layers for the MCR$^2$ objective to reach a stable value, which increases the parameter storage of the unfolded module. To address this issue, we propose LA-ReduNet, a lightweight adaptive architecture that refines the layer-wise update rule and enables discriminative feature representations to be obtained with substantially fewer unfolded layers. Specifically, LA-ReduNet employs hyperspherical manifold learning and adaptive step sizes, thereby reducing by an order of magnitude the number of layers required for the MCR$^2$ objective to reach a stable value. Simulation results demonstrate that, while maintaining comparable classification accuracy, LA-ReduNet requires significantly fewer layers for the MCR$^2$ objective to reach a stable value. Remarkably, under the considered experimental settings, LA-ReduNet requires only approximately $1/29$ of the parameter storage of the unfolded ReduNet module for the MCR$^2$ objective to reach a stable value.",
+        "authors": [
+          "Zhenglin Huang, Qifa Yan, Bin Dai, Xiaohu Tang"
+        ],
+        "link": "https://arxiv.org/abs/2608.20668",
+        "published": "2026-08-24T04:00:00Z",
+        "updated": "2026-08-24T04:00:00Z",
+        "categories": [
+          "cs.AI",
+          "cs.LG"
+        ]
+      },
+      "screening": {
+        "relevance": 0.3,
+        "method": "轻量化自适应ReduNet，基于超球流形学习和自适应步长，减少层数",
+        "hep_tasks": [
+          "可能用于高维数据特征提取，但无直接HEP应用"
+        ],
+        "reason": "方法针对通用分类任务，与HEP具体任务（如粒子鉴别）无直接关联",
+        "needs_deep_review": false,
+        "evidence_level": "speculative"
+      },
+      "review": null,
+      "review_status": "not_selected",
+      "processed_at": "2026-08-25T01:51:06.151498Z",
+      "screening_model": "deepseek-v4-flash",
+      "review_model": null,
+      "screening_fingerprint": "195fb0b173d8bc9a4c28c78a16fb55810e78ed0d42329ccadb12ddb4dd876ed2",
+      "review_fingerprint": null
+    },
+    "2608.20961:v1": {
+      "paper": {
+        "arxiv_id": "2608.20961",
+        "version": 1,
+        "title": "TreeWY: Speculative Verification for Gated DeltaNet Hybrids",
+        "abstract": "arXiv:2608.20961v1 Announce Type: cross Abstract: Modern open models are hybrids: most layers are linear-attention (Gated DeltaNet, GDN) layers carrying a small fixed-size recurrent state instead of a growing key-value (KV) cache. This makes ordinary decoding memory-efficient, but hurts speculative decoding. To verify a batch of draft tokens and then roll back the rejected ones, today's systems snapshot the full recurrent state at every draft position for GDN layers, and those snapshots cannot be shared across branches of a draft tree, so a wide, high-acceptance tree becomes memory-infeasible. We remove the snapshots. Using a tree-structured WY transform of the gated delta rule, we compute every draft node's output with a single triangular solve and reconstruct only the one accepted state on commit, storing a small pseudo-value matrix instead of per-node states; the derivation depends only on the gated delta rule, not on any other architectural detail. In serving benchmarks on two scales of one hybrid model family (Qwen3.5 35B and 397B) this cuts speculative recurrent-state memory and KV-cache pressure at identical acceptance length, turning the freed HBM into higher throughput and much lower time-to-first-token (TTFT) wherever memory binds, and costing a few percent where it does not. For tree width the same memory buys affordability: a wider, higher-acceptance draft becomes possible, though not yet a throughput win.",
+        "authors": [
+          "Sneha Murthy Ghantasala"
+        ],
+        "link": "https://arxiv.org/abs/2608.20961",
+        "published": "2026-08-24T04:00:00Z",
+        "updated": "2026-08-24T04:00:00Z",
+        "categories": [
+          "cs.AI",
+          "cs.CL",
+          "cs.DC",
+          "cs.LG",
+          "cs.PF"
+        ]
+      },
+      "screening": {
+        "relevance": 0.0,
+        "method": "树结构化WY变换的推测验证算法",
+        "hep_tasks": [],
+        "reason": "该论文专注于大语言模型推测解码的存储优化，与高能物理实验无直接或可迁移方法关联。",
+        "needs_deep_review": false,
+        "evidence_level": "irrelevant"
+      },
+      "review": null,
+      "review_status": "not_selected",
+      "processed_at": "2026-08-25T01:51:06.151498Z",
+      "screening_model": "deepseek-v4-flash",
+      "review_model": null,
+      "screening_fingerprint": "195fb0b173d8bc9a4c28c78a16fb55810e78ed0d42329ccadb12ddb4dd876ed2",
+      "review_fingerprint": null
+    },
+    "2608.21186:v1": {
+      "paper": {
+        "arxiv_id": "2608.21186",
+        "version": 1,
+        "title": "A Neurosymbolic Approach for Constructing Planning Domain Models from Clinical Narratives",
+        "abstract": "arXiv:2608.21186v1 Announce Type: new Abstract: Surgical procedures such as laparoscopic appendectomy are complex, high-stakes processes, yet formalizing their workflows for decision support remains a significant challenge. Inducing probabilistic planning domain models in this setting is particularly difficult due to the lack of structured event data and the prevalence of implicit actions in clinical narratives, which neither empirical symbolic methods nor Large Language Models (LLMs) can adequately address on their own. We introduce NSPIN, a neurosymbolic framework for inducing probabilistic planning domain models from unstructured clinical narratives. Our method extracts and imputes structured event sequences from raw text using a pretrained LLM, then induces a PPDDL model and refines its preconditions with LLM-proposed revisions, guided by empirical validation. We evaluate the approach on 2,660 laparoscopic appendectomy notes written by 9 surgeons. NSPIN yields models that generalize to unseen notes, and expert clinical review indicates its induced knowledge is largely consistent with surgical practice.",
+        "authors": [
+          "Ranveer Singh, Saurabh Mathur, Michael Skinner, Prasad Tadepalli, Kristian Kersting, Sriraam Natarajan"
+        ],
+        "link": "https://arxiv.org/abs/2608.21186",
+        "published": "2026-08-24T04:00:00Z",
+        "updated": "2026-08-24T04:00:00Z",
+        "categories": [
+          "cs.LG"
+        ]
+      },
+      "screening": {
+        "relevance": 0.1,
+        "method": "Neurosymbolic framework combining LLM and empirical validation for planning domain model induction",
+        "hep_tasks": [],
+        "reason": "临床文本规划，与HEP实验无关",
+        "needs_deep_review": false,
+        "evidence_level": "irrelevant"
+      },
+      "review": null,
+      "review_status": "not_selected",
+      "processed_at": "2026-08-25T01:51:06.151498Z",
+      "screening_model": "deepseek-v4-flash",
+      "review_model": null,
+      "screening_fingerprint": "195fb0b173d8bc9a4c28c78a16fb55810e78ed0d42329ccadb12ddb4dd876ed2",
+      "review_fingerprint": null
     }
   }
 }
