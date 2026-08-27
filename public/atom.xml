@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh-CN">
   <id>https://quxnb.github.io/hepml-digest</id>
   <title>Daily HEP-ML Digest</title>
-  <updated>2026-08-26T02:02:47.754400+00:00</updated>
+  <updated>2026-08-27T09:49:37.124640+00:00</updated>
   <author>
     <name>HEP-ML Digest Bot</name>
   </author>
@@ -10,6 +10,257 @@
   <link href="https://quxnb.github.io/hepml-digest/atom.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
   <subtitle>统计与机器学习方法对高能实验物理的每日启发</subtitle>
+  <entry>
+    <id>arxiv:2608.25709:hepml-v1</id>
+    <title>Multi-output Gaussian process prediction of physical fields under linear equality constraints</title>
+    <updated>2026-08-27T09:45:07.973200+00:00</updated>
+    <author>
+      <name>Mahamat Hamdan Nassouradine, Cl\'ement Gauchy, Pierre-Emmanuel Angeli, S\'ebastien da Veiga</name>
+    </author>
+    <content type="html">&lt;p&gt;&lt;strong&gt;栏目：&lt;/strong&gt;方法雷达&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法：&lt;/strong&gt;行式PCA降维结合线性约束多输出高斯过程回归&lt;/p&gt;&lt;p&gt;&lt;strong&gt;相关性：&lt;/strong&gt;0.70；&lt;strong&gt;证据等级：&lt;/strong&gt;transferable&lt;/p&gt;&lt;p&gt;&lt;strong&gt;初筛理由：&lt;/strong&gt;方法针对多场线性约束预测，可迁移至HEP中物理场重建与不确定性估计，但未直接在HEP数据验证。&lt;/p&gt;&lt;p&gt;&lt;em&gt;本条目仅完成摘要级筛选。&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;a href="https://arxiv.org/abs/2608.25709"&gt;arXiv 页面&lt;/a&gt; · &lt;a href="https://github.com/quxnb/hepml-digest/issues/new?title=%5B%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%5D+2608.25709+Multi-output+Gaussian+process+prediction+of+physical+fields+under+linear+equalit&amp;amp;body=%23%23+%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%0A%0A-+arXiv%EF%BC%9A%5B2608.25709%5D%28https%3A%2F%2Farxiv.org%2Fabs%2F2608.25709%29%0A-+%E6%A0%8F%E7%9B%AE%EF%BC%9A%E6%96%B9%E6%B3%95%E9%9B%B7%E8%BE%BE%0A-+%E5%BD%93%E5%89%8D%E7%9B%B8%E5%85%B3%E6%80%A7%EF%BC%9A0.70%0A-+%E5%BD%93%E5%89%8D%E8%AF%81%E6%8D%AE%E7%AD%89%E7%BA%A7%EF%BC%9Atransferable%0A%0A%23%23+%E5%88%A4%E6%96%AD%0A%0A-+%5B+%5D+%E6%8E%A8%E8%8D%90%E4%BF%9D%E7%95%99%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E5%90%88%E7%90%86%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E8%BF%87%E5%BA%A6%E6%8E%A8%E6%B5%8B%0A-+%5B+%5D+%E5%BA%94%E7%A7%BB%E8%87%B3%E5%8F%A6%E4%B8%80%E4%B8%AA%E6%A0%8F%E7%9B%AE%0A-+%5B+%5D+%E5%BB%BA%E8%AE%AE%E7%B2%BE%E8%AF%BB%E5%85%A8%E6%96%87%0A%0A%23%23+%E8%A1%A5%E5%85%85%E8%AF%B4%E6%98%8E%0A%0A"&gt;提交反馈&lt;/a&gt; · cs.LG, stat.ML&lt;/p&gt;</content>
+    <link href="https://arxiv.org/abs/2608.25709"/>
+    <summary>方法针对多场线性约束预测，可迁移至HEP中物理场重建与不确定性估计，但未直接在HEP数据验证。</summary>
+    <category term="cs.LG"/>
+    <category term="stat.ML"/>
+    <category term="track:method_radar"/>
+    <category term="不确定度量化"/>
+    <category term="场重建"/>
+    <category term="系统误差处理"/>
+    <published>2026-08-27T04:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>arxiv:2608.24937:hepml-v1</id>
+    <title>Multi-Modal Anomaly Detection: A Survey</title>
+    <updated>2026-08-27T09:45:07.973200+00:00</updated>
+    <author>
+      <name>Xudong Mou, Zexin Wu, Chuan Luo, Shiru Chen, Xudong Liu, Chunming Hu, Renyu Yang</name>
+    </author>
+    <content type="html">&lt;p&gt;&lt;strong&gt;栏目：&lt;/strong&gt;方法雷达&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法：&lt;/strong&gt;多模态异常检测方法综述，涵盖基于常态假设和异常假设的两种范式&lt;/p&gt;&lt;p&gt;&lt;strong&gt;相关性：&lt;/strong&gt;0.70；&lt;strong&gt;证据等级：&lt;/strong&gt;transferable&lt;/p&gt;&lt;p&gt;&lt;strong&gt;初筛理由：&lt;/strong&gt;多模态异常检测方法可迁移至HEP探测器数据异常识别，但缺乏具体验证。&lt;/p&gt;&lt;p&gt;&lt;em&gt;本条目仅完成摘要级筛选。&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;a href="https://arxiv.org/abs/2608.24937"&gt;arXiv 页面&lt;/a&gt; · &lt;a href="https://github.com/quxnb/hepml-digest/issues/new?title=%5B%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%5D+2608.24937+Multi-Modal+Anomaly+Detection%3A+A+Survey&amp;amp;body=%23%23+%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%0A%0A-+arXiv%EF%BC%9A%5B2608.24937%5D%28https%3A%2F%2Farxiv.org%2Fabs%2F2608.24937%29%0A-+%E6%A0%8F%E7%9B%AE%EF%BC%9A%E6%96%B9%E6%B3%95%E9%9B%B7%E8%BE%BE%0A-+%E5%BD%93%E5%89%8D%E7%9B%B8%E5%85%B3%E6%80%A7%EF%BC%9A0.70%0A-+%E5%BD%93%E5%89%8D%E8%AF%81%E6%8D%AE%E7%AD%89%E7%BA%A7%EF%BC%9Atransferable%0A%0A%23%23+%E5%88%A4%E6%96%AD%0A%0A-+%5B+%5D+%E6%8E%A8%E8%8D%90%E4%BF%9D%E7%95%99%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E5%90%88%E7%90%86%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E8%BF%87%E5%BA%A6%E6%8E%A8%E6%B5%8B%0A-+%5B+%5D+%E5%BA%94%E7%A7%BB%E8%87%B3%E5%8F%A6%E4%B8%80%E4%B8%AA%E6%A0%8F%E7%9B%AE%0A-+%5B+%5D+%E5%BB%BA%E8%AE%AE%E7%B2%BE%E8%AF%BB%E5%85%A8%E6%96%87%0A%0A%23%23+%E8%A1%A5%E5%85%85%E8%AF%B4%E6%98%8E%0A%0A"&gt;提交反馈&lt;/a&gt; · cs.AI, cs.LG&lt;/p&gt;</content>
+    <link href="https://arxiv.org/abs/2608.24937"/>
+    <summary>多模态异常检测方法可迁移至HEP探测器数据异常识别，但缺乏具体验证。</summary>
+    <category term="cs.AI"/>
+    <category term="cs.LG"/>
+    <category term="track:method_radar"/>
+    <category term="异常事件检测"/>
+    <category term="数据质量监控"/>
+    <category term="系统故障诊断"/>
+    <published>2026-08-27T04:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>arxiv:2511.15343:hepml-v1</id>
+    <title>Three-Way Open-Set Detection for Robust Autonomous Navigation</title>
+    <updated>2026-08-27T09:45:07.973200+00:00</updated>
+    <author>
+      <name>Spyridon Loukovitis, Vasileios Karampinis, Athanasios Voulodimos</name>
+    </author>
+    <content type="html">&lt;p&gt;&lt;strong&gt;栏目：&lt;/strong&gt;方法雷达&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法：&lt;/strong&gt;Three-way open-set detection (known, unknown, background) from pretrained detector outputs&lt;/p&gt;&lt;p&gt;&lt;strong&gt;相关性：&lt;/strong&gt;0.60；&lt;strong&gt;证据等级：&lt;/strong&gt;transferable&lt;/p&gt;&lt;p&gt;&lt;strong&gt;初筛理由：&lt;/strong&gt;开放集检测与HEP异常检测和背景抑制类似，但领域差距大，迁移需调整。&lt;/p&gt;&lt;p&gt;&lt;em&gt;本条目仅完成摘要级筛选。&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;a href="https://arxiv.org/abs/2511.15343"&gt;arXiv 页面&lt;/a&gt; · &lt;a href="https://github.com/quxnb/hepml-digest/issues/new?title=%5B%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%5D+2511.15343+Three-Way+Open-Set+Detection+for+Robust+Autonomous+Navigation&amp;amp;body=%23%23+%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%0A%0A-+arXiv%EF%BC%9A%5B2511.15343%5D%28https%3A%2F%2Farxiv.org%2Fabs%2F2511.15343%29%0A-+%E6%A0%8F%E7%9B%AE%EF%BC%9A%E6%96%B9%E6%B3%95%E9%9B%B7%E8%BE%BE%0A-+%E5%BD%93%E5%89%8D%E7%9B%B8%E5%85%B3%E6%80%A7%EF%BC%9A0.60%0A-+%E5%BD%93%E5%89%8D%E8%AF%81%E6%8D%AE%E7%AD%89%E7%BA%A7%EF%BC%9Atransferable%0A%0A%23%23+%E5%88%A4%E6%96%AD%0A%0A-+%5B+%5D+%E6%8E%A8%E8%8D%90%E4%BF%9D%E7%95%99%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E5%90%88%E7%90%86%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E8%BF%87%E5%BA%A6%E6%8E%A8%E6%B5%8B%0A-+%5B+%5D+%E5%BA%94%E7%A7%BB%E8%87%B3%E5%8F%A6%E4%B8%80%E4%B8%AA%E6%A0%8F%E7%9B%AE%0A-+%5B+%5D+%E5%BB%BA%E8%AE%AE%E7%B2%BE%E8%AF%BB%E5%85%A8%E6%96%87%0A%0A%23%23+%E8%A1%A5%E5%85%85%E8%AF%B4%E6%98%8E%0A%0A"&gt;提交反馈&lt;/a&gt; · cs.CV, cs.LG, cs.RO&lt;/p&gt;</content>
+    <link href="https://arxiv.org/abs/2511.15343"/>
+    <summary>开放集检测与HEP异常检测和背景抑制类似，但领域差距大，迁移需调整。</summary>
+    <category term="cs.CV"/>
+    <category term="cs.LG"/>
+    <category term="cs.RO"/>
+    <category term="track:method_radar"/>
+    <category term="异常检测"/>
+    <category term="粒子鉴别"/>
+    <category term="背景抑制"/>
+    <published>2026-08-27T04:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>arxiv:2601.17103:hepml-v1</id>
+    <title>Performance uncertainty in medical image analysis: a large-scale investigation of confidence intervals</title>
+    <updated>2026-08-27T09:45:07.973200+00:00</updated>
+    <author>
+      <name>Pascaline Andr\'e (Sorbonne Universit\'e, Institut du Cerveau - Paris Brain Institute - ICM, CNRS, Inria, Inserm, AP-HP, H\^opital de la Piti\'e-Salp\^etri\`ere, Paris, France), Charles Heitz (Sorbonne Universit\'e, Institut du Cerveau - Paris Brain Institute - ICM, CNRS, Inria, Inserm, AP-HP, H\^opital de la Piti\'e-Salp\^etri\`ere, Paris, France), Evangelia Christodoulou (German Cancer Research Center), Annika Reinke (German Cancer Research Center), Carole H. Sudre (Unit for Lifelong Health and Ageing at UCL, Department of Population Science and Experimental Medicine and Hawkes InstituteCentre for Medical Image Computing, Department of Computer Science, University College London, UK), Michela Antonelli (School of Biomedical Engineering and Imaging Science, King's College London, UK), Patrick Godau (German Cancer Research Center), M. Jorge Cardoso (School of Biomedical Engineering and Imaging Science, King's College London, UK), Antoine Gilson (Sorbonne Universit\'e, Institut du Cerveau - Paris Brain Institute - ICM, CNRS, Inria, Inserm, AP-HP, H\^opital de la Piti\'e-Salp\^etri\`ere, Paris, France), Sophie Tezenas du Montcel (Sorbonne Universit\'e, Institut du Cerveau - Paris Brain Institute - ICM, CNRS, Inria, Inserm, AP-HP, H\^opital de la Piti\'e-Salp\^etri\`ere, Paris, France), Ga\"el Varoquaux (SODA project team, Inria Saclay-\^Ile-de-France, France), Lena Maier-Hein (German Cancer Research Center), Olivier Colliot (Sorbonne Universit\'e, Institut du Cerveau - Paris Brain Institute - ICM, CNRS, Inria, Inserm, AP-HP, H\^opital de la Piti\'e-Salp\^etri\`ere, Paris, France)</name>
+    </author>
+    <content type="html">&lt;p&gt;&lt;strong&gt;栏目：&lt;/strong&gt;方法雷达&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法：&lt;/strong&gt;大规模实证比较多种置信区间方法在医学图像分析中的表现&lt;/p&gt;&lt;p&gt;&lt;strong&gt;相关性：&lt;/strong&gt;0.60；&lt;strong&gt;证据等级：&lt;/strong&gt;transferable&lt;/p&gt;&lt;p&gt;&lt;strong&gt;初筛理由：&lt;/strong&gt;研究置信区间在性能评估中的可靠性，对HEP中类似任务有方法借鉴，但医学图像与粒子物理数据差异大。&lt;/p&gt;&lt;p&gt;&lt;em&gt;本条目仅完成摘要级筛选。&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;a href="https://arxiv.org/abs/2601.17103"&gt;arXiv 页面&lt;/a&gt; · &lt;a href="https://github.com/quxnb/hepml-digest/issues/new?title=%5B%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%5D+2601.17103+Performance+uncertainty+in+medical+image+analysis%3A+a+large-scale+investigation+o&amp;amp;body=%23%23+%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%0A%0A-+arXiv%EF%BC%9A%5B2601.17103%5D%28https%3A%2F%2Farxiv.org%2Fabs%2F2601.17103%29%0A-+%E6%A0%8F%E7%9B%AE%EF%BC%9A%E6%96%B9%E6%B3%95%E9%9B%B7%E8%BE%BE%0A-+%E5%BD%93%E5%89%8D%E7%9B%B8%E5%85%B3%E6%80%A7%EF%BC%9A0.60%0A-+%E5%BD%93%E5%89%8D%E8%AF%81%E6%8D%AE%E7%AD%89%E7%BA%A7%EF%BC%9Atransferable%0A%0A%23%23+%E5%88%A4%E6%96%AD%0A%0A-+%5B+%5D+%E6%8E%A8%E8%8D%90%E4%BF%9D%E7%95%99%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E5%90%88%E7%90%86%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E8%BF%87%E5%BA%A6%E6%8E%A8%E6%B5%8B%0A-+%5B+%5D+%E5%BA%94%E7%A7%BB%E8%87%B3%E5%8F%A6%E4%B8%80%E4%B8%AA%E6%A0%8F%E7%9B%AE%0A-+%5B+%5D+%E5%BB%BA%E8%AE%AE%E7%B2%BE%E8%AF%BB%E5%85%A8%E6%96%87%0A%0A%23%23+%E8%A1%A5%E5%85%85%E8%AF%B4%E6%98%8E%0A%0A"&gt;提交反馈&lt;/a&gt; · cs.CV, cs.LG&lt;/p&gt;</content>
+    <link href="https://arxiv.org/abs/2601.17103"/>
+    <summary>研究置信区间在性能评估中的可靠性，对HEP中类似任务有方法借鉴，但医学图像与粒子物理数据差异大。</summary>
+    <category term="cs.CV"/>
+    <category term="cs.LG"/>
+    <category term="track:method_radar"/>
+    <category term="分类与分割任务的统计推断"/>
+    <category term="性能评估与不确定性量化"/>
+    <published>2026-08-27T04:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>arxiv:2608.25145:hepml-v1</id>
+    <title>Barycentric Weak Inner-Product Gromov-Wasserstein</title>
+    <updated>2026-08-27T09:45:07.973200+00:00</updated>
+    <author>
+      <name>Youssef Mroueh</name>
+    </author>
+    <content type="html">&lt;p&gt;&lt;strong&gt;栏目：&lt;/strong&gt;方法雷达&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法：&lt;/strong&gt;Barycentric weak inner-product Gromov-Wasserstein (wIGW) with ridge regularization and min-max optimization&lt;/p&gt;&lt;p&gt;&lt;strong&gt;相关性：&lt;/strong&gt;0.70；&lt;strong&gt;证据等级：&lt;/strong&gt;transferable&lt;/p&gt;&lt;p&gt;&lt;strong&gt;初筛理由：&lt;/strong&gt;提出均值保持扩展的弱最优传输，适用于一对多映射与系统误差处理，但未见HEP实测。&lt;/p&gt;&lt;p&gt;&lt;em&gt;本条目仅完成摘要级筛选。&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;a href="https://arxiv.org/abs/2608.25145"&gt;arXiv 页面&lt;/a&gt; · &lt;a href="https://github.com/quxnb/hepml-digest/issues/new?title=%5B%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%5D+2608.25145+Barycentric+Weak+Inner-Product+Gromov-Wasserstein&amp;amp;body=%23%23+%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%0A%0A-+arXiv%EF%BC%9A%5B2608.25145%5D%28https%3A%2F%2Farxiv.org%2Fabs%2F2608.25145%29%0A-+%E6%A0%8F%E7%9B%AE%EF%BC%9A%E6%96%B9%E6%B3%95%E9%9B%B7%E8%BE%BE%0A-+%E5%BD%93%E5%89%8D%E7%9B%B8%E5%85%B3%E6%80%A7%EF%BC%9A0.70%0A-+%E5%BD%93%E5%89%8D%E8%AF%81%E6%8D%AE%E7%AD%89%E7%BA%A7%EF%BC%9Atransferable%0A%0A%23%23+%E5%88%A4%E6%96%AD%0A%0A-+%5B+%5D+%E6%8E%A8%E8%8D%90%E4%BF%9D%E7%95%99%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E5%90%88%E7%90%86%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E8%BF%87%E5%BA%A6%E6%8E%A8%E6%B5%8B%0A-+%5B+%5D+%E5%BA%94%E7%A7%BB%E8%87%B3%E5%8F%A6%E4%B8%80%E4%B8%AA%E6%A0%8F%E7%9B%AE%0A-+%5B+%5D+%E5%BB%BA%E8%AE%AE%E7%B2%BE%E8%AF%BB%E5%85%A8%E6%96%87%0A%0A%23%23+%E8%A1%A5%E5%85%85%E8%AF%B4%E6%98%8E%0A%0A"&gt;提交反馈&lt;/a&gt; · math.OC, stat.ML&lt;/p&gt;</content>
+    <link href="https://arxiv.org/abs/2608.25145"/>
+    <summary>提出均值保持扩展的弱最优传输，适用于一对多映射与系统误差处理，但未见HEP实测。</summary>
+    <category term="detector calibration"/>
+    <category term="domain shift / transfer learning"/>
+    <category term="math.OC"/>
+    <category term="stat.ML"/>
+    <category term="track:method_radar"/>
+    <category term="unfolding"/>
+    <published>2026-08-27T04:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>arxiv:2608.25443:hepml-v1</id>
+    <title>Joint Initialization of Flux Networks and Effective Multiplication Factor for Physics-Informed Neural Networks Solving Neutron Diffusion Problems</title>
+    <updated>2026-08-27T09:45:07.973200+00:00</updated>
+    <author>
+      <name>Qin Hang, Yangdi Yi, Jiayi Li, Xu Wang, Heng Zhang</name>
+    </author>
+    <content type="html">&lt;p&gt;&lt;strong&gt;栏目：&lt;/strong&gt;方法雷达&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法：&lt;/strong&gt;Physics-informed neural networks (PINNs) with joint initialization of flux network parameters and effective multiplication factor&lt;/p&gt;&lt;p&gt;&lt;strong&gt;相关性：&lt;/strong&gt;0.60；&lt;strong&gt;证据等级：&lt;/strong&gt;transferable&lt;/p&gt;&lt;p&gt;&lt;strong&gt;初筛理由：&lt;/strong&gt;涉及物理约束神经网络求解特征值问题，方法可迁移至高能物理中的输运或特征值问题，但应用领域为反应堆物理。&lt;/p&gt;&lt;p&gt;&lt;em&gt;本条目仅完成摘要级筛选。&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;a href="https://arxiv.org/abs/2608.25443"&gt;arXiv 页面&lt;/a&gt; · &lt;a href="https://github.com/quxnb/hepml-digest/issues/new?title=%5B%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%5D+2608.25443+Joint+Initialization+of+Flux+Networks+and+Effective+Multiplication+Factor+for+Ph&amp;amp;body=%23%23+%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%0A%0A-+arXiv%EF%BC%9A%5B2608.25443%5D%28https%3A%2F%2Farxiv.org%2Fabs%2F2608.25443%29%0A-+%E6%A0%8F%E7%9B%AE%EF%BC%9A%E6%96%B9%E6%B3%95%E9%9B%B7%E8%BE%BE%0A-+%E5%BD%93%E5%89%8D%E7%9B%B8%E5%85%B3%E6%80%A7%EF%BC%9A0.60%0A-+%E5%BD%93%E5%89%8D%E8%AF%81%E6%8D%AE%E7%AD%89%E7%BA%A7%EF%BC%9Atransferable%0A%0A%23%23+%E5%88%A4%E6%96%AD%0A%0A-+%5B+%5D+%E6%8E%A8%E8%8D%90%E4%BF%9D%E7%95%99%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E5%90%88%E7%90%86%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E8%BF%87%E5%BA%A6%E6%8E%A8%E6%B5%8B%0A-+%5B+%5D+%E5%BA%94%E7%A7%BB%E8%87%B3%E5%8F%A6%E4%B8%80%E4%B8%AA%E6%A0%8F%E7%9B%AE%0A-+%5B+%5D+%E5%BB%BA%E8%AE%AE%E7%B2%BE%E8%AF%BB%E5%85%A8%E6%96%87%0A%0A%23%23+%E8%A1%A5%E5%85%85%E8%AF%B4%E6%98%8E%0A%0A"&gt;提交反馈&lt;/a&gt; · cs.LG&lt;/p&gt;</content>
+    <link href="https://arxiv.org/abs/2608.25443"/>
+    <summary>涉及物理约束神经网络求解特征值问题，方法可迁移至高能物理中的输运或特征值问题，但应用领域为反应堆物理。</summary>
+    <category term="cs.LG"/>
+    <category term="track:method_radar"/>
+    <category term="中子输运/扩散模拟"/>
+    <category term="反应堆物理计算"/>
+    <published>2026-08-27T04:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>arxiv:2501.05458:hepml-v1</id>
+    <title>Generative Modeling: A Review</title>
+    <updated>2026-08-27T09:45:07.973200+00:00</updated>
+    <author>
+      <name>Maria Nareklishvili, Nick Polson, Vadim Sokolov</name>
+    </author>
+    <content type="html">&lt;p&gt;&lt;strong&gt;栏目：&lt;/strong&gt;方法雷达&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法：&lt;/strong&gt;生成贝叶斯计算（基于分位数神经网络的直接后验生成）&lt;/p&gt;&lt;p&gt;&lt;strong&gt;相关性：&lt;/strong&gt;0.60；&lt;strong&gt;证据等级：&lt;/strong&gt;transferable&lt;/p&gt;&lt;p&gt;&lt;strong&gt;初筛理由：&lt;/strong&gt;方法直接建模后验分布，适用于无似然推断，但未在HEP数据验证，迁移需考虑高维与约束。&lt;/p&gt;&lt;p&gt;&lt;em&gt;本条目仅完成摘要级筛选。&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;a href="https://arxiv.org/abs/2501.05458"&gt;arXiv 页面&lt;/a&gt; · &lt;a href="https://github.com/quxnb/hepml-digest/issues/new?title=%5B%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%5D+2501.05458+Generative+Modeling%3A+A+Review&amp;amp;body=%23%23+%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%0A%0A-+arXiv%EF%BC%9A%5B2501.05458%5D%28https%3A%2F%2Farxiv.org%2Fabs%2F2501.05458%29%0A-+%E6%A0%8F%E7%9B%AE%EF%BC%9A%E6%96%B9%E6%B3%95%E9%9B%B7%E8%BE%BE%0A-+%E5%BD%93%E5%89%8D%E7%9B%B8%E5%85%B3%E6%80%A7%EF%BC%9A0.60%0A-+%E5%BD%93%E5%89%8D%E8%AF%81%E6%8D%AE%E7%AD%89%E7%BA%A7%EF%BC%9Atransferable%0A%0A%23%23+%E5%88%A4%E6%96%AD%0A%0A-+%5B+%5D+%E6%8E%A8%E8%8D%90%E4%BF%9D%E7%95%99%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E5%90%88%E7%90%86%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E8%BF%87%E5%BA%A6%E6%8E%A8%E6%B5%8B%0A-+%5B+%5D+%E5%BA%94%E7%A7%BB%E8%87%B3%E5%8F%A6%E4%B8%80%E4%B8%AA%E6%A0%8F%E7%9B%AE%0A-+%5B+%5D+%E5%BB%BA%E8%AE%AE%E7%B2%BE%E8%AF%BB%E5%85%A8%E6%96%87%0A%0A%23%23+%E8%A1%A5%E5%85%85%E8%AF%B4%E6%98%8E%0A%0A"&gt;提交反馈&lt;/a&gt; · cs.LG, stat.CO&lt;/p&gt;</content>
+    <link href="https://arxiv.org/abs/2501.05458"/>
+    <summary>方法直接建模后验分布，适用于无似然推断，但未在HEP数据验证，迁移需考虑高维与约束。</summary>
+    <category term="cs.LG"/>
+    <category term="stat.CO"/>
+    <category term="track:method_radar"/>
+    <category term="参数后验推断"/>
+    <category term="基于模拟的推断"/>
+    <category term="快速生成模拟样本"/>
+    <published>2026-08-27T04:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>arxiv:2608.25646:hepml-v1</id>
+    <title>LDAC-Net: A Learnable Multi-Lag Differencing Attention-Convolution Network for Drift-Robust Recognition with Low-Cost MOX Gas Sensors</title>
+    <updated>2026-08-27T09:45:07.973200+00:00</updated>
+    <author>
+      <name>Xin Zhang, Liangxiu Han, Yue Shi, Tam Sobeih</name>
+    </author>
+    <content type="html">&lt;p&gt;&lt;strong&gt;栏目：&lt;/strong&gt;方法雷达&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法：&lt;/strong&gt;可学习多滞后差分注意力卷积网络，包含可学习差分特征增强前端和注意力卷积骨干&lt;/p&gt;&lt;p&gt;&lt;strong&gt;相关性：&lt;/strong&gt;0.55；&lt;strong&gt;证据等级：&lt;/strong&gt;speculative&lt;/p&gt;&lt;p&gt;&lt;strong&gt;初筛理由：&lt;/strong&gt;漂移鲁棒和域偏移处理方法可能对探测器校准和系统误差有启发，但数据域相差较大。&lt;/p&gt;&lt;p&gt;&lt;em&gt;本条目仅完成摘要级筛选。&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;a href="https://arxiv.org/abs/2608.25646"&gt;arXiv 页面&lt;/a&gt; · &lt;a href="https://github.com/quxnb/hepml-digest/issues/new?title=%5B%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%5D+2608.25646+LDAC-Net%3A+A+Learnable+Multi-Lag+Differencing+Attention-Convolution+Network+for+D&amp;amp;body=%23%23+%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%0A%0A-+arXiv%EF%BC%9A%5B2608.25646%5D%28https%3A%2F%2Farxiv.org%2Fabs%2F2608.25646%29%0A-+%E6%A0%8F%E7%9B%AE%EF%BC%9A%E6%96%B9%E6%B3%95%E9%9B%B7%E8%BE%BE%0A-+%E5%BD%93%E5%89%8D%E7%9B%B8%E5%85%B3%E6%80%A7%EF%BC%9A0.55%0A-+%E5%BD%93%E5%89%8D%E8%AF%81%E6%8D%AE%E7%AD%89%E7%BA%A7%EF%BC%9Aspeculative%0A%0A%23%23+%E5%88%A4%E6%96%AD%0A%0A-+%5B+%5D+%E6%8E%A8%E8%8D%90%E4%BF%9D%E7%95%99%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E5%90%88%E7%90%86%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E8%BF%87%E5%BA%A6%E6%8E%A8%E6%B5%8B%0A-+%5B+%5D+%E5%BA%94%E7%A7%BB%E8%87%B3%E5%8F%A6%E4%B8%80%E4%B8%AA%E6%A0%8F%E7%9B%AE%0A-+%5B+%5D+%E5%BB%BA%E8%AE%AE%E7%B2%BE%E8%AF%BB%E5%85%A8%E6%96%87%0A%0A%23%23+%E8%A1%A5%E5%85%85%E8%AF%B4%E6%98%8E%0A%0A"&gt;提交反馈&lt;/a&gt; · cs.AI, cs.LG&lt;/p&gt;</content>
+    <link href="https://arxiv.org/abs/2608.25646"/>
+    <summary>漂移鲁棒和域偏移处理方法可能对探测器校准和系统误差有启发，但数据域相差较大。</summary>
+    <category term="cs.AI"/>
+    <category term="cs.LG"/>
+    <category term="track:method_radar"/>
+    <category term="信号预处理与特征提取"/>
+    <category term="域偏移适应"/>
+    <category term="异常检测"/>
+    <published>2026-08-27T04:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>arxiv:2608.23773:hepml-v1</id>
+    <title>Exploring ESS$\nu$SB Near Water Cherenkov Detector Designs Through Graph Neural Network Flavour Identification</title>
+    <updated>2026-08-27T09:45:07.973200+00:00</updated>
+    <author>
+      <name>J. Aguilar, M. Anastasopoulos, D. Bar\v{c}ot, E. Baussan, A. K. Bhattacharyya, A. Bignami, M. Blennow, M. Bogomilov, B. Bolling, E. Bouquerel, F. Bramati, A. Branca, G. Brunetti, A. Burgman, I. Bustinduy, C. J. Carlile, J. Cederkall, T. W. Choi, S. Choubey, P. Christiansen, I. Christodoulou, E. Cristaldo Morales, P. Cupia\l, D. D'Ago, H. Danared, J. P. A. M. de Andr\'{e}, M. Dracos, I. Efthymiopoulos, T. Ekel\"{o}f, M. Eshraqi, G. Fanourakis, A. Farricker, E. Fasoula, T. Fukuda, S. Gago, N. Gazis, Th. Geralis, M. Ghosh, A. Giarnetti, G. Gokbulut, C. Hagner, L. Hali\'c, S. G. Hern\'andez, J. Hiegel, M. Hooft, K. E. Iversen, N. Jachowicz, M. Jakkapu, M. Jensen, I. Karakoulias, E. Kasimi, A. Kayis Topaksu, B. Kli\v{c}ek, K. Kordas, B. Kova\v{c}, A. Leisos, A. Longhin, M. L\'opez, C. Maiano, S. Marangoni, J. Garc\'ia-Marcos, C. Marrelli, D. Meloni, M. Mezzetto, N. Milas, J. L. Mu\~noz, K. Niewczas, M. Oglakci, T. Ohlsson, M. Olveg\r{a}rd, A. Opanasenko, M. Pari, J. Park, D. Patrzalek, G. Petkov, Ch. Petridou, P. Poussot, A Psallidas, F. Pupilli, M. L. Reguera, D. Saiang, E. Salehi, D. Sampsonidis, A. Scanu, C. Schwab, F. Sordo, G. Stavropoulos, M. Stip\v{c}evi\'c, R. Tarkeshian, F. Terranova, T. Tolba, M. Topp-Mugglestone, E. Trachanas, R. Tsenov, A. Tsirigotis, S. E. Tzamarias, M. Vanderpoorten, G. Vankova-Kirilova, N. Vassilopoulos, S. Vihonen, J. Wurtz, V. Zeter, O. Zormpa</name>
+    </author>
+    <content type="html">&lt;p&gt;&lt;strong&gt;栏目：&lt;/strong&gt;HEP 直接应用&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法：&lt;/strong&gt;Graph Neural Network (GNN) classification of neutrino events&lt;/p&gt;&lt;p&gt;&lt;strong&gt;相关性：&lt;/strong&gt;0.90；&lt;strong&gt;证据等级：&lt;/strong&gt;direct&lt;/p&gt;&lt;p&gt;&lt;strong&gt;初筛理由：&lt;/strong&gt;论文使用GNN进行中微子风味识别，并研究探测器设计参数对性能的影响，直接适用于HEP实验，具有直接证据。&lt;/p&gt;&lt;p&gt;&lt;em&gt;本条目仅完成摘要级筛选。&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;a href="https://arxiv.org/abs/2608.23773"&gt;arXiv 页面&lt;/a&gt; · &lt;a href="https://github.com/quxnb/hepml-digest/issues/new?title=%5B%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%5D+2608.23773+Exploring+ESS%24%5Cnu%24SB+Near+Water+Cherenkov+Detector+Designs+Through+Graph+Neural+&amp;amp;body=%23%23+%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%0A%0A-+arXiv%EF%BC%9A%5B2608.23773%5D%28https%3A%2F%2Farxiv.org%2Fabs%2F2608.23773%29%0A-+%E6%A0%8F%E7%9B%AE%EF%BC%9AHEP+%E7%9B%B4%E6%8E%A5%E5%BA%94%E7%94%A8%0A-+%E5%BD%93%E5%89%8D%E7%9B%B8%E5%85%B3%E6%80%A7%EF%BC%9A0.90%0A-+%E5%BD%93%E5%89%8D%E8%AF%81%E6%8D%AE%E7%AD%89%E7%BA%A7%EF%BC%9Adirect%0A%0A%23%23+%E5%88%A4%E6%96%AD%0A%0A-+%5B+%5D+%E6%8E%A8%E8%8D%90%E4%BF%9D%E7%95%99%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E5%90%88%E7%90%86%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E8%BF%87%E5%BA%A6%E6%8E%A8%E6%B5%8B%0A-+%5B+%5D+%E5%BA%94%E7%A7%BB%E8%87%B3%E5%8F%A6%E4%B8%80%E4%B8%AA%E6%A0%8F%E7%9B%AE%0A-+%5B+%5D+%E5%BB%BA%E8%AE%AE%E7%B2%BE%E8%AF%BB%E5%85%A8%E6%96%87%0A%0A%23%23+%E8%A1%A5%E5%85%85%E8%AF%B4%E6%98%8E%0A%0A"&gt;提交反馈&lt;/a&gt; · hep-ex&lt;/p&gt;</content>
+    <link href="https://arxiv.org/abs/2608.23773"/>
+    <summary>论文使用GNN进行中微子风味识别，并研究探测器设计参数对性能的影响，直接适用于HEP实验，具有直接证据。</summary>
+    <category term="Detector design optimization"/>
+    <category term="Event classification"/>
+    <category term="Flavor identification"/>
+    <category term="hep-ex"/>
+    <category term="track:hep_application"/>
+    <published>2026-08-27T04:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>arxiv:2604.12364:hepml-v1</id>
+    <title>Cross-Domain Transfer with Particle Physics Foundation Models: From Jets to Neutrino Interactions</title>
+    <updated>2026-08-27T09:45:07.973200+00:00</updated>
+    <author>
+      <name>Gregor Krzmanc, Vinicius Mikuni, Benjamin Nachman, Callum Wilkinson</name>
+    </author>
+    <content type="html">&lt;p&gt;&lt;strong&gt;栏目：&lt;/strong&gt;HEP 直接应用&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法：&lt;/strong&gt;预训练粒子物理基础模型（OmniLearned, ParticleViT）的跨域迁移学习&lt;/p&gt;&lt;p&gt;&lt;strong&gt;相关性：&lt;/strong&gt;0.90；&lt;strong&gt;证据等级：&lt;/strong&gt;direct&lt;/p&gt;&lt;p&gt;&lt;strong&gt;初筛理由：&lt;/strong&gt;在MINERvA中微子实验上直接验证预训练模型迁移，涵盖能量尺度与探测器差异，对HEP通用基础模型研究价值高。&lt;/p&gt;&lt;p&gt;&lt;em&gt;本条目仅完成摘要级筛选。&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;a href="https://arxiv.org/abs/2604.12364"&gt;arXiv 页面&lt;/a&gt; · &lt;a href="https://github.com/quxnb/hepml-digest/issues/new?title=%5B%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%5D+2604.12364+Cross-Domain+Transfer+with+Particle+Physics+Foundation+Models%3A+From+Jets+to+Neut&amp;amp;body=%23%23+%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%0A%0A-+arXiv%EF%BC%9A%5B2604.12364%5D%28https%3A%2F%2Farxiv.org%2Fabs%2F2604.12364%29%0A-+%E6%A0%8F%E7%9B%AE%EF%BC%9AHEP+%E7%9B%B4%E6%8E%A5%E5%BA%94%E7%94%A8%0A-+%E5%BD%93%E5%89%8D%E7%9B%B8%E5%85%B3%E6%80%A7%EF%BC%9A0.90%0A-+%E5%BD%93%E5%89%8D%E8%AF%81%E6%8D%AE%E7%AD%89%E7%BA%A7%EF%BC%9Adirect%0A%0A%23%23+%E5%88%A4%E6%96%AD%0A%0A-+%5B+%5D+%E6%8E%A8%E8%8D%90%E4%BF%9D%E7%95%99%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E5%90%88%E7%90%86%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E8%BF%87%E5%BA%A6%E6%8E%A8%E6%B5%8B%0A-+%5B+%5D+%E5%BA%94%E7%A7%BB%E8%87%B3%E5%8F%A6%E4%B8%80%E4%B8%AA%E6%A0%8F%E7%9B%AE%0A-+%5B+%5D+%E5%BB%BA%E8%AE%AE%E7%B2%BE%E8%AF%BB%E5%85%A8%E6%96%87%0A%0A%23%23+%E8%A1%A5%E5%85%85%E8%AF%B4%E6%98%8E%0A%0A"&gt;提交反馈&lt;/a&gt; · cs.LG, hep-ex, hep-ph, physics.data-an&lt;/p&gt;</content>
+    <link href="https://arxiv.org/abs/2604.12364"/>
+    <summary>在MINERvA中微子实验上直接验证预训练模型迁移，涵盖能量尺度与探测器差异，对HEP通用基础模型研究价值高。</summary>
+    <category term="cs.LG"/>
+    <category term="hep-ex"/>
+    <category term="hep-ph"/>
+    <category term="physics.data-an"/>
+    <category term="track:hep_application"/>
+    <category term="事件分类"/>
+    <category term="粒子鉴别"/>
+    <category term="能量回归"/>
+    <published>2026-08-27T04:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>arxiv:2608.26090:hepml-v1</id>
+    <title>Finding and using interpretable latents in a neutrino foundation model with sparse autoencoders</title>
+    <updated>2026-08-27T09:45:07.973200+00:00</updated>
+    <author>
+      <name>Rapha\"el Bonnet-Guerrini, Johann Ioannou-Nikolaides, Inar Timiryasov, Vincenzo Piuri</name>
+    </author>
+    <content type="html">&lt;p&gt;&lt;strong&gt;栏目：&lt;/strong&gt;HEP 直接应用&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法：&lt;/strong&gt;稀疏自编码器（SAE）用于模型可解释性，识别物理概念，并利用因果干预验证。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;相关性：&lt;/strong&gt;0.85；&lt;strong&gt;证据等级：&lt;/strong&gt;direct&lt;/p&gt;&lt;p&gt;&lt;strong&gt;初筛理由：&lt;/strong&gt;直接应用于HEP数据，提出可解释潜在变量和不确定性改进，方法创新且结果显著。&lt;/p&gt;&lt;p&gt;&lt;em&gt;本条目仅完成摘要级筛选。&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;a href="https://arxiv.org/abs/2608.26090"&gt;arXiv 页面&lt;/a&gt; · &lt;a href="https://github.com/quxnb/hepml-digest/issues/new?title=%5B%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%5D+2608.26090+Finding+and+using+interpretable+latents+in+a+neutrino+foundation+model+with+spar&amp;amp;body=%23%23+%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%0A%0A-+arXiv%EF%BC%9A%5B2608.26090%5D%28https%3A%2F%2Farxiv.org%2Fabs%2F2608.26090%29%0A-+%E6%A0%8F%E7%9B%AE%EF%BC%9AHEP+%E7%9B%B4%E6%8E%A5%E5%BA%94%E7%94%A8%0A-+%E5%BD%93%E5%89%8D%E7%9B%B8%E5%85%B3%E6%80%A7%EF%BC%9A0.85%0A-+%E5%BD%93%E5%89%8D%E8%AF%81%E6%8D%AE%E7%AD%89%E7%BA%A7%EF%BC%9Adirect%0A%0A%23%23+%E5%88%A4%E6%96%AD%0A%0A-+%5B+%5D+%E6%8E%A8%E8%8D%90%E4%BF%9D%E7%95%99%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E5%90%88%E7%90%86%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E8%BF%87%E5%BA%A6%E6%8E%A8%E6%B5%8B%0A-+%5B+%5D+%E5%BA%94%E7%A7%BB%E8%87%B3%E5%8F%A6%E4%B8%80%E4%B8%AA%E6%A0%8F%E7%9B%AE%0A-+%5B+%5D+%E5%BB%BA%E8%AE%AE%E7%B2%BE%E8%AF%BB%E5%85%A8%E6%96%87%0A%0A%23%23+%E8%A1%A5%E5%85%85%E8%AF%B4%E6%98%8E%0A%0A"&gt;提交反馈&lt;/a&gt; · astro-ph.HE, cs.AI, cs.LG, hep-ex&lt;/p&gt;</content>
+    <link href="https://arxiv.org/abs/2608.26090"/>
+    <summary>直接应用于HEP数据，提出可解释潜在变量和不确定性改进，方法创新且结果显著。</summary>
+    <category term="astro-ph.HE"/>
+    <category term="cs.AI"/>
+    <category term="cs.LG"/>
+    <category term="hep-ex"/>
+    <category term="track:hep_application"/>
+    <category term="不确定度量化"/>
+    <category term="物理特征提取与验证"/>
+    <category term="粒子重建（方向重建误差预测）"/>
+    <published>2026-08-27T04:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>arxiv:2608.25107:hepml-v1</id>
+    <title>ADoNIS: A Differentiable generatOr of Neutrino Interaction Samples</title>
+    <updated>2026-08-27T09:45:07.973200+00:00</updated>
+    <author>
+      <name>C\'esar Jes\'us-Valls</name>
+    </author>
+    <content type="html">&lt;p&gt;&lt;strong&gt;栏目：&lt;/strong&gt;HEP 直接应用&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法：&lt;/strong&gt;可微生成器&lt;/p&gt;&lt;p&gt;&lt;strong&gt;相关性：&lt;/strong&gt;0.70；&lt;strong&gt;证据等级：&lt;/strong&gt;transferable&lt;/p&gt;&lt;p&gt;&lt;strong&gt;初筛理由：&lt;/strong&gt;论文提出可微中微子事件生成器，直接提供导数，可用于参数约束、实验设计，对高能实验物理有实用价值。&lt;/p&gt;&lt;p&gt;&lt;em&gt;本条目仅完成摘要级筛选。&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;a href="https://arxiv.org/abs/2608.25107"&gt;arXiv 页面&lt;/a&gt; · &lt;a href="https://github.com/quxnb/hepml-digest/issues/new?title=%5B%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%5D+2608.25107+ADoNIS%3A+A+Differentiable+generatOr+of+Neutrino+Interaction+Samples&amp;amp;body=%23%23+%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%0A%0A-+arXiv%EF%BC%9A%5B2608.25107%5D%28https%3A%2F%2Farxiv.org%2Fabs%2F2608.25107%29%0A-+%E6%A0%8F%E7%9B%AE%EF%BC%9AHEP+%E7%9B%B4%E6%8E%A5%E5%BA%94%E7%94%A8%0A-+%E5%BD%93%E5%89%8D%E7%9B%B8%E5%85%B3%E6%80%A7%EF%BC%9A0.70%0A-+%E5%BD%93%E5%89%8D%E8%AF%81%E6%8D%AE%E7%AD%89%E7%BA%A7%EF%BC%9Atransferable%0A%0A%23%23+%E5%88%A4%E6%96%AD%0A%0A-+%5B+%5D+%E6%8E%A8%E8%8D%90%E4%BF%9D%E7%95%99%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E5%90%88%E7%90%86%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E8%BF%87%E5%BA%A6%E6%8E%A8%E6%B5%8B%0A-+%5B+%5D+%E5%BA%94%E7%A7%BB%E8%87%B3%E5%8F%A6%E4%B8%80%E4%B8%AA%E6%A0%8F%E7%9B%AE%0A-+%5B+%5D+%E5%BB%BA%E8%AE%AE%E7%B2%BE%E8%AF%BB%E5%85%A8%E6%96%87%0A%0A%23%23+%E8%A1%A5%E5%85%85%E8%AF%B4%E6%98%8E%0A%0A"&gt;提交反馈&lt;/a&gt; · hep-ex, hep-ph&lt;/p&gt;</content>
+    <link href="https://arxiv.org/abs/2608.25107"/>
+    <summary>论文提出可微中微子事件生成器，直接提供导数，可用于参数约束、实验设计，对高能实验物理有实用价值。</summary>
+    <category term="hep-ex"/>
+    <category term="hep-ph"/>
+    <category term="track:hep_application"/>
+    <category term="事件生成"/>
+    <category term="参数估计"/>
+    <category term="展开"/>
+    <published>2026-08-27T04:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>arxiv:2608.25963:hepml-v1</id>
+    <title>A High Performance Partial Wave Analysis Framework for Hadron Spectroscopy</title>
+    <updated>2026-08-27T09:45:07.973200+00:00</updated>
+    <author>
+      <name>Benhou Xiang, Shuangshi Fang, Beijiang Liu</name>
+    </author>
+    <content type="html">&lt;p&gt;&lt;strong&gt;栏目：&lt;/strong&gt;HEP 直接应用&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法：&lt;/strong&gt;基于协变张量形式的高性能部分波分析框架，采用预计算、缓存和基于GPU的似然计算与最小化&lt;/p&gt;&lt;p&gt;&lt;strong&gt;相关性：&lt;/strong&gt;0.70；&lt;strong&gt;证据等级：&lt;/strong&gt;direct&lt;/p&gt;&lt;p&gt;&lt;strong&gt;初筛理由：&lt;/strong&gt;方法专为强子物理设计，但部分波分析框架优化技术可迁移至HEP其他拟合任务。&lt;/p&gt;&lt;p&gt;&lt;em&gt;本条目仅完成摘要级筛选。&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;a href="https://arxiv.org/abs/2608.25963"&gt;arXiv 页面&lt;/a&gt; · &lt;a href="https://github.com/quxnb/hepml-digest/issues/new?title=%5B%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%5D+2608.25963+A+High+Performance+Partial+Wave+Analysis+Framework+for+Hadron+Spectroscopy&amp;amp;body=%23%23+%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%0A%0A-+arXiv%EF%BC%9A%5B2608.25963%5D%28https%3A%2F%2Farxiv.org%2Fabs%2F2608.25963%29%0A-+%E6%A0%8F%E7%9B%AE%EF%BC%9AHEP+%E7%9B%B4%E6%8E%A5%E5%BA%94%E7%94%A8%0A-+%E5%BD%93%E5%89%8D%E7%9B%B8%E5%85%B3%E6%80%A7%EF%BC%9A0.70%0A-+%E5%BD%93%E5%89%8D%E8%AF%81%E6%8D%AE%E7%AD%89%E7%BA%A7%EF%BC%9Adirect%0A%0A%23%23+%E5%88%A4%E6%96%AD%0A%0A-+%5B+%5D+%E6%8E%A8%E8%8D%90%E4%BF%9D%E7%95%99%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E5%90%88%E7%90%86%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E8%BF%87%E5%BA%A6%E6%8E%A8%E6%B5%8B%0A-+%5B+%5D+%E5%BA%94%E7%A7%BB%E8%87%B3%E5%8F%A6%E4%B8%80%E4%B8%AA%E6%A0%8F%E7%9B%AE%0A-+%5B+%5D+%E5%BB%BA%E8%AE%AE%E7%B2%BE%E8%AF%BB%E5%85%A8%E6%96%87%0A%0A%23%23+%E8%A1%A5%E5%85%85%E8%AF%B4%E6%98%8E%0A%0A"&gt;提交反馈&lt;/a&gt; · hep-ex&lt;/p&gt;</content>
+    <link href="https://arxiv.org/abs/2608.25963"/>
+    <summary>方法专为强子物理设计，但部分波分析框架优化技术可迁移至HEP其他拟合任务。</summary>
+    <category term="hep-ex"/>
+    <category term="track:hep_application"/>
+    <category term="强子谱学中的共振态提取"/>
+    <category term="部分波分析"/>
+    <published>2026-08-27T04:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>arxiv:2608.25969:hepml-v1</id>
+    <title>A Weighting Method for Incorporating Mass Resolution Effects in Amplitude Analysis</title>
+    <updated>2026-08-27T09:45:07.973200+00:00</updated>
+    <author>
+      <name>Benhou Xiang, Wenqian Zheng, Hongxun Yang, Xiaolin Kang, Shuangshi Fang</name>
+    </author>
+    <content type="html">&lt;p&gt;&lt;strong&gt;栏目：&lt;/strong&gt;HEP 直接应用&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法：&lt;/strong&gt;Phase-space weighting method using fully simulated MC samples to map truth-level to reconstructed kinematics&lt;/p&gt;&lt;p&gt;&lt;strong&gt;相关性：&lt;/strong&gt;0.90；&lt;strong&gt;证据等级：&lt;/strong&gt;direct&lt;/p&gt;&lt;p&gt;&lt;strong&gt;初筛理由：&lt;/strong&gt;直接针对高能物理中的振幅分析，解决质量分辨效应，方法灵活且验证充分&lt;/p&gt;&lt;p&gt;&lt;em&gt;本条目仅完成摘要级筛选。&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;a href="https://arxiv.org/abs/2608.25969"&gt;arXiv 页面&lt;/a&gt; · &lt;a href="https://github.com/quxnb/hepml-digest/issues/new?title=%5B%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%5D+2608.25969+A+Weighting+Method+for+Incorporating+Mass+Resolution+Effects+in+Amplitude+Analys&amp;amp;body=%23%23+%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%0A%0A-+arXiv%EF%BC%9A%5B2608.25969%5D%28https%3A%2F%2Farxiv.org%2Fabs%2F2608.25969%29%0A-+%E6%A0%8F%E7%9B%AE%EF%BC%9AHEP+%E7%9B%B4%E6%8E%A5%E5%BA%94%E7%94%A8%0A-+%E5%BD%93%E5%89%8D%E7%9B%B8%E5%85%B3%E6%80%A7%EF%BC%9A0.90%0A-+%E5%BD%93%E5%89%8D%E8%AF%81%E6%8D%AE%E7%AD%89%E7%BA%A7%EF%BC%9Adirect%0A%0A%23%23+%E5%88%A4%E6%96%AD%0A%0A-+%5B+%5D+%E6%8E%A8%E8%8D%90%E4%BF%9D%E7%95%99%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E5%90%88%E7%90%86%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E8%BF%87%E5%BA%A6%E6%8E%A8%E6%B5%8B%0A-+%5B+%5D+%E5%BA%94%E7%A7%BB%E8%87%B3%E5%8F%A6%E4%B8%80%E4%B8%AA%E6%A0%8F%E7%9B%AE%0A-+%5B+%5D+%E5%BB%BA%E8%AE%AE%E7%B2%BE%E8%AF%BB%E5%85%A8%E6%96%87%0A%0A%23%23+%E8%A1%A5%E5%85%85%E8%AF%B4%E6%98%8E%0A%0A"&gt;提交反馈&lt;/a&gt; · hep-ex&lt;/p&gt;</content>
+    <link href="https://arxiv.org/abs/2608.25969"/>
+    <summary>直接针对高能物理中的振幅分析，解决质量分辨效应，方法灵活且验证充分</summary>
+    <category term="amplitude analysis"/>
+    <category term="detector resolution effects"/>
+    <category term="hep-ex"/>
+    <category term="partial-wave analysis"/>
+    <category term="resonance spectroscopy"/>
+    <category term="track:hep_application"/>
+    <published>2026-08-27T04:00:00+00:00</published>
+  </entry>
   <entry>
     <id>arxiv:2608.21729:hepml-v1</id>
     <title>Guidance for Prior Change via Density Ratio Estimation</title>
