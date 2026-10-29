@@ -46,14 +46,14 @@ header-includes:
 3. Flash 适合高频分类和摘要；Pro 只承担少量复杂的 HEP 迁移分析。
 4. 官方 API 当前单价较低，个人用量不需要购买包月服务。
 
-截至 2026-07-19，DeepSeek 官方标价如下：
+截至 2026-10-29，DeepSeek 官方空闲时段标价如下：
 
 | 模型 | 用途 | 未命中缓存输入 | 输出 |
 |---|---|---:|---:|
-| `deepseek-v4-flash` | 粗筛、分类、短摘要 | 1 元/百万 token | 2 元/百万 token |
-| `deepseek-v4-pro` | Top 论文深度分析 | 3 元/百万 token | 6 元/百万 token |
+| `deepseek-flash` | 粗筛、分类、短摘要 | 1 元/百万 token | 4 元/百万 token |
+| `deepseek-v4-pro` | Top 论文深度分析 | 4.5 元/百万 token | 13.5 元/百万 token |
 
-价格与模型名可能变化，部署前应再次查看 [DeepSeek 官方价格页](https://api-docs.deepseek.com/zh-cn/quick_start/pricing)。旧别名 `deepseek-chat` 和 `deepseek-reasoner` 官方计划于北京时间 2026-07-24 23:59 弃用，因此新项目应直接使用 `deepseek-v4-flash` 和 `deepseek-v4-pro`。
+价格与模型名可能变化，部署前应再次查看 [DeepSeek 官方价格页](https://api-docs.deepseek.com/zh-cn/quick_start/pricing)。官方目前推荐 Flash 模型名 `deepseek-flash`；本项目默认别名 `deepseek-v4-flash` 仍可调用，但由当前 Flash 模型提供服务。北京时间工作日（不含中国法定节假日）09:00–12:00、14:00–18:00 为高峰时段，单价为空闲时段的两倍；周末、法定节假日及其余时段为空闲时段。中转站价格不一定相同。
 
 # 国内模型如何选择
 
@@ -604,7 +604,7 @@ jobs:
         uses: actions/deploy-pages@v5
 ```
 
-这里选择 UTC 00:17，即北京时间 08:17。避开整点可以减少 GitHub Actions 高峰期排队。GitHub 官方说明定时任务默认以 UTC 运行，并可能因高负载延迟；定时工作流只运行默认分支上的版本。参考 [GitHub Actions 定时触发](https://docs.github.com/en/actions/reference/workflows-and-actions/events-that-trigger-workflows)。
+这里选择 UTC 00:17，即北京时间 08:17，属于 DeepSeek 官方空闲时段，无需为了优惠改到晚上。避开整点可以减少 GitHub Actions 高峰期排队。GitHub 官方说明定时任务默认以 UTC 运行，并可能因高负载延迟；定时工作流只运行默认分支上的版本。参考 [GitHub Actions 定时触发](https://docs.github.com/en/actions/reference/workflows-and-actions/events-that-trigger-workflows)。
 
 GitHub Pages 的自定义工作流应上传 Pages artifact，再由 `deploy-pages` 部署，而不是假设仓库中的任意 `public/` 目录会自动发布。参考 [GitHub Pages 自定义工作流](https://docs.github.com/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages)。
 
@@ -726,7 +726,14 @@ completion tokens
 深度分析数超过 5
 单次运行总输入超过 300,000 token
 连续 API 失败超过 5 次
+估算费用达到 MAX_ESTIMATED_COST_RMB（默认 1 元）
 ```
+
+金额是停止后续请求的软限制，不是账单硬上限；严格限制应在服务商后台设置。
+接口缺少输入/输出用量时停止后续请求并告警。认证、配置错误或输出截断会在保存状态后将工作流标记失败。
+深评默认采用低强度思考及 8192 tokens 的单次输出上限；思考和最终回答共用该预算。
+遇到 `finish_reason=length` 时不以相同参数反复重试。深评仅处理模型推荐且同时达到深评和
+发布阈值的候选，只设每日上限，不设最低数量；部分分析失败也会明确标记为退化运行。
 
 ## 故障处理
 
@@ -797,7 +804,7 @@ Actions 生成文件后，将 `public/` 同步到阿里云 OSS、腾讯云 COS �
 输出：Atom + RSS + HTML
 调度：GitHub Actions，北京时间约 08:17
 托管：GitHub Pages
-预算：先充值 10--20 元，并设置程序硬上限
+预算：先充值 10--20 元，程序设置估算费用停止线；账单硬限制由服务商后台设置
 ```
 
 运行两周后再决定：

@@ -1,11 +1,13 @@
 from pathlib import Path
+from datetime import datetime, timedelta, timezone
+from types import SimpleNamespace
 from xml.etree import ElementTree
 
 import pytest
 
 from hepml_digest.cli import _demo_papers
 from hepml_digest.config import Settings
-from hepml_digest.llm import AnalysisUsage, DemoAnalyzer
+from hepml_digest.llm import DeepSeekAnalyzer, DemoAnalyzer
 from hepml_digest.models import Review, Screening
 from hepml_digest.pipeline import run_pipeline
 from hepml_digest.store import load_state, save_state
@@ -18,7 +20,6 @@ def test_demo_pipeline_is_idempotent(tmp_path: Path):
         site_url="https://example.test/hepml",
         max_candidates=10,
         max_deep_reviews=2,
-        min_deep_reviews=2,
         feedback_repository="example/hepml",
     )
     first = run_pipeline(settings, DemoAnalyzer(), _demo_papers())
@@ -74,7 +75,15 @@ class ConservativeAnalyzer(DemoAnalyzer):
         )
 
 
-def test_pipeline_promotes_daily_minimum_review_target(tmp_path: Path):
+class QualifiedConservativeAnalyzer(ConservativeAnalyzer):
+    def screen(self, paper):
+        screening = super().screen(paper)
+        screening.relevance = 0.8
+        return screening
+
+
+@pytest.mark.parametrize("analyzer_type", [ConservativeAnalyzer, QualifiedConservativeAnalyzer])
+def test_pipeline_does_not_review_candidates_declined_by_model(tmp_path: Path, analyzer_type):
     papers = []
     for index, source in enumerate(_demo_papers() * 2, start=1):
         paper = source.model_copy(deep=True)
@@ -88,15 +97,14 @@ def test_pipeline_promotes_daily_minimum_review_target(tmp_path: Path):
         output_dir=tmp_path / "public",
         max_candidates=10,
         max_deep_reviews=5,
-        min_deep_reviews=3,
         review_threshold=0.72,
     )
-    result = run_pipeline(settings, ConservativeAnalyzer(), papers)
+    result = run_pipeline(settings, analyzer_type(), papers)
 
-    assert result["promoted_reviews"] == 3
-    assert result["reviewed"] == 3
+    assert result["reviewed"] == 0
+    assert result["pending_reviews"] == 0
     records = load_state(settings.state_file).records.values()
-    assert sum(record.review_status == "complete" for record in records) == 3
+    assert all(record.review_status == "not_selected" for record in records)
 
 
 class InvalidXmlAnalyzer(DemoAnalyzer):
@@ -128,7 +136,6 @@ def test_pipeline_removes_invalid_xml_characters_from_feeds(tmp_path: Path):
         state_file=tmp_path / "state.json",
         output_dir=tmp_path / "public",
         site_url="https://example.test/hepml",
-        min_deep_reviews=1,
         max_deep_reviews=1,
     )
 
@@ -165,7 +172,7 @@ class VersionAnalyzer(DemoAnalyzer):
             hep_tasks=[],
             reason="测试最新版本替换",
             needs_deep_review=False,
-            evidence_level="irrelevant",
+            evidence_level="transferable" if paper.version == 1 else "irrelevant",
         )
 
 
@@ -177,7 +184,6 @@ def test_latest_version_is_filtered_before_publishing(tmp_path: Path):
         state_file=tmp_path / "state.json",
         output_dir=tmp_path / "public",
         max_deep_reviews=0,
-        min_deep_reviews=0,
     )
 
     result = run_pipeline(
@@ -209,19 +215,28 @@ def test_irrelevant_record_does_not_enter_review_queue(tmp_path: Path):
         state_file=tmp_path / "state.json",
         output_dir=tmp_path / "public",
         max_deep_reviews=1,
-        min_deep_reviews=0,
     )
 
     result = run_pipeline(settings, IrrelevantAnalyzer(), [_demo_papers()[0]])
 
     assert result["reviewed"] == 0
     assert result["failed_reviews"] == 0
+    assert result["published"] == 0
+    for name in ("rss.xml", "methods.xml", "hep-applications.xml"):
+        root = ElementTree.parse(settings.output_dir / name).getroot()
+        assert root.findall("./channel/item") == []
+    atom = ElementTree.parse(settings.output_dir / "atom.xml").getroot()
+    assert atom.findall("{http://www.w3.org/2005/Atom}entry") == []
+    assert _demo_papers()[0].title not in (
+        settings.output_dir / "index.html"
+    ).read_text(encoding="utf-8")
     record = next(iter(load_state(settings.state_file).records.values()))
     assert record.review_status == "not_selected"
 
 
 class FailingAnalyzer(DemoAnalyzer):
     def __init__(self):
+        super().__init__()
         self.calls = 0
 
     def screen(self, paper):
@@ -241,7 +256,6 @@ def test_pipeline_stops_after_consecutive_api_failures(tmp_path: Path):
         output_dir=tmp_path / "public",
         max_candidates=6,
         max_deep_reviews=0,
-        min_deep_reviews=0,
         max_consecutive_api_failures=2,
     )
 
@@ -258,7 +272,6 @@ def test_zero_api_time_budget_skips_calls_and_still_publishes(tmp_path: Path):
         state_file=tmp_path / "state.json",
         output_dir=tmp_path / "public",
         max_deep_reviews=0,
-        min_deep_reviews=0,
         api_time_budget_seconds=0,
     )
 
@@ -279,7 +292,6 @@ def test_screening_fingerprint_change_reprocesses_record(tmp_path: Path):
         state_file=tmp_path / "state.json",
         output_dir=tmp_path / "public",
         max_deep_reviews=1,
-        min_deep_reviews=1,
     )
     run_pipeline(settings, DemoAnalyzer(), [paper])
 
@@ -302,7 +314,6 @@ def test_review_fingerprint_change_reprocesses_completed_review(
         state_file=tmp_path / "state.json",
         output_dir=tmp_path / "public",
         max_deep_reviews=1,
-        min_deep_reviews=1,
     )
     run_pipeline(settings, DemoAnalyzer(), [paper])
 
@@ -316,13 +327,14 @@ def test_review_fingerprint_change_reprocesses_completed_review(
 
 class TokenBudgetAnalyzer(DemoAnalyzer):
     def __init__(self):
+        super().__init__()
         self.calls = 0
-        self.usage = AnalysisUsage()
 
     def screen(self, paper):
         self.calls += 1
-        self.usage.screening_calls += 1
-        self.usage.screening_prompt_tokens += 10
+        self.usage.screening.calls += 1
+        self.usage.screening.prompt_tokens += 10
+        self.usage.screening.cache_miss_tokens += 10
         return super().screen(paper)
 
 
@@ -332,7 +344,6 @@ def test_prompt_token_budget_stops_additional_calls(tmp_path: Path):
         state_file=tmp_path / "state.json",
         output_dir=tmp_path / "public",
         max_deep_reviews=0,
-        min_deep_reviews=0,
         max_prompt_tokens=10,
     )
 
@@ -344,7 +355,7 @@ def test_prompt_token_budget_stops_additional_calls(tmp_path: Path):
     assert result["api_calls_stopped"] == 1
 
 
-def test_legacy_record_fingerprints_are_backfilled_without_reanalysis(
+def test_legacy_records_without_provenance_are_reanalyzed(
     tmp_path: Path,
 ):
     paper = _demo_papers()[0]
@@ -352,7 +363,6 @@ def test_legacy_record_fingerprints_are_backfilled_without_reanalysis(
         state_file=tmp_path / "state.json",
         output_dir=tmp_path / "public",
         max_deep_reviews=1,
-        min_deep_reviews=1,
     )
     run_pipeline(settings, DemoAnalyzer(), [paper])
     state = load_state(settings.state_file)
@@ -364,10 +374,10 @@ def test_legacy_record_fingerprints_are_backfilled_without_reanalysis(
 
     result = run_pipeline(settings, DemoAnalyzer(), [paper])
 
-    assert result["screened"] == 0
-    assert result["reviewed"] == 0
+    assert result["screened"] == 1
+    assert result["reviewed"] == 1
     migrated = load_state(settings.state_file)
-    assert migrated.schema_version == 2
+    assert migrated.schema_version == 4
     assert migrated.records[paper.version_key].screening_fingerprint
     assert migrated.records[paper.version_key].review_fingerprint
 
@@ -379,7 +389,6 @@ def test_historical_reanalysis_keeps_reserved_candidate_slot(tmp_path: Path):
         output_dir=tmp_path / "public",
         max_candidates=2,
         max_deep_reviews=0,
-        min_deep_reviews=0,
     )
     run_pipeline(initial_settings, DemoAnalyzer(), [historical])
     fresh_papers = []
@@ -392,7 +401,6 @@ def test_historical_reanalysis_keeps_reserved_candidate_slot(tmp_path: Path):
         output_dir=tmp_path / "public",
         max_candidates=2,
         max_deep_reviews=0,
-        min_deep_reviews=0,
         reanalysis_slots=1,
     )
 
@@ -415,7 +423,6 @@ def test_stale_feed_record_uses_reserved_reanalysis_slot(tmp_path: Path):
         output_dir=tmp_path / "public",
         max_candidates=2,
         max_deep_reviews=0,
-        min_deep_reviews=0,
         reanalysis_slots=1,
     )
     run_pipeline(settings, DemoAnalyzer(), [stale_paper])
@@ -441,6 +448,7 @@ def test_stale_feed_record_uses_reserved_reanalysis_slot(tmp_path: Path):
 
 class InterruptingAnalyzer(DemoAnalyzer):
     def __init__(self):
+        super().__init__()
         self.calls = 0
 
     def screen(self, paper):
@@ -450,7 +458,7 @@ class InterruptingAnalyzer(DemoAnalyzer):
         return super().screen(paper)
 
 
-class InterruptingPromotedReviewAnalyzer(ConservativeAnalyzer):
+class InterruptingReviewAnalyzer(DemoAnalyzer):
     def review(self, paper, screening):
         raise KeyboardInterrupt
 
@@ -461,7 +469,6 @@ def test_checkpoint_preserves_progress_after_interruption(tmp_path: Path):
         output_dir=tmp_path / "public",
         max_candidates=2,
         max_deep_reviews=0,
-        min_deep_reviews=0,
         checkpoint_interval=1,
     )
 
@@ -471,19 +478,18 @@ def test_checkpoint_preserves_progress_after_interruption(tmp_path: Path):
     assert len(load_state(settings.state_file).records) == 1
 
 
-def test_promoted_review_survives_interruption_and_resumes(tmp_path: Path):
+def test_pending_review_survives_interruption_and_resumes(tmp_path: Path):
     paper = _demo_papers()[0]
     settings = Settings(
         state_file=tmp_path / "state.json",
         output_dir=tmp_path / "public",
         max_candidates=1,
         max_deep_reviews=1,
-        min_deep_reviews=1,
         checkpoint_interval=10,
     )
 
     with pytest.raises(KeyboardInterrupt):
-        run_pipeline(settings, InterruptingPromotedReviewAnalyzer(), [paper])
+        run_pipeline(settings, InterruptingReviewAnalyzer(), [paper])
 
     interrupted = load_state(settings.state_file)
     assert interrupted.records[paper.version_key].review_status == "pending"
@@ -504,7 +510,6 @@ def test_state_is_saved_before_publish_failure(
         output_dir=tmp_path / "public",
         max_candidates=2,
         max_deep_reviews=0,
-        min_deep_reviews=0,
         checkpoint_interval=100,
     )
 
@@ -539,7 +544,6 @@ def test_serialization_failure_does_not_replace_existing_site(
         state_file=tmp_path / "state.json",
         output_dir=tmp_path / "public",
         max_deep_reviews=0,
-        min_deep_reviews=0,
     )
     settings.output_dir.mkdir()
     output_names = (
@@ -562,3 +566,222 @@ def test_serialization_failure_does_not_replace_existing_site(
 
     for name in output_names:
         assert (settings.output_dir / name).read_bytes() == b"previous site"
+
+
+def test_candidate_overflow_is_drained_after_leaving_rss(tmp_path: Path):
+    settings = Settings(
+        state_file=tmp_path / "state.json", output_dir=tmp_path / "public",
+        max_candidates=1, max_deep_reviews=0,
+    )
+    first = run_pipeline(settings, DemoAnalyzer(), _demo_papers())
+    assert first["queued_papers"] == 1
+    second = run_pipeline(settings, DemoAnalyzer(), [])
+    assert second["screened"] == 1
+    assert second["queued_papers"] == 0
+    assert len(load_state(settings.state_file).records) == 2
+
+
+def test_failed_screening_is_retried_from_saved_queue(tmp_path: Path):
+    settings = Settings(
+        state_file=tmp_path / "state.json", output_dir=tmp_path / "public",
+        max_deep_reviews=0,
+    )
+    first = run_pipeline(settings, FailingAnalyzer(), _demo_papers())
+    assert first["queued_papers"] == 2
+    assert run_pipeline(settings, DemoAnalyzer(), [])["screened"] == 0
+    state = load_state(settings.state_file)
+    for work in state.work.values():
+        work.next_retry_at = datetime.now(timezone.utc) - timedelta(seconds=1)
+    save_state(settings.state_file, state)
+    second = run_pipeline(settings, DemoAnalyzer(), [])
+    assert second["screened"] == 2
+    assert second["queued_papers"] == 0
+
+
+def test_raw_candidates_survive_interruption_before_checkpoint(tmp_path: Path):
+    settings = Settings(
+        state_file=tmp_path / "state.json", output_dir=tmp_path / "public",
+        max_deep_reviews=0, checkpoint_interval=100,
+    )
+    with pytest.raises(KeyboardInterrupt):
+        run_pipeline(settings, InterruptingAnalyzer(), _demo_papers())
+    assert len(load_state(settings.state_file).pending_papers) == 2
+    result = run_pipeline(settings, DemoAnalyzer(), [])
+    assert result["screened"] == 2
+
+
+def test_partial_backfill_persists_pages_without_advancing_cursor(tmp_path: Path, monkeypatch):
+    settings = Settings(
+        state_file=tmp_path / "state.json", output_dir=tmp_path / "public",
+        max_candidates=0, max_deep_reviews=0,
+    )
+    run_pipeline(settings, DemoAnalyzer(), [])
+    state = load_state(settings.state_file)
+    cursor = datetime.now(timezone.utc) - timedelta(days=2)
+    state.last_backfill_at = cursor
+    save_state(settings.state_file, state)
+    monkeypatch.setattr("hepml_digest.pipeline.fetch_feeds", lambda *a, **k: [])
+
+    def updates(categories, since, until, *args, **kwargs):
+        assert since == cursor - timedelta(days=settings.backfill_lookback_days)
+        yield _demo_papers()
+        raise OSError("second page failed")
+
+    monkeypatch.setattr("hepml_digest.pipeline.fetch_updates", updates)
+    result = run_pipeline(settings, DemoAnalyzer())
+    saved = load_state(settings.state_file)
+    assert result["fetch_errors"] == 1
+    assert len(saved.pending_papers) == 2
+    assert saved.last_backfill_at == cursor
+
+
+def test_backfill_rescues_all_rss_source_failure(tmp_path: Path, monkeypatch):
+    settings = Settings(
+        state_file=tmp_path / "state.json", output_dir=tmp_path / "public",
+        bootstrap_results=0, max_deep_reviews=0,
+    )
+
+    def failed_feeds(urls, *args, failed_urls, **kwargs):
+        failed_urls.extend(urls)
+        raise RuntimeError("RSS unavailable")
+
+    monkeypatch.setattr("hepml_digest.pipeline.fetch_feeds", failed_feeds)
+    monkeypatch.setattr(
+        "hepml_digest.pipeline.fetch_updates", lambda *a, **k: iter([_demo_papers()]),
+    )
+    result = run_pipeline(settings, DemoAnalyzer())
+    assert result["screened"] == 2
+    assert result["fetch_errors"] == len(settings.feed_urls)
+    assert load_state(settings.state_file).last_backfill_at is not None
+
+
+def test_saved_queue_is_used_when_all_sources_are_unavailable(tmp_path: Path, monkeypatch):
+    settings = Settings(
+        state_file=tmp_path / "state.json", output_dir=tmp_path / "public",
+        max_candidates=0, max_deep_reviews=0,
+    )
+    run_pipeline(settings, DemoAnalyzer(), _demo_papers())
+
+    def unavailable(*args, **kwargs):
+        raise OSError("offline")
+
+    monkeypatch.setattr("hepml_digest.pipeline.fetch_feeds", unavailable)
+    monkeypatch.setattr("hepml_digest.pipeline.fetch_updates", unavailable)
+    settings.max_candidates = 2
+    result = run_pipeline(settings, DemoAnalyzer())
+    assert result["screened"] == 2
+
+
+def test_screening_leaves_prompt_budget_for_reviews(tmp_path: Path):
+    settings = Settings(
+        state_file=tmp_path / "state.json", output_dir=tmp_path / "public",
+        max_prompt_tokens=20, screening_budget_fraction=0.5,
+        max_deep_reviews=1,
+    )
+    result = run_pipeline(settings, TokenBudgetAnalyzer(), _demo_papers())
+    assert result["screened"] == 1
+    assert result["reviewed"] == 1
+    assert result["screening_budget_exhausted"] == 1
+    assert result["api_calls_stopped"] == 0
+    assert result["queued_papers"] == 1
+
+
+def test_screening_leaves_time_budget_for_reviews(tmp_path: Path, monkeypatch):
+    clock = [0.0]
+    monkeypatch.setattr("hepml_digest.pipeline.time.monotonic", lambda: clock[0])
+
+    class TimedAnalyzer(DemoAnalyzer):
+        def screen(self, paper):
+            clock[0] += 60
+            return super().screen(paper)
+
+    settings = Settings(
+        state_file=tmp_path / "state.json", output_dir=tmp_path / "public",
+        api_time_budget_seconds=100, screening_budget_fraction=0.5,
+        max_deep_reviews=1,
+    )
+    result = run_pipeline(settings, TimedAnalyzer(), _demo_papers())
+    assert result["screened"] == 1
+    assert result["reviewed"] == 1
+    assert result["screening_budget_exhausted"] == 1
+
+
+@pytest.mark.parametrize("deep_reviews", [0, 1])
+def test_analysis_basis_is_explicit_in_site_and_feeds(tmp_path: Path, deep_reviews):
+    settings = Settings(
+        state_file=tmp_path / "state.json", output_dir=tmp_path / "public",
+        max_deep_reviews=deep_reviews,
+    )
+    run_pipeline(settings, DemoAnalyzer(), [_demo_papers()[0]])
+    for name in ("index.html", "rss.xml", "atom.xml", "hep-applications.xml"):
+        content = (settings.output_dir / name).read_text(encoding="utf-8")
+        assert "仅标题和摘要；未读取全文" in content
+        assert "论文明确支持的结论" not in content
+
+
+def test_first_incomplete_backfill_keeps_its_window_until_success(tmp_path: Path, monkeypatch):
+    settings = Settings(
+        state_file=tmp_path / "state.json", output_dir=tmp_path / "public",
+        bootstrap_results=0, max_candidates=0,
+        max_deep_reviews=0,
+    )
+    monkeypatch.setattr("hepml_digest.pipeline.fetch_feeds", lambda *a, **k: [])
+
+    def interrupted(*args, **kwargs):
+        yield _demo_papers()
+        raise OSError("partial scan")
+
+    monkeypatch.setattr("hepml_digest.pipeline.fetch_updates", interrupted)
+    run_pipeline(settings, DemoAnalyzer())
+    saved = load_state(settings.state_file)
+    assert saved.last_backfill_at is None
+    assert saved.pending_backfill_since is not None
+
+    def completed(categories, since, *args, **kwargs):
+        assert since == saved.pending_backfill_since
+        yield []
+
+    monkeypatch.setattr("hepml_digest.pipeline.fetch_updates", completed)
+    result = run_pipeline(settings, DemoAnalyzer())
+    assert result["fetch_errors"] == 0
+    completed_state = load_state(settings.state_file)
+    assert completed_state.pending_backfill_since is None
+    assert completed_state.last_backfill_at is not None
+
+
+def test_internal_retry_cannot_consume_reserved_review_budget(tmp_path: Path, monkeypatch):
+    settings = Settings(
+        state_file=tmp_path / "state.json", output_dir=tmp_path / "public",
+        max_deep_reviews=0, max_prompt_tokens=20,
+        screening_budget_fraction=0.5,
+    )
+    papers = _demo_papers()
+    run_pipeline(settings, DemoAnalyzer(), [papers[0]])
+    settings.max_deep_reviews = 1
+    monkeypatch.setenv("DEEPSEEK_API_KEY", "test-key")
+    analyzer = DeepSeekAnalyzer(
+        settings.screening_model, settings.review_model, "screen", "review",
+    )
+    analyzer.screening_fingerprint = DemoAnalyzer.screening_fingerprint
+    analyzer.review_fingerprint = DemoAnalyzer.review_fingerprint
+    monkeypatch.setattr(DeepSeekAnalyzer._request_json.retry, "wait", lambda _: 0)
+
+    def create(**kwargs):
+        screening = kwargs["model"] == settings.screening_model
+        content = "invalid JSON" if screening else DemoAnalyzer().review(
+            papers[0], DemoAnalyzer().screen(papers[0]),
+        ).model_dump_json()
+        return SimpleNamespace(
+            usage=SimpleNamespace(prompt_tokens=10 if screening else 1, completion_tokens=0),
+            choices=[SimpleNamespace(message=SimpleNamespace(content=content))],
+        )
+
+    analyzer.client = SimpleNamespace(
+        chat=SimpleNamespace(completions=SimpleNamespace(create=create)),
+    )
+    result = run_pipeline(settings, analyzer, [papers[1]])
+    assert result["screening_api_calls"] == 1
+    assert result["review_api_calls"] == 1
+    assert result["screening_budget_exhausted"] == 1
+    assert result["reviewed"] == 1
+    assert result["queued_papers"] == 1

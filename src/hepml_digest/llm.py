@@ -1,54 +1,128 @@
 from __future__ import annotations
 
+import json
 import os
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 from hashlib import sha256
 from typing import Callable, Protocol, TypeVar
+from urllib.parse import urlsplit
 
 from openai import (
     APIConnectionError,
     APITimeoutError,
+    AuthenticationError,
+    BadRequestError,
     InternalServerError,
+    NotFoundError,
     OpenAI,
+    PermissionDeniedError,
     RateLimitError,
 )
 from pydantic import BaseModel
 from tenacity import retry, retry_if_exception_type, stop_after_attempt, wait_exponential
 
+from .config import (
+    DEFAULT_REQUEST_TIMEOUT_SECONDS,
+    DEFAULT_REVIEW_MAX_TOKENS,
+    DEFAULT_REVIEW_REASONING_EFFORT,
+    Settings,
+)
 from .models import Paper, Review, Screening
 
 
 T = TypeVar("T", bound=BaseModel)
+SCREEN_TOKENS = 900
+TERMINAL_API_FAILURES = frozenset({"authentication", "configuration", "output_limit"})
+
+
+@dataclass(slots=True)
+class StageUsage:
+    calls: int = 0
+    prompt_tokens: int = 0
+    cache_hit_tokens: int = 0
+    cache_miss_tokens: int = 0
+    completion_tokens: int = 0
+    reasoning_tokens: int = 0
+    last_finish_reason: str = ""
+
+    def add(self, usage) -> None:
+        prompt = int(getattr(usage, "prompt_tokens", 0) or 0)
+        hit = int(getattr(usage, "prompt_cache_hit_tokens", 0) or 0)
+        miss = int(getattr(usage, "prompt_cache_miss_tokens", 0) or 0)
+        if hit == 0 and miss == 0:
+            details = getattr(usage, "prompt_tokens_details", None)
+            hit = int(getattr(details, "cached_tokens", 0) or 0)
+        self.prompt_tokens += prompt
+        self.cache_hit_tokens += hit
+        self.cache_miss_tokens += miss + max(0, prompt - hit - miss)
+        self.completion_tokens += int(getattr(usage, "completion_tokens", 0) or 0)
+        details = getattr(usage, "completion_tokens_details", None)
+        self.reasoning_tokens += int(getattr(details, "reasoning_tokens", 0) or 0)
+
+    def cost(self, cached: float, uncached: float, output: float) -> float:
+        return (
+            self.cache_hit_tokens * cached + self.cache_miss_tokens * uncached
+            + self.completion_tokens * output
+        ) / 1_000_000
 
 
 @dataclass(slots=True)
 class AnalysisUsage:
-    screening_calls: int = 0
-    screening_prompt_tokens: int = 0
-    screening_cache_hit_tokens: int = 0
-    screening_cache_miss_tokens: int = 0
-    screening_completion_tokens: int = 0
-    review_calls: int = 0
-    review_prompt_tokens: int = 0
-    review_cache_hit_tokens: int = 0
-    review_cache_miss_tokens: int = 0
-    review_completion_tokens: int = 0
+    screening: StageUsage = field(default_factory=StageUsage)
+    review: StageUsage = field(default_factory=StageUsage)
+    failed_calls: int = 0
+    last_failure_kind: str = ""
+    unmetered_calls: int = 0
 
     @property
     def prompt_tokens(self) -> int:
-        return self.screening_prompt_tokens + self.review_prompt_tokens
+        return self.screening.prompt_tokens + self.review.prompt_tokens
 
     @property
     def completion_tokens(self) -> int:
-        return (
-            self.screening_completion_tokens
-            + self.review_completion_tokens
+        return self.screening.completion_tokens + self.review.completion_tokens
+
+    def cost(self, settings: Settings) -> float:
+        return self.screening.cost(
+            settings.screening_cache_hit_price_per_million_rmb,
+            settings.screening_input_price_per_million_rmb,
+            settings.screening_output_price_per_million_rmb,
+        ) + self.review.cost(
+            settings.review_cache_hit_price_per_million_rmb,
+            settings.review_input_price_per_million_rmb,
+            settings.review_output_price_per_million_rmb,
         )
 
 
-def _analysis_fingerprint(stage: str, model: str, prompt: str) -> str:
-    payload = f"{stage}\0{model}\0{prompt}".encode("utf-8")
+def _analysis_fingerprint(
+    model: str, prompt: str, service: str, revision: str,
+    response_model: type[BaseModel], thinking: bool, max_tokens: int,
+    reasoning_effort: str | None = None,
+) -> str:
+    contract = [
+        "json-object-v2", service, revision, model, prompt,
+        response_model.model_json_schema(), thinking, max_tokens,
+    ]
+    if reasoning_effort is not None:
+        contract.append(reasoning_effort)
+    payload = json.dumps(contract, ensure_ascii=False, sort_keys=True).encode("utf-8")
     return sha256(payload).hexdigest()
+
+
+class OutputLimitExceeded(RuntimeError):
+    """A truncated response needs a configuration change, not an identical retry."""
+
+
+def failure_kind(error: Exception) -> str:
+    if isinstance(error, OutputLimitExceeded):
+        return "output_limit"
+    if isinstance(error, (AuthenticationError, PermissionDeniedError)):
+        return "authentication"
+    if isinstance(error, (BadRequestError, NotFoundError)):
+        return "configuration"
+    if isinstance(error, (ValueError, TypeError)):
+        return "invalid_response"
+    return "transient"
 
 
 class APICallBudgetExceeded(RuntimeError):
@@ -58,6 +132,8 @@ class APICallBudgetExceeded(RuntimeError):
 class Analyzer(Protocol):
     screening_fingerprint: str
     review_fingerprint: str
+    usage: AnalysisUsage
+    request_guard: Callable[[], bool] | None
 
     def screen(self, paper: Paper) -> Screening: ...
 
@@ -71,40 +147,46 @@ class DeepSeekAnalyzer:
         review_model: str,
         screen_prompt: str,
         review_prompt: str,
-        timeout: float = 90.0,
+        timeout: float = DEFAULT_REQUEST_TIMEOUT_SECONDS,
+        review_max_tokens: int = DEFAULT_REVIEW_MAX_TOKENS,
+        review_reasoning_effort: str = DEFAULT_REVIEW_REASONING_EFFORT,
     ) -> None:
         api_key = os.getenv("DEEPSEEK_API_KEY")
         if not api_key:
             raise RuntimeError(
                 "DEEPSEEK_API_KEY is missing. Use --demo for an offline test."
             )
+        base_url = (
+            os.getenv("DEEPSEEK_BASE_URL", "").strip().rstrip("/")
+            or "https://api.deepseek.com"
+        )
         self.client = OpenAI(
             api_key=api_key,
-            base_url="https://api.deepseek.com",
+            base_url=base_url,
             timeout=timeout,
             max_retries=0,
         )
         self.screening_model = screening_model
         self.review_model = review_model
+        self.review_max_tokens = review_max_tokens
+        self.review_reasoning_effort = review_reasoning_effort
         self.screen_prompt = screen_prompt
         self.review_prompt = review_prompt
+        address = urlsplit(str(self.client.base_url))
+        service = address._replace(
+            netloc=address.netloc.rsplit("@", 1)[-1], query="", fragment="",
+        ).geturl().rstrip("/")
+        revision = os.getenv("ANALYSIS_REVISION", "1")
         self.screening_fingerprint = _analysis_fingerprint(
-            "screen-v1", screening_model, screen_prompt
+            screening_model, screen_prompt, service, revision,
+            Screening, False, SCREEN_TOKENS,
         )
         self.review_fingerprint = _analysis_fingerprint(
-            "review-v1", review_model, review_prompt
+            review_model, review_prompt, service, revision,
+            Review, True, review_max_tokens, review_reasoning_effort,
         )
         self.usage = AnalysisUsage()
         self.request_guard: Callable[[], bool] | None = None
-        self.request_failure_callback: Callable[[], None] | None = None
-
-    def set_request_guard(self, guard: Callable[[], bool]) -> None:
-        self.request_guard = guard
-
-    def set_request_failure_callback(
-        self, callback: Callable[[], None]
-    ) -> None:
-        self.request_failure_callback = callback
 
     @retry(
         retry=retry_if_exception_type(
@@ -133,11 +215,10 @@ class DeepSeekAnalyzer:
     ) -> T:
         if self.request_guard is not None and not self.request_guard():
             raise APICallBudgetExceeded("API call budget exhausted")
+        stage_usage = self.usage.screening if stage == "screening" else self.usage.review
+        stage_usage.calls += 1
         try:
-            if stage == "screening":
-                self.usage.screening_calls += 1
-            else:
-                self.usage.review_calls += 1
+            options = {"reasoning_effort": self.review_reasoning_effort} if thinking else {}
             response = self.client.chat.completions.create(
                 model=model,
                 messages=[
@@ -152,43 +233,29 @@ class DeepSeekAnalyzer:
                         "type": "enabled" if thinking else "disabled"
                     }
                 },
+                **options,
             )
-            usage = response.usage
-            prompt_tokens = int(getattr(usage, "prompt_tokens", 0) or 0)
-            cache_hit_tokens = int(
-                getattr(usage, "prompt_cache_hit_tokens", 0) or 0
-            )
-            cache_miss_tokens = int(
-                getattr(usage, "prompt_cache_miss_tokens", 0) or 0
-            )
-            if cache_hit_tokens == 0 and cache_miss_tokens == 0:
-                details = getattr(usage, "prompt_tokens_details", None)
-                cache_hit_tokens = int(
-                    getattr(details, "cached_tokens", 0) or 0
-                )
-            cache_miss_tokens += max(
-                0, prompt_tokens - cache_hit_tokens - cache_miss_tokens
-            )
-            completion_tokens = int(
-                getattr(usage, "completion_tokens", 0) or 0
-            )
-            if stage == "screening":
-                self.usage.screening_prompt_tokens += prompt_tokens
-                self.usage.screening_cache_hit_tokens += cache_hit_tokens
-                self.usage.screening_cache_miss_tokens += cache_miss_tokens
-                self.usage.screening_completion_tokens += completion_tokens
-            else:
-                self.usage.review_prompt_tokens += prompt_tokens
-                self.usage.review_cache_hit_tokens += cache_hit_tokens
-                self.usage.review_cache_miss_tokens += cache_miss_tokens
-                self.usage.review_completion_tokens += completion_tokens
-            content = response.choices[0].message.content
+            if (
+                getattr(response.usage, "prompt_tokens", None) is None
+                or getattr(response.usage, "completion_tokens", None) is None
+            ):
+                self.usage.unmetered_calls += 1
+            stage_usage.add(response.usage)
+            choice = response.choices[0]
+            finish = getattr(choice, "finish_reason", None)
+            stage_usage.last_finish_reason = finish if finish in {
+                "stop", "length", "content_filter", "tool_calls",
+                "insufficient_system_resource", "aborted",
+            } else "unknown"
+            if finish == "length":
+                raise OutputLimitExceeded("Completion stopped with finish_reason=length")
+            content = choice.message.content
             if not content or not content.strip():
                 raise ValueError("Model returned empty content")
             return response_model.model_validate_json(content)
-        except Exception:
-            if self.request_failure_callback is not None:
-                self.request_failure_callback()
+        except Exception as error:
+            self.usage.failed_calls += 1
+            self.usage.last_failure_kind = failure_kind(error)
             raise
 
     def screen(self, paper: Paper) -> Screening:
@@ -203,7 +270,7 @@ class DeepSeekAnalyzer:
             user,
             Screening,
             thinking=False,
-            max_tokens=900,
+            max_tokens=SCREEN_TOKENS,
             stage="screening",
         )
 
@@ -221,7 +288,7 @@ class DeepSeekAnalyzer:
             user,
             Review,
             thinking=True,
-            max_tokens=2200,
+            max_tokens=self.review_max_tokens,
             stage="review",
         )
 
@@ -231,6 +298,10 @@ class DemoAnalyzer:
 
     screening_fingerprint = "demo-screen-v1"
     review_fingerprint = "demo-review-v1"
+
+    def __init__(self) -> None:
+        self.usage = AnalysisUsage()
+        self.request_guard: Callable[[], bool] | None = None
 
     def screen(self, paper: Paper) -> Screening:
         direct = "collider" in paper.abstract.lower()

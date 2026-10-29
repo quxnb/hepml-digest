@@ -1,13 +1,20 @@
 from __future__ import annotations
 
 from datetime import datetime, timezone
-from typing import Literal
+from typing import Annotated, Literal
 
-from pydantic import BaseModel, Field, field_validator
+from pydantic import AfterValidator, BaseModel, Field
 
 
 Evidence = Literal["direct", "transferable", "speculative", "irrelevant"]
 DigestTrack = Literal["method_radar", "hep_application"]
+
+
+def _with_timezone(value: datetime) -> datetime:
+    return value.replace(tzinfo=timezone.utc) if value.tzinfo is None else value
+
+
+UTCDateTime = Annotated[datetime, AfterValidator(_with_timezone)]
 
 HEP_APPLICATION_CATEGORIES = frozenset(
     {"hep-ex", "physics.ins-det", "nucl-ex"}
@@ -27,16 +34,9 @@ class Paper(BaseModel):
     abstract: str
     authors: list[str] = Field(default_factory=list)
     link: str
-    published: datetime
-    updated: datetime
+    published: UTCDateTime
+    updated: UTCDateTime
     categories: list[str] = Field(default_factory=list)
-
-    @field_validator("published", "updated")
-    @classmethod
-    def ensure_timezone(cls, value: datetime) -> datetime:
-        if value.tzinfo is None:
-            return value.replace(tzinfo=timezone.utc)
-        return value
 
     @property
     def version_key(self) -> str:
@@ -71,20 +71,41 @@ class Record(BaseModel):
     screening: Screening
     review: Review | None = None
     review_status: Literal["not_selected", "pending", "complete"]
-    processed_at: datetime
+    processed_at: UTCDateTime
     screening_model: str
     review_model: str | None = None
     screening_fingerprint: str = ""
     review_fingerprint: str | None = None
 
-    @field_validator("processed_at")
-    @classmethod
-    def ensure_processed_timezone(cls, value: datetime) -> datetime:
-        if value.tzinfo is None:
-            return value.replace(tzinfo=timezone.utc)
-        return value
+
+class WorkState(BaseModel):
+    first_seen_at: UTCDateTime
+    fingerprint: str
+    failures: int = Field(default=0, ge=0)
+    last_failure: Literal["", "invalid_response", "transient"] = ""
+    next_retry_at: UTCDateTime | None = None
+    quarantined: bool = False
+
+    def ready(self, now: datetime) -> bool:
+        return not self.quarantined and (
+            self.next_retry_at is None or self.next_retry_at <= now
+        )
+
+
+class RunHealth(BaseModel):
+    source_failure_runs: int = 0
+    analysis_failure_runs: int = 0
+    queue_growth_runs: int = 0
+    previous_queue_size: int = 0
+    last_source_success_at: UTCDateTime | None = None
+    last_analysis_success_at: UTCDateTime | None = None
 
 
 class State(BaseModel):
-    schema_version: int = 2
+    schema_version: int = 4
     records: dict[str, Record] = Field(default_factory=dict)
+    pending_papers: dict[str, Paper] = Field(default_factory=dict)
+    last_backfill_at: UTCDateTime | None = None
+    pending_backfill_since: UTCDateTime | None = None
+    work: dict[str, WorkState] = Field(default_factory=dict)
+    health: RunHealth = Field(default_factory=RunHealth)

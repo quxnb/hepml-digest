@@ -1,9 +1,13 @@
 from datetime import datetime, timezone
 from pathlib import Path
+from urllib.parse import parse_qs, urlparse
+
+import pytest
 
 from hepml_digest.fetch import (
     keyword_score,
     fetch_feeds,
+    fetch_updates,
     merge_duplicates,
     parse_arxiv_identifier,
     parse_feed_bytes,
@@ -132,3 +136,92 @@ def test_fetch_feeds_fails_when_all_sources_fail(monkeypatch):
         assert str(exc) == "All configured arXiv feeds failed"
     else:
         raise AssertionError("all-source failure must abort the fetch")
+
+
+def test_update_backfill_paginates_and_builds_date_window(monkeypatch):
+    payload = Path("tests/fixtures/arxiv_atom.xml").read_bytes()
+    empty = payload[:payload.index(b"  <entry>")] + b"</feed>"
+    requests = []
+
+    def urlopen(request, timeout):
+        requests.append(parse_qs(urlparse(request.full_url).query))
+        return FeedResponse(payload if len(requests) == 1 else empty)
+
+    monkeypatch.setattr("hepml_digest.fetch.urllib.request.urlopen", urlopen)
+    monkeypatch.setattr("hepml_digest.fetch.time.sleep", lambda _: None)
+    since = datetime(2026, 7, 18, tzinfo=timezone.utc)
+    until = datetime(2026, 7, 19, tzinfo=timezone.utc)
+    pages = list(fetch_updates(["stat.ML"], since, until, "test-agent", page_size=1))
+    assert [len(page) for page in pages] == [1, 0]
+    assert [query["start"] for query in requests] == [["0"], ["1"]]
+    assert requests[0]["search_query"] == ["cat:stat.ML"]
+    assert requests[0]["sortBy"] == ["lastUpdatedDate"]
+    assert requests[0]["sortOrder"] == ["descending"]
+
+
+def test_update_backfill_reports_truncation_instead_of_silent_success(monkeypatch):
+    payload = Path("tests/fixtures/arxiv_atom.xml").read_bytes()
+    monkeypatch.setattr(
+        "hepml_digest.fetch.urllib.request.urlopen", lambda *a, **k: FeedResponse(payload),
+    )
+    since = datetime(2026, 7, 18, tzinfo=timezone.utc)
+    until = datetime(2026, 7, 19, tzinfo=timezone.utc)
+    pages = fetch_updates(["stat.ML"], since, until, "test-agent", page_size=1, max_pages=1)
+    assert len(next(pages)) == 1
+    with pytest.raises(RuntimeError, match="page limit reached"):
+        next(pages)
+
+
+def test_update_backfill_stops_before_scanning_older_history(monkeypatch):
+    payload = Path("tests/fixtures/arxiv_atom.xml").read_bytes()
+    monkeypatch.setattr(
+        "hepml_digest.fetch.urllib.request.urlopen", lambda *a, **k: FeedResponse(payload),
+    )
+    since = datetime(2026, 7, 19, tzinfo=timezone.utc)
+    pages = list(fetch_updates(["stat.ML"], since, since, "test-agent", page_size=1))
+    assert pages == [[]]
+
+
+def test_update_backfill_finds_revisions_of_old_submissions(monkeypatch):
+    payload = Path("tests/fixtures/arxiv_atom.xml").read_bytes().replace(
+        b"<published>2026-07-18", b"<published>2020-07-18",
+    )
+    monkeypatch.setattr(
+        "hepml_digest.fetch.urllib.request.urlopen", lambda *a, **k: FeedResponse(payload),
+    )
+    since = datetime(2026, 7, 18, tzinfo=timezone.utc)
+    until = datetime(2026, 7, 19, tzinfo=timezone.utc)
+    pages = list(fetch_updates(["stat.ML"], since, until, "test-agent"))
+    assert len(pages[0]) == 1
+    assert pages[0][0].published.year == 2020
+
+
+def test_update_backfill_does_not_treat_an_error_page_as_an_empty_window(monkeypatch):
+    monkeypatch.setattr(
+        "hepml_digest.fetch.urllib.request.urlopen",
+        lambda *a, **k: FeedResponse(b"<html><body>Unavailable</body></html>"),
+    )
+    now = datetime.now(timezone.utc)
+    with pytest.raises(ValueError):
+        list(fetch_updates(["stat.ML"], now, now, "test-agent"))
+
+
+def test_update_page_is_parsed_once(monkeypatch):
+    import feedparser
+
+    payload = Path("tests/fixtures/arxiv_atom.xml").read_bytes()
+    original = feedparser.parse
+    calls = []
+
+    def parse(value):
+        calls.append(value)
+        return original(value)
+
+    monkeypatch.setattr("hepml_digest.fetch.feedparser.parse", parse)
+    monkeypatch.setattr(
+        "hepml_digest.fetch.urllib.request.urlopen", lambda *a, **k: FeedResponse(payload),
+    )
+    since = datetime(2026, 7, 18, tzinfo=timezone.utc)
+    until = datetime(2026, 7, 19, tzinfo=timezone.utc)
+    assert len(list(fetch_updates(["stat.ML"], since, until, "test-agent"))) == 1
+    assert len(calls) == 1

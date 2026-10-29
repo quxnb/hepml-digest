@@ -10,7 +10,7 @@ import urllib.request
 from urllib.parse import urlencode
 from datetime import datetime, timezone
 from email.utils import parsedate_to_datetime
-from typing import Iterable
+from typing import Iterable, Iterator
 
 import feedparser
 
@@ -78,7 +78,10 @@ def _entry_link(entry: dict) -> str:
 def parse_feed_bytes(
     payload: bytes, source_category: str | None = None
 ) -> list[Paper]:
-    parsed = feedparser.parse(payload)
+    return _parse_entries(feedparser.parse(payload), source_category)
+
+
+def _parse_entries(parsed, source_category: str | None = None) -> list[Paper]:
     if parsed.bozo and not parsed.entries:
         raise ValueError(
             f"Invalid feed for {source_category or 'arXiv API'}: "
@@ -131,7 +134,8 @@ def parse_feed_bytes(
 
 
 def fetch_feeds(
-    feed_urls: Iterable[str], user_agent: str, timeout: float = 30.0
+    feed_urls: Iterable[str], user_agent: str, timeout: float = 30.0,
+    *, failed_urls: list[str] | None = None,
 ) -> list[Paper]:
     feed_urls = tuple(feed_urls)
     papers: list[Paper] = []
@@ -157,6 +161,8 @@ def fetch_feeds(
             except (OSError, ValueError) as exc:
                 if attempt == 2:
                     LOGGER.error("Failed to fetch %s: %s", url, exc)
+                    if failed_urls is not None:
+                        failed_urls.append(url)
                 else:
                     LOGGER.warning(
                         "Fetching %s failed; retrying: %s", url, exc
@@ -201,6 +207,64 @@ def fetch_recent(
     LOGGER.info("Bootstrapping from arXiv API with %d results", max_results)
     with urllib.request.urlopen(request, timeout=timeout) as response:
         return merge_duplicates(parse_feed_bytes(response.read()))
+
+
+def fetch_updates(
+    categories: Iterable[str],
+    since: datetime,
+    until: datetime,
+    user_agent: str,
+    timeout: float = 30.0,
+    page_size: int = 200,
+    max_pages: int = 25,
+) -> Iterator[list[Paper]]:
+    """Yield bounded update pages; exhaustion means the whole window was read."""
+    categories = tuple(categories)
+    if not categories:
+        return
+    if not 1 <= page_size <= 200 or max_pages <= 0:
+        raise ValueError("Invalid arXiv update pagination limits")
+    if since > until:
+        raise ValueError("arXiv update window must not run backwards")
+    query = " OR ".join(f"cat:{category}" for category in categories)
+    for page_index in range(max_pages):
+        if page_index:
+            time.sleep(3)
+        start = page_index * page_size
+        parameters = urlencode({
+            "search_query": query,
+            "start": start,
+            "max_results": page_size,
+            "sortBy": "lastUpdatedDate",
+            "sortOrder": "descending",
+        })
+        request = urllib.request.Request(
+            f"https://export.arxiv.org/api/query?{parameters}",
+            headers={"User-Agent": user_agent, "Accept": "application/atom+xml"},
+        )
+        with urllib.request.urlopen(request, timeout=timeout) as response:
+            payload = response.read()
+        parsed = feedparser.parse(payload)
+        papers = _parse_entries(parsed)
+        if not parsed.feed.get("id"):
+            raise ValueError("arXiv update response has no feed identifier")
+        count = len(parsed.entries)
+        # The API supports sorting, but not a lastUpdatedDate range filter.
+        # Scan newest updates until crossing the overlap window's lower bound.
+        yield [paper for paper in papers if since <= paper.updated <= until]
+        if len(papers) != count:
+            raise ValueError("arXiv update page contains malformed entries")
+        total = parsed.feed.get("opensearch_totalresults")
+        if (
+            any(paper.updated < since for paper in papers)
+            or count < page_size
+            or (total is not None and start + count >= int(total))
+        ):
+            return
+    raise RuntimeError(
+        "arXiv update page limit reached; increase BACKFILL_MAX_PAGES. "
+        "The backfill cursor has not advanced."
+    )
 
 
 def merge_duplicates(papers: Iterable[Paper]) -> list[Paper]:

@@ -1,6 +1,5 @@
 from __future__ import annotations
 
-import json
 import os
 import tempfile
 import time
@@ -96,4 +95,9 @@ def prune_state(state: State, retention_days: int) -> None:
         key: record
         for key, record in state.records.items()
         if record.processed_at >= cutoff
+    }
+    active = state.records.keys() | state.pending_papers.keys()
+    state.work = {
+        key: work for key, work in state.work.items()
+        if key.partition(":")[2] in active
     }

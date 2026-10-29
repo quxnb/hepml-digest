@@ -2,7 +2,7 @@ name: Daily HEP-ML Digest
 
 on:
   schedule:
-    # UTC 00:17 = Asia/Shanghai 08:17.
+    # UTC 00:17 = Asia/Shanghai 08:17 (official DeepSeek off-peak).
     - cron: "17 0 * * *"
   workflow_dispatch:
 
@@ -40,23 +40,40 @@ jobs:
         continue-on-error: true
         env:
           DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
-          SCREENING_MODEL: deepseek-v4-flash
-          REVIEW_MODEL: deepseek-v4-pro
+          DEEPSEEK_BASE_URL: ${{ vars.DEEPSEEK_BASE_URL || 'https://api.deepseek.com' }}
+          ANALYSIS_REVISION: ${{ vars.ANALYSIS_REVISION || '1' }}
+          SCREENING_MODEL: ${{ vars.SCREENING_MODEL || 'deepseek-v4-flash' }}
+          REVIEW_MODEL: ${{ vars.REVIEW_MODEL || 'deepseek-v4-pro' }}
+          REVIEW_MAX_TOKENS: ${{ vars.REVIEW_MAX_TOKENS || '8192' }}
+          REVIEW_REASONING_EFFORT: ${{ vars.REVIEW_REASONING_EFFORT || 'low' }}
+          SCREENING_CACHE_HIT_PRICE_PER_MILLION_RMB: ${{ vars.SCREENING_CACHE_HIT_PRICE_PER_MILLION_RMB || '0.02' }}
+          SCREENING_INPUT_PRICE_PER_MILLION_RMB: ${{ vars.SCREENING_INPUT_PRICE_PER_MILLION_RMB || '1' }}
+          SCREENING_OUTPUT_PRICE_PER_MILLION_RMB: ${{ vars.SCREENING_OUTPUT_PRICE_PER_MILLION_RMB || '4' }}
+          REVIEW_CACHE_HIT_PRICE_PER_MILLION_RMB: ${{ vars.REVIEW_CACHE_HIT_PRICE_PER_MILLION_RMB || '0.15' }}
+          REVIEW_INPUT_PRICE_PER_MILLION_RMB: ${{ vars.REVIEW_INPUT_PRICE_PER_MILLION_RMB || '4.5' }}
+          REVIEW_OUTPUT_PRICE_PER_MILLION_RMB: ${{ vars.REVIEW_OUTPUT_PRICE_PER_MILLION_RMB || '13.5' }}
           SITE_URL: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}
           MAX_CANDIDATES: "60"
           BOOTSTRAP_RESULTS: "120"
+          BACKFILL_LOOKBACK_DAYS: ${{ vars.BACKFILL_LOOKBACK_DAYS || '7' }}
+          BACKFILL_MAX_PAGES: ${{ vars.BACKFILL_MAX_PAGES || '25' }}
           METHOD_CANDIDATE_SLOTS: "40"
           HEP_APPLICATION_SLOTS: "10"
           DISCOVERY_SLOTS: "10"
           MAX_DEEP_REVIEWS: "5"
-          MIN_DEEP_REVIEWS: "3"
           REVIEW_THRESHOLD: "0.45"
-          REQUEST_TIMEOUT_SECONDS: "60"
+          REQUEST_TIMEOUT_SECONDS: ${{ vars.REQUEST_TIMEOUT_SECONDS || '120' }}
           API_TIME_BUDGET_SECONDS: "1200"
+          SCREENING_BUDGET_FRACTION: ${{ vars.SCREENING_BUDGET_FRACTION || '0.7' }}
           MAX_CONSECUTIVE_API_FAILURES: "5"
           MAX_PROMPT_TOKENS: "300000"
           REANALYSIS_SLOTS: "5"
           CHECKPOINT_INTERVAL: "5"
+          AGING_SLOTS: ${{ vars.AGING_SLOTS || '5' }}
+          MAX_PAPER_FAILURES: ${{ vars.MAX_PAPER_FAILURES || '3' }}
+          ALERT_AFTER_RUNS: ${{ vars.ALERT_AFTER_RUNS || '3' }}
+          ALERT_BACKLOG_DAYS: ${{ vars.ALERT_BACKLOG_DAYS || '7' }}
+          MAX_ESTIMATED_COST_RMB: ${{ vars.MAX_ESTIMATED_COST_RMB || '1' }}
           FEEDBACK_REPOSITORY: ${{ github.repository }}
         run: python -m hepml_digest
 

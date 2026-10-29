@@ -57,6 +57,8 @@ def _feedback_url(record: Record, repository: str) -> str:
     body = f"""## 论文反馈
 
 - arXiv：[{paper.arxiv_id}]({paper.link})
+- 论文版本：{paper.version_key}
+- 分析依据：仅标题和摘要，未读取全文
 - 栏目：{track}
 - 当前相关性：{record.screening.relevance:.2f}
 - 当前证据等级：{record.screening.evidence_level}
@@ -86,6 +88,7 @@ def record_html(record: Record, feedback_repository: str = "") -> str:
     screen = record.screening
     parts = [
         f"<p><strong>栏目：</strong>{TRACK_LABELS[paper.digest_track]}</p>",
+        "<p><strong>分析依据：</strong>仅标题和摘要；未读取全文。</p>",
         f"<p><strong>方法：</strong>{html.escape(screen.method)}</p>",
         f"<p><strong>相关性：</strong>{screen.relevance:.2f}；"
         f"<strong>证据等级：</strong>{html.escape(screen.evidence_level)}</p>",
@@ -95,8 +98,8 @@ def record_html(record: Record, feedback_repository: str = "") -> str:
         review = record.review
         parts.extend(
             [
-                f"<p><strong>方法总结：</strong>{html.escape(review.summary_cn)}</p>",
-                _list_block("论文明确支持的结论", review.paper_claims),
+                f"<p><strong>方法总结（摘要分析）：</strong>{html.escape(review.summary_cn)}</p>",
+                _list_block("摘要中报告的结论", review.paper_claims),
                 _list_block("对高能实验物理的潜在帮助", review.hep_opportunities),
                 _list_block("迁移风险", review.transfer_risks),
                 f"<p><strong>最小验证方案：</strong>"
@@ -120,6 +123,13 @@ def record_html(record: Record, feedback_repository: str = "") -> str:
     return "".join(parts)
 
 
+def is_publishable(record: Record, publish_threshold: float) -> bool:
+    return (
+        record.screening.relevance >= publish_threshold
+        and record.screening.evidence_level != "irrelevant"
+    )
+
+
 def _eligible_records(
     state: State, publish_threshold: float, max_items: int
 ) -> list[Record]:
@@ -132,7 +142,7 @@ def _eligible_records(
         (
             record
             for record in latest.values()
-            if record.screening.relevance >= publish_threshold
+            if is_publishable(record, publish_threshold)
         ),
         key=lambda item: (item.processed_at, item.paper.updated),
         reverse=True,
