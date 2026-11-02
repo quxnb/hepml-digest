@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh-CN">
   <id>https://quxnb.github.io/hepml-digest</id>
   <title>Daily HEP-ML Digest</title>
-  <updated>2026-11-02T10:32:19.528192+00:00</updated>
+  <updated>2026-11-02T10:45:35.435137+00:00</updated>
   <author>
     <name>HEP-ML Digest Bot</name>
   </author>
@@ -10,6 +10,236 @@
   <link href="https://quxnb.github.io/hepml-digest/atom.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
   <subtitle>统计与机器学习方法对高能实验物理的每日启发</subtitle>
+  <entry>
+    <id>arxiv:2605.24116:hepml-v1</id>
+    <title>Photon Calibration Techniques for High Resolution Cryogenic Detectors</title>
+    <updated>2026-11-02T10:42:36.846296+00:00</updated>
+    <author>
+      <name>William J. Matava, Michael R. Williams</name>
+    </author>
+    <content type="html">&lt;p&gt;&lt;strong&gt;栏目：&lt;/strong&gt;HEP 直接应用&lt;/p&gt;&lt;p&gt;&lt;strong&gt;分析依据：&lt;/strong&gt;仅标题和摘要；未读取全文。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法：&lt;/strong&gt;基于泊松统计的光子校准偏差分析&lt;/p&gt;&lt;p&gt;&lt;strong&gt;相关性：&lt;/strong&gt;0.55；&lt;strong&gt;证据等级：&lt;/strong&gt;direct&lt;/p&gt;&lt;p&gt;&lt;strong&gt;初筛理由：&lt;/strong&gt;直接面向高分辨率量热探测器的光子校准偏差，属探测器校准与响应建模，有实验价值&lt;/p&gt;&lt;p&gt;&lt;em&gt;本条目仅完成摘要级筛选。&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;a href="https://arxiv.org/abs/2605.24116"&gt;arXiv 页面&lt;/a&gt; · &lt;a href="https://github.com/quxnb/hepml-digest/issues/new?title=%5B%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%5D+2605.24116+Photon+Calibration+Techniques+for+High+Resolution+Cryogenic+Detectors&amp;amp;body=%23%23+%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%0A%0A-+arXiv%EF%BC%9A%5B2605.24116%5D%28https%3A%2F%2Farxiv.org%2Fabs%2F2605.24116%29%0A-+%E8%AE%BA%E6%96%87%E7%89%88%E6%9C%AC%EF%BC%9A2605.24116%3Av1%0A-+%E5%88%86%E6%9E%90%E4%BE%9D%E6%8D%AE%EF%BC%9A%E4%BB%85%E6%A0%87%E9%A2%98%E5%92%8C%E6%91%98%E8%A6%81%EF%BC%8C%E6%9C%AA%E8%AF%BB%E5%8F%96%E5%85%A8%E6%96%87%0A-+%E6%A0%8F%E7%9B%AE%EF%BC%9AHEP+%E7%9B%B4%E6%8E%A5%E5%BA%94%E7%94%A8%0A-+%E5%BD%93%E5%89%8D%E7%9B%B8%E5%85%B3%E6%80%A7%EF%BC%9A0.55%0A-+%E5%BD%93%E5%89%8D%E8%AF%81%E6%8D%AE%E7%AD%89%E7%BA%A7%EF%BC%9Adirect%0A%0A%23%23+%E5%88%A4%E6%96%AD%0A%0A-+%5B+%5D+%E6%8E%A8%E8%8D%90%E4%BF%9D%E7%95%99%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E5%90%88%E7%90%86%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E8%BF%87%E5%BA%A6%E6%8E%A8%E6%B5%8B%0A-+%5B+%5D+%E5%BA%94%E7%A7%BB%E8%87%B3%E5%8F%A6%E4%B8%80%E4%B8%AA%E6%A0%8F%E7%9B%AE%0A-+%5B+%5D+%E5%BB%BA%E8%AE%AE%E7%B2%BE%E8%AF%BB%E5%85%A8%E6%96%87%0A%0A%23%23+%E8%A1%A5%E5%85%85%E8%AF%B4%E6%98%8E%0A%0A"&gt;提交反馈&lt;/a&gt; · hep-ex, physics.data-an, physics.ins-det&lt;/p&gt;</content>
+    <link href="https://arxiv.org/abs/2605.24116"/>
+    <summary>直接面向高分辨率量热探测器的光子校准偏差，属探测器校准与响应建模，有实验价值</summary>
+    <category term="hep-ex"/>
+    <category term="physics.data-an"/>
+    <category term="physics.ins-det"/>
+    <category term="track:hep_application"/>
+    <category term="低温量热探测器响应建模"/>
+    <category term="探测器能量校准"/>
+    <published>2026-11-02T05:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>arxiv:2512.20685:hepml-v1</id>
+    <title>Diffusion Models in Simulation-Based Inference: A Tutorial Review</title>
+    <updated>2026-11-02T10:42:36.846296+00:00</updated>
+    <author>
+      <name>Jonas Arruda, Niels Bracher, Ullrich Köthe, Jan Hasenauer, Stefan T. Radev</name>
+    </author>
+    <content type="html">&lt;p&gt;&lt;strong&gt;栏目：&lt;/strong&gt;方法雷达&lt;/p&gt;&lt;p&gt;&lt;strong&gt;分析依据：&lt;/strong&gt;仅标题和摘要；未读取全文。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法：&lt;/strong&gt;基于分数的扩散模型用于无似然/模拟推断（SBI）&lt;/p&gt;&lt;p&gt;&lt;strong&gt;相关性：&lt;/strong&gt;0.72；&lt;strong&gt;证据等级：&lt;/strong&gt;transferable&lt;/p&gt;&lt;p&gt;&lt;strong&gt;初筛理由：&lt;/strong&gt;扩散SBI教程综述，直接对应HEP无似然推断与快速模拟任务，方法可迁移&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法总结（摘要分析）：&lt;/strong&gt;该教程综述系统梳理基于分数的扩散模型在无似然/模拟推断（SBI）中的训练、推断与评估设计，强调其可学习参数与观测的条件或联合分布，从而由模拟及真实数据估计潜参数。文中讨论引导、分数组合、流匹配、一致性模型与联合建模等思路，并分析噪声日程、参数化与采样器对效率和统计精度的影响；通过不同参数维度、模拟预算和模型类型的案例展示概念，提出开放问题。摘要未给出具体数值结果或HEP实验验证。&lt;/p&gt;&lt;h4&gt;摘要中报告的结论&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;扩散模型可作为SBI学习器，从模拟和真实数据中快速、准确地估计潜参数（摘要表述）。&lt;/li&gt;&lt;li&gt;基于分数的形式可灵活学习参数与观测的条件或联合分布，为多种建模问题提供通用方案。&lt;/li&gt;&lt;li&gt;该教程综述总结扩散SBI在训练、推断和评估方面的设计选择。&lt;/li&gt;&lt;li&gt;引导、分数组合、流匹配、一致性模型和联合建模等概念带来机会。&lt;/li&gt;&lt;li&gt;效率与统计精度受噪声日程、参数化和采样器影响。&lt;/li&gt;&lt;li&gt;案例覆盖不同参数维度、模拟预算和模型类型；摘要未报告具体数值结果或HEP实验验证。&lt;/li&gt;&lt;/ul&gt;&lt;h4&gt;对高能实验物理的潜在帮助&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;迁移设想：将对撞机事件中的潜参数（如质量、耦合或nuisance参数）作为推断目标，用模拟事件训练扩散SBI学习p(θ|x)，再以真实数据作观测；需独立验证，非本文已验证。&lt;/li&gt;&lt;li&gt;迁移设想：学习条件分布p(x|θ)或联合p(θ,x)作为快速模拟/似然替代，加速参数扫描；需与全模拟比对精度与偏差。&lt;/li&gt;&lt;li&gt;迁移设想：在探测器unfolding或校准中利用联合建模与分数组合处理nuisance参数和系统误差；需专门校准验证。&lt;/li&gt;&lt;li&gt;迁移设想：结合流匹配/一致性模型减少采样步数，用于高吞吐或在线推断；需评估推理延迟与后验精度权衡。&lt;/li&gt;&lt;/ul&gt;&lt;h4&gt;迁移风险&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;摘要为通用教程，案例未明确HEP数据；simulation-to-data shift（探测器响应、本底、pileup、真实数据与模拟差异）需专门验证。&lt;/li&gt;&lt;li&gt;HEP系统误差与nuisance参数（如喷注能量标度、亮度、本底）摘要未说明，需查阅全文确认其是否处理；不能假定扩散SBI自动消除。&lt;/li&gt;&lt;li&gt;负权事件/加权蒙特卡洛会改变有效训练分布与归一化，摘要未说明，需核查。&lt;/li&gt;&lt;li&gt;Lorentz/置换对称性若未编码，评分网络可能学习非物理映射；需验证等变性或数据增强。&lt;/li&gt;&lt;li&gt;SBI后验校准与覆盖率在真实数据上可能偏移；摘要强调评估但未给HEP校准结果。&lt;/li&gt;&lt;li&gt;扩散多步采样可能带来推理延迟，需验证一致性/流匹配加速是否满足触发或在线推断。&lt;/li&gt;&lt;li&gt;探测器几何与变长输入的处理摘要未说明，需核查架构适用性。&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;strong&gt;最小验证方案：&lt;/strong&gt;在公开对撞机模拟样本上选一低维参数（如共振峰质量或截面），用扩散SBI学习p(θ|x)；与标准似然/ABC或MCMC在相同模拟预算下比较后验偏差、覆盖率、校准和推理时间；加入简单nuisance参数与加权/负权样本测试稳健性；用留出模拟和伪数据检验sim-to-data shift；检查置换/洛伦兹等变性约束；最后查阅全文确认其训练/采样细节与评估指标。&lt;/p&gt;&lt;p&gt;&lt;a href="https://arxiv.org/abs/2512.20685"&gt;arXiv 页面&lt;/a&gt; · &lt;a href="https://github.com/quxnb/hepml-digest/issues/new?title=%5B%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%5D+2512.20685+Diffusion+Models+in+Simulation-Based+Inference%3A+A+Tutorial+Review&amp;amp;body=%23%23+%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%0A%0A-+arXiv%EF%BC%9A%5B2512.20685%5D%28https%3A%2F%2Farxiv.org%2Fabs%2F2512.20685%29%0A-+%E8%AE%BA%E6%96%87%E7%89%88%E6%9C%AC%EF%BC%9A2512.20685%3Av6%0A-+%E5%88%86%E6%9E%90%E4%BE%9D%E6%8D%AE%EF%BC%9A%E4%BB%85%E6%A0%87%E9%A2%98%E5%92%8C%E6%91%98%E8%A6%81%EF%BC%8C%E6%9C%AA%E8%AF%BB%E5%8F%96%E5%85%A8%E6%96%87%0A-+%E6%A0%8F%E7%9B%AE%EF%BC%9A%E6%96%B9%E6%B3%95%E9%9B%B7%E8%BE%BE%0A-+%E5%BD%93%E5%89%8D%E7%9B%B8%E5%85%B3%E6%80%A7%EF%BC%9A0.72%0A-+%E5%BD%93%E5%89%8D%E8%AF%81%E6%8D%AE%E7%AD%89%E7%BA%A7%EF%BC%9Atransferable%0A%0A%23%23+%E5%88%A4%E6%96%AD%0A%0A-+%5B+%5D+%E6%8E%A8%E8%8D%90%E4%BF%9D%E7%95%99%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E5%90%88%E7%90%86%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E8%BF%87%E5%BA%A6%E6%8E%A8%E6%B5%8B%0A-+%5B+%5D+%E5%BA%94%E7%A7%BB%E8%87%B3%E5%8F%A6%E4%B8%80%E4%B8%AA%E6%A0%8F%E7%9B%AE%0A-+%5B+%5D+%E5%BB%BA%E8%AE%AE%E7%B2%BE%E8%AF%BB%E5%85%A8%E6%96%87%0A%0A%23%23+%E8%A1%A5%E5%85%85%E8%AF%B4%E6%98%8E%0A%0A"&gt;提交反馈&lt;/a&gt; · cs.LG, stat.ME, stat.ML&lt;/p&gt;</content>
+    <link href="https://arxiv.org/abs/2512.20685"/>
+    <summary>扩散SBI教程综述，直接对应HEP无似然推断与快速模拟任务，方法可迁移</summary>
+    <category term="cs.LG"/>
+    <category term="stat.ME"/>
+    <category term="stat.ML"/>
+    <category term="track:method_radar"/>
+    <category term="参数估计"/>
+    <category term="展开"/>
+    <category term="快速模拟"/>
+    <category term="无似然推断"/>
+    <published>2025-12-22T15:10:35+00:00</published>
+  </entry>
+  <entry>
+    <id>arxiv:2610.02377:hepml-v1</id>
+    <title>Flow Matching for Fast Posterior Sampling in Bayesian Inverse Problems</title>
+    <updated>2026-11-02T10:42:36.846296+00:00</updated>
+    <author>
+      <name>Jan Blechschmidt, Oliver G. Ernst, Moritz Poguntke, Björn Sprungk</name>
+    </author>
+    <content type="html">&lt;p&gt;&lt;strong&gt;栏目：&lt;/strong&gt;方法雷达&lt;/p&gt;&lt;p&gt;&lt;strong&gt;分析依据：&lt;/strong&gt;仅标题和摘要；未读取全文。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法：&lt;/strong&gt;条件流匹配（conditional flow matching）用于摊销式后验采样，配合Metropolis化实现渐近精确采样，并给出TV/KL误差估计&lt;/p&gt;&lt;p&gt;&lt;strong&gt;相关性：&lt;/strong&gt;0.55；&lt;strong&gt;证据等级：&lt;/strong&gt;transferable&lt;/p&gt;&lt;p&gt;&lt;strong&gt;初筛理由：&lt;/strong&gt;摊销式条件后验采样与HEP无似然推断/快速模拟高度契合，但仅在PDE与Lotka-Volterra验证，未接触HEP数据&lt;/p&gt;&lt;p&gt;&lt;em&gt;本条目仅完成摘要级筛选。&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;a href="https://arxiv.org/abs/2610.02377"&gt;arXiv 页面&lt;/a&gt; · &lt;a href="https://github.com/quxnb/hepml-digest/issues/new?title=%5B%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%5D+2610.02377+Flow+Matching+for+Fast+Posterior+Sampling+in+Bayesian+Inverse+Problems&amp;amp;body=%23%23+%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%0A%0A-+arXiv%EF%BC%9A%5B2610.02377%5D%28https%3A%2F%2Farxiv.org%2Fabs%2F2610.02377%29%0A-+%E8%AE%BA%E6%96%87%E7%89%88%E6%9C%AC%EF%BC%9A2610.02377%3Av2%0A-+%E5%88%86%E6%9E%90%E4%BE%9D%E6%8D%AE%EF%BC%9A%E4%BB%85%E6%A0%87%E9%A2%98%E5%92%8C%E6%91%98%E8%A6%81%EF%BC%8C%E6%9C%AA%E8%AF%BB%E5%8F%96%E5%85%A8%E6%96%87%0A-+%E6%A0%8F%E7%9B%AE%EF%BC%9A%E6%96%B9%E6%B3%95%E9%9B%B7%E8%BE%BE%0A-+%E5%BD%93%E5%89%8D%E7%9B%B8%E5%85%B3%E6%80%A7%EF%BC%9A0.55%0A-+%E5%BD%93%E5%89%8D%E8%AF%81%E6%8D%AE%E7%AD%89%E7%BA%A7%EF%BC%9Atransferable%0A%0A%23%23+%E5%88%A4%E6%96%AD%0A%0A-+%5B+%5D+%E6%8E%A8%E8%8D%90%E4%BF%9D%E7%95%99%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E5%90%88%E7%90%86%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E8%BF%87%E5%BA%A6%E6%8E%A8%E6%B5%8B%0A-+%5B+%5D+%E5%BA%94%E7%A7%BB%E8%87%B3%E5%8F%A6%E4%B8%80%E4%B8%AA%E6%A0%8F%E7%9B%AE%0A-+%5B+%5D+%E5%BB%BA%E8%AE%AE%E7%B2%BE%E8%AF%BB%E5%85%A8%E6%96%87%0A%0A%23%23+%E8%A1%A5%E5%85%85%E8%AF%B4%E6%98%8E%0A%0A"&gt;提交反馈&lt;/a&gt; · cs.LG, math.NA, stat.CO&lt;/p&gt;</content>
+    <link href="https://arxiv.org/abs/2610.02377"/>
+    <summary>摊销式条件后验采样与HEP无似然推断/快速模拟高度契合，但仅在PDE与Lotka-Volterra验证，未接触HEP数据</summary>
+    <category term="cs.LG"/>
+    <category term="math.NA"/>
+    <category term="stat.CO"/>
+    <category term="track:method_radar"/>
+    <category term="展开（unfolding）"/>
+    <category term="快速模拟与代理模型"/>
+    <category term="无似然推断"/>
+    <category term="系统误差与不确定度量化"/>
+    <published>2026-10-01T18:58:36+00:00</published>
+  </entry>
+  <entry>
+    <id>arxiv:2411.04852:hepml-v1</id>
+    <title>Conformalized Credal Regions for Classification with Ambiguous Ground Truth</title>
+    <updated>2026-11-02T10:42:36.846296+00:00</updated>
+    <author>
+      <name>Michele Caprio, David Stutz, Shuo Li, Arnaud Doucet</name>
+    </author>
+    <content type="html">&lt;p&gt;&lt;strong&gt;栏目：&lt;/strong&gt;方法雷达&lt;/p&gt;&lt;p&gt;&lt;strong&gt;分析依据：&lt;/strong&gt;仅标题和摘要；未读取全文。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法：&lt;/strong&gt;Conformal prediction with credal regions for ambiguous labels&lt;/p&gt;&lt;p&gt;&lt;strong&gt;相关性：&lt;/strong&gt;0.62；&lt;strong&gt;证据等级：&lt;/strong&gt;transferable&lt;/p&gt;&lt;p&gt;&lt;strong&gt;初筛理由：&lt;/strong&gt;标签存在歧义时的保形预测与不确定度分解，可迁移到粒子鉴别/喷注标记的标签噪声与校准任务，但未在HEP验证&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法总结（摘要分析）：&lt;/strong&gt;论文提出用保形方法直接构造 credal region，将经典保形预测扩展到真实标签存在歧义（ambiguous ground truth）的分类问题。该方法声称具有保形覆盖保证、相较经典保形预测更小的预测集，并能分解认知与偶然不确定度。摘要在合成数据集和真实数据集上进行经验验证，但未报告具体数据集名称、数值结果或 HEP 场景验证。&lt;/p&gt;&lt;h4&gt;摘要中报告的结论&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;可用保形方法直接构造 credal region，无需先验知识或分布假设来经验推导。&lt;/li&gt;&lt;li&gt;该构造将经典保形预测扩展到给定输入的真实标签不完全已知的歧义标签分类问题。&lt;/li&gt;&lt;li&gt;所构造方法具有保形覆盖保证。&lt;/li&gt;&lt;li&gt;与经典保形预测区域相比，该方法产生更小的预测集。&lt;/li&gt;&lt;li&gt;该方法可分解认知不确定度与偶然不确定度。&lt;/li&gt;&lt;li&gt;摘要在合成数据集和真实数据集上进行了经验验证，但未报告具体数值结果。&lt;/li&gt;&lt;/ul&gt;&lt;h4&gt;对高能实验物理的潜在帮助&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;迁移设想：用于粒子鉴别或喷注标记中标签存在歧义、类别重叠或模拟标签不精确时的置信预测集构造。&lt;/li&gt;&lt;li&gt;迁移设想：在信号/背景分类中输出带覆盖保证的预测集，并分解由标签歧义与模型认知不足带来的不确定度。&lt;/li&gt;&lt;li&gt;迁移设想：辅助评估标签噪声或模拟标签偏差下的分类器校准与预测集可靠性。&lt;/li&gt;&lt;/ul&gt;&lt;h4&gt;迁移风险&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;保形覆盖通常依赖交换性等假设；HEP 中按样本划分、探测器条件或模拟到真实数据的分布偏移可能破坏该假设，需验证。&lt;/li&gt;&lt;li&gt;HEP 的标签歧义可能来自探测器分辨率、重叠事例或模拟标签定义，与论文的歧义标签机制是否一致需核查。&lt;/li&gt;&lt;li&gt;系统误差、nuisance 参数、负权事件、校准与探测器几何等处理摘要未说明，需查阅全文确认其适用性与兼容性。&lt;/li&gt;&lt;li&gt;摘要未报告 HEP 数据验证；迁移到真实对撞机数据前不能假定覆盖保证和预测集缩小仍成立。&lt;/li&gt;&lt;li&gt;若使用加权或负权模拟事件，需确认保形构造是否支持加权经验分布及覆盖语义。&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;strong&gt;最小验证方案：&lt;/strong&gt;选一个带可控标签歧义的 HEP 分类任务，先在小规模公开数据或模拟样本上复现 credal conformal 预测集；按独立产生或运行条件划分校准集与测试集检验经验覆盖是否接近名义水平；比较其预测集大小与经典保形预测；注入模拟到数据重加权或 nuisance 变化检查覆盖退化；审计不确定度分解与校准；若涉及负权事件，先查阅全文确认加权处理并设计相应敏感性检验。&lt;/p&gt;&lt;p&gt;&lt;a href="https://arxiv.org/abs/2411.04852"&gt;arXiv 页面&lt;/a&gt; · &lt;a href="https://github.com/quxnb/hepml-digest/issues/new?title=%5B%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%5D+2411.04852+Conformalized+Credal+Regions+for+Classification+with+Ambiguous+Ground+Truth&amp;amp;body=%23%23+%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%0A%0A-+arXiv%EF%BC%9A%5B2411.04852%5D%28https%3A%2F%2Farxiv.org%2Fabs%2F2411.04852%29%0A-+%E8%AE%BA%E6%96%87%E7%89%88%E6%9C%AC%EF%BC%9A2411.04852%3Av3%0A-+%E5%88%86%E6%9E%90%E4%BE%9D%E6%8D%AE%EF%BC%9A%E4%BB%85%E6%A0%87%E9%A2%98%E5%92%8C%E6%91%98%E8%A6%81%EF%BC%8C%E6%9C%AA%E8%AF%BB%E5%8F%96%E5%85%A8%E6%96%87%0A-+%E6%A0%8F%E7%9B%AE%EF%BC%9A%E6%96%B9%E6%B3%95%E9%9B%B7%E8%BE%BE%0A-+%E5%BD%93%E5%89%8D%E7%9B%B8%E5%85%B3%E6%80%A7%EF%BC%9A0.62%0A-+%E5%BD%93%E5%89%8D%E8%AF%81%E6%8D%AE%E7%AD%89%E7%BA%A7%EF%BC%9Atransferable%0A%0A%23%23+%E5%88%A4%E6%96%AD%0A%0A-+%5B+%5D+%E6%8E%A8%E8%8D%90%E4%BF%9D%E7%95%99%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E5%90%88%E7%90%86%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E8%BF%87%E5%BA%A6%E6%8E%A8%E6%B5%8B%0A-+%5B+%5D+%E5%BA%94%E7%A7%BB%E8%87%B3%E5%8F%A6%E4%B8%80%E4%B8%AA%E6%A0%8F%E7%9B%AE%0A-+%5B+%5D+%E5%BB%BA%E8%AE%AE%E7%B2%BE%E8%AF%BB%E5%85%A8%E6%96%87%0A%0A%23%23+%E8%A1%A5%E5%85%85%E8%AF%B4%E6%98%8E%0A%0A"&gt;提交反馈&lt;/a&gt; · cs.LG, stat.ML&lt;/p&gt;</content>
+    <link href="https://arxiv.org/abs/2411.04852"/>
+    <summary>标签存在歧义时的保形预测与不确定度分解，可迁移到粒子鉴别/喷注标记的标签噪声与校准任务，但未在HEP验证</summary>
+    <category term="calibration"/>
+    <category term="cs.LG"/>
+    <category term="event classification with label ambiguity"/>
+    <category term="jet tagging"/>
+    <category term="particle identification"/>
+    <category term="stat.ML"/>
+    <category term="track:method_radar"/>
+    <category term="uncertainty quantification"/>
+    <published>2024-11-07T16:39:29+00:00</published>
+  </entry>
+  <entry>
+    <id>arxiv:2602.09593:hepml-v1</id>
+    <title>Why Does Counterintuitive Likelihood Behavior Rarely Emerge in Tabular Anomaly Detection?</title>
+    <updated>2026-11-02T10:42:36.846296+00:00</updated>
+    <author>
+      <name>Donghwan Kim, Junghun Phee, Hyunsoo Yoon</name>
+    </author>
+    <content type="html">&lt;p&gt;&lt;strong&gt;栏目：&lt;/strong&gt;方法雷达&lt;/p&gt;&lt;p&gt;&lt;strong&gt;分析依据：&lt;/strong&gt;仅标题和摘要；未读取全文。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法：&lt;/strong&gt;normalizing flows 的似然评分异常检测及其反直觉似然现象分析&lt;/p&gt;&lt;p&gt;&lt;strong&gt;相关性：&lt;/strong&gt;0.55；&lt;strong&gt;证据等级：&lt;/strong&gt;transferable&lt;/p&gt;&lt;p&gt;&lt;strong&gt;初筛理由：&lt;/strong&gt;表格异常检测的似然行为分析可迁移至HEP异常检测，但未在HEP数据验证，需进一步评估&lt;/p&gt;&lt;p&gt;&lt;em&gt;本条目仅完成摘要级筛选。&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;a href="https://arxiv.org/abs/2602.09593"&gt;arXiv 页面&lt;/a&gt; · &lt;a href="https://github.com/quxnb/hepml-digest/issues/new?title=%5B%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%5D+2602.09593+Why+Does+Counterintuitive+Likelihood+Behavior+Rarely+Emerge+in+Tabular+Anomaly+D&amp;amp;body=%23%23+%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%0A%0A-+arXiv%EF%BC%9A%5B2602.09593%5D%28https%3A%2F%2Farxiv.org%2Fabs%2F2602.09593%29%0A-+%E8%AE%BA%E6%96%87%E7%89%88%E6%9C%AC%EF%BC%9A2602.09593%3Av3%0A-+%E5%88%86%E6%9E%90%E4%BE%9D%E6%8D%AE%EF%BC%9A%E4%BB%85%E6%A0%87%E9%A2%98%E5%92%8C%E6%91%98%E8%A6%81%EF%BC%8C%E6%9C%AA%E8%AF%BB%E5%8F%96%E5%85%A8%E6%96%87%0A-+%E6%A0%8F%E7%9B%AE%EF%BC%9A%E6%96%B9%E6%B3%95%E9%9B%B7%E8%BE%BE%0A-+%E5%BD%93%E5%89%8D%E7%9B%B8%E5%85%B3%E6%80%A7%EF%BC%9A0.55%0A-+%E5%BD%93%E5%89%8D%E8%AF%81%E6%8D%AE%E7%AD%89%E7%BA%A7%EF%BC%9Atransferable%0A%0A%23%23+%E5%88%A4%E6%96%AD%0A%0A-+%5B+%5D+%E6%8E%A8%E8%8D%90%E4%BF%9D%E7%95%99%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E5%90%88%E7%90%86%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E8%BF%87%E5%BA%A6%E6%8E%A8%E6%B5%8B%0A-+%5B+%5D+%E5%BA%94%E7%A7%BB%E8%87%B3%E5%8F%A6%E4%B8%80%E4%B8%AA%E6%A0%8F%E7%9B%AE%0A-+%5B+%5D+%E5%BB%BA%E8%AE%AE%E7%B2%BE%E8%AF%BB%E5%85%A8%E6%96%87%0A%0A%23%23+%E8%A1%A5%E5%85%85%E8%AF%B4%E6%98%8E%0A%0A"&gt;提交反馈&lt;/a&gt; · cs.AI, cs.LG&lt;/p&gt;</content>
+    <link href="https://arxiv.org/abs/2602.09593"/>
+    <summary>表格异常检测的似然行为分析可迁移至HEP异常检测，但未在HEP数据验证，需进一步评估</summary>
+    <category term="cs.AI"/>
+    <category term="cs.LG"/>
+    <category term="track:method_radar"/>
+    <category term="异常检测"/>
+    <category term="数据质量监控"/>
+    <category term="新物理搜寻"/>
+    <published>2026-02-10T09:47:34+00:00</published>
+  </entry>
+  <entry>
+    <id>arxiv:2604.12022:hepml-v1</id>
+    <title>Simulation-Based Inference with Convolutional Maximum Mean Discrepancy for Noisy Data</title>
+    <updated>2026-11-02T10:42:36.846296+00:00</updated>
+    <author>
+      <name>Ritwik Vashistha, Jeff M. Phillips, Abhra Sarkar, Arya Farahi</name>
+    </author>
+    <content type="html">&lt;p&gt;&lt;strong&gt;栏目：&lt;/strong&gt;方法雷达&lt;/p&gt;&lt;p&gt;&lt;strong&gt;分析依据：&lt;/strong&gt;仅标题和摘要；未读取全文。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法：&lt;/strong&gt;卷积最大均值差异（convolutional MMD）驱动的无似然仿真推断&lt;/p&gt;&lt;p&gt;&lt;strong&gt;相关性：&lt;/strong&gt;0.55；&lt;strong&gt;证据等级：&lt;/strong&gt;transferable&lt;/p&gt;&lt;p&gt;&lt;strong&gt;初筛理由：&lt;/strong&gt;无似然推断与测量噪声卷积处理可迁移到HEP参数估计与展开，但未在HEP验证&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法总结（摘要分析）：&lt;/strong&gt;论文提出卷积最大均值差异（convolutional MMD）框架，用于测量噪声服从已知分布、可能异方差时的无似然仿真推断。方法在噪声卷积后比较分布，保持核条件度量有效性，给出有限样本偏差界及噪声下检验与核平滑的等价性；据此构造估计量并证明一致性、渐近正态性，提供随机梯度下降实现。摘要报告在模拟及天文学、人体测量学和社会科学应用中有效，未涉及高能物理。&lt;/p&gt;&lt;h4&gt;摘要中报告的结论&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;提出卷积最大均值差异，用于已知噪声分布（可异方差）下的无似然仿真推断。&lt;/li&gt;&lt;li&gt;在标准核条件下，噪声卷积后的分布比较仍保持度量有效性。&lt;/li&gt;&lt;li&gt;给出不受测量误差影响的有限样本偏差界，并建立噪声下检验与核平滑的等价性。&lt;/li&gt;&lt;li&gt;提出基于该差异的估计量，证明其一致性和渐近正态性，并提供随机梯度下降实现。&lt;/li&gt;&lt;li&gt;摘要报告方法在模拟以及天文学、人体测量学和社会科学应用中有效；未提及高能物理验证。&lt;/li&gt;&lt;/ul&gt;&lt;h4&gt;对高能实验物理的潜在帮助&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;迁移设想：将探测器 smearing/分辨率效应视为已知噪声分布，用卷积MMD做无似然参数估计。&lt;/li&gt;&lt;li&gt;迁移设想：在展开（unfolding）或微分截面估计中，用噪声卷积后的模拟样本与数据比较，减少对显式似然的依赖。&lt;/li&gt;&lt;li&gt;迁移设想：把校准和部分 nuisance 参数纳入仿真生成器，用MMD目标联合估计物理参数与噪声/校准参数。&lt;/li&gt;&lt;li&gt;迁移设想：对异方差测量误差（如随能量/角度变化的探测器分辨率）进行鲁棒推断。&lt;/li&gt;&lt;/ul&gt;&lt;h4&gt;迁移风险&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;方法假设噪声分布已知；HEP中探测器响应、重建偏差和本底未必能简化为已知噪声卷积，需核查误设敏感性。&lt;/li&gt;&lt;li&gt;摘要未说明负权事件或加权样本下MMD估计是否适用，需查阅全文确认。&lt;/li&gt;&lt;li&gt;simulation-to-data shift（生成器与真实数据差异）可能破坏核比较有效性；摘要未说明相关校准或域适应处理。&lt;/li&gt;&lt;li&gt; nuisance 参数、系统误差和探测器几何在摘要中未说明，需全文确认其处理方式。&lt;/li&gt;&lt;li&gt;Lorentz/置换对称性未在摘要中讨论；HEP中若需对称性约束，需额外验证。&lt;/li&gt;&lt;li&gt;推理延迟：SGD实现虽高效，但摘要未报告HEP规模下的实时性或计算成本。&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;strong&gt;最小验证方案：&lt;/strong&gt;最小可行验证：选用公开HEP模拟或玩具探测器，构造已知异方差噪声的卷积模型；先做闭合测试，比较卷积MMD估计与基线似然/分箱方法的偏差与覆盖；注入一个校准 nuisance 参数和模拟-数据偏移，检查鲁棒性；若涉及加权事件，单独测试负权影响；最后在控制区做数据-模拟一致性检查并测量推理延迟。&lt;/p&gt;&lt;p&gt;&lt;a href="https://arxiv.org/abs/2604.12022"&gt;arXiv 页面&lt;/a&gt; · &lt;a href="https://github.com/quxnb/hepml-digest/issues/new?title=%5B%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%5D+2604.12022+Simulation-Based+Inference+with+Convolutional+Maximum+Mean+Discrepancy+for+Noisy&amp;amp;body=%23%23+%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%0A%0A-+arXiv%EF%BC%9A%5B2604.12022%5D%28https%3A%2F%2Farxiv.org%2Fabs%2F2604.12022%29%0A-+%E8%AE%BA%E6%96%87%E7%89%88%E6%9C%AC%EF%BC%9A2604.12022%3Av2%0A-+%E5%88%86%E6%9E%90%E4%BE%9D%E6%8D%AE%EF%BC%9A%E4%BB%85%E6%A0%87%E9%A2%98%E5%92%8C%E6%91%98%E8%A6%81%EF%BC%8C%E6%9C%AA%E8%AF%BB%E5%8F%96%E5%85%A8%E6%96%87%0A-+%E6%A0%8F%E7%9B%AE%EF%BC%9A%E6%96%B9%E6%B3%95%E9%9B%B7%E8%BE%BE%0A-+%E5%BD%93%E5%89%8D%E7%9B%B8%E5%85%B3%E6%80%A7%EF%BC%9A0.55%0A-+%E5%BD%93%E5%89%8D%E8%AF%81%E6%8D%AE%E7%AD%89%E7%BA%A7%EF%BC%9Atransferable%0A%0A%23%23+%E5%88%A4%E6%96%AD%0A%0A-+%5B+%5D+%E6%8E%A8%E8%8D%90%E4%BF%9D%E7%95%99%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E5%90%88%E7%90%86%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E8%BF%87%E5%BA%A6%E6%8E%A8%E6%B5%8B%0A-+%5B+%5D+%E5%BA%94%E7%A7%BB%E8%87%B3%E5%8F%A6%E4%B8%80%E4%B8%AA%E6%A0%8F%E7%9B%AE%0A-+%5B+%5D+%E5%BB%BA%E8%AE%AE%E7%B2%BE%E8%AF%BB%E5%85%A8%E6%96%87%0A%0A%23%23+%E8%A1%A5%E5%85%85%E8%AF%B4%E6%98%8E%0A%0A"&gt;提交反馈&lt;/a&gt; · stat.ME, stat.ML&lt;/p&gt;</content>
+    <link href="https://arxiv.org/abs/2604.12022"/>
+    <summary>无似然推断与测量噪声卷积处理可迁移到HEP参数估计与展开，但未在HEP验证</summary>
+    <category term="stat.ME"/>
+    <category term="stat.ML"/>
+    <category term="track:method_radar"/>
+    <category term="参数估计"/>
+    <category term="展开"/>
+    <category term="探测器噪声/测量误差校正"/>
+    <category term="无似然推断"/>
+    <published>2026-04-13T20:06:41+00:00</published>
+  </entry>
+  <entry>
+    <id>arxiv:2610.37398:hepml-v1</id>
+    <title>An end-to-end framework for uncertainty-aware validation of generative models</title>
+    <updated>2026-11-02T10:42:36.846296+00:00</updated>
+    <author>
+      <name>Giada Badaracco, Sean Benevedes, Christina Reissel, Philip Harris, Gaia Grosso</name>
+    </author>
+    <content type="html">&lt;p&gt;&lt;strong&gt;栏目：&lt;/strong&gt;HEP 直接应用&lt;/p&gt;&lt;p&gt;&lt;strong&gt;分析依据：&lt;/strong&gt;仅标题和摘要；未读取全文。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法：&lt;/strong&gt;高斯混合模型密度估计结合不确定性量化的复合拟合优度检验（profile nuisance parameters）&lt;/p&gt;&lt;p&gt;&lt;strong&gt;相关性：&lt;/strong&gt;0.85；&lt;strong&gt;证据等级：&lt;/strong&gt;direct&lt;/p&gt;&lt;p&gt;&lt;strong&gt;初筛理由：&lt;/strong&gt;SIGMA将生成模型拟合不确定性传播进拟合优度检验，已在QCD背景基准验证，直接服务HEP背景估计与生成模型验证。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法总结（摘要分析）：&lt;/strong&gt;SIGMA将高斯混合模型密度估计与可处理的不确定性量化结合，把生成模型拟合的统计误差作为 nuisance 参数 profile 进拟合优度检验，将点零假设推广为复合零假设；若传播的不确定性忠实覆盖拟合误差，拒绝可解释为真实误建模，而非检验集足够大以致分辨拟合误差。摘要报告在二维受控玩具模型和对撞机QCD背景基准上演示，含不确定性时同一模型可在比标准检验大约一个数量级更大的检验集上被信任。&lt;/p&gt;&lt;h4&gt;摘要中报告的结论&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;SIGMA将密度估计与有原则的不确定性量化结合，并采用不确定性可处理的高斯混合模型。&lt;/li&gt;&lt;li&gt;论文构造新的拟合优度检验，将拟合不确定性作为 nuisance 参数 profile，从而把传统点零假设推广为复合零假设。&lt;/li&gt;&lt;li&gt;在传播不确定性忠实覆盖拟合误差的前提下，检验拒绝表示真实误建模，而不是测试集大到足以分辨拟合误差。&lt;/li&gt;&lt;li&gt;框架在受控二维玩具模型和建模QCD背景过程的碰撞机物理基准上进行了演示。&lt;/li&gt;&lt;li&gt;含不确定性时，同一模型可在比标准检验允许大约一个数量级更大的测试集上被信任。&lt;/li&gt;&lt;/ul&gt;&lt;h4&gt;对高能实验物理的潜在帮助&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;迁移设想：将SIGMA用于生成模型背景估计的验证，把GMM拟合不确定性传播到拟合优度检验，降低有限训练集导致的假拒绝。&lt;/li&gt;&lt;li&gt;迁移设想：作为 nuisance-aware 的拟合优度组件，接入对撞机事件生成器或探测器模拟替代模型的闭合检验流程。&lt;/li&gt;&lt;li&gt;迁移设想：在低维或经降维的特征空间中，对数据驱动背景模型进行复合零假设检验，并与标准GOF比较功效和假拒绝率。&lt;/li&gt;&lt;/ul&gt;&lt;h4&gt;迁移风险&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;GMM在高维、强相关或多模态事件特征中的可扩展性和混合模型假设可能限制直接迁移；需核查降维或特征选择对检验的影响。&lt;/li&gt;&lt;li&gt;摘要未说明系统误差、探测器几何、Lorentz/置换对称性等处理，需查阅全文确认；这些因素可能影响不确定性覆盖和检验解释。&lt;/li&gt;&lt;li&gt;“不确定性忠实覆盖拟合误差”是检验解释的关键前提；在simulation-to-data shift或校准偏差下可能失效，需独立验证。&lt;/li&gt;&lt;li&gt;nuisance参数profile的计算成本、参数相关性和有限训练集下的稳定性需评估；摘要未说明这些细节。&lt;/li&gt;&lt;li&gt;测试集可放大约一个数量级的结论来自特定玩具和QCD基准，不能直接外推到其他HEP过程或真实数据。&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;strong&gt;最小验证方案：&lt;/strong&gt;最小可行验证：复现二维玩具和QCD背景基准；用伪实验检查不确定性覆盖率和复合零假设下的假拒绝率；注入已知误建模并比较标准GOF与SIGMA的拒绝功效；改变训练集和测试集规模检验“约一个数量级”结论的稳健性；在含探测器效应的模拟事件中测试降维后GMM的可行性、nuisance profiling稳定性和推理延迟；若用于真实数据，先在控制区验证校准和覆盖，再迁移到信号区。&lt;/p&gt;&lt;p&gt;&lt;a href="https://arxiv.org/abs/2610.37398"&gt;arXiv 页面&lt;/a&gt; · &lt;a href="https://github.com/quxnb/hepml-digest/issues/new?title=%5B%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%5D+2610.37398+An+end-to-end+framework+for+uncertainty-aware+validation+of+generative+models&amp;amp;body=%23%23+%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%0A%0A-+arXiv%EF%BC%9A%5B2610.37398%5D%28https%3A%2F%2Farxiv.org%2Fabs%2F2610.37398%29%0A-+%E8%AE%BA%E6%96%87%E7%89%88%E6%9C%AC%EF%BC%9A2610.37398%3Av1%0A-+%E5%88%86%E6%9E%90%E4%BE%9D%E6%8D%AE%EF%BC%9A%E4%BB%85%E6%A0%87%E9%A2%98%E5%92%8C%E6%91%98%E8%A6%81%EF%BC%8C%E6%9C%AA%E8%AF%BB%E5%8F%96%E5%85%A8%E6%96%87%0A-+%E6%A0%8F%E7%9B%AE%EF%BC%9AHEP+%E7%9B%B4%E6%8E%A5%E5%BA%94%E7%94%A8%0A-+%E5%BD%93%E5%89%8D%E7%9B%B8%E5%85%B3%E6%80%A7%EF%BC%9A0.85%0A-+%E5%BD%93%E5%89%8D%E8%AF%81%E6%8D%AE%E7%AD%89%E7%BA%A7%EF%BC%9Adirect%0A%0A%23%23+%E5%88%A4%E6%96%AD%0A%0A-+%5B+%5D+%E6%8E%A8%E8%8D%90%E4%BF%9D%E7%95%99%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E5%90%88%E7%90%86%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E8%BF%87%E5%BA%A6%E6%8E%A8%E6%B5%8B%0A-+%5B+%5D+%E5%BA%94%E7%A7%BB%E8%87%B3%E5%8F%A6%E4%B8%80%E4%B8%AA%E6%A0%8F%E7%9B%AE%0A-+%5B+%5D+%E5%BB%BA%E8%AE%AE%E7%B2%BE%E8%AF%BB%E5%85%A8%E6%96%87%0A%0A%23%23+%E8%A1%A5%E5%85%85%E8%AF%B4%E6%98%8E%0A%0A"&gt;提交反馈&lt;/a&gt; · cs.LG, hep-ex, hep-ph, stat.ML&lt;/p&gt;</content>
+    <link href="https://arxiv.org/abs/2610.37398"/>
+    <summary>SIGMA将生成模型拟合不确定性传播进拟合优度检验，已在QCD背景基准验证，直接服务HEP背景估计与生成模型验证。</summary>
+    <category term="cs.LG"/>
+    <category term="hep-ex"/>
+    <category term="hep-ph"/>
+    <category term="stat.ML"/>
+    <category term="track:hep_application"/>
+    <category term="不确定度量化"/>
+    <category term="无似然推断"/>
+    <category term="生成模型验证"/>
+    <category term="系统误差处理"/>
+    <category term="背景估计"/>
+    <published>2026-10-27T15:17:16+00:00</published>
+  </entry>
+  <entry>
+    <id>arxiv:2502.01920:hepml-v1</id>
+    <title>Anomaly Detection via Autoencoder Composite Features and NCE</title>
+    <updated>2026-11-02T10:42:36.846296+00:00</updated>
+    <author>
+      <name>Yalin Liao, Austin J. Brockmeier</name>
+    </author>
+    <content type="html">&lt;p&gt;&lt;strong&gt;栏目：&lt;/strong&gt;方法雷达&lt;/p&gt;&lt;p&gt;&lt;strong&gt;分析依据：&lt;/strong&gt;仅标题和摘要；未读取全文。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法：&lt;/strong&gt;解耦自编码器+噪声对比估计(NCE)概率密度异常打分&lt;/p&gt;&lt;p&gt;&lt;strong&gt;相关性：&lt;/strong&gt;0.55；&lt;strong&gt;证据等级：&lt;/strong&gt;transferable&lt;/p&gt;&lt;p&gt;&lt;strong&gt;初筛理由：&lt;/strong&gt;异常检测方法通用，可迁移至HEP异常检测但未在HEP数据验证&lt;/p&gt;&lt;p&gt;&lt;em&gt;本条目仅完成摘要级筛选。&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;a href="https://arxiv.org/abs/2502.01920"&gt;arXiv 页面&lt;/a&gt; · &lt;a href="https://github.com/quxnb/hepml-digest/issues/new?title=%5B%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%5D+2502.01920+Anomaly+Detection+via+Autoencoder+Composite+Features+and+NCE&amp;amp;body=%23%23+%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%0A%0A-+arXiv%EF%BC%9A%5B2502.01920%5D%28https%3A%2F%2Farxiv.org%2Fabs%2F2502.01920%29%0A-+%E8%AE%BA%E6%96%87%E7%89%88%E6%9C%AC%EF%BC%9A2502.01920%3Av3%0A-+%E5%88%86%E6%9E%90%E4%BE%9D%E6%8D%AE%EF%BC%9A%E4%BB%85%E6%A0%87%E9%A2%98%E5%92%8C%E6%91%98%E8%A6%81%EF%BC%8C%E6%9C%AA%E8%AF%BB%E5%8F%96%E5%85%A8%E6%96%87%0A-+%E6%A0%8F%E7%9B%AE%EF%BC%9A%E6%96%B9%E6%B3%95%E9%9B%B7%E8%BE%BE%0A-+%E5%BD%93%E5%89%8D%E7%9B%B8%E5%85%B3%E6%80%A7%EF%BC%9A0.55%0A-+%E5%BD%93%E5%89%8D%E8%AF%81%E6%8D%AE%E7%AD%89%E7%BA%A7%EF%BC%9Atransferable%0A%0A%23%23+%E5%88%A4%E6%96%AD%0A%0A-+%5B+%5D+%E6%8E%A8%E8%8D%90%E4%BF%9D%E7%95%99%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E5%90%88%E7%90%86%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E8%BF%87%E5%BA%A6%E6%8E%A8%E6%B5%8B%0A-+%5B+%5D+%E5%BA%94%E7%A7%BB%E8%87%B3%E5%8F%A6%E4%B8%80%E4%B8%AA%E6%A0%8F%E7%9B%AE%0A-+%5B+%5D+%E5%BB%BA%E8%AE%AE%E7%B2%BE%E8%AF%BB%E5%85%A8%E6%96%87%0A%0A%23%23+%E8%A1%A5%E5%85%85%E8%AF%B4%E6%98%8E%0A%0A"&gt;提交反馈&lt;/a&gt; · cs.LG&lt;/p&gt;</content>
+    <link href="https://arxiv.org/abs/2502.01920"/>
+    <summary>异常检测方法通用，可迁移至HEP异常检测但未在HEP数据验证</summary>
+    <category term="cs.LG"/>
+    <category term="track:method_radar"/>
+    <category term="异常检测"/>
+    <category term="数据质量监控"/>
+    <category term="触发筛选"/>
+    <published>2025-02-04T01:29:22+00:00</published>
+  </entry>
+  <entry>
+    <id>arxiv:2610.35568:hepml-v1</id>
+    <title>ExCal: Optimization-Free Multivariate Time Series Anomaly Detection via Excess Calibration</title>
+    <updated>2026-11-02T10:42:36.846296+00:00</updated>
+    <author>
+      <name>Kadir-Kaan Özer, René Ebeling, Markus Enzweiler</name>
+    </author>
+    <content type="html">&lt;p&gt;&lt;strong&gt;栏目：&lt;/strong&gt;方法雷达&lt;/p&gt;&lt;p&gt;&lt;strong&gt;分析依据：&lt;/strong&gt;仅标题和摘要；未读取全文。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法：&lt;/strong&gt;无梯度优化的多专家状态检索+信号/导数子空间+稳健统计（excess calibration，免训练异常检测）&lt;/p&gt;&lt;p&gt;&lt;strong&gt;相关性：&lt;/strong&gt;0.55；&lt;strong&gt;证据等级：&lt;/strong&gt;transferable&lt;/p&gt;&lt;p&gt;&lt;strong&gt;初筛理由：&lt;/strong&gt;免标签、免优化的多变量时序异常检测，匹配HEP触发/监控异常检测任务，但仅在TSB-AD基准验证，迁移需评估&lt;/p&gt;&lt;p&gt;&lt;em&gt;本条目仅完成摘要级筛选。&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;a href="https://arxiv.org/abs/2610.35568"&gt;arXiv 页面&lt;/a&gt; · &lt;a href="https://github.com/quxnb/hepml-digest/issues/new?title=%5B%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%5D+2610.35568+ExCal%3A+Optimization-Free+Multivariate+Time+Series+Anomaly+Detection+via+Excess+C&amp;amp;body=%23%23+%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%0A%0A-+arXiv%EF%BC%9A%5B2610.35568%5D%28https%3A%2F%2Farxiv.org%2Fabs%2F2610.35568%29%0A-+%E8%AE%BA%E6%96%87%E7%89%88%E6%9C%AC%EF%BC%9A2610.35568%3Av1%0A-+%E5%88%86%E6%9E%90%E4%BE%9D%E6%8D%AE%EF%BC%9A%E4%BB%85%E6%A0%87%E9%A2%98%E5%92%8C%E6%91%98%E8%A6%81%EF%BC%8C%E6%9C%AA%E8%AF%BB%E5%8F%96%E5%85%A8%E6%96%87%0A-+%E6%A0%8F%E7%9B%AE%EF%BC%9A%E6%96%B9%E6%B3%95%E9%9B%B7%E8%BE%BE%0A-+%E5%BD%93%E5%89%8D%E7%9B%B8%E5%85%B3%E6%80%A7%EF%BC%9A0.55%0A-+%E5%BD%93%E5%89%8D%E8%AF%81%E6%8D%AE%E7%AD%89%E7%BA%A7%EF%BC%9Atransferable%0A%0A%23%23+%E5%88%A4%E6%96%AD%0A%0A-+%5B+%5D+%E6%8E%A8%E8%8D%90%E4%BF%9D%E7%95%99%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E5%90%88%E7%90%86%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E8%BF%87%E5%BA%A6%E6%8E%A8%E6%B5%8B%0A-+%5B+%5D+%E5%BA%94%E7%A7%BB%E8%87%B3%E5%8F%A6%E4%B8%80%E4%B8%AA%E6%A0%8F%E7%9B%AE%0A-+%5B+%5D+%E5%BB%BA%E8%AE%AE%E7%B2%BE%E8%AF%BB%E5%85%A8%E6%96%87%0A%0A%23%23+%E8%A1%A5%E5%85%85%E8%AF%B4%E6%98%8E%0A%0A"&gt;提交反馈&lt;/a&gt; · cs.AI, cs.LG&lt;/p&gt;</content>
+    <link href="https://arxiv.org/abs/2610.35568"/>
+    <summary>免标签、免优化的多变量时序异常检测，匹配HEP触发/监控异常检测任务，但仅在TSB-AD基准验证，迁移需评估</summary>
+    <category term="cs.AI"/>
+    <category term="cs.LG"/>
+    <category term="track:method_radar"/>
+    <category term="异常检测"/>
+    <category term="探测器监控数据流异常识别"/>
+    <category term="触发"/>
+    <published>2026-10-26T15:06:39+00:00</published>
+  </entry>
+  <entry>
+    <id>arxiv:2609.09785:hepml-v1</id>
+    <title>More QCD Masterclass Lectures on Jet Physics and Machine Learning</title>
+    <updated>2026-11-02T10:42:36.846296+00:00</updated>
+    <author>
+      <name>Andrew J. Larkoski</name>
+    </author>
+    <content type="html">&lt;p&gt;&lt;strong&gt;栏目：&lt;/strong&gt;HEP 直接应用&lt;/p&gt;&lt;p&gt;&lt;strong&gt;分析依据：&lt;/strong&gt;仅标题和摘要；未读取全文。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法：&lt;/strong&gt;综述性讲义，涵盖事件度量、异常检测、标度律、分类性能极限与时空对称性保持的回归&lt;/p&gt;&lt;p&gt;&lt;strong&gt;相关性：&lt;/strong&gt;0.85；&lt;strong&gt;证据等级：&lt;/strong&gt;direct&lt;/p&gt;&lt;p&gt;&lt;strong&gt;初筛理由：&lt;/strong&gt;聚焦QCD喷注与ML交叉，直接讨论异常检测等HEP任务，方法价值高&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法总结（摘要分析）：&lt;/strong&gt;该文是2026年QCD Masterclass的综述性讲义，补充2024年已发表讲义，介绍近年来流行的若干主题：事件度量、异常检测、标度律、分类性能极限，以及保持时空对称性的回归。作者说明这些问题由QCD中的机器学习应用驱动，但讲义不讨论机器学习实现细节；所有结果均由QCD基本原理推出，并包含一些新推导，尤其与异常检测相关。摘要未报告具体数据集、数值结果或真实探测器数据验证。&lt;/p&gt;&lt;h4&gt;摘要中报告的结论&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;该讲义补充2024年讲义，并介绍事件度量、异常检测、标度律、分类性能极限和保持时空对称性的回归等主题。&lt;/li&gt;&lt;li&gt;这些问题由QCD中的机器学习应用驱动，但讲义不讨论机器学习细节。&lt;/li&gt;&lt;li&gt;所有结果均由QCD基本原理推出，部分新结果尤其与异常检测相关。&lt;/li&gt;&lt;/ul&gt;&lt;h4&gt;对高能实验物理的潜在帮助&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;迁移设想：将事件度量与异常检测用于对撞机模型无关的新物理搜索，并以QCD喷注背景为动机。&lt;/li&gt;&lt;li&gt;迁移设想：用标度律指导喷注 tagging 的模型规模与训练数据量选择。&lt;/li&gt;&lt;li&gt;迁移设想：用分类性能极限为喷注鉴别器设定理论基准或性能上限。&lt;/li&gt;&lt;li&gt;迁移设想：将保持时空对称性的回归用于喷注能量/动量校准，并显式考虑Lorentz与置换对称性。&lt;/li&gt;&lt;/ul&gt;&lt;h4&gt;迁移风险&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;摘要未说明机器学习实现细节，异常检测等新推导向实验分析的迁移需全文确认。&lt;/li&gt;&lt;li&gt;摘要未说明系统误差、 nuisance 参数、负权事件或校准处理，需查阅全文确认。&lt;/li&gt;&lt;li&gt;摘要未说明 simulation-to-data shift 的评估，异常检测和对称性回归在真实数据上的表现未知。&lt;/li&gt;&lt;li&gt;摘要未说明探测器几何效应与推理延迟，迁移到探测器级任务需额外验证。&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;strong&gt;最小验证方案：&lt;/strong&gt;在公开模拟喷注样本上复现事件度量与异常检测流程，固定训练/验证/测试划分并与基线比较；对对称性回归检查Lorentz/置换等变性；加入探测器 smearing、校准变化和类别不平衡等数据扰动评估稳健性；记录推理延迟。&lt;/p&gt;&lt;p&gt;&lt;a href="https://arxiv.org/abs/2609.09785"&gt;arXiv 页面&lt;/a&gt; · &lt;a href="https://github.com/quxnb/hepml-digest/issues/new?title=%5B%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%5D+2609.09785+More+QCD+Masterclass+Lectures+on+Jet+Physics+and+Machine+Learning&amp;amp;body=%23%23+%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%0A%0A-+arXiv%EF%BC%9A%5B2609.09785%5D%28https%3A%2F%2Farxiv.org%2Fabs%2F2609.09785%29%0A-+%E8%AE%BA%E6%96%87%E7%89%88%E6%9C%AC%EF%BC%9A2609.09785%3Av2%0A-+%E5%88%86%E6%9E%90%E4%BE%9D%E6%8D%AE%EF%BC%9A%E4%BB%85%E6%A0%87%E9%A2%98%E5%92%8C%E6%91%98%E8%A6%81%EF%BC%8C%E6%9C%AA%E8%AF%BB%E5%8F%96%E5%85%A8%E6%96%87%0A-+%E6%A0%8F%E7%9B%AE%EF%BC%9AHEP+%E7%9B%B4%E6%8E%A5%E5%BA%94%E7%94%A8%0A-+%E5%BD%93%E5%89%8D%E7%9B%B8%E5%85%B3%E6%80%A7%EF%BC%9A0.85%0A-+%E5%BD%93%E5%89%8D%E8%AF%81%E6%8D%AE%E7%AD%89%E7%BA%A7%EF%BC%9Adirect%0A%0A%23%23+%E5%88%A4%E6%96%AD%0A%0A-+%5B+%5D+%E6%8E%A8%E8%8D%90%E4%BF%9D%E7%95%99%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E5%90%88%E7%90%86%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E8%BF%87%E5%BA%A6%E6%8E%A8%E6%B5%8B%0A-+%5B+%5D+%E5%BA%94%E7%A7%BB%E8%87%B3%E5%8F%A6%E4%B8%80%E4%B8%AA%E6%A0%8F%E7%9B%AE%0A-+%5B+%5D+%E5%BB%BA%E8%AE%AE%E7%B2%BE%E8%AF%BB%E5%85%A8%E6%96%87%0A%0A%23%23+%E8%A1%A5%E5%85%85%E8%AF%B4%E6%98%8E%0A%0A"&gt;提交反馈&lt;/a&gt; · hep-ex, hep-ph&lt;/p&gt;</content>
+    <link href="https://arxiv.org/abs/2609.09785"/>
+    <summary>聚焦QCD喷注与ML交叉，直接讨论异常检测等HEP任务，方法价值高</summary>
+    <category term="hep-ex"/>
+    <category term="hep-ph"/>
+    <category term="track:hep_application"/>
+    <category term="事件分类"/>
+    <category term="喷注物理"/>
+    <category term="对称性保持回归"/>
+    <category term="异常检测"/>
+    <category term="新物理搜索"/>
+    <published>2026-09-09T06:34:29+00:00</published>
+  </entry>
+  <entry>
+    <id>arxiv:2607.16675:hepml-v1</id>
+    <title>Isotonic Conformal Inference</title>
+    <updated>2026-11-02T10:42:36.846296+00:00</updated>
+    <author>
+      <name>Daniel Bensimon, Zhiquan Liu, Sean X. Yu, Eric D. Kolaczyk, Archer Y. Yang</name>
+    </author>
+    <content type="html">&lt;p&gt;&lt;strong&gt;栏目：&lt;/strong&gt;方法雷达&lt;/p&gt;&lt;p&gt;&lt;strong&gt;分析依据：&lt;/strong&gt;仅标题和摘要；未读取全文。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法：&lt;/strong&gt;等渗回归与保形推断（conformal prediction）结合的局部校准与多重检验框架&lt;/p&gt;&lt;p&gt;&lt;strong&gt;相关性：&lt;/strong&gt;0.55；&lt;strong&gt;证据等级：&lt;/strong&gt;transferable&lt;/p&gt;&lt;p&gt;&lt;strong&gt;初筛理由：&lt;/strong&gt;保形预测与多重检验可迁移至筛选与无似然推断，但未在HEP验证，迁移链条中等&lt;/p&gt;&lt;p&gt;&lt;em&gt;本条目仅完成摘要级筛选。&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;a href="https://arxiv.org/abs/2607.16675"&gt;arXiv 页面&lt;/a&gt; · &lt;a href="https://github.com/quxnb/hepml-digest/issues/new?title=%5B%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%5D+2607.16675+Isotonic+Conformal+Inference&amp;amp;body=%23%23+%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%0A%0A-+arXiv%EF%BC%9A%5B2607.16675%5D%28https%3A%2F%2Farxiv.org%2Fabs%2F2607.16675%29%0A-+%E8%AE%BA%E6%96%87%E7%89%88%E6%9C%AC%EF%BC%9A2607.16675%3Av2%0A-+%E5%88%86%E6%9E%90%E4%BE%9D%E6%8D%AE%EF%BC%9A%E4%BB%85%E6%A0%87%E9%A2%98%E5%92%8C%E6%91%98%E8%A6%81%EF%BC%8C%E6%9C%AA%E8%AF%BB%E5%8F%96%E5%85%A8%E6%96%87%0A-+%E6%A0%8F%E7%9B%AE%EF%BC%9A%E6%96%B9%E6%B3%95%E9%9B%B7%E8%BE%BE%0A-+%E5%BD%93%E5%89%8D%E7%9B%B8%E5%85%B3%E6%80%A7%EF%BC%9A0.55%0A-+%E5%BD%93%E5%89%8D%E8%AF%81%E6%8D%AE%E7%AD%89%E7%BA%A7%EF%BC%9Atransferable%0A%0A%23%23+%E5%88%A4%E6%96%AD%0A%0A-+%5B+%5D+%E6%8E%A8%E8%8D%90%E4%BF%9D%E7%95%99%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E5%90%88%E7%90%86%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E8%BF%87%E5%BA%A6%E6%8E%A8%E6%B5%8B%0A-+%5B+%5D+%E5%BA%94%E7%A7%BB%E8%87%B3%E5%8F%A6%E4%B8%80%E4%B8%AA%E6%A0%8F%E7%9B%AE%0A-+%5B+%5D+%E5%BB%BA%E8%AE%AE%E7%B2%BE%E8%AF%BB%E5%85%A8%E6%96%87%0A%0A%23%23+%E8%A1%A5%E5%85%85%E8%AF%B4%E6%98%8E%0A%0A"&gt;提交反馈&lt;/a&gt; · cs.LG, stat.ME, stat.ML&lt;/p&gt;</content>
+    <link href="https://arxiv.org/abs/2607.16675"/>
+    <summary>保形预测与多重检验可迁移至筛选与无似然推断，但未在HEP验证，迁移链条中等</summary>
+    <category term="cs.LG"/>
+    <category term="stat.ME"/>
+    <category term="stat.ML"/>
+    <category term="track:method_radar"/>
+    <category term="候选事件/粒子筛选的FDR控制"/>
+    <category term="异常检测中的条件覆盖保证"/>
+    <category term="无似然推断中的置信区间构建"/>
+    <published>2026-07-18T07:11:05+00:00</published>
+  </entry>
+  <entry>
+    <id>arxiv:2604.09809:hepml-v1</id>
+    <title>Particle transformers for identifying Lorentz-boosted Higgs bosons decaying to a pair of W bosons</title>
+    <updated>2026-11-02T10:42:36.846296+00:00</updated>
+    <author>
+      <name>CMS Collaboration</name>
+    </author>
+    <content type="html">&lt;p&gt;&lt;strong&gt;栏目：&lt;/strong&gt;HEP 直接应用&lt;/p&gt;&lt;p&gt;&lt;strong&gt;分析依据：&lt;/strong&gt;仅标题和摘要；未读取全文。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法：&lt;/strong&gt;Particle transformer (self-attention-based deep neural network)&lt;/p&gt;&lt;p&gt;&lt;strong&gt;相关性：&lt;/strong&gt;1.00；&lt;strong&gt;证据等级：&lt;/strong&gt;direct&lt;/p&gt;&lt;p&gt;&lt;strong&gt;初筛理由：&lt;/strong&gt;CMS官方PaRT分类器，直接用于LHC boosted喷注标记，含数据校准与刻度因子&lt;/p&gt;&lt;p&gt;&lt;em&gt;本条目仅完成摘要级筛选。&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;a href="https://arxiv.org/abs/2604.09809"&gt;arXiv 页面&lt;/a&gt; · &lt;a href="https://github.com/quxnb/hepml-digest/issues/new?title=%5B%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%5D+2604.09809+Particle+transformers+for+identifying+Lorentz-boosted+Higgs+bosons+decaying+to+a&amp;amp;body=%23%23+%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%0A%0A-+arXiv%EF%BC%9A%5B2604.09809%5D%28https%3A%2F%2Farxiv.org%2Fabs%2F2604.09809%29%0A-+%E8%AE%BA%E6%96%87%E7%89%88%E6%9C%AC%EF%BC%9A2604.09809%3Av2%0A-+%E5%88%86%E6%9E%90%E4%BE%9D%E6%8D%AE%EF%BC%9A%E4%BB%85%E6%A0%87%E9%A2%98%E5%92%8C%E6%91%98%E8%A6%81%EF%BC%8C%E6%9C%AA%E8%AF%BB%E5%8F%96%E5%85%A8%E6%96%87%0A-+%E6%A0%8F%E7%9B%AE%EF%BC%9AHEP+%E7%9B%B4%E6%8E%A5%E5%BA%94%E7%94%A8%0A-+%E5%BD%93%E5%89%8D%E7%9B%B8%E5%85%B3%E6%80%A7%EF%BC%9A1.00%0A-+%E5%BD%93%E5%89%8D%E8%AF%81%E6%8D%AE%E7%AD%89%E7%BA%A7%EF%BC%9Adirect%0A%0A%23%23+%E5%88%A4%E6%96%AD%0A%0A-+%5B+%5D+%E6%8E%A8%E8%8D%90%E4%BF%9D%E7%95%99%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E5%90%88%E7%90%86%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E8%BF%87%E5%BA%A6%E6%8E%A8%E6%B5%8B%0A-+%5B+%5D+%E5%BA%94%E7%A7%BB%E8%87%B3%E5%8F%A6%E4%B8%80%E4%B8%AA%E6%A0%8F%E7%9B%AE%0A-+%5B+%5D+%E5%BB%BA%E8%AE%AE%E7%B2%BE%E8%AF%BB%E5%85%A8%E6%96%87%0A%0A%23%23+%E8%A1%A5%E5%85%85%E8%AF%B4%E6%98%8E%0A%0A"&gt;提交反馈&lt;/a&gt; · hep-ex, physics.ins-det&lt;/p&gt;</content>
+    <link href="https://arxiv.org/abs/2604.09809"/>
+    <summary>CMS官方PaRT分类器，直接用于LHC boosted喷注标记，含数据校准与刻度因子</summary>
+    <category term="Higgs boson identification"/>
+    <category term="boosted jet tagging"/>
+    <category term="event classification"/>
+    <category term="hep-ex"/>
+    <category term="physics.ins-det"/>
+    <category term="resonance identification"/>
+    <category term="track:hep_application"/>
+    <published>2026-04-10T18:33:27+00:00</published>
+  </entry>
   <entry>
     <id>arxiv:2608.25709:hepml-v1</id>
     <title>Multi-output Gaussian process prediction of physical fields under linear equality constraints</title>
@@ -2985,23 +3215,6 @@
     <category term="tau reconstruction"/>
     <category term="track:hep_application"/>
     <category term="unfolding"/>
-    <published>2026-08-05T04:00:00+00:00</published>
-  </entry>
-  <entry>
-    <id>arxiv:2512.18928:hepml-v1</id>
-    <title>The Ensemble Schr{\"o}dinger Bridge filter for Nonlinear Data Assimilation</title>
-    <updated>2026-08-06T03:34:35.331928+00:00</updated>
-    <author>
-      <name>Hui Sun</name>
-    </author>
-    <content type="html">&lt;p&gt;&lt;strong&gt;栏目：&lt;/strong&gt;方法雷达&lt;/p&gt;&lt;p&gt;&lt;strong&gt;分析依据：&lt;/strong&gt;仅标题和摘要；未读取全文。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法：&lt;/strong&gt;Ensemble Schrödinger Bridge filter, combines prediction with diffusion-generative-modeling-based analysis&lt;/p&gt;&lt;p&gt;&lt;strong&gt;相关性：&lt;/strong&gt;0.60；&lt;strong&gt;证据等级：&lt;/strong&gt;speculative&lt;/p&gt;&lt;p&gt;&lt;strong&gt;初筛理由：&lt;/strong&gt;非线性数据同化方法通用，可迁移至高能物理中的粒子追踪或探测器状态估计。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法总结（摘要分析）：&lt;/strong&gt;提出集成薛定谔桥非线性滤波方法，将标准预测步与基于扩散生成模型的分析步相结合，实现无结构模型误差、无导数、无训练且高度并行的非线性最优滤波。数值实验表明，该方法在高维（最多40维）混沌系统等强非线性动力学和观测过程中表现优于集合卡尔曼滤波和粒子滤波。&lt;/p&gt;&lt;h4&gt;摘要中报告的结论&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;方法无结构模型误差&lt;/li&gt;&lt;li&gt;方法是无导数、免训练的&lt;/li&gt;&lt;li&gt;方法高度可并行化&lt;/li&gt;&lt;li&gt;在非线性动力学和观测下优于集合卡尔曼滤波和粒子滤波&lt;/li&gt;&lt;li&gt;适用于高达40维及以上的混沌系统&lt;/li&gt;&lt;/ul&gt;&lt;h4&gt;对高能实验物理的潜在帮助&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;尝试将该方法用于高能物理中的非线性数据同化，例如粒子径迹重建（强非线性散射过程）、探测器状态估计（时变校准参数）或射流能量校正（非线性响应）&lt;/li&gt;&lt;li&gt;利用该方法免训练和可并行的特性，可能适用于实时数据处理&lt;/li&gt;&lt;/ul&gt;&lt;h4&gt;迁移风险&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;方法仅在低维（≤40）混沌系统上验证，高能物理典型维度远高于此，可扩展性未知&lt;/li&gt;&lt;li&gt;高能物理数据具有泊松噪声、探测器几何约束和物理对称性（如洛伦兹不变性），方法可能未考虑这些因素&lt;/li&gt;&lt;li&gt;仿真到数据的偏移、系统误差和校准问题尚未测试&lt;/li&gt;&lt;li&gt;推断延迟可能影响在线应用，需评估实时性能&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;strong&gt;最小验证方案：&lt;/strong&gt;构建一个简化但具有代表性的粒子径迹重建测试场景：圆柱形探测器层，粒子经历非线性多重散射，产生带噪声的击中点；生成仿真数据后，用该方法重建轨迹，并与标准卡尔曼滤波/粒子滤波比较径迹重建效率和分辨率，评估计算时间和可扩展性。&lt;/p&gt;&lt;p&gt;&lt;a href="https://arxiv.org/abs/2512.18928"&gt;arXiv 页面&lt;/a&gt; · &lt;a href="https://github.com/quxnb/hepml-digest/issues/new?title=%5B%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%5D+2512.18928+The+Ensemble+Schr%7B%5C%22o%7Ddinger+Bridge+filter+for+Nonlinear+Data+Assimilation&amp;amp;body=%23%23+%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%0A%0A-+arXiv%EF%BC%9A%5B2512.18928%5D%28https%3A%2F%2Farxiv.org%2Fabs%2F2512.18928%29%0A-+%E8%AE%BA%E6%96%87%E7%89%88%E6%9C%AC%EF%BC%9A2512.18928%3Av1%0A-+%E5%88%86%E6%9E%90%E4%BE%9D%E6%8D%AE%EF%BC%9A%E4%BB%85%E6%A0%87%E9%A2%98%E5%92%8C%E6%91%98%E8%A6%81%EF%BC%8C%E6%9C%AA%E8%AF%BB%E5%8F%96%E5%85%A8%E6%96%87%0A-+%E6%A0%8F%E7%9B%AE%EF%BC%9A%E6%96%B9%E6%B3%95%E9%9B%B7%E8%BE%BE%0A-+%E5%BD%93%E5%89%8D%E7%9B%B8%E5%85%B3%E6%80%A7%EF%BC%9A0.60%0A-+%E5%BD%93%E5%89%8D%E8%AF%81%E6%8D%AE%E7%AD%89%E7%BA%A7%EF%BC%9Aspeculative%0A%0A%23%23+%E5%88%A4%E6%96%AD%0A%0A-+%5B+%5D+%E6%8E%A8%E8%8D%90%E4%BF%9D%E7%95%99%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E5%90%88%E7%90%86%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E8%BF%87%E5%BA%A6%E6%8E%A8%E6%B5%8B%0A-+%5B+%5D+%E5%BA%94%E7%A7%BB%E8%87%B3%E5%8F%A6%E4%B8%80%E4%B8%AA%E6%A0%8F%E7%9B%AE%0A-+%5B+%5D+%E5%BB%BA%E8%AE%AE%E7%B2%BE%E8%AF%BB%E5%85%A8%E6%96%87%0A%0A%23%23+%E8%A1%A5%E5%85%85%E8%AF%B4%E6%98%8E%0A%0A"&gt;提交反馈&lt;/a&gt; · cs.LG&lt;/p&gt;</content>
-    <link href="https://arxiv.org/abs/2512.18928"/>
-    <summary>非线性数据同化方法通用，可迁移至高能物理中的粒子追踪或探测器状态估计。</summary>
-    <category term="cs.LG"/>
-    <category term="data assimilation"/>
-    <category term="nonlinear filtering"/>
-    <category term="state estimation"/>
-    <category term="track:method_radar"/>
     <published>2026-08-05T04:00:00+00:00</published>
   </entry>
   <entry>
