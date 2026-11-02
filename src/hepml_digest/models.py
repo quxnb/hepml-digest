@@ -1,9 +1,10 @@
 from __future__ import annotations
 
+import re
 from datetime import datetime, timezone
 from typing import Annotated, Literal
 
-from pydantic import AfterValidator, BaseModel, Field
+from pydantic import AfterValidator, BaseModel, Field, field_validator, model_validator
 
 
 Evidence = Literal["direct", "transferable", "speculative", "irrelevant"]
@@ -17,13 +18,21 @@ def _with_timezone(value: datetime) -> datetime:
 UTCDateTime = Annotated[datetime, AfterValidator(_with_timezone)]
 
 HEP_APPLICATION_CATEGORIES = frozenset(
-    {"hep-ex", "physics.ins-det", "nucl-ex"}
+    {"hep-ex", "physics.ins-det", "nucl-ex", "inspire:Experiment-HEP",
+     "inspire:Experiment-Nucl", "inspire:Instrumentation"}
 )
 
 
 class Paper(BaseModel):
-    arxiv_id: str
-    version: int = Field(default=1, ge=1)
+    arxiv_id: str | None = None
+    version: int | None = Field(default=1, ge=1)
+    doi: str | None = None
+    inspire_id: str | None = None
+    journal_ref: str | None = None
+    abstract_source: str | None = None
+    # Assigned only when enrichment would otherwise change an existing ID.
+    identity: str | None = None
+    feed_identity: str | None = None
     title: str
     abstract: str
     authors: list[str] = Field(default_factory=list)
@@ -32,9 +41,49 @@ class Paper(BaseModel):
     updated: UTCDateTime
     categories: list[str] = Field(default_factory=list)
 
+    @field_validator("doi")
+    @classmethod
+    def normalize_doi(cls, value: str | None) -> str | None:
+        if value is None:
+            return None
+        normalized = re.sub(r"^(?:https?://(?:dx\.)?doi\.org/|doi:\s*)", "", value.strip(), flags=re.I)
+        return normalized.strip().lower() or None
+
+    @model_validator(mode="after")
+    def require_identifier(self) -> "Paper":
+        if not (self.arxiv_id or self.doi or self.inspire_id):
+            raise ValueError("Paper requires an arXiv ID, DOI or INSPIRE ID")
+        if not self.arxiv_id:
+            self.version = None
+        return self
+
     @property
     def version_key(self) -> str:
-        return f"{self.arxiv_id}:v{self.version}"
+        if self.identity:
+            return self.identity
+        if self.arxiv_id:
+            return f"{self.arxiv_id}:v{self.version}" if self.version is not None else f"arxiv:{self.arxiv_id}"
+        return f"doi:{self.doi}" if self.doi else f"inspire:{self.inspire_id}"
+
+    @property
+    def feed_key(self) -> str:
+        if self.feed_identity:
+            return self.feed_identity
+        if self.arxiv_id:
+            return f"arxiv:{self.arxiv_id}:hepml-v1"
+        return f"{self.version_key}:hepml-v1"
+
+    @property
+    def aliases(self) -> list[str]:
+        return [f"{kind}:{value}" for kind, value in (
+            ("arxiv", self.arxiv_id), ("doi", self.doi), ("inspire", self.inspire_id),
+        ) if value]
+
+    @property
+    def identifier(self) -> str:
+        if self.arxiv_id:
+            return f"arXiv:{self.arxiv_id}"
+        return f"DOI:{self.doi}" if self.doi else f"INSPIRE:{self.inspire_id}"
 
     @property
     def digest_track(self) -> DigestTrack:
@@ -98,10 +147,12 @@ class RunHealth(BaseModel):
 
 
 class State(BaseModel):
-    schema_version: int = 4
+    schema_version: int = 5
     records: dict[str, Record] = Field(default_factory=dict)
     pending_papers: dict[str, Paper] = Field(default_factory=dict)
     last_backfill_at: UTCDateTime | None = None
     pending_backfill_since: UTCDateTime | None = None
+    last_inspire_fetch_at: UTCDateTime | None = None
+    pending_inspire_since: UTCDateTime | None = None
     work: dict[str, WorkState] = Field(default_factory=dict)
     health: RunHealth = Field(default_factory=RunHealth)

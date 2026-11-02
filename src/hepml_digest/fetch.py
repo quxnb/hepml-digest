@@ -3,12 +3,13 @@ from __future__ import annotations
 import calendar
 import hashlib
 import html
+import json
 import logging
 import re
 import time
 import urllib.request
 from urllib.parse import urlencode
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 from email.utils import parsedate_to_datetime
 from typing import Iterable, Iterator
 
@@ -23,6 +24,10 @@ VERSION_RE = re.compile(r"v(\d+)$")
 TAG_RE = re.compile(r"<[^>]+>")
 
 TERMS: dict[str, int] = {
+    "neutrino": 5,
+    "oscillation": 3,
+    "liquid argon": 3,
+    "near detector": 3,
     "simulation-based inference": 5,
     "likelihood-free": 5,
     "uncertainty quantification": 4,
@@ -40,7 +45,7 @@ TERMS: dict[str, int] = {
 }
 
 
-def parse_arxiv_identifier(url: str) -> tuple[str, int]:
+def parse_arxiv_identifier(url: str) -> tuple[str, int | None]:
     match = ARXIV_LINK_RE.search(url)
     if not match:
         raise ValueError(f"Cannot parse arXiv identifier from {url!r}")
@@ -48,7 +53,7 @@ def parse_arxiv_identifier(url: str) -> tuple[str, int]:
     version_match = VERSION_RE.search(raw)
     if version_match:
         return raw[: version_match.start()], int(version_match.group(1))
-    return raw, 1
+    return raw, None
 
 
 def _clean(value: str) -> str:
@@ -69,10 +74,11 @@ def _entry_datetime(entry: dict, name: str) -> datetime:
 
 
 def _entry_link(entry: dict) -> str:
-    for candidate in (entry.get("link"), entry.get("id")):
-        if candidate and ("arxiv.org/abs/" in candidate or "arxiv.org/pdf/" in candidate):
-            return candidate
-    raise ValueError("RSS entry has no arXiv link")
+    candidates = [candidate for candidate in (entry.get("link"), entry.get("id"))
+                  if candidate and ("arxiv.org/abs/" in candidate or "arxiv.org/pdf/" in candidate)]
+    if not candidates:
+        raise ValueError("RSS entry has no arXiv link")
+    return max(candidates, key=lambda candidate: parse_arxiv_identifier(candidate)[1] or 0)
 
 
 def parse_feed_bytes(
@@ -120,6 +126,9 @@ def _parse_entries(parsed, source_category: str | None = None) -> list[Paper]:
                     published=published,
                     updated=updated,
                     categories=sorted(set(tags)),
+                    doi=entry.get("arxiv_doi"),
+                    journal_ref=_clean(entry.get("arxiv_journal_ref", "")) or None,
+                    abstract_source="arXiv",
                 )
             )
         except (ValueError, TypeError) as exc:
@@ -261,19 +270,155 @@ def fetch_updates(
     )
 
 
-def merge_duplicates(papers: Iterable[Paper]) -> list[Paper]:
-    merged: dict[str, Paper] = {}
-    for paper in papers:
-        key = paper.version_key
-        current = merged.get(key)
-        if current is None:
-            merged[key] = paper
-            continue
-        current.categories = sorted(
-            set(current.categories).union(paper.categories)
+def parse_inspire_record(hit: dict) -> Paper:
+    metadata = hit["metadata"]
+    title = _clean(metadata["titles"][0]["title"])
+    if not title:
+        raise ValueError("INSPIRE record has no title")
+    eprint = next(iter(metadata.get("arxiv_eprints", [])), {})
+    raw_id = eprint.get("value", "").removeprefix("arXiv:")
+    arxiv_id, version = parse_arxiv_identifier(f"https://arxiv.org/abs/{raw_id}") if raw_id else (None, None)
+    doi = next((item["value"] for item in metadata.get("dois", [])
+                if item.get("value") and item.get("material") not in {"erratum", "addendum"}), None)
+    publication = next((item for item in metadata.get("publication_info", [])
+                        if item.get("journal_title") and item.get("material") not in {"erratum", "addendum"}), {})
+    reference = " ".join(str(value) for value in (
+        publication.get("journal_title"), publication.get("journal_volume"),
+        f"({publication['year']})" if publication.get("year") else None,
+        publication.get("artid") or publication.get("page_start"),
+    ) if value)
+    abstract = next((item for item in metadata.get("abstracts", []) if item.get("value")), {})
+    inspire_id = str(hit.get("id") or metadata.get("control_number") or "") or None
+    if inspire_id is None:
+        raise ValueError("INSPIRE record has no identifier")
+    return Paper(
+        arxiv_id=arxiv_id, version=version, doi=doi, inspire_id=inspire_id,
+        title=title, abstract=_clean(abstract.get("value", "")),
+        abstract_source=f"INSPIRE ({abstract.get('source') or 'record'})" if abstract else None,
+        authors=[item["full_name"] for item in metadata.get("authors", []) if item.get("full_name")],
+        link=f"https://arxiv.org/abs/{arxiv_id}" if arxiv_id else f"https://inspirehep.net/literature/{inspire_id}",
+        # INSPIRE timestamps refer to record availability, not journal publication dates.
+        published=datetime.fromisoformat(hit["created"].replace("Z", "+00:00")),
+        updated=datetime.fromisoformat(hit["updated"].replace("Z", "+00:00")),
+        journal_ref=reference or None,
+        categories=sorted(set(eprint.get("categories", [])) | {
+            f"inspire:{item['term']}" for item in metadata.get("inspire_categories", []) if item.get("term")
+        }),
+    )
+
+
+def fetch_inspire(
+    query: str, since: datetime, until: datetime, user_agent: str,
+    timeout: float = 30.0, page_size: int = 200, max_pages: int = 25,
+) -> Iterator[list[Paper]]:
+    """Read an update window, yielding each page before advancing a source cursor."""
+    if not 1 <= page_size <= 200 or max_pages <= 0 or since > until:
+        raise ValueError("Invalid INSPIRE window or pagination limits")
+    search = f"({query}) and du >= {since:%Y-%m-%d} and du < {until + timedelta(days=1):%Y-%m-%d}"
+    for page in range(1, max_pages + 1):
+        if page > 1:
+            time.sleep(1)
+        parameters = urlencode({
+            "q": search, "sort": "mostrecent", "page": page, "size": page_size,
+            "fields": "titles,abstracts,authors.full_name,arxiv_eprints,dois,publication_info,inspire_categories",
+        })
+        request = urllib.request.Request(
+            f"https://inspirehep.net/api/literature?{parameters}",
+            headers={"User-Agent": user_agent, "Accept": "application/json"},
         )
-        if len(paper.abstract) > len(current.abstract):
-            current.abstract = paper.abstract
+        LOGGER.info("Fetching INSPIRE updates (page %d)", page)
+        with urllib.request.urlopen(request, timeout=timeout) as response:
+            result = json.loads(response.read())
+        hits = result["hits"]["hits"]
+        papers = []
+        for hit in hits:
+            try:
+                papers.append(parse_inspire_record(hit))
+            except (KeyError, IndexError, ValueError, TypeError):
+                LOGGER.warning("Malformed INSPIRE entry; update window will remain incomplete")
+        yield [paper for paper in papers if since <= paper.updated <= until]
+        if len(papers) != len(hits):
+            raise ValueError("INSPIRE update page contains malformed entries")
+        total = int(result["hits"]["total"])
+        offset = (page - 1) * page_size
+        if len(hits) < min(page_size, max(0, total - offset)):
+            raise RuntimeError("INSPIRE returned an incomplete result page")
+        if offset + len(hits) >= total:
+            return
+    raise RuntimeError("INSPIRE page limit reached; increase BACKFILL_MAX_PAGES")
+
+
+def enrich_paper(current: Paper, incoming: Paper, *, preserve_content: bool = False) -> None:
+    """Add bibliographic metadata without changing an assigned record or Feed ID."""
+    identity, feed_identity = current.version_key, current.feed_key
+    for name in ("arxiv_id", "doi", "inspire_id"):
+        if not getattr(current, name):
+            setattr(current, name, getattr(incoming, name))
+    if current.version is None:
+        current.version = incoming.version
+    current.journal_ref = incoming.journal_ref or current.journal_ref
+    current.categories = sorted(set(current.categories) | set(incoming.categories))
+    current.published = min(current.published, incoming.published)
+    current.updated = max(current.updated, incoming.updated)
+    if not current.abstract.strip() or (
+        not preserve_content and len(incoming.abstract) > len(current.abstract)
+    ):
+        current.abstract = incoming.abstract
+        current.abstract_source = incoming.abstract_source
+    if current.version_key != identity:
+        current.identity = identity
+    if current.feed_key != feed_identity:
+        current.feed_identity = feed_identity
+
+
+def merge_duplicates(
+    papers: Iterable[Paper], *, protected_keys: set[str] | None = None,
+) -> list[Paper]:
+    """Merge exact identifiers, preserving known arXiv editions and first-seen IDs."""
+    merged: dict[str, Paper] = {}
+    index: dict[str, set[str]] = {}
+    order: dict[str, int] = {}
+    protected_keys = protected_keys or set()
+    for paper in papers:
+        original_key = paper.version_key
+        matches = {key for alias in paper.aliases for key in index.get(alias, ()) if key in merged}
+        candidates = [merged[key] for key in sorted(matches, key=order.__getitem__)
+                      if not (paper.arxiv_id and merged[key].arxiv_id
+                              and paper.arxiv_id != merged[key].arxiv_id)]
+        if not paper.arxiv_id and len({item.arxiv_id for item in candidates if item.arxiv_id}) > 1:
+            candidates = []  # Conflicting arXiv IDs are not resolved by guessing.
+        if candidates:
+            family = candidates[0].feed_key
+            for item in candidates:
+                item.feed_identity = family
+            paper.feed_identity = family
+        version = paper.version if paper.arxiv_id else None
+        if version is None:
+            version = max((item.version for item in candidates if item.version is not None), default=None)
+        same = [item for item in candidates if item.version is None or item.version == version]
+        if same:
+            current = same[0]
+            key = current.version_key
+            enrich_paper(current, paper, preserve_content=key in protected_keys)
+            for duplicate in same[1:]:
+                duplicate_key = duplicate.version_key
+                enrich_paper(current, duplicate, preserve_content=key in protected_keys)
+                duplicate.identity = key
+                merged.pop(duplicate_key)
+                for aliases in index.values():
+                    if duplicate_key in aliases:
+                        aliases.remove(duplicate_key)
+                        aliases.add(key)
+            if paper is not current:
+                enrich_paper(paper, current, preserve_content=original_key in protected_keys)
+                paper.identity = key
+        else:
+            key = paper.version_key
+            current = paper
+            order.setdefault(key, len(order))
+            merged[key] = current
+        for alias in set(current.aliases) | set(paper.aliases):
+            index.setdefault(alias, set()).add(key)
     return list(merged.values())
 
 

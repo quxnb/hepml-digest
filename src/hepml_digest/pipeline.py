@@ -6,7 +6,7 @@ from datetime import datetime, timedelta, timezone
 from typing import Callable, TypeVar
 
 from .config import Settings
-from .fetch import fetch_feeds, fetch_recent, fetch_updates, merge_duplicates, select_candidates
+from .fetch import enrich_paper, fetch_feeds, fetch_inspire, fetch_recent, fetch_updates, merge_duplicates, select_candidates
 from .llm import APICallBudgetExceeded, TERMINAL_API_FAILURES, Analyzer, failure_kind
 from .models import Paper, Record, WorkState
 from .publish import is_publishable, publish
@@ -34,9 +34,10 @@ def _run_pipeline(
 ) -> RunResult:
     state = load_state(settings.state_file)
     prune_state(state, settings.state_retention_days)
-    state.schema_version = 4
+    state.schema_version = 5
     bootstrap_fetched = 0
     backfill_fetched = 0
+    inspire_fetched = 0
     fetch_errors = 0
     usage = analyzer.usage
     failures_at_last_success = usage.failed_calls
@@ -149,7 +150,24 @@ def _run_pipeline(
         return result
 
     def enqueue(incoming: list[Paper]) -> None:
-        queued = merge_duplicates([*state.pending_papers.values(), *incoming])
+        cached = list(state.records.items())
+        had_abstract = {key: bool(record.paper.abstract.strip()) for key, record in cached}
+        queued = merge_duplicates([
+            *(record.paper for _, record in cached), *state.pending_papers.values(), *incoming,
+        ], protected_keys=set(state.records))
+        canonical = {paper.version_key: paper for paper in queued}
+        records = {}
+        rank = lambda item: (item.screening_fingerprint == screening_fingerprint,
+                             item.review_status == "complete", item.processed_at)
+        for old_key, record in cached:
+            key = record.paper.version_key
+            enrich_paper(record.paper, canonical[key], preserve_content=True)
+            if not had_abstract[old_key] and record.paper.abstract.strip():
+                record.screening_fingerprint = ""
+            previous = records.get(key)
+            if previous is None or rank(record) > rank(previous):
+                records[key] = record
+        state.records = records
         state.pending_papers = {
             paper.version_key: paper
             for paper in queued
@@ -157,6 +175,7 @@ def _run_pipeline(
         }
         for paper in state.pending_papers.values():
             work_for("screening", paper)
+        prune_state(state, settings.state_retention_days)
         # Persist raw candidates before any model call or subsequent fetch.
         save_state(settings.state_file, state)
 
@@ -218,6 +237,31 @@ def _run_pipeline(
             state.pending_backfill_since = None
             save_state(settings.state_file, state)
         papers = merge_duplicates(fetched)
+        if settings.inspire_query:
+            inspire_until = datetime.now(timezone.utc)
+            since = state.pending_inspire_since or (
+                (state.last_inspire_fetch_at or inspire_until)
+                - timedelta(days=settings.backfill_lookback_days)
+            )
+            state.pending_inspire_since = since
+            save_state(settings.state_file, state)
+            try:
+                for batch in fetch_inspire(
+                    settings.inspire_query, since, inspire_until, settings.user_agent,
+                    timeout=timeout, max_pages=settings.backfill_max_pages,
+                ):
+                    inspire_fetched += len(batch)
+                    fetched.extend(batch)
+                    enqueue(batch)
+            except (OSError, ValueError, RuntimeError, KeyError, TypeError):
+                fetch_errors += 1
+                LOGGER.exception("INSPIRE fetch incomplete; keeping its previous cursor")
+            else:
+                source_ok = True
+                state.last_inspire_fetch_at = inspire_until
+                state.pending_inspire_since = None
+                save_state(settings.state_file, state)
+            papers = merge_duplicates(fetched)
         if fetch_errors and not papers and not state.records and not state.pending_papers:
             raise RuntimeError("No papers available after source failures")
     else:
@@ -228,7 +272,7 @@ def _run_pipeline(
     started_at = time.monotonic()
 
     def ready(papers: list[Paper], stage: str) -> list[Paper]:
-        return [paper for paper in papers if work_for(stage, paper).ready(now)]
+        return [paper for paper in papers if paper.abstract.strip() and work_for(stage, paper).ready(now)]
 
     def schedule(papers: list[Paper], limit: int, stage: str) -> list[Paper]:
         if stage == "screening":
@@ -355,7 +399,7 @@ def _run_pipeline(
             f"Token usage missing for {usage.missing_usage_calls} calls; reported totals are incomplete. "
             "Request-count, output and time limits still apply."
         )
-    if source_ok is not None and state.pending_backfill_since is not None:
+    if source_ok is not None and (state.pending_backfill_since is not None or state.pending_inspire_since is not None):
         alerts.append("Backfill incomplete; inspect source errors and BACKFILL_MAX_PAGES.")
     for label, count in (
         ("Source failures", health.source_failure_runs),
@@ -382,6 +426,8 @@ def _run_pipeline(
         "fetched": len(papers),
         "bootstrap_fetched": bootstrap_fetched,
         "backfill_fetched": backfill_fetched,
+        "inspire_fetched": inspire_fetched,
+        "missing_abstract_papers": sum(not paper.abstract.strip() for paper in state.pending_papers.values()),
         "fetch_errors": fetch_errors,
         "queued_papers": len(state.pending_papers),
         "pending_reviews": sum(

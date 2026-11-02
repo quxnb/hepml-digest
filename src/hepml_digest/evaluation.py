@@ -45,9 +45,9 @@ def _latest_papers(state: State) -> dict[str, Paper]:
     for paper in chain(
         (record.paper for record in state.records.values()), state.pending_papers.values(),
     ):
-        previous = latest.get(paper.arxiv_id)
-        if previous is None or paper.version > previous.version:
-            latest[paper.arxiv_id] = paper
+        previous = latest.get(paper.feed_key)
+        if previous is None or (paper.version or 0) > (previous.version or 0):
+            latest[paper.feed_key] = paper
     return latest
 
 
@@ -93,11 +93,11 @@ def evaluate(
     missing = superseded = unprocessed_relevant = 0
     mapping_labeled = overstated = stale_mapping_labels = 0
     for item in dataset.items:
-        paper = latest.get(item.paper.arxiv_id)
+        paper = latest.get(item.paper.feed_key)
         if paper is None:
             missing += 1
             continue
-        if paper.version_key != item.paper.version_key:
+        if paper.version_key != item.paper.version_key or paper.version != item.paper.version:
             superseded += 1
             continue
         record = state.records.get(paper.version_key)

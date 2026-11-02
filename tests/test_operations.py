@@ -177,7 +177,7 @@ def test_missing_token_usage_warns_without_stopping_valid_analysis(tmp_path):
 
 
 def test_source_failure_alerts_persist_and_reset_on_recovery(tmp_path, monkeypatch):
-    settings = settings_for(tmp_path, max_deep_reviews=0)
+    settings = settings_for(tmp_path, max_deep_reviews=0, inspire_query="")
     run_pipeline(settings, DemoAnalyzer(), _demo_papers())
 
     def offline(*args, **kwargs):

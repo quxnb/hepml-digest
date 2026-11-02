@@ -375,7 +375,7 @@ def test_legacy_records_without_provenance_are_reanalyzed(
     assert result["screened"] == 1
     assert result["reviewed"] == 1
     migrated = load_state(settings.state_file)
-    assert migrated.schema_version == 4
+    assert migrated.schema_version == 5
     assert migrated.records[paper.version_key].screening_fingerprint
     assert migrated.records[paper.version_key].review_fingerprint
 
@@ -612,6 +612,7 @@ def test_partial_backfill_persists_pages_without_advancing_cursor(tmp_path: Path
     settings = Settings(
         state_file=tmp_path / "state.json", output_dir=tmp_path / "public",
         max_candidates=0, max_deep_reviews=0,
+        inspire_query="",
     )
     run_pipeline(settings, DemoAnalyzer(), [])
     state = load_state(settings.state_file)
@@ -637,6 +638,7 @@ def test_backfill_rescues_all_rss_source_failure(tmp_path: Path, monkeypatch):
     settings = Settings(
         state_file=tmp_path / "state.json", output_dir=tmp_path / "public",
         bootstrap_results=0, max_deep_reviews=0,
+        inspire_query="",
     )
 
     def failed_feeds(urls, *args, failed_urls, **kwargs):
@@ -657,6 +659,7 @@ def test_saved_queue_is_used_when_all_sources_are_unavailable(tmp_path: Path, mo
     settings = Settings(
         state_file=tmp_path / "state.json", output_dir=tmp_path / "public",
         max_candidates=0, max_deep_reviews=0,
+        inspire_query="",
     )
     run_pipeline(settings, DemoAnalyzer(), _demo_papers())
 
@@ -722,6 +725,7 @@ def test_first_incomplete_backfill_keeps_its_window_until_success(tmp_path: Path
         state_file=tmp_path / "state.json", output_dir=tmp_path / "public",
         bootstrap_results=0, max_candidates=0,
         max_deep_reviews=0,
+        inspire_query="",
     )
     monkeypatch.setattr("hepml_digest.pipeline.fetch_feeds", lambda *a, **k: [])
 

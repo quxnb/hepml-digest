@@ -21,6 +21,7 @@ DEFAULT_LLM_API_STYLE = "deepseek"
 @dataclass(slots=True)
 class Settings:
     categories: tuple[str, ...] = DEFAULT_CATEGORIES
+    inspire_query: str = "neutrino"
     llm_api_style: str = DEFAULT_LLM_API_STYLE
     screening_model: str = "deepseek-v4-flash"
     review_model: str = "deepseek-v4-pro"

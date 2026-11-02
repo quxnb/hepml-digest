@@ -13,7 +13,7 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 60
     outputs:
       revision: ${{ steps.persist.outputs.revision }}
     permissions:
@@ -50,6 +50,7 @@ jobs:
           SITE_URL: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}
           MAX_CANDIDATES: "60"
           BOOTSTRAP_RESULTS: "120"
+          INSPIRE_QUERY: ${{ vars.INSPIRE_QUERY || 'neutrino' }}
           BACKFILL_LOOKBACK_DAYS: ${{ vars.BACKFILL_LOOKBACK_DAYS || '7' }}
           BACKFILL_MAX_PAGES: ${{ vars.BACKFILL_MAX_PAGES || '25' }}
           METHOD_CANDIDATE_SLOTS: "40"

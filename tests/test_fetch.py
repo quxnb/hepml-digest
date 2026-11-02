@@ -23,6 +23,7 @@ def test_parse_modern_and_legacy_ids():
     assert parse_arxiv_identifier(
         "https://arxiv.org/pdf/hep-ex/0307015v3.pdf"
     ) == ("hep-ex/0307015", 3)
+    assert parse_arxiv_identifier("https://arxiv.org/abs/2607.01234") == ("2607.01234", None)
 
 
 def test_parse_feed_and_clean_html():
@@ -42,6 +43,14 @@ def test_parse_arxiv_api_atom_without_synthetic_category():
     assert len(papers) == 1
     assert papers[0].arxiv_id == "2607.04567"
     assert papers[0].categories == ["stat.ML"]
+
+
+def test_versioned_api_id_is_not_hidden_by_an_unversioned_link():
+    payload = Path("tests/fixtures/arxiv_atom.xml").read_bytes().replace(
+        b'href="https://arxiv.org/abs/2607.04567v1"',
+        b'href="https://arxiv.org/abs/2607.04567"',
+    )
+    assert parse_feed_bytes(payload)[0].version == 1
 
 
 def test_merge_cross_list_categories():

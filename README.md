@@ -1,6 +1,6 @@
 # HEP-ML arXiv Digest
 
-从 arXiv 抓取统计学习和机器学习论文，筛选其对高能实验物理的潜在价值，生成中文网页、Atom 和 RSS。
+从 arXiv 和 INSPIRE 获取可迁移的统计/机器学习方法及实验中微子研究进展，生成中文网页、Atom 和 RSS。
 当前只分析标题和摘要，不读取全文；生成的迁移设想不是论文已验证的结论。
 
 ## 快速开始
@@ -43,6 +43,9 @@ REVIEW_MODEL=gpt-6.1-sol
 
 模型名与地址以中转站文档为准，地址不要包含完整的 `/chat/completions`。
 `DEEPSEEK_API_KEY`、`DEEPSEEK_BASE_URL` 是保留的变量名，也用于非 DeepSeek 服务。
+
+INSPIRE 不需要额外 Key，默认查询 `neutrino`，可通过 Repository variable `INSPIRE_QUERY` 调整查询。
+它补充 DOI、INSPIRE ID 和期刊信息，不是逐家爬取 PRL、Nature 等网站，也不绕过全文访问限制。
 
 两种 API 模式共用一套流程，不自动猜测或切换：
 
@@ -94,14 +97,18 @@ MAX_CANDIDATES=1 MAX_DEEP_REVIEWS=1 python -m hepml_digest \
 
 ## 运行边界与保护
 
-- 默认来源为 `stat.ML`、`cs.LG`、`physics.data-an`、`hep-ex`，每次运行最多初筛 60 篇、深评 5 篇。
+- arXiv 默认分类为 `stat.ML`、`cs.LG`、`physics.data-an`、`hep-ex`；与 INSPIRE 候选合并后，每次共用最多 60 篇初筛、5 篇深评的配额。
 - 深评只处理模型推荐、相关性同时达到深评和发布阈值、且非 `irrelevant` 的论文，不设最低数量。
 - `data/state.json` 保存结果、待处理队列和补抓进度；失败或超额候选留待后续运行，不要清空状态来重试。
+- 两个来源分别保存同步游标，分页中断保留已抓页面。按 arXiv ID、DOI、INSPIRE ID 去重，保留原有记录和 Feed ID；补充出版元数据不要求重算已有摘要分析。
 - 去重、JSON 校验、进程锁、checkpoint 和原子写盘用于避免重复调用、丢失进度或损坏发布文件。
 - 次数、输入 token、单次输出、运行时间及连续失败限制仍然有效；重试也会检查预算。
 - 程序不估算金额，不维护价格变量。实际费用和消费限额在服务商后台查看、设置。
 
 旧的价格和金额限制变量不再读取，可从 GitHub Variables 删除。
+
+`missing_abstract_papers` 表示尚无摘要的候选，这些论文会留在队列，不会凭标题送入模型。
+INSPIRE 原生条目的 Feed 发布时间使用收录时间；期刊信息按来源记录显示，不推测精确发表日期。
 
 只累计接口报告的 token。若 `missing_usage_calls > 0`，汇总不完整，会告警但不停止有效分析；
 此时不能依赖输入 token 总额判断全部消耗，调用次数、输出上限和时间保护仍适用。

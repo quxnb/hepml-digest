@@ -6,7 +6,7 @@ import re
 import tempfile
 from datetime import datetime, timezone
 from pathlib import Path
-from urllib.parse import urlencode
+from urllib.parse import quote, urlencode
 from xml.etree import ElementTree
 
 from feedgen.feed import FeedGenerator
@@ -56,8 +56,8 @@ def _feedback_url(record: Record, repository: str) -> str:
     track = TRACK_LABELS[paper.digest_track]
     body = f"""## 论文反馈
 
-- arXiv：[{paper.arxiv_id}]({paper.link})
-- 论文版本：{paper.version_key}
+- 论文：[{paper.identifier}]({paper.link})
+- 记录 ID：{paper.version_key}
 - 分析依据：仅标题和摘要，未读取全文
 - 栏目：{track}
 - 当前相关性：{record.screening.relevance:.2f}
@@ -76,7 +76,7 @@ def _feedback_url(record: Record, repository: str) -> str:
 """
     query = urlencode(
         {
-            "title": f"[论文反馈] {paper.arxiv_id} {paper.title[:80]}",
+            "title": f"[论文反馈] {paper.identifier} {paper.title[:80]}",
             "body": body,
         }
     )
@@ -94,6 +94,10 @@ def record_html(record: Record, feedback_repository: str = "") -> str:
         f"<strong>证据等级：</strong>{html.escape(screen.evidence_level)}</p>",
         f"<p><strong>初筛理由：</strong>{html.escape(screen.reason)}</p>",
     ]
+    if paper.journal_ref:
+        parts.append(f"<p><strong>出版信息（来源记录）：</strong>{html.escape(paper.journal_ref)}</p>")
+    if paper.abstract_source:
+        parts.append(f"<p><strong>摘要来源：</strong>{html.escape(paper.abstract_source)}</p>")
     if record.review:
         review = record.review
         parts.extend(
@@ -108,16 +112,18 @@ def record_html(record: Record, feedback_repository: str = "") -> str:
         )
     else:
         parts.append("<p><em>本条目仅完成摘要级筛选。</em></p>")
-    links = [
-        f'<a href="{html.escape(paper.link, quote=True)}">arXiv 页面</a>'
-    ]
+    links = {paper.link: "论文页面"}
+    if paper.doi:
+        links[f"https://doi.org/{quote(paper.doi, safe='/')}"] = "DOI"
+    if paper.inspire_id:
+        links[f"https://inspirehep.net/literature/{quote(paper.inspire_id, safe='')}"] = "INSPIRE 记录"
     if feedback_repository:
-        feedback_url = _feedback_url(record, feedback_repository)
-        links.append(
-            f'<a href="{html.escape(feedback_url, quote=True)}">提交反馈</a>'
-        )
+        links[_feedback_url(record, feedback_repository)] = "提交反馈"
+    link_html = " · ".join(
+        f'<a href="{html.escape(url, quote=True)}">{label}</a>' for url, label in links.items()
+    )
     parts.append(
-        f"<p>{' · '.join(links)} · "
+        f"<p>{link_html} · "
         f"{html.escape(', '.join(paper.categories))}</p>"
     )
     return "".join(parts)
@@ -135,9 +141,9 @@ def _eligible_records(
 ) -> list[Record]:
     latest: dict[str, Record] = {}
     for record in state.records.values():
-        previous = latest.get(record.paper.arxiv_id)
-        if previous is None or record.paper.version > previous.paper.version:
-            latest[record.paper.arxiv_id] = record
+        previous = latest.get(record.paper.feed_key)
+        if previous is None or (record.paper.version or 0) > (previous.paper.version or 0):
+            latest[record.paper.feed_key] = record
     return sorted(
         (
             record
@@ -160,7 +166,7 @@ def _build_feed(
     feed = FeedGenerator()
     feed.id(_xml_text(site_url))
     feed.title(_xml_text(feed_title))
-    feed.subtitle("统计与机器学习方法对高能实验物理的每日启发")
+    feed.subtitle("统计与机器学习方法，以及实验中微子研究进展")
     feed.author({"name": "HEP-ML Digest Bot"})
     feed.link(href=_xml_text(site_url), rel="alternate")
     feed.link(href=_xml_text(self_url), rel="self")
@@ -170,7 +176,7 @@ def _build_feed(
     for record in reversed(records):
         paper = record.paper
         entry = feed.add_entry()
-        entry.id(_xml_text(f"arxiv:{paper.arxiv_id}:hepml-v1"))
+        entry.id(_xml_text(paper.feed_key))
         entry.title(_xml_text(paper.title))
         entry.link(href=_xml_text(paper.link))
         entry.published(paper.published)
@@ -213,7 +219,7 @@ def _build_index(
                 f"<h3><a href=\"{html.escape(paper.link, quote=True)}\">"
                 f"{html.escape(paper.title)}</a></h3>"
                 f"<p class=\"meta\">{html.escape(authors)} · "
-                f"arXiv:{html.escape(paper.arxiv_id)} · "
+                f"{html.escape(paper.identifier)} · "
                 f"相关性 {record.screening.relevance:.2f}</p>"
                 f"{record_html(record, feedback_repository)}"
                 "</article>"
@@ -247,7 +253,7 @@ def _build_index(
 <body>
   <header>
     <h1>{html.escape(feed_title)}</h1>
-    <p>统计与机器学习方法对高能实验物理的每日启发。</p>
+    <p>统计与机器学习方法，以及实验中微子研究进展。</p>
     <p><a href="{site_url}/atom.xml">综合 Atom</a> ·
        <a href="{site_url}/rss.xml">综合 RSS</a> ·
        <a href="{site_url}/methods.xml">方法雷达 RSS</a> ·
