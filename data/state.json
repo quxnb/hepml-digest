@@ -133110,7 +133110,7 @@
       ]
     }
   },
-  "last_backfill_at": "2026-11-02T10:09:29.585217Z",
+  "last_backfill_at": "2026-11-02T10:31:31.266597Z",
   "pending_backfill_since": null,
   "work": {
     "screening:2610.37668:v1": {
@@ -133132,17 +133132,17 @@
     "screening:2610.37657:v1": {
       "first_seen_at": "2026-10-29T11:04:29.627493Z",
       "fingerprint": "a7a69bc08ca0b2f3d50ae1cc7921c333f6f204f2a3197d0adff6b70cb16cbc51",
-      "failures": 0,
-      "last_failure": "",
-      "next_retry_at": null,
+      "failures": 1,
+      "last_failure": "transient",
+      "next_retry_at": "2026-11-02T11:32:13.028745Z",
       "quarantined": false
     },
     "screening:2610.37656:v1": {
       "first_seen_at": "2026-10-29T11:04:29.627493Z",
       "fingerprint": "a7a69bc08ca0b2f3d50ae1cc7921c333f6f204f2a3197d0adff6b70cb16cbc51",
-      "failures": 0,
-      "last_failure": "",
-      "next_retry_at": null,
+      "failures": 1,
+      "last_failure": "transient",
+      "next_retry_at": "2026-11-02T11:32:19.074438Z",
       "quarantined": false
     },
     "screening:2610.37652:v1": {
@@ -169492,10 +169492,10 @@
   },
   "health": {
     "source_failure_runs": 0,
-    "analysis_failure_runs": 6,
+    "analysis_failure_runs": 7,
     "queue_growth_runs": 0,
     "previous_queue_size": 2858,
-    "last_source_success_at": "2026-11-02T10:10:29.928816Z",
+    "last_source_success_at": "2026-11-02T10:32:19.306331Z",
     "last_analysis_success_at": null
   }
 }
