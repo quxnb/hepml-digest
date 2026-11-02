@@ -2,7 +2,7 @@ name: Daily HEP-ML Digest
 
 on:
   schedule:
-    # UTC 00:17 = Asia/Shanghai 08:17 (official DeepSeek off-peak).
+    # UTC 00:17 = Asia/Shanghai 08:17; GitHub may delay scheduled runs.
     - cron: "17 0 * * *"
   workflow_dispatch:
 
@@ -40,18 +40,13 @@ jobs:
         continue-on-error: true
         env:
           DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
-          DEEPSEEK_BASE_URL: ${{ vars.DEEPSEEK_BASE_URL || 'https://api.deepseek.com' }}
+          LLM_API_STYLE: ${{ vars.LLM_API_STYLE || 'deepseek' }}
+          DEEPSEEK_BASE_URL: ${{ vars.DEEPSEEK_BASE_URL }}
           ANALYSIS_REVISION: ${{ vars.ANALYSIS_REVISION || '1' }}
           SCREENING_MODEL: ${{ vars.SCREENING_MODEL || 'deepseek-v4-flash' }}
           REVIEW_MODEL: ${{ vars.REVIEW_MODEL || 'deepseek-v4-pro' }}
           REVIEW_MAX_TOKENS: ${{ vars.REVIEW_MAX_TOKENS || '8192' }}
           REVIEW_REASONING_EFFORT: ${{ vars.REVIEW_REASONING_EFFORT || 'low' }}
-          SCREENING_CACHE_HIT_PRICE_PER_MILLION_RMB: ${{ vars.SCREENING_CACHE_HIT_PRICE_PER_MILLION_RMB || '0.02' }}
-          SCREENING_INPUT_PRICE_PER_MILLION_RMB: ${{ vars.SCREENING_INPUT_PRICE_PER_MILLION_RMB || '1' }}
-          SCREENING_OUTPUT_PRICE_PER_MILLION_RMB: ${{ vars.SCREENING_OUTPUT_PRICE_PER_MILLION_RMB || '4' }}
-          REVIEW_CACHE_HIT_PRICE_PER_MILLION_RMB: ${{ vars.REVIEW_CACHE_HIT_PRICE_PER_MILLION_RMB || '0.15' }}
-          REVIEW_INPUT_PRICE_PER_MILLION_RMB: ${{ vars.REVIEW_INPUT_PRICE_PER_MILLION_RMB || '4.5' }}
-          REVIEW_OUTPUT_PRICE_PER_MILLION_RMB: ${{ vars.REVIEW_OUTPUT_PRICE_PER_MILLION_RMB || '13.5' }}
           SITE_URL: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}
           MAX_CANDIDATES: "60"
           BOOTSTRAP_RESULTS: "120"
@@ -73,7 +68,6 @@ jobs:
           MAX_PAPER_FAILURES: ${{ vars.MAX_PAPER_FAILURES || '3' }}
           ALERT_AFTER_RUNS: ${{ vars.ALERT_AFTER_RUNS || '3' }}
           ALERT_BACKLOG_DAYS: ${{ vars.ALERT_BACKLOG_DAYS || '7' }}
-          MAX_ESTIMATED_COST_RMB: ${{ vars.MAX_ESTIMATED_COST_RMB || '1' }}
           FEEDBACK_REPOSITORY: ${{ github.repository }}
         run: python -m hepml_digest
 

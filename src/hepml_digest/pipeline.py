@@ -94,10 +94,6 @@ def _run_pipeline(
             stop_reason = "time_budget"
         elif usage.prompt_tokens >= settings.max_prompt_tokens:
             stop_reason = "token_budget"
-        elif usage.cost(settings) >= settings.max_estimated_cost_rmb:
-            stop_reason = "cost_budget"
-        elif usage.unmetered_calls:
-            stop_reason = "unmetered_usage"
         elif usage.failed_calls - failures_at_last_success >= settings.max_consecutive_api_failures:
             stop_reason = "consecutive_failures"
         if stop_reason:
@@ -329,7 +325,7 @@ def _run_pipeline(
             health.last_source_success_at = finished_at
     if completed:
         health.last_analysis_success_at = finished_at
-    if failed_total or usage.unmetered_calls:
+    if failed_total:
         health.analysis_failure_runs += 1
     elif completed:
         health.analysis_failure_runs = 0
@@ -350,9 +346,14 @@ def _run_pipeline(
             f"Analysis incomplete: {failed_papers['screening']} screening failures, "
             f"{failed_papers['review']} review failures."
         )
-    if stop_reason in TERMINAL_API_FAILURES or stop_reason == "unmetered_usage":
+    if stop_reason in TERMINAL_API_FAILURES:
         alerts.append(
-            f"Model service stopped: {stop_reason}; check endpoint, model, output limits and billing usage."
+            f"Model service stopped: {stop_reason}; check endpoint, model and output limits."
+        )
+    if usage.missing_usage_calls:
+        alerts.append(
+            f"Token usage missing for {usage.missing_usage_calls} calls; reported totals are incomplete. "
+            "Request-count, output and time limits still apply."
         )
     if source_ok is not None and state.pending_backfill_since is not None:
         alerts.append("Backfill incomplete; inspect source errors and BACKFILL_MAX_PAGES.")
@@ -408,11 +409,7 @@ def _run_pipeline(
         "review_finish_reason": usage.review.last_finish_reason,
         "reasoning_tokens": usage.screening.reasoning_tokens + usage.review.reasoning_tokens,
         "prompt_tokens": usage.prompt_tokens,
-        "prompt_cache_hit_tokens": usage.screening.cache_hit_tokens + usage.review.cache_hit_tokens,
-        "prompt_cache_miss_tokens": (
-            usage.screening.cache_miss_tokens + usage.review.cache_miss_tokens
-        ),
+        "missing_usage_calls": usage.missing_usage_calls,
         "completion_tokens": usage.completion_tokens,
         "total_tokens": usage.prompt_tokens + usage.completion_tokens,
-        "estimated_cost_rmb": round(usage.cost(settings), 6),
     }

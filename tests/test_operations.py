@@ -130,30 +130,14 @@ def test_service_errors_stop_immediately_without_blame_or_secret_logging(tmp_pat
     assert "sensitive-provider-body" not in settings.state_file.read_text()
 
 
-def test_output_tokens_alone_can_stop_the_cost_budget(tmp_path):
-    class ExpensiveAnalyzer(DemoAnalyzer):
-        def screen(self, paper):
-            self.usage.screening.completion_tokens += 250000
-            return super().screen(paper)
-
+def test_zero_prompt_budget_blocks_all_model_calls(tmp_path):
     result = run_pipeline(
-        settings_for(tmp_path, max_deep_reviews=0, max_estimated_cost_rmb=1),
-        ExpensiveAnalyzer(), _demo_papers(),
-    )
-    assert result["screened"] == 1
-    assert result["queued_papers"] == 1
-    assert result["stop_reason"] == "cost_budget"
-    assert result["estimated_cost_rmb"] == 1
-
-
-def test_zero_cost_budget_blocks_all_model_calls(tmp_path):
-    result = run_pipeline(
-        settings_for(tmp_path, max_deep_reviews=0, max_estimated_cost_rmb=0),
+        settings_for(tmp_path, max_deep_reviews=0, max_prompt_tokens=0),
         DemoAnalyzer(), _demo_papers(),
     )
     assert result["screened"] == 0
     assert result["queued_papers"] == 2
-    assert result["stop_reason"] == "cost_budget"
+    assert result["stop_reason"] == "token_budget"
 
 
 def test_budget_stop_between_loop_and_request_is_not_an_analysis_failure(tmp_path):
@@ -172,16 +156,23 @@ def test_budget_stop_between_loop_and_request_is_not_an_analysis_failure(tmp_pat
     assert result["queued_papers"] == 2
 
 
-def test_missing_billing_usage_stops_further_calls_and_warns(tmp_path):
-    class UnmeteredAnalyzer(DemoAnalyzer):
+def test_missing_token_usage_warns_without_stopping_valid_analysis(tmp_path):
+    class MissingUsageAnalyzer(DemoAnalyzer):
         def screen(self, paper):
-            self.usage.unmetered_calls += 1
+            self.usage.missing_usage_calls += 1
             return super().screen(paper)
 
-    result = run_pipeline(settings_for(tmp_path), UnmeteredAnalyzer(), _demo_papers())
-    assert result["screened"] == 1
-    assert result["reviewed"] == 0
-    assert result["stop_reason"] == "unmetered_usage"
+    result = run_pipeline(
+        settings_for(tmp_path, max_candidates=1, max_deep_reviews=1),
+        MissingUsageAnalyzer(), _demo_papers(),
+    )
+    assert result["screened"] == result["reviewed"] == 1
+    assert result["queued_papers"] == 1
+    assert result["stop_reason"] == ""
+    assert result["api_calls_stopped"] == 0
+    assert result["missing_usage_calls"] == 1
+    assert result["analysis_failure_runs"] == 0
+    assert any("Token usage missing" in alert for alert in result["alerts"])
     assert result["status"] == "degraded"
 
 
@@ -349,3 +340,43 @@ def test_output_limit_stops_review_stage_without_quarantining_a_paper(tmp_path):
     assert result["pending_reviews"] == 2
     assert result["quarantined_tasks"] == 0
     assert all(work.failures == 0 for work in load_state(settings.state_file).work.values())
+
+
+def test_cli_passes_openai_style_from_repository_configuration(tmp_path, monkeypatch, capsys):
+    received = []
+
+    def analyzer(*args, **kwargs):
+        received.append((args, kwargs))
+        return DemoAnalyzer()
+
+    monkeypatch.setenv("LLM_API_STYLE", "openai")
+    monkeypatch.setenv("SCREENING_MODEL", "gpt-6.1-sol")
+    monkeypatch.setenv("REVIEW_MODEL", "gpt-6.1-sol")
+    monkeypatch.setenv("GITHUB_STEP_SUMMARY", str(tmp_path / "summary.md"))
+    monkeypatch.setattr("hepml_digest.cli.DeepSeekAnalyzer", analyzer)
+    monkeypatch.setattr("hepml_digest.cli.run_pipeline", lambda *a, **k: {"stop_reason": "", "alerts": []})
+    monkeypatch.setattr("sys.argv", ["hepml-digest"])
+    main()
+    assert received[0][0][:2] == ("gpt-6.1-sol", "gpt-6.1-sol")
+    assert received[0][1]["api_style"] == "openai"
+    capsys.readouterr()
+
+
+def test_cli_suppresses_http_client_detail_logs_even_when_verbose(tmp_path, monkeypatch, caplog, capsys):
+    import logging
+
+    def run(*args, **kwargs):
+        logging.getLogger("openai._base_client").debug("private-provider-body")
+        logging.getLogger("httpx").info("private-relay-url")
+        logging.getLogger("httpcore").debug("private-request-headers")
+        return {"stop_reason": "", "alerts": []}
+
+    monkeypatch.setenv("GITHUB_STEP_SUMMARY", str(tmp_path / "summary.md"))
+    monkeypatch.setattr("hepml_digest.cli.run_pipeline", run)
+    monkeypatch.setattr("sys.argv", ["hepml-digest", "--demo", "--verbose"])
+    with caplog.at_level(logging.DEBUG, logger="openai"), caplog.at_level(logging.DEBUG, logger="httpx"), caplog.at_level(logging.DEBUG, logger="httpcore"):
+        main()
+    assert "private-provider-body" not in caplog.text
+    assert "private-relay-url" not in caplog.text
+    assert "private-request-headers" not in caplog.text
+    capsys.readouterr()

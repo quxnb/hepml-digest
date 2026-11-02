@@ -334,7 +334,6 @@ class TokenBudgetAnalyzer(DemoAnalyzer):
         self.calls += 1
         self.usage.screening.calls += 1
         self.usage.screening.prompt_tokens += 10
-        self.usage.screening.cache_miss_tokens += 10
         return super().screen(paper)
 
 
@@ -351,7 +350,6 @@ def test_prompt_token_budget_stops_additional_calls(tmp_path: Path):
 
     assert analyzer.calls == 1
     assert result["prompt_tokens"] == 10
-    assert result["estimated_cost_rmb"] == 0.00001
     assert result["api_calls_stopped"] == 1
 
 

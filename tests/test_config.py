@@ -19,8 +19,6 @@ from hepml_digest.config import Settings
         ("max_prompt_tokens", -1),
         ("reanalysis_slots", -1),
         ("checkpoint_interval", 0),
-        ("screening_cache_hit_price_per_million_rmb", -0.01),
-        ("review_output_price_per_million_rmb", float("inf")),
         ("backfill_lookback_days", 0),
         ("backfill_max_pages", 0),
         ("backfill_max_pages", float("inf")),
@@ -31,37 +29,17 @@ from hepml_digest.config import Settings
         ("max_paper_failures", 0),
         ("alert_after_runs", 0),
         ("alert_backlog_days", 0),
-        ("max_estimated_cost_rmb", -1),
-        ("max_estimated_cost_rmb", float("inf")),
         ("review_max_tokens", 0),
         ("review_max_tokens", -1),
         ("review_reasoning_effort", "none"),
         ("review_reasoning_effort", "unknown"),
+        ("llm_api_style", "auto"),
+        ("llm_api_style", ""),
     ],
 )
 def test_settings_reject_invalid_values(field, value):
     with pytest.raises(ValueError):
         Settings(**{field: value})
-
-
-@pytest.mark.parametrize(
-    ("field", "default"),
-    [
-        ("screening_cache_hit_price_per_million_rmb", 0.02),
-        ("screening_input_price_per_million_rmb", 1.0),
-        ("screening_output_price_per_million_rmb", 4.0),
-        ("review_cache_hit_price_per_million_rmb", 0.15),
-        ("review_input_price_per_million_rmb", 4.5),
-        ("review_output_price_per_million_rmb", 13.5),
-    ],
-)
-def test_off_peak_price_defaults_and_env_overrides(monkeypatch, field, default):
-    monkeypatch.delenv(field.upper(), raising=False)
-    assert getattr(Settings(), field) == default
-    assert getattr(Settings.from_env(), field) == default
-
-    monkeypatch.setenv(field.upper(), "0.5")
-    assert getattr(Settings.from_env(), field) == 0.5
 
 
 def test_env_loader_uses_declared_defaults_and_preserves_aliases(monkeypatch, tmp_path):
@@ -80,9 +58,9 @@ def test_env_loader_uses_declared_defaults_and_preserves_aliases(monkeypatch, tm
         "MAX_CANDIDATES": "7",
         "REQUEST_TIMEOUT_SECONDS": "1.5",
         "AGING_SLOTS": "2",
-        "MAX_ESTIMATED_COST_RMB": "0.25",
         "REVIEW_MAX_TOKENS": "4096",
         "REVIEW_REASONING_EFFORT": "high",
+        "LLM_API_STYLE": "openai",
     }.items():
         monkeypatch.setenv(name, value)
     settings = Settings.from_env()
@@ -94,9 +72,9 @@ def test_env_loader_uses_declared_defaults_and_preserves_aliases(monkeypatch, tm
     assert settings.max_candidates == 7
     assert settings.request_timeout_seconds == 1.5
     assert settings.aging_slots == 2
-    assert settings.max_estimated_cost_rmb == 0.25
     assert settings.review_max_tokens == 4096
     assert settings.review_reasoning_effort == "high"
+    assert settings.llm_api_style == "openai"
 
 
 def test_request_timeout_defaults_match_local_example_and_workflow(monkeypatch):

@@ -100,15 +100,15 @@ def main() -> None:
         level=logging.DEBUG if args.verbose else logging.INFO,
         format="%(asctime)s %(levelname)s %(name)s: %(message)s",
     )
+    # SDK/client detail logs can expose relay URLs, bodies or request headers.
+    for name in ("openai", "httpx", "httpcore"):
+        logging.getLogger(name).setLevel(logging.WARNING)
     settings = Settings.from_env()
-    if args.demo and args.output_dir is None:
+    if args.demo:
         settings.output_dir = Path("build/demo-public")
-    if args.demo and args.state_file is None:
         settings.state_file = Path("build/demo-state.json")
-    if args.output_dir:
-        settings.output_dir = args.output_dir
-    if args.state_file:
-        settings.state_file = args.state_file
+    settings.output_dir = args.output_dir or settings.output_dir
+    settings.state_file = args.state_file or settings.state_file
 
     if args.export_evaluation or args.evaluate:
         if not settings.state_file.is_file():
@@ -143,6 +143,7 @@ def main() -> None:
             settings.request_timeout_seconds,
             review_max_tokens=settings.review_max_tokens,
             review_reasoning_effort=settings.review_reasoning_effort,
+            api_style=settings.llm_api_style,
         )
         papers = None
 

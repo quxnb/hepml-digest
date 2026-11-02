@@ -21,12 +21,6 @@ HEP_APPLICATION_CATEGORIES = frozenset(
 )
 
 
-def digest_track_for_categories(categories: list[str]) -> DigestTrack:
-    if HEP_APPLICATION_CATEGORIES.intersection(categories):
-        return "hep_application"
-    return "method_radar"
-
-
 class Paper(BaseModel):
     arxiv_id: str
     version: int = Field(default=1, ge=1)
@@ -44,7 +38,9 @@ class Paper(BaseModel):
 
     @property
     def digest_track(self) -> DigestTrack:
-        return digest_track_for_categories(self.categories)
+        if HEP_APPLICATION_CATEGORIES.intersection(self.categories):
+            return "hep_application"
+        return "method_radar"
 
 
 class Screening(BaseModel):

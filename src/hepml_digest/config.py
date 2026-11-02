@@ -15,11 +15,13 @@ DEFAULT_CATEGORIES = (
 DEFAULT_REVIEW_MAX_TOKENS = 8192
 DEFAULT_REVIEW_REASONING_EFFORT = "low"
 DEFAULT_REQUEST_TIMEOUT_SECONDS = 120.0
+DEFAULT_LLM_API_STYLE = "deepseek"
 
 
 @dataclass(slots=True)
 class Settings:
     categories: tuple[str, ...] = DEFAULT_CATEGORIES
+    llm_api_style: str = DEFAULT_LLM_API_STYLE
     screening_model: str = "deepseek-v4-flash"
     review_model: str = "deepseek-v4-pro"
     review_max_tokens: int = DEFAULT_REVIEW_MAX_TOKENS
@@ -52,13 +54,6 @@ class Settings:
     max_paper_failures: int = 3
     alert_after_runs: int = 3
     alert_backlog_days: int = 7
-    max_estimated_cost_rmb: float = 1.0
-    screening_cache_hit_price_per_million_rmb: float = 0.02
-    screening_input_price_per_million_rmb: float = 1.0
-    screening_output_price_per_million_rmb: float = 4.0
-    review_cache_hit_price_per_million_rmb: float = 0.15
-    review_input_price_per_million_rmb: float = 4.5
-    review_output_price_per_million_rmb: float = 13.5
     feedback_repository: str = ""
     user_agent: str = (
         "hepml-digest/0.1 (+personal research digest; "
@@ -66,6 +61,8 @@ class Settings:
     )
 
     def __post_init__(self) -> None:
+        if self.llm_api_style not in {"deepseek", "openai"}:
+            raise ValueError("llm_api_style must be deepseek or openai")
         for item in fields(self):
             value = getattr(self, item.name)
             if isinstance(value, (int, float)) and (not isfinite(value) or value < 0):

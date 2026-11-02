@@ -103,14 +103,8 @@ def _parse_entries(parsed, source_category: str | None = None) -> list[Paper]:
                 for item in entry.get("tags", [])
                 if item.get("term", "").strip()
             ]
-            categories = sorted(
-                set(
-                    [
-                        *([] if source_category is None else [source_category]),
-                        *tags,
-                    ]
-                )
-            )
+            if source_category is not None:
+                tags.append(source_category)
             published = _entry_datetime(entry, "published")
             updated = _entry_datetime(entry, "updated")
             papers.append(
@@ -125,7 +119,7 @@ def _parse_entries(parsed, source_category: str | None = None) -> list[Paper]:
                     link=f"https://arxiv.org/abs/{base_id}",
                     published=published,
                     updated=updated,
-                    categories=categories,
+                    categories=sorted(set(tags)),
                 )
             )
         except (ValueError, TypeError) as exc:

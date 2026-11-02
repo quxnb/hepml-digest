@@ -1,5 +1,8 @@
 from types import SimpleNamespace
 
+import httpx
+from openai import APIConnectionError, APIStatusError, OpenAI
+
 from hepml_digest.cli import _demo_papers
 import pytest
 
@@ -110,8 +113,6 @@ def test_deepseek_analyzer_tracks_usage_and_prompt_fingerprint(monkeypatch):
 
     assert analyzer.usage.screening.calls == 1
     assert analyzer.usage.prompt_tokens == 120
-    assert analyzer.usage.screening.cache_hit_tokens == 100
-    assert analyzer.usage.screening.cache_miss_tokens == 20
     assert analyzer.usage.completion_tokens == 30
     assert (
         analyzer.screening_fingerprint
@@ -180,23 +181,26 @@ def test_fingerprint_separates_services_and_revisions_but_not_keys(monkeypatch):
 
 
 @pytest.mark.parametrize("deepseek_fields", [True, False])
-def test_usage_normalizes_cache_fields_once(deepseek_fields):
+def test_usage_counts_reported_totals_without_cache_accounting(deepseek_fields):
     from hepml_digest.llm import StageUsage
 
-    raw = SimpleNamespace(prompt_tokens=30, completion_tokens=7)
+    raw = SimpleNamespace(
+        prompt_tokens=30, completion_tokens=7,
+        completion_tokens_details=SimpleNamespace(reasoning_tokens=3),
+    )
     if deepseek_fields:
         raw.prompt_cache_hit_tokens = 10
         raw.prompt_cache_miss_tokens = 20
     else:
         raw.prompt_tokens_details = SimpleNamespace(cached_tokens=10)
     usage = StageUsage()
-    usage.add(raw)
-    assert usage.cache_hit_tokens == 10
-    assert usage.cache_miss_tokens == 20
-    assert usage.cost(1, 2, 3) == pytest.approx(71 / 1_000_000)
+    assert usage.add(raw)
+    assert usage.prompt_tokens == 30
+    assert usage.completion_tokens == 7
+    assert usage.reasoning_tokens == 3
 
 
-def test_paid_invalid_response_is_counted_before_retry_budget_check(monkeypatch):
+def test_invalid_response_usage_is_counted_before_retry_budget_check(monkeypatch):
     monkeypatch.setenv("DEEPSEEK_API_KEY", "test-key")
     analyzer = DeepSeekAnalyzer("screen", "review", "screen prompt", "review prompt")
     monkeypatch.setattr(DeepSeekAnalyzer._request_json.retry, "wait", lambda _: 0)
@@ -205,17 +209,17 @@ def test_paid_invalid_response_is_counted_before_retry_budget_check(monkeypatch)
     def create(**kwargs):
         calls.append(kwargs)
         return SimpleNamespace(
-            usage=SimpleNamespace(prompt_tokens=0, completion_tokens=250000),
+            usage=SimpleNamespace(prompt_tokens=2500, completion_tokens=1000),
             choices=[SimpleNamespace(message=SimpleNamespace(content="invalid JSON"))],
         )
 
     analyzer.client = SimpleNamespace(chat=SimpleNamespace(completions=SimpleNamespace(create=create)))
-    settings = Settings()
-    analyzer.request_guard = lambda: analyzer.usage.cost(settings) < 1
+    analyzer.request_guard = lambda: analyzer.usage.prompt_tokens < 2500
     with pytest.raises(APICallBudgetExceeded):
         analyzer.screen(_demo_papers()[0])
     assert len(calls) == 1
-    assert analyzer.usage.cost(settings) == 1
+    assert analyzer.usage.prompt_tokens == 2500
+    assert analyzer.usage.completion_tokens == 1000
     assert analyzer.usage.failed_calls == 1
 
 
@@ -251,7 +255,9 @@ def test_missing_usage_is_detected_at_the_api_boundary(monkeypatch, missing):
 
     analyzer.client = SimpleNamespace(chat=SimpleNamespace(completions=SimpleNamespace(create=create)))
     analyzer.screen(_demo_papers()[0])
-    assert analyzer.usage.unmetered_calls == 1
+    assert analyzer.usage.missing_usage_calls == 1
+    assert analyzer.usage.prompt_tokens == (0 if missing in {"all", "input"} else 120)
+    assert analyzer.usage.completion_tokens == (0 if missing in {"all", "output"} else 30)
 
 
 @pytest.mark.parametrize("stage", ["screening", "review"])
@@ -289,7 +295,6 @@ def test_truncated_response_is_metered_and_not_retried(monkeypatch, stage, with_
     assert usage.last_finish_reason == "length"
     assert usage.reasoning_tokens == 2100
     assert analyzer.usage.completion_tokens == 2200
-    assert analyzer.usage.cost(Settings()) > 0
     assert analyzer.usage.failed_calls == 1
     assert analyzer.usage.last_failure_kind == "output_limit"
 
@@ -368,3 +373,120 @@ def test_review_evidence_boundary_is_sent_and_changes_only_review_fingerprint(mo
     current.client = SimpleNamespace(chat=SimpleNamespace(completions=SimpleNamespace(create=create)))
     current.review(paper, screening)
     assert sent[0]["messages"][0] == {"role": "system", "content": review_prompt}
+
+
+@pytest.mark.parametrize("api_style", ["deepseek", "openai"])
+def test_api_styles_send_correct_wire_format_and_read_standard_usage(monkeypatch, api_style):
+    import json
+
+    monkeypatch.setenv("DEEPSEEK_API_KEY", "test-key")
+    analyzer = DeepSeekAnalyzer(
+        "gpt-6.1-sol", "gpt-6.1-sol", "screen prompt", "review prompt", api_style=api_style,
+    )
+    paper = _demo_papers()[0]
+    screening = DemoAnalyzer().screen(paper)
+    calls = []
+
+    def respond(request):
+        body = json.loads(request.content)
+        is_review = bool(calls)
+        calls.append(body)
+        assert request.url.path == "/v1/chat/completions"
+        assert body["model"] == "gpt-6.1-sol"
+        assert body["response_format"] == {"type": "json_object"}
+        if api_style == "openai":
+            assert "thinking" not in body
+            assert "max_tokens" not in body
+            assert body["max_completion_tokens"] == (8192 if is_review else 4096)
+            assert body["reasoning_effort"] == "low"
+        else:
+            assert "max_completion_tokens" not in body
+            assert body["max_tokens"] == (8192 if is_review else 900)
+            assert body["thinking"] == {"type": "enabled" if is_review else "disabled"}
+            assert ("reasoning_effort" in body) == is_review
+        output = DemoAnalyzer().review(paper, screening) if is_review else screening
+        return httpx.Response(200, json={
+            "id": "test-completion", "object": "chat.completion", "created": 0,
+            "model": body["model"],
+            "choices": [{"index": 0, "finish_reason": "stop", "message": {
+                "role": "assistant", "content": output.model_dump_json(),
+            }}],
+            "usage": {
+                "prompt_tokens": 200, "completion_tokens": 100, "total_tokens": 300,
+                "prompt_tokens_details": {"cached_tokens": 50},
+                "completion_tokens_details": {"reasoning_tokens": 30},
+            },
+        })
+
+    with httpx.Client(transport=httpx.MockTransport(respond)) as client:
+        analyzer.client = OpenAI(api_key="test-key", base_url="https://relay.example/v1", http_client=client)
+        assert analyzer.screen(paper) == screening
+        assert analyzer.review(paper, screening).summary_cn
+    assert len(calls) == 2
+    assert analyzer.usage.prompt_tokens == 400
+    assert analyzer.usage.completion_tokens == 200
+    assert analyzer.usage.screening.reasoning_tokens == analyzer.usage.review.reasoning_tokens == 30
+    assert analyzer.usage.missing_usage_calls == 0
+
+
+def test_api_style_is_explicit_and_does_not_guess_from_model_names(monkeypatch):
+    from hepml_digest.llm import _analysis_fingerprint
+    from hepml_digest.models import Screening
+
+    monkeypatch.setenv("DEEPSEEK_API_KEY", "test-key")
+    monkeypatch.delenv("DEEPSEEK_BASE_URL", raising=False)
+    original = DeepSeekAnalyzer("model", "model", "screen", "review")
+    explicit = DeepSeekAnalyzer("model", "model", "screen", "review", api_style="deepseek")
+    standard = DeepSeekAnalyzer("model", "model", "screen", "review", api_style="openai")
+    assert original.api_style == explicit.api_style == "deepseek"
+    assert original.screening_fingerprint == explicit.screening_fingerprint
+    assert original.review_fingerprint == explicit.review_fingerprint
+    assert str(standard.client.base_url) == "https://api.openai.com/v1/"
+    assert original.screening_fingerprint != standard.screening_fingerprint
+    assert original.review_fingerprint != standard.review_fingerprint
+    args = ["model", "prompt", "https://relay.example/v1", "1", Screening, True, 4096, "low"]
+    assert _analysis_fingerprint(*args, api_style="deepseek") != _analysis_fingerprint(*args, api_style="openai")
+
+
+@pytest.mark.parametrize(("status", "expected"), [
+    (402, "configuration"), (405, "configuration"), (422, "configuration"),
+    (408, "transient"), (409, "transient"), (429, "transient"), (503, "transient"),
+])
+def test_nonretryable_client_statuses_are_configuration_errors(status, expected):
+    from hepml_digest.llm import failure_kind
+
+    response = httpx.Response(status, request=httpx.Request("POST", "https://relay.example/v1"))
+    assert failure_kind(APIStatusError("private-response-body", response=response, body=None)) == expected
+
+
+@pytest.mark.parametrize("connection_error", [False, True])
+def test_failure_diagnostics_include_type_and_status_without_secrets(monkeypatch, caplog, connection_error):
+    monkeypatch.setenv("DEEPSEEK_API_KEY", "test-key")
+    analyzer = DeepSeekAnalyzer("model", "model", "screen", "review", api_style="openai")
+    monkeypatch.setattr(DeepSeekAnalyzer._request_json.retry, "wait", lambda _: 0)
+    request = httpx.Request("POST", "https://private-relay.example/v1/chat/completions?key=private-token")
+    if connection_error:
+        error = APIConnectionError(request=request)
+        error.__cause__ = httpx.ConnectError("private-response-body private-token", request=request)
+        error.__cause__.__cause__ = ValueError("private-token")
+    else:
+        error = APIStatusError(
+            "private-response-body private-token", body={"key": "private-token"},
+            response=httpx.Response(422, request=request),
+        )
+
+    def create(**kwargs):
+        raise error
+
+    analyzer.client = SimpleNamespace(chat=SimpleNamespace(completions=SimpleNamespace(create=create)))
+    analyzer.request_guard = lambda: analyzer.usage.failed_calls < 1
+    with pytest.raises(APICallBudgetExceeded if connection_error else APIStatusError):
+        analyzer.screen(_demo_papers()[0])
+    assert "stage=screening attempt=1" in caplog.text
+    assert "exception_type=" + type(error).__name__ in caplog.text
+    assert ("http_status=none" if connection_error else "http_status=422") in caplog.text
+    if connection_error:
+        assert "cause_types=ConnectError/ValueError" in caplog.text
+    assert "private-relay.example" not in caplog.text
+    assert "private-response-body" not in caplog.text
+    assert "private-token" not in caplog.text
