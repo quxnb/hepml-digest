@@ -114,6 +114,31 @@ class APICallBudgetExceeded(RuntimeError):
     pass
 
 
+def _connection_hint(error: Exception) -> str:
+    """Inspect transport messages locally; return only a fixed, non-sensitive tag."""
+    if not isinstance(error, APIConnectionError):
+        return "not_applicable"
+    markers = {
+        "dns": ("name or service not known", "temporary failure in name resolution", "getaddrinfo failed"),
+        "tls_certificate": ("certificate verify failed", "certificate_verify_failed"),
+        "tls_protocol": ("wrong version number", "eof occurred in violation of protocol"),
+        "connection_refused": ("connection refused",),
+        "network_unreachable": ("network is unreachable", "no route to host"),
+        "connection_reset": ("connection reset", "connection aborted"),
+        "timeout": ("timed out",),
+    }
+    cause: BaseException | None = error
+    for _ in range(6):
+        if cause is None:
+            break
+        message = str(cause).lower()
+        for tag, phrases in markers.items():
+            if any(phrase in message for phrase in phrases):
+                return tag
+        cause = cause.__cause__ or cause.__context__
+    return "unknown"
+
+
 class Analyzer(Protocol):
     screening_fingerprint: str
     review_fingerprint: str
@@ -252,17 +277,19 @@ class DeepSeekAnalyzer:
             self.usage.failed_calls += 1
             self.usage.last_failure_kind = failure_kind(error)
             causes = []
-            cause = error.__cause__
+            cause = error.__cause__ or error.__context__
             for _ in range(3):
                 if cause is None:
                     break
                 causes.append(type(cause).__name__)
-                cause = cause.__cause__
+                cause = cause.__cause__ or cause.__context__
             LOGGER.warning(
-                "API request failed: stage=%s attempt=%d exception_type=%s http_status=%s cause_types=%s",
+                "API request failed: stage=%s attempt=%d exception_type=%s http_status=%s "
+                "cause_types=%s connection_hint=%s",
                 stage, stage_usage.calls, type(error).__name__,
                 error.status_code if isinstance(error, APIStatusError) else "none",
                 "/".join(causes) or "none",
+                _connection_hint(error),
             )
             raise
 
