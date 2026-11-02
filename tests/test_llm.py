@@ -460,7 +460,7 @@ def test_nonretryable_client_statuses_are_configuration_errors(status, expected)
 
 
 @pytest.mark.parametrize("connection_error", [False, True])
-def test_failure_diagnostics_include_type_and_status_without_secrets(monkeypatch, caplog, connection_error):
+def test_failure_logs_type_and_status_without_secrets(monkeypatch, caplog, connection_error):
     monkeypatch.setenv("DEEPSEEK_API_KEY", "test-key")
     analyzer = DeepSeekAnalyzer("model", "model", "screen", "review", api_style="openai")
     monkeypatch.setattr(DeepSeekAnalyzer._request_json.retry, "wait", lambda _: 0)
@@ -485,39 +485,6 @@ def test_failure_diagnostics_include_type_and_status_without_secrets(monkeypatch
     assert "stage=screening attempt=1" in caplog.text
     assert "exception_type=" + type(error).__name__ in caplog.text
     assert ("http_status=none" if connection_error else "http_status=422") in caplog.text
-    if connection_error:
-        assert "cause_types=ConnectError/ValueError" in caplog.text
     assert "private-relay.example" not in caplog.text
     assert "private-response-body" not in caplog.text
     assert "private-token" not in caplog.text
-
-
-@pytest.mark.parametrize(("detail", "hint"), [
-    ("[Errno -2] Name or service not known", "dns"),
-    ("[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed", "tls_certificate"),
-    ("[SSL: WRONG_VERSION_NUMBER] wrong version number", "tls_protocol"),
-    ("[Errno 111] Connection refused", "connection_refused"),
-    ("[Errno 101] Network is unreachable", "network_unreachable"),
-    ("[Errno 104] Connection reset by peer", "connection_reset"),
-    ("connection timed out", "timeout"),
-    ("All connection attempts failed", "unknown"),
-])
-def test_connection_hints_use_cause_or_context_without_exposing_messages(monkeypatch, caplog, detail, hint):
-    monkeypatch.setenv("DEEPSEEK_API_KEY", "test-key")
-    analyzer = DeepSeekAnalyzer("model", "model", "screen", "review", api_style="openai")
-    monkeypatch.setattr(DeepSeekAnalyzer._request_json.retry, "wait", lambda _: 0)
-    request = httpx.Request("POST", "https://private-relay.example/v1/chat/completions")
-    error = APIConnectionError(request=request)
-    error.__cause__ = httpx.ConnectError("All connection attempts failed", request=request)
-    error.__cause__.__context__ = OSError(detail + " private-token private-relay.example")
-
-    def create(**kwargs):
-        raise error
-
-    analyzer.client = SimpleNamespace(chat=SimpleNamespace(completions=SimpleNamespace(create=create)))
-    analyzer.request_guard = lambda: analyzer.usage.failed_calls < 1
-    with pytest.raises(APICallBudgetExceeded):
-        analyzer.screen(_demo_papers()[0])
-    assert "connection_hint=" + hint in caplog.text
-    assert "private-token" not in caplog.text
-    assert "private-relay.example" not in caplog.text

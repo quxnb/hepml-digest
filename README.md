@@ -117,12 +117,11 @@ MAX_CANDIDATES=1 MAX_DEEP_REVIEWS=1 python -m hepml_digest \
 - `screened`、`reviewed`：本次成功处理数；`published` 是 Feed 保留的条目总数，不是当天新增数。
 - `queued_papers`、`oldest_wait_days`：是否持续积压。
 - `*_finish_reason`：正常通常为 `stop`；`output_limit` 表示截断，应检查输出预算和推理强度，勿盲目重试。
-- 请求错误日志包含 `exception_type`、`http_status`、`cause_types`，不输出密钥、URL 或响应正文。
-- `connection_hint` 是固定的诊断提示（如 `dns`、`tls_certificate`、`connection_refused`）；`unknown` 表示仍无法从异常中确定。
+- 请求错误日志只保留阶段、尝试序号、`exception_type` 和 `http_status`，不输出密钥、URL 或响应正文。
 
 GitHub 日志通常使用 UTC，例如 `10:10 UTC` 对应北京时间 `18:10`，不表示调度时区设置错误。
 
-`http_status=none` 时结合原因类型检查连接、协议或超时；4xx 检查 Key、额度、地址、模型名和参数兼容性；
+`APIConnectionError` 应先检查地址和运行环境的网络可达性；4xx 检查 Key、额度、模型名和参数兼容性；
 429 或 5xx 检查限流和服务端状态。认证、配置错误或输出截断会保存状态后将工作流标记失败，保留线上页面。
 
 没有新条目也可能是没有合格论文，不应为了增加数量而降低阈值。模型生成内容仍需人工抽查；
