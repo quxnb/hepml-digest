@@ -68,7 +68,7 @@ INSPIRE 不需要额外 Key，默认查询 `neutrino`，可通过 Repository var
 3. 进入 `Actions → Daily HEP-ML Digest → Run workflow`，手动运行一次。
 4. 检查运行 Summary、网页和 Feed；部署后无需本地电脑常开。
 
-定时目标为北京时间每天 08:17，但 GitHub 调度可能延迟，不保证准点。
+定时目标为北京时间每天 08:17 和 20:17，但 GitHub 调度可能延迟，不保证准点。
 **CI** 运行测试和离线演示，不调用付费模型；**Dependabot** 检查依赖更新。
 
 站点和订阅地址通常为：
@@ -97,7 +97,7 @@ MAX_CANDIDATES=1 MAX_DEEP_REVIEWS=1 python -m hepml_digest \
 
 ## 运行边界与保护
 
-- arXiv 默认分类为 `stat.ML`、`cs.LG`、`physics.data-an`、`hep-ex`；与 INSPIRE 候选合并后，每次共用最多 60 篇初筛、5 篇深评的配额。
+- arXiv 默认分类为 `stat.ML`、`cs.LG`、`physics.data-an`、`hep-ex`；每日工作流与 INSPIRE 候选合并后，每次共用最多 120 篇初筛、10 篇深评的配额，其中初筛为旧分析重算预留 20 个名额。本地默认配额仍为 60 篇初筛、5 篇深评。
 - 深评只处理模型推荐、相关性同时达到深评和发布阈值、且非 `irrelevant` 的论文，不设最低数量。
 - `data/state.json` 保存结果、待处理队列和补抓进度；失败或超额候选留待后续运行，不要清空状态来重试。
 - 两个来源分别保存同步游标，分页中断保留已抓页面。按 arXiv ID、DOI、INSPIRE ID 去重，保留原有记录和 Feed ID；补充出版元数据不要求重算已有摘要分析。
