@@ -8,7 +8,474 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Sun, 08 Nov 2026 06:04:09 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 08 Nov 2026 18:01:44 +0000</lastBuildDate>
+    <item>
+      <title>Electroweak Constraints on Nuclear Neutron Distributions and the Low-Energy Weak Mixing Angle</title>
+      <link>https://arxiv.org/abs/2611.03751</link>
+      <description>直接报告CEνNS实验数据联合分析并测量弱混合角，属实验中微子研究</description>
+      <ns1:encoded>&lt;p&gt;&lt;strong&gt;栏目：&lt;/strong&gt;HEP 直接应用&lt;/p&gt;&lt;p&gt;&lt;strong&gt;分析依据：&lt;/strong&gt;仅标题和摘要；未读取全文。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法：&lt;/strong&gt;利用CREX/PREX-II宇称破坏电子散射约束核中子分布，联合分析COHERENT CsI、Ge、Ar数据提取弱混合角&lt;/p&gt;&lt;p&gt;&lt;strong&gt;相关性：&lt;/strong&gt;0.95；&lt;strong&gt;证据等级：&lt;/strong&gt;direct&lt;/p&gt;&lt;p&gt;&lt;strong&gt;初筛理由：&lt;/strong&gt;直接报告CEνNS实验数据联合分析并测量弱混合角，属实验中微子研究&lt;/p&gt;&lt;p&gt;&lt;strong&gt;摘要来源：&lt;/strong&gt;arXiv&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法总结（摘要分析）：&lt;/strong&gt;论文利用扩展Skyrme能量密度泛函中的跨核关联，将CREX/PREX-II宇称破坏电子散射对中子分布的约束传播到CEνNS靶核，得到中子形状因子与半径，相对半径不确定度低于1%。随后联合分析COHERENT CsI、Ge、Ar数据，提取弱混合角 sin^2θ_W=0.231^{+0.016}_{-0.015}，与标准模型一致，并为核结构、中微子电弱检验和暗物质探测器CEνNS预测提供电弱实验基准。&lt;/p&gt;&lt;h4&gt;摘要中报告的结论&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;CEνNS可作为低能弱混合角与新物理探针，但可靠解释需要靶核中子分布的独立约束。&lt;/li&gt;&lt;li&gt;在扩展Skyrme能量密度泛函框架内利用跨核关联，把CREX和PREX-II的PVES约束传播到CEνNS靶核，得到中子形状因子和半径，相对半径不确定度低于1%。&lt;/li&gt;&lt;li&gt;使用推断的中子形状因子联合分析COHERENT CsI、Ge和Ar数据，得到 sin^2θ_W=0.231^{+0.016}_{-0.015}，与标准模型预测一致。&lt;/li&gt;&lt;li&gt;该结果为核结构研究、中微子部门电弱检验及暗物质探测器中CEνNS信号预测提供首批由电弱实验约束的基准。&lt;/li&gt;&lt;/ul&gt;&lt;h4&gt;对高能实验物理的潜在帮助&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;将跨核相关协方差传播与分层贝叶斯/全局拟合用于多靶CEνNS联合提取弱混合角及非标准相互作用，需在真实数据上验证。&lt;/li&gt;&lt;li&gt;把PVES约束的中子形状因子迁移到其他CEνNS靶和暗物质探测器信号预测，属于迁移设想，需检查核模型外推与探测器响应。&lt;/li&gt;&lt;li&gt;用Skyrme能量密度泛函代理模型或emulator加速形状因子与协方差传播，并量化模型系统误差；不能仅凭机器学习声称减少系统误差。&lt;/li&gt;&lt;li&gt;建立多靶联合似然的通量、背景、能量刻度、quenching、阈值和协方差统一处理流程，用于未来CEνNS实验。&lt;/li&gt;&lt;li&gt;在多靶联合拟合中显式传播核形状因子与弱混合角的简并，评估对非标准中微子相互作用的灵敏度。&lt;/li&gt;&lt;li&gt;若扩展到反应堆或加速器中微子实验，需处理近远端关联、通量不确定度和探测器响应协方差。&lt;/li&gt;&lt;/ul&gt;&lt;h4&gt;迁移风险&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;跨核相关性由特定Skyrme能量密度泛函框架给出，模型选择与外推不确定度摘要未说明，需查阅全文确认。&lt;/li&gt;&lt;li&gt;COHERENT CsI、Ge、Ar联合分析的靶特定系统误差、背景、能量响应/quenching、阈值与协方差处理摘要未说明，需核查是否避免重复计数。&lt;/li&gt;&lt;li&gt;PVES约束与CEνNS拟合若共享核模型参数，存在相关性或双计数风险，需检查联合似然构造。&lt;/li&gt;&lt;li&gt;将结果用于暗物质探测器CEνNS预测依赖探测器几何、阈值、校准和中微子通量，摘要未说明，需验证。&lt;/li&gt;&lt;li&gt;若使用模拟事件权重（含负权）或存在simulation-to-data shift，联合拟合的协方差与外推需核查；摘要未说明。&lt;/li&gt;&lt;li&gt;弱混合角测量对中微子通量、核形状因子和信号效率的简并需通过多靶/多数据集联合与剖面似然评估。&lt;/li&gt;&lt;li&gt;摘要未说明 nuisance parameter 的剖面处理、校准不确定度和核模型模型平均方式，需全文确认。&lt;/li&gt;&lt;li&gt;跨核约束迁移到其他靶核时，Lorentz/置换对称性不是主要风险，但核结构模型外推和靶质量数依赖需重点核查。&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;strong&gt;最小验证方案：&lt;/strong&gt;最小可行验证：复现CREX/PREX-II约束传播与COHERENT三靶联合似然；用已知 sin^2θ_W 和EDF参数变化生成闭合测试，检查偏差与覆盖；做留一靶交叉验证和固定/浮动核参数对比；纳入通量、背景、能量刻度、quenching、阈值及协方差；若用emulator，需与完整EDF计算逐点比对并传播其误差；在真实数据上确认前不宣称系统误差降低或新物理灵敏度。&lt;/p&gt;&lt;p&gt;&lt;a href="https://arxiv.org/abs/2611.03751"&gt;论文页面&lt;/a&gt; · &lt;a href="https://inspirehep.net/literature/3222457"&gt;INSPIRE 记录&lt;/a&gt; · &lt;a href="https://github.com/quxnb/hepml-digest/issues/new?title=%5B%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%5D+arXiv%3A2611.03751+Electroweak+Constraints+on+Nuclear+Neutron+Distributions+and+the+Low-Energy+Weak&amp;amp;body=%23%23+%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%0A%0A-+%E8%AE%BA%E6%96%87%EF%BC%9A%5BarXiv%3A2611.03751%5D%28https%3A%2F%2Farxiv.org%2Fabs%2F2611.03751%29%0A-+%E8%AE%B0%E5%BD%95+ID%EF%BC%9Aarxiv%3A2611.03751%0A-+%E5%88%86%E6%9E%90%E4%BE%9D%E6%8D%AE%EF%BC%9A%E4%BB%85%E6%A0%87%E9%A2%98%E5%92%8C%E6%91%98%E8%A6%81%EF%BC%8C%E6%9C%AA%E8%AF%BB%E5%8F%96%E5%85%A8%E6%96%87%0A-+%E6%A0%8F%E7%9B%AE%EF%BC%9AHEP+%E7%9B%B4%E6%8E%A5%E5%BA%94%E7%94%A8%0A-+%E5%BD%93%E5%89%8D%E7%9B%B8%E5%85%B3%E6%80%A7%EF%BC%9A0.95%0A-+%E5%BD%93%E5%89%8D%E8%AF%81%E6%8D%AE%E7%AD%89%E7%BA%A7%EF%BC%9Adirect%0A%0A%23%23+%E5%88%A4%E6%96%AD%0A%0A-+%5B+%5D+%E6%8E%A8%E8%8D%90%E4%BF%9D%E7%95%99%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E5%90%88%E7%90%86%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E8%BF%87%E5%BA%A6%E6%8E%A8%E6%B5%8B%0A-+%5B+%5D+%E5%BA%94%E7%A7%BB%E8%87%B3%E5%8F%A6%E4%B8%80%E4%B8%AA%E6%A0%8F%E7%9B%AE%0A-+%5B+%5D+%E5%BB%BA%E8%AE%AE%E7%B2%BE%E8%AF%BB%E5%85%A8%E6%96%87%0A%0A%23%23+%E8%A1%A5%E5%85%85%E8%AF%B4%E6%98%8E%0A%0A"&gt;提交反馈&lt;/a&gt; · hep-ex, hep-ph, inspire:Experiment-HEP, inspire:Experiment-Nucl, inspire:Phenomenology-HEP, inspire:Theory-Nucl, nucl-ex, nucl-th&lt;/p&gt;</ns1:encoded>
+      <guid isPermaLink="false">arxiv:2611.03751:hepml-v1</guid>
+      <category>CEνNS信号预测</category>
+      <category>hep-ex</category>
+      <category>hep-ph</category>
+      <category>inspire:Experiment-HEP</category>
+      <category>inspire:Experiment-Nucl</category>
+      <category>inspire:Phenomenology-HEP</category>
+      <category>inspire:Theory-Nucl</category>
+      <category>nucl-ex</category>
+      <category>nucl-th</category>
+      <category>track:hep_application</category>
+      <category>弱混合角测量</category>
+      <category>核子形状因子建模</category>
+      <category>系统误差传播</category>
+      <category>联合拟合</category>
+      <pubDate>Mon, 02 Nov 2026 08:40:08 +0000</pubDate>
+    </item>
+    <item>
+      <title>Measurement of differential cross sections for $\nu_{\mu}$ -Ar charged-current interactions with protons and no pions in the final state with the MicroBooNE detector</title>
+      <link>https://arxiv.org/abs/2010.02390</link>
+      <description>直接报告MicroBooNE中微子-氩微分截面实验测量，含截面、重建变量与smearing矩阵。</description>
+      <ns1:encoded>&lt;p&gt;&lt;strong&gt;栏目：&lt;/strong&gt;HEP 直接应用&lt;/p&gt;&lt;p&gt;&lt;strong&gt;分析依据：&lt;/strong&gt;仅标题和摘要；未读取全文。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法：&lt;/strong&gt;MicroBooNE液氩时间投影室中νμ-Ar带电流零π末态微分截面测量&lt;/p&gt;&lt;p&gt;&lt;strong&gt;相关性：&lt;/strong&gt;1.00；&lt;strong&gt;证据等级：&lt;/strong&gt;direct&lt;/p&gt;&lt;p&gt;&lt;strong&gt;初筛理由：&lt;/strong&gt;直接报告MicroBooNE中微子-氩微分截面实验测量，含截面、重建变量与smearing矩阵。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;出版信息（来源记录）：&lt;/strong&gt;Phys.Rev.D 102 (2020) 112013&lt;/p&gt;&lt;p&gt;&lt;strong&gt;摘要来源：&lt;/strong&gt;INSPIRE (APS)&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法总结（摘要分析）：&lt;/strong&gt;MicroBooNE利用约1.6×10^20 POT的Booster中微子束数据（平均能量约800 MeV），首次在液氩中测量νμ-Ar带电流、无π介子且至少一个质子动量高于300 MeV/c的CC0πNp微分截面；数据样本估计效率29%、纯度76%，给出μ子与领头质子的动量、极角及μ子-质子张角五个重建变量的微分截面和smearing矩阵，便于理论预测前向折叠比较；与近期理论预测总体符合较好。&lt;/p&gt;&lt;h4&gt;摘要中报告的结论&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;首次测量中微子-氩相互作用中CC0πNp拓扑的微分截面。&lt;/li&gt;&lt;li&gt;质子动量阈值显著低于此前基于碳和闪烁体的实验。&lt;/li&gt;&lt;li&gt;使用约1.6×10^20 protons on target的MicroBooNE Booster Neutrino Beam数据，束流平均能量约800 MeV。&lt;/li&gt;&lt;li&gt;数据样本估计效率为29%、纯度为76%。&lt;/li&gt;&lt;li&gt;给出五个重建变量的微分截面：μ子动量与极角、领头质子动量与极角、μ子-质子张角。&lt;/li&gt;&lt;li&gt;包含可用于将理论预测前向折叠并与数据比较的smearing矩阵。&lt;/li&gt;&lt;li&gt;与近期理论预测比较，总体符合较好。&lt;/li&gt;&lt;/ul&gt;&lt;h4&gt;对高能实验物理的潜在帮助&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;迁移设想：将smearing矩阵用于前向折叠/展开和协方差传播，作为CC0πNp测量与理论比较的统计框架。&lt;/li&gt;&lt;li&gt;迁移设想：用机器学习改进液氩TPC中μ子、质子重建及CC0πNp事件选择，但需在真实数据上验证效率与纯度稳定性。&lt;/li&gt;&lt;li&gt;迁移设想：利用该拓扑的多变量微分数据约束中微子相互作用模型和通量/核效应 nuisance 参数；这不是论文已验证结论。&lt;/li&gt;&lt;/ul&gt;&lt;h4&gt;迁移风险&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;摘要未报告机器学习方法；以ML替换选择或重建可能改变效率、纯度和smearing，需数据验证。&lt;/li&gt;&lt;li&gt;ML训练依赖模拟，存在simulation-to-data shift与模型依赖；300 MeV/c质子阈值附近的重建偏差会放大风险。&lt;/li&gt;&lt;li&gt;摘要未说明系统误差协方差、nuisance参数、负权事件、校准和探测器几何处理，需查阅全文确认。&lt;/li&gt;&lt;li&gt;前向折叠与理论比较依赖smearing矩阵、通量及中微子-核相互作用模型的不确定性。&lt;/li&gt;&lt;li&gt;摘要未说明近远端关联或协方差构建细节，需全文确认；不能据此断言已处理或未处理。&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;strong&gt;最小验证方案：&lt;/strong&gt;最小可行验证：复现CC0πNp选择与五变量smearing矩阵；用已知真值的模拟做前向折叠闭包测试；在数据/MC控制样本检验ML重建与选择稳定性；将替代选择或展开结果与官方结果比较并传播协方差；核对300 MeV/c阈值、探测器几何及通量/相互作用系统；系统误差和负权处理以全文与协方差为准。&lt;/p&gt;&lt;p&gt;&lt;a href="https://arxiv.org/abs/2010.02390"&gt;论文页面&lt;/a&gt; · &lt;a href="https://doi.org/10.1103/physrevd.102.112013"&gt;DOI&lt;/a&gt; · &lt;a href="https://inspirehep.net/literature/1821572"&gt;INSPIRE 记录&lt;/a&gt; · &lt;a href="https://github.com/quxnb/hepml-digest/issues/new?title=%5B%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%5D+arXiv%3A2010.02390+Measurement+of+differential+cross+sections+for+%24%5Cnu_%7B%5Cmu%7D%24+-Ar+charged-current+i&amp;amp;body=%23%23+%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%0A%0A-+%E8%AE%BA%E6%96%87%EF%BC%9A%5BarXiv%3A2010.02390%5D%28https%3A%2F%2Farxiv.org%2Fabs%2F2010.02390%29%0A-+%E8%AE%B0%E5%BD%95+ID%EF%BC%9Aarxiv%3A2010.02390%0A-+%E5%88%86%E6%9E%90%E4%BE%9D%E6%8D%AE%EF%BC%9A%E4%BB%85%E6%A0%87%E9%A2%98%E5%92%8C%E6%91%98%E8%A6%81%EF%BC%8C%E6%9C%AA%E8%AF%BB%E5%8F%96%E5%85%A8%E6%96%87%0A-+%E6%A0%8F%E7%9B%AE%EF%BC%9AHEP+%E7%9B%B4%E6%8E%A5%E5%BA%94%E7%94%A8%0A-+%E5%BD%93%E5%89%8D%E7%9B%B8%E5%85%B3%E6%80%A7%EF%BC%9A1.00%0A-+%E5%BD%93%E5%89%8D%E8%AF%81%E6%8D%AE%E7%AD%89%E7%BA%A7%EF%BC%9Adirect%0A%0A%23%23+%E5%88%A4%E6%96%AD%0A%0A-+%5B+%5D+%E6%8E%A8%E8%8D%90%E4%BF%9D%E7%95%99%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E5%90%88%E7%90%86%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E8%BF%87%E5%BA%A6%E6%8E%A8%E6%B5%8B%0A-+%5B+%5D+%E5%BA%94%E7%A7%BB%E8%87%B3%E5%8F%A6%E4%B8%80%E4%B8%AA%E6%A0%8F%E7%9B%AE%0A-+%5B+%5D+%E5%BB%BA%E8%AE%AE%E7%B2%BE%E8%AF%BB%E5%85%A8%E6%96%87%0A%0A%23%23+%E8%A1%A5%E5%85%85%E8%AF%B4%E6%98%8E%0A%0A"&gt;提交反馈&lt;/a&gt; · hep-ex, hep-ph, inspire:Experiment-HEP, inspire:Experiment-Nucl, inspire:Instrumentation, inspire:Phenomenology-HEP, inspire:Theory-Nucl, nucl-ex, nucl-th, physics.ins-det&lt;/p&gt;</ns1:encoded>
+      <guid isPermaLink="false">arxiv:2010.02390:hepml-v1</guid>
+      <category>hep-ex</category>
+      <category>hep-ph</category>
+      <category>inspire:Experiment-HEP</category>
+      <category>inspire:Experiment-Nucl</category>
+      <category>inspire:Instrumentation</category>
+      <category>inspire:Phenomenology-HEP</category>
+      <category>inspire:Theory-Nucl</category>
+      <category>nucl-ex</category>
+      <category>nucl-th</category>
+      <category>physics.ins-det</category>
+      <category>track:hep_application</category>
+      <category>中微子-核截面测量</category>
+      <category>展开/forward folding</category>
+      <category>探测器重建</category>
+      <category>理论模型比较</category>
+      <category>系统误差处理</category>
+      <pubDate>Wed, 07 Oct 2020 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>DUNE Offline Computing Conceptual Design Report</title>
+      <link>https://arxiv.org/abs/2210.15665</link>
+      <description>直接针对中微子实验DUNE的离线计算与重建模拟等分析基础设施，属实验研究核心范畴</description>
+      <ns1:encoded>&lt;p&gt;&lt;strong&gt;栏目：&lt;/strong&gt;HEP 直接应用&lt;/p&gt;&lt;p&gt;&lt;strong&gt;分析依据：&lt;/strong&gt;仅标题和摘要；未读取全文。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法：&lt;/strong&gt;DUNE 离线计算与软件基础设施的概念设计，涵盖数据获取、编目、重建、模拟与分析工具&lt;/p&gt;&lt;p&gt;&lt;strong&gt;相关性：&lt;/strong&gt;0.90；&lt;strong&gt;证据等级：&lt;/strong&gt;direct&lt;/p&gt;&lt;p&gt;&lt;strong&gt;初筛理由：&lt;/strong&gt;直接针对中微子实验DUNE的离线计算与重建模拟等分析基础设施，属实验研究核心范畴&lt;/p&gt;&lt;p&gt;&lt;strong&gt;摘要来源：&lt;/strong&gt;INSPIRE (submitter)&lt;/p&gt;&lt;p&gt;&lt;em&gt;本条目仅完成摘要级筛选。&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;a href="https://arxiv.org/abs/2210.15665"&gt;论文页面&lt;/a&gt; · &lt;a href="https://doi.org/10.2172/1895403"&gt;DOI&lt;/a&gt; · &lt;a href="https://inspirehep.net/literature/2171912"&gt;INSPIRE 记录&lt;/a&gt; · &lt;a href="https://github.com/quxnb/hepml-digest/issues/new?title=%5B%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%5D+arXiv%3A2210.15665+DUNE+Offline+Computing+Conceptual+Design+Report&amp;amp;body=%23%23+%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%0A%0A-+%E8%AE%BA%E6%96%87%EF%BC%9A%5BarXiv%3A2210.15665%5D%28https%3A%2F%2Farxiv.org%2Fabs%2F2210.15665%29%0A-+%E8%AE%B0%E5%BD%95+ID%EF%BC%9Aarxiv%3A2210.15665%0A-+%E5%88%86%E6%9E%90%E4%BE%9D%E6%8D%AE%EF%BC%9A%E4%BB%85%E6%A0%87%E9%A2%98%E5%92%8C%E6%91%98%E8%A6%81%EF%BC%8C%E6%9C%AA%E8%AF%BB%E5%8F%96%E5%85%A8%E6%96%87%0A-+%E6%A0%8F%E7%9B%AE%EF%BC%9AHEP+%E7%9B%B4%E6%8E%A5%E5%BA%94%E7%94%A8%0A-+%E5%BD%93%E5%89%8D%E7%9B%B8%E5%85%B3%E6%80%A7%EF%BC%9A0.90%0A-+%E5%BD%93%E5%89%8D%E8%AF%81%E6%8D%AE%E7%AD%89%E7%BA%A7%EF%BC%9Adirect%0A%0A%23%23+%E5%88%A4%E6%96%AD%0A%0A-+%5B+%5D+%E6%8E%A8%E8%8D%90%E4%BF%9D%E7%95%99%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E5%90%88%E7%90%86%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E8%BF%87%E5%BA%A6%E6%8E%A8%E6%B5%8B%0A-+%5B+%5D+%E5%BA%94%E7%A7%BB%E8%87%B3%E5%8F%A6%E4%B8%80%E4%B8%AA%E6%A0%8F%E7%9B%AE%0A-+%5B+%5D+%E5%BB%BA%E8%AE%AE%E7%B2%BE%E8%AF%BB%E5%85%A8%E6%96%87%0A%0A%23%23+%E8%A1%A5%E5%85%85%E8%AF%B4%E6%98%8E%0A%0A"&gt;提交反馈&lt;/a&gt; · hep-ex, inspire:Computing, inspire:Data Analysis and Statistics, inspire:Experiment-HEP, inspire:Instrumentation, physics.data-an, physics.ins-det&lt;/p&gt;</ns1:encoded>
+      <guid isPermaLink="false">arxiv:2210.15665:hepml-v1</guid>
+      <category>hep-ex</category>
+      <category>inspire:Computing</category>
+      <category>inspire:Data Analysis and Statistics</category>
+      <category>inspire:Experiment-HEP</category>
+      <category>inspire:Instrumentation</category>
+      <category>physics.data-an</category>
+      <category>physics.ins-det</category>
+      <category>track:hep_application</category>
+      <category>数据分析</category>
+      <category>数据编目</category>
+      <category>模拟</category>
+      <category>计算基础设施</category>
+      <category>重建</category>
+      <pubDate>Thu, 27 Oct 2022 18:29:43 +0000</pubDate>
+    </item>
+    <item>
+      <title>First Simultaneous Measurement of Differential Muon-Neutrino Charged-Current Cross Sections on Argon for Final States with and Without Protons Using MicroBooNE Data</title>
+      <link>https://arxiv.org/abs/2402.19281</link>
+      <description>直接报告MicroBooNE中微子-氩截面测量，属实验测量，应进一步阅读</description>
+      <ns1:encoded>&lt;p&gt;&lt;strong&gt;栏目：&lt;/strong&gt;HEP 直接应用&lt;/p&gt;&lt;p&gt;&lt;strong&gt;分析依据：&lt;/strong&gt;仅标题和摘要；未读取全文。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法：&lt;/strong&gt;MicroBooNE首次同时测量带质子与不带质子末态的μ子中微子-氩双微分带电流截面，含条件约束模型验证与经验重加权&lt;/p&gt;&lt;p&gt;&lt;strong&gt;相关性：&lt;/strong&gt;0.97；&lt;strong&gt;证据等级：&lt;/strong&gt;direct&lt;/p&gt;&lt;p&gt;&lt;strong&gt;初筛理由：&lt;/strong&gt;直接报告MicroBooNE中微子-氩截面测量，属实验测量，应进一步阅读&lt;/p&gt;&lt;p&gt;&lt;strong&gt;出版信息（来源记录）：&lt;/strong&gt;Phys.Rev.Lett. 133 (2024) 041801&lt;/p&gt;&lt;p&gt;&lt;strong&gt;摘要来源：&lt;/strong&gt;INSPIRE (APS)&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法总结（摘要分析）：&lt;/strong&gt;MicroBooNE利用Fermilab增强器中微子束（平均能量约0.8 GeV）在6.4×10^20质子打靶量下采集的数据，首次同时给出μ子中微子-氩带电流 inclusive 通道中“含质子末态”与“不含质子末态”的双微分截面，并额外测量了随领头质子动能变化（跨越探测阈值）的微分截面。分析采用条件约束（conditional constraint）形式进行数据驱动的模型验证，并据此用经验重加权放大不确定度，以降低提取有偏截面的风险。通量平均的名义截面与常用事件产生器预言比较，显示出不含质子末态被严重错误建模，可能源于末态相互作用处理不足。结果可为改进事件产生器、提升中微子精密测量灵敏度提供新信息。&lt;/p&gt;&lt;h4&gt;摘要中报告的结论&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;首次对μ子中微子-氩带电流 inclusive 通道同时测量含质子与不含质子末态的双微分截面（基于MicroBooNE真实数据）。&lt;/li&gt;&lt;li&gt;额外给出随领头质子动能变化的微分截面，覆盖跨越探测阈值的区间。&lt;/li&gt;&lt;li&gt;数据对应6.4×10^20 protons on target，束流平均中微子能量约0.8 GeV。&lt;/li&gt;&lt;li&gt;采用条件约束形式进行广泛的数据驱动模型验证，并用经验重加权放大不确定度以减小有偏截面提取的可能性。&lt;/li&gt;&lt;li&gt;提取的名义通量平均截面与常用事件产生器预言比较，显示不含质子末态存在严重错误建模，可能源于末态相互作用处理不足。&lt;/li&gt;&lt;li&gt;作者指出这些测量可用于改进事件产生器，从而增强中微子实验精密测量的灵敏度（对未来影响的表述，非已验证结果）。&lt;/li&gt;&lt;/ul&gt;&lt;h4&gt;对高能实验物理的潜在帮助&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;将条件约束（conditional constraint）/剖面似然式数据驱动模型检验流程迁移到其他液氩TPC或闪烁体中微子截面分析中，作为产生器模型认证步骤。&lt;/li&gt;&lt;li&gt;把“模型检验后再放大不确定度”的经验重加权思路用于多末态同时展开，以评估产生器失配对截面提取的偏置。&lt;/li&gt;&lt;li&gt;含质子/不含质子末态的同时测量可作为约束末态相互作用与核效应模型的联合输入，用于全局拟合。&lt;/li&gt;&lt;li&gt;跨探测阈值的领头质子动能微分测量，可作为探测器能量响应与重建阈值研究的基准通道。&lt;/li&gt;&lt;li&gt;若引入机器学习，可探索基于分类器的末态质子数判别与展开正则化，但须与本文的截面提取结果分开验证。&lt;/li&gt;&lt;/ul&gt;&lt;h4&gt;迁移风险&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;经验重加权的幅度与形式带有主观性，若迁移到他通道需检查其对不确定度协方差与中心值的影响，摘要未说明具体实现细节，需查阅全文确认。&lt;/li&gt;&lt;li&gt;展开（unfolding）中的正则化强度与迁移矩阵依赖产生器，存在 simulation-to-data shift 风险。&lt;/li&gt;&lt;li&gt;末态相互作用与核效应建模不确定，可能同时影响信号定义与效率修正；摘要指出失配可能来自FSI，但未说明对应系统误差处理，需查阅全文。&lt;/li&gt;&lt;li&gt;通量不确定度与截面归一化在同时测量多末态时的相关性处理，摘要未说明，需查阅全文确认。&lt;/li&gt;&lt;li&gt;重加权后可能出现负权或非正定协方差问题，摘要未说明，需核查。&lt;/li&gt;&lt;li&gt;探测器几何、阈值与质子重建效率对“含质子/不含质子”分类的影响，摘要未说明。&lt;/li&gt;&lt;li&gt;条件约束形式对先验选择与 nuisance parameter 参数化的敏感性需评估。&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;strong&gt;最小验证方案：&lt;/strong&gt;最小可行验证：先用产生器注入已知截面做伪数据闭圈测试，检验条件约束+经验重加权流程能否无偏复原输入截面并给出正确覆盖；在不同正则化强度、不同先验与替代FSI模型下重复提取，比较中心值与协方差稳定性；用分块/bootstrap 或模拟样本评估统计与系统不确定度的收敛性；检查重加权后权重分布与协方差正定性。&lt;/p&gt;&lt;p&gt;&lt;a href="https://arxiv.org/abs/2402.19281"&gt;论文页面&lt;/a&gt; · &lt;a href="https://doi.org/10.1103/physrevlett.133.041801"&gt;DOI&lt;/a&gt; · &lt;a href="https://inspirehep.net/literature/2762940"&gt;INSPIRE 记录&lt;/a&gt; · &lt;a href="https://github.com/quxnb/hepml-digest/issues/new?title=%5B%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%5D+arXiv%3A2402.19281+First+Simultaneous+Measurement+of+Differential+Muon-Neutrino+Charged-Current+Cro&amp;amp;body=%23%23+%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%0A%0A-+%E8%AE%BA%E6%96%87%EF%BC%9A%5BarXiv%3A2402.19281%5D%28https%3A%2F%2Farxiv.org%2Fabs%2F2402.19281%29%0A-+%E8%AE%B0%E5%BD%95+ID%EF%BC%9Aarxiv%3A2402.19281%0A-+%E5%88%86%E6%9E%90%E4%BE%9D%E6%8D%AE%EF%BC%9A%E4%BB%85%E6%A0%87%E9%A2%98%E5%92%8C%E6%91%98%E8%A6%81%EF%BC%8C%E6%9C%AA%E8%AF%BB%E5%8F%96%E5%85%A8%E6%96%87%0A-+%E6%A0%8F%E7%9B%AE%EF%BC%9AHEP+%E7%9B%B4%E6%8E%A5%E5%BA%94%E7%94%A8%0A-+%E5%BD%93%E5%89%8D%E7%9B%B8%E5%85%B3%E6%80%A7%EF%BC%9A0.97%0A-+%E5%BD%93%E5%89%8D%E8%AF%81%E6%8D%AE%E7%AD%89%E7%BA%A7%EF%BC%9Adirect%0A%0A%23%23+%E5%88%A4%E6%96%AD%0A%0A-+%5B+%5D+%E6%8E%A8%E8%8D%90%E4%BF%9D%E7%95%99%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E5%90%88%E7%90%86%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E8%BF%87%E5%BA%A6%E6%8E%A8%E6%B5%8B%0A-+%5B+%5D+%E5%BA%94%E7%A7%BB%E8%87%B3%E5%8F%A6%E4%B8%80%E4%B8%AA%E6%A0%8F%E7%9B%AE%0A-+%5B+%5D+%E5%BB%BA%E8%AE%AE%E7%B2%BE%E8%AF%BB%E5%85%A8%E6%96%87%0A%0A%23%23+%E8%A1%A5%E5%85%85%E8%AF%B4%E6%98%8E%0A%0A"&gt;提交反馈&lt;/a&gt; · hep-ex, inspire:Experiment-HEP&lt;/p&gt;</ns1:encoded>
+      <guid isPermaLink="false">arxiv:2402.19281:hepml-v1</guid>
+      <category>hep-ex</category>
+      <category>inspire:Experiment-HEP</category>
+      <category>track:hep_application</category>
+      <category>中微子截面测量</category>
+      <category>事件产生器验证</category>
+      <category>末态强子相互作用建模</category>
+      <category>系统误差处理</category>
+      <pubDate>Fri, 01 Mar 2024 03:42:24 +0000</pubDate>
+    </item>
+    <item>
+      <title>First Double-Differential Cross Section Measurement of Neutral-Current π 0 Production in Neutrino-Argon Scattering in the MicroBooNE Detector</title>
+      <link>https://arxiv.org/abs/2404.10948</link>
+      <description>直接报告MicroBooNE中微子-氩中性流π0截面测量，属重要实验测量，机器学习非必需</description>
+      <ns1:encoded>&lt;p&gt;&lt;strong&gt;栏目：&lt;/strong&gt;HEP 直接应用&lt;/p&gt;&lt;p&gt;&lt;strong&gt;分析依据：&lt;/strong&gt;仅标题和摘要；未读取全文。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法：&lt;/strong&gt;首次双微分中性流π0产生截面测量，采用Wiener-SVD展开，并与事件产生器模型比较&lt;/p&gt;&lt;p&gt;&lt;strong&gt;相关性：&lt;/strong&gt;0.95；&lt;strong&gt;证据等级：&lt;/strong&gt;direct&lt;/p&gt;&lt;p&gt;&lt;strong&gt;初筛理由：&lt;/strong&gt;直接报告MicroBooNE中微子-氩中性流π0截面测量，属重要实验测量，机器学习非必需&lt;/p&gt;&lt;p&gt;&lt;strong&gt;出版信息（来源记录）：&lt;/strong&gt;Phys.Rev.Lett. 134 (2025) 161802&lt;/p&gt;&lt;p&gt;&lt;strong&gt;摘要来源：&lt;/strong&gt;INSPIRE (APS)&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法总结（摘要分析）：&lt;/strong&gt;论文报告MicroBooNE在Booster中微子束、平均中微子能量约0.8 GeV、6.4×10^20 POT数据中，首次测量中微子-氩中性流π0产生的双微分截面，并给出按末态是否含质子划分的单微分结果。共选择4971个完全包容候选事件；经数据驱动模型验证后，用Wiener-SVD展开提取通量平均截面。与常用事件产生器比较，模型倾向高估截面，尤其在π0动量0.2–0.5 GeV/c和前向角区域，且至少含一个质子的末态被低估。&lt;/p&gt;&lt;h4&gt;摘要中报告的结论&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;论文报告首次中微子-氩中性流π0产生双微分截面测量，并给出按末态含/不含质子划分的单微分测量。&lt;/li&gt;&lt;li&gt;测量使用MicroBooNE探测器收集的Booster中微子束数据，平均中微子能量约0.8 GeV，对应6.4×10^20 POT。&lt;/li&gt;&lt;li&gt;共选择4971个完全包容于探测器内的NC π0候选事件。&lt;/li&gt;&lt;li&gt;经广泛数据驱动模型验证后，采用Wiener-SVD方法提取名义通量平均截面。&lt;/li&gt;&lt;li&gt;与常用中微子事件产生器比较，预测倾向高估实测NC π0截面，尤其在π0动量0.2–0.5 GeV/c和前向散射角区域。&lt;/li&gt;&lt;li&gt;末态至少含一个质子的样本也被事件产生器低估。&lt;/li&gt;&lt;li&gt;该数据可用于改进NC π0产生建模，而NC π0是CP破坏测量和新物理搜索的主要背景。&lt;/li&gt;&lt;/ul&gt;&lt;h4&gt;对高能实验物理的潜在帮助&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;迁移设想：将Wiener-SVD正则化展开和数据驱动模型验证流程用于其他中微子-核截面测量，并系统传播协方差。&lt;/li&gt;&lt;li&gt;迁移设想：把该双微分测量与事件产生器调参、通量和解谱不确定性结合，用于评估近/远端或单探测器分析的背景模型风险。&lt;/li&gt;&lt;li&gt;迁移设想：探索机器学习用于事件选择、去噪、展开超参数选择或系统误差代理模型，但摘要未报告机器学习，须独立验证。&lt;/li&gt;&lt;li&gt;迁移设想：将含/不含质子末态的微分结果用于核效应和末态相互作用模型检验。&lt;/li&gt;&lt;li&gt;迁移设想：为CP破坏和新物理搜索中的NC π0背景建立数据约束模板，但需在目标分析中验证可迁移性。&lt;/li&gt;&lt;/ul&gt;&lt;h4&gt;迁移风险&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;摘要未说明系统误差、nuisance参数、负权事件、校准、探测器几何和选择效率细节，需查阅全文确认，不能据此断言未处理。&lt;/li&gt;&lt;li&gt;Wiener-SVD展开依赖正则化与数据驱动验证细节；若迁移到其他通道，正则化偏差和模型依赖需重新评估。&lt;/li&gt;&lt;li&gt;结果以通量平均截面给出，外推到不同通量或探测器配置存在模型依赖。&lt;/li&gt;&lt;li&gt;完全包容选择和质子末态定义可能限制迁移到不同探测器和重建流程。&lt;/li&gt;&lt;li&gt;事件产生器比较不等于完整模型验证；机器学习替代不会自动降低系统误差。&lt;/li&gt;&lt;li&gt;摘要未说明近远端关联或协方差处理，相关迁移需全文核实。&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;strong&gt;最小验证方案：&lt;/strong&gt;最小可行验证：用公开选择与协方差信息做伪实验闭包测试，比较不同正则化强度、通量模型、核模型、校准和选择定义下的展开稳定性；对任何机器学习代理，在独立模拟或数据子集上盲验证偏差与协方差，并与传统方法比较，不预设能降低系统误差。&lt;/p&gt;&lt;p&gt;&lt;a href="https://arxiv.org/abs/2404.10948"&gt;论文页面&lt;/a&gt; · &lt;a href="https://doi.org/10.1103/physrevlett.134.161802"&gt;DOI&lt;/a&gt; · &lt;a href="https://inspirehep.net/literature/2778311"&gt;INSPIRE 记录&lt;/a&gt; · &lt;a href="https://github.com/quxnb/hepml-digest/issues/new?title=%5B%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%5D+arXiv%3A2404.10948+First+Double-Differential+Cross+Section+Measurement+of+Neutral-Current+%CF%80+0+Produ&amp;amp;body=%23%23+%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%0A%0A-+%E8%AE%BA%E6%96%87%EF%BC%9A%5BarXiv%3A2404.10948%5D%28https%3A%2F%2Farxiv.org%2Fabs%2F2404.10948%29%0A-+%E8%AE%B0%E5%BD%95+ID%EF%BC%9Aarxiv%3A2404.10948%0A-+%E5%88%86%E6%9E%90%E4%BE%9D%E6%8D%AE%EF%BC%9A%E4%BB%85%E6%A0%87%E9%A2%98%E5%92%8C%E6%91%98%E8%A6%81%EF%BC%8C%E6%9C%AA%E8%AF%BB%E5%8F%96%E5%85%A8%E6%96%87%0A-+%E6%A0%8F%E7%9B%AE%EF%BC%9AHEP+%E7%9B%B4%E6%8E%A5%E5%BA%94%E7%94%A8%0A-+%E5%BD%93%E5%89%8D%E7%9B%B8%E5%85%B3%E6%80%A7%EF%BC%9A0.95%0A-+%E5%BD%93%E5%89%8D%E8%AF%81%E6%8D%AE%E7%AD%89%E7%BA%A7%EF%BC%9Adirect%0A%0A%23%23+%E5%88%A4%E6%96%AD%0A%0A-+%5B+%5D+%E6%8E%A8%E8%8D%90%E4%BF%9D%E7%95%99%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E5%90%88%E7%90%86%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E8%BF%87%E5%BA%A6%E6%8E%A8%E6%B5%8B%0A-+%5B+%5D+%E5%BA%94%E7%A7%BB%E8%87%B3%E5%8F%A6%E4%B8%80%E4%B8%AA%E6%A0%8F%E7%9B%AE%0A-+%5B+%5D+%E5%BB%BA%E8%AE%AE%E7%B2%BE%E8%AF%BB%E5%85%A8%E6%96%87%0A%0A%23%23+%E8%A1%A5%E5%85%85%E8%AF%B4%E6%98%8E%0A%0A"&gt;提交反馈&lt;/a&gt; · hep-ex, inspire:Experiment-HEP&lt;/p&gt;</ns1:encoded>
+      <guid isPermaLink="false">arxiv:2404.10948:hepml-v1</guid>
+      <category>hep-ex</category>
+      <category>inspire:Experiment-HEP</category>
+      <category>track:hep_application</category>
+      <category>展开</category>
+      <category>截面测量</category>
+      <category>探测器模拟</category>
+      <category>背景建模</category>
+      <pubDate>Thu, 18 Apr 2024 03:43:31 +0000</pubDate>
+    </item>
+    <item>
+      <title>Snowmass Neutrino Frontier Report</title>
+      <link>https://arxiv.org/abs/2211.08641</link>
+      <description>Snowmass中微子前沿综述，涵盖实验现状与规划，对中微子实验方向有直接参考价值</description>
+      <ns1:encoded>&lt;p&gt;&lt;strong&gt;栏目：&lt;/strong&gt;HEP 直接应用&lt;/p&gt;&lt;p&gt;&lt;strong&gt;分析依据：&lt;/strong&gt;仅标题和摘要；未读取全文。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法：&lt;/strong&gt;中微子物理现状与未来展望的社区综述&lt;/p&gt;&lt;p&gt;&lt;strong&gt;相关性：&lt;/strong&gt;0.90；&lt;strong&gt;证据等级：&lt;/strong&gt;direct&lt;/p&gt;&lt;p&gt;&lt;strong&gt;初筛理由：&lt;/strong&gt;Snowmass中微子前沿综述，涵盖实验现状与规划，对中微子实验方向有直接参考价值&lt;/p&gt;&lt;p&gt;&lt;strong&gt;摘要来源：&lt;/strong&gt;INSPIRE (arXiv)&lt;/p&gt;&lt;p&gt;&lt;em&gt;本条目仅完成摘要级筛选。&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;a href="https://arxiv.org/abs/2211.08641"&gt;论文页面&lt;/a&gt; · &lt;a href="https://doi.org/10.2172/1908226"&gt;DOI&lt;/a&gt; · &lt;a href="https://inspirehep.net/literature/2182730"&gt;INSPIRE 记录&lt;/a&gt; · &lt;a href="https://github.com/quxnb/hepml-digest/issues/new?title=%5B%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%5D+arXiv%3A2211.08641+Snowmass+Neutrino+Frontier+Report&amp;amp;body=%23%23+%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%0A%0A-+%E8%AE%BA%E6%96%87%EF%BC%9A%5BarXiv%3A2211.08641%5D%28https%3A%2F%2Farxiv.org%2Fabs%2F2211.08641%29%0A-+%E8%AE%B0%E5%BD%95+ID%EF%BC%9Aarxiv%3A2211.08641%0A-+%E5%88%86%E6%9E%90%E4%BE%9D%E6%8D%AE%EF%BC%9A%E4%BB%85%E6%A0%87%E9%A2%98%E5%92%8C%E6%91%98%E8%A6%81%EF%BC%8C%E6%9C%AA%E8%AF%BB%E5%8F%96%E5%85%A8%E6%96%87%0A-+%E6%A0%8F%E7%9B%AE%EF%BC%9AHEP+%E7%9B%B4%E6%8E%A5%E5%BA%94%E7%94%A8%0A-+%E5%BD%93%E5%89%8D%E7%9B%B8%E5%85%B3%E6%80%A7%EF%BC%9A0.90%0A-+%E5%BD%93%E5%89%8D%E8%AF%81%E6%8D%AE%E7%AD%89%E7%BA%A7%EF%BC%9Adirect%0A%0A%23%23+%E5%88%A4%E6%96%AD%0A%0A-+%5B+%5D+%E6%8E%A8%E8%8D%90%E4%BF%9D%E7%95%99%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E5%90%88%E7%90%86%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E8%BF%87%E5%BA%A6%E6%8E%A8%E6%B5%8B%0A-+%5B+%5D+%E5%BA%94%E7%A7%BB%E8%87%B3%E5%8F%A6%E4%B8%80%E4%B8%AA%E6%A0%8F%E7%9B%AE%0A-+%5B+%5D+%E5%BB%BA%E8%AE%AE%E7%B2%BE%E8%AF%BB%E5%85%A8%E6%96%87%0A%0A%23%23+%E8%A1%A5%E5%85%85%E8%AF%B4%E6%98%8E%0A%0A"&gt;提交反馈&lt;/a&gt; · astro-ph.CO, astro-ph.SR, hep-ex, hep-ph, inspire:Astrophysics, inspire:Experiment-HEP, inspire:Experiment-Nucl, inspire:Phenomenology-HEP, nucl-ex&lt;/p&gt;</ns1:encoded>
+      <guid isPermaLink="false">arxiv:2211.08641:hepml-v1</guid>
+      <category>astro-ph.CO</category>
+      <category>astro-ph.SR</category>
+      <category>hep-ex</category>
+      <category>hep-ph</category>
+      <category>inspire:Astrophysics</category>
+      <category>inspire:Experiment-HEP</category>
+      <category>inspire:Experiment-Nucl</category>
+      <category>inspire:Phenomenology-HEP</category>
+      <category>nucl-ex</category>
+      <category>track:hep_application</category>
+      <category>中微子振荡</category>
+      <category>探测器</category>
+      <category>相互作用与截面</category>
+      <category>系统误差</category>
+      <category>联合拟合</category>
+      <category>质量测量</category>
+      <category>通量</category>
+      <pubDate>Thu, 17 Nov 2022 02:43:15 +0000</pubDate>
+    </item>
+    <item>
+      <title>Impact of cross-section uncertainties on supernova neutrino spectral parameter fitting in the Deep Underground Neutrino Experiment</title>
+      <link>https://arxiv.org/abs/2303.17007</link>
+      <description>直接研究中微子实验DUNE的超新星中微子能谱拟合与截面系统误差影响</description>
+      <ns1:encoded>&lt;p&gt;&lt;strong&gt;栏目：&lt;/strong&gt;HEP 直接应用&lt;/p&gt;&lt;p&gt;&lt;strong&gt;分析依据：&lt;/strong&gt;仅标题和摘要；未读取全文。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法：&lt;/strong&gt;模拟超新星中微子能谱参数拟合，评估截面不确定性对DUNE灵敏度的影响&lt;/p&gt;&lt;p&gt;&lt;strong&gt;相关性：&lt;/strong&gt;0.90；&lt;strong&gt;证据等级：&lt;/strong&gt;direct&lt;/p&gt;&lt;p&gt;&lt;strong&gt;初筛理由：&lt;/strong&gt;直接研究中微子实验DUNE的超新星中微子能谱拟合与截面系统误差影响&lt;/p&gt;&lt;p&gt;&lt;strong&gt;出版信息（来源记录）：&lt;/strong&gt;Phys.Rev.D 107 (2023) 112012&lt;/p&gt;&lt;p&gt;&lt;strong&gt;摘要来源：&lt;/strong&gt;INSPIRE (APS)&lt;/p&gt;&lt;p&gt;&lt;em&gt;本条目仅完成摘要级筛选。&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;a href="https://arxiv.org/abs/2303.17007"&gt;论文页面&lt;/a&gt; · &lt;a href="https://doi.org/10.1103/physrevd.107.112012"&gt;DOI&lt;/a&gt; · &lt;a href="https://inspirehep.net/literature/2648777"&gt;INSPIRE 记录&lt;/a&gt; · &lt;a href="https://github.com/quxnb/hepml-digest/issues/new?title=%5B%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%5D+arXiv%3A2303.17007+Impact+of+cross-section+uncertainties+on+supernova+neutrino+spectral+parameter+f&amp;amp;body=%23%23+%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%0A%0A-+%E8%AE%BA%E6%96%87%EF%BC%9A%5BarXiv%3A2303.17007%5D%28https%3A%2F%2Farxiv.org%2Fabs%2F2303.17007%29%0A-+%E8%AE%B0%E5%BD%95+ID%EF%BC%9Aarxiv%3A2303.17007%0A-+%E5%88%86%E6%9E%90%E4%BE%9D%E6%8D%AE%EF%BC%9A%E4%BB%85%E6%A0%87%E9%A2%98%E5%92%8C%E6%91%98%E8%A6%81%EF%BC%8C%E6%9C%AA%E8%AF%BB%E5%8F%96%E5%85%A8%E6%96%87%0A-+%E6%A0%8F%E7%9B%AE%EF%BC%9AHEP+%E7%9B%B4%E6%8E%A5%E5%BA%94%E7%94%A8%0A-+%E5%BD%93%E5%89%8D%E7%9B%B8%E5%85%B3%E6%80%A7%EF%BC%9A0.90%0A-+%E5%BD%93%E5%89%8D%E8%AF%81%E6%8D%AE%E7%AD%89%E7%BA%A7%EF%BC%9Adirect%0A%0A%23%23+%E5%88%A4%E6%96%AD%0A%0A-+%5B+%5D+%E6%8E%A8%E8%8D%90%E4%BF%9D%E7%95%99%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E5%90%88%E7%90%86%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E8%BF%87%E5%BA%A6%E6%8E%A8%E6%B5%8B%0A-+%5B+%5D+%E5%BA%94%E7%A7%BB%E8%87%B3%E5%8F%A6%E4%B8%80%E4%B8%AA%E6%A0%8F%E7%9B%AE%0A-+%5B+%5D+%E5%BB%BA%E8%AE%AE%E7%B2%BE%E8%AF%BB%E5%85%A8%E6%96%87%0A%0A%23%23+%E8%A1%A5%E5%85%85%E8%AF%B4%E6%98%8E%0A%0A"&gt;提交反馈&lt;/a&gt; · hep-ex, hep-ph, inspire:Experiment-HEP, inspire:Phenomenology-HEP, inspire:Theory-Nucl, nucl-th&lt;/p&gt;</ns1:encoded>
+      <guid isPermaLink="false">arxiv:2303.17007:hepml-v1</guid>
+      <category>hep-ex</category>
+      <category>hep-ph</category>
+      <category>inspire:Experiment-HEP</category>
+      <category>inspire:Phenomenology-HEP</category>
+      <category>inspire:Theory-Nucl</category>
+      <category>nucl-th</category>
+      <category>track:hep_application</category>
+      <category>中微子能谱参数拟合</category>
+      <category>截面不确定性传播</category>
+      <category>灵敏度评估</category>
+      <category>系统误差分析</category>
+      <pubDate>Tue, 04 Apr 2023 17:56:10 +0000</pubDate>
+    </item>
+    <item>
+      <title>First particle-by-particle measurement of emittance in the Muon Ionization Cooling Experiment</title>
+      <link>https://arxiv.org/abs/1810.13224</link>
+      <description>直接报告中微子工厂/μ子对撞机前端的μ子束冷却实验测量</description>
+      <ns1:encoded>&lt;p&gt;&lt;strong&gt;栏目：&lt;/strong&gt;HEP 直接应用&lt;/p&gt;&lt;p&gt;&lt;strong&gt;分析依据：&lt;/strong&gt;仅标题和摘要；未读取全文。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法：&lt;/strong&gt;基于闪烁纤维跟踪器和粒子鉴别系统，逐粒子重建μ子相空间发射度，用于电离冷却演示&lt;/p&gt;&lt;p&gt;&lt;strong&gt;相关性：&lt;/strong&gt;0.90；&lt;strong&gt;证据等级：&lt;/strong&gt;direct&lt;/p&gt;&lt;p&gt;&lt;strong&gt;初筛理由：&lt;/strong&gt;直接报告中微子工厂/μ子对撞机前端的μ子束冷却实验测量&lt;/p&gt;&lt;p&gt;&lt;strong&gt;出版信息（来源记录）：&lt;/strong&gt;Eur.Phys.J.C 79 (2019) 257&lt;/p&gt;&lt;p&gt;&lt;strong&gt;摘要来源：&lt;/strong&gt;INSPIRE (Springer)&lt;/p&gt;&lt;p&gt;&lt;em&gt;本条目仅完成摘要级筛选。&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;a href="https://arxiv.org/abs/1810.13224"&gt;论文页面&lt;/a&gt; · &lt;a href="https://doi.org/10.1140/epjc/s10052-019-6674-y"&gt;DOI&lt;/a&gt; · &lt;a href="https://inspirehep.net/literature/1701216"&gt;INSPIRE 记录&lt;/a&gt; · &lt;a href="https://github.com/quxnb/hepml-digest/issues/new?title=%5B%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%5D+arXiv%3A1810.13224+First+particle-by-particle+measurement+of+emittance+in+the+Muon+Ionization+Cooli&amp;amp;body=%23%23+%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%0A%0A-+%E8%AE%BA%E6%96%87%EF%BC%9A%5BarXiv%3A1810.13224%5D%28https%3A%2F%2Farxiv.org%2Fabs%2F1810.13224%29%0A-+%E8%AE%B0%E5%BD%95+ID%EF%BC%9Aarxiv%3A1810.13224%0A-+%E5%88%86%E6%9E%90%E4%BE%9D%E6%8D%AE%EF%BC%9A%E4%BB%85%E6%A0%87%E9%A2%98%E5%92%8C%E6%91%98%E8%A6%81%EF%BC%8C%E6%9C%AA%E8%AF%BB%E5%8F%96%E5%85%A8%E6%96%87%0A-+%E6%A0%8F%E7%9B%AE%EF%BC%9AHEP+%E7%9B%B4%E6%8E%A5%E5%BA%94%E7%94%A8%0A-+%E5%BD%93%E5%89%8D%E7%9B%B8%E5%85%B3%E6%80%A7%EF%BC%9A0.90%0A-+%E5%BD%93%E5%89%8D%E8%AF%81%E6%8D%AE%E7%AD%89%E7%BA%A7%EF%BC%9Adirect%0A%0A%23%23+%E5%88%A4%E6%96%AD%0A%0A-+%5B+%5D+%E6%8E%A8%E8%8D%90%E4%BF%9D%E7%95%99%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E5%90%88%E7%90%86%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E8%BF%87%E5%BA%A6%E6%8E%A8%E6%B5%8B%0A-+%5B+%5D+%E5%BA%94%E7%A7%BB%E8%87%B3%E5%8F%A6%E4%B8%80%E4%B8%AA%E6%A0%8F%E7%9B%AE%0A-+%5B+%5D+%E5%BB%BA%E8%AE%AE%E7%B2%BE%E8%AF%BB%E5%85%A8%E6%96%87%0A%0A%23%23+%E8%A1%A5%E5%85%85%E8%AF%B4%E6%98%8E%0A%0A"&gt;提交反馈&lt;/a&gt; · inspire:Accelerators, inspire:Instrumentation, physics.acc-ph, physics.ins-det&lt;/p&gt;</ns1:encoded>
+      <guid isPermaLink="false">arxiv:1810.13224:hepml-v1</guid>
+      <category>inspire:Accelerators</category>
+      <category>inspire:Instrumentation</category>
+      <category>physics.acc-ph</category>
+      <category>physics.ins-det</category>
+      <category>track:hep_application</category>
+      <category>径迹重建</category>
+      <category>束流冷却</category>
+      <category>相空间重建</category>
+      <category>粒子鉴别</category>
+      <pubDate>Thu, 01 Nov 2018 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Geo-Neutrino and Earth Electric Field</title>
+      <link>https://inspirehep.net/literature/2643259</link>
+      <description>直接涉及Borexino地球中微子数据解释，但以地球物理假说为主、新意有限</description>
+      <ns1:encoded>&lt;p&gt;&lt;strong&gt;栏目：&lt;/strong&gt;HEP 直接应用&lt;/p&gt;&lt;p&gt;&lt;strong&gt;分析依据：&lt;/strong&gt;仅标题和摘要；未读取全文。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法：&lt;/strong&gt;利用Borexino数据检验地球反中微子通量与地壳正电荷过剩假说&lt;/p&gt;&lt;p&gt;&lt;strong&gt;相关性：&lt;/strong&gt;0.55；&lt;strong&gt;证据等级：&lt;/strong&gt;direct&lt;/p&gt;&lt;p&gt;&lt;strong&gt;初筛理由：&lt;/strong&gt;直接涉及Borexino地球中微子数据解释，但以地球物理假说为主、新意有限&lt;/p&gt;&lt;p&gt;&lt;strong&gt;出版信息（来源记录）：&lt;/strong&gt;Phys.Atom.Nucl. 85 (2022) 659&lt;/p&gt;&lt;p&gt;&lt;strong&gt;摘要来源：&lt;/strong&gt;INSPIRE (Springer)&lt;/p&gt;&lt;p&gt;&lt;em&gt;本条目仅完成摘要级筛选。&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;a href="https://inspirehep.net/literature/2643259"&gt;INSPIRE 记录&lt;/a&gt; · &lt;a href="https://doi.org/10.1134/s1063778822060047"&gt;DOI&lt;/a&gt; · &lt;a href="https://github.com/quxnb/hepml-digest/issues/new?title=%5B%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%5D+DOI%3A10.1134%2Fs1063778822060047+Geo-Neutrino+and+Earth+Electric+Field&amp;amp;body=%23%23+%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%0A%0A-+%E8%AE%BA%E6%96%87%EF%BC%9A%5BDOI%3A10.1134%2Fs1063778822060047%5D%28https%3A%2F%2Finspirehep.net%2Fliterature%2F2643259%29%0A-+%E8%AE%B0%E5%BD%95+ID%EF%BC%9Adoi%3A10.1134%2Fs1063778822060047%0A-+%E5%88%86%E6%9E%90%E4%BE%9D%E6%8D%AE%EF%BC%9A%E4%BB%85%E6%A0%87%E9%A2%98%E5%92%8C%E6%91%98%E8%A6%81%EF%BC%8C%E6%9C%AA%E8%AF%BB%E5%8F%96%E5%85%A8%E6%96%87%0A-+%E6%A0%8F%E7%9B%AE%EF%BC%9AHEP+%E7%9B%B4%E6%8E%A5%E5%BA%94%E7%94%A8%0A-+%E5%BD%93%E5%89%8D%E7%9B%B8%E5%85%B3%E6%80%A7%EF%BC%9A0.55%0A-+%E5%BD%93%E5%89%8D%E8%AF%81%E6%8D%AE%E7%AD%89%E7%BA%A7%EF%BC%9Adirect%0A%0A%23%23+%E5%88%A4%E6%96%AD%0A%0A-+%5B+%5D+%E6%8E%A8%E8%8D%90%E4%BF%9D%E7%95%99%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E5%90%88%E7%90%86%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E8%BF%87%E5%BA%A6%E6%8E%A8%E6%B5%8B%0A-+%5B+%5D+%E5%BA%94%E7%A7%BB%E8%87%B3%E5%8F%A6%E4%B8%80%E4%B8%AA%E6%A0%8F%E7%9B%AE%0A-+%5B+%5D+%E5%BB%BA%E8%AE%AE%E7%B2%BE%E8%AF%BB%E5%85%A8%E6%96%87%0A%0A%23%23+%E8%A1%A5%E5%85%85%E8%AF%B4%E6%98%8E%0A%0A"&gt;提交反馈&lt;/a&gt; · inspire:Experiment-HEP, inspire:General Physics&lt;/p&gt;</ns1:encoded>
+      <guid isPermaLink="false">doi:10.1134/s1063778822060047:hepml-v1</guid>
+      <category>inspire:Experiment-HEP</category>
+      <category>inspire:General Physics</category>
+      <category>track:hep_application</category>
+      <category>地球中微子通量测量</category>
+      <category>探测器数据对模型约束</category>
+      <pubDate>Fri, 17 Mar 2023 10:41:40 +0000</pubDate>
+    </item>
+    <item>
+      <title>The reactor antineutrino spectrum calculation</title>
+      <link>https://arxiv.org/abs/2012.09917</link>
+      <description>直接计算反应堆反中微子能谱，与实验中微子通量及振荡分析相关，但为理论计算需评估实验可用性</description>
+      <ns1:encoded>&lt;p&gt;&lt;strong&gt;栏目：&lt;/strong&gt;HEP 直接应用&lt;/p&gt;&lt;p&gt;&lt;strong&gt;分析依据：&lt;/strong&gt;仅标题和摘要；未读取全文。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法：&lt;/strong&gt;基于求和法计算裂变同位素反应堆反中微子能谱的玩具模型&lt;/p&gt;&lt;p&gt;&lt;strong&gt;相关性：&lt;/strong&gt;0.55；&lt;strong&gt;证据等级：&lt;/strong&gt;direct&lt;/p&gt;&lt;p&gt;&lt;strong&gt;初筛理由：&lt;/strong&gt;直接计算反应堆反中微子能谱，与实验中微子通量及振荡分析相关，但为理论计算需评估实验可用性&lt;/p&gt;&lt;p&gt;&lt;strong&gt;摘要来源：&lt;/strong&gt;INSPIRE (arXiv)&lt;/p&gt;&lt;p&gt;&lt;em&gt;本条目仅完成摘要级筛选。&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;a href="https://arxiv.org/abs/2012.09917"&gt;论文页面&lt;/a&gt; · &lt;a href="https://inspirehep.net/literature/1837432"&gt;INSPIRE 记录&lt;/a&gt; · &lt;a href="https://github.com/quxnb/hepml-digest/issues/new?title=%5B%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%5D+arXiv%3A2012.09917+The+reactor+antineutrino+spectrum+calculation&amp;amp;body=%23%23+%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%0A%0A-+%E8%AE%BA%E6%96%87%EF%BC%9A%5BarXiv%3A2012.09917%5D%28https%3A%2F%2Farxiv.org%2Fabs%2F2012.09917%29%0A-+%E8%AE%B0%E5%BD%95+ID%EF%BC%9Aarxiv%3A2012.09917%0A-+%E5%88%86%E6%9E%90%E4%BE%9D%E6%8D%AE%EF%BC%9A%E4%BB%85%E6%A0%87%E9%A2%98%E5%92%8C%E6%91%98%E8%A6%81%EF%BC%8C%E6%9C%AA%E8%AF%BB%E5%8F%96%E5%85%A8%E6%96%87%0A-+%E6%A0%8F%E7%9B%AE%EF%BC%9AHEP+%E7%9B%B4%E6%8E%A5%E5%BA%94%E7%94%A8%0A-+%E5%BD%93%E5%89%8D%E7%9B%B8%E5%85%B3%E6%80%A7%EF%BC%9A0.55%0A-+%E5%BD%93%E5%89%8D%E8%AF%81%E6%8D%AE%E7%AD%89%E7%BA%A7%EF%BC%9Adirect%0A%0A%23%23+%E5%88%A4%E6%96%AD%0A%0A-+%5B+%5D+%E6%8E%A8%E8%8D%90%E4%BF%9D%E7%95%99%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E5%90%88%E7%90%86%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E8%BF%87%E5%BA%A6%E6%8E%A8%E6%B5%8B%0A-+%5B+%5D+%E5%BA%94%E7%A7%BB%E8%87%B3%E5%8F%A6%E4%B8%80%E4%B8%AA%E6%A0%8F%E7%9B%AE%0A-+%5B+%5D+%E5%BB%BA%E8%AE%AE%E7%B2%BE%E8%AF%BB%E5%85%A8%E6%96%87%0A%0A%23%23+%E8%A1%A5%E5%85%85%E8%AF%B4%E6%98%8E%0A%0A"&gt;提交反馈&lt;/a&gt; · hep-ph, inspire:Experiment-Nucl, inspire:Phenomenology-HEP, inspire:Theory-Nucl, nucl-ex, nucl-th&lt;/p&gt;</ns1:encoded>
+      <guid isPermaLink="false">arxiv:2012.09917:hepml-v1</guid>
+      <category>hep-ph</category>
+      <category>inspire:Experiment-Nucl</category>
+      <category>inspire:Phenomenology-HEP</category>
+      <category>inspire:Theory-Nucl</category>
+      <category>nucl-ex</category>
+      <category>nucl-th</category>
+      <category>track:hep_application</category>
+      <category>中微子振荡本底建模</category>
+      <category>反应堆反中微子通量预测</category>
+      <pubDate>Mon, 21 Dec 2020 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Interpretation of First Detection of Solar Neutrinos from CNO Cycle with Borexino</title>
+      <link>https://arxiv.org/abs/2007.07371</link>
+      <description>直接报告中微子实验首次探测及本底解释，属实验中微子研究</description>
+      <ns1:encoded>&lt;p&gt;&lt;strong&gt;栏目：&lt;/strong&gt;HEP 直接应用&lt;/p&gt;&lt;p&gt;&lt;strong&gt;分析依据：&lt;/strong&gt;仅标题和摘要；未读取全文。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法：&lt;/strong&gt;Borexino 太阳中微子 CNO 循环首次探测结果与地球中微子本底解释&lt;/p&gt;&lt;p&gt;&lt;strong&gt;相关性：&lt;/strong&gt;0.90；&lt;strong&gt;证据等级：&lt;/strong&gt;direct&lt;/p&gt;&lt;p&gt;&lt;strong&gt;初筛理由：&lt;/strong&gt;直接报告中微子实验首次探测及本底解释，属实验中微子研究&lt;/p&gt;&lt;p&gt;&lt;strong&gt;出版信息（来源记录）：&lt;/strong&gt;Bull.Russ.Acad.Sci.Phys. 85 (2021) 430&lt;/p&gt;&lt;p&gt;&lt;strong&gt;摘要来源：&lt;/strong&gt;INSPIRE (Springer)&lt;/p&gt;&lt;p&gt;&lt;em&gt;本条目仅完成摘要级筛选。&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;a href="https://arxiv.org/abs/2007.07371"&gt;论文页面&lt;/a&gt; · &lt;a href="https://doi.org/10.3103/s1062873821040067"&gt;DOI&lt;/a&gt; · &lt;a href="https://inspirehep.net/literature/1806925"&gt;INSPIRE 记录&lt;/a&gt; · &lt;a href="https://github.com/quxnb/hepml-digest/issues/new?title=%5B%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%5D+arXiv%3A2007.07371+Interpretation+of+First+Detection+of+Solar+Neutrinos+from+CNO+Cycle+with+Borexin&amp;amp;body=%23%23+%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%0A%0A-+%E8%AE%BA%E6%96%87%EF%BC%9A%5BarXiv%3A2007.07371%5D%28https%3A%2F%2Farxiv.org%2Fabs%2F2007.07371%29%0A-+%E8%AE%B0%E5%BD%95+ID%EF%BC%9Aarxiv%3A2007.07371%0A-+%E5%88%86%E6%9E%90%E4%BE%9D%E6%8D%AE%EF%BC%9A%E4%BB%85%E6%A0%87%E9%A2%98%E5%92%8C%E6%91%98%E8%A6%81%EF%BC%8C%E6%9C%AA%E8%AF%BB%E5%8F%96%E5%85%A8%E6%96%87%0A-+%E6%A0%8F%E7%9B%AE%EF%BC%9AHEP+%E7%9B%B4%E6%8E%A5%E5%BA%94%E7%94%A8%0A-+%E5%BD%93%E5%89%8D%E7%9B%B8%E5%85%B3%E6%80%A7%EF%BC%9A0.90%0A-+%E5%BD%93%E5%89%8D%E8%AF%81%E6%8D%AE%E7%AD%89%E7%BA%A7%EF%BC%9Adirect%0A%0A%23%23+%E5%88%A4%E6%96%AD%0A%0A-+%5B+%5D+%E6%8E%A8%E8%8D%90%E4%BF%9D%E7%95%99%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E5%90%88%E7%90%86%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E8%BF%87%E5%BA%A6%E6%8E%A8%E6%B5%8B%0A-+%5B+%5D+%E5%BA%94%E7%A7%BB%E8%87%B3%E5%8F%A6%E4%B8%80%E4%B8%AA%E6%A0%8F%E7%9B%AE%0A-+%5B+%5D+%E5%BB%BA%E8%AE%AE%E7%B2%BE%E8%AF%BB%E5%85%A8%E6%96%87%0A%0A%23%23+%E8%A1%A5%E5%85%85%E8%AF%B4%E6%98%8E%0A%0A"&gt;提交反馈&lt;/a&gt; · hep-ex, inspire:Experiment-HEP, inspire:Instrumentation, physics.ins-det&lt;/p&gt;</ns1:encoded>
+      <guid isPermaLink="false">arxiv:2007.07371:hepml-v1</guid>
+      <category>hep-ex</category>
+      <category>inspire:Experiment-HEP</category>
+      <category>inspire:Instrumentation</category>
+      <category>physics.ins-det</category>
+      <category>track:hep_application</category>
+      <category>中微子探测</category>
+      <category>本底建模</category>
+      <category>能谱分析</category>
+      <pubDate>Thu, 16 Jul 2020 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>What can the CNO neutrinos flux measurement done by Borexino say about $^{40}$K geoneutrino flux?</title>
+      <link>https://inspirehep.net/literature/1838743</link>
+      <description>直接关联中微子实验测量与地球中微子推断，但主要是现象学关联，实验建议较初步。</description>
+      <ns1:encoded>&lt;p&gt;&lt;strong&gt;栏目：&lt;/strong&gt;HEP 直接应用&lt;/p&gt;&lt;p&gt;&lt;strong&gt;分析依据：&lt;/strong&gt;仅标题和摘要；未读取全文。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法：&lt;/strong&gt;利用 Borexino CNO 中微子通量测量推断地球 40K 地球中微子通量与地热流&lt;/p&gt;&lt;p&gt;&lt;strong&gt;相关性：&lt;/strong&gt;0.70；&lt;strong&gt;证据等级：&lt;/strong&gt;direct&lt;/p&gt;&lt;p&gt;&lt;strong&gt;初筛理由：&lt;/strong&gt;直接关联中微子实验测量与地球中微子推断，但主要是现象学关联，实验建议较初步。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;出版信息（来源记录）：&lt;/strong&gt;J.Phys.Conf.Ser. 1690 (2020) 012170&lt;/p&gt;&lt;p&gt;&lt;strong&gt;摘要来源：&lt;/strong&gt;INSPIRE (IOP)&lt;/p&gt;&lt;p&gt;&lt;em&gt;本条目仅完成摘要级筛选。&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;a href="https://inspirehep.net/literature/1838743"&gt;INSPIRE 记录&lt;/a&gt; · &lt;a href="https://doi.org/10.1088/1742-6596/1690/1/012170"&gt;DOI&lt;/a&gt; · &lt;a href="https://github.com/quxnb/hepml-digest/issues/new?title=%5B%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%5D+DOI%3A10.1088%2F1742-6596%2F1690%2F1%2F012170+What+can+the+CNO+neutrinos+flux+measurement+done+by+Borexino+say+about+%24%5E%7B40%7D%24K+&amp;amp;body=%23%23+%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%0A%0A-+%E8%AE%BA%E6%96%87%EF%BC%9A%5BDOI%3A10.1088%2F1742-6596%2F1690%2F1%2F012170%5D%28https%3A%2F%2Finspirehep.net%2Fliterature%2F1838743%29%0A-+%E8%AE%B0%E5%BD%95+ID%EF%BC%9Adoi%3A10.1088%2F1742-6596%2F1690%2F1%2F012170%0A-+%E5%88%86%E6%9E%90%E4%BE%9D%E6%8D%AE%EF%BC%9A%E4%BB%85%E6%A0%87%E9%A2%98%E5%92%8C%E6%91%98%E8%A6%81%EF%BC%8C%E6%9C%AA%E8%AF%BB%E5%8F%96%E5%85%A8%E6%96%87%0A-+%E6%A0%8F%E7%9B%AE%EF%BC%9AHEP+%E7%9B%B4%E6%8E%A5%E5%BA%94%E7%94%A8%0A-+%E5%BD%93%E5%89%8D%E7%9B%B8%E5%85%B3%E6%80%A7%EF%BC%9A0.70%0A-+%E5%BD%93%E5%89%8D%E8%AF%81%E6%8D%AE%E7%AD%89%E7%BA%A7%EF%BC%9Adirect%0A%0A%23%23+%E5%88%A4%E6%96%AD%0A%0A-+%5B+%5D+%E6%8E%A8%E8%8D%90%E4%BF%9D%E7%95%99%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E5%90%88%E7%90%86%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E8%BF%87%E5%BA%A6%E6%8E%A8%E6%B5%8B%0A-+%5B+%5D+%E5%BA%94%E7%A7%BB%E8%87%B3%E5%8F%A6%E4%B8%80%E4%B8%AA%E6%A0%8F%E7%9B%AE%0A-+%5B+%5D+%E5%BB%BA%E8%AE%AE%E7%B2%BE%E8%AF%BB%E5%85%A8%E6%96%87%0A%0A%23%23+%E8%A1%A5%E5%85%85%E8%AF%B4%E6%98%8E%0A%0A"&gt;提交反馈&lt;/a&gt; · inspire:Experiment-HEP&lt;/p&gt;</ns1:encoded>
+      <guid isPermaLink="false">doi:10.1088/1742-6596/1690/1/012170:hepml-v1</guid>
+      <category>inspire:Experiment-HEP</category>
+      <category>track:hep_application</category>
+      <category>中微子通量测量</category>
+      <category>地球中微子探测</category>
+      <category>探测器设计</category>
+      <category>背景抑制</category>
+      <pubDate>Wed, 30 Dec 2020 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>New Antineutrino Spectra of Nuclear-Reactor Fissile Isotopes: Experiment and Calculations</title>
+      <link>https://inspirehep.net/literature/2643284</link>
+      <description>直接报告反应堆中微子能谱与截面，验证Double Chooz实验，属实验中微子研究</description>
+      <ns1:encoded>&lt;p&gt;&lt;strong&gt;栏目：&lt;/strong&gt;HEP 直接应用&lt;/p&gt;&lt;p&gt;&lt;strong&gt;分析依据：&lt;/strong&gt;仅标题和摘要；未读取全文。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法：&lt;/strong&gt;反应堆裂变同位素反中微子能谱计算与Rovno实验数据拟合&lt;/p&gt;&lt;p&gt;&lt;strong&gt;相关性：&lt;/strong&gt;0.90；&lt;strong&gt;证据等级：&lt;/strong&gt;direct&lt;/p&gt;&lt;p&gt;&lt;strong&gt;初筛理由：&lt;/strong&gt;直接报告反应堆中微子能谱与截面，验证Double Chooz实验，属实验中微子研究&lt;/p&gt;&lt;p&gt;&lt;strong&gt;出版信息（来源记录）：&lt;/strong&gt;Phys.Atom.Nucl. 85 (2022) 690&lt;/p&gt;&lt;p&gt;&lt;strong&gt;摘要来源：&lt;/strong&gt;INSPIRE (Springer)&lt;/p&gt;&lt;p&gt;&lt;em&gt;本条目仅完成摘要级筛选。&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;a href="https://inspirehep.net/literature/2643284"&gt;INSPIRE 记录&lt;/a&gt; · &lt;a href="https://doi.org/10.1134/s1063778823010611"&gt;DOI&lt;/a&gt; · &lt;a href="https://github.com/quxnb/hepml-digest/issues/new?title=%5B%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%5D+DOI%3A10.1134%2Fs1063778823010611+New+Antineutrino+Spectra+of+Nuclear-Reactor+Fissile+Isotopes%3A+Experiment+and+Cal&amp;amp;body=%23%23+%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%0A%0A-+%E8%AE%BA%E6%96%87%EF%BC%9A%5BDOI%3A10.1134%2Fs1063778823010611%5D%28https%3A%2F%2Finspirehep.net%2Fliterature%2F2643284%29%0A-+%E8%AE%B0%E5%BD%95+ID%EF%BC%9Adoi%3A10.1134%2Fs1063778823010611%0A-+%E5%88%86%E6%9E%90%E4%BE%9D%E6%8D%AE%EF%BC%9A%E4%BB%85%E6%A0%87%E9%A2%98%E5%92%8C%E6%91%98%E8%A6%81%EF%BC%8C%E6%9C%AA%E8%AF%BB%E5%8F%96%E5%85%A8%E6%96%87%0A-+%E6%A0%8F%E7%9B%AE%EF%BC%9AHEP+%E7%9B%B4%E6%8E%A5%E5%BA%94%E7%94%A8%0A-+%E5%BD%93%E5%89%8D%E7%9B%B8%E5%85%B3%E6%80%A7%EF%BC%9A0.90%0A-+%E5%BD%93%E5%89%8D%E8%AF%81%E6%8D%AE%E7%AD%89%E7%BA%A7%EF%BC%9Adirect%0A%0A%23%23+%E5%88%A4%E6%96%AD%0A%0A-+%5B+%5D+%E6%8E%A8%E8%8D%90%E4%BF%9D%E7%95%99%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E5%90%88%E7%90%86%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E8%BF%87%E5%BA%A6%E6%8E%A8%E6%B5%8B%0A-+%5B+%5D+%E5%BA%94%E7%A7%BB%E8%87%B3%E5%8F%A6%E4%B8%80%E4%B8%AA%E6%A0%8F%E7%9B%AE%0A-+%5B+%5D+%E5%BB%BA%E8%AE%AE%E7%B2%BE%E8%AF%BB%E5%85%A8%E6%96%87%0A%0A%23%23+%E8%A1%A5%E5%85%85%E8%AF%B4%E6%98%8E%0A%0A"&gt;提交反馈&lt;/a&gt; · inspire:Experiment-HEP, inspire:Theory-Nucl&lt;/p&gt;</ns1:encoded>
+      <guid isPermaLink="false">doi:10.1134/s1063778823010611:hepml-v1</guid>
+      <category>IBD截面计算</category>
+      <category>inspire:Experiment-HEP</category>
+      <category>inspire:Theory-Nucl</category>
+      <category>track:hep_application</category>
+      <category>反应堆中微子通量预测</category>
+      <category>能谱5MeV鼓包问题</category>
+      <pubDate>Fri, 17 Mar 2023 10:53:06 +0000</pubDate>
+    </item>
+    <item>
+      <title>Fissile isotopes antineutrino spectra: summation method and direct experiment</title>
+      <link>https://arxiv.org/abs/2210.00836</link>
+      <description>直接给出反应堆裂变反中微子谱与Double Chooz截面比较，属实验相关中微子研究</description>
+      <ns1:encoded>&lt;p&gt;&lt;strong&gt;栏目：&lt;/strong&gt;HEP 直接应用&lt;/p&gt;&lt;p&gt;&lt;strong&gt;分析依据：&lt;/strong&gt;仅标题和摘要；未读取全文。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法：&lt;/strong&gt;用求和法计算裂变同位素反中微子谱并与Rovno实验数据拟合，再与Double Chooz截面比较&lt;/p&gt;&lt;p&gt;&lt;strong&gt;相关性：&lt;/strong&gt;0.85；&lt;strong&gt;证据等级：&lt;/strong&gt;direct&lt;/p&gt;&lt;p&gt;&lt;strong&gt;初筛理由：&lt;/strong&gt;直接给出反应堆裂变反中微子谱与Double Chooz截面比较，属实验相关中微子研究&lt;/p&gt;&lt;p&gt;&lt;strong&gt;摘要来源：&lt;/strong&gt;INSPIRE (arXiv)&lt;/p&gt;&lt;p&gt;&lt;em&gt;本条目仅完成摘要级筛选。&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;a href="https://arxiv.org/abs/2210.00836"&gt;论文页面&lt;/a&gt; · &lt;a href="https://inspirehep.net/literature/2159362"&gt;INSPIRE 记录&lt;/a&gt; · &lt;a href="https://github.com/quxnb/hepml-digest/issues/new?title=%5B%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%5D+arXiv%3A2210.00836+Fissile+isotopes+antineutrino+spectra%3A+summation+method+and+direct+experiment&amp;amp;body=%23%23+%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%0A%0A-+%E8%AE%BA%E6%96%87%EF%BC%9A%5BarXiv%3A2210.00836%5D%28https%3A%2F%2Farxiv.org%2Fabs%2F2210.00836%29%0A-+%E8%AE%B0%E5%BD%95+ID%EF%BC%9Aarxiv%3A2210.00836%0A-+%E5%88%86%E6%9E%90%E4%BE%9D%E6%8D%AE%EF%BC%9A%E4%BB%85%E6%A0%87%E9%A2%98%E5%92%8C%E6%91%98%E8%A6%81%EF%BC%8C%E6%9C%AA%E8%AF%BB%E5%8F%96%E5%85%A8%E6%96%87%0A-+%E6%A0%8F%E7%9B%AE%EF%BC%9AHEP+%E7%9B%B4%E6%8E%A5%E5%BA%94%E7%94%A8%0A-+%E5%BD%93%E5%89%8D%E7%9B%B8%E5%85%B3%E6%80%A7%EF%BC%9A0.85%0A-+%E5%BD%93%E5%89%8D%E8%AF%81%E6%8D%AE%E7%AD%89%E7%BA%A7%EF%BC%9Adirect%0A%0A%23%23+%E5%88%A4%E6%96%AD%0A%0A-+%5B+%5D+%E6%8E%A8%E8%8D%90%E4%BF%9D%E7%95%99%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E5%90%88%E7%90%86%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E8%BF%87%E5%BA%A6%E6%8E%A8%E6%B5%8B%0A-+%5B+%5D+%E5%BA%94%E7%A7%BB%E8%87%B3%E5%8F%A6%E4%B8%80%E4%B8%AA%E6%A0%8F%E7%9B%AE%0A-+%5B+%5D+%E5%BB%BA%E8%AE%AE%E7%B2%BE%E8%AF%BB%E5%85%A8%E6%96%87%0A%0A%23%23+%E8%A1%A5%E5%85%85%E8%AF%B4%E6%98%8E%0A%0A"&gt;提交反馈&lt;/a&gt; · hep-ph, inspire:Experiment-Nucl, inspire:Phenomenology-HEP, nucl-ex&lt;/p&gt;</ns1:encoded>
+      <guid isPermaLink="false">arxiv:2210.00836:hepml-v1</guid>
+      <category>hep-ph</category>
+      <category>inspire:Experiment-Nucl</category>
+      <category>inspire:Phenomenology-HEP</category>
+      <category>nucl-ex</category>
+      <category>track:hep_application</category>
+      <category>反中微子能谱建模</category>
+      <category>反应堆中微子通量预测</category>
+      <category>截面计算与实验比较</category>
+      <pubDate>Tue, 04 Oct 2022 02:47:33 +0000</pubDate>
+    </item>
+    <item>
+      <title>What Fraction of Potassium in the Earth Does the Borexino Experiment Allow?</title>
+      <link>https://inspirehep.net/literature/2689163</link>
+      <description>Borexino能谱拟合地球钾反中微子贡献，属实验中微子振荡与性质测量，直接相关。</description>
+      <ns1:encoded>&lt;p&gt;&lt;strong&gt;栏目：&lt;/strong&gt;HEP 直接应用&lt;/p&gt;&lt;p&gt;&lt;strong&gt;分析依据：&lt;/strong&gt;仅标题和摘要；未读取全文。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法：&lt;/strong&gt;利用Borexino单事件能谱拟合地球反中微子（40K-geo-ν）电子散射贡献&lt;/p&gt;&lt;p&gt;&lt;strong&gt;相关性：&lt;/strong&gt;0.86；&lt;strong&gt;证据等级：&lt;/strong&gt;direct&lt;/p&gt;&lt;p&gt;&lt;strong&gt;初筛理由：&lt;/strong&gt;Borexino能谱拟合地球钾反中微子贡献，属实验中微子振荡与性质测量，直接相关。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;出版信息（来源记录）：&lt;/strong&gt;Bull.Russ.Acad.Sci.Phys. 87 (2023) 972&lt;/p&gt;&lt;p&gt;&lt;strong&gt;摘要来源：&lt;/strong&gt;INSPIRE (Springer)&lt;/p&gt;&lt;p&gt;&lt;em&gt;本条目仅完成摘要级筛选。&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;a href="https://inspirehep.net/literature/2689163"&gt;INSPIRE 记录&lt;/a&gt; · &lt;a href="https://doi.org/10.3103/s1062873823702519"&gt;DOI&lt;/a&gt; · &lt;a href="https://github.com/quxnb/hepml-digest/issues/new?title=%5B%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%5D+DOI%3A10.3103%2Fs1062873823702519+What+Fraction+of+Potassium+in+the+Earth+Does+the+Borexino+Experiment+Allow%3F&amp;amp;body=%23%23+%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%0A%0A-+%E8%AE%BA%E6%96%87%EF%BC%9A%5BDOI%3A10.3103%2Fs1062873823702519%5D%28https%3A%2F%2Finspirehep.net%2Fliterature%2F2689163%29%0A-+%E8%AE%B0%E5%BD%95+ID%EF%BC%9Adoi%3A10.3103%2Fs1062873823702519%0A-+%E5%88%86%E6%9E%90%E4%BE%9D%E6%8D%AE%EF%BC%9A%E4%BB%85%E6%A0%87%E9%A2%98%E5%92%8C%E6%91%98%E8%A6%81%EF%BC%8C%E6%9C%AA%E8%AF%BB%E5%8F%96%E5%85%A8%E6%96%87%0A-+%E6%A0%8F%E7%9B%AE%EF%BC%9AHEP+%E7%9B%B4%E6%8E%A5%E5%BA%94%E7%94%A8%0A-+%E5%BD%93%E5%89%8D%E7%9B%B8%E5%85%B3%E6%80%A7%EF%BC%9A0.86%0A-+%E5%BD%93%E5%89%8D%E8%AF%81%E6%8D%AE%E7%AD%89%E7%BA%A7%EF%BC%9Adirect%0A%0A%23%23+%E5%88%A4%E6%96%AD%0A%0A-+%5B+%5D+%E6%8E%A8%E8%8D%90%E4%BF%9D%E7%95%99%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E5%90%88%E7%90%86%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E8%BF%87%E5%BA%A6%E6%8E%A8%E6%B5%8B%0A-+%5B+%5D+%E5%BA%94%E7%A7%BB%E8%87%B3%E5%8F%A6%E4%B8%80%E4%B8%AA%E6%A0%8F%E7%9B%AE%0A-+%5B+%5D+%E5%BB%BA%E8%AE%AE%E7%B2%BE%E8%AF%BB%E5%85%A8%E6%96%87%0A%0A%23%23+%E8%A1%A5%E5%85%85%E8%AF%B4%E6%98%8E%0A%0A"&gt;提交反馈&lt;/a&gt; · inspire:Astrophysics, inspire:Experiment-HEP&lt;/p&gt;</ns1:encoded>
+      <guid isPermaLink="false">doi:10.3103/s1062873823702519:hepml-v1</guid>
+      <category>inspire:Astrophysics</category>
+      <category>inspire:Experiment-HEP</category>
+      <category>track:hep_application</category>
+      <category>中微子-电子散射</category>
+      <category>中微子能谱拟合</category>
+      <category>地球反中微子探测</category>
+      <category>本底建模与来源分离</category>
+      <pubDate>Mon, 21 Aug 2023 08:55:02 +0000</pubDate>
+    </item>
+    <item>
+      <title>The Neutrino Revolution: Experiments and Observations</title>
+      <link>https://inspirehep.net/literature/3223856</link>
+      <description>直接涉及太阳中微子实验与质量测量，属实验中微子研究回顾</description>
+      <ns1:encoded>&lt;p&gt;&lt;strong&gt;栏目：&lt;/strong&gt;HEP 直接应用&lt;/p&gt;&lt;p&gt;&lt;strong&gt;分析依据：&lt;/strong&gt;仅标题和摘要；未读取全文。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法：&lt;/strong&gt;太阳中微子问题与中微子质量测量的实验历史回顾&lt;/p&gt;&lt;p&gt;&lt;strong&gt;相关性：&lt;/strong&gt;0.80；&lt;strong&gt;证据等级：&lt;/strong&gt;direct&lt;/p&gt;&lt;p&gt;&lt;strong&gt;初筛理由：&lt;/strong&gt;直接涉及太阳中微子实验与质量测量，属实验中微子研究回顾&lt;/p&gt;&lt;p&gt;&lt;strong&gt;出版信息（来源记录）：&lt;/strong&gt;Ann.Rev.Nucl.Part.Sci. 76 (2026) 1&lt;/p&gt;&lt;p&gt;&lt;strong&gt;摘要来源：&lt;/strong&gt;INSPIRE (Annual Reviews)&lt;/p&gt;&lt;p&gt;&lt;em&gt;本条目仅完成摘要级筛选。&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;a href="https://inspirehep.net/literature/3223856"&gt;INSPIRE 记录&lt;/a&gt; · &lt;a href="https://doi.org/10.1146/annurev-nucl-121423-100845"&gt;DOI&lt;/a&gt; · &lt;a href="https://github.com/quxnb/hepml-digest/issues/new?title=%5B%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%5D+DOI%3A10.1146%2Fannurev-nucl-121423-100845+The+Neutrino+Revolution%3A+Experiments+and+Observations&amp;amp;body=%23%23+%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%0A%0A-+%E8%AE%BA%E6%96%87%EF%BC%9A%5BDOI%3A10.1146%2Fannurev-nucl-121423-100845%5D%28https%3A%2F%2Finspirehep.net%2Fliterature%2F3223856%29%0A-+%E8%AE%B0%E5%BD%95+ID%EF%BC%9Adoi%3A10.1146%2Fannurev-nucl-121423-100845%0A-+%E5%88%86%E6%9E%90%E4%BE%9D%E6%8D%AE%EF%BC%9A%E4%BB%85%E6%A0%87%E9%A2%98%E5%92%8C%E6%91%98%E8%A6%81%EF%BC%8C%E6%9C%AA%E8%AF%BB%E5%8F%96%E5%85%A8%E6%96%87%0A-+%E6%A0%8F%E7%9B%AE%EF%BC%9AHEP+%E7%9B%B4%E6%8E%A5%E5%BA%94%E7%94%A8%0A-+%E5%BD%93%E5%89%8D%E7%9B%B8%E5%85%B3%E6%80%A7%EF%BC%9A0.80%0A-+%E5%BD%93%E5%89%8D%E8%AF%81%E6%8D%AE%E7%AD%89%E7%BA%A7%EF%BC%9Adirect%0A%0A%23%23+%E5%88%A4%E6%96%AD%0A%0A-+%5B+%5D+%E6%8E%A8%E8%8D%90%E4%BF%9D%E7%95%99%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E5%90%88%E7%90%86%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E8%BF%87%E5%BA%A6%E6%8E%A8%E6%B5%8B%0A-+%5B+%5D+%E5%BA%94%E7%A7%BB%E8%87%B3%E5%8F%A6%E4%B8%80%E4%B8%AA%E6%A0%8F%E7%9B%AE%0A-+%5B+%5D+%E5%BB%BA%E8%AE%AE%E7%B2%BE%E8%AF%BB%E5%85%A8%E6%96%87%0A%0A%23%23+%E8%A1%A5%E5%85%85%E8%AF%B4%E6%98%8E%0A%0A"&gt;提交反馈&lt;/a&gt; · inspire:Experiment-HEP&lt;/p&gt;</ns1:encoded>
+      <guid isPermaLink="false">doi:10.1146/annurev-nucl-121423-100845:hepml-v1</guid>
+      <category>inspire:Experiment-HEP</category>
+      <category>track:hep_application</category>
+      <category>中微子振荡</category>
+      <category>中微子质量测量</category>
+      <pubDate>Thu, 05 Nov 2026 19:15:50 +0000</pubDate>
+    </item>
+    <item>
+      <title>A study of the possibilities of a near-solar neutrino detector and ground tests of a CubeSat demonstrator for the $\nu$SOL project</title>
+      <link>https://inspirehep.net/literature/3223841</link>
+      <description>直接面向中微子探测器设计与背景削减，含探测器标定和地面验证，属实验中微子研究。</description>
+      <ns1:encoded>&lt;p&gt;&lt;strong&gt;栏目：&lt;/strong&gt;HEP 直接应用&lt;/p&gt;&lt;p&gt;&lt;strong&gt;分析依据：&lt;/strong&gt;仅标题和摘要；未读取全文。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法：&lt;/strong&gt;近太阳镓中微子探测器双脉冲信号背景抑制与立方星验证&lt;/p&gt;&lt;p&gt;&lt;strong&gt;相关性：&lt;/strong&gt;0.82；&lt;strong&gt;证据等级：&lt;/strong&gt;direct&lt;/p&gt;&lt;p&gt;&lt;strong&gt;初筛理由：&lt;/strong&gt;直接面向中微子探测器设计与背景削减，含探测器标定和地面验证，属实验中微子研究。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;摘要来源：&lt;/strong&gt;INSPIRE (oatd.org)&lt;/p&gt;&lt;p&gt;&lt;em&gt;本条目仅完成摘要级筛选。&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;a href="https://inspirehep.net/literature/3223841"&gt;INSPIRE 记录&lt;/a&gt; · &lt;a href="https://github.com/quxnb/hepml-digest/issues/new?title=%5B%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%5D+INSPIRE%3A3223841+A+study+of+the+possibilities+of+a+near-solar+neutrino+detector+and+ground+tests+&amp;amp;body=%23%23+%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%0A%0A-+%E8%AE%BA%E6%96%87%EF%BC%9A%5BINSPIRE%3A3223841%5D%28https%3A%2F%2Finspirehep.net%2Fliterature%2F3223841%29%0A-+%E8%AE%B0%E5%BD%95+ID%EF%BC%9Ainspire%3A3223841%0A-+%E5%88%86%E6%9E%90%E4%BE%9D%E6%8D%AE%EF%BC%9A%E4%BB%85%E6%A0%87%E9%A2%98%E5%92%8C%E6%91%98%E8%A6%81%EF%BC%8C%E6%9C%AA%E8%AF%BB%E5%8F%96%E5%85%A8%E6%96%87%0A-+%E6%A0%8F%E7%9B%AE%EF%BC%9AHEP+%E7%9B%B4%E6%8E%A5%E5%BA%94%E7%94%A8%0A-+%E5%BD%93%E5%89%8D%E7%9B%B8%E5%85%B3%E6%80%A7%EF%BC%9A0.82%0A-+%E5%BD%93%E5%89%8D%E8%AF%81%E6%8D%AE%E7%AD%89%E7%BA%A7%EF%BC%9Adirect%0A%0A%23%23+%E5%88%A4%E6%96%AD%0A%0A-+%5B+%5D+%E6%8E%A8%E8%8D%90%E4%BF%9D%E7%95%99%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E5%90%88%E7%90%86%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E8%BF%87%E5%BA%A6%E6%8E%A8%E6%B5%8B%0A-+%5B+%5D+%E5%BA%94%E7%A7%BB%E8%87%B3%E5%8F%A6%E4%B8%80%E4%B8%AA%E6%A0%8F%E7%9B%AE%0A-+%5B+%5D+%E5%BB%BA%E8%AE%AE%E7%B2%BE%E8%AF%BB%E5%85%A8%E6%96%87%0A%0A%23%23+%E8%A1%A5%E5%85%85%E8%AF%B4%E6%98%8E%0A%0A"&gt;提交反馈&lt;/a&gt; · inspire:Experiment-HEP, inspire:Instrumentation&lt;/p&gt;</ns1:encoded>
+      <guid isPermaLink="false">inspire:3223841:hepml-v1</guid>
+      <category>inspire:Experiment-HEP</category>
+      <category>inspire:Instrumentation</category>
+      <category>track:hep_application</category>
+      <category>中微子探测</category>
+      <category>探测器标定</category>
+      <category>模拟与数据映射</category>
+      <category>背景抑制</category>
+      <pubDate>Thu, 05 Nov 2026 19:10:01 +0000</pubDate>
+    </item>
+    <item>
+      <title>Mission design &amp; operations planning for in-space neutrino detection experiments</title>
+      <link>https://inspirehep.net/literature/3223840</link>
+      <description>属中微子探测器空间任务设计与运行规划，有明确实验联系，但无统计/机器学习方法创新</description>
+      <ns1:encoded>&lt;p&gt;&lt;strong&gt;栏目：&lt;/strong&gt;HEP 直接应用&lt;/p&gt;&lt;p&gt;&lt;strong&gt;分析依据：&lt;/strong&gt;仅标题和摘要；未读取全文。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法：&lt;/strong&gt;航天任务设计与轨迹优化，用于在轨中微子探测器；含CubeSat技术验证与L1轨道不变流形设计&lt;/p&gt;&lt;p&gt;&lt;strong&gt;相关性：&lt;/strong&gt;0.55；&lt;strong&gt;证据等级：&lt;/strong&gt;direct&lt;/p&gt;&lt;p&gt;&lt;strong&gt;初筛理由：&lt;/strong&gt;属中微子探测器空间任务设计与运行规划，有明确实验联系，但无统计/机器学习方法创新&lt;/p&gt;&lt;p&gt;&lt;strong&gt;摘要来源：&lt;/strong&gt;INSPIRE (oatd.org)&lt;/p&gt;&lt;p&gt;&lt;em&gt;本条目仅完成摘要级筛选。&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;a href="https://inspirehep.net/literature/3223840"&gt;INSPIRE 记录&lt;/a&gt; · &lt;a href="https://github.com/quxnb/hepml-digest/issues/new?title=%5B%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%5D+INSPIRE%3A3223840+Mission+design+%26+operations+planning+for+in-space+neutrino+detection+experiments&amp;amp;body=%23%23+%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%0A%0A-+%E8%AE%BA%E6%96%87%EF%BC%9A%5BINSPIRE%3A3223840%5D%28https%3A%2F%2Finspirehep.net%2Fliterature%2F3223840%29%0A-+%E8%AE%B0%E5%BD%95+ID%EF%BC%9Ainspire%3A3223840%0A-+%E5%88%86%E6%9E%90%E4%BE%9D%E6%8D%AE%EF%BC%9A%E4%BB%85%E6%A0%87%E9%A2%98%E5%92%8C%E6%91%98%E8%A6%81%EF%BC%8C%E6%9C%AA%E8%AF%BB%E5%8F%96%E5%85%A8%E6%96%87%0A-+%E6%A0%8F%E7%9B%AE%EF%BC%9AHEP+%E7%9B%B4%E6%8E%A5%E5%BA%94%E7%94%A8%0A-+%E5%BD%93%E5%89%8D%E7%9B%B8%E5%85%B3%E6%80%A7%EF%BC%9A0.55%0A-+%E5%BD%93%E5%89%8D%E8%AF%81%E6%8D%AE%E7%AD%89%E7%BA%A7%EF%BC%9Adirect%0A%0A%23%23+%E5%88%A4%E6%96%AD%0A%0A-+%5B+%5D+%E6%8E%A8%E8%8D%90%E4%BF%9D%E7%95%99%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E5%90%88%E7%90%86%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E8%BF%87%E5%BA%A6%E6%8E%A8%E6%B5%8B%0A-+%5B+%5D+%E5%BA%94%E7%A7%BB%E8%87%B3%E5%8F%A6%E4%B8%80%E4%B8%AA%E6%A0%8F%E7%9B%AE%0A-+%5B+%5D+%E5%BB%BA%E8%AE%AE%E7%B2%BE%E8%AF%BB%E5%85%A8%E6%96%87%0A%0A%23%23+%E8%A1%A5%E5%85%85%E8%AF%B4%E6%98%8E%0A%0A"&gt;提交反馈&lt;/a&gt; · inspire:Experiment-HEP, inspire:Instrumentation&lt;/p&gt;</ns1:encoded>
+      <guid isPermaLink="false">inspire:3223840:hepml-v1</guid>
+      <category>inspire:Experiment-HEP</category>
+      <category>inspire:Instrumentation</category>
+      <category>track:hep_application</category>
+      <category>中微子振荡测量可行性</category>
+      <category>探测器部署与运行规划</category>
+      <category>空间实验任务设计</category>
+      <pubDate>Thu, 05 Nov 2026 19:09:33 +0000</pubDate>
+    </item>
+    <item>
+      <title>Search for neutrinoless double beta decay to excited states of barium in KamLAND-Zen</title>
+      <link>https://inspirehep.net/literature/3223832</link>
+      <description>直接报告中微子双β衰变实验搜索与背景建模，属实验核心结果，值得细读</description>
+      <ns1:encoded>&lt;p&gt;&lt;strong&gt;栏目：&lt;/strong&gt;HEP 直接应用&lt;/p&gt;&lt;p&gt;&lt;strong&gt;分析依据：&lt;/strong&gt;仅标题和摘要；未读取全文。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法：&lt;/strong&gt;KamLAND-Zen 800 中 136Xe 双β衰变到激发态的实验搜索，使用蒙特卡洛背景模型与分箱最大似然拟合&lt;/p&gt;&lt;p&gt;&lt;strong&gt;相关性：&lt;/strong&gt;0.95；&lt;strong&gt;证据等级：&lt;/strong&gt;direct&lt;/p&gt;&lt;p&gt;&lt;strong&gt;初筛理由：&lt;/strong&gt;直接报告中微子双β衰变实验搜索与背景建模，属实验核心结果，值得细读&lt;/p&gt;&lt;p&gt;&lt;strong&gt;摘要来源：&lt;/strong&gt;INSPIRE (Boston U.)&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法总结（摘要分析）：&lt;/strong&gt;该论文基于KamLAND-Zen 800的745 kg、91%富集136Xe，使用2019—2023年4.3年数据（&amp;gt;1 ton-year曝光），在2.5–4.8 MeV能区建立经原位源校准的MC背景模型并进行分箱最大似然拟合，搜索136Xe到激发态的2νββ*。未见显著超出，用Feldman-Cousins给出90% CL半衰期下限&amp;gt;4.25×10^24年。摘要称其为初步分析；标题与摘要的衰变模式表述需核对。&lt;/p&gt;&lt;h4&gt;摘要中报告的结论&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;使用KamLAND-Zen 800中745 kg、91%富集于136Xe的氙，分析2019年2月至2023年4月共4.3年数据，136Xe曝光超过1 ton-year。&lt;/li&gt;&lt;li&gt;在2.5–4.8 MeV能区构建基于蒙特卡洛并用原位源校准的背景模型，执行分箱最大似然拟合。&lt;/li&gt;&lt;li&gt;未观察到统计显著超出。&lt;/li&gt;&lt;li&gt;对2νββ*半衰期给出90% C.L.下限 T1/2 &amp;gt; 4.25×10^24年（Feldman-Cousins）。&lt;/li&gt;&lt;li&gt;摘要将本研究定位为KamLAND-Zen 800中2νββ*搜索的初步分析。&lt;/li&gt;&lt;li&gt;摘要描述了独立研究以估计重要低能背景强度。&lt;/li&gt;&lt;/ul&gt;&lt;h4&gt;对高能实验物理的潜在帮助&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;将分箱似然框架扩展为多变量/机器学习事件分类，利用能量、拓扑和时间信息抑制低能背景，是迁移设想；需在相同MC与数据上验证增益。&lt;/li&gt;&lt;li&gt;把原位源校准与MC背景模型流程迁移到其他富集氙或激发态双β衰变搜索，作为背景约束与上限设定的通用分析组件。&lt;/li&gt;&lt;li&gt;利用低能背景约束和Feldman-Cousins上限流程，为NME相关的2νββ*搜索提供可复用统计模板。&lt;/li&gt;&lt;li&gt;探究Ba激发态退激信号（如时间/位置关联）的ML识别作为假设性应用，但摘要无相关数据支持。&lt;/li&gt;&lt;/ul&gt;&lt;h4&gt;迁移风险&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;标题写无中微子双β衰变到Ba激发态，摘要报告2νββ*；模式、末态和物理含义不同，需核对全文避免误用。&lt;/li&gt;&lt;li&gt;摘要仅说明MC背景模型用原位源校准，未说明数据/MC残差、能量响应非线性、系统误差与nuisance参数处理，需查全文确认。&lt;/li&gt;&lt;li&gt;摘要未说明负权事件、MC统计不确定性及拟合偏差处理，需查全文确认。&lt;/li&gt;&lt;li&gt;若引入ML分类器，可能学习MC特定背景或校准条件，产生simulation-to-data shift；不能据此声称减少系统误差。&lt;/li&gt;&lt;li&gt;低能背景与激发态信号可能高度重叠，ML增益需与分箱似然基线比较，并考虑Feldman-Cousins覆盖。&lt;/li&gt;&lt;li&gt;摘要未说明协方差构建和近远端关联处理；KamLAND-Zen单探测器场景下不应强行套用近远端模板。&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;strong&gt;最小验证方案：&lt;/strong&gt;先从全文提取能谱分箱、MC背景、原位校准、低能背景约束、系统误差与nuisance参数，复现2.5–4.8 MeV分箱似然和Feldman-Cousins上限。对ML扩展，在盲分析或伪实验中与基线比较，检查数据/MC一致性、能量校准漂移、负权与协方差处理，并报告上限覆盖和系统误差影响；未通过前仅作为迁移设想。&lt;/p&gt;&lt;p&gt;&lt;a href="https://inspirehep.net/literature/3223832"&gt;INSPIRE 记录&lt;/a&gt; · &lt;a href="https://github.com/quxnb/hepml-digest/issues/new?title=%5B%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%5D+INSPIRE%3A3223832+Search+for+neutrinoless+double+beta+decay+to+excited+states+of+barium+in+KamLAND&amp;amp;body=%23%23+%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%0A%0A-+%E8%AE%BA%E6%96%87%EF%BC%9A%5BINSPIRE%3A3223832%5D%28https%3A%2F%2Finspirehep.net%2Fliterature%2F3223832%29%0A-+%E8%AE%B0%E5%BD%95+ID%EF%BC%9Ainspire%3A3223832%0A-+%E5%88%86%E6%9E%90%E4%BE%9D%E6%8D%AE%EF%BC%9A%E4%BB%85%E6%A0%87%E9%A2%98%E5%92%8C%E6%91%98%E8%A6%81%EF%BC%8C%E6%9C%AA%E8%AF%BB%E5%8F%96%E5%85%A8%E6%96%87%0A-+%E6%A0%8F%E7%9B%AE%EF%BC%9AHEP+%E7%9B%B4%E6%8E%A5%E5%BA%94%E7%94%A8%0A-+%E5%BD%93%E5%89%8D%E7%9B%B8%E5%85%B3%E6%80%A7%EF%BC%9A0.95%0A-+%E5%BD%93%E5%89%8D%E8%AF%81%E6%8D%AE%E7%AD%89%E7%BA%A7%EF%BC%9Adirect%0A%0A%23%23+%E5%88%A4%E6%96%AD%0A%0A-+%5B+%5D+%E6%8E%A8%E8%8D%90%E4%BF%9D%E7%95%99%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E5%90%88%E7%90%86%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E8%BF%87%E5%BA%A6%E6%8E%A8%E6%B5%8B%0A-+%5B+%5D+%E5%BA%94%E7%A7%BB%E8%87%B3%E5%8F%A6%E4%B8%80%E4%B8%AA%E6%A0%8F%E7%9B%AE%0A-+%5B+%5D+%E5%BB%BA%E8%AE%AE%E7%B2%BE%E8%AF%BB%E5%85%A8%E6%96%87%0A%0A%23%23+%E8%A1%A5%E5%85%85%E8%AF%B4%E6%98%8E%0A%0A"&gt;提交反馈&lt;/a&gt; · inspire:Experiment-HEP&lt;/p&gt;</ns1:encoded>
+      <guid isPermaLink="false">inspire:3223832:hepml-v1</guid>
+      <category>inspire:Experiment-HEP</category>
+      <category>track:hep_application</category>
+      <category>中微子双β衰变搜索</category>
+      <category>最大似然拟合</category>
+      <category>置信区间上限设定</category>
+      <category>背景建模</category>
+      <pubDate>Thu, 05 Nov 2026 19:08:47 +0000</pubDate>
+    </item>
+    <item>
+      <title>Application of the timing and charge based on muon track reconstruction algorithm for water Cherenkov detector</title>
+      <link>https://inspirehep.net/literature/3223809</link>
+      <description>直接面向JUNO水切伦科夫探测器μ子径迹重建与本底抑制，属实验中微子探测器重建方法</description>
+      <ns1:encoded>&lt;p&gt;&lt;strong&gt;栏目：&lt;/strong&gt;HEP 直接应用&lt;/p&gt;&lt;p&gt;&lt;strong&gt;分析依据：&lt;/strong&gt;仅标题和摘要；未读取全文。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法：&lt;/strong&gt;基于首光子到达时间与电荷的加权最小二乘μ子径迹重建，用于水切伦科夫探测器水缓冲层&lt;/p&gt;&lt;p&gt;&lt;strong&gt;相关性：&lt;/strong&gt;0.95；&lt;strong&gt;证据等级：&lt;/strong&gt;direct&lt;/p&gt;&lt;p&gt;&lt;strong&gt;初筛理由：&lt;/strong&gt;直接面向JUNO水切伦科夫探测器μ子径迹重建与本底抑制，属实验中微子探测器重建方法&lt;/p&gt;&lt;p&gt;&lt;strong&gt;出版信息（来源记录）：&lt;/strong&gt;Nucl.Tech. 49 (2026) 050402&lt;/p&gt;&lt;p&gt;&lt;strong&gt;摘要来源：&lt;/strong&gt;INSPIRE (CHINA SCIENCE PUBLISHING &amp;amp; MEDIA LTD)&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法总结（摘要分析）：&lt;/strong&gt;该文针对水切伦科夫探测器水缓冲层（CWB）μ子径迹重建，利用PMT首光子到达时间与电荷构建电荷加权最小二乘时间方程，并以JUNO切伦科夫探测器为例用Geant4模拟优化参数。摘要报告模拟得到空间分辨率优于12 cm、角度分辨率优于0.4°、效率约97%，并称可辅助降低本底、服务未来质量顺序灵敏度分析；未报告真实数据验证。&lt;/p&gt;&lt;h4&gt;摘要中报告的结论&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;提出基于PMT最早光子到达时间和电荷信息的电荷加权最小二乘时间方程，用于水切伦科夫探测器μ子径迹重建。&lt;/li&gt;&lt;li&gt;该方法通过模拟研究和参数调整应用于大型水切伦科夫探测器，并以JUNO切伦科夫探测器为案例用Geant4模拟优化参数。&lt;/li&gt;&lt;li&gt;模拟结果显示CWB μ子径迹重建空间分辨率优于12 cm、角度分辨率优于0.4°、重建效率约97%。&lt;/li&gt;&lt;li&gt;摘要结论称该重建方法可帮助JUNO进一步降低本底，并对未来灵敏度分析有重要作用；这些结论基于模拟结果。&lt;/li&gt;&lt;/ul&gt;&lt;h4&gt;对高能实验物理的潜在帮助&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;迁移设想：将首光子时间-电荷加权最小二乘框架用于其他水切伦科夫或水缓冲层μ子重建及本底veto，但需在目标探测器几何与光学模型上重新标定。&lt;/li&gt;&lt;li&gt;迁移设想：把重建输出用于有效体积cut与沿径迹本底抑制的端到端灵敏度研究；摘要仅称有助降低本底，未给灵敏度数值。&lt;/li&gt;&lt;li&gt;方法学上可探索不确定性加权、鲁棒损失或残差学习以处理PMT时序/电荷离群，但这属于迁移设想而非论文已验证的机器学习创新。&lt;/li&gt;&lt;/ul&gt;&lt;h4&gt;迁移风险&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;摘要仅给出Geant4模拟结果，真实数据中的PMT时间/电荷响应、暗噪声、刻度与simulation-to-data shift需核查。&lt;/li&gt;&lt;li&gt;摘要未说明系统误差、nuisance参数、负权事件、探测器几何/Lorentz或置换对称性、推理延迟等处理，需全文确认；不能据此断言未处理。&lt;/li&gt;&lt;li&gt;首光子选择与电荷加权对多次散射、反射、PMT饱和和参数调优敏感，模拟优化可能过拟合JUNO CWB特定配置。&lt;/li&gt;&lt;li&gt;CWB μ子约占穿过CD μ子20%的背景估计及veto/有效体积cut对质量顺序灵敏度的影响，摘要未给定量端到端结果。&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;strong&gt;最小验证方案：&lt;/strong&gt;用JUNO官方Geant4几何/光学模型生成CWB μ子样本，按真值评估偏置、分辨率、效率随能量/入射位置/角度变化；做PMT时间与电荷偏置、暗噪声、水衰减/反射率变化的注入测试和替代模拟生成器闭合检验；若使用真实数据，仅以控制样本刻度并报告simulation-to-data修正；最后把重建用于veto与有效体积cut，传播系统误差到背景与灵敏度，并明确与摘要模拟结果的差异。&lt;/p&gt;&lt;p&gt;&lt;a href="https://inspirehep.net/literature/3223809"&gt;INSPIRE 记录&lt;/a&gt; · &lt;a href="https://doi.org/10.3724/j.0253-3219.2026.hjs.49.250423"&gt;DOI&lt;/a&gt; · &lt;a href="https://github.com/quxnb/hepml-digest/issues/new?title=%5B%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%5D+DOI%3A10.3724%2Fj.0253-3219.2026.hjs.49.250423+Application+of+the+timing+and+charge+based+on+muon+track+reconstruction+algorith&amp;amp;body=%23%23+%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%0A%0A-+%E8%AE%BA%E6%96%87%EF%BC%9A%5BDOI%3A10.3724%2Fj.0253-3219.2026.hjs.49.250423%5D%28https%3A%2F%2Finspirehep.net%2Fliterature%2F3223809%29%0A-+%E8%AE%B0%E5%BD%95+ID%EF%BC%9Adoi%3A10.3724%2Fj.0253-3219.2026.hjs.49.250423%0A-+%E5%88%86%E6%9E%90%E4%BE%9D%E6%8D%AE%EF%BC%9A%E4%BB%85%E6%A0%87%E9%A2%98%E5%92%8C%E6%91%98%E8%A6%81%EF%BC%8C%E6%9C%AA%E8%AF%BB%E5%8F%96%E5%85%A8%E6%96%87%0A-+%E6%A0%8F%E7%9B%AE%EF%BC%9AHEP+%E7%9B%B4%E6%8E%A5%E5%BA%94%E7%94%A8%0A-+%E5%BD%93%E5%89%8D%E7%9B%B8%E5%85%B3%E6%80%A7%EF%BC%9A0.95%0A-+%E5%BD%93%E5%89%8D%E8%AF%81%E6%8D%AE%E7%AD%89%E7%BA%A7%EF%BC%9Adirect%0A%0A%23%23+%E5%88%A4%E6%96%AD%0A%0A-+%5B+%5D+%E6%8E%A8%E8%8D%90%E4%BF%9D%E7%95%99%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E5%90%88%E7%90%86%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E8%BF%87%E5%BA%A6%E6%8E%A8%E6%B5%8B%0A-+%5B+%5D+%E5%BA%94%E7%A7%BB%E8%87%B3%E5%8F%A6%E4%B8%80%E4%B8%AA%E6%A0%8F%E7%9B%AE%0A-+%5B+%5D+%E5%BB%BA%E8%AE%AE%E7%B2%BE%E8%AF%BB%E5%85%A8%E6%96%87%0A%0A%23%23+%E8%A1%A5%E5%85%85%E8%AF%B4%E6%98%8E%0A%0A"&gt;提交反馈&lt;/a&gt; · inspire:Experiment-HEP, inspire:Instrumentation&lt;/p&gt;</ns1:encoded>
+      <guid isPermaLink="false">doi:10.3724/j.0253-3219.2026.hjs.49.250423:hepml-v1</guid>
+      <category>inspire:Experiment-HEP</category>
+      <category>inspire:Instrumentation</category>
+      <category>track:hep_application</category>
+      <category>中微子质量顺序分析</category>
+      <category>径迹重建</category>
+      <category>有效体积切割</category>
+      <category>本底抑制</category>
+      <pubDate>Thu, 05 Nov 2026 18:53:30 +0000</pubDate>
+    </item>
+    <item>
+      <title>Proton Structure and QCD under the LHC Neutrino Microscope</title>
+      <link>https://inspirehep.net/literature/3223791</link>
+      <description>直接报告FASERν/FPF中微子DIS物理分析，明确实验联系与通量拟合方法</description>
+      <ns1:encoded>&lt;p&gt;&lt;strong&gt;栏目：&lt;/strong&gt;HEP 直接应用&lt;/p&gt;&lt;p&gt;&lt;strong&gt;分析依据：&lt;/strong&gt;仅标题和摘要；未读取全文。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法：&lt;/strong&gt;基于前向中微子/缪子深度非弹性散射的PDF提取与中微子通量机器学习拟合，含LO/NLO蒙特卡罗模拟与内在粲夸克约束&lt;/p&gt;&lt;p&gt;&lt;strong&gt;相关性：&lt;/strong&gt;0.85；&lt;strong&gt;证据等级：&lt;/strong&gt;direct&lt;/p&gt;&lt;p&gt;&lt;strong&gt;初筛理由：&lt;/strong&gt;直接报告FASERν/FPF中微子DIS物理分析，明确实验联系与通量拟合方法&lt;/p&gt;&lt;p&gt;&lt;strong&gt;摘要来源：&lt;/strong&gt;INSPIRE (Vrije U., Amsterdam)&lt;/p&gt;&lt;p&gt;&lt;em&gt;本条目仅完成摘要级筛选。&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;a href="https://inspirehep.net/literature/3223791"&gt;INSPIRE 记录&lt;/a&gt; · &lt;a href="https://doi.org/10.5463/thesis.1963"&gt;DOI&lt;/a&gt; · &lt;a href="https://github.com/quxnb/hepml-digest/issues/new?title=%5B%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%5D+DOI%3A10.5463%2Fthesis.1963+Proton+Structure+and+QCD+under+the+LHC+Neutrino+Microscope&amp;amp;body=%23%23+%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%0A%0A-+%E8%AE%BA%E6%96%87%EF%BC%9A%5BDOI%3A10.5463%2Fthesis.1963%5D%28https%3A%2F%2Finspirehep.net%2Fliterature%2F3223791%29%0A-+%E8%AE%B0%E5%BD%95+ID%EF%BC%9Adoi%3A10.5463%2Fthesis.1963%0A-+%E5%88%86%E6%9E%90%E4%BE%9D%E6%8D%AE%EF%BC%9A%E4%BB%85%E6%A0%87%E9%A2%98%E5%92%8C%E6%91%98%E8%A6%81%EF%BC%8C%E6%9C%AA%E8%AF%BB%E5%8F%96%E5%85%A8%E6%96%87%0A-+%E6%A0%8F%E7%9B%AE%EF%BC%9AHEP+%E7%9B%B4%E6%8E%A5%E5%BA%94%E7%94%A8%0A-+%E5%BD%93%E5%89%8D%E7%9B%B8%E5%85%B3%E6%80%A7%EF%BC%9A0.85%0A-+%E5%BD%93%E5%89%8D%E8%AF%81%E6%8D%AE%E7%AD%89%E7%BA%A7%EF%BC%9Adirect%0A%0A%23%23+%E5%88%A4%E6%96%AD%0A%0A-+%5B+%5D+%E6%8E%A8%E8%8D%90%E4%BF%9D%E7%95%99%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E5%90%88%E7%90%86%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E8%BF%87%E5%BA%A6%E6%8E%A8%E6%B5%8B%0A-+%5B+%5D+%E5%BA%94%E7%A7%BB%E8%87%B3%E5%8F%A6%E4%B8%80%E4%B8%AA%E6%A0%8F%E7%9B%AE%0A-+%5B+%5D+%E5%BB%BA%E8%AE%AE%E7%B2%BE%E8%AF%BB%E5%85%A8%E6%96%87%0A%0A%23%23+%E8%A1%A5%E5%85%85%E8%AF%B4%E6%98%8E%0A%0A"&gt;提交反馈&lt;/a&gt; · inspire:Experiment-HEP&lt;/p&gt;</ns1:encoded>
+      <guid isPermaLink="false">doi:10.5463/thesis.1963:hepml-v1</guid>
+      <category>BSM衰变约束</category>
+      <category>PDF提取</category>
+      <category>inspire:Experiment-HEP</category>
+      <category>track:hep_application</category>
+      <category>中微子通量拟合</category>
+      <category>内在粲夸克搜索</category>
+      <category>深度非弹性散射模拟</category>
+      <pubDate>Thu, 05 Nov 2026 18:39:43 +0000</pubDate>
+    </item>
+    <item>
+      <title>Closing in on singly charged scalars</title>
+      <link>https://arxiv.org/abs/2506.05258</link>
+      <description>BSM对撞机搜索，BDT方法用于事例分类，非中微子直接研究但属高能实验分析技术</description>
+      <ns1:encoded>&lt;p&gt;&lt;strong&gt;栏目：&lt;/strong&gt;HEP 直接应用&lt;/p&gt;&lt;p&gt;&lt;strong&gt;分析依据：&lt;/strong&gt;仅标题和摘要；未读取全文。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法：&lt;/strong&gt;对单电荷标量粒子进行对撞机搜索约束与未来灵敏度研究，使用BDT分析并与cut-based方法对比&lt;/p&gt;&lt;p&gt;&lt;strong&gt;相关性：&lt;/strong&gt;0.60；&lt;strong&gt;证据等级：&lt;/strong&gt;transferable&lt;/p&gt;&lt;p&gt;&lt;strong&gt;初筛理由：&lt;/strong&gt;BSM对撞机搜索，BDT方法用于事例分类，非中微子直接研究但属高能实验分析技术&lt;/p&gt;&lt;p&gt;&lt;strong&gt;出版信息（来源记录）：&lt;/strong&gt;Phys.Rev.D 112 (2025) 055003&lt;/p&gt;&lt;p&gt;&lt;strong&gt;摘要来源：&lt;/strong&gt;INSPIRE (APS)&lt;/p&gt;&lt;p&gt;&lt;em&gt;本条目仅完成摘要级筛选。&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;a href="https://arxiv.org/abs/2506.05258"&gt;论文页面&lt;/a&gt; · &lt;a href="https://doi.org/10.1103/g885-wpr6"&gt;DOI&lt;/a&gt; · &lt;a href="https://inspirehep.net/literature/2929928"&gt;INSPIRE 记录&lt;/a&gt; · &lt;a href="https://github.com/quxnb/hepml-digest/issues/new?title=%5B%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%5D+arXiv%3A2506.05258+Closing+in+on+singly+charged+scalars&amp;amp;body=%23%23+%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%0A%0A-+%E8%AE%BA%E6%96%87%EF%BC%9A%5BarXiv%3A2506.05258%5D%28https%3A%2F%2Farxiv.org%2Fabs%2F2506.05258%29%0A-+%E8%AE%B0%E5%BD%95+ID%EF%BC%9Aarxiv%3A2506.05258%0A-+%E5%88%86%E6%9E%90%E4%BE%9D%E6%8D%AE%EF%BC%9A%E4%BB%85%E6%A0%87%E9%A2%98%E5%92%8C%E6%91%98%E8%A6%81%EF%BC%8C%E6%9C%AA%E8%AF%BB%E5%8F%96%E5%85%A8%E6%96%87%0A-+%E6%A0%8F%E7%9B%AE%EF%BC%9AHEP+%E7%9B%B4%E6%8E%A5%E5%BA%94%E7%94%A8%0A-+%E5%BD%93%E5%89%8D%E7%9B%B8%E5%85%B3%E6%80%A7%EF%BC%9A0.60%0A-+%E5%BD%93%E5%89%8D%E8%AF%81%E6%8D%AE%E7%AD%89%E7%BA%A7%EF%BC%9Atransferable%0A%0A%23%23+%E5%88%A4%E6%96%AD%0A%0A-+%5B+%5D+%E6%8E%A8%E8%8D%90%E4%BF%9D%E7%95%99%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E5%90%88%E7%90%86%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E8%BF%87%E5%BA%A6%E6%8E%A8%E6%B5%8B%0A-+%5B+%5D+%E5%BA%94%E7%A7%BB%E8%87%B3%E5%8F%A6%E4%B8%80%E4%B8%AA%E6%A0%8F%E7%9B%AE%0A-+%5B+%5D+%E5%BB%BA%E8%AE%AE%E7%B2%BE%E8%AF%BB%E5%85%A8%E6%96%87%0A%0A%23%23+%E8%A1%A5%E5%85%85%E8%AF%B4%E6%98%8E%0A%0A"&gt;提交反馈&lt;/a&gt; · hep-ex, hep-ph, inspire:Experiment-HEP, inspire:Phenomenology-HEP&lt;/p&gt;</ns1:encoded>
+      <guid isPermaLink="false">arxiv:2506.05258:hepml-v1</guid>
+      <category>BSM搜索</category>
+      <category>hep-ex</category>
+      <category>hep-ph</category>
+      <category>inspire:Experiment-HEP</category>
+      <category>inspire:Phenomenology-HEP</category>
+      <category>track:hep_application</category>
+      <category>多变量分类</category>
+      <category>对撞机物理分析</category>
+      <category>灵敏度估计</category>
+      <pubDate>Fri, 06 Jun 2025 04:22:38 +0000</pubDate>
+    </item>
+    <item>
+      <title>Assessing the significance of the ILL experiment on the sterile neutrino hypothesis</title>
+      <link>https://inspirehep.net/literature/2946982</link>
+      <description>直接重新分析ILL反应堆中微子数据检验惰性中微子，属实验中微子振荡与系统误差研究</description>
+      <ns1:encoded>&lt;p&gt;&lt;strong&gt;栏目：&lt;/strong&gt;HEP 直接应用&lt;/p&gt;&lt;p&gt;&lt;strong&gt;分析依据：&lt;/strong&gt;仅标题和摘要；未读取全文。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法：&lt;/strong&gt;重新分析 ILL 反应堆反中微子实验谱数据，评估惰性中微子假设的统计显著性&lt;/p&gt;&lt;p&gt;&lt;strong&gt;相关性：&lt;/strong&gt;0.85；&lt;strong&gt;证据等级：&lt;/strong&gt;direct&lt;/p&gt;&lt;p&gt;&lt;strong&gt;初筛理由：&lt;/strong&gt;直接重新分析ILL反应堆中微子数据检验惰性中微子，属实验中微子振荡与系统误差研究&lt;/p&gt;&lt;p&gt;&lt;strong&gt;出版信息（来源记录）：&lt;/strong&gt;Phys.Rev.D 112 (2025) 012010&lt;/p&gt;&lt;p&gt;&lt;strong&gt;摘要来源：&lt;/strong&gt;INSPIRE (APS)&lt;/p&gt;&lt;p&gt;&lt;em&gt;本条目仅完成摘要级筛选。&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;a href="https://inspirehep.net/literature/2946982"&gt;INSPIRE 记录&lt;/a&gt; · &lt;a href="https://doi.org/10.1103/physrevd.112.012010"&gt;DOI&lt;/a&gt; · &lt;a href="https://github.com/quxnb/hepml-digest/issues/new?title=%5B%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%5D+DOI%3A10.1103%2Fphysrevd.112.012010+Assessing+the+significance+of+the+ILL+experiment+on+the+sterile+neutrino+hypothe&amp;amp;body=%23%23+%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%0A%0A-+%E8%AE%BA%E6%96%87%EF%BC%9A%5BDOI%3A10.1103%2Fphysrevd.112.012010%5D%28https%3A%2F%2Finspirehep.net%2Fliterature%2F2946982%29%0A-+%E8%AE%B0%E5%BD%95+ID%EF%BC%9Adoi%3A10.1103%2Fphysrevd.112.012010%0A-+%E5%88%86%E6%9E%90%E4%BE%9D%E6%8D%AE%EF%BC%9A%E4%BB%85%E6%A0%87%E9%A2%98%E5%92%8C%E6%91%98%E8%A6%81%EF%BC%8C%E6%9C%AA%E8%AF%BB%E5%8F%96%E5%85%A8%E6%96%87%0A-+%E6%A0%8F%E7%9B%AE%EF%BC%9AHEP+%E7%9B%B4%E6%8E%A5%E5%BA%94%E7%94%A8%0A-+%E5%BD%93%E5%89%8D%E7%9B%B8%E5%85%B3%E6%80%A7%EF%BC%9A0.85%0A-+%E5%BD%93%E5%89%8D%E8%AF%81%E6%8D%AE%E7%AD%89%E7%BA%A7%EF%BC%9Adirect%0A%0A%23%23+%E5%88%A4%E6%96%AD%0A%0A-+%5B+%5D+%E6%8E%A8%E8%8D%90%E4%BF%9D%E7%95%99%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E5%90%88%E7%90%86%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E8%BF%87%E5%BA%A6%E6%8E%A8%E6%B5%8B%0A-+%5B+%5D+%E5%BA%94%E7%A7%BB%E8%87%B3%E5%8F%A6%E4%B8%80%E4%B8%AA%E6%A0%8F%E7%9B%AE%0A-+%5B+%5D+%E5%BB%BA%E8%AE%AE%E7%B2%BE%E8%AF%BB%E5%85%A8%E6%96%87%0A%0A%23%23+%E8%A1%A5%E5%85%85%E8%AF%B4%E6%98%8E%0A%0A"&gt;提交反馈&lt;/a&gt; · inspire:Experiment-HEP, inspire:Theory-HEP&lt;/p&gt;</ns1:encoded>
+      <guid isPermaLink="false">doi:10.1103/physrevd.112.012010:hepml-v1</guid>
+      <category>inspire:Experiment-HEP</category>
+      <category>inspire:Theory-HEP</category>
+      <category>track:hep_application</category>
+      <category>反应堆中微子振荡分析</category>
+      <category>惰性中微子搜索</category>
+      <category>谱分析</category>
+      <category>通量系统误差处理</category>
+      <pubDate>Wed, 16 Jul 2025 12:58:33 +0000</pubDate>
+    </item>
+    <item>
+      <title>Search for long-lived heavy neutral leptons in signatures with one prompt muon and a secondary vertex formed by two non-prompt muons in proton-proton collisions at $\sqrt{s}$ = 13 and 13.6 TeV</title>
+      <link>https://arxiv.org/abs/2610.40911</link>
+      <description>直接报告CMS长寿命HNL实验搜寻，含次级顶点重建与排除限，属实验中微子性质测量</description>
+      <ns1:encoded>&lt;p&gt;&lt;strong&gt;栏目：&lt;/strong&gt;HEP 直接应用&lt;/p&gt;&lt;p&gt;&lt;strong&gt;分析依据：&lt;/strong&gt;仅标题和摘要；未读取全文。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法：&lt;/strong&gt;CMS 利用 13/13.6 TeV pp 数据，在 μ 子系统中重建两个非瞬发 μ 子构成的次级顶点，搜寻长寿命重中性轻子，并用背景估计设置混合参数排除限&lt;/p&gt;&lt;p&gt;&lt;strong&gt;相关性：&lt;/strong&gt;0.95；&lt;strong&gt;证据等级：&lt;/strong&gt;direct&lt;/p&gt;&lt;p&gt;&lt;strong&gt;初筛理由：&lt;/strong&gt;直接报告CMS长寿命HNL实验搜寻，含次级顶点重建与排除限，属实验中微子性质测量&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法总结（摘要分析）：&lt;/strong&gt;CMS利用2016-2018年13 TeV的138 fb−1和2022年13.6 TeV的34.6 fb−1质子-质子碰撞数据，在W→三μ末态中搜寻长寿命重中性轻子：一个瞬发μ子和两个来自同一次级顶点的非瞬发μ子。分析针对大衰变长度，要求μ子高度非瞬发且仅在μ子系统中重建远离束流的次级顶点，从而提升低质量2–4 GeV、混合参数10−6–10−5区域灵敏度。未观测到相对背景预期的 excess，并在Majorana HNL假设下对1–5 GeV质量给出95% CL混合参数排除限。&lt;/p&gt;&lt;h4&gt;摘要中报告的结论&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;在13 TeV的138 fb−1和13.6 TeV的34.6 fb−1质子-质子碰撞数据中搜寻W玻色子衰变产生的重中性轻子。&lt;/li&gt;&lt;li&gt;末态为三个μ子，其中一个来自主相互作用顶点的瞬发μ子，另外两个来自共同次级顶点。&lt;/li&gt;&lt;li&gt;分析策略针对大HNL衰变长度优化，要求高度非瞬发的μ子形成远离束流的次级顶点，且仅在CMSμ子系统中重建。&lt;/li&gt;&lt;li&gt;该策略提升了高HNL寿命区域的灵敏度，对应低HNL质量2–4 GeV和与标准模型中微子混合参数10−6–10−5。&lt;/li&gt;&lt;li&gt;未观测到高于背景预期的 excess。&lt;/li&gt;&lt;li&gt;在Majorana HNL假设下，对HNL质量1–5 GeV范围给出95%置信水平的混合参数排除限。&lt;/li&gt;&lt;/ul&gt;&lt;h4&gt;对高能实验物理的潜在帮助&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;可将μ子系统中重建远离束流的次级顶点这一思路迁移到其他衰变为μ子的长寿命中性粒子搜寻，例如暗光子或HNL变体；这是迁移设想，非本文已验证。&lt;/li&gt;&lt;li&gt;可探索用机器学习改进非瞬发μ子鉴别和次级顶点分类，输入μ子室击中、时序与几何信息；摘要未报告此类方法。&lt;/li&gt;&lt;li&gt;可将μ子系统专用分析与基于径迹室的非瞬发分析联合，覆盖不同寿命与质量区间，但需处理相关性、协方差与重叠事件。&lt;/li&gt;&lt;li&gt;可发展数据驱动的非瞬发μ子背景估计与控制系统，用于长寿命末态搜寻；具体实现需另行验证。&lt;/li&gt;&lt;/ul&gt;&lt;h4&gt;迁移风险&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;μ子系统响应、对齐、时序、击中效率及非瞬发μ子误鉴别存在模拟到数据的潜在偏移；摘要未说明校准与系统误差处理，需查阅全文确认。&lt;/li&gt;&lt;li&gt;非瞬发μ子背景估计、电荷误判、穿透与宇宙线等本底的处理细节摘要未说明，需全文核查。&lt;/li&gt;&lt;li&gt;若引入机器学习，模型可能在模拟中学习探测器几何或占据率效应，需用数据控制样本检验泛化。&lt;/li&gt;&lt;li&gt;负权事件、nuisance参数、协方差与近远端/控制区关联等摘要未说明，需全文确认后才能评估迁移影响。&lt;/li&gt;&lt;li&gt;若采用图或集合模型，应检查对μ子次序和几何置换的对称性；摘要未报告机器学习方法，属迁移设计风险。&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;strong&gt;最小验证方案：&lt;/strong&gt;最小可行验证：先在正交控制区复现论文的背景估计与选择效率；用数据控制样本验证μ子系统次级顶点重建、非瞬发μ子效率和动量响应，并做闭包检验；若加入机器学习，仅作为选择或分类器，在独立模拟与数据控制区比较基线，检查对齐、时序、负权与nuisance参数影响，并用注入测试评估灵敏度，不预设系统误差会降低。&lt;/p&gt;&lt;p&gt;&lt;a href="https://arxiv.org/abs/2610.40911"&gt;论文页面&lt;/a&gt; · &lt;a href="https://inspirehep.net/literature/3220999"&gt;INSPIRE 记录&lt;/a&gt; · &lt;a href="https://github.com/quxnb/hepml-digest/issues/new?title=%5B%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%5D+arXiv%3A2610.40911+Search+for+long-lived+heavy+neutral+leptons+in+signatures+with+one+prompt+muon+a&amp;amp;body=%23%23+%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%0A%0A-+%E8%AE%BA%E6%96%87%EF%BC%9A%5BarXiv%3A2610.40911%5D%28https%3A%2F%2Farxiv.org%2Fabs%2F2610.40911%29%0A-+%E8%AE%B0%E5%BD%95+ID%EF%BC%9A2610.40911%3Av1%0A-+%E5%88%86%E6%9E%90%E4%BE%9D%E6%8D%AE%EF%BC%9A%E4%BB%85%E6%A0%87%E9%A2%98%E5%92%8C%E6%91%98%E8%A6%81%EF%BC%8C%E6%9C%AA%E8%AF%BB%E5%8F%96%E5%85%A8%E6%96%87%0A-+%E6%A0%8F%E7%9B%AE%EF%BC%9AHEP+%E7%9B%B4%E6%8E%A5%E5%BA%94%E7%94%A8%0A-+%E5%BD%93%E5%89%8D%E7%9B%B8%E5%85%B3%E6%80%A7%EF%BC%9A0.95%0A-+%E5%BD%93%E5%89%8D%E8%AF%81%E6%8D%AE%E7%AD%89%E7%BA%A7%EF%BC%9Adirect%0A%0A%23%23+%E5%88%A4%E6%96%AD%0A%0A-+%5B+%5D+%E6%8E%A8%E8%8D%90%E4%BF%9D%E7%95%99%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E5%90%88%E7%90%86%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E8%BF%87%E5%BA%A6%E6%8E%A8%E6%B5%8B%0A-+%5B+%5D+%E5%BA%94%E7%A7%BB%E8%87%B3%E5%8F%A6%E4%B8%80%E4%B8%AA%E6%A0%8F%E7%9B%AE%0A-+%5B+%5D+%E5%BB%BA%E8%AE%AE%E7%B2%BE%E8%AF%BB%E5%85%A8%E6%96%87%0A%0A%23%23+%E8%A1%A5%E5%85%85%E8%AF%B4%E6%98%8E%0A%0A"&gt;提交反馈&lt;/a&gt; · hep-ex, inspire:Experiment-HEP&lt;/p&gt;</ns1:encoded>
+      <guid isPermaLink="false">arxiv:2610.40911:hepml-v1</guid>
+      <category>background estimation</category>
+      <category>exclusion limit setting</category>
+      <category>heavy neutral lepton search</category>
+      <category>hep-ex</category>
+      <category>inspire:Experiment-HEP</category>
+      <category>long-lived particle search</category>
+      <category>muon system reconstruction</category>
+      <category>secondary vertex reconstruction</category>
+      <category>track:hep_application</category>
+      <pubDate>Thu, 29 Oct 2026 19:30:10 +0000</pubDate>
+    </item>
+    <item>
+      <title>Characterization of the low energy excess using a NUCLEUS Al$_2$O$_3$ detector</title>
+      <link>https://arxiv.org/abs/2603.07687</link>
+      <description>直接报告NUCLEUS实验中微子探测器本底表征与LEE研究，属实验测量与方法</description>
+      <ns1:encoded>&lt;p&gt;&lt;strong&gt;栏目：&lt;/strong&gt;HEP 直接应用&lt;/p&gt;&lt;p&gt;&lt;strong&gt;分析依据：&lt;/strong&gt;仅标题和摘要；未读取全文。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法：&lt;/strong&gt;利用NUCLEUS低阈值低温量热计研究低能超额(LEE)本底及其与粒子本底、冷却程序的关系&lt;/p&gt;&lt;p&gt;&lt;strong&gt;相关性：&lt;/strong&gt;0.95；&lt;strong&gt;证据等级：&lt;/strong&gt;direct&lt;/p&gt;&lt;p&gt;&lt;strong&gt;初筛理由：&lt;/strong&gt;直接报告NUCLEUS实验中微子探测器本底表征与LEE研究，属实验测量与方法&lt;/p&gt;&lt;p&gt;&lt;strong&gt;出版信息（来源记录）：&lt;/strong&gt;Eur.Phys.J.C 86 (2026) 831&lt;/p&gt;&lt;p&gt;&lt;strong&gt;摘要来源：&lt;/strong&gt;INSPIRE (Springer)&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法总结（摘要分析）：&lt;/strong&gt;本文利用NUCLEUS实验的Al2O3蓝宝石低温量热计（双TES）在多种实验条件下表征低能超额（LEE）本底，发现LEE率与粒子本底水平无依赖证据；较慢冷却程序对应较低初始LEE率；同一冷却过程中LEE率随时间的行为跨数据集可比，并以从探测器达到4 K起算的幂律描述，共同指数为-0.59±0.06。结果为未来LEE抑制策略提供依据。&lt;/p&gt;&lt;h4&gt;摘要中报告的结论&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;在Al2O3双TES蓝宝石探测器的多条件测量中，未发现LEE率依赖粒子本底水平的证据&lt;/li&gt;&lt;li&gt;较慢冷却程序导致较低初始LEE率&lt;/li&gt;&lt;li&gt;同一冷却过程中LEE率行为跨测量可比；以从探测器达到4 K起算的时间拟合，最佳描述为共同指数(-0.59±0.06)的幂律&lt;/li&gt;&lt;li&gt;这些结果可为NUCLEUS未来LEE缓解策略提供指导&lt;/li&gt;&lt;li&gt;NUCLEUS旨在用低阈值克级低温量热计探测反应堆反中微子相干弹性中微子-核散射&lt;/li&gt;&lt;/ul&gt;&lt;h4&gt;对高能实验物理的潜在帮助&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;将多条件本底表征和冷却协议优化迁移到其他低阈值CEνNS/暗物质量热计实验的LEE抑制研究&lt;/li&gt;&lt;li&gt;在CEνNS本底模型中引入以4 K为起点的幂律时间项作为协变量或系统项，需在真实数据上验证&lt;/li&gt;&lt;li&gt;用分层/贝叶斯共同指数拟合跨数据集比较不同冷却、屏蔽和本底条件&lt;/li&gt;&lt;li&gt;将粒子本底水平作为协变量检验LEE相关性，并评估其在未来低阈值实验中的外推性&lt;/li&gt;&lt;/ul&gt;&lt;h4&gt;迁移风险&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;LEE起源未知，Al2O3双TES结果外推到其他材料、阈值和探测器几何需独立验证&lt;/li&gt;&lt;li&gt;共同幂律指数来自特定冷却与测量条件，可能受探测器热响应和弛豫过程影响&lt;/li&gt;&lt;li&gt;未发现粒子本底依赖不等于证明无依赖，需覆盖更多本底水平和运行条件&lt;/li&gt;&lt;li&gt;摘要未说明系统误差、能量校准、负权事件、nuisance参数和探测器几何等处理，需查阅全文确认&lt;/li&gt;&lt;li&gt;若引入ML时间序列或本底分类，需防止过拟合和simulation-to-data shift，不能仅凭ML声称降低系统误差&lt;/li&gt;&lt;li&gt;CEνNS通量、相互作用核效应、近远端关联和协方差未在摘要中涉及，迁移需另行验证&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;strong&gt;最小验证方案：&lt;/strong&gt;在独立Al2O3或不同材料低阈值探测器上重复多冷却条件测量，预留盲数据并预先注册分析；用分层贝叶斯或幂律拟合检验共同指数，将粒子本底水平、冷却速率和4 K后时间作为协变量；通过注入模拟和替代数据集评估拟合偏差与不确定性传播；全文核对能量校准、阈值、系统误差及探测器几何；若引入ML，仅作为时间序列或本底分类辅助，并在真实数据上做消融和系统误差核查。&lt;/p&gt;&lt;p&gt;&lt;a href="https://arxiv.org/abs/2603.07687"&gt;论文页面&lt;/a&gt; · &lt;a href="https://doi.org/10.1140/epjc/s10052-026-15950-3"&gt;DOI&lt;/a&gt; · &lt;a href="https://inspirehep.net/literature/3127585"&gt;INSPIRE 记录&lt;/a&gt; · &lt;a href="https://github.com/quxnb/hepml-digest/issues/new?title=%5B%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%5D+arXiv%3A2603.07687+Characterization+of+the+low+energy+excess+using+a+NUCLEUS+Al%24_2%24O%24_3%24+detector&amp;amp;body=%23%23+%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%0A%0A-+%E8%AE%BA%E6%96%87%EF%BC%9A%5BarXiv%3A2603.07687%5D%28https%3A%2F%2Farxiv.org%2Fabs%2F2603.07687%29%0A-+%E8%AE%B0%E5%BD%95+ID%EF%BC%9Aarxiv%3A2603.07687%0A-+%E5%88%86%E6%9E%90%E4%BE%9D%E6%8D%AE%EF%BC%9A%E4%BB%85%E6%A0%87%E9%A2%98%E5%92%8C%E6%91%98%E8%A6%81%EF%BC%8C%E6%9C%AA%E8%AF%BB%E5%8F%96%E5%85%A8%E6%96%87%0A-+%E6%A0%8F%E7%9B%AE%EF%BC%9AHEP+%E7%9B%B4%E6%8E%A5%E5%BA%94%E7%94%A8%0A-+%E5%BD%93%E5%89%8D%E7%9B%B8%E5%85%B3%E6%80%A7%EF%BC%9A0.95%0A-+%E5%BD%93%E5%89%8D%E8%AF%81%E6%8D%AE%E7%AD%89%E7%BA%A7%EF%BC%9Adirect%0A%0A%23%23+%E5%88%A4%E6%96%AD%0A%0A-+%5B+%5D+%E6%8E%A8%E8%8D%90%E4%BF%9D%E7%95%99%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E5%90%88%E7%90%86%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E8%BF%87%E5%BA%A6%E6%8E%A8%E6%B5%8B%0A-+%5B+%5D+%E5%BA%94%E7%A7%BB%E8%87%B3%E5%8F%A6%E4%B8%80%E4%B8%AA%E6%A0%8F%E7%9B%AE%0A-+%5B+%5D+%E5%BB%BA%E8%AE%AE%E7%B2%BE%E8%AF%BB%E5%85%A8%E6%96%87%0A%0A%23%23+%E8%A1%A5%E5%85%85%E8%AF%B4%E6%98%8E%0A%0A"&gt;提交反馈&lt;/a&gt; · hep-ex, inspire:Experiment-HEP, inspire:Experiment-Nucl, inspire:Instrumentation, nucl-ex, physics.ins-det&lt;/p&gt;</ns1:encoded>
+      <guid isPermaLink="false">arxiv:2603.07687:hepml-v1</guid>
+      <category>CEvNS探测</category>
+      <category>hep-ex</category>
+      <category>inspire:Experiment-HEP</category>
+      <category>inspire:Experiment-Nucl</category>
+      <category>inspire:Instrumentation</category>
+      <category>nucl-ex</category>
+      <category>physics.ins-det</category>
+      <category>track:hep_application</category>
+      <category>低阈值量热计校准</category>
+      <category>本底表征与控制</category>
+      <pubDate>Tue, 10 Mar 2026 04:06:31 +0000</pubDate>
+    </item>
+    <item>
+      <title>Particle background characterization and prediction for the NUCLEUS reactor CE$\nu $NS experiment</title>
+      <link>https://arxiv.org/abs/2509.03559</link>
+      <description>直接面向反应堆CEνNS实验的本底预测与屏蔽优化，属实验方法核心内容</description>
+      <ns1:encoded>&lt;p&gt;&lt;strong&gt;栏目：&lt;/strong&gt;HEP 直接应用&lt;/p&gt;&lt;p&gt;&lt;strong&gt;分析依据：&lt;/strong&gt;仅标题和摘要；未读取全文。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法：&lt;/strong&gt;Geant4蒙特卡罗模拟与现场环境放射性测量，预测亚keV粒子本底并优化屏蔽&lt;/p&gt;&lt;p&gt;&lt;strong&gt;相关性：&lt;/strong&gt;0.95；&lt;strong&gt;证据等级：&lt;/strong&gt;direct&lt;/p&gt;&lt;p&gt;&lt;strong&gt;初筛理由：&lt;/strong&gt;直接面向反应堆CEνNS实验的本底预测与屏蔽优化，属实验方法核心内容&lt;/p&gt;&lt;p&gt;&lt;strong&gt;出版信息（来源记录）：&lt;/strong&gt;Eur.Phys.J.C 86 (2026) 29&lt;/p&gt;&lt;p&gt;&lt;strong&gt;摘要来源：&lt;/strong&gt;INSPIRE (Springer)&lt;/p&gt;&lt;p&gt;&lt;em&gt;本条目仅完成摘要级筛选。&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;a href="https://arxiv.org/abs/2509.03559"&gt;论文页面&lt;/a&gt; · &lt;a href="https://doi.org/10.1140/epjc/s10052-025-15168-9"&gt;DOI&lt;/a&gt; · &lt;a href="https://inspirehep.net/literature/2966584"&gt;INSPIRE 记录&lt;/a&gt; · &lt;a href="https://github.com/quxnb/hepml-digest/issues/new?title=%5B%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%5D+arXiv%3A2509.03559+Particle+background+characterization+and+prediction+for+the+NUCLEUS+reactor+CE%24%5C&amp;amp;body=%23%23+%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%0A%0A-+%E8%AE%BA%E6%96%87%EF%BC%9A%5BarXiv%3A2509.03559%5D%28https%3A%2F%2Farxiv.org%2Fabs%2F2509.03559%29%0A-+%E8%AE%B0%E5%BD%95+ID%EF%BC%9Aarxiv%3A2509.03559%0A-+%E5%88%86%E6%9E%90%E4%BE%9D%E6%8D%AE%EF%BC%9A%E4%BB%85%E6%A0%87%E9%A2%98%E5%92%8C%E6%91%98%E8%A6%81%EF%BC%8C%E6%9C%AA%E8%AF%BB%E5%8F%96%E5%85%A8%E6%96%87%0A-+%E6%A0%8F%E7%9B%AE%EF%BC%9AHEP+%E7%9B%B4%E6%8E%A5%E5%BA%94%E7%94%A8%0A-+%E5%BD%93%E5%89%8D%E7%9B%B8%E5%85%B3%E6%80%A7%EF%BC%9A0.95%0A-+%E5%BD%93%E5%89%8D%E8%AF%81%E6%8D%AE%E7%AD%89%E7%BA%A7%EF%BC%9Adirect%0A%0A%23%23+%E5%88%A4%E6%96%AD%0A%0A-+%5B+%5D+%E6%8E%A8%E8%8D%90%E4%BF%9D%E7%95%99%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E5%90%88%E7%90%86%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E8%BF%87%E5%BA%A6%E6%8E%A8%E6%B5%8B%0A-+%5B+%5D+%E5%BA%94%E7%A7%BB%E8%87%B3%E5%8F%A6%E4%B8%80%E4%B8%AA%E6%A0%8F%E7%9B%AE%0A-+%5B+%5D+%E5%BB%BA%E8%AE%AE%E7%B2%BE%E8%AF%BB%E5%85%A8%E6%96%87%0A%0A%23%23+%E8%A1%A5%E5%85%85%E8%AF%B4%E6%98%8E%0A%0A"&gt;提交反馈&lt;/a&gt; · hep-ex, inspire:Experiment-HEP, inspire:Experiment-Nucl, inspire:Instrumentation, nucl-ex, physics.ins-det&lt;/p&gt;</ns1:encoded>
+      <guid isPermaLink="false">arxiv:2509.03559:hepml-v1</guid>
+      <category>CEνNS探测</category>
+      <category>hep-ex</category>
+      <category>inspire:Experiment-HEP</category>
+      <category>inspire:Experiment-Nucl</category>
+      <category>inspire:Instrumentation</category>
+      <category>nucl-ex</category>
+      <category>physics.ins-det</category>
+      <category>track:hep_application</category>
+      <category>信号本底比评估</category>
+      <category>探测器优化</category>
+      <category>本底建模与预测</category>
+      <pubDate>Fri, 05 Sep 2025 04:06:39 +0000</pubDate>
+    </item>
+    <item>
+      <title>Evaluation of the upgraded 3-inch Hamamatsu photomultiplier for the KM3NeT Neutrino Telescope</title>
+      <link>https://arxiv.org/abs/2504.02989</link>
+      <description>KM3NeT中微子望远镜光电倍增管性能表征，属探测器与校准实验研究</description>
+      <ns1:encoded>&lt;p&gt;&lt;strong&gt;栏目：&lt;/strong&gt;HEP 直接应用&lt;/p&gt;&lt;p&gt;&lt;strong&gt;分析依据：&lt;/strong&gt;仅标题和摘要；未读取全文。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法：&lt;/strong&gt;3英寸光电倍增管暗计数率、渡越时间离散和杂散脉冲的批量测试与量子效率评估&lt;/p&gt;&lt;p&gt;&lt;strong&gt;相关性：&lt;/strong&gt;0.90；&lt;strong&gt;证据等级：&lt;/strong&gt;direct&lt;/p&gt;&lt;p&gt;&lt;strong&gt;初筛理由：&lt;/strong&gt;KM3NeT中微子望远镜光电倍增管性能表征，属探测器与校准实验研究&lt;/p&gt;&lt;p&gt;&lt;strong&gt;出版信息（来源记录）：&lt;/strong&gt;JINST 20 (2025) P07054&lt;/p&gt;&lt;p&gt;&lt;strong&gt;摘要来源：&lt;/strong&gt;INSPIRE (arXiv)&lt;/p&gt;&lt;p&gt;&lt;em&gt;本条目仅完成摘要级筛选。&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;a href="https://arxiv.org/abs/2504.02989"&gt;论文页面&lt;/a&gt; · &lt;a href="https://doi.org/10.1088/1748-0221/20/07/p07054"&gt;DOI&lt;/a&gt; · &lt;a href="https://inspirehep.net/literature/2908113"&gt;INSPIRE 记录&lt;/a&gt; · &lt;a href="https://github.com/quxnb/hepml-digest/issues/new?title=%5B%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%5D+arXiv%3A2504.02989+Evaluation+of+the+upgraded+3-inch+Hamamatsu+photomultiplier+for+the+KM3NeT+Neutr&amp;amp;body=%23%23+%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%0A%0A-+%E8%AE%BA%E6%96%87%EF%BC%9A%5BarXiv%3A2504.02989%5D%28https%3A%2F%2Farxiv.org%2Fabs%2F2504.02989%29%0A-+%E8%AE%B0%E5%BD%95+ID%EF%BC%9Aarxiv%3A2504.02989%0A-+%E5%88%86%E6%9E%90%E4%BE%9D%E6%8D%AE%EF%BC%9A%E4%BB%85%E6%A0%87%E9%A2%98%E5%92%8C%E6%91%98%E8%A6%81%EF%BC%8C%E6%9C%AA%E8%AF%BB%E5%8F%96%E5%85%A8%E6%96%87%0A-+%E6%A0%8F%E7%9B%AE%EF%BC%9AHEP+%E7%9B%B4%E6%8E%A5%E5%BA%94%E7%94%A8%0A-+%E5%BD%93%E5%89%8D%E7%9B%B8%E5%85%B3%E6%80%A7%EF%BC%9A0.90%0A-+%E5%BD%93%E5%89%8D%E8%AF%81%E6%8D%AE%E7%AD%89%E7%BA%A7%EF%BC%9Adirect%0A%0A%23%23+%E5%88%A4%E6%96%AD%0A%0A-+%5B+%5D+%E6%8E%A8%E8%8D%90%E4%BF%9D%E7%95%99%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E5%90%88%E7%90%86%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E8%BF%87%E5%BA%A6%E6%8E%A8%E6%B5%8B%0A-+%5B+%5D+%E5%BA%94%E7%A7%BB%E8%87%B3%E5%8F%A6%E4%B8%80%E4%B8%AA%E6%A0%8F%E7%9B%AE%0A-+%5B+%5D+%E5%BB%BA%E8%AE%AE%E7%B2%BE%E8%AF%BB%E5%85%A8%E6%96%87%0A%0A%23%23+%E8%A1%A5%E5%85%85%E8%AF%B4%E6%98%8E%0A%0A"&gt;提交反馈&lt;/a&gt; · astro-ph.IM, hep-ex, inspire:Experiment-HEP, inspire:Instrumentation, physics.ins-det&lt;/p&gt;</ns1:encoded>
+      <guid isPermaLink="false">arxiv:2504.02989:hepml-v1</guid>
+      <category>astro-ph.IM</category>
+      <category>hep-ex</category>
+      <category>inspire:Experiment-HEP</category>
+      <category>inspire:Instrumentation</category>
+      <category>physics.ins-det</category>
+      <category>track:hep_application</category>
+      <category>光电倍增管性能表征</category>
+      <category>探测器校准</category>
+      <category>探测器模拟</category>
+      <pubDate>Mon, 07 Apr 2025 04:27:45 +0000</pubDate>
+    </item>
+    <item>
+      <title>Missing Light, Misleading Confidence: Optical-Module Readout Loss and Signal Reliability in Neutrino Telescopes</title>
+      <link>https://arxiv.org/abs/2610.24003</link>
+      <description>直接针对中微子望远镜读出丢失与数据质量门控，属探测器与系统误差研究，需深读</description>
+      <ns1:encoded>&lt;p&gt;&lt;strong&gt;栏目：&lt;/strong&gt;HEP 直接应用&lt;/p&gt;&lt;p&gt;&lt;strong&gt;分析依据：&lt;/strong&gt;仅标题和摘要；未读取全文。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法：&lt;/strong&gt;利用公共IceCube与KM3NeT数据，检验基于可用性的读出质量门控在读出丢失下认证通道间统计一致性的失效模式&lt;/p&gt;&lt;p&gt;&lt;strong&gt;相关性：&lt;/strong&gt;0.90；&lt;strong&gt;证据等级：&lt;/strong&gt;direct&lt;/p&gt;&lt;p&gt;&lt;strong&gt;初筛理由：&lt;/strong&gt;直接针对中微子望远镜读出丢失与数据质量门控，属探测器与系统误差研究，需深读&lt;/p&gt;&lt;p&gt;&lt;strong&gt;摘要来源：&lt;/strong&gt;INSPIRE (arXiv)&lt;/p&gt;&lt;p&gt;&lt;em&gt;本条目仅完成摘要级筛选。&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;a href="https://arxiv.org/abs/2610.24003"&gt;论文页面&lt;/a&gt; · &lt;a href="https://inspirehep.net/literature/3216191"&gt;INSPIRE 记录&lt;/a&gt; · &lt;a href="https://github.com/quxnb/hepml-digest/issues/new?title=%5B%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%5D+arXiv%3A2610.24003+Missing+Light%2C+Misleading+Confidence%3A+Optical-Module+Readout+Loss+and+Signal+Rel&amp;amp;body=%23%23+%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%0A%0A-+%E8%AE%BA%E6%96%87%EF%BC%9A%5BarXiv%3A2610.24003%5D%28https%3A%2F%2Farxiv.org%2Fabs%2F2610.24003%29%0A-+%E8%AE%B0%E5%BD%95+ID%EF%BC%9Aarxiv%3A2610.24003%0A-+%E5%88%86%E6%9E%90%E4%BE%9D%E6%8D%AE%EF%BC%9A%E4%BB%85%E6%A0%87%E9%A2%98%E5%92%8C%E6%91%98%E8%A6%81%EF%BC%8C%E6%9C%AA%E8%AF%BB%E5%8F%96%E5%85%A8%E6%96%87%0A-+%E6%A0%8F%E7%9B%AE%EF%BC%9AHEP+%E7%9B%B4%E6%8E%A5%E5%BA%94%E7%94%A8%0A-+%E5%BD%93%E5%89%8D%E7%9B%B8%E5%85%B3%E6%80%A7%EF%BC%9A0.90%0A-+%E5%BD%93%E5%89%8D%E8%AF%81%E6%8D%AE%E7%AD%89%E7%BA%A7%EF%BC%9Adirect%0A%0A%23%23+%E5%88%A4%E6%96%AD%0A%0A-+%5B+%5D+%E6%8E%A8%E8%8D%90%E4%BF%9D%E7%95%99%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E5%90%88%E7%90%86%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E8%BF%87%E5%BA%A6%E6%8E%A8%E6%B5%8B%0A-+%5B+%5D+%E5%BA%94%E7%A7%BB%E8%87%B3%E5%8F%A6%E4%B8%80%E4%B8%AA%E6%A0%8F%E7%9B%AE%0A-+%5B+%5D+%E5%BB%BA%E8%AE%AE%E7%B2%BE%E8%AF%BB%E5%85%A8%E6%96%87%0A%0A%23%23+%E8%A1%A5%E5%85%85%E8%AF%B4%E6%98%8E%0A%0A"&gt;提交反馈&lt;/a&gt; · astro-ph.IM, inspire:Instrumentation, physics.ins-det&lt;/p&gt;</ns1:encoded>
+      <guid isPermaLink="false">arxiv:2610.24003:hepml-v1</guid>
+      <category>astro-ph.IM</category>
+      <category>inspire:Instrumentation</category>
+      <category>physics.ins-det</category>
+      <category>track:hep_application</category>
+      <category>信号可靠性评估</category>
+      <category>探测器读出与校准</category>
+      <category>数据质量监控</category>
+      <category>系统误差处理</category>
+      <pubDate>Tue, 20 Oct 2026 05:05:53 +0000</pubDate>
+    </item>
     <item>
       <title>Impact of the position effects in the energy calibration of the BULLKID detector</title>
       <link>https://arxiv.org/abs/2609.30004</link>
@@ -2237,374 +2704,6 @@
       <category>模块定位</category>
       <category>系统误差控制</category>
       <pubDate>Tue, 27 Jul 2021 07:18:18 +0000</pubDate>
-    </item>
-    <item>
-      <title>A calibration study of local ice and optical sensor properties in IceCube</title>
-      <link>https://arxiv.org/abs/2107.10435</link>
-      <description>直接面向IceCube中微子探测器的光学校准与响应建模，属实验方法与校准</description>
-      <ns1:encoded>&lt;p&gt;&lt;strong&gt;栏目：&lt;/strong&gt;HEP 直接应用&lt;/p&gt;&lt;p&gt;&lt;strong&gt;分析依据：&lt;/strong&gt;仅标题和摘要；未读取全文。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法：&lt;/strong&gt;IceCube 冰层与光学传感器性质校准建模，包括洞冰光学、几何位置方向、阴影效应&lt;/p&gt;&lt;p&gt;&lt;strong&gt;相关性：&lt;/strong&gt;0.93；&lt;strong&gt;证据等级：&lt;/strong&gt;direct&lt;/p&gt;&lt;p&gt;&lt;strong&gt;初筛理由：&lt;/strong&gt;直接面向IceCube中微子探测器的光学校准与响应建模，属实验方法与校准&lt;/p&gt;&lt;p&gt;&lt;strong&gt;出版信息（来源记录）：&lt;/strong&gt;PoS ICRC2021 (2021) 1023&lt;/p&gt;&lt;p&gt;&lt;strong&gt;摘要来源：&lt;/strong&gt;INSPIRE (SISSA)&lt;/p&gt;&lt;p&gt;&lt;em&gt;本条目仅完成摘要级筛选。&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;a href="https://arxiv.org/abs/2107.10435"&gt;论文页面&lt;/a&gt; · &lt;a href="https://doi.org/10.22323/1.395.1023"&gt;DOI&lt;/a&gt; · &lt;a href="https://inspirehep.net/literature/1890488"&gt;INSPIRE 记录&lt;/a&gt; · &lt;a href="https://github.com/quxnb/hepml-digest/issues/new?title=%5B%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%5D+arXiv%3A2107.10435+A+calibration+study+of+local+ice+and+optical+sensor+properties+in+IceCube&amp;amp;body=%23%23+%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%0A%0A-+%E8%AE%BA%E6%96%87%EF%BC%9A%5BarXiv%3A2107.10435%5D%28https%3A%2F%2Farxiv.org%2Fabs%2F2107.10435%29%0A-+%E8%AE%B0%E5%BD%95+ID%EF%BC%9Aarxiv%3A2107.10435%0A-+%E5%88%86%E6%9E%90%E4%BE%9D%E6%8D%AE%EF%BC%9A%E4%BB%85%E6%A0%87%E9%A2%98%E5%92%8C%E6%91%98%E8%A6%81%EF%BC%8C%E6%9C%AA%E8%AF%BB%E5%8F%96%E5%85%A8%E6%96%87%0A-+%E6%A0%8F%E7%9B%AE%EF%BC%9AHEP+%E7%9B%B4%E6%8E%A5%E5%BA%94%E7%94%A8%0A-+%E5%BD%93%E5%89%8D%E7%9B%B8%E5%85%B3%E6%80%A7%EF%BC%9A0.93%0A-+%E5%BD%93%E5%89%8D%E8%AF%81%E6%8D%AE%E7%AD%89%E7%BA%A7%EF%BC%9Adirect%0A%0A%23%23+%E5%88%A4%E6%96%AD%0A%0A-+%5B+%5D+%E6%8E%A8%E8%8D%90%E4%BF%9D%E7%95%99%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E5%90%88%E7%90%86%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E8%BF%87%E5%BA%A6%E6%8E%A8%E6%B5%8B%0A-+%5B+%5D+%E5%BA%94%E7%A7%BB%E8%87%B3%E5%8F%A6%E4%B8%80%E4%B8%AA%E6%A0%8F%E7%9B%AE%0A-+%5B+%5D+%E5%BB%BA%E8%AE%AE%E7%B2%BE%E8%AF%BB%E5%85%A8%E6%96%87%0A%0A%23%23+%E8%A1%A5%E5%85%85%E8%AF%B4%E6%98%8E%0A%0A"&gt;提交反馈&lt;/a&gt; · astro-ph.HE, astro-ph.IM, inspire:Astrophysics, inspire:Instrumentation&lt;/p&gt;</ns1:encoded>
-      <guid isPermaLink="false">arxiv:2107.10435:hepml-v1</guid>
-      <category>astro-ph.HE</category>
-      <category>astro-ph.IM</category>
-      <category>inspire:Astrophysics</category>
-      <category>inspire:Instrumentation</category>
-      <category>track:hep_application</category>
-      <category>光学模拟</category>
-      <category>探测器响应建模</category>
-      <category>探测器校准</category>
-      <pubDate>Fri, 23 Jul 2021 03:29:03 +0000</pubDate>
-    </item>
-    <item>
-      <title>Non-standard neutrino interactions in IceCube</title>
-      <link>https://inspirehep.net/literature/2013629</link>
-      <description>直接报告 IceCube/DeepCore 中微子振荡 NSI 实验测量，属实验中微子研究核心范畴</description>
-      <ns1:encoded>&lt;p&gt;&lt;strong&gt;栏目：&lt;/strong&gt;HEP 直接应用&lt;/p&gt;&lt;p&gt;&lt;strong&gt;分析依据：&lt;/strong&gt;仅标题和摘要；未读取全文。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法：&lt;/strong&gt;利用 IceCube/DeepCore 大气中微子数据，通过振荡分析约束非标准中微子相互作用（NSI）参数，改进系统误差处理、背景排除和事件重建&lt;/p&gt;&lt;p&gt;&lt;strong&gt;相关性：&lt;/strong&gt;0.95；&lt;strong&gt;证据等级：&lt;/strong&gt;direct&lt;/p&gt;&lt;p&gt;&lt;strong&gt;初筛理由：&lt;/strong&gt;直接报告 IceCube/DeepCore 中微子振荡 NSI 实验测量，属实验中微子研究核心范畴&lt;/p&gt;&lt;p&gt;&lt;strong&gt;出版信息（来源记录）：&lt;/strong&gt;PoS EPS-HEP2021 (2022) 245&lt;/p&gt;&lt;p&gt;&lt;strong&gt;摘要来源：&lt;/strong&gt;INSPIRE (SISSA)&lt;/p&gt;&lt;p&gt;&lt;em&gt;本条目仅完成摘要级筛选。&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;a href="https://inspirehep.net/literature/2013629"&gt;INSPIRE 记录&lt;/a&gt; · &lt;a href="https://doi.org/10.22323/1.398.0245"&gt;DOI&lt;/a&gt; · &lt;a href="https://github.com/quxnb/hepml-digest/issues/new?title=%5B%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%5D+DOI%3A10.22323%2F1.398.0245+Non-standard+neutrino+interactions+in+IceCube&amp;amp;body=%23%23+%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%0A%0A-+%E8%AE%BA%E6%96%87%EF%BC%9A%5BDOI%3A10.22323%2F1.398.0245%5D%28https%3A%2F%2Finspirehep.net%2Fliterature%2F2013629%29%0A-+%E8%AE%B0%E5%BD%95+ID%EF%BC%9Adoi%3A10.22323%2F1.398.0245%0A-+%E5%88%86%E6%9E%90%E4%BE%9D%E6%8D%AE%EF%BC%9A%E4%BB%85%E6%A0%87%E9%A2%98%E5%92%8C%E6%91%98%E8%A6%81%EF%BC%8C%E6%9C%AA%E8%AF%BB%E5%8F%96%E5%85%A8%E6%96%87%0A-+%E6%A0%8F%E7%9B%AE%EF%BC%9AHEP+%E7%9B%B4%E6%8E%A5%E5%BA%94%E7%94%A8%0A-+%E5%BD%93%E5%89%8D%E7%9B%B8%E5%85%B3%E6%80%A7%EF%BC%9A0.95%0A-+%E5%BD%93%E5%89%8D%E8%AF%81%E6%8D%AE%E7%AD%89%E7%BA%A7%EF%BC%9Adirect%0A%0A%23%23+%E5%88%A4%E6%96%AD%0A%0A-+%5B+%5D+%E6%8E%A8%E8%8D%90%E4%BF%9D%E7%95%99%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E5%90%88%E7%90%86%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E8%BF%87%E5%BA%A6%E6%8E%A8%E6%B5%8B%0A-+%5B+%5D+%E5%BA%94%E7%A7%BB%E8%87%B3%E5%8F%A6%E4%B8%80%E4%B8%AA%E6%A0%8F%E7%9B%AE%0A-+%5B+%5D+%E5%BB%BA%E8%AE%AE%E7%B2%BE%E8%AF%BB%E5%85%A8%E6%96%87%0A%0A%23%23+%E8%A1%A5%E5%85%85%E8%AF%B4%E6%98%8E%0A%0A"&gt;提交反馈&lt;/a&gt; · inspire:Experiment-HEP&lt;/p&gt;</ns1:encoded>
-      <guid isPermaLink="false">doi:10.22323/1.398.0245:hepml-v1</guid>
-      <category>inspire:Experiment-HEP</category>
-      <category>track:hep_application</category>
-      <category>中微子振荡分析</category>
-      <category>大气中微子事例重建</category>
-      <category>系统误差处理</category>
-      <category>背景排除</category>
-      <category>非标准相互作用参数约束</category>
-      <pubDate>Thu, 20 Jan 2022 12:35:07 +0000</pubDate>
-    </item>
-    <item>
-      <title>Recent Progress in Solar Atmospheric Neutrino Searches with IceCube</title>
-      <link>https://arxiv.org/abs/2107.13696</link>
-      <description>直接报告IceCube太阳大气中微子实验搜索进展与灵敏度提升</description>
-      <ns1:encoded>&lt;p&gt;&lt;strong&gt;栏目：&lt;/strong&gt;HEP 直接应用&lt;/p&gt;&lt;p&gt;&lt;strong&gt;分析依据：&lt;/strong&gt;仅标题和摘要；未读取全文。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法：&lt;/strong&gt;利用IceCube高能穿行μ子事件与亚TeV全味中微子事件搜索太阳大气中微子通量，扩展至太阳活动极小期数据&lt;/p&gt;&lt;p&gt;&lt;strong&gt;相关性：&lt;/strong&gt;0.95；&lt;strong&gt;证据等级：&lt;/strong&gt;direct&lt;/p&gt;&lt;p&gt;&lt;strong&gt;初筛理由：&lt;/strong&gt;直接报告IceCube太阳大气中微子实验搜索进展与灵敏度提升&lt;/p&gt;&lt;p&gt;&lt;strong&gt;出版信息（来源记录）：&lt;/strong&gt;PoS ICRC2021 (2021) 1174&lt;/p&gt;&lt;p&gt;&lt;strong&gt;摘要来源：&lt;/strong&gt;INSPIRE (SISSA)&lt;/p&gt;&lt;p&gt;&lt;em&gt;本条目仅完成摘要级筛选。&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;a href="https://arxiv.org/abs/2107.13696"&gt;论文页面&lt;/a&gt; · &lt;a href="https://doi.org/10.22323/1.395.1174"&gt;DOI&lt;/a&gt; · &lt;a href="https://inspirehep.net/literature/1895140"&gt;INSPIRE 记录&lt;/a&gt; · &lt;a href="https://github.com/quxnb/hepml-digest/issues/new?title=%5B%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%5D+arXiv%3A2107.13696+Recent+Progress+in+Solar+Atmospheric+Neutrino+Searches+with+IceCube&amp;amp;body=%23%23+%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%0A%0A-+%E8%AE%BA%E6%96%87%EF%BC%9A%5BarXiv%3A2107.13696%5D%28https%3A%2F%2Farxiv.org%2Fabs%2F2107.13696%29%0A-+%E8%AE%B0%E5%BD%95+ID%EF%BC%9Aarxiv%3A2107.13696%0A-+%E5%88%86%E6%9E%90%E4%BE%9D%E6%8D%AE%EF%BC%9A%E4%BB%85%E6%A0%87%E9%A2%98%E5%92%8C%E6%91%98%E8%A6%81%EF%BC%8C%E6%9C%AA%E8%AF%BB%E5%8F%96%E5%85%A8%E6%96%87%0A-+%E6%A0%8F%E7%9B%AE%EF%BC%9AHEP+%E7%9B%B4%E6%8E%A5%E5%BA%94%E7%94%A8%0A-+%E5%BD%93%E5%89%8D%E7%9B%B8%E5%85%B3%E6%80%A7%EF%BC%9A0.95%0A-+%E5%BD%93%E5%89%8D%E8%AF%81%E6%8D%AE%E7%AD%89%E7%BA%A7%EF%BC%9Adirect%0A%0A%23%23+%E5%88%A4%E6%96%AD%0A%0A-+%5B+%5D+%E6%8E%A8%E8%8D%90%E4%BF%9D%E7%95%99%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E5%90%88%E7%90%86%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E8%BF%87%E5%BA%A6%E6%8E%A8%E6%B5%8B%0A-+%5B+%5D+%E5%BA%94%E7%A7%BB%E8%87%B3%E5%8F%A6%E4%B8%80%E4%B8%AA%E6%A0%8F%E7%9B%AE%0A-+%5B+%5D+%E5%BB%BA%E8%AE%AE%E7%B2%BE%E8%AF%BB%E5%85%A8%E6%96%87%0A%0A%23%23+%E8%A1%A5%E5%85%85%E8%AF%B4%E6%98%8E%0A%0A"&gt;提交反馈&lt;/a&gt; · astro-ph.HE, hep-ex, inspire:Astrophysics, inspire:Experiment-HEP&lt;/p&gt;</ns1:encoded>
-      <guid isPermaLink="false">arxiv:2107.13696:hepml-v1</guid>
-      <category>astro-ph.HE</category>
-      <category>hep-ex</category>
-      <category>inspire:Astrophysics</category>
-      <category>inspire:Experiment-HEP</category>
-      <category>track:hep_application</category>
-      <category>中微子通量搜索</category>
-      <category>探测器数据分析</category>
-      <category>灵敏度优化</category>
-      <pubDate>Fri, 30 Jul 2021 03:12:29 +0000</pubDate>
-    </item>
-    <item>
-      <title>Hybrid cosmic ray measurements using the IceAct telescopes in coincidence with the IceCube and IceTop detectors</title>
-      <link>https://arxiv.org/abs/2108.05572</link>
-      <description>IceCube 探测器与宇宙线 veto/校准研究，对中微子实验有明确实验价值，但主体为宇宙线测量</description>
-      <ns1:encoded>&lt;p&gt;&lt;strong&gt;栏目：&lt;/strong&gt;HEP 直接应用&lt;/p&gt;&lt;p&gt;&lt;strong&gt;分析依据：&lt;/strong&gt;仅标题和摘要；未读取全文。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法：&lt;/strong&gt;IceAct 契伦科夫望远镜与 IceTop/IceCube 联合的混合宇宙线事件分析，用于原初粒子种类鉴别与探测器交叉校准&lt;/p&gt;&lt;p&gt;&lt;strong&gt;相关性：&lt;/strong&gt;0.72；&lt;strong&gt;证据等级：&lt;/strong&gt;direct&lt;/p&gt;&lt;p&gt;&lt;strong&gt;初筛理由：&lt;/strong&gt;IceCube 探测器与宇宙线 veto/校准研究，对中微子实验有明确实验价值，但主体为宇宙线测量&lt;/p&gt;&lt;p&gt;&lt;strong&gt;出版信息（来源记录）：&lt;/strong&gt;PoS ICRC2021 (2021) 276&lt;/p&gt;&lt;p&gt;&lt;strong&gt;摘要来源：&lt;/strong&gt;INSPIRE (SISSA)&lt;/p&gt;&lt;p&gt;&lt;em&gt;本条目仅完成摘要级筛选。&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;a href="https://arxiv.org/abs/2108.05572"&gt;论文页面&lt;/a&gt; · &lt;a href="https://doi.org/10.22323/1.395.0276"&gt;DOI&lt;/a&gt; · &lt;a href="https://inspirehep.net/literature/1904142"&gt;INSPIRE 记录&lt;/a&gt; · &lt;a href="https://github.com/quxnb/hepml-digest/issues/new?title=%5B%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%5D+arXiv%3A2108.05572+Hybrid+cosmic+ray+measurements+using+the+IceAct+telescopes+in+coincidence+with+t&amp;amp;body=%23%23+%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%0A%0A-+%E8%AE%BA%E6%96%87%EF%BC%9A%5BarXiv%3A2108.05572%5D%28https%3A%2F%2Farxiv.org%2Fabs%2F2108.05572%29%0A-+%E8%AE%B0%E5%BD%95+ID%EF%BC%9Aarxiv%3A2108.05572%0A-+%E5%88%86%E6%9E%90%E4%BE%9D%E6%8D%AE%EF%BC%9A%E4%BB%85%E6%A0%87%E9%A2%98%E5%92%8C%E6%91%98%E8%A6%81%EF%BC%8C%E6%9C%AA%E8%AF%BB%E5%8F%96%E5%85%A8%E6%96%87%0A-+%E6%A0%8F%E7%9B%AE%EF%BC%9AHEP+%E7%9B%B4%E6%8E%A5%E5%BA%94%E7%94%A8%0A-+%E5%BD%93%E5%89%8D%E7%9B%B8%E5%85%B3%E6%80%A7%EF%BC%9A0.72%0A-+%E5%BD%93%E5%89%8D%E8%AF%81%E6%8D%AE%E7%AD%89%E7%BA%A7%EF%BC%9Adirect%0A%0A%23%23+%E5%88%A4%E6%96%AD%0A%0A-+%5B+%5D+%E6%8E%A8%E8%8D%90%E4%BF%9D%E7%95%99%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E5%90%88%E7%90%86%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E8%BF%87%E5%BA%A6%E6%8E%A8%E6%B5%8B%0A-+%5B+%5D+%E5%BA%94%E7%A7%BB%E8%87%B3%E5%8F%A6%E4%B8%80%E4%B8%AA%E6%A0%8F%E7%9B%AE%0A-+%5B+%5D+%E5%BB%BA%E8%AE%AE%E7%B2%BE%E8%AF%BB%E5%85%A8%E6%96%87%0A%0A%23%23+%E8%A1%A5%E5%85%85%E8%AF%B4%E6%98%8E%0A%0A"&gt;提交反馈&lt;/a&gt; · astro-ph.HE, astro-ph.IM, inspire:Astrophysics, inspire:Instrumentation&lt;/p&gt;</ns1:encoded>
-      <guid isPermaLink="false">arxiv:2108.05572:hepml-v1</guid>
-      <category>astro-ph.HE</category>
-      <category>astro-ph.IM</category>
-      <category>inspire:Astrophysics</category>
-      <category>inspire:Instrumentation</category>
-      <category>track:hep_application</category>
-      <category>中微子分析宇宙线 veto</category>
-      <category>宇宙线成分鉴别</category>
-      <category>探测器交叉校准</category>
-      <category>混合事件重建</category>
-      <pubDate>Fri, 13 Aug 2021 03:22:14 +0000</pubDate>
-    </item>
-    <item>
-      <title>Search for Unstable Sterile Neutrinos with the IceCube Neutrino Observatory</title>
-      <link>https://arxiv.org/abs/2204.00612</link>
-      <description>IceCube直接报告中微子振荡与惰性中微子实验搜索结果，属重要实验测量。</description>
-      <ns1:encoded>&lt;p&gt;&lt;strong&gt;栏目：&lt;/strong&gt;HEP 直接应用&lt;/p&gt;&lt;p&gt;&lt;strong&gt;分析依据：&lt;/strong&gt;仅标题和摘要；未读取全文。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法：&lt;/strong&gt;用IceCube八年大气μ中微子数据搜索不稳定惰性中微子的共振信号，并做3+1与3+1+衰变模型拟合并给出参数区间&lt;/p&gt;&lt;p&gt;&lt;strong&gt;相关性：&lt;/strong&gt;0.97；&lt;strong&gt;证据等级：&lt;/strong&gt;direct&lt;/p&gt;&lt;p&gt;&lt;strong&gt;初筛理由：&lt;/strong&gt;IceCube直接报告中微子振荡与惰性中微子实验搜索结果，属重要实验测量。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;出版信息（来源记录）：&lt;/strong&gt;Phys.Rev.Lett. 129 (2022) 151801&lt;/p&gt;&lt;p&gt;&lt;strong&gt;摘要来源：&lt;/strong&gt;INSPIRE (APS)&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法总结（摘要分析）：&lt;/strong&gt;该论文利用IceCube天文台2011至2019年八年大气μ中微子数据，搜索不稳定惰性中微子的共振信号，并比较稳定三中微子、3+1惰性中微子与3+1+衰变模型。摘要报告稳定三中微子与3+1模型相对于不稳定惰性中微子模型被不青睐，p值分别为2.8%和0.81%，但未观测到带中微子衰变的3+1中微子证据。最佳拟合参数为Δm41^2=6.7_{-2.5}^{+3.9} eV^2、sin^2 2θ24=0.33_{-0.17}^{+0.20}、g^2=2.5π±1.5π。短基线振荡搜索偏好的3+1+衰变参数区域在90% C.L.被排除。&lt;/p&gt;&lt;h4&gt;摘要中报告的结论&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;使用IceCube 2011至2019年八年大气νμ数据搜索不稳定惰性中微子的共振信号&lt;/li&gt;&lt;li&gt;稳定三中微子模型相对于不稳定惰性中微子模型被不青睐，p值为2.8%&lt;/li&gt;&lt;li&gt;3+1惰性中微子模型相对于不稳定惰性中微子模型被不青睐，p值为0.81%&lt;/li&gt;&lt;li&gt;未观测到带中微子衰变的3+1中微子证据&lt;/li&gt;&lt;li&gt;3+1+衰变模型的最佳拟合参数为Δm41^2=6.7_{-2.5}^{+3.9} eV^2、sin^2 2θ24=0.33_{-0.17}^{+0.20}、g^2=2.5π±1.5π&lt;/li&gt;&lt;li&gt;短基线振荡搜索偏好的3+1+衰变模型参数区域在90% C.L.被排除&lt;/li&gt;&lt;/ul&gt;&lt;h4&gt;对高能实验物理的潜在帮助&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;迁移设想：利用机器学习改进大气νμ事件能量与方向重建，以增强对不稳定惰性中微子共振信号的敏感性；该方向尚未在本文验证&lt;/li&gt;&lt;li&gt;迁移设想：采用神经后验估计或可微分编程加速3+1+衰变模型的参数扫描与模型比较，需与现有拟合链交叉验证&lt;/li&gt;&lt;li&gt;迁移设想：基于探测器几何与事件拓扑的图神经网络用于背景抑制或事件分类，需评估其对系统误差和模型偏差的影响&lt;/li&gt;&lt;/ul&gt;&lt;h4&gt;迁移风险&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;摘要未说明负权事件、系统误差与nuisance参数的处理，需查阅全文确认；不能据此断言未处理或未验证&lt;/li&gt;&lt;li&gt;将机器学习重建用于共振信号搜索可能引入simulation-to-data shift，需用真实数据控制样本检验&lt;/li&gt;&lt;li&gt;探测器几何、能量响应与校准的不确定性可能影响共振信号模板；摘要未说明相关处理，需全文核查&lt;/li&gt;&lt;li&gt;大气中微子通量、相互作用与核效应模型的不确定性可能影响拟合结果；摘要未说明，需全文确认&lt;/li&gt;&lt;li&gt;若涉及多变量分类器，需检查Lorentz/置换对称性是否被不当破坏，并评估推理延迟是否满足离线分析要求&lt;/li&gt;&lt;li&gt;短基线偏好区域被排除的结论依赖模型比较与统计处理，迁移方法不得直接声称可减少系统误差或已通过真实数据验证&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;strong&gt;最小验证方案：&lt;/strong&gt;最小可行方案：在需全文确认可用的IceCube模拟样本上注入共振信号，比较机器学习重建与基线重建对Δm41^2、sin^2 2θ24和g^2的拟合偏差；用真实数据侧带或打乱数据检验背景模型；评估分类器的模拟-数据偏移、校准残差与推理延迟；所有迁移结论须与论文报告的p值和参数区间分开表述。&lt;/p&gt;&lt;p&gt;&lt;a href="https://arxiv.org/abs/2204.00612"&gt;论文页面&lt;/a&gt; · &lt;a href="https://doi.org/10.1103/physrevlett.129.151801"&gt;DOI&lt;/a&gt; · &lt;a href="https://inspirehep.net/literature/2061622"&gt;INSPIRE 记录&lt;/a&gt; · &lt;a href="https://github.com/quxnb/hepml-digest/issues/new?title=%5B%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%5D+arXiv%3A2204.00612+Search+for+Unstable+Sterile+Neutrinos+with+the+IceCube+Neutrino+Observatory&amp;amp;body=%23%23+%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%0A%0A-+%E8%AE%BA%E6%96%87%EF%BC%9A%5BarXiv%3A2204.00612%5D%28https%3A%2F%2Farxiv.org%2Fabs%2F2204.00612%29%0A-+%E8%AE%B0%E5%BD%95+ID%EF%BC%9Aarxiv%3A2204.00612%0A-+%E5%88%86%E6%9E%90%E4%BE%9D%E6%8D%AE%EF%BC%9A%E4%BB%85%E6%A0%87%E9%A2%98%E5%92%8C%E6%91%98%E8%A6%81%EF%BC%8C%E6%9C%AA%E8%AF%BB%E5%8F%96%E5%85%A8%E6%96%87%0A-+%E6%A0%8F%E7%9B%AE%EF%BC%9AHEP+%E7%9B%B4%E6%8E%A5%E5%BA%94%E7%94%A8%0A-+%E5%BD%93%E5%89%8D%E7%9B%B8%E5%85%B3%E6%80%A7%EF%BC%9A0.97%0A-+%E5%BD%93%E5%89%8D%E8%AF%81%E6%8D%AE%E7%AD%89%E7%BA%A7%EF%BC%9Adirect%0A%0A%23%23+%E5%88%A4%E6%96%AD%0A%0A-+%5B+%5D+%E6%8E%A8%E8%8D%90%E4%BF%9D%E7%95%99%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E5%90%88%E7%90%86%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E8%BF%87%E5%BA%A6%E6%8E%A8%E6%B5%8B%0A-+%5B+%5D+%E5%BA%94%E7%A7%BB%E8%87%B3%E5%8F%A6%E4%B8%80%E4%B8%AA%E6%A0%8F%E7%9B%AE%0A-+%5B+%5D+%E5%BB%BA%E8%AE%AE%E7%B2%BE%E8%AF%BB%E5%85%A8%E6%96%87%0A%0A%23%23+%E8%A1%A5%E5%85%85%E8%AF%B4%E6%98%8E%0A%0A"&gt;提交反馈&lt;/a&gt; · hep-ex, inspire:Experiment-HEP&lt;/p&gt;</ns1:encoded>
-      <guid isPermaLink="false">arxiv:2204.00612:hepml-v1</guid>
-      <category>hep-ex</category>
-      <category>inspire:Experiment-HEP</category>
-      <category>track:hep_application</category>
-      <category>中微子振荡分析</category>
-      <category>共振吸收信号重建</category>
-      <category>大气中微子能谱拟合</category>
-      <category>惰性中微子搜索</category>
-      <category>统计假设检验与置信区间</category>
-      <pubDate>Mon, 04 Apr 2022 03:42:07 +0000</pubDate>
-    </item>
-    <item>
-      <title>Search for decoherence from quantum gravity with atmospheric neutrinos</title>
-      <link>https://arxiv.org/abs/2308.00105</link>
-      <description>直接报告IceCube实验中微子振荡搜索量子引力退相干，属重要实验结果，需进一步阅读</description>
-      <ns1:encoded>&lt;p&gt;&lt;strong&gt;栏目：&lt;/strong&gt;HEP 直接应用&lt;/p&gt;&lt;p&gt;&lt;strong&gt;分析依据：&lt;/strong&gt;仅标题和摘要；未读取全文。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法：&lt;/strong&gt;利用IceCube大气中微子0.5–10 TeV数据，通过振荡谱搜索量子引力诱导的退相干效应，并给出退相干强度参数上限&lt;/p&gt;&lt;p&gt;&lt;strong&gt;相关性：&lt;/strong&gt;0.95；&lt;strong&gt;证据等级：&lt;/strong&gt;direct&lt;/p&gt;&lt;p&gt;&lt;strong&gt;初筛理由：&lt;/strong&gt;直接报告IceCube实验中微子振荡搜索量子引力退相干，属重要实验结果，需进一步阅读&lt;/p&gt;&lt;p&gt;&lt;strong&gt;出版信息（来源记录）：&lt;/strong&gt;Nature Phys. 20 (2024) 913&lt;/p&gt;&lt;p&gt;&lt;strong&gt;摘要来源：&lt;/strong&gt;INSPIRE (Springer)&lt;/p&gt;&lt;p&gt;&lt;em&gt;本条目仅完成摘要级筛选。&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;a href="https://arxiv.org/abs/2308.00105"&gt;论文页面&lt;/a&gt; · &lt;a href="https://doi.org/10.1038/s41567-024-02436-w"&gt;DOI&lt;/a&gt; · &lt;a href="https://inspirehep.net/literature/2799008"&gt;INSPIRE 记录&lt;/a&gt; · &lt;a href="https://github.com/quxnb/hepml-digest/issues/new?title=%5B%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%5D+arXiv%3A2308.00105+Search+for+decoherence+from+quantum+gravity+with+atmospheric+neutrinos&amp;amp;body=%23%23+%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%0A%0A-+%E8%AE%BA%E6%96%87%EF%BC%9A%5BarXiv%3A2308.00105%5D%28https%3A%2F%2Farxiv.org%2Fabs%2F2308.00105%29%0A-+%E8%AE%B0%E5%BD%95+ID%EF%BC%9Aarxiv%3A2308.00105%0A-+%E5%88%86%E6%9E%90%E4%BE%9D%E6%8D%AE%EF%BC%9A%E4%BB%85%E6%A0%87%E9%A2%98%E5%92%8C%E6%91%98%E8%A6%81%EF%BC%8C%E6%9C%AA%E8%AF%BB%E5%8F%96%E5%85%A8%E6%96%87%0A-+%E6%A0%8F%E7%9B%AE%EF%BC%9AHEP+%E7%9B%B4%E6%8E%A5%E5%BA%94%E7%94%A8%0A-+%E5%BD%93%E5%89%8D%E7%9B%B8%E5%85%B3%E6%80%A7%EF%BC%9A0.95%0A-+%E5%BD%93%E5%89%8D%E8%AF%81%E6%8D%AE%E7%AD%89%E7%BA%A7%EF%BC%9Adirect%0A%0A%23%23+%E5%88%A4%E6%96%AD%0A%0A-+%5B+%5D+%E6%8E%A8%E8%8D%90%E4%BF%9D%E7%95%99%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E5%90%88%E7%90%86%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E8%BF%87%E5%BA%A6%E6%8E%A8%E6%B5%8B%0A-+%5B+%5D+%E5%BA%94%E7%A7%BB%E8%87%B3%E5%8F%A6%E4%B8%80%E4%B8%AA%E6%A0%8F%E7%9B%AE%0A-+%5B+%5D+%E5%BB%BA%E8%AE%AE%E7%B2%BE%E8%AF%BB%E5%85%A8%E6%96%87%0A%0A%23%23+%E8%A1%A5%E5%85%85%E8%AF%B4%E6%98%8E%0A%0A"&gt;提交反馈&lt;/a&gt; · hep-ex, hep-ph, hep-th, inspire:Experiment-HEP, inspire:Gravitation and Cosmology, inspire:Phenomenology-HEP, inspire:Theory-HEP&lt;/p&gt;</ns1:encoded>
-      <guid isPermaLink="false">arxiv:2308.00105:hepml-v1</guid>
-      <category>hep-ex</category>
-      <category>hep-ph</category>
-      <category>hep-th</category>
-      <category>inspire:Experiment-HEP</category>
-      <category>inspire:Gravitation and Cosmology</category>
-      <category>inspire:Phenomenology-HEP</category>
-      <category>inspire:Theory-HEP</category>
-      <category>track:hep_application</category>
-      <category>中微子振荡分析</category>
-      <category>大气中微子通量建模</category>
-      <category>探测器响应与重建</category>
-      <category>统计推断与上限设置</category>
-      <pubDate>Mon, 17 Jun 2024 12:32:45 +0000</pubDate>
-    </item>
-    <item>
-      <title>European Contributions to Fermilab Accelerator Upgrades and Facilities for the DUNE Experiment</title>
-      <link>https://arxiv.org/abs/2503.23744</link>
-      <description>直接涉及DUNE中微子实验的束流与设施建设，属实验方法重要进展</description>
-      <ns1:encoded>&lt;p&gt;&lt;strong&gt;栏目：&lt;/strong&gt;HEP 直接应用&lt;/p&gt;&lt;p&gt;&lt;strong&gt;分析依据：&lt;/strong&gt;仅标题和摘要；未读取全文。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法：&lt;/strong&gt;加速器升级与设施建设综述，聚焦质子改进计划(PIP-II)和长基线中微子设施(LBNF)对DUNE实验的支持&lt;/p&gt;&lt;p&gt;&lt;strong&gt;相关性：&lt;/strong&gt;0.80；&lt;strong&gt;证据等级：&lt;/strong&gt;direct&lt;/p&gt;&lt;p&gt;&lt;strong&gt;初筛理由：&lt;/strong&gt;直接涉及DUNE中微子实验的束流与设施建设，属实验方法重要进展&lt;/p&gt;&lt;p&gt;&lt;strong&gt;摘要来源：&lt;/strong&gt;INSPIRE (arXiv)&lt;/p&gt;&lt;p&gt;&lt;em&gt;本条目仅完成摘要级筛选。&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;a href="https://arxiv.org/abs/2503.23744"&gt;论文页面&lt;/a&gt; · &lt;a href="https://inspirehep.net/literature/2906139"&gt;INSPIRE 记录&lt;/a&gt; · &lt;a href="https://github.com/quxnb/hepml-digest/issues/new?title=%5B%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%5D+arXiv%3A2503.23744+European+Contributions+to+Fermilab+Accelerator+Upgrades+and+Facilities+for+the+D&amp;amp;body=%23%23+%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%0A%0A-+%E8%AE%BA%E6%96%87%EF%BC%9A%5BarXiv%3A2503.23744%5D%28https%3A%2F%2Farxiv.org%2Fabs%2F2503.23744%29%0A-+%E8%AE%B0%E5%BD%95+ID%EF%BC%9Aarxiv%3A2503.23744%0A-+%E5%88%86%E6%9E%90%E4%BE%9D%E6%8D%AE%EF%BC%9A%E4%BB%85%E6%A0%87%E9%A2%98%E5%92%8C%E6%91%98%E8%A6%81%EF%BC%8C%E6%9C%AA%E8%AF%BB%E5%8F%96%E5%85%A8%E6%96%87%0A-+%E6%A0%8F%E7%9B%AE%EF%BC%9AHEP+%E7%9B%B4%E6%8E%A5%E5%BA%94%E7%94%A8%0A-+%E5%BD%93%E5%89%8D%E7%9B%B8%E5%85%B3%E6%80%A7%EF%BC%9A0.80%0A-+%E5%BD%93%E5%89%8D%E8%AF%81%E6%8D%AE%E7%AD%89%E7%BA%A7%EF%BC%9Adirect%0A%0A%23%23+%E5%88%A4%E6%96%AD%0A%0A-+%5B+%5D+%E6%8E%A8%E8%8D%90%E4%BF%9D%E7%95%99%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E5%90%88%E7%90%86%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E8%BF%87%E5%BA%A6%E6%8E%A8%E6%B5%8B%0A-+%5B+%5D+%E5%BA%94%E7%A7%BB%E8%87%B3%E5%8F%A6%E4%B8%80%E4%B8%AA%E6%A0%8F%E7%9B%AE%0A-+%5B+%5D+%E5%BB%BA%E8%AE%AE%E7%B2%BE%E8%AF%BB%E5%85%A8%E6%96%87%0A%0A%23%23+%E8%A1%A5%E5%85%85%E8%AF%B4%E6%98%8E%0A%0A"&gt;提交反馈&lt;/a&gt; · hep-ex, inspire:Accelerators, inspire:Experiment-HEP, inspire:Instrumentation, physics.acc-ph, physics.ins-det&lt;/p&gt;</ns1:encoded>
-      <guid isPermaLink="false">arxiv:2503.23744:hepml-v1</guid>
-      <category>hep-ex</category>
-      <category>inspire:Accelerators</category>
-      <category>inspire:Experiment-HEP</category>
-      <category>inspire:Instrumentation</category>
-      <category>physics.acc-ph</category>
-      <category>physics.ins-det</category>
-      <category>track:hep_application</category>
-      <category>中微子束流产生</category>
-      <category>低温恒温器</category>
-      <category>探测器基础设施</category>
-      <pubDate>Tue, 01 Apr 2025 04:19:13 +0000</pubDate>
-    </item>
-    <item>
-      <title>First measurement of the total inelastic cross section of positively charged kaons on argon at energies between 5.0 and 7.5 GeV</title>
-      <link>https://arxiv.org/abs/2408.00582</link>
-      <description>直接报告液氩TPC上K介子-氩非弹性截面测量，对中微子实验强子相互作用建模与系统误差重要</description>
-      <ns1:encoded>&lt;p&gt;&lt;strong&gt;栏目：&lt;/strong&gt;HEP 直接应用&lt;/p&gt;&lt;p&gt;&lt;strong&gt;分析依据：&lt;/strong&gt;仅标题和摘要；未读取全文。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法：&lt;/strong&gt;在ProtoDUNE-SP液氩TPC上测量正电K介子与氩的总非弹性截面&lt;/p&gt;&lt;p&gt;&lt;strong&gt;相关性：&lt;/strong&gt;0.85；&lt;strong&gt;证据等级：&lt;/strong&gt;direct&lt;/p&gt;&lt;p&gt;&lt;strong&gt;初筛理由：&lt;/strong&gt;直接报告液氩TPC上K介子-氩非弹性截面测量，对中微子实验强子相互作用建模与系统误差重要&lt;/p&gt;&lt;p&gt;&lt;strong&gt;出版信息（来源记录）：&lt;/strong&gt;Phys.Rev.D 110 (2024) 092011&lt;/p&gt;&lt;p&gt;&lt;strong&gt;摘要来源：&lt;/strong&gt;INSPIRE (APS)&lt;/p&gt;&lt;p&gt;&lt;em&gt;本条目仅完成摘要级筛选。&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;a href="https://arxiv.org/abs/2408.00582"&gt;论文页面&lt;/a&gt; · &lt;a href="https://doi.org/10.1103/physrevd.110.092011"&gt;DOI&lt;/a&gt; · &lt;a href="https://inspirehep.net/literature/2813918"&gt;INSPIRE 记录&lt;/a&gt; · &lt;a href="https://github.com/quxnb/hepml-digest/issues/new?title=%5B%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%5D+arXiv%3A2408.00582+First+measurement+of+the+total+inelastic+cross+section+of+positively+charged+kao&amp;amp;body=%23%23+%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%0A%0A-+%E8%AE%BA%E6%96%87%EF%BC%9A%5BarXiv%3A2408.00582%5D%28https%3A%2F%2Farxiv.org%2Fabs%2F2408.00582%29%0A-+%E8%AE%B0%E5%BD%95+ID%EF%BC%9Aarxiv%3A2408.00582%0A-+%E5%88%86%E6%9E%90%E4%BE%9D%E6%8D%AE%EF%BC%9A%E4%BB%85%E6%A0%87%E9%A2%98%E5%92%8C%E6%91%98%E8%A6%81%EF%BC%8C%E6%9C%AA%E8%AF%BB%E5%8F%96%E5%85%A8%E6%96%87%0A-+%E6%A0%8F%E7%9B%AE%EF%BC%9AHEP+%E7%9B%B4%E6%8E%A5%E5%BA%94%E7%94%A8%0A-+%E5%BD%93%E5%89%8D%E7%9B%B8%E5%85%B3%E6%80%A7%EF%BC%9A0.85%0A-+%E5%BD%93%E5%89%8D%E8%AF%81%E6%8D%AE%E7%AD%89%E7%BA%A7%EF%BC%9Adirect%0A%0A%23%23+%E5%88%A4%E6%96%AD%0A%0A-+%5B+%5D+%E6%8E%A8%E8%8D%90%E4%BF%9D%E7%95%99%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E5%90%88%E7%90%86%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E8%BF%87%E5%BA%A6%E6%8E%A8%E6%B5%8B%0A-+%5B+%5D+%E5%BA%94%E7%A7%BB%E8%87%B3%E5%8F%A6%E4%B8%80%E4%B8%AA%E6%A0%8F%E7%9B%AE%0A-+%5B+%5D+%E5%BB%BA%E8%AE%AE%E7%B2%BE%E8%AF%BB%E5%85%A8%E6%96%87%0A%0A%23%23+%E8%A1%A5%E5%85%85%E8%AF%B4%E6%98%8E%0A%0A"&gt;提交反馈&lt;/a&gt; · hep-ex, inspire:Experiment-HEP, inspire:Instrumentation, physics.ins-det&lt;/p&gt;</ns1:encoded>
-      <guid isPermaLink="false">arxiv:2408.00582:hepml-v1</guid>
-      <category>hep-ex</category>
-      <category>inspire:Experiment-HEP</category>
-      <category>inspire:Instrumentation</category>
-      <category>physics.ins-det</category>
-      <category>track:hep_application</category>
-      <category>中微子实验强子截面测量</category>
-      <category>探测器性能与校准</category>
-      <pubDate>Fri, 02 Aug 2024 09:23:10 +0000</pubDate>
-    </item>
-    <item>
-      <title>First Measurement of $π^+$-Ar and $p$-Ar Total Inelastic Cross Sections in the Sub-GeV Energy Regime with ProtoDUNE-SP Data</title>
-      <link>https://arxiv.org/abs/2511.11925</link>
-      <description>直接报告液氩靶上强子截面测量，服务DUNE中微子-氩模型约束，属实验中微子相关</description>
-      <ns1:encoded>&lt;p&gt;&lt;strong&gt;栏目：&lt;/strong&gt;HEP 直接应用&lt;/p&gt;&lt;p&gt;&lt;strong&gt;分析依据：&lt;/strong&gt;仅标题和摘要；未读取全文。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法：&lt;/strong&gt;利用ProtoDUNE-SP液氩TPC束流数据测量π⁺-Ar与p-Ar总非弹性截面&lt;/p&gt;&lt;p&gt;&lt;strong&gt;相关性：&lt;/strong&gt;1.00；&lt;strong&gt;证据等级：&lt;/strong&gt;direct&lt;/p&gt;&lt;p&gt;&lt;strong&gt;初筛理由：&lt;/strong&gt;直接报告液氩靶上强子截面测量，服务DUNE中微子-氩模型约束，属实验中微子相关&lt;/p&gt;&lt;p&gt;&lt;strong&gt;摘要来源：&lt;/strong&gt;INSPIRE (arXiv)&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法总结（摘要分析）：&lt;/strong&gt;ProtoDUNE-SP利用2018–2020年CERN正电粒子束流中1 GeV/c数据，选取π⁺与质子样本，测量液氩上π⁺–Ar和p–Ar总非弹性截面，动能范围分别为500–900 MeV和低于450 MeV。结果与预测一致，提供了此前缺乏的氩靶数据集，可用于约束中微子–氩相互作用模型并支撑DUNE精度目标。摘要未说明系统误差、校准与协方差处理，需查全文。&lt;/p&gt;&lt;h4&gt;摘要中报告的结论&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;ProtoDUNE-SP是迄今最大的液氩时间投影室，也是DUNE远探测器的千吨级原型。&lt;/li&gt;&lt;li&gt;ProtoDUNE-SP于2018–2020年在CERN运行，收集了宇宙线数据和动量设置覆盖0.3–7 GeV/c的正电粒子束流数据。&lt;/li&gt;&lt;li&gt;论文利用1 GeV/c束流数据中选取的π⁺和质子样本，报告了π⁺–Ar与p–Ar总非弹性截面测量。&lt;/li&gt;&lt;li&gt;测量覆盖的π⁺动能范围为500–900 MeV，质子动能范围低于450 MeV。&lt;/li&gt;&lt;li&gt;测得的截面与预测一致，并提供了此前氩靶不可得的数据集。&lt;/li&gt;&lt;li&gt;这些测量对约束中微子–氩相互作用模型和实现DUNE精确物理目标很重要。&lt;/li&gt;&lt;/ul&gt;&lt;h4&gt;对高能实验物理的潜在帮助&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;可设想将π⁺–Ar与p–Ar总非弹性截面作为输入，用于DUNE中微子–氩相互作用模型的强子相互作用参数约束与协方差更新。&lt;/li&gt;&lt;li&gt;可设想用该数据集校验液氩TPC中强子再散射、末态相互作用及能量响应模拟。&lt;/li&gt;&lt;li&gt;可设想采用似然拟合、效率展开和协方差矩阵方法，将此类束流截面测量纳入全局拟合。&lt;/li&gt;&lt;li&gt;机器学习可用于粒子鉴别或选择优化的迁移设想需独立验证，摘要未报告此类方法。&lt;/li&gt;&lt;/ul&gt;&lt;h4&gt;迁移风险&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;摘要未说明系统误差、探测器校准、束流粒子鉴别效率与背景扣除细节，需查阅全文确认。&lt;/li&gt;&lt;li&gt;将束流实验截面外推到中微子–氩相互作用时，需核查能量尺度、核效应与模型依赖带来的偏差。&lt;/li&gt;&lt;li&gt;摘要未说明协方差矩阵与 nuisance 参数处理，整合到全局拟合前需确认相关性建模。&lt;/li&gt;&lt;li&gt;若引入机器学习方法改进选择或重建，需防止simulation-to-data shift并验证选择效率系统误差，不能仅凭方法替换声称降低系统误差。&lt;/li&gt;&lt;li&gt;负权事件、探测器几何与Lorentz/置换对称性在本测量中的相关处理摘要未说明，需核查。&lt;/li&gt;&lt;li&gt;推理延迟与本论文离线截面测量无明确关联。&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;strong&gt;最小验证方案：&lt;/strong&gt;最小可行验证：从全文提取总非弹性截面、选择效率、本底估计与协方差（若公开），复现π⁺与质子样本的选择和效率修正；用不同相互作用模型预测与测量比较，并做闭合测试。若评估机器学习粒子鉴别迁移，需在独立束流动量点或独立样本上检验选择效率、背景估计与系统误差，并与传统选择结果做偏差检查。&lt;/p&gt;&lt;p&gt;&lt;a href="https://arxiv.org/abs/2511.11925"&gt;论文页面&lt;/a&gt; · &lt;a href="https://inspirehep.net/literature/3083930"&gt;INSPIRE 记录&lt;/a&gt; · &lt;a href="https://github.com/quxnb/hepml-digest/issues/new?title=%5B%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%5D+arXiv%3A2511.11925+First+Measurement+of+%24%CF%80%5E%2B%24-Ar+and+%24p%24-Ar+Total+Inelastic+Cross+Sections+in+the+S&amp;amp;body=%23%23+%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%0A%0A-+%E8%AE%BA%E6%96%87%EF%BC%9A%5BarXiv%3A2511.11925%5D%28https%3A%2F%2Farxiv.org%2Fabs%2F2511.11925%29%0A-+%E8%AE%B0%E5%BD%95+ID%EF%BC%9Aarxiv%3A2511.11925%0A-+%E5%88%86%E6%9E%90%E4%BE%9D%E6%8D%AE%EF%BC%9A%E4%BB%85%E6%A0%87%E9%A2%98%E5%92%8C%E6%91%98%E8%A6%81%EF%BC%8C%E6%9C%AA%E8%AF%BB%E5%8F%96%E5%85%A8%E6%96%87%0A-+%E6%A0%8F%E7%9B%AE%EF%BC%9AHEP+%E7%9B%B4%E6%8E%A5%E5%BA%94%E7%94%A8%0A-+%E5%BD%93%E5%89%8D%E7%9B%B8%E5%85%B3%E6%80%A7%EF%BC%9A1.00%0A-+%E5%BD%93%E5%89%8D%E8%AF%81%E6%8D%AE%E7%AD%89%E7%BA%A7%EF%BC%9Adirect%0A%0A%23%23+%E5%88%A4%E6%96%AD%0A%0A-+%5B+%5D+%E6%8E%A8%E8%8D%90%E4%BF%9D%E7%95%99%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E5%90%88%E7%90%86%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E8%BF%87%E5%BA%A6%E6%8E%A8%E6%B5%8B%0A-+%5B+%5D+%E5%BA%94%E7%A7%BB%E8%87%B3%E5%8F%A6%E4%B8%80%E4%B8%AA%E6%A0%8F%E7%9B%AE%0A-+%5B+%5D+%E5%BB%BA%E8%AE%AE%E7%B2%BE%E8%AF%BB%E5%85%A8%E6%96%87%0A%0A%23%23+%E8%A1%A5%E5%85%85%E8%AF%B4%E6%98%8E%0A%0A"&gt;提交反馈&lt;/a&gt; · hep-ex, inspire:Experiment-HEP, inspire:Experiment-Nucl, nucl-ex&lt;/p&gt;</ns1:encoded>
-      <guid isPermaLink="false">arxiv:2511.11925:hepml-v1</guid>
-      <category>hep-ex</category>
-      <category>inspire:Experiment-HEP</category>
-      <category>inspire:Experiment-Nucl</category>
-      <category>nucl-ex</category>
-      <category>track:hep_application</category>
-      <category>中微子-氩相互作用模型约束</category>
-      <category>强子截面测量</category>
-      <category>探测器响应与重建</category>
-      <category>本底与系统误差</category>
-      <pubDate>Tue, 18 Nov 2025 04:08:42 +0000</pubDate>
-    </item>
-    <item>
-      <title>Spatial and temporal evaluations of the liquid argon purity in ProtoDUNE-SP</title>
-      <link>https://arxiv.org/abs/2507.08586</link>
-      <description>直接报告DUNE原型液氩TPC纯度测量，属中微子实验探测器校准与系统误差研究。</description>
-      <ns1:encoded>&lt;p&gt;&lt;strong&gt;栏目：&lt;/strong&gt;HEP 直接应用&lt;/p&gt;&lt;p&gt;&lt;strong&gt;分析依据：&lt;/strong&gt;仅标题和摘要；未读取全文。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法：&lt;/strong&gt;利用宇宙线缪斯测量ProtoDUNE-SP液氩中电子漂移寿命和纯度，并与纯度监测仪比对，含空间位置依赖性分析&lt;/p&gt;&lt;p&gt;&lt;strong&gt;相关性：&lt;/strong&gt;0.95；&lt;strong&gt;证据等级：&lt;/strong&gt;direct&lt;/p&gt;&lt;p&gt;&lt;strong&gt;初筛理由：&lt;/strong&gt;直接报告DUNE原型液氩TPC纯度测量，属中微子实验探测器校准与系统误差研究。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;出版信息（来源记录）：&lt;/strong&gt;JINST 20 (2025) P09008&lt;/p&gt;&lt;p&gt;&lt;strong&gt;摘要来源：&lt;/strong&gt;INSPIRE (IOP)&lt;/p&gt;&lt;p&gt;&lt;em&gt;本条目仅完成摘要级筛选。&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;a href="https://arxiv.org/abs/2507.08586"&gt;论文页面&lt;/a&gt; · &lt;a href="https://doi.org/10.1088/1748-0221/20/09/p09008"&gt;DOI&lt;/a&gt; · &lt;a href="https://inspirehep.net/literature/2944869"&gt;INSPIRE 记录&lt;/a&gt; · &lt;a href="https://github.com/quxnb/hepml-digest/issues/new?title=%5B%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%5D+arXiv%3A2507.08586+Spatial+and+temporal+evaluations+of+the+liquid+argon+purity+in+ProtoDUNE-SP&amp;amp;body=%23%23+%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%0A%0A-+%E8%AE%BA%E6%96%87%EF%BC%9A%5BarXiv%3A2507.08586%5D%28https%3A%2F%2Farxiv.org%2Fabs%2F2507.08586%29%0A-+%E8%AE%B0%E5%BD%95+ID%EF%BC%9Aarxiv%3A2507.08586%0A-+%E5%88%86%E6%9E%90%E4%BE%9D%E6%8D%AE%EF%BC%9A%E4%BB%85%E6%A0%87%E9%A2%98%E5%92%8C%E6%91%98%E8%A6%81%EF%BC%8C%E6%9C%AA%E8%AF%BB%E5%8F%96%E5%85%A8%E6%96%87%0A-+%E6%A0%8F%E7%9B%AE%EF%BC%9AHEP+%E7%9B%B4%E6%8E%A5%E5%BA%94%E7%94%A8%0A-+%E5%BD%93%E5%89%8D%E7%9B%B8%E5%85%B3%E6%80%A7%EF%BC%9A0.95%0A-+%E5%BD%93%E5%89%8D%E8%AF%81%E6%8D%AE%E7%AD%89%E7%BA%A7%EF%BC%9Adirect%0A%0A%23%23+%E5%88%A4%E6%96%AD%0A%0A-+%5B+%5D+%E6%8E%A8%E8%8D%90%E4%BF%9D%E7%95%99%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E5%90%88%E7%90%86%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E8%BF%87%E5%BA%A6%E6%8E%A8%E6%B5%8B%0A-+%5B+%5D+%E5%BA%94%E7%A7%BB%E8%87%B3%E5%8F%A6%E4%B8%80%E4%B8%AA%E6%A0%8F%E7%9B%AE%0A-+%5B+%5D+%E5%BB%BA%E8%AE%AE%E7%B2%BE%E8%AF%BB%E5%85%A8%E6%96%87%0A%0A%23%23+%E8%A1%A5%E5%85%85%E8%AF%B4%E6%98%8E%0A%0A"&gt;提交反馈&lt;/a&gt; · hep-ex, inspire:Experiment-HEP, inspire:Instrumentation, physics.ins-det&lt;/p&gt;</ns1:encoded>
-      <guid isPermaLink="false">arxiv:2507.08586:hepml-v1</guid>
-      <category>hep-ex</category>
-      <category>inspire:Experiment-HEP</category>
-      <category>inspire:Instrumentation</category>
-      <category>physics.ins-det</category>
-      <category>track:hep_application</category>
-      <category>探测器校准</category>
-      <category>液氩纯度监测</category>
-      <category>电子漂移寿命测量</category>
-      <category>系统误差</category>
-      <pubDate>Mon, 14 Jul 2025 04:07:25 +0000</pubDate>
-    </item>
-    <item>
-      <title>Design, construction and operation of the ProtoDUNE-SP Liquid Argon TPC</title>
-      <link>https://arxiv.org/abs/2108.01902</link>
-      <description>ProtoDUNE-SP为DUNE关键原型，直接涉及中微子实验探测器设计与运行，属重要实验装置成果</description>
-      <ns1:encoded>&lt;p&gt;&lt;strong&gt;栏目：&lt;/strong&gt;HEP 直接应用&lt;/p&gt;&lt;p&gt;&lt;strong&gt;分析依据：&lt;/strong&gt;仅标题和摘要；未读取全文。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法：&lt;/strong&gt;单相液氩时间投影室（LArTPC）探测器的设计、建造与运行，服务于DUNE远探测器原型&lt;/p&gt;&lt;p&gt;&lt;strong&gt;相关性：&lt;/strong&gt;0.92；&lt;strong&gt;证据等级：&lt;/strong&gt;direct&lt;/p&gt;&lt;p&gt;&lt;strong&gt;初筛理由：&lt;/strong&gt;ProtoDUNE-SP为DUNE关键原型，直接涉及中微子实验探测器设计与运行，属重要实验装置成果&lt;/p&gt;&lt;p&gt;&lt;strong&gt;出版信息（来源记录）：&lt;/strong&gt;JINST 17 (2022) P01005&lt;/p&gt;&lt;p&gt;&lt;strong&gt;摘要来源：&lt;/strong&gt;INSPIRE (IOP)&lt;/p&gt;&lt;p&gt;&lt;em&gt;本条目仅完成摘要级筛选。&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;a href="https://arxiv.org/abs/2108.01902"&gt;论文页面&lt;/a&gt; · &lt;a href="https://doi.org/10.1088/1748-0221/17/01/p01005"&gt;DOI&lt;/a&gt; · &lt;a href="https://inspirehep.net/literature/1899034"&gt;INSPIRE 记录&lt;/a&gt; · &lt;a href="https://github.com/quxnb/hepml-digest/issues/new?title=%5B%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%5D+arXiv%3A2108.01902+Design%2C+construction+and+operation+of+the+ProtoDUNE-SP+Liquid+Argon+TPC&amp;amp;body=%23%23+%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%0A%0A-+%E8%AE%BA%E6%96%87%EF%BC%9A%5BarXiv%3A2108.01902%5D%28https%3A%2F%2Farxiv.org%2Fabs%2F2108.01902%29%0A-+%E8%AE%B0%E5%BD%95+ID%EF%BC%9Aarxiv%3A2108.01902%0A-+%E5%88%86%E6%9E%90%E4%BE%9D%E6%8D%AE%EF%BC%9A%E4%BB%85%E6%A0%87%E9%A2%98%E5%92%8C%E6%91%98%E8%A6%81%EF%BC%8C%E6%9C%AA%E8%AF%BB%E5%8F%96%E5%85%A8%E6%96%87%0A-+%E6%A0%8F%E7%9B%AE%EF%BC%9AHEP+%E7%9B%B4%E6%8E%A5%E5%BA%94%E7%94%A8%0A-+%E5%BD%93%E5%89%8D%E7%9B%B8%E5%85%B3%E6%80%A7%EF%BC%9A0.92%0A-+%E5%BD%93%E5%89%8D%E8%AF%81%E6%8D%AE%E7%AD%89%E7%BA%A7%EF%BC%9Adirect%0A%0A%23%23+%E5%88%A4%E6%96%AD%0A%0A-+%5B+%5D+%E6%8E%A8%E8%8D%90%E4%BF%9D%E7%95%99%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E5%90%88%E7%90%86%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E8%BF%87%E5%BA%A6%E6%8E%A8%E6%B5%8B%0A-+%5B+%5D+%E5%BA%94%E7%A7%BB%E8%87%B3%E5%8F%A6%E4%B8%80%E4%B8%AA%E6%A0%8F%E7%9B%AE%0A-+%5B+%5D+%E5%BB%BA%E8%AE%AE%E7%B2%BE%E8%AF%BB%E5%85%A8%E6%96%87%0A%0A%23%23+%E8%A1%A5%E5%85%85%E8%AF%B4%E6%98%8E%0A%0A"&gt;提交反馈&lt;/a&gt; · hep-ex, inspire:Experiment-HEP, inspire:Instrumentation, physics.ins-det&lt;/p&gt;</ns1:encoded>
-      <guid isPermaLink="false">arxiv:2108.01902:hepml-v1</guid>
-      <category>hep-ex</category>
-      <category>inspire:Experiment-HEP</category>
-      <category>inspire:Instrumentation</category>
-      <category>physics.ins-det</category>
-      <category>track:hep_application</category>
-      <category>径迹重建</category>
-      <category>探测器设计与建造</category>
-      <category>探测器运行</category>
-      <category>粒子鉴别</category>
-      <category>能量标定</category>
-      <pubDate>Thu, 05 Aug 2021 10:18:05 +0000</pubDate>
-    </item>
-    <item>
-      <title>Measurement of exclusive π + -argon interactions using ProtoDUNE-SP</title>
-      <link>https://arxiv.org/abs/2511.13462</link>
-      <description>直接测量π+–氩截面，为DUNE/SBN中微子模拟和FSI建模提供关键实验输入。</description>
-      <ns1:encoded>&lt;p&gt;&lt;strong&gt;栏目：&lt;/strong&gt;HEP 直接应用&lt;/p&gt;&lt;p&gt;&lt;strong&gt;分析依据：&lt;/strong&gt;仅标题和摘要；未读取全文。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法：&lt;/strong&gt;使用 ProtoDUNE-SP 液氩 TPC 测量 500–800 MeV π+–氩非弹性截面，分吸收、电荷交换和其余非弹性通道&lt;/p&gt;&lt;p&gt;&lt;strong&gt;相关性：&lt;/strong&gt;0.90；&lt;strong&gt;证据等级：&lt;/strong&gt;direct&lt;/p&gt;&lt;p&gt;&lt;strong&gt;初筛理由：&lt;/strong&gt;直接测量π+–氩截面，为DUNE/SBN中微子模拟和FSI建模提供关键实验输入。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;出版信息（来源记录）：&lt;/strong&gt;Phys.Rev.D 113 (2026) 112002&lt;/p&gt;&lt;p&gt;&lt;strong&gt;摘要来源：&lt;/strong&gt;INSPIRE (APS)&lt;/p&gt;&lt;p&gt;&lt;em&gt;本条目仅完成摘要级筛选。&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;a href="https://arxiv.org/abs/2511.13462"&gt;论文页面&lt;/a&gt; · &lt;a href="https://doi.org/10.1103/nm5s-4cnw"&gt;DOI&lt;/a&gt; · &lt;a href="https://inspirehep.net/literature/3084014"&gt;INSPIRE 记录&lt;/a&gt; · &lt;a href="https://github.com/quxnb/hepml-digest/issues/new?title=%5B%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%5D+arXiv%3A2511.13462+Measurement+of+exclusive+%CF%80+%2B+-argon+interactions+using+ProtoDUNE-SP&amp;amp;body=%23%23+%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%0A%0A-+%E8%AE%BA%E6%96%87%EF%BC%9A%5BarXiv%3A2511.13462%5D%28https%3A%2F%2Farxiv.org%2Fabs%2F2511.13462%29%0A-+%E8%AE%B0%E5%BD%95+ID%EF%BC%9Aarxiv%3A2511.13462%0A-+%E5%88%86%E6%9E%90%E4%BE%9D%E6%8D%AE%EF%BC%9A%E4%BB%85%E6%A0%87%E9%A2%98%E5%92%8C%E6%91%98%E8%A6%81%EF%BC%8C%E6%9C%AA%E8%AF%BB%E5%8F%96%E5%85%A8%E6%96%87%0A-+%E6%A0%8F%E7%9B%AE%EF%BC%9AHEP+%E7%9B%B4%E6%8E%A5%E5%BA%94%E7%94%A8%0A-+%E5%BD%93%E5%89%8D%E7%9B%B8%E5%85%B3%E6%80%A7%EF%BC%9A0.90%0A-+%E5%BD%93%E5%89%8D%E8%AF%81%E6%8D%AE%E7%AD%89%E7%BA%A7%EF%BC%9Adirect%0A%0A%23%23+%E5%88%A4%E6%96%AD%0A%0A-+%5B+%5D+%E6%8E%A8%E8%8D%90%E4%BF%9D%E7%95%99%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E5%90%88%E7%90%86%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E8%BF%87%E5%BA%A6%E6%8E%A8%E6%B5%8B%0A-+%5B+%5D+%E5%BA%94%E7%A7%BB%E8%87%B3%E5%8F%A6%E4%B8%80%E4%B8%AA%E6%A0%8F%E7%9B%AE%0A-+%5B+%5D+%E5%BB%BA%E8%AE%AE%E7%B2%BE%E8%AF%BB%E5%85%A8%E6%96%87%0A%0A%23%23+%E8%A1%A5%E5%85%85%E8%AF%B4%E6%98%8E%0A%0A"&gt;提交反馈&lt;/a&gt; · hep-ex, inspire:Experiment-HEP&lt;/p&gt;</ns1:encoded>
-      <guid isPermaLink="false">arxiv:2511.13462:hepml-v1</guid>
-      <category>hep-ex</category>
-      <category>inspire:Experiment-HEP</category>
-      <category>track:hep_application</category>
-      <category>中微子事件产生子调优</category>
-      <category>中微子相互作用与截面</category>
-      <category>末态相互作用建模</category>
-      <category>液氩探测器重建</category>
-      <pubDate>Tue, 18 Nov 2025 04:18:31 +0000</pubDate>
-    </item>
-    <item>
-      <title>The DUNE Phase II Detectors</title>
-      <link>https://arxiv.org/abs/2503.23293</link>
-      <description>直接涉及中微子实验探测器设计与研发，属核心实验仪器进展。</description>
-      <ns1:encoded>&lt;p&gt;&lt;strong&gt;栏目：&lt;/strong&gt;HEP 直接应用&lt;/p&gt;&lt;p&gt;&lt;strong&gt;分析依据：&lt;/strong&gt;仅标题和摘要；未读取全文。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法：&lt;/strong&gt;DUNE 第二阶段探测器技术与研发（远探测器模块、近探测器复合体升级、束流增强）&lt;/p&gt;&lt;p&gt;&lt;strong&gt;相关性：&lt;/strong&gt;0.95；&lt;strong&gt;证据等级：&lt;/strong&gt;direct&lt;/p&gt;&lt;p&gt;&lt;strong&gt;初筛理由：&lt;/strong&gt;直接涉及中微子实验探测器设计与研发，属核心实验仪器进展。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;摘要来源：&lt;/strong&gt;INSPIRE (arXiv)&lt;/p&gt;&lt;p&gt;&lt;em&gt;本条目仅完成摘要级筛选。&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;a href="https://arxiv.org/abs/2503.23293"&gt;论文页面&lt;/a&gt; · &lt;a href="https://inspirehep.net/literature/2906301"&gt;INSPIRE 记录&lt;/a&gt; · &lt;a href="https://github.com/quxnb/hepml-digest/issues/new?title=%5B%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%5D+arXiv%3A2503.23293+The+DUNE+Phase+II+Detectors&amp;amp;body=%23%23+%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%0A%0A-+%E8%AE%BA%E6%96%87%EF%BC%9A%5BarXiv%3A2503.23293%5D%28https%3A%2F%2Farxiv.org%2Fabs%2F2503.23293%29%0A-+%E8%AE%B0%E5%BD%95+ID%EF%BC%9Aarxiv%3A2503.23293%0A-+%E5%88%86%E6%9E%90%E4%BE%9D%E6%8D%AE%EF%BC%9A%E4%BB%85%E6%A0%87%E9%A2%98%E5%92%8C%E6%91%98%E8%A6%81%EF%BC%8C%E6%9C%AA%E8%AF%BB%E5%8F%96%E5%85%A8%E6%96%87%0A-+%E6%A0%8F%E7%9B%AE%EF%BC%9AHEP+%E7%9B%B4%E6%8E%A5%E5%BA%94%E7%94%A8%0A-+%E5%BD%93%E5%89%8D%E7%9B%B8%E5%85%B3%E6%80%A7%EF%BC%9A0.95%0A-+%E5%BD%93%E5%89%8D%E8%AF%81%E6%8D%AE%E7%AD%89%E7%BA%A7%EF%BC%9Adirect%0A%0A%23%23+%E5%88%A4%E6%96%AD%0A%0A-+%5B+%5D+%E6%8E%A8%E8%8D%90%E4%BF%9D%E7%95%99%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E5%90%88%E7%90%86%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E8%BF%87%E5%BA%A6%E6%8E%A8%E6%B5%8B%0A-+%5B+%5D+%E5%BA%94%E7%A7%BB%E8%87%B3%E5%8F%A6%E4%B8%80%E4%B8%AA%E6%A0%8F%E7%9B%AE%0A-+%5B+%5D+%E5%BB%BA%E8%AE%AE%E7%B2%BE%E8%AF%BB%E5%85%A8%E6%96%87%0A%0A%23%23+%E8%A1%A5%E5%85%85%E8%AF%B4%E6%98%8E%0A%0A"&gt;提交反馈&lt;/a&gt; · inspire:Instrumentation, physics.ins-det&lt;/p&gt;</ns1:encoded>
-      <guid isPermaLink="false">arxiv:2503.23293:hepml-v1</guid>
-      <category>inspire:Instrumentation</category>
-      <category>physics.ins-det</category>
-      <category>track:hep_application</category>
-      <category>中微子振荡实验</category>
-      <category>中微子探测器设计与仪器</category>
-      <category>探测器研发与升级</category>
-      <pubDate>Tue, 01 Apr 2025 04:29:27 +0000</pubDate>
-    </item>
-    <item>
-      <title>Identification of low-energy kaons in the ProtoDUNE-SP detector</title>
-      <link>https://arxiv.org/abs/2510.08380</link>
-      <description>直接报告DUNE原型探测器中微子相关实验的K介子鉴别与选择，服务质子衰变搜寻，属重要实验方法结果</description>
-      <ns1:encoded>&lt;p&gt;&lt;strong&gt;栏目：&lt;/strong&gt;HEP 直接应用&lt;/p&gt;&lt;p&gt;&lt;strong&gt;分析依据：&lt;/strong&gt;仅标题和摘要；未读取全文。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法：&lt;/strong&gt;在ProtoDUNE-SP液氩TPC中利用6/7 GeV/c束流数据选择低能次级K介子，效率1%、纯度92%，并研究K/质子/μ子鉴别与液氩能损模拟对比&lt;/p&gt;&lt;p&gt;&lt;strong&gt;相关性：&lt;/strong&gt;0.95；&lt;strong&gt;证据等级：&lt;/strong&gt;direct&lt;/p&gt;&lt;p&gt;&lt;strong&gt;初筛理由：&lt;/strong&gt;直接报告DUNE原型探测器中微子相关实验的K介子鉴别与选择，服务质子衰变搜寻，属重要实验方法结果&lt;/p&gt;&lt;p&gt;&lt;strong&gt;出版信息（来源记录）：&lt;/strong&gt;Phys.Rev.D 113 (2026) 052004&lt;/p&gt;&lt;p&gt;&lt;strong&gt;摘要来源：&lt;/strong&gt;INSPIRE (APS)&lt;/p&gt;&lt;p&gt;&lt;em&gt;本条目仅完成摘要级筛选。&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;a href="https://arxiv.org/abs/2510.08380"&gt;论文页面&lt;/a&gt; · &lt;a href="https://doi.org/10.1103/q21l-pl7s"&gt;DOI&lt;/a&gt; · &lt;a href="https://inspirehep.net/literature/3065819"&gt;INSPIRE 记录&lt;/a&gt; · &lt;a href="https://github.com/quxnb/hepml-digest/issues/new?title=%5B%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%5D+arXiv%3A2510.08380+Identification+of+low-energy+kaons+in+the+ProtoDUNE-SP+detector&amp;amp;body=%23%23+%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%0A%0A-+%E8%AE%BA%E6%96%87%EF%BC%9A%5BarXiv%3A2510.08380%5D%28https%3A%2F%2Farxiv.org%2Fabs%2F2510.08380%29%0A-+%E8%AE%B0%E5%BD%95+ID%EF%BC%9Aarxiv%3A2510.08380%0A-+%E5%88%86%E6%9E%90%E4%BE%9D%E6%8D%AE%EF%BC%9A%E4%BB%85%E6%A0%87%E9%A2%98%E5%92%8C%E6%91%98%E8%A6%81%EF%BC%8C%E6%9C%AA%E8%AF%BB%E5%8F%96%E5%85%A8%E6%96%87%0A-+%E6%A0%8F%E7%9B%AE%EF%BC%9AHEP+%E7%9B%B4%E6%8E%A5%E5%BA%94%E7%94%A8%0A-+%E5%BD%93%E5%89%8D%E7%9B%B8%E5%85%B3%E6%80%A7%EF%BC%9A0.95%0A-+%E5%BD%93%E5%89%8D%E8%AF%81%E6%8D%AE%E7%AD%89%E7%BA%A7%EF%BC%9Adirect%0A%0A%23%23+%E5%88%A4%E6%96%AD%0A%0A-+%5B+%5D+%E6%8E%A8%E8%8D%90%E4%BF%9D%E7%95%99%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E5%90%88%E7%90%86%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E8%BF%87%E5%BA%A6%E6%8E%A8%E6%B5%8B%0A-+%5B+%5D+%E5%BA%94%E7%A7%BB%E8%87%B3%E5%8F%A6%E4%B8%80%E4%B8%AA%E6%A0%8F%E7%9B%AE%0A-+%5B+%5D+%E5%BB%BA%E8%AE%AE%E7%B2%BE%E8%AF%BB%E5%85%A8%E6%96%87%0A%0A%23%23+%E8%A1%A5%E5%85%85%E8%AF%B4%E6%98%8E%0A%0A"&gt;提交反馈&lt;/a&gt; · hep-ex, inspire:Experiment-HEP&lt;/p&gt;</ns1:encoded>
-      <guid isPermaLink="false">arxiv:2510.08380:hepml-v1</guid>
-      <category>hep-ex</category>
-      <category>inspire:Experiment-HEP</category>
-      <category>track:hep_application</category>
-      <category>低能K介子选择</category>
-      <category>粒子鉴别</category>
-      <category>能损重建与模拟对比</category>
-      <category>质子衰变本底抑制</category>
-      <pubDate>Fri, 10 Oct 2025 04:16:24 +0000</pubDate>
-    </item>
-    <item>
-      <title>Neutrino interaction vertex reconstruction in DUNE with Pandora deep learning</title>
-      <link>https://arxiv.org/abs/2502.06637</link>
-      <description>DUNE中微子顶点重建，机器学习方法在探测器模拟中验证，直接相关</description>
-      <ns1:encoded>&lt;p&gt;&lt;strong&gt;栏目：&lt;/strong&gt;HEP 直接应用&lt;/p&gt;&lt;p&gt;&lt;strong&gt;分析依据：&lt;/strong&gt;仅标题和摘要；未读取全文。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法：&lt;/strong&gt;将U-ResNet用于LArTPC中微子顶点重建并与Pandora模式识别链集成&lt;/p&gt;&lt;p&gt;&lt;strong&gt;相关性：&lt;/strong&gt;0.95；&lt;strong&gt;证据等级：&lt;/strong&gt;direct&lt;/p&gt;&lt;p&gt;&lt;strong&gt;初筛理由：&lt;/strong&gt;DUNE中微子顶点重建，机器学习方法在探测器模拟中验证，直接相关&lt;/p&gt;&lt;p&gt;&lt;strong&gt;出版信息（来源记录）：&lt;/strong&gt;Eur.Phys.J.C 85 (2025) 697&lt;/p&gt;&lt;p&gt;&lt;strong&gt;摘要来源：&lt;/strong&gt;INSPIRE (Springer)&lt;/p&gt;&lt;p&gt;&lt;em&gt;本条目仅完成摘要级筛选。&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;a href="https://arxiv.org/abs/2502.06637"&gt;论文页面&lt;/a&gt; · &lt;a href="https://doi.org/10.1140/epjc/s10052-025-14313-8"&gt;DOI&lt;/a&gt; · &lt;a href="https://inspirehep.net/literature/2878306"&gt;INSPIRE 记录&lt;/a&gt; · &lt;a href="https://github.com/quxnb/hepml-digest/issues/new?title=%5B%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%5D+arXiv%3A2502.06637+Neutrino+interaction+vertex+reconstruction+in+DUNE+with+Pandora+deep+learning&amp;amp;body=%23%23+%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%0A%0A-+%E8%AE%BA%E6%96%87%EF%BC%9A%5BarXiv%3A2502.06637%5D%28https%3A%2F%2Farxiv.org%2Fabs%2F2502.06637%29%0A-+%E8%AE%B0%E5%BD%95+ID%EF%BC%9Aarxiv%3A2502.06637%0A-+%E5%88%86%E6%9E%90%E4%BE%9D%E6%8D%AE%EF%BC%9A%E4%BB%85%E6%A0%87%E9%A2%98%E5%92%8C%E6%91%98%E8%A6%81%EF%BC%8C%E6%9C%AA%E8%AF%BB%E5%8F%96%E5%85%A8%E6%96%87%0A-+%E6%A0%8F%E7%9B%AE%EF%BC%9AHEP+%E7%9B%B4%E6%8E%A5%E5%BA%94%E7%94%A8%0A-+%E5%BD%93%E5%89%8D%E7%9B%B8%E5%85%B3%E6%80%A7%EF%BC%9A0.95%0A-+%E5%BD%93%E5%89%8D%E8%AF%81%E6%8D%AE%E7%AD%89%E7%BA%A7%EF%BC%9Adirect%0A%0A%23%23+%E5%88%A4%E6%96%AD%0A%0A-+%5B+%5D+%E6%8E%A8%E8%8D%90%E4%BF%9D%E7%95%99%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E5%90%88%E7%90%86%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E8%BF%87%E5%BA%A6%E6%8E%A8%E6%B5%8B%0A-+%5B+%5D+%E5%BA%94%E7%A7%BB%E8%87%B3%E5%8F%A6%E4%B8%80%E4%B8%AA%E6%A0%8F%E7%9B%AE%0A-+%5B+%5D+%E5%BB%BA%E8%AE%AE%E7%B2%BE%E8%AF%BB%E5%85%A8%E6%96%87%0A%0A%23%23+%E8%A1%A5%E5%85%85%E8%AF%B4%E6%98%8E%0A%0A"&gt;提交反馈&lt;/a&gt; · hep-ex, inspire:Experiment-HEP&lt;/p&gt;</ns1:encoded>
-      <guid isPermaLink="false">arxiv:2502.06637:hepml-v1</guid>
-      <category>hep-ex</category>
-      <category>inspire:Experiment-HEP</category>
-      <category>track:hep_application</category>
-      <category>事例重建</category>
-      <category>粒子鉴别</category>
-      <category>顶点重建</category>
-      <pubDate>Tue, 11 Feb 2025 04:23:25 +0000</pubDate>
-    </item>
-    <item>
-      <title>Low exposure long-baseline neutrino oscillation sensitivity of the DUNE experiment</title>
-      <link>https://arxiv.org/abs/2109.01304</link>
-      <description>直接报告DUNE振荡灵敏度与系统误差分析，属实验中微子研究核心内容</description>
-      <ns1:encoded>&lt;p&gt;&lt;strong&gt;栏目：&lt;/strong&gt;HEP 直接应用&lt;/p&gt;&lt;p&gt;&lt;strong&gt;分析依据：&lt;/strong&gt;仅标题和摘要；未读取全文。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法：&lt;/strong&gt;DUNE长基线中微子振荡灵敏度分析，含通量、相互作用与探测器系统误差的联合拟合&lt;/p&gt;&lt;p&gt;&lt;strong&gt;相关性：&lt;/strong&gt;1.00；&lt;strong&gt;证据等级：&lt;/strong&gt;direct&lt;/p&gt;&lt;p&gt;&lt;strong&gt;初筛理由：&lt;/strong&gt;直接报告DUNE振荡灵敏度与系统误差分析，属实验中微子研究核心内容&lt;/p&gt;&lt;p&gt;&lt;strong&gt;出版信息（来源记录）：&lt;/strong&gt;Phys.Rev.D 105 (2022) 072006&lt;/p&gt;&lt;p&gt;&lt;strong&gt;摘要来源：&lt;/strong&gt;INSPIRE (APS)&lt;/p&gt;&lt;p&gt;&lt;em&gt;本条目仅完成摘要级筛选。&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;a href="https://arxiv.org/abs/2109.01304"&gt;论文页面&lt;/a&gt; · &lt;a href="https://doi.org/10.1103/physrevd.105.072006"&gt;DOI&lt;/a&gt; · &lt;a href="https://inspirehep.net/literature/1916528"&gt;INSPIRE 记录&lt;/a&gt; · &lt;a href="https://github.com/quxnb/hepml-digest/issues/new?title=%5B%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%5D+arXiv%3A2109.01304+Low+exposure+long-baseline+neutrino+oscillation+sensitivity+of+the+DUNE+experime&amp;amp;body=%23%23+%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%0A%0A-+%E8%AE%BA%E6%96%87%EF%BC%9A%5BarXiv%3A2109.01304%5D%28https%3A%2F%2Farxiv.org%2Fabs%2F2109.01304%29%0A-+%E8%AE%B0%E5%BD%95+ID%EF%BC%9Aarxiv%3A2109.01304%0A-+%E5%88%86%E6%9E%90%E4%BE%9D%E6%8D%AE%EF%BC%9A%E4%BB%85%E6%A0%87%E9%A2%98%E5%92%8C%E6%91%98%E8%A6%81%EF%BC%8C%E6%9C%AA%E8%AF%BB%E5%8F%96%E5%85%A8%E6%96%87%0A-+%E6%A0%8F%E7%9B%AE%EF%BC%9AHEP+%E7%9B%B4%E6%8E%A5%E5%BA%94%E7%94%A8%0A-+%E5%BD%93%E5%89%8D%E7%9B%B8%E5%85%B3%E6%80%A7%EF%BC%9A1.00%0A-+%E5%BD%93%E5%89%8D%E8%AF%81%E6%8D%AE%E7%AD%89%E7%BA%A7%EF%BC%9Adirect%0A%0A%23%23+%E5%88%A4%E6%96%AD%0A%0A-+%5B+%5D+%E6%8E%A8%E8%8D%90%E4%BF%9D%E7%95%99%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E5%90%88%E7%90%86%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E8%BF%87%E5%BA%A6%E6%8E%A8%E6%B5%8B%0A-+%5B+%5D+%E5%BA%94%E7%A7%BB%E8%87%B3%E5%8F%A6%E4%B8%80%E4%B8%AA%E6%A0%8F%E7%9B%AE%0A-+%5B+%5D+%E5%BB%BA%E8%AE%AE%E7%B2%BE%E8%AF%BB%E5%85%A8%E6%96%87%0A%0A%23%23+%E8%A1%A5%E5%85%85%E8%AF%B4%E6%98%8E%0A%0A"&gt;提交反馈&lt;/a&gt; · hep-ex, inspire:Experiment-HEP, inspire:Instrumentation, physics.ins-det&lt;/p&gt;</ns1:encoded>
-      <guid isPermaLink="false">arxiv:2109.01304:hepml-v1</guid>
-      <category>CP破坏灵敏度</category>
-      <category>hep-ex</category>
-      <category>inspire:Experiment-HEP</category>
-      <category>inspire:Instrumentation</category>
-      <category>physics.ins-det</category>
-      <category>track:hep_application</category>
-      <category>中微子振荡分析</category>
-      <category>系统误差处理</category>
-      <category>联合拟合</category>
-      <category>质量顺序测定</category>
-      <pubDate>Mon, 06 Sep 2021 07:58:05 +0000</pubDate>
-    </item>
-    <item>
-      <title>The DUNE Science Program</title>
-      <link>https://arxiv.org/abs/2503.23291</link>
-      <description>DUNE实验科学项目综述，直接涉及中微子振荡与探测物理目标</description>
-      <ns1:encoded>&lt;p&gt;&lt;strong&gt;栏目：&lt;/strong&gt;HEP 直接应用&lt;/p&gt;&lt;p&gt;&lt;strong&gt;分析依据：&lt;/strong&gt;仅标题和摘要；未读取全文。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法：&lt;/strong&gt;DUNE长基线中微子实验的科学项目规划与物理目标综述&lt;/p&gt;&lt;p&gt;&lt;strong&gt;相关性：&lt;/strong&gt;0.92；&lt;strong&gt;证据等级：&lt;/strong&gt;direct&lt;/p&gt;&lt;p&gt;&lt;strong&gt;初筛理由：&lt;/strong&gt;DUNE实验科学项目综述，直接涉及中微子振荡与探测物理目标&lt;/p&gt;&lt;p&gt;&lt;strong&gt;摘要来源：&lt;/strong&gt;INSPIRE (arXiv)&lt;/p&gt;&lt;p&gt;&lt;em&gt;本条目仅完成摘要级筛选。&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;a href="https://arxiv.org/abs/2503.23291"&gt;论文页面&lt;/a&gt; · &lt;a href="https://inspirehep.net/literature/2906097"&gt;INSPIRE 记录&lt;/a&gt; · &lt;a href="https://github.com/quxnb/hepml-digest/issues/new?title=%5B%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%5D+arXiv%3A2503.23291+The+DUNE+Science+Program&amp;amp;body=%23%23+%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%0A%0A-+%E8%AE%BA%E6%96%87%EF%BC%9A%5BarXiv%3A2503.23291%5D%28https%3A%2F%2Farxiv.org%2Fabs%2F2503.23291%29%0A-+%E8%AE%B0%E5%BD%95+ID%EF%BC%9Aarxiv%3A2503.23291%0A-+%E5%88%86%E6%9E%90%E4%BE%9D%E6%8D%AE%EF%BC%9A%E4%BB%85%E6%A0%87%E9%A2%98%E5%92%8C%E6%91%98%E8%A6%81%EF%BC%8C%E6%9C%AA%E8%AF%BB%E5%8F%96%E5%85%A8%E6%96%87%0A-+%E6%A0%8F%E7%9B%AE%EF%BC%9AHEP+%E7%9B%B4%E6%8E%A5%E5%BA%94%E7%94%A8%0A-+%E5%BD%93%E5%89%8D%E7%9B%B8%E5%85%B3%E6%80%A7%EF%BC%9A0.92%0A-+%E5%BD%93%E5%89%8D%E8%AF%81%E6%8D%AE%E7%AD%89%E7%BA%A7%EF%BC%9Adirect%0A%0A%23%23+%E5%88%A4%E6%96%AD%0A%0A-+%5B+%5D+%E6%8E%A8%E8%8D%90%E4%BF%9D%E7%95%99%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E5%90%88%E7%90%86%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E8%BF%87%E5%BA%A6%E6%8E%A8%E6%B5%8B%0A-+%5B+%5D+%E5%BA%94%E7%A7%BB%E8%87%B3%E5%8F%A6%E4%B8%80%E4%B8%AA%E6%A0%8F%E7%9B%AE%0A-+%5B+%5D+%E5%BB%BA%E8%AE%AE%E7%B2%BE%E8%AF%BB%E5%85%A8%E6%96%87%0A%0A%23%23+%E8%A1%A5%E5%85%85%E8%AF%B4%E6%98%8E%0A%0A"&gt;提交反馈&lt;/a&gt; · hep-ex, inspire:Experiment-HEP&lt;/p&gt;</ns1:encoded>
-      <guid isPermaLink="false">arxiv:2503.23291:hepml-v1</guid>
-      <category>hep-ex</category>
-      <category>inspire:Experiment-HEP</category>
-      <category>track:hep_application</category>
-      <category>中微子振荡</category>
-      <category>暗物质与暗扇区</category>
-      <category>超出标准模型物理</category>
-      <pubDate>Tue, 01 Apr 2025 04:17:50 +0000</pubDate>
-    </item>
-    <item>
-      <title>Measurement of the first triple-differential cross section of νμCC charged pion cross section from the NOvA near detector</title>
-      <link>https://inspirehep.net/literature/3223855</link>
-      <description>直接报告NOvA中微子截面测量，服务振荡系统误差约束，属核心实验研究</description>
-      <ns1:encoded>&lt;p&gt;&lt;strong&gt;栏目：&lt;/strong&gt;HEP 直接应用&lt;/p&gt;&lt;p&gt;&lt;strong&gt;分析依据：&lt;/strong&gt;仅标题和摘要；未读取全文。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法：&lt;/strong&gt;NOvA近探测器νμ带电气囊三微分截面测量，约束中微子-核相互作用模型&lt;/p&gt;&lt;p&gt;&lt;strong&gt;相关性：&lt;/strong&gt;0.95；&lt;strong&gt;证据等级：&lt;/strong&gt;direct&lt;/p&gt;&lt;p&gt;&lt;strong&gt;初筛理由：&lt;/strong&gt;直接报告NOvA中微子截面测量，服务振荡系统误差约束，属核心实验研究&lt;/p&gt;&lt;p&gt;&lt;strong&gt;摘要来源：&lt;/strong&gt;INSPIRE (oatd.org)&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法总结（摘要分析）：&lt;/strong&gt;NOvA近探测器利用NuMI约1.8 GeV峰值νμ束流，报告νμ+A→μ−+π±+NX半包容三微分截面分析的状态；测量变量为μ子运动学与领头带电π介子角度。该分析对深度非弹、共振及末态相互作用导致的π产生敏感，可为中微子-核相互作用模型提供约束。摘要未给出截面数值或真实数据结果，仅说明分析状态与物理动机，并指出与生成器开发者迭代有望降低未来截面系统误差。&lt;/p&gt;&lt;h4&gt;摘要中报告的结论&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;NOvA近探测器数据具有全球最高的中微子相互作用统计之一，适合测量中微子-核截面并约束振荡分析不确定性。&lt;/li&gt;&lt;li&gt;本文报告一项分析的状态：将用NuMI束流（ν能量峰值约1.8 GeV）数据测量νμ+A→μ−+π±+NX半包容三微分截面。&lt;/li&gt;&lt;li&gt;测量变量为μ子运动学与能量最高的带电π介子角度，A为NOvA ND中任一靶核，NX为末态其他粒子。&lt;/li&gt;&lt;li&gt;该分析对深度非弹散射、共振相互作用及经由末态相互作用的π产生敏感，三微分截面可约束这些过程建模。&lt;/li&gt;&lt;li&gt;摘要指出与中微子生成器开发者反复迭代有望使未来截面系统误差更小，但未报告当前数值结果或真实数据结论。&lt;/li&gt;&lt;/ul&gt;&lt;h4&gt;对高能实验物理的潜在帮助&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;迁移设想：用神经网络或高斯过程辅助多维微分截面展开/正则化，在高维运动学空间控制统计涨落与模型偏差。&lt;/li&gt;&lt;li&gt;迁移设想：用生成器参数重加权或模拟推断联合约束通量、核效应、末态相互作用和探测器响应等nuisance参数。&lt;/li&gt;&lt;li&gt;迁移设想：用ML协方差代理或emulator加速伪实验与系统误差传播，并显式处理负权事件。&lt;/li&gt;&lt;li&gt;迁移设想：以物理对称性或约束正则化事件选择/展开网络，减少小样本区域过拟合；需真实数据验证。&lt;/li&gt;&lt;/ul&gt;&lt;h4&gt;迁移风险&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;摘要未说明通量、探测器校准/能量响应、核效应与末态相互作用、nuisance参数、协方差和负权事件处理，需全文确认；不能据此断言未处理。&lt;/li&gt;&lt;li&gt;三微分截面依赖展开/正则化与生成器模型，simulation-to-data shift可能被ML方法放大。&lt;/li&gt;&lt;li&gt;NOvA ND探测器几何与近端通量约束复杂，迁移模型需核查几何与校准泛化。&lt;/li&gt;&lt;li&gt;若采用ML，离线截面分析中推理延迟通常非主要瓶颈，但需核查系统误差、可解释性和负权稳定性；不得声称已降低系统误差。&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;strong&gt;最小验证方案：&lt;/strong&gt;最小可行验证：在模拟中注入已知截面变化（通量、末态相互作用、核效应、能量响应）做闭环测试，比较ML展开与标准展开的偏差和方差；用伪实验与bootstrap评估协方差及负权稳定性；在数据控制区检验data/MC与校准；迁移结论仅在通过真实数据验证后报告。&lt;/p&gt;&lt;p&gt;&lt;a href="https://inspirehep.net/literature/3223855"&gt;INSPIRE 记录&lt;/a&gt; · &lt;a href="https://github.com/quxnb/hepml-digest/issues/new?title=%5B%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%5D+INSPIRE%3A3223855+Measurement+of+the+first+triple-differential+cross+section+of+%CE%BD%CE%BCCC+charged+pion+&amp;amp;body=%23%23+%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%0A%0A-+%E8%AE%BA%E6%96%87%EF%BC%9A%5BINSPIRE%3A3223855%5D%28https%3A%2F%2Finspirehep.net%2Fliterature%2F3223855%29%0A-+%E8%AE%B0%E5%BD%95+ID%EF%BC%9Ainspire%3A3223855%0A-+%E5%88%86%E6%9E%90%E4%BE%9D%E6%8D%AE%EF%BC%9A%E4%BB%85%E6%A0%87%E9%A2%98%E5%92%8C%E6%91%98%E8%A6%81%EF%BC%8C%E6%9C%AA%E8%AF%BB%E5%8F%96%E5%85%A8%E6%96%87%0A-+%E6%A0%8F%E7%9B%AE%EF%BC%9AHEP+%E7%9B%B4%E6%8E%A5%E5%BA%94%E7%94%A8%0A-+%E5%BD%93%E5%89%8D%E7%9B%B8%E5%85%B3%E6%80%A7%EF%BC%9A0.95%0A-+%E5%BD%93%E5%89%8D%E8%AF%81%E6%8D%AE%E7%AD%89%E7%BA%A7%EF%BC%9Adirect%0A%0A%23%23+%E5%88%A4%E6%96%AD%0A%0A-+%5B+%5D+%E6%8E%A8%E8%8D%90%E4%BF%9D%E7%95%99%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E5%90%88%E7%90%86%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E8%BF%87%E5%BA%A6%E6%8E%A8%E6%B5%8B%0A-+%5B+%5D+%E5%BA%94%E7%A7%BB%E8%87%B3%E5%8F%A6%E4%B8%80%E4%B8%AA%E6%A0%8F%E7%9B%AE%0A-+%5B+%5D+%E5%BB%BA%E8%AE%AE%E7%B2%BE%E8%AF%BB%E5%85%A8%E6%96%87%0A%0A%23%23+%E8%A1%A5%E5%85%85%E8%AF%B4%E6%98%8E%0A%0A"&gt;提交反馈&lt;/a&gt; · inspire:Experiment-HEP, inspire:Experiment-Nucl&lt;/p&gt;</ns1:encoded>
-      <guid isPermaLink="false">inspire:3223855:hepml-v1</guid>
-      <category>inspire:Experiment-HEP</category>
-      <category>inspire:Experiment-Nucl</category>
-      <category>track:hep_application</category>
-      <category>中微子截面测量</category>
-      <category>振荡系统误差约束</category>
-      <category>末态相互作用建模</category>
-      <pubDate>Thu, 05 Nov 2026 19:15:42 +0000</pubDate>
-    </item>
-    <item>
-      <title>Water-Based Liquid Scintillator: Science Drivers and Technological Development</title>
-      <link>https://inspirehep.net/literature/3223836</link>
-      <description>直接综述中微子实验探测器介质与读出技术，属实验方法重要参考</description>
-      <ns1:encoded>&lt;p&gt;&lt;strong&gt;栏目：&lt;/strong&gt;HEP 直接应用&lt;/p&gt;&lt;p&gt;&lt;strong&gt;分析依据：&lt;/strong&gt;仅标题和摘要；未读取全文。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法：&lt;/strong&gt;水基液闪探测介质与光读出技术综述，涵盖切伦科夫-闪烁分离、金属负载中子标记与原型部署&lt;/p&gt;&lt;p&gt;&lt;strong&gt;相关性：&lt;/strong&gt;0.90；&lt;strong&gt;证据等级：&lt;/strong&gt;direct&lt;/p&gt;&lt;p&gt;&lt;strong&gt;初筛理由：&lt;/strong&gt;直接综述中微子实验探测器介质与读出技术，属实验方法重要参考&lt;/p&gt;&lt;p&gt;&lt;strong&gt;出版信息（来源记录）：&lt;/strong&gt;Ann.Rev.Nucl.Part.Sci. 76 (2026) 145&lt;/p&gt;&lt;p&gt;&lt;strong&gt;摘要来源：&lt;/strong&gt;INSPIRE (Annual Reviews)&lt;/p&gt;&lt;p&gt;&lt;em&gt;本条目仅完成摘要级筛选。&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;a href="https://inspirehep.net/literature/3223836"&gt;INSPIRE 记录&lt;/a&gt; · &lt;a href="https://doi.org/10.1146/annurev-nucl-100324-105101"&gt;DOI&lt;/a&gt; · &lt;a href="https://github.com/quxnb/hepml-digest/issues/new?title=%5B%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%5D+DOI%3A10.1146%2Fannurev-nucl-100324-105101+Water-Based+Liquid+Scintillator%3A+Science+Drivers+and+Technological+Development&amp;amp;body=%23%23+%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%0A%0A-+%E8%AE%BA%E6%96%87%EF%BC%9A%5BDOI%3A10.1146%2Fannurev-nucl-100324-105101%5D%28https%3A%2F%2Finspirehep.net%2Fliterature%2F3223836%29%0A-+%E8%AE%B0%E5%BD%95+ID%EF%BC%9Adoi%3A10.1146%2Fannurev-nucl-100324-105101%0A-+%E5%88%86%E6%9E%90%E4%BE%9D%E6%8D%AE%EF%BC%9A%E4%BB%85%E6%A0%87%E9%A2%98%E5%92%8C%E6%91%98%E8%A6%81%EF%BC%8C%E6%9C%AA%E8%AF%BB%E5%8F%96%E5%85%A8%E6%96%87%0A-+%E6%A0%8F%E7%9B%AE%EF%BC%9AHEP+%E7%9B%B4%E6%8E%A5%E5%BA%94%E7%94%A8%0A-+%E5%BD%93%E5%89%8D%E7%9B%B8%E5%85%B3%E6%80%A7%EF%BC%9A0.90%0A-+%E5%BD%93%E5%89%8D%E8%AF%81%E6%8D%AE%E7%AD%89%E7%BA%A7%EF%BC%9Adirect%0A%0A%23%23+%E5%88%A4%E6%96%AD%0A%0A-+%5B+%5D+%E6%8E%A8%E8%8D%90%E4%BF%9D%E7%95%99%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E5%90%88%E7%90%86%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E8%BF%87%E5%BA%A6%E6%8E%A8%E6%B5%8B%0A-+%5B+%5D+%E5%BA%94%E7%A7%BB%E8%87%B3%E5%8F%A6%E4%B8%80%E4%B8%AA%E6%A0%8F%E7%9B%AE%0A-+%5B+%5D+%E5%BB%BA%E8%AE%AE%E7%B2%BE%E8%AF%BB%E5%85%A8%E6%96%87%0A%0A%23%23+%E8%A1%A5%E5%85%85%E8%AF%B4%E6%98%8E%0A%0A"&gt;提交反馈&lt;/a&gt; · inspire:Instrumentation&lt;/p&gt;</ns1:encoded>
-      <guid isPermaLink="false">doi:10.1146/annurev-nucl-100324-105101:hepml-v1</guid>
-      <category>inspire:Instrumentation</category>
-      <category>track:hep_application</category>
-      <category>中子标记</category>
-      <category>中微子振荡</category>
-      <category>太阳中微子</category>
-      <category>粒子鉴别</category>
-      <category>超新星中微子</category>
-      <pubDate>Thu, 05 Nov 2026 19:09:28 +0000</pubDate>
-    </item>
-    <item>
-      <title>Impurities and radioactive background control in a cryogenic liquid-xenon 0νββ rare-event detector</title>
-      <link>https://inspirehep.net/literature/3223817</link>
-      <description>nEXO无中微子双贝塔衰变实验的本底控制与探测器设计研究，直接相关</description>
-      <ns1:encoded>&lt;p&gt;&lt;strong&gt;栏目：&lt;/strong&gt;HEP 直接应用&lt;/p&gt;&lt;p&gt;&lt;strong&gt;分析依据：&lt;/strong&gt;仅标题和摘要；未读取全文。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法：&lt;/strong&gt;液氙时间投影室中电负性杂质对电子漂移的建模，以及镍材料、低温恒温器几何和HFE屏蔽流体的放射性本底控制研究&lt;/p&gt;&lt;p&gt;&lt;strong&gt;相关性：&lt;/strong&gt;0.95；&lt;strong&gt;证据等级：&lt;/strong&gt;direct&lt;/p&gt;&lt;p&gt;&lt;strong&gt;初筛理由：&lt;/strong&gt;nEXO无中微子双贝塔衰变实验的本底控制与探测器设计研究，直接相关&lt;/p&gt;&lt;p&gt;&lt;strong&gt;摘要来源：&lt;/strong&gt;INSPIRE (oatd.org)&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法总结（摘要分析）：&lt;/strong&gt;该论文面向nEXO液氙时间投影室0νββ实验，报告为量化电负性杂质俘获漂移电子对能量重建的影响而建立模型，并用于指导探测器建造与运行；研究镍材料与低温恒温器几何优化以降低放射性本底；还用冷却与再循环试验台表征HFE流体在低温下的屏蔽与低温稳定性。nEXO目标将0νββ灵敏度提高两个数量级，136Xe兼具发射体与探测介质，TPC提供闪烁和电离信号。摘要未给出数值灵敏度或本底水平。&lt;/p&gt;&lt;h4&gt;摘要中报告的结论&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;nEXO基于液氙时间投影室，利用闪烁与电离信号识别探测器内相互作用，目标将0νββ灵敏度提高两个数量级。&lt;/li&gt;&lt;li&gt;136Xe既是双β发射同位素又是有效探测介质。&lt;/li&gt;&lt;li&gt;电负性杂质可在电子漂移过程中俘获电子，影响能量测量精度。&lt;/li&gt;&lt;li&gt;已建立模型量化电负性杂质效应并指导仪器建造与运行，属于模型/设计层面结果。&lt;/li&gt;&lt;li&gt;研究镍的使用和低温恒温器几何演化，以优化低本底探测器设计。&lt;/li&gt;&lt;li&gt;HFE需同时提供辐射屏蔽和低温稳定性，已通过冷却与再循环试验台研究其低温行为。&lt;/li&gt;&lt;/ul&gt;&lt;h4&gt;对高能实验物理的潜在帮助&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;将杂质俘获模型作为能量响应与电子漂移寿命校准的先验，用于稀有事件TPC的系统误差预算（迁移设想，非论文已验证）。&lt;/li&gt;&lt;li&gt;用分层贝叶斯或代理模型联合约束杂质浓度、电子寿命与能量尺度（迁移设想；摘要未报告机器学习方法）。&lt;/li&gt;&lt;li&gt;材料筛选、镍使用和恒温器几何优化思路可迁移到其他低本底TPC的放射性本底控制设计（迁移设想）。&lt;/li&gt;&lt;li&gt;HFE冷却与再循环试验台的表征思路可用于低温流体屏蔽与热稳定性联合验证（迁移设想）。&lt;/li&gt;&lt;/ul&gt;&lt;h4&gt;迁移风险&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;摘要未说明机器学习或统计建模细节，不能据此声称改用机器学习可减少系统误差或已通过真实数据验证。&lt;/li&gt;&lt;li&gt;杂质模型依赖探测器几何、漂移场和校准条件；摘要未说明系统误差、nuisance参数、负权事件和协方差处理，需查阅全文确认。&lt;/li&gt;&lt;li&gt;模型/模拟预期与真实数据之间可能存在simulation-to-data shift；摘要未报告真实0νββ数据结果。&lt;/li&gt;&lt;li&gt;镍材料、恒温器几何和HFE结论可能受具体低温恒温器设计限制，外推到其他探测器需独立验证。&lt;/li&gt;&lt;li&gt;摘要未说明能量响应校准与本底模型验证细节；不能断言论文未处理，只能列为待核查事项。&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;strong&gt;最小验证方案：&lt;/strong&gt;最小可行验证：以杂质模型预测的电子漂移寿命和能量尺度为基线，利用现有校准源或受控杂质注入工况做分段留出检验，比较模型输出与TPC波形/能量重建残差；对HFE试验台用独立冷却循环工况复现温度稳定性与屏蔽几何敏感性；建立系统误差与nuisance参数清单，明确模拟预期和真实数据差异。摘要未说明具体数据集，需查阅全文确认。&lt;/p&gt;&lt;p&gt;&lt;a href="https://inspirehep.net/literature/3223817"&gt;INSPIRE 记录&lt;/a&gt; · &lt;a href="https://doi.org/10.70675/b2ec02eazf62az441az84a8z99a65d03e600"&gt;DOI&lt;/a&gt; · &lt;a href="https://github.com/quxnb/hepml-digest/issues/new?title=%5B%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%5D+DOI%3A10.70675%2Fb2ec02eazf62az441az84a8z99a65d03e600+Impurities+and+radioactive+background+control+in+a+cryogenic+liquid-xenon+0%CE%BD%CE%B2%CE%B2+r&amp;amp;body=%23%23+%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%0A%0A-+%E8%AE%BA%E6%96%87%EF%BC%9A%5BDOI%3A10.70675%2Fb2ec02eazf62az441az84a8z99a65d03e600%5D%28https%3A%2F%2Finspirehep.net%2Fliterature%2F3223817%29%0A-+%E8%AE%B0%E5%BD%95+ID%EF%BC%9Adoi%3A10.70675%2Fb2ec02eazf62az441az84a8z99a65d03e600%0A-+%E5%88%86%E6%9E%90%E4%BE%9D%E6%8D%AE%EF%BC%9A%E4%BB%85%E6%A0%87%E9%A2%98%E5%92%8C%E6%91%98%E8%A6%81%EF%BC%8C%E6%9C%AA%E8%AF%BB%E5%8F%96%E5%85%A8%E6%96%87%0A-+%E6%A0%8F%E7%9B%AE%EF%BC%9AHEP+%E7%9B%B4%E6%8E%A5%E5%BA%94%E7%94%A8%0A-+%E5%BD%93%E5%89%8D%E7%9B%B8%E5%85%B3%E6%80%A7%EF%BC%9A0.95%0A-+%E5%BD%93%E5%89%8D%E8%AF%81%E6%8D%AE%E7%AD%89%E7%BA%A7%EF%BC%9Adirect%0A%0A%23%23+%E5%88%A4%E6%96%AD%0A%0A-+%5B+%5D+%E6%8E%A8%E8%8D%90%E4%BF%9D%E7%95%99%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E5%90%88%E7%90%86%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E8%BF%87%E5%BA%A6%E6%8E%A8%E6%B5%8B%0A-+%5B+%5D+%E5%BA%94%E7%A7%BB%E8%87%B3%E5%8F%A6%E4%B8%80%E4%B8%AA%E6%A0%8F%E7%9B%AE%0A-+%5B+%5D+%E5%BB%BA%E8%AE%AE%E7%B2%BE%E8%AF%BB%E5%85%A8%E6%96%87%0A%0A%23%23+%E8%A1%A5%E5%85%85%E8%AF%B4%E6%98%8E%0A%0A"&gt;提交反馈&lt;/a&gt; · inspire:Experiment-HEP&lt;/p&gt;</ns1:encoded>
-      <guid isPermaLink="false">doi:10.70675/b2ec02eazf62az441az84a8z99a65d03e600:hepml-v1</guid>
-      <category>inspire:Experiment-HEP</category>
-      <category>track:hep_application</category>
-      <category>探测器设计与校准</category>
-      <category>放射性本底控制</category>
-      <category>系统误差</category>
-      <category>能量重建</category>
-      <pubDate>Thu, 05 Nov 2026 18:54:18 +0000</pubDate>
-    </item>
-    <item>
-      <title>Towards precise measurement of neutrino oscillation parameters in T2K-II with new input from the upgraded Near Detector ND280</title>
-      <link>https://inspirehep.net/literature/3223815</link>
-      <description>直接针对T2K-II近探测器升级，用ML改进重建与鉴别以降低系统误差。</description>
-      <ns1:encoded>&lt;p&gt;&lt;strong&gt;栏目：&lt;/strong&gt;HEP 直接应用&lt;/p&gt;&lt;p&gt;&lt;strong&gt;分析依据：&lt;/strong&gt;仅标题和摘要；未读取全文。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法：&lt;/strong&gt;卷积神经网络用于HA-TPC动量重建与粒子鉴别；Transformer用于SFGD粒子鉴别；系统误差分析；电子中微子选择。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;相关性：&lt;/strong&gt;0.95；&lt;strong&gt;证据等级：&lt;/strong&gt;direct&lt;/p&gt;&lt;p&gt;&lt;strong&gt;初筛理由：&lt;/strong&gt;直接针对T2K-II近探测器升级，用ML改进重建与鉴别以降低系统误差。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;摘要来源：&lt;/strong&gt;INSPIRE (oatd.org)&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法总结（摘要分析）：&lt;/strong&gt;该论文面向T2K-II升级，围绕降低系统误差，研究ND280升级后的电子中微子选择，并开发HA-TPC的卷积神经网络动量重建与粒子鉴别、SFGD的Transformer粒子鉴别；同时分析HA-TPC/TPC相关选择及重建系统不确定度，并评估ML模型的计算与环境足迹。摘要未给出具体数值结果或真实数据验证结论。&lt;/p&gt;&lt;h4&gt;摘要中报告的结论&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;论文介绍用于HA-TPC动量重建与粒子鉴别的卷积神经网络。&lt;/li&gt;&lt;li&gt;论文提出基于Transformer的SFGD粒子鉴别方法。&lt;/li&gt;&lt;li&gt;论文对ND280标准电子中微子选择进行分析，并包含针对HA-TPC和TPC的专门研究。&lt;/li&gt;&lt;li&gt;论文确定与HA-TPC和SFGD重建方法相关的系统不确定度。&lt;/li&gt;&lt;li&gt;论文评估所开发ML模型的生态影响与计算足迹。&lt;/li&gt;&lt;/ul&gt;&lt;h4&gt;对高能实验物理的潜在帮助&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;作为迁移设想，可将CNN/Transformer重建与鉴别方法用于其他中微子近探测器的TPC或高粒度闪烁体，但需独立验证。&lt;/li&gt;&lt;li&gt;作为迁移设想，可将ML重建输出的不确定度纳入近远端协方差与振荡参数拟合，检验其对系统误差的影响。&lt;/li&gt;&lt;li&gt;作为迁移设想，可结合ML降低重建主导的系统误差并评估计算成本，但论文未证明该收益已实现。&lt;/li&gt;&lt;/ul&gt;&lt;h4&gt;迁移风险&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;摘要未说明ML训练样本是否覆盖真实数据条件、探测器几何变化和校准不确定度，需查阅全文确认。&lt;/li&gt;&lt;li&gt;摘要未说明通量、中微子相互作用与核效应、能量响应、近远端关联和协方差处理，需核查全文，不能据此断言缺失。&lt;/li&gt;&lt;li&gt;ML重建的系统误差与nuisance参数相关性需验证；不能仅凭改用ML就声称能减少系统误差或已通过真实数据验证。&lt;/li&gt;&lt;li&gt;摘要仅评估计算足迹，未说明推理延迟或在线/批量处理约束；实际部署前需核查实时性与资源需求。&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;strong&gt;最小验证方案：&lt;/strong&gt;最小可行验证：在ND280升级几何的独立MC样本上比较CNN/Transformer输出与传统重建，扫描探测器校准、能量尺度和几何变化；用控制样本检验data/MC偏移；将ML输出及其协方差传播到电子中微子选择与近远端拟合，检查偏差和系统误差相关性。摘要未说明真实数据验证，需查阅全文确认。&lt;/p&gt;&lt;p&gt;&lt;a href="https://inspirehep.net/literature/3223815"&gt;INSPIRE 记录&lt;/a&gt; · &lt;a href="https://doi.org/10.70675/088ddb30zfb48z4975zbe98z1a5e5daecbd1"&gt;DOI&lt;/a&gt; · &lt;a href="https://github.com/quxnb/hepml-digest/issues/new?title=%5B%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%5D+DOI%3A10.70675%2F088ddb30zfb48z4975zbe98z1a5e5daecbd1+Towards+precise+measurement+of+neutrino+oscillation+parameters+in+T2K-II+with+ne&amp;amp;body=%23%23+%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%0A%0A-+%E8%AE%BA%E6%96%87%EF%BC%9A%5BDOI%3A10.70675%2F088ddb30zfb48z4975zbe98z1a5e5daecbd1%5D%28https%3A%2F%2Finspirehep.net%2Fliterature%2F3223815%29%0A-+%E8%AE%B0%E5%BD%95+ID%EF%BC%9Adoi%3A10.70675%2F088ddb30zfb48z4975zbe98z1a5e5daecbd1%0A-+%E5%88%86%E6%9E%90%E4%BE%9D%E6%8D%AE%EF%BC%9A%E4%BB%85%E6%A0%87%E9%A2%98%E5%92%8C%E6%91%98%E8%A6%81%EF%BC%8C%E6%9C%AA%E8%AF%BB%E5%8F%96%E5%85%A8%E6%96%87%0A-+%E6%A0%8F%E7%9B%AE%EF%BC%9AHEP+%E7%9B%B4%E6%8E%A5%E5%BA%94%E7%94%A8%0A-+%E5%BD%93%E5%89%8D%E7%9B%B8%E5%85%B3%E6%80%A7%EF%BC%9A0.95%0A-+%E5%BD%93%E5%89%8D%E8%AF%81%E6%8D%AE%E7%AD%89%E7%BA%A7%EF%BC%9Adirect%0A%0A%23%23+%E5%88%A4%E6%96%AD%0A%0A-+%5B+%5D+%E6%8E%A8%E8%8D%90%E4%BF%9D%E7%95%99%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E5%90%88%E7%90%86%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E8%BF%87%E5%BA%A6%E6%8E%A8%E6%B5%8B%0A-+%5B+%5D+%E5%BA%94%E7%A7%BB%E8%87%B3%E5%8F%A6%E4%B8%80%E4%B8%AA%E6%A0%8F%E7%9B%AE%0A-+%5B+%5D+%E5%BB%BA%E8%AE%AE%E7%B2%BE%E8%AF%BB%E5%85%A8%E6%96%87%0A%0A%23%23+%E8%A1%A5%E5%85%85%E8%AF%B4%E6%98%8E%0A%0A"&gt;提交反馈&lt;/a&gt; · inspire:Experiment-HEP&lt;/p&gt;</ns1:encoded>
-      <guid isPermaLink="false">doi:10.70675/088ddb30zfb48z4975zbe98z1a5e5daecbd1:hepml-v1</guid>
-      <category>inspire:Experiment-HEP</category>
-      <category>track:hep_application</category>
-      <category>中微子振荡参数测量</category>
-      <category>事例选择</category>
-      <category>动量重建</category>
-      <category>粒子鉴别</category>
-      <category>系统误差处理</category>
-      <pubDate>Thu, 05 Nov 2026 18:54:05 +0000</pubDate>
-    </item>
-    <item>
-      <title>Observation of two nuclear recoil peaks induced by neutron capture on Al 2 O 3</title>
-      <link>https://arxiv.org/abs/2512.06507</link>
-      <description>直接面向反应堆CEνNS探测器的核反冲刻度与响应测量，属实验中微子研究</description>
-      <ns1:encoded>&lt;p&gt;&lt;strong&gt;栏目：&lt;/strong&gt;HEP 直接应用&lt;/p&gt;&lt;p&gt;&lt;strong&gt;分析依据：&lt;/strong&gt;仅标题和摘要；未读取全文。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法：&lt;/strong&gt;利用Cf-252中子源在低温Al2O3探测器上观测中子俘获诱发的核反冲峰，并用于CEνNS探测器的原位核反冲刻度&lt;/p&gt;&lt;p&gt;&lt;strong&gt;相关性：&lt;/strong&gt;0.92；&lt;strong&gt;证据等级：&lt;/strong&gt;direct&lt;/p&gt;&lt;p&gt;&lt;strong&gt;初筛理由：&lt;/strong&gt;直接面向反应堆CEνNS探测器的核反冲刻度与响应测量，属实验中微子研究&lt;/p&gt;&lt;p&gt;&lt;strong&gt;出版信息（来源记录）：&lt;/strong&gt;Phys.Rev.C 114 (2026) 014621&lt;/p&gt;&lt;p&gt;&lt;strong&gt;摘要来源：&lt;/strong&gt;INSPIRE (APS)&lt;/p&gt;&lt;p&gt;&lt;em&gt;本条目仅完成摘要级筛选。&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;a href="https://arxiv.org/abs/2512.06507"&gt;论文页面&lt;/a&gt; · &lt;a href="https://doi.org/10.1103/nt33-5z88"&gt;DOI&lt;/a&gt; · &lt;a href="https://inspirehep.net/literature/3090281"&gt;INSPIRE 记录&lt;/a&gt; · &lt;a href="https://github.com/quxnb/hepml-digest/issues/new?title=%5B%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%5D+arXiv%3A2512.06507+Observation+of+two+nuclear+recoil+peaks+induced+by+neutron+capture+on+Al+2+O+3&amp;amp;body=%23%23+%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%0A%0A-+%E8%AE%BA%E6%96%87%EF%BC%9A%5BarXiv%3A2512.06507%5D%28https%3A%2F%2Farxiv.org%2Fabs%2F2512.06507%29%0A-+%E8%AE%B0%E5%BD%95+ID%EF%BC%9Aarxiv%3A2512.06507%0A-+%E5%88%86%E6%9E%90%E4%BE%9D%E6%8D%AE%EF%BC%9A%E4%BB%85%E6%A0%87%E9%A2%98%E5%92%8C%E6%91%98%E8%A6%81%EF%BC%8C%E6%9C%AA%E8%AF%BB%E5%8F%96%E5%85%A8%E6%96%87%0A-+%E6%A0%8F%E7%9B%AE%EF%BC%9AHEP+%E7%9B%B4%E6%8E%A5%E5%BA%94%E7%94%A8%0A-+%E5%BD%93%E5%89%8D%E7%9B%B8%E5%85%B3%E6%80%A7%EF%BC%9A0.92%0A-+%E5%BD%93%E5%89%8D%E8%AF%81%E6%8D%AE%E7%AD%89%E7%BA%A7%EF%BC%9Adirect%0A%0A%23%23+%E5%88%A4%E6%96%AD%0A%0A-+%5B+%5D+%E6%8E%A8%E8%8D%90%E4%BF%9D%E7%95%99%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E5%90%88%E7%90%86%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E8%BF%87%E5%BA%A6%E6%8E%A8%E6%B5%8B%0A-+%5B+%5D+%E5%BA%94%E7%A7%BB%E8%87%B3%E5%8F%A6%E4%B8%80%E4%B8%AA%E6%A0%8F%E7%9B%AE%0A-+%5B+%5D+%E5%BB%BA%E8%AE%AE%E7%B2%BE%E8%AF%BB%E5%85%A8%E6%96%87%0A%0A%23%23+%E8%A1%A5%E5%85%85%E8%AF%B4%E6%98%8E%0A%0A"&gt;提交反馈&lt;/a&gt; · inspire:Experiment-Nucl, inspire:Instrumentation, nucl-ex, physics.ins-det&lt;/p&gt;</ns1:encoded>
-      <guid isPermaLink="false">arxiv:2512.06507:hepml-v1</guid>
-      <category>CEνNS探测器响应</category>
-      <category>inspire:Experiment-Nucl</category>
-      <category>inspire:Instrumentation</category>
-      <category>nucl-ex</category>
-      <category>physics.ins-det</category>
-      <category>track:hep_application</category>
-      <category>中子本底建模</category>
-      <category>低温量热计能量刻度</category>
-      <category>核反冲刻度</category>
-      <pubDate>Tue, 09 Dec 2025 04:07:28 +0000</pubDate>
-    </item>
-    <item>
-      <title>Characterization of the Three-Flavor Composition of Cosmic Neutrinos with IceCube</title>
-      <link>https://arxiv.org/abs/2510.24957</link>
-      <description>直接报告IceCube宇宙中微子三味成分测量及源区推断，属重要实验结果</description>
-      <ns1:encoded>&lt;p&gt;&lt;strong&gt;栏目：&lt;/strong&gt;HEP 直接应用&lt;/p&gt;&lt;p&gt;&lt;strong&gt;分析依据：&lt;/strong&gt;仅标题和摘要；未读取全文。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法：&lt;/strong&gt;利用11.4年IceCube数据在5 TeV–10 PeV能段拟合宇宙中微子三味成分，并推断源区味成分&lt;/p&gt;&lt;p&gt;&lt;strong&gt;相关性：&lt;/strong&gt;0.95；&lt;strong&gt;证据等级：&lt;/strong&gt;direct&lt;/p&gt;&lt;p&gt;&lt;strong&gt;初筛理由：&lt;/strong&gt;直接报告IceCube宇宙中微子三味成分测量及源区推断，属重要实验结果&lt;/p&gt;&lt;p&gt;&lt;strong&gt;出版信息（来源记录）：&lt;/strong&gt;Phys.Rev.Lett. 137 (2026) 081002&lt;/p&gt;&lt;p&gt;&lt;strong&gt;摘要来源：&lt;/strong&gt;INSPIRE (APS)&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法总结（摘要分析）：&lt;/strong&gt;该研究利用11.4年IceCube数据，在5 TeV–10 PeV能段拟合全天宇宙中微子三味成分，将分析阈值从先前35 TeV显著降低。最佳拟合味分数为f_e=0.30^{+0.20}_{-0.15}、f_μ=0.37^{+0.14}_{-0.16}、f_τ=0.33^{+0.24}_{-0.25}；首次以&amp;gt;90%置信度报告三种味均存在于观测到的宇宙中微子通量中。源区味成分推断与π介子衰变一致，纯中子衰变被排除，后验概率2.7×10^{-5}（约4σ）。&lt;/p&gt;&lt;h4&gt;摘要中报告的结论&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;利用11.4年IceCube数据在5 TeV–10 PeV能段分析全天宇宙中微子三味成分，分析阈值较先前35 TeV显著降低。&lt;/li&gt;&lt;li&gt;最佳拟合味分数为f_e=0.30^{+0.20}_{-0.15}、f_μ=0.37^{+0.14}_{-0.16}、f_τ=0.33^{+0.24}_{-0.25}。&lt;/li&gt;&lt;li&gt;首次以&amp;gt;90%置信度报告观测到的宇宙中微子通量中三种味均存在。&lt;/li&gt;&lt;li&gt;源区味成分推断与π介子衰变一致，纯中子衰变被排除，后验概率为2.7×10^{-5}（约4σ）。&lt;/li&gt;&lt;/ul&gt;&lt;h4&gt;对高能实验物理的潜在帮助&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;迁移设想：将三味分数拟合与源区贝叶斯后验推断框架用于下一代中微子望远镜的味成分测量和BSM振荡检验。&lt;/li&gt;&lt;li&gt;迁移设想：把低阈能段的全天味成分分析与探测器响应、背景建模联合拟合，用于其他中微子实验的协方差分析。&lt;/li&gt;&lt;li&gt;摘要未报告机器学习方法；可探索事件级味识别或能量重建的ML辅助，但只能作为待验证的迁移设想。&lt;/li&gt;&lt;/ul&gt;&lt;h4&gt;迁移风险&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;摘要未说明系统误差、nuisance参数、负权事件、探测器几何、校准和simulation-to-data shift的处理，需查阅全文确认；迁移到其他探测器时这些差异会影响味分数与源区后验。&lt;/li&gt;&lt;li&gt;5 TeV低阈能段的大气中微子背景和能量响应不确定性可能更显著，摘要未说明其处理方式，需核查。&lt;/li&gt;&lt;li&gt;源区推断依赖振荡参数、产生机制先验和通量假设；摘要只报告与π介子衰变一致、纯中子衰变被排除，未说明先验敏感性，需全文确认。&lt;/li&gt;&lt;li&gt;三味同时存在&amp;gt;90% CL是观测结果；不能据此声称机器学习可降低系统误差或已通过真实数据验证。&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;strong&gt;最小验证方案：&lt;/strong&gt;在公开或合作内部数据上复现三味分数拟合与源区后验；核查能段阈值、背景、探测器响应、系统误差和协方差处理；用仿真注入测试检验估计无偏性与置信区间覆盖率；与35 TeV以上独立子样本交叉验证；对源区先验和振荡参数做敏感性扫描。摘要未说明的细节需查阅全文确认。&lt;/p&gt;&lt;p&gt;&lt;a href="https://arxiv.org/abs/2510.24957"&gt;论文页面&lt;/a&gt; · &lt;a href="https://doi.org/10.1103/vntd-m133"&gt;DOI&lt;/a&gt; · &lt;a href="https://inspirehep.net/literature/3074741"&gt;INSPIRE 记录&lt;/a&gt; · &lt;a href="https://github.com/quxnb/hepml-digest/issues/new?title=%5B%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%5D+arXiv%3A2510.24957+Characterization+of+the+Three-Flavor+Composition+of+Cosmic+Neutrinos+with+IceCub&amp;amp;body=%23%23+%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%0A%0A-+%E8%AE%BA%E6%96%87%EF%BC%9A%5BarXiv%3A2510.24957%5D%28https%3A%2F%2Farxiv.org%2Fabs%2F2510.24957%29%0A-+%E8%AE%B0%E5%BD%95+ID%EF%BC%9Aarxiv%3A2510.24957%0A-+%E5%88%86%E6%9E%90%E4%BE%9D%E6%8D%AE%EF%BC%9A%E4%BB%85%E6%A0%87%E9%A2%98%E5%92%8C%E6%91%98%E8%A6%81%EF%BC%8C%E6%9C%AA%E8%AF%BB%E5%8F%96%E5%85%A8%E6%96%87%0A-+%E6%A0%8F%E7%9B%AE%EF%BC%9AHEP+%E7%9B%B4%E6%8E%A5%E5%BA%94%E7%94%A8%0A-+%E5%BD%93%E5%89%8D%E7%9B%B8%E5%85%B3%E6%80%A7%EF%BC%9A0.95%0A-+%E5%BD%93%E5%89%8D%E8%AF%81%E6%8D%AE%E7%AD%89%E7%BA%A7%EF%BC%9Adirect%0A%0A%23%23+%E5%88%A4%E6%96%AD%0A%0A-+%5B+%5D+%E6%8E%A8%E8%8D%90%E4%BF%9D%E7%95%99%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E5%90%88%E7%90%86%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E8%BF%87%E5%BA%A6%E6%8E%A8%E6%B5%8B%0A-+%5B+%5D+%E5%BA%94%E7%A7%BB%E8%87%B3%E5%8F%A6%E4%B8%80%E4%B8%AA%E6%A0%8F%E7%9B%AE%0A-+%5B+%5D+%E5%BB%BA%E8%AE%AE%E7%B2%BE%E8%AF%BB%E5%85%A8%E6%96%87%0A%0A%23%23+%E8%A1%A5%E5%85%85%E8%AF%B4%E6%98%8E%0A%0A"&gt;提交反馈&lt;/a&gt; · astro-ph.HE, hep-ex, hep-ph, inspire:Astrophysics, inspire:Experiment-HEP, inspire:Phenomenology-HEP&lt;/p&gt;</ns1:encoded>
-      <guid isPermaLink="false">arxiv:2510.24957:hepml-v1</guid>
-      <category>astro-ph.HE</category>
-      <category>hep-ex</category>
-      <category>hep-ph</category>
-      <category>inspire:Astrophysics</category>
-      <category>inspire:Experiment-HEP</category>
-      <category>inspire:Phenomenology-HEP</category>
-      <category>track:hep_application</category>
-      <category>中微子振荡与味成分测量</category>
-      <category>宇宙中微子通量分析</category>
-      <category>统计拟合与参数推断</category>
-      <pubDate>Thu, 30 Oct 2025 04:12:33 +0000</pubDate>
     </item>
   </channel>
 </rss>
