@@ -8,19 +8,20 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Fri, 13 Nov 2026 19:46:11 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 14 Nov 2026 06:24:15 +0000</lastBuildDate>
     <item>
-      <title>hermodynamic modelling of potassium radioactive impurity in bulk Li2MoO4 crystals for rare event detection</title>
-      <link>https://inspirehep.net/literature/3228344</link>
-      <description>直接针对无中微子双贝塔实验晶体本底污染控制，与中微子实验材料纯度相关，但非振荡或统计方法</description>
-      <ns1:encoded>&lt;p&gt;&lt;strong&gt;栏目：&lt;/strong&gt;方法雷达&lt;/p&gt;&lt;p&gt;&lt;strong&gt;分析依据：&lt;/strong&gt;仅标题和摘要；未读取全文。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法：&lt;/strong&gt;CALPHAD 热力学建模与 DFT/量热结合，研究 Li2MoO4 晶体中钾杂质溶解度与气相蒸馏去除效率&lt;/p&gt;&lt;p&gt;&lt;strong&gt;相关性：&lt;/strong&gt;0.55；&lt;strong&gt;证据等级：&lt;/strong&gt;direct&lt;/p&gt;&lt;p&gt;&lt;strong&gt;初筛理由：&lt;/strong&gt;直接针对无中微子双贝塔实验晶体本底污染控制，与中微子实验材料纯度相关，但非振荡或统计方法&lt;/p&gt;&lt;p&gt;&lt;strong&gt;摘要来源：&lt;/strong&gt;INSPIRE (TEL)&lt;/p&gt;&lt;p&gt;&lt;em&gt;本条目仅完成摘要级筛选。&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;a href="https://inspirehep.net/literature/3228344"&gt;INSPIRE 记录&lt;/a&gt; · &lt;a href="https://github.com/quxnb/hepml-digest/issues/new?title=%5B%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%5D+INSPIRE%3A3228344+hermodynamic+modelling+of+potassium+radioactive+impurity+in+bulk+Li2MoO4+crystal&amp;amp;body=%23%23+%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%0A%0A-+%E8%AE%BA%E6%96%87%EF%BC%9A%5BINSPIRE%3A3228344%5D%28https%3A%2F%2Finspirehep.net%2Fliterature%2F3228344%29%0A-+%E8%AE%B0%E5%BD%95+ID%EF%BC%9Ainspire%3A3228344%0A-+%E5%88%86%E6%9E%90%E4%BE%9D%E6%8D%AE%EF%BC%9A%E4%BB%85%E6%A0%87%E9%A2%98%E5%92%8C%E6%91%98%E8%A6%81%EF%BC%8C%E6%9C%AA%E8%AF%BB%E5%8F%96%E5%85%A8%E6%96%87%0A-+%E6%A0%8F%E7%9B%AE%EF%BC%9A%E6%96%B9%E6%B3%95%E9%9B%B7%E8%BE%BE%0A-+%E5%BD%93%E5%89%8D%E7%9B%B8%E5%85%B3%E6%80%A7%EF%BC%9A0.55%0A-+%E5%BD%93%E5%89%8D%E8%AF%81%E6%8D%AE%E7%AD%89%E7%BA%A7%EF%BC%9Adirect%0A%0A%23%23+%E5%88%A4%E6%96%AD%0A%0A-+%5B+%5D+%E6%8E%A8%E8%8D%90%E4%BF%9D%E7%95%99%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E5%90%88%E7%90%86%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E8%BF%87%E5%BA%A6%E6%8E%A8%E6%B5%8B%0A-+%5B+%5D+%E5%BA%94%E7%A7%BB%E8%87%B3%E5%8F%A6%E4%B8%80%E4%B8%AA%E6%A0%8F%E7%9B%AE%0A-+%5B+%5D+%E5%BB%BA%E8%AE%AE%E7%B2%BE%E8%AF%BB%E5%85%A8%E6%96%87%0A%0A%23%23+%E8%A1%A5%E5%85%85%E8%AF%B4%E6%98%8E%0A%0A"&gt;提交反馈&lt;/a&gt; · inspire:General Physics&lt;/p&gt;</ns1:encoded>
-      <guid isPermaLink="false">inspire:3228344:hepml-v1</guid>
-      <category>inspire:General Physics</category>
+      <title>A Confidence Interval for the $\ell_2$ Expected Calibration Error</title>
+      <link>https://arxiv.org/abs/2408.08998</link>
+      <description>提供与 HEP 常用机器学习分类器校准评估直接相关的统计推断工具，但未在 HEP 数据上验证。</description>
+      <ns1:encoded>&lt;p&gt;&lt;strong&gt;栏目：&lt;/strong&gt;方法雷达&lt;/p&gt;&lt;p&gt;&lt;strong&gt;分析依据：&lt;/strong&gt;仅标题和摘要；未读取全文。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法：&lt;/strong&gt;为 $\ell_2$ 期望校准误差（ECE）构建渐近有效置信区间，给出去偏估计量的渐近正态性并处理校准与失准模型的不同收敛率及非负性；以大量实验验证区间有效性及相对重采样方法更短。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;相关性：&lt;/strong&gt;0.55；&lt;strong&gt;证据等级：&lt;/strong&gt;transferable&lt;/p&gt;&lt;p&gt;&lt;strong&gt;初筛理由：&lt;/strong&gt;提供与 HEP 常用机器学习分类器校准评估直接相关的统计推断工具，但未在 HEP 数据上验证。&lt;/p&gt;&lt;p&gt;&lt;em&gt;本条目仅完成摘要级筛选。&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;a href="https://arxiv.org/abs/2408.08998"&gt;论文页面&lt;/a&gt; · &lt;a href="https://github.com/quxnb/hepml-digest/issues/new?title=%5B%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%5D+arXiv%3A2408.08998+A+Confidence+Interval+for+the+%24%5Cell_2%24+Expected+Calibration+Error&amp;amp;body=%23%23+%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%0A%0A-+%E8%AE%BA%E6%96%87%EF%BC%9A%5BarXiv%3A2408.08998%5D%28https%3A%2F%2Farxiv.org%2Fabs%2F2408.08998%29%0A-+%E8%AE%B0%E5%BD%95+ID%EF%BC%9A2408.08998%3Av1%0A-+%E5%88%86%E6%9E%90%E4%BE%9D%E6%8D%AE%EF%BC%9A%E4%BB%85%E6%A0%87%E9%A2%98%E5%92%8C%E6%91%98%E8%A6%81%EF%BC%8C%E6%9C%AA%E8%AF%BB%E5%8F%96%E5%85%A8%E6%96%87%0A-+%E6%A0%8F%E7%9B%AE%EF%BC%9A%E6%96%B9%E6%B3%95%E9%9B%B7%E8%BE%BE%0A-+%E5%BD%93%E5%89%8D%E7%9B%B8%E5%85%B3%E6%80%A7%EF%BC%9A0.55%0A-+%E5%BD%93%E5%89%8D%E8%AF%81%E6%8D%AE%E7%AD%89%E7%BA%A7%EF%BC%9Atransferable%0A%0A%23%23+%E5%88%A4%E6%96%AD%0A%0A-+%5B+%5D+%E6%8E%A8%E8%8D%90%E4%BF%9D%E7%95%99%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E5%90%88%E7%90%86%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E8%BF%87%E5%BA%A6%E6%8E%A8%E6%B5%8B%0A-+%5B+%5D+%E5%BA%94%E7%A7%BB%E8%87%B3%E5%8F%A6%E4%B8%80%E4%B8%AA%E6%A0%8F%E7%9B%AE%0A-+%5B+%5D+%E5%BB%BA%E8%AE%AE%E7%B2%BE%E8%AF%BB%E5%85%A8%E6%96%87%0A%0A%23%23+%E8%A1%A5%E5%85%85%E8%AF%B4%E6%98%8E%0A%0A"&gt;提交反馈&lt;/a&gt; · cs.LG, stat.ML&lt;/p&gt;</ns1:encoded>
+      <guid isPermaLink="false">arxiv:2408.08998:hepml-v1</guid>
+      <category>cs.LG</category>
+      <category>stat.ML</category>
       <category>track:method_radar</category>
-      <category>双贝塔衰变实验探测器</category>
-      <category>放射性本底控制</category>
-      <category>材料纯化</category>
-      <pubDate>Fri, 13 Nov 2026 15:24:26 +0000</pubDate>
+      <category>不确定度量化</category>
+      <category>校准</category>
+      <category>系统误差处理</category>
+      <pubDate>Thu, 23 Jul 2026 04:00:00 +0000</pubDate>
     </item>
     <item>
       <title>Non-Standard Interactions and Light Z' Bosons from CEvNS Data at CONUS+</title>
@@ -54,6 +55,19 @@
       <category>新物理搜寻</category>
       <category>灵敏度预期</category>
       <pubDate>Thu, 15 Jan 2026 04:12:13 +0000</pubDate>
+    </item>
+    <item>
+      <title>hermodynamic modelling of potassium radioactive impurity in bulk Li2MoO4 crystals for rare event detection</title>
+      <link>https://inspirehep.net/literature/3228344</link>
+      <description>直接针对无中微子双贝塔实验晶体本底污染控制，与中微子实验材料纯度相关，但非振荡或统计方法</description>
+      <ns1:encoded>&lt;p&gt;&lt;strong&gt;栏目：&lt;/strong&gt;方法雷达&lt;/p&gt;&lt;p&gt;&lt;strong&gt;分析依据：&lt;/strong&gt;仅标题和摘要；未读取全文。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法：&lt;/strong&gt;CALPHAD 热力学建模与 DFT/量热结合，研究 Li2MoO4 晶体中钾杂质溶解度与气相蒸馏去除效率&lt;/p&gt;&lt;p&gt;&lt;strong&gt;相关性：&lt;/strong&gt;0.55；&lt;strong&gt;证据等级：&lt;/strong&gt;direct&lt;/p&gt;&lt;p&gt;&lt;strong&gt;初筛理由：&lt;/strong&gt;直接针对无中微子双贝塔实验晶体本底污染控制，与中微子实验材料纯度相关，但非振荡或统计方法&lt;/p&gt;&lt;p&gt;&lt;strong&gt;摘要来源：&lt;/strong&gt;INSPIRE (TEL)&lt;/p&gt;&lt;p&gt;&lt;em&gt;本条目仅完成摘要级筛选。&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;a href="https://inspirehep.net/literature/3228344"&gt;INSPIRE 记录&lt;/a&gt; · &lt;a href="https://github.com/quxnb/hepml-digest/issues/new?title=%5B%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%5D+INSPIRE%3A3228344+hermodynamic+modelling+of+potassium+radioactive+impurity+in+bulk+Li2MoO4+crystal&amp;amp;body=%23%23+%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%0A%0A-+%E8%AE%BA%E6%96%87%EF%BC%9A%5BINSPIRE%3A3228344%5D%28https%3A%2F%2Finspirehep.net%2Fliterature%2F3228344%29%0A-+%E8%AE%B0%E5%BD%95+ID%EF%BC%9Ainspire%3A3228344%0A-+%E5%88%86%E6%9E%90%E4%BE%9D%E6%8D%AE%EF%BC%9A%E4%BB%85%E6%A0%87%E9%A2%98%E5%92%8C%E6%91%98%E8%A6%81%EF%BC%8C%E6%9C%AA%E8%AF%BB%E5%8F%96%E5%85%A8%E6%96%87%0A-+%E6%A0%8F%E7%9B%AE%EF%BC%9A%E6%96%B9%E6%B3%95%E9%9B%B7%E8%BE%BE%0A-+%E5%BD%93%E5%89%8D%E7%9B%B8%E5%85%B3%E6%80%A7%EF%BC%9A0.55%0A-+%E5%BD%93%E5%89%8D%E8%AF%81%E6%8D%AE%E7%AD%89%E7%BA%A7%EF%BC%9Adirect%0A%0A%23%23+%E5%88%A4%E6%96%AD%0A%0A-+%5B+%5D+%E6%8E%A8%E8%8D%90%E4%BF%9D%E7%95%99%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E5%90%88%E7%90%86%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E8%BF%87%E5%BA%A6%E6%8E%A8%E6%B5%8B%0A-+%5B+%5D+%E5%BA%94%E7%A7%BB%E8%87%B3%E5%8F%A6%E4%B8%80%E4%B8%AA%E6%A0%8F%E7%9B%AE%0A-+%5B+%5D+%E5%BB%BA%E8%AE%AE%E7%B2%BE%E8%AF%BB%E5%85%A8%E6%96%87%0A%0A%23%23+%E8%A1%A5%E5%85%85%E8%AF%B4%E6%98%8E%0A%0A"&gt;提交反馈&lt;/a&gt; · inspire:General Physics&lt;/p&gt;</ns1:encoded>
+      <guid isPermaLink="false">inspire:3228344:hepml-v1</guid>
+      <category>inspire:General Physics</category>
+      <category>track:method_radar</category>
+      <category>双贝塔衰变实验探测器</category>
+      <category>放射性本底控制</category>
+      <category>材料纯化</category>
+      <pubDate>Fri, 13 Nov 2026 15:24:26 +0000</pubDate>
     </item>
     <item>
       <title>Estimating dynamic models by matching random features</title>
@@ -819,115 +833,6 @@
       <category>背景估计</category>
       <category>重建</category>
       <pubDate>Fri, 05 Jun 2026 04:31:26 +0000</pubDate>
-    </item>
-    <item>
-      <title>Neutrino Oscillation Phenomenology</title>
-      <link>https://inspirehep.net/literature/804800</link>
-      <description>属中微子振荡唯象综述，与实验振荡测量直接相关，但摘要未述及具体实验数据或探测器分析</description>
-      <ns1:encoded>&lt;p&gt;&lt;strong&gt;栏目：&lt;/strong&gt;方法雷达&lt;/p&gt;&lt;p&gt;&lt;strong&gt;分析依据：&lt;/strong&gt;仅标题和摘要；未读取全文。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法：&lt;/strong&gt;综述中微子振荡唯象学：在3味标准模型框架下讨论消失与出现模式，并扩展至惰性中微子&lt;/p&gt;&lt;p&gt;&lt;strong&gt;相关性：&lt;/strong&gt;0.55；&lt;strong&gt;证据等级：&lt;/strong&gt;speculative&lt;/p&gt;&lt;p&gt;&lt;strong&gt;初筛理由：&lt;/strong&gt;属中微子振荡唯象综述，与实验振荡测量直接相关，但摘要未述及具体实验数据或探测器分析&lt;/p&gt;&lt;p&gt;&lt;strong&gt;摘要来源：&lt;/strong&gt;INSPIRE (record)&lt;/p&gt;&lt;p&gt;&lt;em&gt;本条目仅完成摘要级筛选。&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;a href="https://inspirehep.net/literature/804800"&gt;INSPIRE 记录&lt;/a&gt; · &lt;a href="https://github.com/quxnb/hepml-digest/issues/new?title=%5B%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%5D+INSPIRE%3A804800+Neutrino+Oscillation+Phenomenology&amp;amp;body=%23%23+%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%0A%0A-+%E8%AE%BA%E6%96%87%EF%BC%9A%5BINSPIRE%3A804800%5D%28https%3A%2F%2Finspirehep.net%2Fliterature%2F804800%29%0A-+%E8%AE%B0%E5%BD%95+ID%EF%BC%9Ainspire%3A804800%0A-+%E5%88%86%E6%9E%90%E4%BE%9D%E6%8D%AE%EF%BC%9A%E4%BB%85%E6%A0%87%E9%A2%98%E5%92%8C%E6%91%98%E8%A6%81%EF%BC%8C%E6%9C%AA%E8%AF%BB%E5%8F%96%E5%85%A8%E6%96%87%0A-+%E6%A0%8F%E7%9B%AE%EF%BC%9A%E6%96%B9%E6%B3%95%E9%9B%B7%E8%BE%BE%0A-+%E5%BD%93%E5%89%8D%E7%9B%B8%E5%85%B3%E6%80%A7%EF%BC%9A0.55%0A-+%E5%BD%93%E5%89%8D%E8%AF%81%E6%8D%AE%E7%AD%89%E7%BA%A7%EF%BC%9Aspeculative%0A%0A%23%23+%E5%88%A4%E6%96%AD%0A%0A-+%5B+%5D+%E6%8E%A8%E8%8D%90%E4%BF%9D%E7%95%99%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E5%90%88%E7%90%86%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E8%BF%87%E5%BA%A6%E6%8E%A8%E6%B5%8B%0A-+%5B+%5D+%E5%BA%94%E7%A7%BB%E8%87%B3%E5%8F%A6%E4%B8%80%E4%B8%AA%E6%A0%8F%E7%9B%AE%0A-+%5B+%5D+%E5%BB%BA%E8%AE%AE%E7%B2%BE%E8%AF%BB%E5%85%A8%E6%96%87%0A%0A%23%23+%E8%A1%A5%E5%85%85%E8%AF%B4%E6%98%8E%0A%0A"&gt;提交反馈&lt;/a&gt; · inspire:Phenomenology-HEP&lt;/p&gt;</ns1:encoded>
-      <guid isPermaLink="false">inspire:804800:hepml-v1</guid>
-      <category>inspire:Phenomenology-HEP</category>
-      <category>track:method_radar</category>
-      <category>中微子振荡分析</category>
-      <category>惰性中微子搜索</category>
-      <pubDate>Wed, 10 Dec 2008 00:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>High-precision Q-value measurement and evaluation of nuclear matrix elements for $^{122}$Sn and $^{124}$Sn neutrinoless double beta decays</title>
-      <link>https://inspirehep.net/literature/3097245</link>
-      <description>精密Q值测量支撑无中微子双贝塔实验，但核心为核结构理论计算</description>
-      <ns1:encoded>&lt;p&gt;&lt;strong&gt;栏目：&lt;/strong&gt;方法雷达&lt;/p&gt;&lt;p&gt;&lt;strong&gt;分析依据：&lt;/strong&gt;仅标题和摘要；未读取全文。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法：&lt;/strong&gt;双潘宁阱质谱高精度测定Q值，并结合相空间因子与核矩阵元计算无中微子双贝塔衰变半衰期&lt;/p&gt;&lt;p&gt;&lt;strong&gt;相关性：&lt;/strong&gt;0.55；&lt;strong&gt;证据等级：&lt;/strong&gt;direct&lt;/p&gt;&lt;p&gt;&lt;strong&gt;初筛理由：&lt;/strong&gt;精密Q值测量支撑无中微子双贝塔实验，但核心为核结构理论计算&lt;/p&gt;&lt;p&gt;&lt;strong&gt;出版信息（来源记录）：&lt;/strong&gt;Eur.Phys.J.A 61 (2025) 281&lt;/p&gt;&lt;p&gt;&lt;strong&gt;摘要来源：&lt;/strong&gt;INSPIRE (Springer)&lt;/p&gt;&lt;p&gt;&lt;em&gt;本条目仅完成摘要级筛选。&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;a href="https://inspirehep.net/literature/3097245"&gt;INSPIRE 记录&lt;/a&gt; · &lt;a href="https://doi.org/10.1140/epja/s10050-025-01744-w"&gt;DOI&lt;/a&gt; · &lt;a href="https://github.com/quxnb/hepml-digest/issues/new?title=%5B%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%5D+DOI%3A10.1140%2Fepja%2Fs10050-025-01744-w+High-precision+Q-value+measurement+and+evaluation+of+nuclear+matrix+elements+for&amp;amp;body=%23%23+%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%0A%0A-+%E8%AE%BA%E6%96%87%EF%BC%9A%5BDOI%3A10.1140%2Fepja%2Fs10050-025-01744-w%5D%28https%3A%2F%2Finspirehep.net%2Fliterature%2F3097245%29%0A-+%E8%AE%B0%E5%BD%95+ID%EF%BC%9Adoi%3A10.1140%2Fepja%2Fs10050-025-01744-w%0A-+%E5%88%86%E6%9E%90%E4%BE%9D%E6%8D%AE%EF%BC%9A%E4%BB%85%E6%A0%87%E9%A2%98%E5%92%8C%E6%91%98%E8%A6%81%EF%BC%8C%E6%9C%AA%E8%AF%BB%E5%8F%96%E5%85%A8%E6%96%87%0A-+%E6%A0%8F%E7%9B%AE%EF%BC%9A%E6%96%B9%E6%B3%95%E9%9B%B7%E8%BE%BE%0A-+%E5%BD%93%E5%89%8D%E7%9B%B8%E5%85%B3%E6%80%A7%EF%BC%9A0.55%0A-+%E5%BD%93%E5%89%8D%E8%AF%81%E6%8D%AE%E7%AD%89%E7%BA%A7%EF%BC%9Adirect%0A%0A%23%23+%E5%88%A4%E6%96%AD%0A%0A-+%5B+%5D+%E6%8E%A8%E8%8D%90%E4%BF%9D%E7%95%99%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E5%90%88%E7%90%86%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E8%BF%87%E5%BA%A6%E6%8E%A8%E6%B5%8B%0A-+%5B+%5D+%E5%BA%94%E7%A7%BB%E8%87%B3%E5%8F%A6%E4%B8%80%E4%B8%AA%E6%A0%8F%E7%9B%AE%0A-+%5B+%5D+%E5%BB%BA%E8%AE%AE%E7%B2%BE%E8%AF%BB%E5%85%A8%E6%96%87%0A%0A%23%23+%E8%A1%A5%E5%85%85%E8%AF%B4%E6%98%8E%0A%0A"&gt;提交反馈&lt;/a&gt; · inspire:Theory-Nucl&lt;/p&gt;</ns1:encoded>
-      <guid isPermaLink="false">doi:10.1140/epja/s10050-025-01744-w:hepml-v1</guid>
-      <category>inspire:Theory-Nucl</category>
-      <category>track:method_radar</category>
-      <category>无中微子双贝塔衰变核矩阵元计算</category>
-      <category>衰变Q值与相空间因子精确测量</category>
-      <pubDate>Tue, 06 Jan 2026 16:39:14 +0000</pubDate>
-    </item>
-    <item>
-      <title>Probing the double-beta decay of $^{104}$Ru through precise Q-value measurements and nuclear matrix element calculations</title>
-      <link>https://inspirehep.net/literature/3078973</link>
-      <description>精确测量钌-104双贝塔衰变Q值并计算核矩阵元，直接相关实验中微子研究。</description>
-      <ns1:encoded>&lt;p&gt;&lt;strong&gt;栏目：&lt;/strong&gt;方法雷达&lt;/p&gt;&lt;p&gt;&lt;strong&gt;分析依据：&lt;/strong&gt;仅标题和摘要；未读取全文。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法：&lt;/strong&gt;Penning trap precision Q-value measurement and nuclear matrix element calculation for double-beta decay&lt;/p&gt;&lt;p&gt;&lt;strong&gt;相关性：&lt;/strong&gt;0.90；&lt;strong&gt;证据等级：&lt;/strong&gt;direct&lt;/p&gt;&lt;p&gt;&lt;strong&gt;初筛理由：&lt;/strong&gt;精确测量钌-104双贝塔衰变Q值并计算核矩阵元，直接相关实验中微子研究。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;出版信息（来源记录）：&lt;/strong&gt;Eur.Phys.J.A 61 (2025) 33&lt;/p&gt;&lt;p&gt;&lt;strong&gt;摘要来源：&lt;/strong&gt;INSPIRE (CrossRef)&lt;/p&gt;&lt;p&gt;&lt;em&gt;本条目仅完成摘要级筛选。&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;a href="https://inspirehep.net/literature/3078973"&gt;INSPIRE 记录&lt;/a&gt; · &lt;a href="https://doi.org/10.1140/epja/s10050-024-01481-6"&gt;DOI&lt;/a&gt; · &lt;a href="https://github.com/quxnb/hepml-digest/issues/new?title=%5B%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%5D+DOI%3A10.1140%2Fepja%2Fs10050-024-01481-6+Probing+the+double-beta+decay+of+%24%5E%7B104%7D%24Ru+through+precise+Q-value+measurements&amp;amp;body=%23%23+%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%0A%0A-+%E8%AE%BA%E6%96%87%EF%BC%9A%5BDOI%3A10.1140%2Fepja%2Fs10050-024-01481-6%5D%28https%3A%2F%2Finspirehep.net%2Fliterature%2F3078973%29%0A-+%E8%AE%B0%E5%BD%95+ID%EF%BC%9Adoi%3A10.1140%2Fepja%2Fs10050-024-01481-6%0A-+%E5%88%86%E6%9E%90%E4%BE%9D%E6%8D%AE%EF%BC%9A%E4%BB%85%E6%A0%87%E9%A2%98%E5%92%8C%E6%91%98%E8%A6%81%EF%BC%8C%E6%9C%AA%E8%AF%BB%E5%8F%96%E5%85%A8%E6%96%87%0A-+%E6%A0%8F%E7%9B%AE%EF%BC%9A%E6%96%B9%E6%B3%95%E9%9B%B7%E8%BE%BE%0A-+%E5%BD%93%E5%89%8D%E7%9B%B8%E5%85%B3%E6%80%A7%EF%BC%9A0.90%0A-+%E5%BD%93%E5%89%8D%E8%AF%81%E6%8D%AE%E7%AD%89%E7%BA%A7%EF%BC%9Adirect%0A%0A%23%23+%E5%88%A4%E6%96%AD%0A%0A-+%5B+%5D+%E6%8E%A8%E8%8D%90%E4%BF%9D%E7%95%99%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E5%90%88%E7%90%86%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E8%BF%87%E5%BA%A6%E6%8E%A8%E6%B5%8B%0A-+%5B+%5D+%E5%BA%94%E7%A7%BB%E8%87%B3%E5%8F%A6%E4%B8%80%E4%B8%AA%E6%A0%8F%E7%9B%AE%0A-+%5B+%5D+%E5%BB%BA%E8%AE%AE%E7%B2%BE%E8%AF%BB%E5%85%A8%E6%96%87%0A%0A%23%23+%E8%A1%A5%E5%85%85%E8%AF%B4%E6%98%8E%0A%0A"&gt;提交反馈&lt;/a&gt; · inspire:Theory-Nucl&lt;/p&gt;</ns1:encoded>
-      <guid isPermaLink="false">doi:10.1140/epja/s10050-024-01481-6:hepml-v1</guid>
-      <category>Q-value measurement</category>
-      <category>double-beta decay</category>
-      <category>half-life estimation</category>
-      <category>inspire:Theory-Nucl</category>
-      <category>nuclear matrix element</category>
-      <category>track:method_radar</category>
-      <pubDate>Wed, 05 Nov 2025 17:16:51 +0000</pubDate>
-    </item>
-    <item>
-      <title>The Phenomenology of Light Flavor-Universal Anomaly-Free Vector Bosons</title>
-      <link>https://inspirehep.net/literature/3198853</link>
-      <description>对电荷厌恶矢量玻色子给出中微子散射与宇宙学约束，具实验联系但属唯象理论</description>
-      <ns1:encoded>&lt;p&gt;&lt;strong&gt;栏目：&lt;/strong&gt;方法雷达&lt;/p&gt;&lt;p&gt;&lt;strong&gt;分析依据：&lt;/strong&gt;仅标题和摘要；未读取全文。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法：&lt;/strong&gt;轻矢量玻色子的地面、天体与宇宙学约束计算及Delta Neff玻尔兹曼方程求解&lt;/p&gt;&lt;p&gt;&lt;strong&gt;相关性：&lt;/strong&gt;0.55；&lt;strong&gt;证据等级：&lt;/strong&gt;transferable&lt;/p&gt;&lt;p&gt;&lt;strong&gt;初筛理由：&lt;/strong&gt;对电荷厌恶矢量玻色子给出中微子散射与宇宙学约束，具实验联系但属唯象理论&lt;/p&gt;&lt;p&gt;&lt;strong&gt;摘要来源：&lt;/strong&gt;INSPIRE (Oregon U.)&lt;/p&gt;&lt;p&gt;&lt;em&gt;本条目仅完成摘要级筛选。&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;a href="https://inspirehep.net/literature/3198853"&gt;INSPIRE 记录&lt;/a&gt; · &lt;a href="https://github.com/quxnb/hepml-digest/issues/new?title=%5B%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%5D+INSPIRE%3A3198853+The+Phenomenology+of+Light+Flavor-Universal+Anomaly-Free+Vector+Bosons&amp;amp;body=%23%23+%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%0A%0A-+%E8%AE%BA%E6%96%87%EF%BC%9A%5BINSPIRE%3A3198853%5D%28https%3A%2F%2Finspirehep.net%2Fliterature%2F3198853%29%0A-+%E8%AE%B0%E5%BD%95+ID%EF%BC%9Ainspire%3A3198853%0A-+%E5%88%86%E6%9E%90%E4%BE%9D%E6%8D%AE%EF%BC%9A%E4%BB%85%E6%A0%87%E9%A2%98%E5%92%8C%E6%91%98%E8%A6%81%EF%BC%8C%E6%9C%AA%E8%AF%BB%E5%8F%96%E5%85%A8%E6%96%87%0A-+%E6%A0%8F%E7%9B%AE%EF%BC%9A%E6%96%B9%E6%B3%95%E9%9B%B7%E8%BE%BE%0A-+%E5%BD%93%E5%89%8D%E7%9B%B8%E5%85%B3%E6%80%A7%EF%BC%9A0.55%0A-+%E5%BD%93%E5%89%8D%E8%AF%81%E6%8D%AE%E7%AD%89%E7%BA%A7%EF%BC%9Atransferable%0A%0A%23%23+%E5%88%A4%E6%96%AD%0A%0A-+%5B+%5D+%E6%8E%A8%E8%8D%90%E4%BF%9D%E7%95%99%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E5%90%88%E7%90%86%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E8%BF%87%E5%BA%A6%E6%8E%A8%E6%B5%8B%0A-+%5B+%5D+%E5%BA%94%E7%A7%BB%E8%87%B3%E5%8F%A6%E4%B8%80%E4%B8%AA%E6%A0%8F%E7%9B%AE%0A-+%5B+%5D+%E5%BB%BA%E8%AE%AE%E7%B2%BE%E8%AF%BB%E5%85%A8%E6%96%87%0A%0A%23%23+%E8%A1%A5%E5%85%85%E8%AF%B4%E6%98%8E%0A%0A"&gt;提交反馈&lt;/a&gt; · inspire:Phenomenology-HEP&lt;/p&gt;</ns1:encoded>
-      <guid isPermaLink="false">inspire:3198853:hepml-v1</guid>
-      <category>inspire:Phenomenology-HEP</category>
-      <category>track:method_radar</category>
-      <category>中微子散射实验约束</category>
-      <category>宇宙学Neff约束</category>
-      <category>暗光子搜寻</category>
-      <category>超新星中微子发射</category>
-      <pubDate>Wed, 02 Sep 2026 14:10:30 +0000</pubDate>
-    </item>
-    <item>
-      <title>Search for Displaced Muon Pairs from the Decays of Low-Mass Long-Lived Dark Photons with the ATLAS Experiment</title>
-      <link>https://inspirehep.net/literature/3193282</link>
-      <description>基于 ATLAS 数据报告暗光子搜索与位移顶点重建，属于实验分析，但不是中微子研究。</description>
-      <ns1:encoded>&lt;p&gt;&lt;strong&gt;栏目：&lt;/strong&gt;方法雷达&lt;/p&gt;&lt;p&gt;&lt;strong&gt;分析依据：&lt;/strong&gt;仅标题和摘要；未读取全文。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法：&lt;/strong&gt;在 ATLAS 上寻找低质量长寿命暗光子衰变产生的位移双缪子对；包含背景估计、预期灵敏度以及位移缪子和次级顶点的重建方法。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;相关性：&lt;/strong&gt;0.75；&lt;strong&gt;证据等级：&lt;/strong&gt;direct&lt;/p&gt;&lt;p&gt;&lt;strong&gt;初筛理由：&lt;/strong&gt;基于 ATLAS 数据报告暗光子搜索与位移顶点重建，属于实验分析，但不是中微子研究。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;摘要来源：&lt;/strong&gt;INSPIRE (Oregon U.)&lt;/p&gt;&lt;p&gt;&lt;em&gt;本条目仅完成摘要级筛选。&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;a href="https://inspirehep.net/literature/3193282"&gt;INSPIRE 记录&lt;/a&gt; · &lt;a href="https://github.com/quxnb/hepml-digest/issues/new?title=%5B%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%5D+INSPIRE%3A3193282+Search+for+Displaced+Muon+Pairs+from+the+Decays+of+Low-Mass+Long-Lived+Dark+Phot&amp;amp;body=%23%23+%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%0A%0A-+%E8%AE%BA%E6%96%87%EF%BC%9A%5BINSPIRE%3A3193282%5D%28https%3A%2F%2Finspirehep.net%2Fliterature%2F3193282%29%0A-+%E8%AE%B0%E5%BD%95+ID%EF%BC%9Ainspire%3A3193282%0A-+%E5%88%86%E6%9E%90%E4%BE%9D%E6%8D%AE%EF%BC%9A%E4%BB%85%E6%A0%87%E9%A2%98%E5%92%8C%E6%91%98%E8%A6%81%EF%BC%8C%E6%9C%AA%E8%AF%BB%E5%8F%96%E5%85%A8%E6%96%87%0A-+%E6%A0%8F%E7%9B%AE%EF%BC%9A%E6%96%B9%E6%B3%95%E9%9B%B7%E8%BE%BE%0A-+%E5%BD%93%E5%89%8D%E7%9B%B8%E5%85%B3%E6%80%A7%EF%BC%9A0.75%0A-+%E5%BD%93%E5%89%8D%E8%AF%81%E6%8D%AE%E7%AD%89%E7%BA%A7%EF%BC%9Adirect%0A%0A%23%23+%E5%88%A4%E6%96%AD%0A%0A-+%5B+%5D+%E6%8E%A8%E8%8D%90%E4%BF%9D%E7%95%99%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E5%90%88%E7%90%86%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E8%BF%87%E5%BA%A6%E6%8E%A8%E6%B5%8B%0A-+%5B+%5D+%E5%BA%94%E7%A7%BB%E8%87%B3%E5%8F%A6%E4%B8%80%E4%B8%AA%E6%A0%8F%E7%9B%AE%0A-+%5B+%5D+%E5%BB%BA%E8%AE%AE%E7%B2%BE%E8%AF%BB%E5%85%A8%E6%96%87%0A%0A%23%23+%E8%A1%A5%E5%85%85%E8%AF%B4%E6%98%8E%0A%0A"&gt;提交反馈&lt;/a&gt; · &lt;/p&gt;</ns1:encoded>
-      <guid isPermaLink="false">inspire:3193282:hepml-v1</guid>
-      <category>background estimation</category>
-      <category>displaced vertex reconstruction</category>
-      <category>long-lived particle search</category>
-      <category>sensitivity projection</category>
-      <category>track:method_radar</category>
-      <pubDate>Thu, 20 Aug 2026 14:16:03 +0000</pubDate>
-    </item>
-    <item>
-      <title>Metric Conformal Prediction via the Conditional Expected Local Radius</title>
-      <link>https://arxiv.org/abs/2610.31336</link>
-      <description>通用共形预测方法，可迁移至HEP区间估计与不确定度量化，但未在HEP验证</description>
-      <ns1:encoded>&lt;p&gt;&lt;strong&gt;栏目：&lt;/strong&gt;方法雷达&lt;/p&gt;&lt;p&gt;&lt;strong&gt;分析依据：&lt;/strong&gt;仅标题和摘要；未读取全文。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法：&lt;/strong&gt;度量空间共形预测，条件期望局部半径不确定性量化&lt;/p&gt;&lt;p&gt;&lt;strong&gt;相关性：&lt;/strong&gt;0.55；&lt;strong&gt;证据等级：&lt;/strong&gt;transferable&lt;/p&gt;&lt;p&gt;&lt;strong&gt;初筛理由：&lt;/strong&gt;通用共形预测方法，可迁移至HEP区间估计与不确定度量化，但未在HEP验证&lt;/p&gt;&lt;p&gt;&lt;em&gt;本条目仅完成摘要级筛选。&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;a href="https://arxiv.org/abs/2610.31336"&gt;论文页面&lt;/a&gt; · &lt;a href="https://github.com/quxnb/hepml-digest/issues/new?title=%5B%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%5D+arXiv%3A2610.31336+Metric+Conformal+Prediction+via+the+Conditional+Expected+Local+Radius&amp;amp;body=%23%23+%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%0A%0A-+%E8%AE%BA%E6%96%87%EF%BC%9A%5BarXiv%3A2610.31336%5D%28https%3A%2F%2Farxiv.org%2Fabs%2F2610.31336%29%0A-+%E8%AE%B0%E5%BD%95+ID%EF%BC%9A2610.31336%3Av2%0A-+%E5%88%86%E6%9E%90%E4%BE%9D%E6%8D%AE%EF%BC%9A%E4%BB%85%E6%A0%87%E9%A2%98%E5%92%8C%E6%91%98%E8%A6%81%EF%BC%8C%E6%9C%AA%E8%AF%BB%E5%8F%96%E5%85%A8%E6%96%87%0A-+%E6%A0%8F%E7%9B%AE%EF%BC%9A%E6%96%B9%E6%B3%95%E9%9B%B7%E8%BE%BE%0A-+%E5%BD%93%E5%89%8D%E7%9B%B8%E5%85%B3%E6%80%A7%EF%BC%9A0.55%0A-+%E5%BD%93%E5%89%8D%E8%AF%81%E6%8D%AE%E7%AD%89%E7%BA%A7%EF%BC%9Atransferable%0A%0A%23%23+%E5%88%A4%E6%96%AD%0A%0A-+%5B+%5D+%E6%8E%A8%E8%8D%90%E4%BF%9D%E7%95%99%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E5%90%88%E7%90%86%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E8%BF%87%E5%BA%A6%E6%8E%A8%E6%B5%8B%0A-+%5B+%5D+%E5%BA%94%E7%A7%BB%E8%87%B3%E5%8F%A6%E4%B8%80%E4%B8%AA%E6%A0%8F%E7%9B%AE%0A-+%5B+%5D+%E5%BB%BA%E8%AE%AE%E7%B2%BE%E8%AF%BB%E5%85%A8%E6%96%87%0A%0A%23%23+%E8%A1%A5%E5%85%85%E8%AF%B4%E6%98%8E%0A%0A"&gt;提交反馈&lt;/a&gt; · cs.LG, stat.ML&lt;/p&gt;</ns1:encoded>
-      <guid isPermaLink="false">arxiv:2610.31336:hepml-v1</guid>
-      <category>cs.LG</category>
-      <category>stat.ML</category>
-      <category>track:method_radar</category>
-      <category>不确定度量化</category>
-      <category>无似然推断</category>
-      <category>非欧几里得响应区间的覆盖保证</category>
-      <pubDate>Thu, 22 Oct 2026 14:23:02 +0000</pubDate>
-    </item>
-    <item>
-      <title>Exact and hybrid neutrino oscillation probabilities via the evolution operator</title>
-      <link>https://arxiv.org/abs/2611.08690</link>
-      <description>直接给出中微子振荡概率精确公式并在DUNE场景验证，属实验相关理论工具</description>
-      <ns1:encoded>&lt;p&gt;&lt;strong&gt;栏目：&lt;/strong&gt;方法雷达&lt;/p&gt;&lt;p&gt;&lt;strong&gt;分析依据：&lt;/strong&gt;仅标题和摘要；未读取全文。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法：&lt;/strong&gt;用演化矩阵与Lagrange-Sylvester插值推导恒定密度物质中三味中微子振荡概率的精确闭式表达式，并提出混合近似方法&lt;/p&gt;&lt;p&gt;&lt;strong&gt;相关性：&lt;/strong&gt;0.70；&lt;strong&gt;证据等级：&lt;/strong&gt;direct&lt;/p&gt;&lt;p&gt;&lt;strong&gt;初筛理由：&lt;/strong&gt;直接给出中微子振荡概率精确公式并在DUNE场景验证，属实验相关理论工具&lt;/p&gt;&lt;p&gt;&lt;strong&gt;摘要来源：&lt;/strong&gt;INSPIRE (arXiv)&lt;/p&gt;&lt;p&gt;&lt;em&gt;本条目仅完成摘要级筛选。&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;a href="https://arxiv.org/abs/2611.08690"&gt;论文页面&lt;/a&gt; · &lt;a href="https://inspirehep.net/literature/3225646"&gt;INSPIRE 记录&lt;/a&gt; · &lt;a href="https://github.com/quxnb/hepml-digest/issues/new?title=%5B%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%5D+arXiv%3A2611.08690+Exact+and+hybrid+neutrino+oscillation+probabilities+via+the+evolution+operator&amp;amp;body=%23%23+%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%0A%0A-+%E8%AE%BA%E6%96%87%EF%BC%9A%5BarXiv%3A2611.08690%5D%28https%3A%2F%2Farxiv.org%2Fabs%2F2611.08690%29%0A-+%E8%AE%B0%E5%BD%95+ID%EF%BC%9Aarxiv%3A2611.08690%0A-+%E5%88%86%E6%9E%90%E4%BE%9D%E6%8D%AE%EF%BC%9A%E4%BB%85%E6%A0%87%E9%A2%98%E5%92%8C%E6%91%98%E8%A6%81%EF%BC%8C%E6%9C%AA%E8%AF%BB%E5%8F%96%E5%85%A8%E6%96%87%0A-+%E6%A0%8F%E7%9B%AE%EF%BC%9A%E6%96%B9%E6%B3%95%E9%9B%B7%E8%BE%BE%0A-+%E5%BD%93%E5%89%8D%E7%9B%B8%E5%85%B3%E6%80%A7%EF%BC%9A0.70%0A-+%E5%BD%93%E5%89%8D%E8%AF%81%E6%8D%AE%E7%AD%89%E7%BA%A7%EF%BC%9Adirect%0A%0A%23%23+%E5%88%A4%E6%96%AD%0A%0A-+%5B+%5D+%E6%8E%A8%E8%8D%90%E4%BF%9D%E7%95%99%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E5%90%88%E7%90%86%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E8%BF%87%E5%BA%A6%E6%8E%A8%E6%B5%8B%0A-+%5B+%5D+%E5%BA%94%E7%A7%BB%E8%87%B3%E5%8F%A6%E4%B8%80%E4%B8%AA%E6%A0%8F%E7%9B%AE%0A-+%5B+%5D+%E5%BB%BA%E8%AE%AE%E7%B2%BE%E8%AF%BB%E5%85%A8%E6%96%87%0A%0A%23%23+%E8%A1%A5%E5%85%85%E8%AF%B4%E6%98%8E%0A%0A"&gt;提交反馈&lt;/a&gt; · hep-ph, inspire:Phenomenology-HEP&lt;/p&gt;</ns1:encoded>
-      <guid isPermaLink="false">arxiv:2611.08690:hepml-v1</guid>
-      <category>CP破坏与物质效应分离</category>
-      <category>DUNE灵敏度分析</category>
-      <category>hep-ph</category>
-      <category>inspire:Phenomenology-HEP</category>
-      <category>track:method_radar</category>
-      <category>中微子振荡概率计算</category>
-      <pubDate>Mon, 09 Nov 2026 03:57:52 +0000</pubDate>
-    </item>
-    <item>
-      <title>Guidance for Prior Change via Density Ratio Estimation</title>
-      <link>https://arxiv.org/abs/2608.21729</link>
-      <description>密度比估计与SBI后验推断，可迁移至中微子实验的无似然推断与先验更新，未在HEP验证</description>
-      <ns1:encoded>&lt;p&gt;&lt;strong&gt;栏目：&lt;/strong&gt;方法雷达&lt;/p&gt;&lt;p&gt;&lt;strong&gt;分析依据：&lt;/strong&gt;仅标题和摘要；未读取全文。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法：&lt;/strong&gt;基于密度比估计的无偏测试时引导框架，用于先验变化下的模拟推断&lt;/p&gt;&lt;p&gt;&lt;strong&gt;相关性：&lt;/strong&gt;0.55；&lt;strong&gt;证据等级：&lt;/strong&gt;transferable&lt;/p&gt;&lt;p&gt;&lt;strong&gt;初筛理由：&lt;/strong&gt;密度比估计与SBI后验推断，可迁移至中微子实验的无似然推断与先验更新，未在HEP验证&lt;/p&gt;&lt;p&gt;&lt;strong&gt;摘要来源：&lt;/strong&gt;arXiv&lt;/p&gt;&lt;p&gt;&lt;em&gt;本条目仅完成摘要级筛选。&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;a href="https://arxiv.org/abs/2608.21729"&gt;论文页面&lt;/a&gt; · &lt;a href="https://github.com/quxnb/hepml-digest/issues/new?title=%5B%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%5D+arXiv%3A2608.21729+Guidance+for+Prior+Change+via+Density+Ratio+Estimation&amp;amp;body=%23%23+%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%0A%0A-+%E8%AE%BA%E6%96%87%EF%BC%9A%5BarXiv%3A2608.21729%5D%28https%3A%2F%2Farxiv.org%2Fabs%2F2608.21729%29%0A-+%E8%AE%B0%E5%BD%95+ID%EF%BC%9A2608.21729%3Av2%0A-+%E5%88%86%E6%9E%90%E4%BE%9D%E6%8D%AE%EF%BC%9A%E4%BB%85%E6%A0%87%E9%A2%98%E5%92%8C%E6%91%98%E8%A6%81%EF%BC%8C%E6%9C%AA%E8%AF%BB%E5%8F%96%E5%85%A8%E6%96%87%0A-+%E6%A0%8F%E7%9B%AE%EF%BC%9A%E6%96%B9%E6%B3%95%E9%9B%B7%E8%BE%BE%0A-+%E5%BD%93%E5%89%8D%E7%9B%B8%E5%85%B3%E6%80%A7%EF%BC%9A0.55%0A-+%E5%BD%93%E5%89%8D%E8%AF%81%E6%8D%AE%E7%AD%89%E7%BA%A7%EF%BC%9Atransferable%0A%0A%23%23+%E5%88%A4%E6%96%AD%0A%0A-+%5B+%5D+%E6%8E%A8%E8%8D%90%E4%BF%9D%E7%95%99%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E5%90%88%E7%90%86%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E8%BF%87%E5%BA%A6%E6%8E%A8%E6%B5%8B%0A-+%5B+%5D+%E5%BA%94%E7%A7%BB%E8%87%B3%E5%8F%A6%E4%B8%80%E4%B8%AA%E6%A0%8F%E7%9B%AE%0A-+%5B+%5D+%E5%BB%BA%E8%AE%AE%E7%B2%BE%E8%AF%BB%E5%85%A8%E6%96%87%0A%0A%23%23+%E8%A1%A5%E5%85%85%E8%AF%B4%E6%98%8E%0A%0A"&gt;提交反馈&lt;/a&gt; · cs.LG, stat.ME, stat.ML&lt;/p&gt;</ns1:encoded>
-      <guid isPermaLink="false">arxiv:2608.21729:hepml-v1</guid>
-      <category>cs.LG</category>
-      <category>stat.ME</category>
-      <category>stat.ML</category>
-      <category>track:method_radar</category>
-      <category>后验估计</category>
-      <category>展开</category>
-      <category>无似然推断</category>
-      <category>系统误差处理</category>
-      <pubDate>Sat, 22 Aug 2026 02:17:41 +0000</pubDate>
     </item>
   </channel>
 </rss>
