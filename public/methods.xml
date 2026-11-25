@@ -8,22 +8,50 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Wed, 25 Nov 2026 08:35:26 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 25 Nov 2026 21:45:39 +0000</lastBuildDate>
     <item>
-      <title>A quantum-inspired spiking variational autoencoder for robust anomaly detection at the LHC</title>
-      <link>https://arxiv.org/abs/2611.32261</link>
-      <description>在LHC双喷注潜空间直接验证脉冲VAE异常检测与鲁棒性，属HEP实验方法</description>
-      <content:encoded>&lt;p&gt;&lt;strong&gt;栏目：&lt;/strong&gt;方法雷达&lt;/p&gt;&lt;p&gt;&lt;strong&gt;分析依据：&lt;/strong&gt;仅标题和摘要；未读取全文。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法：&lt;/strong&gt;量子启发的脉冲变分自编码器（QSVAE），基于可微分的Q-LIF神经元，用于无监督异常检测并提升噪声鲁棒性&lt;/p&gt;&lt;p&gt;&lt;strong&gt;相关性：&lt;/strong&gt;0.90；&lt;strong&gt;证据等级：&lt;/strong&gt;direct&lt;/p&gt;&lt;p&gt;&lt;strong&gt;初筛理由：&lt;/strong&gt;在LHC双喷注潜空间直接验证脉冲VAE异常检测与鲁棒性，属HEP实验方法&lt;/p&gt;&lt;p&gt;&lt;strong&gt;摘要来源：&lt;/strong&gt;arXiv&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法总结（摘要分析）：&lt;/strong&gt;论文提出首个全脉冲变分自编码器QSVAE，基于可微分量子启发泄漏积分放电（QLIF）神经元，并在LHC双喷注潜空间进行无监督异常检测基准。摘要报告：噪声扰动下QLIF网络保留0.95清洁准确率，而十二个经典模型仅0.74–0.85；异常分数对扰动的响应低3.5倍。周期性经典对照将效应归因于sin^2膜映射，称其作为原生正则化器，使鲁棒性与量子态空间容量解耦。&lt;/p&gt;&lt;h4&gt;摘要中报告的结论&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;论文提出首个全脉冲变分自编码器QSVAE，其核心是可微分的量子启发泄漏积分放电（QLIF）神经元。&lt;/li&gt;&lt;li&gt;作者将QLIF从基于测量的电路重铸为可微分计算单元，并在LHC双喷注潜空间上与其他经典、脉冲和量子模型进行基准比较。&lt;/li&gt;&lt;li&gt;摘要报告在噪声扰动下QLIF网络保留0.95的清洁准确率，而十二个经典模型的准确率保留率为0.74–0.85。&lt;/li&gt;&lt;li&gt;摘要报告QLIF异常分数对噪声扰动的响应比任一对照模型低3.5倍。&lt;/li&gt;&lt;li&gt;周期性经典对照复现了QLIF效应，摘要将其隔离到sin^2膜映射。&lt;/li&gt;&lt;li&gt;作者称该膜映射是一种原生正则化器，使鲁棒性与量子态空间提供的模型容量解耦，并通过若干基准和消融研究刻画量子-神经形态模型空间。&lt;/li&gt;&lt;li&gt;摘要未说明这些基准使用的是真实LHC数据还是模拟样本，需查阅全文确认。&lt;/li&gt;&lt;li&gt;摘要未说明系统误差、nuisance参数、负权事件、探测器校准与几何、近远端关联及协方差处理，需查阅全文确认。&lt;/li&gt;&lt;li&gt;摘要未给出噪声扰动的具体定义、强度及是否对应探测器/重建/校准扰动，需核查其与simulation-to-data shift的关系。&lt;/li&gt;&lt;li&gt;摘要报告的0.95、0.74–0.85和3.5倍结果需在全文中核对统计不确定度、重复实验与模型选择偏差。&lt;/li&gt;&lt;li&gt;摘要未报告推理延迟，在线触发或低延迟筛选应用需实测。&lt;/li&gt;&lt;li&gt;迁移设想：将QSVAE/QLIF用于LHC双喷注共振搜索的模型无关异常检测，并在潜空间打分中评估对探测器噪声与校准扰动的鲁棒性。&lt;/li&gt;&lt;li&gt;迁移设想：将sin^2膜映射作为正则项加入经典VAE或自编码器，检验噪声鲁棒性与容量解耦是否在实验数据中成立。&lt;/li&gt;&lt;li&gt;迁移设想：探索脉冲/量子启发网络在触发或在线筛选中的低延迟推理可行性，但需独立测量延迟与资源开销。&lt;/li&gt;&lt;/ul&gt;&lt;h4&gt;迁移风险&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;摘要仅在LHC双喷注潜空间报告基准，未说明真实数据或模拟样本、背景构成和信号注入方式，需查全文确认。&lt;/li&gt;&lt;li&gt;摘要未说明系统误差、 nuisance参数、负权事件、探测器几何与校准、近远端关联及协方差处理，需查全文确认，不能据此断言已处理或未处理。&lt;/li&gt;&lt;li&gt;噪声扰动的定义与强度未在摘要给出，需核查是否对应真实探测器/重建/校准扰动以及simulation-to-data shift。&lt;/li&gt;&lt;li&gt;摘要报告的准确率保留和异常分数响应需核对统计不确定度、重复实验和模型选择偏差。&lt;/li&gt;&lt;li&gt;推理延迟未说明，在线/触发应用需实测。&lt;/li&gt;&lt;li&gt;将QLIF或sin^2膜映射迁移到其他异常检测任务时，需验证其优势是否依赖特定潜空间、预处理和噪声模型。&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;strong&gt;最小验证方案：&lt;/strong&gt;最小可行验证：在公开或实验双喷注数据集上复现QSVAE及经典/脉冲/量子对照，固定预处理与潜空间；注入与探测器校准/重建噪声匹配的扰动；比较信号效率-背景拒绝曲线、异常分数稳定性及数据-模拟一致性；对关键 nuisance 参数做剖面或协方差评估；测量推理延迟与资源开销。&lt;/p&gt;&lt;p&gt;&lt;a href="https://arxiv.org/abs/2611.32261"&gt;论文页面&lt;/a&gt; · &lt;a href="https://github.com/quxnb/hepml-digest/issues/new?title=%5B%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%5D+arXiv%3A2611.32261+A+quantum-inspired+spiking+variational+autoencoder+for+robust+anomaly+detection+&amp;amp;body=%23%23+%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%0A%0A-+%E8%AE%BA%E6%96%87%EF%BC%9A%5BarXiv%3A2611.32261%5D%28https%3A%2F%2Farxiv.org%2Fabs%2F2611.32261%29%0A-+%E8%AE%B0%E5%BD%95+ID%EF%BC%9Aarxiv%3A2611.32261%0A-+%E5%88%86%E6%9E%90%E4%BE%9D%E6%8D%AE%EF%BC%9A%E4%BB%85%E6%A0%87%E9%A2%98%E5%92%8C%E6%91%98%E8%A6%81%EF%BC%8C%E6%9C%AA%E8%AF%BB%E5%8F%96%E5%85%A8%E6%96%87%0A-+%E6%A0%8F%E7%9B%AE%EF%BC%9A%E6%96%B9%E6%B3%95%E9%9B%B7%E8%BE%BE%0A-+%E5%BD%93%E5%89%8D%E7%9B%B8%E5%85%B3%E6%80%A7%EF%BC%9A0.90%0A-+%E5%BD%93%E5%89%8D%E8%AF%81%E6%8D%AE%E7%AD%89%E7%BA%A7%EF%BC%9Adirect%0A%0A%23%23+%E5%88%A4%E6%96%AD%0A%0A-+%5B+%5D+%E6%8E%A8%E8%8D%90%E4%BF%9D%E7%95%99%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E5%90%88%E7%90%86%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E8%BF%87%E5%BA%A6%E6%8E%A8%E6%B5%8B%0A-+%5B+%5D+%E5%BA%94%E7%A7%BB%E8%87%B3%E5%8F%A6%E4%B8%80%E4%B8%AA%E6%A0%8F%E7%9B%AE%0A-+%5B+%5D+%E5%BB%BA%E8%AE%AE%E7%B2%BE%E8%AF%BB%E5%85%A8%E6%96%87%0A%0A%23%23+%E8%A1%A5%E5%85%85%E8%AF%B4%E6%98%8E%0A%0A"&gt;提交反馈&lt;/a&gt; · physics.data-an, quant-ph&lt;/p&gt;</content:encoded>
-      <guid isPermaLink="false">arxiv:2611.32261:hepml-v1</guid>
+      <title>Energy-independent neutrino dephasing from an ultralight axion-like background</title>
+      <link>https://arxiv.org/abs/2608.25069</link>
+      <description>唯象研究但用JUNO/KamLAND/PIENU/NA62数据给限制，与中微子振荡测量有实验联系</description>
+      <content:encoded>&lt;p&gt;&lt;strong&gt;栏目：&lt;/strong&gt;方法雷达&lt;/p&gt;&lt;p&gt;&lt;strong&gt;分析依据：&lt;/strong&gt;仅标题和摘要；未读取全文。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法：&lt;/strong&gt;超轻轴子样暗物质背景诱导的中微子退相干/相位差，与反应堆和加速器中微子实验数据比较并给出耦合限制&lt;/p&gt;&lt;p&gt;&lt;strong&gt;相关性：&lt;/strong&gt;0.55；&lt;strong&gt;证据等级：&lt;/strong&gt;transferable&lt;/p&gt;&lt;p&gt;&lt;strong&gt;初筛理由：&lt;/strong&gt;唯象研究但用JUNO/KamLAND/PIENU/NA62数据给限制，与中微子振荡测量有实验联系&lt;/p&gt;&lt;p&gt;&lt;strong&gt;摘要来源：&lt;/strong&gt;INSPIRE (arXiv)&lt;/p&gt;&lt;p&gt;&lt;em&gt;本条目仅完成摘要级筛选。&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;a href="https://arxiv.org/abs/2608.25069"&gt;论文页面&lt;/a&gt; · &lt;a href="https://inspirehep.net/literature/3196199"&gt;INSPIRE 记录&lt;/a&gt; · &lt;a href="https://github.com/quxnb/hepml-digest/issues/new?title=%5B%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%5D+arXiv%3A2608.25069+Energy-independent+neutrino+dephasing+from+an+ultralight+axion-like+background&amp;amp;body=%23%23+%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%0A%0A-+%E8%AE%BA%E6%96%87%EF%BC%9A%5BarXiv%3A2608.25069%5D%28https%3A%2F%2Farxiv.org%2Fabs%2F2608.25069%29%0A-+%E8%AE%B0%E5%BD%95+ID%EF%BC%9Aarxiv%3A2608.25069%0A-+%E5%88%86%E6%9E%90%E4%BE%9D%E6%8D%AE%EF%BC%9A%E4%BB%85%E6%A0%87%E9%A2%98%E5%92%8C%E6%91%98%E8%A6%81%EF%BC%8C%E6%9C%AA%E8%AF%BB%E5%8F%96%E5%85%A8%E6%96%87%0A-+%E6%A0%8F%E7%9B%AE%EF%BC%9A%E6%96%B9%E6%B3%95%E9%9B%B7%E8%BE%BE%0A-+%E5%BD%93%E5%89%8D%E7%9B%B8%E5%85%B3%E6%80%A7%EF%BC%9A0.55%0A-+%E5%BD%93%E5%89%8D%E8%AF%81%E6%8D%AE%E7%AD%89%E7%BA%A7%EF%BC%9Atransferable%0A%0A%23%23+%E5%88%A4%E6%96%AD%0A%0A-+%5B+%5D+%E6%8E%A8%E8%8D%90%E4%BF%9D%E7%95%99%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E5%90%88%E7%90%86%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E8%BF%87%E5%BA%A6%E6%8E%A8%E6%B5%8B%0A-+%5B+%5D+%E5%BA%94%E7%A7%BB%E8%87%B3%E5%8F%A6%E4%B8%80%E4%B8%AA%E6%A0%8F%E7%9B%AE%0A-+%5B+%5D+%E5%BB%BA%E8%AE%AE%E7%B2%BE%E8%AF%BB%E5%85%A8%E6%96%87%0A%0A%23%23+%E8%A1%A5%E5%85%85%E8%AF%B4%E6%98%8E%0A%0A"&gt;提交反馈&lt;/a&gt; · hep-ph, inspire:Phenomenology-HEP&lt;/p&gt;</content:encoded>
+      <guid isPermaLink="false">arxiv:2608.25069:hepml-v1</guid>
+      <category>hep-ph</category>
+      <category>inspire:Phenomenology-HEP</category>
+      <category>track:method_radar</category>
+      <category>中微子振荡</category>
+      <category>中微子非标准相互作用</category>
+      <category>新物理耦合限制</category>
+      <pubDate>Thu, 27 Aug 2026 04:09:10 +0000</pubDate>
+    </item>
+    <item>
+      <title>Neural-network-powered new-physics searches by predictive goodness of fit</title>
+      <link>https://arxiv.org/abs/2611.28414</link>
+      <description>方法可迁移至HEP模型无关搜索与异常检测，在双轻子基准验证，含解析校准与系统误差处理</description>
+      <content:encoded>&lt;p&gt;&lt;strong&gt;栏目：&lt;/strong&gt;方法雷达&lt;/p&gt;&lt;p&gt;&lt;strong&gt;分析依据：&lt;/strong&gt;仅标题和摘要；未读取全文。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法：&lt;/strong&gt;交叉拟合的预测拟合优度检验，利用神经网络拟合新物理偏离，解析校准统计量方差&lt;/p&gt;&lt;p&gt;&lt;strong&gt;相关性：&lt;/strong&gt;0.72；&lt;strong&gt;证据等级：&lt;/strong&gt;transferable&lt;/p&gt;&lt;p&gt;&lt;strong&gt;初筛理由：&lt;/strong&gt;方法可迁移至HEP模型无关搜索与异常检测，在双轻子基准验证，含解析校准与系统误差处理&lt;/p&gt;&lt;p&gt;&lt;strong&gt;摘要来源：&lt;/strong&gt;arXiv&lt;/p&gt;&lt;p&gt;&lt;em&gt;本条目仅完成摘要级筛选。&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;a href="https://arxiv.org/abs/2611.28414"&gt;论文页面&lt;/a&gt; · &lt;a href="https://github.com/quxnb/hepml-digest/issues/new?title=%5B%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%5D+arXiv%3A2611.28414+Neural-network-powered+new-physics+searches+by+predictive+goodness+of+fit&amp;amp;body=%23%23+%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%0A%0A-+%E8%AE%BA%E6%96%87%EF%BC%9A%5BarXiv%3A2611.28414%5D%28https%3A%2F%2Farxiv.org%2Fabs%2F2611.28414%29%0A-+%E8%AE%B0%E5%BD%95+ID%EF%BC%9Aarxiv%3A2611.28414%0A-+%E5%88%86%E6%9E%90%E4%BE%9D%E6%8D%AE%EF%BC%9A%E4%BB%85%E6%A0%87%E9%A2%98%E5%92%8C%E6%91%98%E8%A6%81%EF%BC%8C%E6%9C%AA%E8%AF%BB%E5%8F%96%E5%85%A8%E6%96%87%0A-+%E6%A0%8F%E7%9B%AE%EF%BC%9A%E6%96%B9%E6%B3%95%E9%9B%B7%E8%BE%BE%0A-+%E5%BD%93%E5%89%8D%E7%9B%B8%E5%85%B3%E6%80%A7%EF%BC%9A0.72%0A-+%E5%BD%93%E5%89%8D%E8%AF%81%E6%8D%AE%E7%AD%89%E7%BA%A7%EF%BC%9Atransferable%0A%0A%23%23+%E5%88%A4%E6%96%AD%0A%0A-+%5B+%5D+%E6%8E%A8%E8%8D%90%E4%BF%9D%E7%95%99%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E5%90%88%E7%90%86%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E8%BF%87%E5%BA%A6%E6%8E%A8%E6%B5%8B%0A-+%5B+%5D+%E5%BA%94%E7%A7%BB%E8%87%B3%E5%8F%A6%E4%B8%80%E4%B8%AA%E6%A0%8F%E7%9B%AE%0A-+%5B+%5D+%E5%BB%BA%E8%AE%AE%E7%B2%BE%E8%AF%BB%E5%85%A8%E6%96%87%0A%0A%23%23+%E8%A1%A5%E5%85%85%E8%AF%B4%E6%98%8E%0A%0A"&gt;提交反馈&lt;/a&gt; · physics.data-an, stat.ME&lt;/p&gt;</content:encoded>
+      <guid isPermaLink="false">arxiv:2611.28414:hepml-v1</guid>
       <category>physics.data-an</category>
-      <category>quant-ph</category>
+      <category>stat.ME</category>
       <category>track:method_radar</category>
       <category>异常检测</category>
-      <category>新物理搜寻</category>
-      <category>无监督学习</category>
-      <category>潜空间建模</category>
-      <category>鲁棒性/不确定度量化</category>
-      <pubDate>Tue, 24 Nov 2026 09:32:13 +0000</pubDate>
+      <category>无似然推断</category>
+      <category>模型无关新物理搜索</category>
+      <category>系统误差处理</category>
+      <category>统计校准</category>
+      <pubDate>Fri, 20 Nov 2026 23:36:47 +0000</pubDate>
+    </item>
+    <item>
+      <title>GeoQ: Geometry-Aware Conditional Quantile Error Estimation for Scientific Surrogate Models</title>
+      <link>https://arxiv.org/abs/2608.21652</link>
+      <description>代理模型误差校准可迁移至高能物理快速模拟，但未在中微子或HEP数据上验证</description>
+      <content:encoded>&lt;p&gt;&lt;strong&gt;栏目：&lt;/strong&gt;方法雷达&lt;/p&gt;&lt;p&gt;&lt;strong&gt;分析依据：&lt;/strong&gt;仅标题和摘要；未读取全文。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法：&lt;/strong&gt;几何感知的条件分位数代理模型误差估计与校准框架&lt;/p&gt;&lt;p&gt;&lt;strong&gt;相关性：&lt;/strong&gt;0.55；&lt;strong&gt;证据等级：&lt;/strong&gt;transferable&lt;/p&gt;&lt;p&gt;&lt;strong&gt;初筛理由：&lt;/strong&gt;代理模型误差校准可迁移至高能物理快速模拟，但未在中微子或HEP数据上验证&lt;/p&gt;&lt;p&gt;&lt;em&gt;本条目仅完成摘要级筛选。&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;a href="https://arxiv.org/abs/2608.21652"&gt;论文页面&lt;/a&gt; · &lt;a href="https://github.com/quxnb/hepml-digest/issues/new?title=%5B%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%5D+arXiv%3A2608.21652+GeoQ%3A+Geometry-Aware+Conditional+Quantile+Error+Estimation+for+Scientific+Surrog&amp;amp;body=%23%23+%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%0A%0A-+%E8%AE%BA%E6%96%87%EF%BC%9A%5BarXiv%3A2608.21652%5D%28https%3A%2F%2Farxiv.org%2Fabs%2F2608.21652%29%0A-+%E8%AE%B0%E5%BD%95+ID%EF%BC%9A2608.21652%3Av1%0A-+%E5%88%86%E6%9E%90%E4%BE%9D%E6%8D%AE%EF%BC%9A%E4%BB%85%E6%A0%87%E9%A2%98%E5%92%8C%E6%91%98%E8%A6%81%EF%BC%8C%E6%9C%AA%E8%AF%BB%E5%8F%96%E5%85%A8%E6%96%87%0A-+%E6%A0%8F%E7%9B%AE%EF%BC%9A%E6%96%B9%E6%B3%95%E9%9B%B7%E8%BE%BE%0A-+%E5%BD%93%E5%89%8D%E7%9B%B8%E5%85%B3%E6%80%A7%EF%BC%9A0.55%0A-+%E5%BD%93%E5%89%8D%E8%AF%81%E6%8D%AE%E7%AD%89%E7%BA%A7%EF%BC%9Atransferable%0A%0A%23%23+%E5%88%A4%E6%96%AD%0A%0A-+%5B+%5D+%E6%8E%A8%E8%8D%90%E4%BF%9D%E7%95%99%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E5%90%88%E7%90%86%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E8%BF%87%E5%BA%A6%E6%8E%A8%E6%B5%8B%0A-+%5B+%5D+%E5%BA%94%E7%A7%BB%E8%87%B3%E5%8F%A6%E4%B8%80%E4%B8%AA%E6%A0%8F%E7%9B%AE%0A-+%5B+%5D+%E5%BB%BA%E8%AE%AE%E7%B2%BE%E8%AF%BB%E5%85%A8%E6%96%87%0A%0A%23%23+%E8%A1%A5%E5%85%85%E8%AF%B4%E6%98%8E%0A%0A"&gt;提交反馈&lt;/a&gt; · cs.LG, stat.ML&lt;/p&gt;</content:encoded>
+      <guid isPermaLink="false">arxiv:2608.21652:hepml-v1</guid>
+      <category>cs.LG</category>
+      <category>stat.ML</category>
+      <category>track:method_radar</category>
+      <category>代理模型不确定度量化</category>
+      <category>域外检测</category>
+      <category>快速模拟校准</category>
+      <pubDate>Tue, 25 Aug 2026 04:00:00 +0000</pubDate>
     </item>
     <item>
       <title>Lorentz symmetry in self-supervised representation learning</title>
@@ -39,6 +67,22 @@
       <category>自监督预训练</category>
       <category>表示学习</category>
       <pubDate>Mon, 23 Nov 2026 16:57:04 +0000</pubDate>
+    </item>
+    <item>
+      <title>A quantum-inspired spiking variational autoencoder for robust anomaly detection at the LHC</title>
+      <link>https://arxiv.org/abs/2611.32261</link>
+      <description>在LHC双喷注潜空间直接验证脉冲VAE异常检测与鲁棒性，属HEP实验方法</description>
+      <content:encoded>&lt;p&gt;&lt;strong&gt;栏目：&lt;/strong&gt;方法雷达&lt;/p&gt;&lt;p&gt;&lt;strong&gt;分析依据：&lt;/strong&gt;仅标题和摘要；未读取全文。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法：&lt;/strong&gt;量子启发的脉冲变分自编码器（QSVAE），基于可微分的Q-LIF神经元，用于无监督异常检测并提升噪声鲁棒性&lt;/p&gt;&lt;p&gt;&lt;strong&gt;相关性：&lt;/strong&gt;0.90；&lt;strong&gt;证据等级：&lt;/strong&gt;direct&lt;/p&gt;&lt;p&gt;&lt;strong&gt;初筛理由：&lt;/strong&gt;在LHC双喷注潜空间直接验证脉冲VAE异常检测与鲁棒性，属HEP实验方法&lt;/p&gt;&lt;p&gt;&lt;strong&gt;摘要来源：&lt;/strong&gt;arXiv&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法总结（摘要分析）：&lt;/strong&gt;论文提出首个全脉冲变分自编码器QSVAE，基于可微分量子启发泄漏积分放电（QLIF）神经元，并在LHC双喷注潜空间进行无监督异常检测基准。摘要报告：噪声扰动下QLIF网络保留0.95清洁准确率，而十二个经典模型仅0.74–0.85；异常分数对扰动的响应低3.5倍。周期性经典对照将效应归因于sin^2膜映射，称其作为原生正则化器，使鲁棒性与量子态空间容量解耦。&lt;/p&gt;&lt;h4&gt;摘要中报告的结论&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;论文提出首个全脉冲变分自编码器QSVAE，其核心是可微分的量子启发泄漏积分放电（QLIF）神经元。&lt;/li&gt;&lt;li&gt;作者将QLIF从基于测量的电路重铸为可微分计算单元，并在LHC双喷注潜空间上与其他经典、脉冲和量子模型进行基准比较。&lt;/li&gt;&lt;li&gt;摘要报告在噪声扰动下QLIF网络保留0.95的清洁准确率，而十二个经典模型的准确率保留率为0.74–0.85。&lt;/li&gt;&lt;li&gt;摘要报告QLIF异常分数对噪声扰动的响应比任一对照模型低3.5倍。&lt;/li&gt;&lt;li&gt;周期性经典对照复现了QLIF效应，摘要将其隔离到sin^2膜映射。&lt;/li&gt;&lt;li&gt;作者称该膜映射是一种原生正则化器，使鲁棒性与量子态空间提供的模型容量解耦，并通过若干基准和消融研究刻画量子-神经形态模型空间。&lt;/li&gt;&lt;li&gt;摘要未说明这些基准使用的是真实LHC数据还是模拟样本，需查阅全文确认。&lt;/li&gt;&lt;li&gt;摘要未说明系统误差、nuisance参数、负权事件、探测器校准与几何、近远端关联及协方差处理，需查阅全文确认。&lt;/li&gt;&lt;li&gt;摘要未给出噪声扰动的具体定义、强度及是否对应探测器/重建/校准扰动，需核查其与simulation-to-data shift的关系。&lt;/li&gt;&lt;li&gt;摘要报告的0.95、0.74–0.85和3.5倍结果需在全文中核对统计不确定度、重复实验与模型选择偏差。&lt;/li&gt;&lt;li&gt;摘要未报告推理延迟，在线触发或低延迟筛选应用需实测。&lt;/li&gt;&lt;li&gt;迁移设想：将QSVAE/QLIF用于LHC双喷注共振搜索的模型无关异常检测，并在潜空间打分中评估对探测器噪声与校准扰动的鲁棒性。&lt;/li&gt;&lt;li&gt;迁移设想：将sin^2膜映射作为正则项加入经典VAE或自编码器，检验噪声鲁棒性与容量解耦是否在实验数据中成立。&lt;/li&gt;&lt;li&gt;迁移设想：探索脉冲/量子启发网络在触发或在线筛选中的低延迟推理可行性，但需独立测量延迟与资源开销。&lt;/li&gt;&lt;/ul&gt;&lt;h4&gt;迁移风险&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;摘要仅在LHC双喷注潜空间报告基准，未说明真实数据或模拟样本、背景构成和信号注入方式，需查全文确认。&lt;/li&gt;&lt;li&gt;摘要未说明系统误差、 nuisance参数、负权事件、探测器几何与校准、近远端关联及协方差处理，需查全文确认，不能据此断言已处理或未处理。&lt;/li&gt;&lt;li&gt;噪声扰动的定义与强度未在摘要给出，需核查是否对应真实探测器/重建/校准扰动以及simulation-to-data shift。&lt;/li&gt;&lt;li&gt;摘要报告的准确率保留和异常分数响应需核对统计不确定度、重复实验和模型选择偏差。&lt;/li&gt;&lt;li&gt;推理延迟未说明，在线/触发应用需实测。&lt;/li&gt;&lt;li&gt;将QLIF或sin^2膜映射迁移到其他异常检测任务时，需验证其优势是否依赖特定潜空间、预处理和噪声模型。&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;strong&gt;最小验证方案：&lt;/strong&gt;最小可行验证：在公开或实验双喷注数据集上复现QSVAE及经典/脉冲/量子对照，固定预处理与潜空间；注入与探测器校准/重建噪声匹配的扰动；比较信号效率-背景拒绝曲线、异常分数稳定性及数据-模拟一致性；对关键 nuisance 参数做剖面或协方差评估；测量推理延迟与资源开销。&lt;/p&gt;&lt;p&gt;&lt;a href="https://arxiv.org/abs/2611.32261"&gt;论文页面&lt;/a&gt; · &lt;a href="https://github.com/quxnb/hepml-digest/issues/new?title=%5B%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%5D+arXiv%3A2611.32261+A+quantum-inspired+spiking+variational+autoencoder+for+robust+anomaly+detection+&amp;amp;body=%23%23+%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%0A%0A-+%E8%AE%BA%E6%96%87%EF%BC%9A%5BarXiv%3A2611.32261%5D%28https%3A%2F%2Farxiv.org%2Fabs%2F2611.32261%29%0A-+%E8%AE%B0%E5%BD%95+ID%EF%BC%9Aarxiv%3A2611.32261%0A-+%E5%88%86%E6%9E%90%E4%BE%9D%E6%8D%AE%EF%BC%9A%E4%BB%85%E6%A0%87%E9%A2%98%E5%92%8C%E6%91%98%E8%A6%81%EF%BC%8C%E6%9C%AA%E8%AF%BB%E5%8F%96%E5%85%A8%E6%96%87%0A-+%E6%A0%8F%E7%9B%AE%EF%BC%9A%E6%96%B9%E6%B3%95%E9%9B%B7%E8%BE%BE%0A-+%E5%BD%93%E5%89%8D%E7%9B%B8%E5%85%B3%E6%80%A7%EF%BC%9A0.90%0A-+%E5%BD%93%E5%89%8D%E8%AF%81%E6%8D%AE%E7%AD%89%E7%BA%A7%EF%BC%9Adirect%0A%0A%23%23+%E5%88%A4%E6%96%AD%0A%0A-+%5B+%5D+%E6%8E%A8%E8%8D%90%E4%BF%9D%E7%95%99%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E5%90%88%E7%90%86%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E8%BF%87%E5%BA%A6%E6%8E%A8%E6%B5%8B%0A-+%5B+%5D+%E5%BA%94%E7%A7%BB%E8%87%B3%E5%8F%A6%E4%B8%80%E4%B8%AA%E6%A0%8F%E7%9B%AE%0A-+%5B+%5D+%E5%BB%BA%E8%AE%AE%E7%B2%BE%E8%AF%BB%E5%85%A8%E6%96%87%0A%0A%23%23+%E8%A1%A5%E5%85%85%E8%AF%B4%E6%98%8E%0A%0A"&gt;提交反馈&lt;/a&gt; · physics.data-an, quant-ph&lt;/p&gt;</content:encoded>
+      <guid isPermaLink="false">arxiv:2611.32261:hepml-v1</guid>
+      <category>physics.data-an</category>
+      <category>quant-ph</category>
+      <category>track:method_radar</category>
+      <category>异常检测</category>
+      <category>新物理搜寻</category>
+      <category>无监督学习</category>
+      <category>潜空间建模</category>
+      <category>鲁棒性/不确定度量化</category>
+      <pubDate>Tue, 24 Nov 2026 09:32:13 +0000</pubDate>
     </item>
     <item>
       <title>The role of neutrinos in the formation and evolution of the Universe</title>
@@ -1159,64 +1203,6 @@
       <category>探测器模拟</category>
       <category>超新星中微子探测</category>
       <pubDate>Thu, 05 Feb 2026 04:19:16 +0000</pubDate>
-    </item>
-    <item>
-      <title>Probing large extra dimension at DUNE using beam tunes</title>
-      <link>https://arxiv.org/abs/2409.08620</link>
-      <description>模拟DUNE实验中微子数据约束LED，属中微子实验研究，但理论性较强</description>
-      <content:encoded>&lt;p&gt;&lt;strong&gt;栏目：&lt;/strong&gt;方法雷达&lt;/p&gt;&lt;p&gt;&lt;strong&gt;分析依据：&lt;/strong&gt;仅标题和摘要；未读取全文。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法：&lt;/strong&gt;模拟DUNE远探测器中微子数据，进行统计拟合以约束大额外维度参数&lt;/p&gt;&lt;p&gt;&lt;strong&gt;相关性：&lt;/strong&gt;0.65；&lt;strong&gt;证据等级：&lt;/strong&gt;direct&lt;/p&gt;&lt;p&gt;&lt;strong&gt;初筛理由：&lt;/strong&gt;模拟DUNE实验中微子数据约束LED，属中微子实验研究，但理论性较强&lt;/p&gt;&lt;p&gt;&lt;strong&gt;出版信息（来源记录）：&lt;/strong&gt;JHEP 11 (2024) 141&lt;/p&gt;&lt;p&gt;&lt;strong&gt;摘要来源：&lt;/strong&gt;INSPIRE (Springer)&lt;/p&gt;&lt;p&gt;&lt;em&gt;本条目仅完成摘要级筛选。&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;a href="https://arxiv.org/abs/2409.08620"&gt;论文页面&lt;/a&gt; · &lt;a href="https://doi.org/10.1007/jhep11%282024%29141"&gt;DOI&lt;/a&gt; · &lt;a href="https://inspirehep.net/literature/2828392"&gt;INSPIRE 记录&lt;/a&gt; · &lt;a href="https://github.com/quxnb/hepml-digest/issues/new?title=%5B%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%5D+arXiv%3A2409.08620+Probing+large+extra+dimension+at+DUNE+using+beam+tunes&amp;amp;body=%23%23+%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%0A%0A-+%E8%AE%BA%E6%96%87%EF%BC%9A%5BarXiv%3A2409.08620%5D%28https%3A%2F%2Farxiv.org%2Fabs%2F2409.08620%29%0A-+%E8%AE%B0%E5%BD%95+ID%EF%BC%9Aarxiv%3A2409.08620%0A-+%E5%88%86%E6%9E%90%E4%BE%9D%E6%8D%AE%EF%BC%9A%E4%BB%85%E6%A0%87%E9%A2%98%E5%92%8C%E6%91%98%E8%A6%81%EF%BC%8C%E6%9C%AA%E8%AF%BB%E5%8F%96%E5%85%A8%E6%96%87%0A-+%E6%A0%8F%E7%9B%AE%EF%BC%9A%E6%96%B9%E6%B3%95%E9%9B%B7%E8%BE%BE%0A-+%E5%BD%93%E5%89%8D%E7%9B%B8%E5%85%B3%E6%80%A7%EF%BC%9A0.65%0A-+%E5%BD%93%E5%89%8D%E8%AF%81%E6%8D%AE%E7%AD%89%E7%BA%A7%EF%BC%9Adirect%0A%0A%23%23+%E5%88%A4%E6%96%AD%0A%0A-+%5B+%5D+%E6%8E%A8%E8%8D%90%E4%BF%9D%E7%95%99%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E5%90%88%E7%90%86%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E8%BF%87%E5%BA%A6%E6%8E%A8%E6%B5%8B%0A-+%5B+%5D+%E5%BA%94%E7%A7%BB%E8%87%B3%E5%8F%A6%E4%B8%80%E4%B8%AA%E6%A0%8F%E7%9B%AE%0A-+%5B+%5D+%E5%BB%BA%E8%AE%AE%E7%B2%BE%E8%AF%BB%E5%85%A8%E6%96%87%0A%0A%23%23+%E8%A1%A5%E5%85%85%E8%AF%B4%E6%98%8E%0A%0A"&gt;提交反馈&lt;/a&gt; · hep-ph, inspire:Phenomenology-HEP&lt;/p&gt;</content:encoded>
-      <guid isPermaLink="false">arxiv:2409.08620:hepml-v1</guid>
-      <category>hep-ph</category>
-      <category>inspire:Phenomenology-HEP</category>
-      <category>track:method_radar</category>
-      <category>中微子振荡分析</category>
-      <category>新物理搜索</category>
-      <category>统计推断</category>
-      <pubDate>Mon, 16 Sep 2024 04:09:17 +0000</pubDate>
-    </item>
-    <item>
-      <title>Ultra-High-Energy Transient Source Search using IceCube Neutrinos and Pierre Auger Photon Candidates</title>
-      <link>https://arxiv.org/abs/2507.10994</link>
-      <description>直接使用IceCube中微子实验数据开展多信使瞬变源搜索，属实验中微子研究。</description>
-      <content:encoded>&lt;p&gt;&lt;strong&gt;栏目：&lt;/strong&gt;方法雷达&lt;/p&gt;&lt;p&gt;&lt;strong&gt;分析依据：&lt;/strong&gt;仅标题和摘要；未读取全文。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法：&lt;/strong&gt;联合IceCube多味中微子数据与Auger超高能光子候选，搜索时间-空间符合的瞬变源&lt;/p&gt;&lt;p&gt;&lt;strong&gt;相关性：&lt;/strong&gt;0.85；&lt;strong&gt;证据等级：&lt;/strong&gt;direct&lt;/p&gt;&lt;p&gt;&lt;strong&gt;初筛理由：&lt;/strong&gt;直接使用IceCube中微子实验数据开展多信使瞬变源搜索，属实验中微子研究。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;出版信息（来源记录）：&lt;/strong&gt;PoS ICRC2025 (2025) 955&lt;/p&gt;&lt;p&gt;&lt;strong&gt;摘要来源：&lt;/strong&gt;INSPIRE (SISSA)&lt;/p&gt;&lt;p&gt;&lt;em&gt;本条目仅完成摘要级筛选。&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;a href="https://arxiv.org/abs/2507.10994"&gt;论文页面&lt;/a&gt; · &lt;a href="https://doi.org/10.22323/1.501.0955"&gt;DOI&lt;/a&gt; · &lt;a href="https://inspirehep.net/literature/2946645"&gt;INSPIRE 记录&lt;/a&gt; · &lt;a href="https://github.com/quxnb/hepml-digest/issues/new?title=%5B%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%5D+arXiv%3A2507.10994+Ultra-High-Energy+Transient+Source+Search+using+IceCube+Neutrinos+and+Pierre+Aug&amp;amp;body=%23%23+%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%0A%0A-+%E8%AE%BA%E6%96%87%EF%BC%9A%5BarXiv%3A2507.10994%5D%28https%3A%2F%2Farxiv.org%2Fabs%2F2507.10994%29%0A-+%E8%AE%B0%E5%BD%95+ID%EF%BC%9Aarxiv%3A2507.10994%0A-+%E5%88%86%E6%9E%90%E4%BE%9D%E6%8D%AE%EF%BC%9A%E4%BB%85%E6%A0%87%E9%A2%98%E5%92%8C%E6%91%98%E8%A6%81%EF%BC%8C%E6%9C%AA%E8%AF%BB%E5%8F%96%E5%85%A8%E6%96%87%0A-+%E6%A0%8F%E7%9B%AE%EF%BC%9A%E6%96%B9%E6%B3%95%E9%9B%B7%E8%BE%BE%0A-+%E5%BD%93%E5%89%8D%E7%9B%B8%E5%85%B3%E6%80%A7%EF%BC%9A0.85%0A-+%E5%BD%93%E5%89%8D%E8%AF%81%E6%8D%AE%E7%AD%89%E7%BA%A7%EF%BC%9Adirect%0A%0A%23%23+%E5%88%A4%E6%96%AD%0A%0A-+%5B+%5D+%E6%8E%A8%E8%8D%90%E4%BF%9D%E7%95%99%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E5%90%88%E7%90%86%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E8%BF%87%E5%BA%A6%E6%8E%A8%E6%B5%8B%0A-+%5B+%5D+%E5%BA%94%E7%A7%BB%E8%87%B3%E5%8F%A6%E4%B8%80%E4%B8%AA%E6%A0%8F%E7%9B%AE%0A-+%5B+%5D+%E5%BB%BA%E8%AE%AE%E7%B2%BE%E8%AF%BB%E5%85%A8%E6%96%87%0A%0A%23%23+%E8%A1%A5%E5%85%85%E8%AF%B4%E6%98%8E%0A%0A"&gt;提交反馈&lt;/a&gt; · astro-ph.HE, inspire:Astrophysics&lt;/p&gt;</content:encoded>
-      <guid isPermaLink="false">arxiv:2507.10994:hepml-v1</guid>
-      <category>astro-ph.HE</category>
-      <category>inspire:Astrophysics</category>
-      <category>track:method_radar</category>
-      <category>中微子天文</category>
-      <category>多信使关联分析</category>
-      <category>瞬变源搜索</category>
-      <category>背景估计</category>
-      <pubDate>Wed, 16 Jul 2025 04:27:54 +0000</pubDate>
-    </item>
-    <item>
-      <title>Improved measurements of the TeV-PeV extragalactic neutrino spectrum from joint analyses of IceCube tracks and cascades</title>
-      <link>https://arxiv.org/abs/2507.22234</link>
-      <description>直接报告IceCube中微子能谱测量与联合分析，属实验中微子研究</description>
-      <content:encoded>&lt;p&gt;&lt;strong&gt;栏目：&lt;/strong&gt;方法雷达&lt;/p&gt;&lt;p&gt;&lt;strong&gt;分析依据：&lt;/strong&gt;仅标题和摘要；未读取全文。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法：&lt;/strong&gt;IceCube 10年数据中轨道与级联事件的联合谱分析，检验单幂律与破幂律&lt;/p&gt;&lt;p&gt;&lt;strong&gt;相关性：&lt;/strong&gt;1.00；&lt;strong&gt;证据等级：&lt;/strong&gt;direct&lt;/p&gt;&lt;p&gt;&lt;strong&gt;初筛理由：&lt;/strong&gt;直接报告IceCube中微子能谱测量与联合分析，属实验中微子研究&lt;/p&gt;&lt;p&gt;&lt;strong&gt;出版信息（来源记录）：&lt;/strong&gt;Phys.Rev.D 113 (2026) 062002&lt;/p&gt;&lt;p&gt;&lt;strong&gt;摘要来源：&lt;/strong&gt;INSPIRE (arXiv)&lt;/p&gt;&lt;p&gt;&lt;em&gt;本条目仅完成摘要级筛选。&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;a href="https://arxiv.org/abs/2507.22234"&gt;论文页面&lt;/a&gt; · &lt;a href="https://doi.org/10.1103/4n6v-r7n4"&gt;DOI&lt;/a&gt; · &lt;a href="https://inspirehep.net/literature/2955579"&gt;INSPIRE 记录&lt;/a&gt; · &lt;a href="https://github.com/quxnb/hepml-digest/issues/new?title=%5B%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%5D+arXiv%3A2507.22234+Improved+measurements+of+the+TeV-PeV+extragalactic+neutrino+spectrum+from+joint+&amp;amp;body=%23%23+%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%0A%0A-+%E8%AE%BA%E6%96%87%EF%BC%9A%5BarXiv%3A2507.22234%5D%28https%3A%2F%2Farxiv.org%2Fabs%2F2507.22234%29%0A-+%E8%AE%B0%E5%BD%95+ID%EF%BC%9Aarxiv%3A2507.22234%0A-+%E5%88%86%E6%9E%90%E4%BE%9D%E6%8D%AE%EF%BC%9A%E4%BB%85%E6%A0%87%E9%A2%98%E5%92%8C%E6%91%98%E8%A6%81%EF%BC%8C%E6%9C%AA%E8%AF%BB%E5%8F%96%E5%85%A8%E6%96%87%0A-+%E6%A0%8F%E7%9B%AE%EF%BC%9A%E6%96%B9%E6%B3%95%E9%9B%B7%E8%BE%BE%0A-+%E5%BD%93%E5%89%8D%E7%9B%B8%E5%85%B3%E6%80%A7%EF%BC%9A1.00%0A-+%E5%BD%93%E5%89%8D%E8%AF%81%E6%8D%AE%E7%AD%89%E7%BA%A7%EF%BC%9Adirect%0A%0A%23%23+%E5%88%A4%E6%96%AD%0A%0A-+%5B+%5D+%E6%8E%A8%E8%8D%90%E4%BF%9D%E7%95%99%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E5%90%88%E7%90%86%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E8%BF%87%E5%BA%A6%E6%8E%A8%E6%B5%8B%0A-+%5B+%5D+%E5%BA%94%E7%A7%BB%E8%87%B3%E5%8F%A6%E4%B8%80%E4%B8%AA%E6%A0%8F%E7%9B%AE%0A-+%5B+%5D+%E5%BB%BA%E8%AE%AE%E7%B2%BE%E8%AF%BB%E5%85%A8%E6%96%87%0A%0A%23%23+%E8%A1%A5%E5%85%85%E8%AF%B4%E6%98%8E%0A%0A"&gt;提交反馈&lt;/a&gt; · astro-ph.HE, inspire:Astrophysics&lt;/p&gt;</content:encoded>
-      <guid isPermaLink="false">arxiv:2507.22234:hepml-v1</guid>
-      <category>astro-ph.HE</category>
-      <category>inspire:Astrophysics</category>
-      <category>track:method_radar</category>
-      <category>中微子能谱测量</category>
-      <category>事例重建</category>
-      <category>联合拟合</category>
-      <category>背景与系统误差处理</category>
-      <pubDate>Thu, 31 Jul 2025 04:20:15 +0000</pubDate>
-    </item>
-    <item>
-      <title>Evidence for a Spectral Break or Curvature in the Spectrum of Astrophysical Neutrinos from 5 TeV--10 PeV</title>
-      <link>https://arxiv.org/abs/2507.22233</link>
-      <description>直接报告 IceCube 中微子能谱测量与谱破缺证据，属重要实验结果</description>
-      <content:encoded>&lt;p&gt;&lt;strong&gt;栏目：&lt;/strong&gt;方法雷达&lt;/p&gt;&lt;p&gt;&lt;strong&gt;分析依据：&lt;/strong&gt;仅标题和摘要；未读取全文。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法：&lt;/strong&gt;IceCube 全味 astrophysical 中微子能谱联合拟合，比较单幂律、对数抛物线、破幂律模型&lt;/p&gt;&lt;p&gt;&lt;strong&gt;相关性：&lt;/strong&gt;0.95；&lt;strong&gt;证据等级：&lt;/strong&gt;direct&lt;/p&gt;&lt;p&gt;&lt;strong&gt;初筛理由：&lt;/strong&gt;直接报告 IceCube 中微子能谱测量与谱破缺证据，属重要实验结果&lt;/p&gt;&lt;p&gt;&lt;strong&gt;出版信息（来源记录）：&lt;/strong&gt;Phys.Rev.Lett. 136 (2026) 121002&lt;/p&gt;&lt;p&gt;&lt;strong&gt;摘要来源：&lt;/strong&gt;INSPIRE (arXiv)&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法总结（摘要分析）：&lt;/strong&gt;IceCube 联合两个独立分析的全味中微子样本，改进天体物理中微子能谱测量，并比较单幂律、对数抛物线与破幂律模型。结果显示约30 TeV以下能段谱比更高能段更硬，高能段可由幂律良好描述；对数抛物线和破幂律均更优，破幂律为首选，且在5 TeV–10 PeV范围以&amp;gt;4σ拒绝单幂律，为宇宙中微子源性质提供新约束。&lt;/p&gt;&lt;h4&gt;摘要中报告的结论&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;IceCube 通过联合两个独立分析中的互补中微子样本，改进了全味天体物理中微子能谱测量。&lt;/li&gt;&lt;li&gt;两个分析均显示约30 TeV以下能段的谱比更高能段更硬；更高能段可由幂律良好描述。&lt;/li&gt;&lt;li&gt;能谱用对数抛物线或破幂律描述优于单幂律，破幂律为首选模型。&lt;/li&gt;&lt;li&gt;在5 TeV–10 PeV能量范围，两个分析均以&amp;gt;4σ显著性拒绝单幂律。&lt;/li&gt;&lt;li&gt;该测量为宇宙中微子源性质提供新约束。&lt;/li&gt;&lt;/ul&gt;&lt;h4&gt;对高能实验物理的潜在帮助&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;将多样本联合似然与分层贝叶斯模型比较用于其他中微子实验的能谱分析，系统处理样本相关性和 nuisance 参数（迁移设想）。&lt;/li&gt;&lt;li&gt;用机器学习改进事件能量重建、味道分类或背景判别，以提升低能样本利用率和谱测量精度（迁移设想，需真实数据验证）。&lt;/li&gt;&lt;li&gt;采用仿真到数据的域适应或校准方法，研究能量响应和探测器模拟偏差对谱模型选择的影响（迁移设想）。&lt;/li&gt;&lt;li&gt;将破幂律/对数抛物线模型选择推广到宇宙源种群推断或多信使关联分析（迁移设想）。&lt;/li&gt;&lt;/ul&gt;&lt;h4&gt;迁移风险&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;两个独立分析可能共享探测器系统误差、能量尺度或部分数据，联合拟合需核查样本相关性；摘要未说明协方差与系统误差处理，需查阅全文确认。&lt;/li&gt;&lt;li&gt;破幂律/对数抛物线的模型偏好依赖能区、阈值和背景建模；模型选择结果不等同于源物理谱的最终确认。&lt;/li&gt;&lt;li&gt;低能段事件重建、味道分类和仿真到数据差异可能影响谱硬度判断；摘要未说明校准与负权事件处理，需查阅全文确认。&lt;/li&gt;&lt;li&gt;引入机器学习重建或分类时，需核查训练样本偏差、推理延迟和系统误差传播；不能仅凭方法替换声称降低系统误差。&lt;/li&gt;&lt;li&gt;全味样本联合需核查不同味道与探测器几何响应的差异及置换对称性假设；摘要未说明相关处理，需查阅全文确认。&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;strong&gt;最小验证方案：&lt;/strong&gt;最小可行验证：在似然框架中复现单幂律、对数抛物线与破幂律的嵌套模型比较，用伪实验校准&amp;gt;4σ显著性；核查两分析样本协方差、能量尺度与背景 nuisance 参数；用独立样本或分能段交叉检验；对机器学习重建/分类做闭合测试和真实数据旁带验证，并报告系统误差传播。&lt;/p&gt;&lt;p&gt;&lt;a href="https://arxiv.org/abs/2507.22233"&gt;论文页面&lt;/a&gt; · &lt;a href="https://doi.org/10.1103/2gh9-d4q7"&gt;DOI&lt;/a&gt; · &lt;a href="https://inspirehep.net/literature/2955595"&gt;INSPIRE 记录&lt;/a&gt; · &lt;a href="https://github.com/quxnb/hepml-digest/issues/new?title=%5B%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%5D+arXiv%3A2507.22233+Evidence+for+a+Spectral+Break+or+Curvature+in+the+Spectrum+of+Astrophysical+Neut&amp;amp;body=%23%23+%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%0A%0A-+%E8%AE%BA%E6%96%87%EF%BC%9A%5BarXiv%3A2507.22233%5D%28https%3A%2F%2Farxiv.org%2Fabs%2F2507.22233%29%0A-+%E8%AE%B0%E5%BD%95+ID%EF%BC%9Aarxiv%3A2507.22233%0A-+%E5%88%86%E6%9E%90%E4%BE%9D%E6%8D%AE%EF%BC%9A%E4%BB%85%E6%A0%87%E9%A2%98%E5%92%8C%E6%91%98%E8%A6%81%EF%BC%8C%E6%9C%AA%E8%AF%BB%E5%8F%96%E5%85%A8%E6%96%87%0A-+%E6%A0%8F%E7%9B%AE%EF%BC%9A%E6%96%B9%E6%B3%95%E9%9B%B7%E8%BE%BE%0A-+%E5%BD%93%E5%89%8D%E7%9B%B8%E5%85%B3%E6%80%A7%EF%BC%9A0.95%0A-+%E5%BD%93%E5%89%8D%E8%AF%81%E6%8D%AE%E7%AD%89%E7%BA%A7%EF%BC%9Adirect%0A%0A%23%23+%E5%88%A4%E6%96%AD%0A%0A-+%5B+%5D+%E6%8E%A8%E8%8D%90%E4%BF%9D%E7%95%99%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E5%90%88%E7%90%86%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E8%BF%87%E5%BA%A6%E6%8E%A8%E6%B5%8B%0A-+%5B+%5D+%E5%BA%94%E7%A7%BB%E8%87%B3%E5%8F%A6%E4%B8%80%E4%B8%AA%E6%A0%8F%E7%9B%AE%0A-+%5B+%5D+%E5%BB%BA%E8%AE%AE%E7%B2%BE%E8%AF%BB%E5%85%A8%E6%96%87%0A%0A%23%23+%E8%A1%A5%E5%85%85%E8%AF%B4%E6%98%8E%0A%0A"&gt;提交反馈&lt;/a&gt; · astro-ph.HE, inspire:Astrophysics&lt;/p&gt;</content:encoded>
-      <guid isPermaLink="false">arxiv:2507.22233:hepml-v1</guid>
-      <category>astro-ph.HE</category>
-      <category>inspire:Astrophysics</category>
-      <category>track:method_radar</category>
-      <category>中微子能谱测量</category>
-      <category>模型比较</category>
-      <category>联合拟合</category>
-      <pubDate>Thu, 31 Jul 2025 04:20:49 +0000</pubDate>
     </item>
   </channel>
 </rss>
