@@ -18,6 +18,7 @@ dependencies = [
 
 [project.optional-dependencies]
 dev = ["pytest>=8,<10"]
+cos = ["cos-python-sdk-v5>=1.9,<2"]
 
 [project.scripts]
 hepml-digest = "hepml_digest.cli:main"

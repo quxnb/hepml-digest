@@ -15,13 +15,6 @@ from .pipeline import run_pipeline
 from .store import load_state, state_lock
 
 
-def _read_prompt(path: Path) -> str:
-    try:
-        return path.read_text(encoding="utf-8")
-    except FileNotFoundError as exc:
-        raise RuntimeError(f"Missing prompt file: {path}") from exc
-
-
 def _demo_papers() -> list[Paper]:
     now = datetime.now(timezone.utc)
     return [
@@ -116,8 +109,6 @@ def main() -> None:
         with state_lock(settings.state_file):
             state = load_state(settings.state_file)
         if args.export_evaluation:
-            if args.evaluation_limit <= 0:
-                parser.error("--evaluation-limit must be positive")
             dataset = export_evaluation(
                 state, args.export_evaluation, settings.publish_threshold,
                 args.evaluation_limit,
@@ -138,8 +129,8 @@ def main() -> None:
         analyzer = DeepSeekAnalyzer(
             settings.screening_model,
             settings.review_model,
-            _read_prompt(settings.prompt_dir / "screen.txt"),
-            _read_prompt(settings.prompt_dir / "review.txt"),
+            (settings.prompt_dir / "screen.txt").read_text(encoding="utf-8"),
+            (settings.prompt_dir / "review.txt").read_text(encoding="utf-8"),
             settings.request_timeout_seconds,
             review_max_tokens=settings.review_max_tokens,
             review_reasoning_effort=settings.review_reasoning_effort,

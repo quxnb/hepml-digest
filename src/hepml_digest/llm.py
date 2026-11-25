@@ -10,6 +10,7 @@ from urllib.parse import urlsplit
 
 from openai import (
     APIConnectionError,
+    APIError,
     APIStatusError,
     APITimeoutError,
     AuthenticationError,
@@ -245,10 +246,8 @@ class DeepSeekAnalyzer:
             if finish == "length":
                 raise OutputLimitExceeded("Completion stopped with finish_reason=length")
             content = choice.message.content
-            if not content or not content.strip():
-                raise ValueError("Model returned empty content")
             return response_model.model_validate_json(content)
-        except Exception as error:
+        except (APIError, ValueError, TypeError, OutputLimitExceeded) as error:
             self.usage.failed_calls += 1
             self.usage.last_failure_kind = failure_kind(error)
             LOGGER.warning(

@@ -87,14 +87,7 @@ jobs:
           fi
           git diff --cached --quiet || git commit -m "daily digest"
           push_url="https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
-          if ! git push "${push_url}" "HEAD:${GITHUB_REF_NAME}"; then
-            git fetch origin "${GITHUB_REF_NAME}"
-            if [ "$(git rev-parse HEAD)" != "$(git rev-parse "origin/${GITHUB_REF_NAME}")" ]; then
-              echo "::error::Remote branch advanced during the build; rerun from its latest revision."
-              exit 1
-            fi
-            echo "Digest commit is already the remote branch tip."
-          fi
+          git push "${push_url}" "HEAD:${GITHUB_REF_NAME}"
           echo "revision=$(git rev-parse HEAD)" >> "${GITHUB_OUTPUT}"
 
       - name: Fail incomplete digest

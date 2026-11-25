@@ -5,9 +5,12 @@ import time
 from datetime import datetime, timedelta, timezone
 from typing import Callable, TypeVar
 
+from openai import APIError
+from pydantic import ValidationError
+
 from .config import Settings
 from .fetch import enrich_paper, fetch_feeds, fetch_inspire, fetch_recent, fetch_updates, merge_duplicates, select_candidates
-from .llm import APICallBudgetExceeded, TERMINAL_API_FAILURES, Analyzer, failure_kind
+from .llm import APICallBudgetExceeded, TERMINAL_API_FAILURES, Analyzer, OutputLimitExceeded, failure_kind
 from .models import Paper, Record, WorkState
 from .publish import is_publishable, publish
 from .store import load_state, prune_state, save_state, state_lock
@@ -119,7 +122,7 @@ def _run_pipeline(
         before = usage.failed_calls
         try:
             result = operation()
-        except Exception as error:
+        except (APIError, ValidationError, OutputLimitExceeded, APICallBudgetExceeded) as error:
             if isinstance(error, APICallBudgetExceeded) and usage.failed_calls == before:
                 return None
             failed_papers[stage] += 1

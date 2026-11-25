@@ -7,7 +7,6 @@ import tempfile
 from datetime import datetime, timezone
 from pathlib import Path
 from urllib.parse import quote, urlencode
-from xml.etree import ElementTree
 
 from feedgen.feed import FeedGenerator
 
@@ -29,7 +28,6 @@ def _xml_text(value: str) -> str:
 
 
 def _atomic_write(path: Path, payload: bytes) -> None:
-    path.parent.mkdir(parents=True, exist_ok=True)
     descriptor, temporary_name = tempfile.mkstemp(
         prefix=f".{path.name}.", dir=path.parent
     )
@@ -168,8 +166,9 @@ def _build_feed(
     feed.title(_xml_text(feed_title))
     feed.subtitle("统计与机器学习方法，以及实验中微子研究进展")
     feed.author({"name": "HEP-ML Digest Bot"})
-    feed.link(href=_xml_text(site_url), rel="alternate")
+    # feedgen uses the last link as the RSS channel link.
     feed.link(href=_xml_text(self_url), rel="self")
+    feed.link(href=_xml_text(site_url), rel="alternate")
     feed.language("zh-CN")
     feed.updated(now)
 
@@ -319,20 +318,11 @@ def publish(
         feedback_repository,
     )
 
-    def rss_payload(generated_feed: FeedGenerator) -> bytes:
-        root = ElementTree.fromstring(generated_feed.rss_str(pretty=True))
-        channel_link = root.find("./channel/link")
-        if channel_link is not None:
-            channel_link.text = site_url
-        return ElementTree.tostring(
-            root, encoding="utf-8", xml_declaration=True
-        )
-
     payloads = {
         "atom.xml": atom_feed.atom_str(pretty=True),
-        "rss.xml": rss_payload(rss_feed),
-        "methods.xml": rss_payload(method_feed),
-        "hep-applications.xml": rss_payload(application_feed),
+        "rss.xml": rss_feed.rss_str(pretty=True),
+        "methods.xml": method_feed.rss_str(pretty=True),
+        "hep-applications.xml": application_feed.rss_str(pretty=True),
         "index.html": _xml_text(
             _build_index(records, site_url, feed_title, feedback_repository)
         ).encode("utf-8"),

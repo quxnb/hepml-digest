@@ -56,8 +56,10 @@ def parse_arxiv_identifier(url: str) -> tuple[str, int | None]:
     return raw, None
 
 
-def _clean(value: str) -> str:
-    return " ".join(html.unescape(TAG_RE.sub(" ", value or "")).split())
+def _clean(value: str, *, html_content: bool = False) -> str:
+    # Plain-text source fields can contain inequalities, not HTML tags.
+    text = TAG_RE.sub(" ", value or "") if html_content else value or ""
+    return " ".join(html.unescape(text).split())
 
 
 def _entry_datetime(entry: dict, name: str) -> datetime:
@@ -66,18 +68,13 @@ def _entry_datetime(entry: dict, name: str) -> datetime:
     parsed = entry.get(f"{name}_parsed")
     if parsed:
         return datetime.fromtimestamp(calendar.timegm(parsed), tz=timezone.utc)
-    value = entry.get(name)
-    if value:
-        result = parsedate_to_datetime(value)
-        return result if result.tzinfo else result.replace(tzinfo=timezone.utc)
-    return datetime.now(timezone.utc)
+    result = parsedate_to_datetime(entry[name])
+    return result if result.tzinfo else result.replace(tzinfo=timezone.utc)
 
 
 def _entry_link(entry: dict) -> str:
     candidates = [candidate for candidate in (entry.get("link"), entry.get("id"))
                   if candidate and ("arxiv.org/abs/" in candidate or "arxiv.org/pdf/" in candidate)]
-    if not candidates:
-        raise ValueError("RSS entry has no arXiv link")
     return max(candidates, key=lambda candidate: parse_arxiv_identifier(candidate)[1] or 0)
 
 
@@ -117,9 +114,17 @@ def _parse_entries(parsed, source_category: str | None = None) -> list[Paper]:
                 Paper(
                     arxiv_id=base_id,
                     version=version,
-                    title=_clean(entry.get("title", "")),
+                    title=_clean(
+                        entry.get("title", ""),
+                        html_content=entry.get("title_detail", {}).get("type") in {
+                            "text/html", "application/xhtml+xml",
+                        },
+                    ),
                     abstract=_clean(
-                        entry.get("summary", entry.get("description", ""))
+                        entry.get("summary", entry.get("description", "")),
+                        html_content=entry.get("summary_detail", {}).get("type") in {
+                            "text/html", "application/xhtml+xml",
+                        },
                     ),
                     authors=authors,
                     link=f"https://arxiv.org/abs/{base_id}",
@@ -131,7 +136,7 @@ def _parse_entries(parsed, source_category: str | None = None) -> list[Paper]:
                     abstract_source="arXiv",
                 )
             )
-        except (ValueError, TypeError) as exc:
+        except (KeyError, ValueError, TypeError) as exc:
             LOGGER.warning("Skipping malformed RSS entry: %s", exc)
     return papers
 
@@ -255,13 +260,19 @@ def fetch_updates(
         # The API supports sorting, but not a lastUpdatedDate range filter.
         # Scan newest updates until crossing the overlap window's lower bound.
         yield [paper for paper in papers if since <= paper.updated <= until]
+        if parsed.bozo:
+            raise ValueError("arXiv update response is malformed")
         if len(papers) != count:
             raise ValueError("arXiv update page contains malformed entries")
         total = parsed.feed.get("opensearch_totalresults")
+        if total is not None:
+            total = int(total)
+            if count < min(page_size, max(0, total - start)):
+                raise RuntimeError("arXiv returned an incomplete result page")
         if (
             any(paper.updated < since for paper in papers)
             or count < page_size
-            or (total is not None and start + count >= int(total))
+            or (total is not None and start + count >= total)
         ):
             return
     raise RuntimeError(

@@ -85,6 +85,18 @@ https://<用户名>.github.io/<仓库名>/atom.xml
 GitHub Pages 在部分国内网络下不稳定，能否订阅取决于阅读器实际抓取所在的网络。
 个人阅读器能正常抓取时，无需增加另一套部署。
 
+可选的腾讯 COS 上传脚本需要单独安装 SDK：
+
+```bash
+python -m pip install '.[cos]'
+python scripts/upload_cos.py public
+```
+
+运行前设置 `TENCENT_CLOUD_SECRET_ID`、`TENCENT_CLOUD_SECRET_KEY`、`COS_BUCKET`、
+`COS_REGION` 和 `PUBLIC_SITE_URL`；可用 `COS_PREFIX` 指定对象键前缀。
+脚本会覆盖同名对象。上传后只检查公开 RSS 是否可访问，不确认 CDN 已刷新到本次版本。
+COS 依赖不包含在默认的 `requirements.lock` 中，以上可选安装命令不使用该锁文件。
+
 ## 本地真实运行（可选）
 
 将同名模型配置导出为环境变量后，用独立目录做小规模验收；这会调用付费 API：
