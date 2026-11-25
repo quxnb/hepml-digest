@@ -2,11 +2,12 @@ from datetime import datetime, timedelta, timezone
 
 import httpx
 import pytest
-from openai import AuthenticationError, BadRequestError, NotFoundError, PermissionDeniedError
+from openai import APIConnectionError, AuthenticationError, BadRequestError, NotFoundError, PermissionDeniedError
 
 from hepml_digest.cli import _demo_papers, main
 from hepml_digest.config import Settings
 from hepml_digest.llm import APICallBudgetExceeded, DemoAnalyzer, OutputLimitExceeded
+from hepml_digest.models import Review, Screening
 from hepml_digest.pipeline import run_pipeline
 from hepml_digest.store import load_state, save_state
 
@@ -63,11 +64,11 @@ def test_bad_responses_are_cooled_down_quarantined_and_unlocked_by_revision(tmp_
     class InvalidAnalyzer(DemoAnalyzer):
         def screen(self, paper):
             if stage == "screening":
-                raise ValueError("invalid JSON")
+                return Screening.model_validate_json("invalid JSON")
             return super().screen(paper)
 
         def review(self, paper, screening):
-            raise ValueError("invalid JSON")
+            return Review.model_validate_json("invalid JSON")
 
     settings = settings_for(tmp_path, max_deep_reviews=1, max_paper_failures=3)
     paper = _demo_papers()[0]
@@ -92,7 +93,7 @@ def test_bad_responses_are_cooled_down_quarantined_and_unlocked_by_revision(tmp_
 def test_transient_outages_do_not_quarantine_a_paper(tmp_path):
     class OfflineAnalyzer(DemoAnalyzer):
         def screen(self, paper):
-            raise RuntimeError("temporary outage")
+            raise APIConnectionError(request=httpx.Request("POST", "https://service.example/v1"))
 
     settings = settings_for(tmp_path, max_deep_reviews=0, max_paper_failures=1)
     for index in range(3):
@@ -302,12 +303,12 @@ def test_partial_analysis_failure_warns_and_counts_despite_other_successes(tmp_p
     class PartiallyBrokenAnalyzer(DemoAnalyzer):
         def screen(self, paper):
             if failed_stage == "screening" and paper.version_key == papers[0].version_key:
-                raise RuntimeError("temporary outage")
+                raise APIConnectionError(request=httpx.Request("POST", "https://service.example/v1"))
             return super().screen(paper)
 
         def review(self, paper, screening):
             if failed_stage == "review" and paper.version_key == papers[0].version_key:
-                raise RuntimeError("temporary outage")
+                raise APIConnectionError(request=httpx.Request("POST", "https://service.example/v1"))
             return super().review(paper, screening)
 
     settings = settings_for(tmp_path, max_deep_reviews=2)

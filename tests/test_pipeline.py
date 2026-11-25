@@ -3,7 +3,9 @@ from datetime import datetime, timedelta, timezone
 from types import SimpleNamespace
 from xml.etree import ElementTree
 
+import httpx
 import pytest
+from openai import APIConnectionError
 
 from hepml_digest.cli import _demo_papers
 from hepml_digest.config import Settings
@@ -241,7 +243,7 @@ class FailingAnalyzer(DemoAnalyzer):
 
     def screen(self, paper):
         self.calls += 1
-        raise RuntimeError("API unavailable")
+        raise APIConnectionError(request=httpx.Request("POST", "https://service.example/v1"))
 
 
 def test_pipeline_stops_after_consecutive_api_failures(tmp_path: Path):
