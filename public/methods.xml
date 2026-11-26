@@ -8,7 +8,22 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Thu, 26 Nov 2026 08:20:19 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 26 Nov 2026 21:33:49 +0000</lastBuildDate>
+    <item>
+      <title>probly: Uncertainty-Aware Machine Learning</title>
+      <link>https://arxiv.org/abs/2611.29762</link>
+      <description>通用不确定性工具包，未在中微子或HEP验证，但方法可迁移至实验分类与异常检测</description>
+      <content:encoded>&lt;p&gt;&lt;strong&gt;栏目：&lt;/strong&gt;方法雷达&lt;/p&gt;&lt;p&gt;&lt;strong&gt;分析依据：&lt;/strong&gt;仅标题和摘要；未读取全文。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法：&lt;/strong&gt;不确定性感知机器学习的模块化Python工具包，支持二阶分布、可信集与保形预测，覆盖选择预测、OOD检测与主动学习&lt;/p&gt;&lt;p&gt;&lt;strong&gt;相关性：&lt;/strong&gt;0.55；&lt;strong&gt;证据等级：&lt;/strong&gt;transferable&lt;/p&gt;&lt;p&gt;&lt;strong&gt;初筛理由：&lt;/strong&gt;通用不确定性工具包，未在中微子或HEP验证，但方法可迁移至实验分类与异常检测&lt;/p&gt;&lt;p&gt;&lt;strong&gt;摘要来源：&lt;/strong&gt;arXiv&lt;/p&gt;&lt;p&gt;&lt;em&gt;本条目仅完成摘要级筛选。&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;a href="https://arxiv.org/abs/2611.29762"&gt;论文页面&lt;/a&gt; · &lt;a href="https://github.com/quxnb/hepml-digest/issues/new?title=%5B%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%5D+arXiv%3A2611.29762+probly%3A+Uncertainty-Aware+Machine+Learning&amp;amp;body=%23%23+%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%0A%0A-+%E8%AE%BA%E6%96%87%EF%BC%9A%5BarXiv%3A2611.29762%5D%28https%3A%2F%2Farxiv.org%2Fabs%2F2611.29762%29%0A-+%E8%AE%B0%E5%BD%95+ID%EF%BC%9Aarxiv%3A2611.29762%0A-+%E5%88%86%E6%9E%90%E4%BE%9D%E6%8D%AE%EF%BC%9A%E4%BB%85%E6%A0%87%E9%A2%98%E5%92%8C%E6%91%98%E8%A6%81%EF%BC%8C%E6%9C%AA%E8%AF%BB%E5%8F%96%E5%85%A8%E6%96%87%0A-+%E6%A0%8F%E7%9B%AE%EF%BC%9A%E6%96%B9%E6%B3%95%E9%9B%B7%E8%BE%BE%0A-+%E5%BD%93%E5%89%8D%E7%9B%B8%E5%85%B3%E6%80%A7%EF%BC%9A0.55%0A-+%E5%BD%93%E5%89%8D%E8%AF%81%E6%8D%AE%E7%AD%89%E7%BA%A7%EF%BC%9Atransferable%0A%0A%23%23+%E5%88%A4%E6%96%AD%0A%0A-+%5B+%5D+%E6%8E%A8%E8%8D%90%E4%BF%9D%E7%95%99%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E5%90%88%E7%90%86%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E8%BF%87%E5%BA%A6%E6%8E%A8%E6%B5%8B%0A-+%5B+%5D+%E5%BA%94%E7%A7%BB%E8%87%B3%E5%8F%A6%E4%B8%80%E4%B8%AA%E6%A0%8F%E7%9B%AE%0A-+%5B+%5D+%E5%BB%BA%E8%AE%AE%E7%B2%BE%E8%AF%BB%E5%85%A8%E6%96%87%0A%0A%23%23+%E8%A1%A5%E5%85%85%E8%AF%B4%E6%98%8E%0A%0A"&gt;提交反馈&lt;/a&gt; · cs.LG, stat.ML&lt;/p&gt;</content:encoded>
+      <guid isPermaLink="false">arxiv:2611.29762:hepml-v1</guid>
+      <category>cs.LG</category>
+      <category>stat.ML</category>
+      <category>track:method_radar</category>
+      <category>不确定度量化</category>
+      <category>分类器校准</category>
+      <category>异常检测</category>
+      <category>系统误差处理</category>
+      <pubDate>Sun, 22 Nov 2026 20:51:06 +0000</pubDate>
+    </item>
     <item>
       <title>Mathematical inverse problem for the world data inference of the parton distribution functions of the proton</title>
       <link>https://arxiv.org/abs/2609.11896</link>
@@ -1211,48 +1226,6 @@
       <category>无似然推断</category>
       <category>灵敏度估计</category>
       <pubDate>Fri, 06 Feb 2026 04:16:29 +0000</pubDate>
-    </item>
-    <item>
-      <title>Equivariant Modeling with Polynomial Features via Minimal Homogeneous Generators</title>
-      <link>https://arxiv.org/abs/2611.24896</link>
-      <description>提供群等变建模通用方法，可迁移至高能物理对称性任务，未在HEP验证。</description>
-      <content:encoded>&lt;p&gt;&lt;strong&gt;栏目：&lt;/strong&gt;方法雷达&lt;/p&gt;&lt;p&gt;&lt;strong&gt;分析依据：&lt;/strong&gt;仅标题和摘要；未读取全文。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法：&lt;/strong&gt;基于极小齐次生成元的等变多项式特征建模与学习框架&lt;/p&gt;&lt;p&gt;&lt;strong&gt;相关性：&lt;/strong&gt;0.55；&lt;strong&gt;证据等级：&lt;/strong&gt;transferable&lt;/p&gt;&lt;p&gt;&lt;strong&gt;初筛理由：&lt;/strong&gt;提供群等变建模通用方法，可迁移至高能物理对称性任务，未在HEP验证。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;摘要来源：&lt;/strong&gt;arXiv&lt;/p&gt;&lt;p&gt;&lt;em&gt;本条目仅完成摘要级筛选。&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;a href="https://arxiv.org/abs/2611.24896"&gt;论文页面&lt;/a&gt; · &lt;a href="https://github.com/quxnb/hepml-digest/issues/new?title=%5B%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%5D+arXiv%3A2611.24896+Equivariant+Modeling+with+Polynomial+Features+via+Minimal+Homogeneous+Generators&amp;amp;body=%23%23+%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%0A%0A-+%E8%AE%BA%E6%96%87%EF%BC%9A%5BarXiv%3A2611.24896%5D%28https%3A%2F%2Farxiv.org%2Fabs%2F2611.24896%29%0A-+%E8%AE%B0%E5%BD%95+ID%EF%BC%9Aarxiv%3A2611.24896%0A-+%E5%88%86%E6%9E%90%E4%BE%9D%E6%8D%AE%EF%BC%9A%E4%BB%85%E6%A0%87%E9%A2%98%E5%92%8C%E6%91%98%E8%A6%81%EF%BC%8C%E6%9C%AA%E8%AF%BB%E5%8F%96%E5%85%A8%E6%96%87%0A-+%E6%A0%8F%E7%9B%AE%EF%BC%9A%E6%96%B9%E6%B3%95%E9%9B%B7%E8%BE%BE%0A-+%E5%BD%93%E5%89%8D%E7%9B%B8%E5%85%B3%E6%80%A7%EF%BC%9A0.55%0A-+%E5%BD%93%E5%89%8D%E8%AF%81%E6%8D%AE%E7%AD%89%E7%BA%A7%EF%BC%9Atransferable%0A%0A%23%23+%E5%88%A4%E6%96%AD%0A%0A-+%5B+%5D+%E6%8E%A8%E8%8D%90%E4%BF%9D%E7%95%99%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E5%90%88%E7%90%86%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E8%BF%87%E5%BA%A6%E6%8E%A8%E6%B5%8B%0A-+%5B+%5D+%E5%BA%94%E7%A7%BB%E8%87%B3%E5%8F%A6%E4%B8%80%E4%B8%AA%E6%A0%8F%E7%9B%AE%0A-+%5B+%5D+%E5%BB%BA%E8%AE%AE%E7%B2%BE%E8%AF%BB%E5%85%A8%E6%96%87%0A%0A%23%23+%E8%A1%A5%E5%85%85%E8%AF%B4%E6%98%8E%0A%0A"&gt;提交反馈&lt;/a&gt; · cs.LG, stat.ML&lt;/p&gt;</content:encoded>
-      <guid isPermaLink="false">arxiv:2611.24896:hepml-v1</guid>
-      <category>cs.LG</category>
-      <category>stat.ML</category>
-      <category>track:method_radar</category>
-      <category>对称性约束的机器学习</category>
-      <category>模拟加速</category>
-      <category>等变神经网络</category>
-      <pubDate>Wed, 18 Nov 2026 18:37:02 +0000</pubDate>
-    </item>
-    <item>
-      <title>Long-lived particle production through the DUNE-PRISM concept</title>
-      <link>https://arxiv.org/abs/2512.16222</link>
-      <description>直接针对DUNE实验中微子探测器的新物理灵敏度与区分能力研究</description>
-      <content:encoded>&lt;p&gt;&lt;strong&gt;栏目：&lt;/strong&gt;方法雷达&lt;/p&gt;&lt;p&gt;&lt;strong&gt;分析依据：&lt;/strong&gt;仅标题和摘要；未读取全文。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法：&lt;/strong&gt;通过DUNE近探测器离轴移动（PRISM）与能量分辨率区分长寿命粒子产生机制&lt;/p&gt;&lt;p&gt;&lt;strong&gt;相关性：&lt;/strong&gt;0.90；&lt;strong&gt;证据等级：&lt;/strong&gt;direct&lt;/p&gt;&lt;p&gt;&lt;strong&gt;初筛理由：&lt;/strong&gt;直接针对DUNE实验中微子探测器的新物理灵敏度与区分能力研究&lt;/p&gt;&lt;p&gt;&lt;strong&gt;出版信息（来源记录）：&lt;/strong&gt;Phys.Rev.D 113 (2026) 075028&lt;/p&gt;&lt;p&gt;&lt;strong&gt;摘要来源：&lt;/strong&gt;INSPIRE (APS)&lt;/p&gt;&lt;p&gt;&lt;em&gt;本条目仅完成摘要级筛选。&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;a href="https://arxiv.org/abs/2512.16222"&gt;论文页面&lt;/a&gt; · &lt;a href="https://doi.org/10.1103/dphb-txmh"&gt;DOI&lt;/a&gt; · &lt;a href="https://inspirehep.net/literature/3093932"&gt;INSPIRE 记录&lt;/a&gt; · &lt;a href="https://github.com/quxnb/hepml-digest/issues/new?title=%5B%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%5D+arXiv%3A2512.16222+Long-lived+particle+production+through+the+DUNE-PRISM+concept&amp;amp;body=%23%23+%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%0A%0A-+%E8%AE%BA%E6%96%87%EF%BC%9A%5BarXiv%3A2512.16222%5D%28https%3A%2F%2Farxiv.org%2Fabs%2F2512.16222%29%0A-+%E8%AE%B0%E5%BD%95+ID%EF%BC%9Aarxiv%3A2512.16222%0A-+%E5%88%86%E6%9E%90%E4%BE%9D%E6%8D%AE%EF%BC%9A%E4%BB%85%E6%A0%87%E9%A2%98%E5%92%8C%E6%91%98%E8%A6%81%EF%BC%8C%E6%9C%AA%E8%AF%BB%E5%8F%96%E5%85%A8%E6%96%87%0A-+%E6%A0%8F%E7%9B%AE%EF%BC%9A%E6%96%B9%E6%B3%95%E9%9B%B7%E8%BE%BE%0A-+%E5%BD%93%E5%89%8D%E7%9B%B8%E5%85%B3%E6%80%A7%EF%BC%9A0.90%0A-+%E5%BD%93%E5%89%8D%E8%AF%81%E6%8D%AE%E7%AD%89%E7%BA%A7%EF%BC%9Adirect%0A%0A%23%23+%E5%88%A4%E6%96%AD%0A%0A-+%5B+%5D+%E6%8E%A8%E8%8D%90%E4%BF%9D%E7%95%99%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E5%90%88%E7%90%86%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E8%BF%87%E5%BA%A6%E6%8E%A8%E6%B5%8B%0A-+%5B+%5D+%E5%BA%94%E7%A7%BB%E8%87%B3%E5%8F%A6%E4%B8%80%E4%B8%AA%E6%A0%8F%E7%9B%AE%0A-+%5B+%5D+%E5%BB%BA%E8%AE%AE%E7%B2%BE%E8%AF%BB%E5%85%A8%E6%96%87%0A%0A%23%23+%E8%A1%A5%E5%85%85%E8%AF%B4%E6%98%8E%0A%0A"&gt;提交反馈&lt;/a&gt; · hep-ph, inspire:Phenomenology-HEP&lt;/p&gt;</content:encoded>
-      <guid isPermaLink="false">arxiv:2512.16222:hepml-v1</guid>
-      <category>hep-ph</category>
-      <category>inspire:Phenomenology-HEP</category>
-      <category>track:method_radar</category>
-      <category>探测器离轴配置优化</category>
-      <category>新物理区分</category>
-      <category>长寿命粒子寻找</category>
-      <pubDate>Fri, 19 Dec 2025 04:17:18 +0000</pubDate>
-    </item>
-    <item>
-      <title>Sterile neutrino mixing parameters from solar-neutrino coherent scattering</title>
-      <link>https://arxiv.org/abs/2605.22935</link>
-      <description>直接联系实验中微子性质与暗物质直接探测观测，含系统误差与未来灵敏度预期，值得进一步阅读</description>
-      <content:encoded>&lt;p&gt;&lt;strong&gt;栏目：&lt;/strong&gt;方法雷达&lt;/p&gt;&lt;p&gt;&lt;strong&gt;分析依据：&lt;/strong&gt;仅标题和摘要；未读取全文。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;方法：&lt;/strong&gt;利用暗物质直接探测实验的太阳中微子相干弹性散射数据，研究惰性中微子与μ/τ味混合参数的约束与预期灵敏度&lt;/p&gt;&lt;p&gt;&lt;strong&gt;相关性：&lt;/strong&gt;0.75；&lt;strong&gt;证据等级：&lt;/strong&gt;direct&lt;/p&gt;&lt;p&gt;&lt;strong&gt;初筛理由：&lt;/strong&gt;直接联系实验中微子性质与暗物质直接探测观测，含系统误差与未来灵敏度预期，值得进一步阅读&lt;/p&gt;&lt;p&gt;&lt;strong&gt;出版信息（来源记录）：&lt;/strong&gt;Phys.Rev.D 114 (2026) 075004&lt;/p&gt;&lt;p&gt;&lt;strong&gt;摘要来源：&lt;/strong&gt;INSPIRE (APS)&lt;/p&gt;&lt;p&gt;&lt;em&gt;本条目仅完成摘要级筛选。&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;a href="https://arxiv.org/abs/2605.22935"&gt;论文页面&lt;/a&gt; · &lt;a href="https://doi.org/10.1103/1pzz-hlqd"&gt;DOI&lt;/a&gt; · &lt;a href="https://inspirehep.net/literature/3158998"&gt;INSPIRE 记录&lt;/a&gt; · &lt;a href="https://github.com/quxnb/hepml-digest/issues/new?title=%5B%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%5D+arXiv%3A2605.22935+Sterile+neutrino+mixing+parameters+from+solar-neutrino+coherent+scattering&amp;amp;body=%23%23+%E8%AE%BA%E6%96%87%E5%8F%8D%E9%A6%88%0A%0A-+%E8%AE%BA%E6%96%87%EF%BC%9A%5BarXiv%3A2605.22935%5D%28https%3A%2F%2Farxiv.org%2Fabs%2F2605.22935%29%0A-+%E8%AE%B0%E5%BD%95+ID%EF%BC%9Aarxiv%3A2605.22935%0A-+%E5%88%86%E6%9E%90%E4%BE%9D%E6%8D%AE%EF%BC%9A%E4%BB%85%E6%A0%87%E9%A2%98%E5%92%8C%E6%91%98%E8%A6%81%EF%BC%8C%E6%9C%AA%E8%AF%BB%E5%8F%96%E5%85%A8%E6%96%87%0A-+%E6%A0%8F%E7%9B%AE%EF%BC%9A%E6%96%B9%E6%B3%95%E9%9B%B7%E8%BE%BE%0A-+%E5%BD%93%E5%89%8D%E7%9B%B8%E5%85%B3%E6%80%A7%EF%BC%9A0.75%0A-+%E5%BD%93%E5%89%8D%E8%AF%81%E6%8D%AE%E7%AD%89%E7%BA%A7%EF%BC%9Adirect%0A%0A%23%23+%E5%88%A4%E6%96%AD%0A%0A-+%5B+%5D+%E6%8E%A8%E8%8D%90%E4%BF%9D%E7%95%99%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E5%90%88%E7%90%86%0A-+%5B+%5D+HEP+%E6%98%A0%E5%B0%84%E8%BF%87%E5%BA%A6%E6%8E%A8%E6%B5%8B%0A-+%5B+%5D+%E5%BA%94%E7%A7%BB%E8%87%B3%E5%8F%A6%E4%B8%80%E4%B8%AA%E6%A0%8F%E7%9B%AE%0A-+%5B+%5D+%E5%BB%BA%E8%AE%AE%E7%B2%BE%E8%AF%BB%E5%85%A8%E6%96%87%0A%0A%23%23+%E8%A1%A5%E5%85%85%E8%AF%B4%E6%98%8E%0A%0A"&gt;提交反馈&lt;/a&gt; · hep-ph, inspire:Phenomenology-HEP&lt;/p&gt;</content:encoded>
-      <guid isPermaLink="false">arxiv:2605.22935:hepml-v1</guid>
-      <category>hep-ph</category>
-      <category>inspire:Phenomenology-HEP</category>
-      <category>track:method_radar</category>
-      <category>中微子振荡与惰性中微子参数约束</category>
-      <category>太阳中微子相干散射分析</category>
-      <category>暗物质直接探测实验的中微子雾观测</category>
-      <pubDate>Mon, 25 May 2026 04:05:11 +0000</pubDate>
     </item>
   </channel>
 </rss>
